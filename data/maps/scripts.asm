@@ -207,6 +207,7 @@ INCLUDE "maps/Route8.asm"
 INCLUDE "maps/Route10North.asm"
 INCLUDE "maps/Route10South.asm"
 INCLUDE "maps/Route23.asm"
+INCLUDE "maps/IndigoPlateau.asm"
 
 
 SECTION "Map Scripts 16", ROMX

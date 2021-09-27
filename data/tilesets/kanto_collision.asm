@@ -1,9 +1,9 @@
-	tilecoll CUT_TREE, CUT_TREE, CUT_TREE, CUT_TREE ; 00
+	tilecoll WALL, WALL, WALL, WALL ; 00
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 01
 	tilecoll WALL, WALL, WALL, DOOR ; 02
 	tilecoll WALL, WALL, WALL, WALL ; 03
 	tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, WARP_CARPET_DOWN ; 04
-	tilecoll LADDER, LADDER, LADDER, LADDER ; 05
+	tilecoll WALL, WALL, WALL, WALL ; 05
 	tilecoll FLOOR, FLOOR, CAVE, WALL ; 06
 	tilecoll HOP_DOWN, HOP_DOWN, WALL, WALL ; 07
 	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 08
@@ -82,7 +82,7 @@
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 51
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 52
 	tilecoll WALL, WALL, WALL, DOOR ; 53
-	tilecoll WALL, WALL, WALL, WALL ; 54
+	tilecoll LADDER, LADDER, LADDER, LADDER ; 54
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 55
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 56
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 57
@@ -126,3 +126,5 @@
 	tilecoll WALL, WALL, WALL, WALL ; 7d
 	tilecoll WALL, WALL, WALL, WALL ; 7e
 	tilecoll WALL, WALL, WALL, WALL ; 7f
+	tilecoll CUT_TREE, CUT_TREE, CUT_TREE, CUT_TREE ; 80
+	tilecoll WALL, WALL, WALL, WALL ; 81
