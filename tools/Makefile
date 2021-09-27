@@ -7,8 +7,7 @@ tools := \
 	lzcomp \
 	gfx \
 	png_dimensions \
-	scan_includes \
-	stadium
+	scan_includes
 all: $(tools)
 	@:
 
@@ -18,7 +17,6 @@ clean:
 gfx: common.h
 png_dimensions: common.h
 scan_includes: common.h
-stadium: common.h
 
 lzcomp: CFLAGS += -flto
 lzcomp: $(wildcard lz/*.c) $(wildcard lz/*.h)

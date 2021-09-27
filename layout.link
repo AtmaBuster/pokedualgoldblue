@@ -251,8 +251,6 @@ ROMX $70
 	"Pokégear GFX"
 	"Credits Strings"
 ROMX $7f
-	org $7df8
-	"Stadium 2 Checksums"
 WRAM0
 	"Audio RAM"
 	"WRAM"
