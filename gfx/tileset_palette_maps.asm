@@ -85,8 +85,8 @@ INCLUDE "gfx/tilesets/lighthouse_palette_map.asm"
 TilesetPlayersRoomPalMap:
 INCLUDE "gfx/tilesets/players_room_palette_map.asm"
 
-UnusedMuseumPalMap: ; unreferenced
-INCLUDE "gfx/tilesets/unused_museum_palette_map.asm"
+TilesetMuseumPalMap:
+INCLUDE "gfx/tilesets/museum_palette_map.asm"
 
 TilesetIcePathPalMap:
 INCLUDE "gfx/tilesets/ice_path_palette_map.asm"
@@ -94,8 +94,50 @@ INCLUDE "gfx/tilesets/ice_path_palette_map.asm"
 TilesetForestPalMap:
 INCLUDE "gfx/tilesets/forest_palette_map.asm"
 
-MapGroupPalettes:
-; entries correspond to MAPGROUP_* constants
-rept NUM_MAP_GROUPS
-	db PAL_BG_ROOF
-endr
+TilesetCavernPalMap:
+INCLUDE "gfx/tilesets/cavern_palette_map.asm"
+
+TilesetCemeteryPalMap:
+INCLUDE "gfx/tilesets/cemetery_palette_map.asm"
+
+TilesetClubPalMap:
+INCLUDE "gfx/tilesets/club_palette_map.asm"
+
+TilesetFacilityKantoPalMap:
+INCLUDE "gfx/tilesets/facility_kanto_palette_map.asm"
+
+TilesetGymPalMap:
+INCLUDE "gfx/tilesets/gym_palette_map.asm"
+
+TilesetHouseKantoPalMap:
+INCLUDE "gfx/tilesets/house_kanto_palette_map.asm"
+
+TilesetInteriorPalMap:
+INCLUDE "gfx/tilesets/interior_palette_map.asm"
+
+TilesetLabKantoPalMap:
+INCLUDE "gfx/tilesets/lab_kanto_palette_map.asm"
+
+TilesetLobbyPalMap:
+INCLUDE "gfx/tilesets/lobby_palette_map.asm"
+
+TilesetPlateauPalMap:
+INCLUDE "gfx/tilesets/plateau_palette_map.asm"
+
+TilesetPokecenterKantoPalMap:
+INCLUDE "gfx/tilesets/pokecenter_kanto_palette_map.asm"
+
+TilesetRedsHousePalMap:
+INCLUDE "gfx/tilesets/reds_house_palette_map.asm"
+
+TilesetSafariPalMap:
+INCLUDE "gfx/tilesets/safari_palette_map.asm"
+
+TilesetShipPalMap:
+INCLUDE "gfx/tilesets/ship_palette_map.asm"
+
+TilesetShipPortPalMap:
+INCLUDE "gfx/tilesets/ship_port_palette_map.asm"
+
+TilesetTunnelPalMap:
+INCLUDE "gfx/tilesets/tunnel_palette_map.asm"

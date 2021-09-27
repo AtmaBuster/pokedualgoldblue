@@ -28,6 +28,23 @@
 	const TILESET_ICE_PATH             ; 1a
 	const TILESET_DARK_CAVE            ; 1b
 	const TILESET_FOREST               ; 1c
+	const TILESET_CAVERN               ; 1d
+	const TILESET_CEMETERY             ; 1e
+	const TILESET_CLUB                 ; 1f
+	const TILESET_FACILITY_KANTO       ; 20
+	const TILESET_GYM                  ; 21
+	const TILESET_HOUSE_KANTO          ; 22
+	const TILESET_INTERIOR             ; 23
+	const TILESET_LAB_KANTO            ; 24
+	const TILESET_LOBBY                ; 25
+	const TILESET_MUSEUM               ; 26
+	const TILESET_PLATEAU              ; 27
+	const TILESET_POKECENTER_KANTO     ; 28
+	const TILESET_REDS_HOUSE           ; 29
+	const TILESET_SAFARI               ; 2a
+	const TILESET_SHIP                 ; 2b
+	const TILESET_SHIP_PORT            ; 2c
+	const TILESET_TUNNEL               ; 2d
 NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size

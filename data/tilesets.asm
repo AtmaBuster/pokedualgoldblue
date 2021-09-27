@@ -42,4 +42,21 @@ Tilesets::
 	tileset TilesetIcePath
 	tileset TilesetDarkCave
 	tileset TilesetForest
+	tileset TilesetCavern
+	tileset TilesetCemetery
+	tileset TilesetClub
+	tileset TilesetFacilityKanto
+	tileset TilesetGym
+	tileset TilesetHouseKanto
+	tileset TilesetInterior
+	tileset TilesetLabKanto
+	tileset TilesetLobby
+	tileset TilesetMuseum
+	tileset TilesetPlateau
+	tileset TilesetPokecenterKanto
+	tileset TilesetRedsHouse
+	tileset TilesetSafari
+	tileset TilesetShip
+	tileset TilesetShipPort
+	tileset TilesetTunnel
 	assert_table_length NUM_TILESETS + 1
