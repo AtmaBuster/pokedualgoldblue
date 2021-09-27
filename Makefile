@@ -49,7 +49,7 @@ RGBLINK ?= $(RGBDS)rgblink
 ### Build targets
 
 .SUFFIXES:
-.PHONY: all gold silver gold_debug silver_debug clean tidy compare tools
+.PHONY: all gold silver gold_debug silver_debug clean tidy tools
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
@@ -66,9 +66,6 @@ clean: tidy
 tidy:
 	rm -f $(roms) $(pokegold_obj) $(pokesilver_obj) $(pokegold_debug_obj) $(pokesilver_debug_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
 	$(MAKE) clean -C tools/
-
-compare: $(roms)
-	@$(SHA1) -c roms.sha1
 
 tools:
 	$(MAKE) -C tools/
@@ -135,9 +132,6 @@ pokesilver_debug_opt = -cjsv -t POKEMON_SLV -i AAXE -k 01 -l 0x33 -m 0x10 -r 3 -
 
 
 ### LZ compression rules
-
-# Delete this line if you don't care about matching and just want optimal compression.
-include gfx/lz.mk
 
 %.lz: %
 	tools/lzcomp $(LZFLAGS) -- $< $@
