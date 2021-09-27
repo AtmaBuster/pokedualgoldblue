@@ -370,10 +370,6 @@ INCLUDE "engine/printer/print_party.asm"
 IF DEF(_DEBUG)
 INCLUDE "engine/debug/debug_room.asm"
 ENDC
-
-
-SECTION "bank70_2", ROMX
-
 INCLUDE "engine/rtc/print_hours_mins.asm"
 INCLUDE "engine/pokedex/pokedex_3.asm"
 INCLUDE "engine/events/catch_tutorial_input.asm"

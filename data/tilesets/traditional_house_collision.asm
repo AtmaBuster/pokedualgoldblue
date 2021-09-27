@@ -1,4 +1,4 @@
-	tilecoll 36, FLOOR, WALK_RIGHT_ALT, FLOOR ; 00
+	tilecoll WALL, FLOOR, WALK_RIGHT_ALT, FLOOR ; 00
 	tilecoll WALL, WALL, RADIO, FLOOR ; 01
 	tilecoll WALL, WALL, MART_SHELF, MART_SHELF ; 02
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 03
@@ -53,12 +53,12 @@
 	tilecoll WALL, WALL, WALL, FLOOR ; 34
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 35
 	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 36
-	tilecoll 04, WARP_CARPET_DOWN, 04, 63 ; 37
-	tilecoll 03, 04, 03, 03 ; 38
-	tilecoll 04, 03, 03, 03 ; 39
-	tilecoll 04, 03, 03, 03 ; 3a
-	tilecoll 03, 03, 03, 03 ; 3b
-	tilecoll 03, 03, 04, 04 ; 3c
-	tilecoll 04, 04, 04, 04 ; 3d
-	tilecoll 03, 03, 03, 03 ; 3e
-	tilecoll WARP_CARPET_DOWN, 04, 03, 03 ; 3f
+	tilecoll WALL, WARP_CARPET_DOWN, WALL, WALL ; 37
+	tilecoll WALL, WALL, WALL, WALL ; 38
+	tilecoll WALL, WALL, WALL, WALL ; 39
+	tilecoll WALL, WALL, WALL, WALL ; 3a
+	tilecoll WALL, WALL, WALL, WALL ; 3b
+	tilecoll WALL, WALL, WALL, WALL ; 3c
+	tilecoll WALL, WALL, WALL, WALL ; 3d
+	tilecoll WALL, WALL, WALL, WALL ; 3e
+	tilecoll WARP_CARPET_DOWN, WALL, WALL, WALL ; 3f

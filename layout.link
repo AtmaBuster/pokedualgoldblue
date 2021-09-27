@@ -40,14 +40,11 @@ ROMX $04
 ROMX $05
 	"bank5"
 ROMX $06
-	"Tileset Data 1"
 ROMX $07
 	"Roofs"
-	"Tileset Data 2"
 	"Extra Songs 1"
 ROMX $08
 	"Clock Reset"
-	"Tileset Data 3"
 	"Catch Tutorial"
 	"Egg Moves"
 ROMX $09
@@ -57,7 +54,6 @@ ROMX $0a
 ROMX $0b
 	"bankB"
 ROMX $0c
-	"Tileset Data 4"
 ROMX $0d
 	"Effect Commands"
 ROMX $0e
@@ -139,7 +135,6 @@ ROMX $36
 	"Font Inversed"
 ROMX $37
 	"Map Blocks 3"
-	"Tileset Data 5"
 ROMX $38
 	"bank38"
 ROMX $39
@@ -253,8 +248,6 @@ ROMX $6e
 	"Item Descriptions"
 ROMX $70
 	"bank70"
-	"Tileset Data 6"
-	"bank70_2"
 	"Pokégear GFX"
 	"Credits Strings"
 ROMX $7f
