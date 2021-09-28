@@ -130,10 +130,10 @@ TileCollisionTable::
 	db LAND_TILE         ; COLL_WARP_CARPET_RIGHT
 	db LAND_TILE         ; 7f
 	db WALL_TILE         ; 80
-	db WALL_TILE         ; 81
-	db WALL_TILE         ; 82
-	db WALL_TILE         ; 83
-	db WALL_TILE         ; 84
+	db LAND_TILE         ; COLL_SPIN_UP
+	db LAND_TILE         ; COLL_SPIN_DOWN
+	db LAND_TILE         ; COLL_SPIN_LEFT
+	db LAND_TILE         ; COLL_SPIN_RIGHT
 	db LAND_TILE         ; 85
 	db LAND_TILE         ; 86
 	db LAND_TILE         ; 87

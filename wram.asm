@@ -1280,7 +1280,7 @@ wTempObjectCopyY:: db
 wTempObjectCopyRadius:: db
 ENDU
 
-	ds 1
+wSpinning:: db
 
 wTileDown::  db
 wTileUp::    db
