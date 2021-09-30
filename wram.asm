@@ -2458,14 +2458,7 @@ wPokecenter2FSceneID::                            db
 wTradeCenterSceneID::                             db
 wColosseumSceneID::                               db
 wTimeCapsuleSceneID::                             db
-wPowerPlantSceneID::                              db
-wCeruleanGymSceneID::                             db
-wRoute25SceneID::                                 db
-wTrainerHouseB1FSceneID::                         db
 wVictoryRoadGateSceneID::                         db
-wSaffronMagnetTrainStationSceneID::               db
-wRoute16GateSceneID::                             db
-wRoute17Route18GateSceneID::                      db
 wIndigoPlateauPokecenter1FSceneID::               db
 wWillsRoomSceneID::                               db
 wKogasRoomSceneID::                               db
@@ -2492,7 +2485,6 @@ wEcruteakTinTowerEntranceSceneID::                db
 wEcruteakPokecenter1FSceneID::                    db
 wMahoganyTownSceneID::                            db
 wRoute43GateSceneID::                             db
-wMountMoonSceneID::                               db
 wSproutTower3FSceneID::                           db
 wBurnedTower1FSceneID::                           db
 wBurnedTowerB1FSceneID::                          db
@@ -2512,9 +2504,8 @@ wOlivinePortSceneID::                             db
 wVermilionPortSceneID::                           db
 wFastShip1FSceneID::                              db
 wFastShipB1FSceneID::                             db
-wMountMoonSquareSceneID::                         db
 
-	ds 197
+	ds 206
 
 wEventFlags:: flag_array NUM_EVENTS
 

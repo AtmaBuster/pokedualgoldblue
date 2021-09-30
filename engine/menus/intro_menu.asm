@@ -6,7 +6,7 @@ NewGame:
 	call OakSpeech
 	call InitializeWorld
 
-	ld a, SPAWN_HOME
+	ld a, SPAWN_DEBUG
 	ld [wDefaultSpawnpoint], a
 
 	ld a, MAPSETUP_WARP

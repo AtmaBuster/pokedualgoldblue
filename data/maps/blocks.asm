@@ -52,16 +52,6 @@ Route10South_Blocks:
 
 SECTION "Pokecenter2F_Blocks", ROMX
 Pokecenter2F_Blocks:
-CinnabarPokecenter2FBeta_Blocks:
-CeruleanPokecenter2FBeta_Blocks:
-Route10Pokecenter2FBeta_Blocks:
-VermilionPokecenter2FBeta_Blocks:
-PewterPokecenter2FBeta_Blocks:
-FuchsiaPokecenter2FBeta_Blocks:
-LavenderPokecenter2FBeta_Blocks:
-CeladonPokecenter2FBeta_Blocks:
-ViridianPokecenter2FBeta_Blocks:
-SaffronPokecenter2FBeta_Blocks:
 	INCBIN "maps/Pokecenter2F.blk"
 
 SECTION "Route41_Blocks", ROMX
@@ -144,7 +134,7 @@ SECTION "Route38_Blocks", ROMX
 Route38_Blocks:
 	INCBIN "maps/Route38.blk"
 
-SECTION "OlivineTimsHouse_Blocks", ROMX
+SECTION "House1_Blocks", ROMX
 OlivineTimsHouse_Blocks:
 OlivineHouseBeta_Blocks:
 OlivinePunishmentSpeechHouse_Blocks:
@@ -154,10 +144,6 @@ MahoganyRedGyaradosSpeechHouse_Blocks:
 BlackthornDragonSpeechHouse_Blocks:
 BlackthornEmysHouse_Blocks:
 MoveDeletersHouse_Blocks:
-CeruleanGymBadgeSpeechHouse_Blocks:
-CeruleanPoliceStation_Blocks:
-CeruleanTradeSpeechHouse_Blocks:
-BillsHouse_Blocks:
 CharcoalKiln_Blocks:
 LakeOfRageHiddenPowerHouse_Blocks:
 LakeOfRageMagikarpHouse_Blocks:
@@ -165,51 +151,30 @@ GoldenrodHappinessRater_Blocks:
 BillsFamilysHouse_Blocks:
 GoldenrodPPSpeechHouse_Blocks:
 GoldenrodNameRater_Blocks:
-VermilionFishingSpeechHouse_Blocks:
-VermilionMagnetTrainSpeechHouse_Blocks:
-VermilionDiglettsCaveSpeechHouse_Blocks:
-BluesHouse_Blocks:
-PewterNidoranSpeechHouse_Blocks:
-PewterSnoozeSpeechHouse_Blocks:
-BillsBrothersHouse_Blocks:
-LavenderSpeechHouse_Blocks:
-LavenderNameRater_Blocks:
-Route12SuperRodHouse_Blocks:
 Route28SteelWingHouse_Blocks:
-CeladonMansionRoofHouse_Blocks:
-Route16FuchsiaSpeechHouse_Blocks:
 ManiasHouse_Blocks:
 CianwoodPharmacy_Blocks:
 CianwoodPhotoStudio_Blocks:
 CianwoodLugiaSpeechHouse_Blocks:
 PokeSeersHouse_Blocks:
-ViridianNicknameSpeechHouse_Blocks:
-Route2NuggetHouse_Blocks:
 PlayersNeighborsHouse_Blocks:
 Route26HealHouse_Blocks:
 DayOfWeekSiblingsHouse_Blocks:
 Route27SandstormHouse_Blocks:
-MrPsychicsHouse_Blocks:
-Route5CleanseTagHouse_Blocks:
 CherrygroveGymSpeechHouse_Blocks:
 GuideGentsHouse_Blocks:
 CherrygroveEvolutionSpeechHouse_Blocks:
 Route30BerryHouse_Blocks:
 	INCBIN "maps/House1.blk"
 
-SECTION "SafariZoneFuchsiaGateBeta_Blocks", ROMX
-SafariZoneFuchsiaGateBeta_Blocks:
-Route19FuchsiaGate_Blocks:
+SECTION "NorthSouthGate_Blocks", ROMX
 Route43MahoganyGate_Blocks:
 Route43Gate_Blocks:
 Route35GoldenrodGate_Blocks:
 Route36RuinsOfAlphGate_Blocks:
 Route34IlexForestGate_Blocks:
-Route6SaffronGate_Blocks:
 Route40BattleTowerGate_Blocks:
-Route2Gate_Blocks:
 Route29Route46Gate_Blocks:
-Route5SaffronGate_Blocks:
 	INCBIN "maps/NorthSouthGate.blk"
 
 SECTION "CinnabarIsland_Blocks", ROMX
@@ -264,16 +229,11 @@ SECTION "PlayersHouse1F_Blocks", ROMX
 PlayersHouse1F_Blocks:
 	INCBIN "maps/PlayersHouse1F.blk"
 
-SECTION "Route38EcruteakGate_Blocks", ROMX
+SECTION "EastWestGate_Blocks", ROMX
 Route38EcruteakGate_Blocks:
 Route42EcruteakGate_Blocks:
 Route32RuinsOfAlphGate_Blocks:
 IlexForestAzaleaGate_Blocks:
-Route15FuchsiaGate_Blocks:
-Route8SaffronGate_Blocks:
-Route16Gate_Blocks:
-Route7SaffronGate_Blocks:
-Route17Route18Gate_Blocks:
 Route31VioletGate_Blocks:
 	INCBIN "maps/EastWestGate.blk"
 
@@ -313,15 +273,8 @@ SECTION "OlivineMart_Blocks", ROMX
 OlivineMart_Blocks:
 EcruteakMart_Blocks:
 BlackthornMart_Blocks:
-CeruleanMart_Blocks:
 AzaleaMart_Blocks:
 VioletMart_Blocks:
-VermilionMart_Blocks:
-PewterMart_Blocks:
-FuchsiaMart_Blocks:
-LavenderMart_Blocks:
-ViridianMart_Blocks:
-SaffronMart_Blocks:
 CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
@@ -329,27 +282,17 @@ SECTION "Route10North_Blocks", ROMX
 Route10North_Blocks:
 	INCBIN "maps/Route10North.blk"
 
-SECTION "OlivinePokecenter1F_Blocks", ROMX
+SECTION "Pokecenter1F_Blocks", ROMX
 OlivinePokecenter1F_Blocks:
 MahoganyPokecenter1F_Blocks:
 EcruteakPokecenter1F_Blocks:
 BlackthornPokecenter1F_Blocks:
-CinnabarPokecenter1F_Blocks:
-CeruleanPokecenter1F_Blocks:
-Route10Pokecenter1F_Blocks:
 AzaleaPokecenter1F_Blocks:
 VioletPokecenter1F_Blocks:
 Route32Pokecenter1F_Blocks:
 GoldenrodPokecenter1F_Blocks:
-VermilionPokecenter1F_Blocks:
-PewterPokecenter1F_Blocks:
-FuchsiaPokecenter1F_Blocks:
-LavenderPokecenter1F_Blocks:
 SilverCavePokecenter1F_Blocks:
-CeladonPokecenter1F_Blocks:
 CianwoodPokecenter1F_Blocks:
-ViridianPokecenter1F_Blocks:
-SaffronPokecenter1F_Blocks:
 CherrygrovePokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
@@ -359,62 +302,31 @@ EarlsPokemonAcademy_Blocks:
 
 SECTION "GoldenrodDeptStore1F_Blocks", ROMX
 GoldenrodDeptStore1F_Blocks:
-CeladonDeptStore1F_Blocks:
-	INCBIN "maps/DeptStore1F.blk"
+	INCBIN "maps/GoldenrodDeptStore1F.blk"
 
 SECTION "GoldenrodDeptStore2F_Blocks", ROMX
 GoldenrodDeptStore2F_Blocks:
-CeladonDeptStore2F_Blocks:
-	INCBIN "maps/DeptStore2F.blk"
+	INCBIN "maps/GoldenrodDeptStore2F.blk"
 
 SECTION "GoldenrodDeptStore3F_Blocks", ROMX
 GoldenrodDeptStore3F_Blocks:
-CeladonDeptStore3F_Blocks:
-	INCBIN "maps/DeptStore3F.blk"
+	INCBIN "maps/GoldenrodDeptStore3F.blk"
 
 SECTION "GoldenrodDeptStore4F_Blocks", ROMX
 GoldenrodDeptStore4F_Blocks:
-CeladonDeptStore4F_Blocks:
-	INCBIN "maps/DeptStore4F.blk"
+	INCBIN "maps/GoldenrodDeptStore4F.blk"
 
 SECTION "GoldenrodDeptStore5F_Blocks", ROMX
 GoldenrodDeptStore5F_Blocks:
-CeladonDeptStore5F_Blocks:
-	INCBIN "maps/DeptStore5F.blk"
+	INCBIN "maps/GoldenrodDeptStore5F.blk"
 
 SECTION "GoldenrodDeptStore6F_Blocks", ROMX
 GoldenrodDeptStore6F_Blocks:
-CeladonDeptStore6F_Blocks:
-	INCBIN "maps/DeptStore6F.blk"
+	INCBIN "maps/GoldenrodDeptStore6F.blk"
 
 SECTION "GoldenrodDeptStoreElevator_Blocks", ROMX
 GoldenrodDeptStoreElevator_Blocks:
-CeladonDeptStoreElevator_Blocks:
-	INCBIN "maps/DeptStoreElevator.blk"
-
-SECTION "CeladonMansion1F_Blocks", ROMX
-CeladonMansion1F_Blocks:
-	INCBIN "maps/CeladonMansion1F.blk"
-
-SECTION "CeladonMansion2F_Blocks", ROMX
-CeladonMansion2F_Blocks:
-	INCBIN "maps/CeladonMansion2F.blk"
-
-SECTION "CeladonMansion3F_Blocks", ROMX
-CeladonMansion3F_Blocks:
-	INCBIN "maps/CeladonMansion3F.blk"
-
-SECTION "CeladonMansionRoof_Blocks", ROMX
-CeladonMansionRoof_Blocks:
-	INCBIN "maps/CeladonMansionRoof.blk"
-
-SECTION "CeladonGameCorner_Blocks", ROMX
-CeladonGameCorner_Blocks:
-	INCBIN "maps/CeladonGameCorner.blk"
-
-SECTION "CeladonGameCornerPrizeRoom_Blocks", ROMX
-CeladonGameCornerPrizeRoom_Blocks:
-	INCBIN "maps/CeladonGameCornerPrizeRoom.blk"
+	INCBIN "maps/GoldenrodDeptStoreElevator.blk"
 
 SECTION "Colosseum_Blocks", ROMX
 Colosseum_Blocks:
@@ -425,7 +337,7 @@ TradeCenter_Blocks:
 TimeCapsule_Blocks:
 	INCBIN "maps/TradeCenter.blk"
 
-SECTION "EcruteakLugiaSpeechHouse_Blocks", ROMX
+SECTION "House2_Blocks", ROMX
 EcruteakLugiaSpeechHouse_Blocks:
 EcruteakItemfinderHouse_Blocks:
 VioletNicknameSpeechHouse_Blocks:
@@ -449,11 +361,6 @@ NationalPark_Blocks:
 NationalParkBugContest_Blocks:
 	INCBIN "maps/NationalPark.blk"
 
-SECTION "Route5UndergroundPathEntrance_Blocks", ROMX
-Route5UndergroundPathEntrance_Blocks:
-Route6UndergroundPathEntrance_Blocks:
-	INCBIN "maps/UndergroundPathEntrance.blk"
-
 SECTION "KurtsHouse_Blocks", ROMX
 KurtsHouse_Blocks:
 	INCBIN "maps/KurtsHouse.blk"
@@ -466,7 +373,7 @@ SECTION "RuinsOfAlphOutside_Blocks", ROMX
 RuinsOfAlphOutside_Blocks:
 	INCBIN "maps/RuinsOfAlphOutside.blk"
 
-SECTION "RuinsOfAlphHoOhChamber_Blocks", ROMX
+SECTION "RuinsOfAlphPuzzleChamber_Blocks", ROMX
 RuinsOfAlphHoOhChamber_Blocks:
 RuinsOfAlphKabutoChamber_Blocks:
 RuinsOfAlphOmanyteChamber_Blocks:
@@ -719,8 +626,7 @@ SilverCaveRoom3_Blocks:
 
 SECTION "MahoganyMart1F_Blocks", ROMX
 MahoganyMart1F_Blocks:
-MountMoonGiftShop_Blocks:
-	INCBIN "maps/GiftShop.blk"
+	INCBIN "maps/MahoganyMart1F.blk"
 
 SECTION "TeamRocketBaseB1F_Blocks", ROMX
 TeamRocketBaseB1F_Blocks:
@@ -892,77 +798,11 @@ VermilionPort_Blocks:
 
 SECTION "OlivineCafe_Blocks", ROMX
 OlivineCafe_Blocks:
-SafariZoneMainOffice_Blocks:
 	INCBIN "maps/OlivineCafe.blk"
 
 SECTION "PlayersHouse2F_Blocks", ROMX
 PlayersHouse2F_Blocks:
 	INCBIN "maps/PlayersHouse2F.blk"
-
-SECTION "SaffronMagnetTrainStation_Blocks", ROMX
-SaffronMagnetTrainStation_Blocks:
-	INCBIN "maps/SaffronMagnetTrainStation.blk"
-
-SECTION "CeruleanGym_Blocks", ROMX
-CeruleanGym_Blocks:
-	INCBIN "maps/CeruleanGym.blk"
-
-SECTION "VermilionGym_Blocks", ROMX
-VermilionGym_Blocks:
-	INCBIN "maps/VermilionGym.blk"
-
-SECTION "SaffronGym_Blocks", ROMX
-SaffronGym_Blocks:
-	INCBIN "maps/SaffronGym.blk"
-
-SECTION "PowerPlant_Blocks", ROMX
-PowerPlant_Blocks:
-	INCBIN "maps/PowerPlant.blk"
-
-SECTION "PokemonFanClub_Blocks", ROMX
-PokemonFanClub_Blocks:
-SafariZoneWardensHome_Blocks:
-	INCBIN "maps/PokemonFanClub.blk"
-
-SECTION "FightingDojo_Blocks", ROMX
-FightingDojo_Blocks:
-	INCBIN "maps/FightingDojo.blk"
-
-SECTION "SilphCo1F_Blocks", ROMX
-SilphCo1F_Blocks:
-	INCBIN "maps/SilphCo1F.blk"
-
-SECTION "ViridianGym_Blocks", ROMX
-ViridianGym_Blocks:
-	INCBIN "maps/ViridianGym.blk"
-
-SECTION "TrainerHouse1F_Blocks", ROMX
-TrainerHouse1F_Blocks:
-	INCBIN "maps/TrainerHouse1F.blk"
-
-SECTION "TrainerHouseB1F_Blocks", ROMX
-TrainerHouseB1F_Blocks:
-	INCBIN "maps/TrainerHouseB1F.blk"
-
-SECTION "RedsHouse1F_Blocks", ROMX
-RedsHouse1F_Blocks:
-	INCBIN "maps/RedsHouse1F.blk"
-
-SECTION "RedsHouse2F_Blocks", ROMX
-RedsHouse2F_Blocks:
-	INCBIN "maps/RedsHouse2F.blk"
-
-SECTION "OaksLab_Blocks", ROMX
-OaksLab_Blocks:
-	INCBIN "maps/OaksLab.blk"
-
-SECTION "MrFujisHouse_Blocks", ROMX
-MrFujisHouse_Blocks:
-	INCBIN "maps/MrFujisHouse.blk"
-
-SECTION "LavRadioTower1F_Blocks", ROMX
-LavRadioTower1F_Blocks:
-	INCBIN "maps/LavRadioTower1F.blk"
 
 SECTION "SilverCaveItemRooms_Blocks", ROMX
 SilverCaveItemRooms_Blocks:
@@ -971,42 +811,6 @@ SilverCaveItemRooms_Blocks:
 SECTION "DayCare_Blocks", ROMX
 DayCare_Blocks:
 	INCBIN "maps/DayCare.blk"
-
-SECTION "SoulHouse_Blocks", ROMX
-SoulHouse_Blocks:
-	INCBIN "maps/SoulHouse.blk"
-
-SECTION "PewterGym_Blocks", ROMX
-PewterGym_Blocks:
-	INCBIN "maps/PewterGym.blk"
-
-SECTION "CeladonGym_Blocks", ROMX
-CeladonGym_Blocks:
-	INCBIN "maps/CeladonGym.blk"
-
-SECTION "CeladonCafe_Blocks", ROMX
-CeladonCafe_Blocks:
-	INCBIN "maps/CeladonCafe.blk"
-
-SECTION "RockTunnel1F_Blocks", ROMX
-RockTunnel1F_Blocks:
-	INCBIN "maps/RockTunnel1F.blk"
-
-SECTION "RockTunnelB1F_Blocks", ROMX
-RockTunnelB1F_Blocks:
-	INCBIN "maps/RockTunnelB1F.blk"
-
-SECTION "DiglettsCave_Blocks", ROMX
-DiglettsCave_Blocks:
-	INCBIN "maps/DiglettsCave.blk"
-
-SECTION "MountMoon_Blocks", ROMX
-MountMoon_Blocks:
-	INCBIN "maps/MountMoon.blk"
-
-SECTION "SeafoamGym_Blocks", ROMX
-SeafoamGym_Blocks:
-	INCBIN "maps/SeafoamGym.blk"
 
 SECTION "MrPokemonsHouse_Blocks", ROMX
 MrPokemonsHouse_Blocks:
@@ -1020,18 +824,6 @@ SECTION "OlivinePortPassage_Blocks", ROMX
 OlivinePortPassage_Blocks:
 VermilionPortPassage_Blocks:
 	INCBIN "maps/PortPassage.blk"
-
-SECTION "FuchsiaGym_Blocks", ROMX
-FuchsiaGym_Blocks:
-	INCBIN "maps/FuchsiaGym.blk"
-
-SECTION "SafariZoneBeta_Blocks", ROMX
-SafariZoneBeta_Blocks:
-	INCBIN "maps/SafariZoneBeta.blk"
-
-SECTION "UndergroundPath_Blocks", ROMX
-UndergroundPath_Blocks:
-	INCBIN "maps/UndergroundPath.blk"
 
 SECTION "Route39Barn_Blocks", ROMX
 Route39Barn_Blocks:
@@ -1057,21 +849,9 @@ SECTION "HallOfFame_Blocks", ROMX
 HallOfFame_Blocks:
 	INCBIN "maps/HallOfFame.blk"
 
-SECTION "CopycatsHouse1F_Blocks", ROMX
-CopycatsHouse1F_Blocks:
-	INCBIN "maps/CopycatsHouse1F.blk"
-
-SECTION "CopycatsHouse2F_Blocks", ROMX
-CopycatsHouse2F_Blocks:
-	INCBIN "maps/CopycatsHouse2F.blk"
-
 SECTION "GoldenrodFlowerShop_Blocks", ROMX
 GoldenrodFlowerShop_Blocks:
 	INCBIN "maps/GoldenrodFlowerShop.blk"
-
-SECTION "MountMoonSquare_Blocks", ROMX
-MountMoonSquare_Blocks:
-	INCBIN "maps/MountMoonSquare.blk"
 
 SECTION "EcruteakTinTowerBackEntrance_Blocks", ROMX
 EcruteakTinTowerBackEntrance_Blocks:
