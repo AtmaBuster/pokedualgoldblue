@@ -868,3 +868,573 @@ DragonsDenB1F_Blocks:
 SECTION "TohjoFalls_Blocks", ROMX
 TohjoFalls_Blocks:
 	INCBIN "maps/TohjoFalls.blk"
+
+SECTION "KantoPokecenter_Blocks", ROMX
+CeladonPokecenter_Blocks:
+CeruleanPokecenter_Blocks:
+CinnabarPokecenter_Blocks:
+FuchsiaPokecenter_Blocks:
+LavenderPokecenter_Blocks:
+MtMoonPokecenter_Blocks:
+PewterPokecenter_Blocks:
+RockTunnelPokecenter_Blocks:
+SaffronPokecenter_Blocks:
+VermilionPokecenter_Blocks:
+ViridianPokecenter_Blocks:
+	INCBIN "maps/KantoPokecenter.blk"
+
+SECTION "KantoMart_Blocks", ROMX
+CeruleanMart_Blocks:
+CinnabarMart_Blocks:
+FuchsiaMart_Blocks:
+LavenderMart_Blocks:
+PewterMart_Blocks:
+SaffronMart_Blocks:
+VermilionMart_Blocks:
+ViridianMart_Blocks:
+	INCBIN "maps/KantoMart.blk"
+
+SECTION "KantoHouse_Blocks", ROMX
+BluesHouse_Blocks:
+CeruleanTradeHouse_Blocks:
+DayCareKanto_Blocks:
+FuchsiaBillsGrandpasHouse_Blocks:
+LavenderCuboneHouse_Blocks:
+MrFujisHouse_Blocks:
+MrPsychicsHouse_Blocks:
+NameRatersHouse_Blocks:
+PewterNidoranHouse_Blocks:
+PewterSpeechHouse_Blocks:
+Route12SuperRodHouse_Blocks:
+Route16FlyHouse_Blocks:
+Route2TradeHouse_Blocks:
+SaffronPidgeyHouse_Blocks:
+VermilionOldRodHouse_Blocks:
+VermilionPidgeyHouse_Blocks:
+VermilionTradeHouse_Blocks:
+ViridianNicknameHouse_Blocks:
+	INCBIN "maps/KantoHouse.blk"
+
+SECTION "KantoBackDoorHouse_Blocks", ROMX
+CeruleanBadgeHouse_Blocks:
+FuchsiaGoodRodHouse_Blocks:
+	INCBIN "maps/KantoBackDoorHouse.blk"
+
+SECTION "KantoNorthSouthGate_Blocks", ROMX
+Route5Gate_Blocks:
+Route6Gate_Blocks:
+SafariZoneGate_Blocks:
+	INCBIN "maps/KantoNorthSouthGate.blk"
+
+SECTION "KantoEastWestGate_Blocks", ROMX
+Route7Gate_Blocks:
+Route8Gate_Blocks:
+	INCBIN "maps/KantoEastWestGate.blk"
+
+SECTION "KantoEastWestGate1F_Blocks", ROMX
+Route11Gate1F_Blocks:
+Route15Gate1F_Blocks:
+Route18Gate1F_Blocks:
+	INCBIN "maps/KantoEastWestGate1F.blk"
+
+SECTION "KantoGate2F_Blocks", ROMX
+Route11Gate2F_Blocks:
+Route12Gate2F_Blocks:
+Route15Gate2F_Blocks:
+Route16Gate2F_Blocks:
+Route18Gate2F_Blocks:
+	INCBIN "maps/KantoGate2F.blk"
+
+SECTION "Route2Gate_Blocks", ROMX
+Route2Gate_Blocks:
+ViridianForestNorthGate_Blocks:
+ViridianForestSouthGate_Blocks:
+	INCBIN "maps/Route2Gate.blk"
+
+SECTION "UndergroundPathGate_Blocks", ROMX
+UndergroundPathRoute5_Blocks:
+UndergroundPathRoute6_Blocks:
+UndergroundPathRoute7_Blocks:
+UndergroundPathRoute8_Blocks:
+	INCBIN "maps/UndergroundPathGate.blk"
+
+SECTION "SafariZoneRestHouse_Blocks", ROMX
+SafariZoneCenterRestHouse_Blocks:
+SafariZoneEastRestHouse_Blocks:
+SafariZoneNorthRestHouse_Blocks:
+SafariZoneWestRestHouse_Blocks:
+	INCBIN "maps/SafariZoneRestHouse.blk"
+
+SECTION "CeladonMartElevator_Blocks", ROMX
+CeladonMartElevator_Blocks:
+SilphCoElevator_Blocks:
+	INCBIN "maps/CeladonMartElevator.blk"
+
+SECTION "RedsHouse1F_Blocks", ROMX
+RedsHouse1F_Blocks:
+CopycatsHouse1F_Blocks:
+	INCBIN "maps/RedsHouse1F.blk"
+
+SECTION "RedsHouse2F_Blocks", ROMX
+RedsHouse2F_Blocks:
+CopycatsHouse2F_Blocks:
+	INCBIN "maps/RedsHouse2F.blk"
+
+SECTION "ViridianSchoolHouse_Blocks", ROMX
+ViridianSchoolHouse_Blocks:
+CeladonMansionRoofHouse_Blocks:
+	INCBIN "maps/ViridianSchoolHouse.blk"
+
+SECTION "DiglettsCaveEntranceExit_Blocks", ROMX
+DiglettsCaveRoute2_Blocks:
+DiglettsCaveRoute11_Blocks:
+	INCBIN "maps/DiglettsCaveEntranceExit.blk"
+
+SECTION "SSAnne2FRooms_Blocks", ROMX
+SSAnne2FRooms_Blocks:
+SSAnneB1FRooms_Blocks:
+	INCBIN "maps/SSAnne2FRooms.blk"
+
+SECTION "AgathasRoom_Blocks", ROMX
+AgathasRoom_Blocks:
+	INCBIN "maps/AgathasRoom.blk"
+
+SECTION "BikeShop_Blocks", ROMX
+BikeShop_Blocks:
+	INCBIN "maps/BikeShop.blk"
+
+SECTION "BillsHouse_Blocks", ROMX
+BillsHouse_Blocks:
+	INCBIN "maps/BillsHouse.blk"
+
+SECTION "BrunosRoomKanto_Blocks", ROMX
+BrunosRoomKanto_Blocks:
+	INCBIN "maps/BrunosRoomKanto.blk"
+
+SECTION "CeladonChiefHouse_Blocks", ROMX
+CeladonChiefHouse_Blocks:
+	INCBIN "maps/CeladonChiefHouse.blk"
+
+SECTION "CeladonDiner_Blocks", ROMX
+CeladonDiner_Blocks:
+	INCBIN "maps/CeladonDiner.blk"
+
+SECTION "CeladonGym_Blocks", ROMX
+CeladonGym_Blocks:
+	INCBIN "maps/CeladonGym.blk"
+
+SECTION "CeladonHotel_Blocks", ROMX
+CeladonHotel_Blocks:
+	INCBIN "maps/CeladonHotel.blk"
+
+SECTION "CeladonMansion1F_Blocks", ROMX
+CeladonMansion1F_Blocks:
+	INCBIN "maps/CeladonMansion1F.blk"
+
+SECTION "CeladonMansion2F_Blocks", ROMX
+CeladonMansion2F_Blocks:
+	INCBIN "maps/CeladonMansion2F.blk"
+
+SECTION "CeladonMansion3F_Blocks", ROMX
+CeladonMansion3F_Blocks:
+	INCBIN "maps/CeladonMansion3F.blk"
+
+SECTION "CeladonMansionRoof_Blocks", ROMX
+CeladonMansionRoof_Blocks:
+	INCBIN "maps/CeladonMansionRoof.blk"
+
+SECTION "CeladonMart1F_Blocks", ROMX
+CeladonMart1F_Blocks:
+	INCBIN "maps/CeladonMart1F.blk"
+
+SECTION "CeladonMart2F_Blocks", ROMX
+CeladonMart2F_Blocks:
+	INCBIN "maps/CeladonMart2F.blk"
+
+SECTION "CeladonMart3F_Blocks", ROMX
+CeladonMart3F_Blocks:
+	INCBIN "maps/CeladonMart3F.blk"
+
+SECTION "CeladonMart4F_Blocks", ROMX
+CeladonMart4F_Blocks:
+	INCBIN "maps/CeladonMart4F.blk"
+
+SECTION "CeladonMart5F_Blocks", ROMX
+CeladonMart5F_Blocks:
+	INCBIN "maps/CeladonMart5F.blk"
+
+SECTION "CeladonMartRoof_Blocks", ROMX
+CeladonMartRoof_Blocks:
+	INCBIN "maps/CeladonMartRoof.blk"
+
+SECTION "CeruleanCave1F_Blocks", ROMX
+CeruleanCave1F_Blocks:
+	INCBIN "maps/CeruleanCave1F.blk"
+
+SECTION "CeruleanCave2F_Blocks", ROMX
+CeruleanCave2F_Blocks:
+	INCBIN "maps/CeruleanCave2F.blk"
+
+SECTION "CeruleanCaveB1F_Blocks", ROMX
+CeruleanCaveB1F_Blocks:
+	INCBIN "maps/CeruleanCaveB1F.blk"
+
+SECTION "CeruleanGym_Blocks", ROMX
+CeruleanGym_Blocks:
+	INCBIN "maps/CeruleanGym.blk"
+
+SECTION "CeruleanTrashedHouse_Blocks", ROMX
+CeruleanTrashedHouse_Blocks:
+	INCBIN "maps/CeruleanTrashedHouse.blk"
+
+SECTION "ChampionsRoom_Blocks", ROMX
+ChampionsRoom_Blocks:
+	INCBIN "maps/ChampionsRoom.blk"
+
+SECTION "CinnabarGym_Blocks", ROMX
+CinnabarGym_Blocks:
+	INCBIN "maps/CinnabarGym.blk"
+
+SECTION "CinnabarLab_Blocks", ROMX
+CinnabarLab_Blocks:
+	INCBIN "maps/CinnabarLab.blk"
+
+SECTION "CinnabarLabFossilRoom_Blocks", ROMX
+CinnabarLabFossilRoom_Blocks:
+	INCBIN "maps/CinnabarLabFossilRoom.blk"
+
+SECTION "CinnabarLabMetronomeRoom_Blocks", ROMX
+CinnabarLabMetronomeRoom_Blocks:
+	INCBIN "maps/CinnabarLabMetronomeRoom.blk"
+
+SECTION "CinnabarLabTradeRoom_Blocks", ROMX
+CinnabarLabTradeRoom_Blocks:
+	INCBIN "maps/CinnabarLabTradeRoom.blk"
+
+SECTION "ColosseumKanto_Blocks", ROMX
+ColosseumKanto_Blocks:
+	INCBIN "maps/ColosseumKanto.blk"
+
+SECTION "DiglettsCave_Blocks", ROMX
+DiglettsCave_Blocks:
+	INCBIN "maps/DiglettsCave.blk"
+
+SECTION "FightingDojo_Blocks", ROMX
+FightingDojo_Blocks:
+	INCBIN "maps/FightingDojo.blk"
+
+SECTION "FuchsiaGym_Blocks", ROMX
+FuchsiaGym_Blocks:
+	INCBIN "maps/FuchsiaGym.blk"
+
+SECTION "FuchsiaMeetingRoom_Blocks", ROMX
+FuchsiaMeetingRoom_Blocks:
+	INCBIN "maps/FuchsiaMeetingRoom.blk"
+
+SECTION "GameCorner_Blocks", ROMX
+GameCorner_Blocks:
+	INCBIN "maps/GameCorner.blk"
+
+SECTION "GameCornerPrizeRoom_Blocks", ROMX
+GameCornerPrizeRoom_Blocks:
+	INCBIN "maps/GameCornerPrizeRoom.blk"
+
+SECTION "HallOfFameKanto_Blocks", ROMX
+HallOfFameKanto_Blocks:
+	INCBIN "maps/HallOfFameKanto.blk"
+
+SECTION "IndigoPlateauLobby_Blocks", ROMX
+IndigoPlateauLobby_Blocks:
+	INCBIN "maps/IndigoPlateauLobby.blk"
+
+SECTION "LancesRoomKanto_Blocks", ROMX
+LancesRoomKanto_Blocks:
+	INCBIN "maps/LancesRoomKanto.blk"
+
+SECTION "LoreleisRoom_Blocks", ROMX
+LoreleisRoom_Blocks:
+	INCBIN "maps/LoreleisRoom.blk"
+
+SECTION "MtMoon1F_Blocks", ROMX
+MtMoon1F_Blocks:
+	INCBIN "maps/MtMoon1F.blk"
+
+SECTION "MtMoonB1F_Blocks", ROMX
+MtMoonB1F_Blocks:
+	INCBIN "maps/MtMoonB1F.blk"
+
+SECTION "MtMoonB2F_Blocks", ROMX
+MtMoonB2F_Blocks:
+	INCBIN "maps/MtMoonB2F.blk"
+
+SECTION "Museum1F_Blocks", ROMX
+Museum1F_Blocks:
+	INCBIN "maps/Museum1F.blk"
+
+SECTION "Museum2F_Blocks", ROMX
+Museum2F_Blocks:
+	INCBIN "maps/Museum2F.blk"
+
+SECTION "OaksLab_Blocks", ROMX
+OaksLab_Blocks:
+	INCBIN "maps/OaksLab.blk"
+
+SECTION "PewterGym_Blocks", ROMX
+PewterGym_Blocks:
+	INCBIN "maps/PewterGym.blk"
+
+SECTION "PokemonFanClub_Blocks", ROMX
+PokemonFanClub_Blocks:
+	INCBIN "maps/PokemonFanClub.blk"
+
+SECTION "PokemonMansion1F_Blocks", ROMX
+PokemonMansion1F_Blocks:
+	INCBIN "maps/PokemonMansion1F.blk"
+
+SECTION "PokemonMansion2F_Blocks", ROMX
+PokemonMansion2F_Blocks:
+	INCBIN "maps/PokemonMansion2F.blk"
+
+SECTION "PokemonMansion3F_Blocks", ROMX
+PokemonMansion3F_Blocks:
+	INCBIN "maps/PokemonMansion3F.blk"
+
+SECTION "PokemonMansionB1F_Blocks", ROMX
+PokemonMansionB1F_Blocks:
+	INCBIN "maps/PokemonMansionB1F.blk"
+
+SECTION "PokemonTower1F_Blocks", ROMX
+PokemonTower1F_Blocks:
+	INCBIN "maps/PokemonTower1F.blk"
+
+SECTION "PokemonTower2F_Blocks", ROMX
+PokemonTower2F_Blocks:
+	INCBIN "maps/PokemonTower2F.blk"
+
+SECTION "PokemonTower3F_Blocks", ROMX
+PokemonTower3F_Blocks:
+	INCBIN "maps/PokemonTower3F.blk"
+
+SECTION "PokemonTower4F_Blocks", ROMX
+PokemonTower4F_Blocks:
+	INCBIN "maps/PokemonTower4F.blk"
+
+SECTION "PokemonTower5F_Blocks", ROMX
+PokemonTower5F_Blocks:
+	INCBIN "maps/PokemonTower5F.blk"
+
+SECTION "PokemonTower6F_Blocks", ROMX
+PokemonTower6F_Blocks:
+	INCBIN "maps/PokemonTower6F.blk"
+
+SECTION "PokemonTower7F_Blocks", ROMX
+PokemonTower7F_Blocks:
+	INCBIN "maps/PokemonTower7F.blk"
+
+SECTION "PowerPlant_Blocks", ROMX
+PowerPlant_Blocks:
+	INCBIN "maps/PowerPlant.blk"
+
+SECTION "RockTunnel1F_Blocks", ROMX
+RockTunnel1F_Blocks:
+	INCBIN "maps/RockTunnel1F.blk"
+
+SECTION "RockTunnelB1F_Blocks", ROMX
+RockTunnelB1F_Blocks:
+	INCBIN "maps/RockTunnelB1F.blk"
+
+SECTION "RocketHideoutB1F_Blocks", ROMX
+RocketHideoutB1F_Blocks:
+	INCBIN "maps/RocketHideoutB1F.blk"
+
+SECTION "RocketHideoutB2F_Blocks", ROMX
+RocketHideoutB2F_Blocks:
+	INCBIN "maps/RocketHideoutB2F.blk"
+
+SECTION "RocketHideoutB3F_Blocks", ROMX
+RocketHideoutB3F_Blocks:
+	INCBIN "maps/RocketHideoutB3F.blk"
+
+SECTION "RocketHideoutB4F_Blocks", ROMX
+RocketHideoutB4F_Blocks:
+	INCBIN "maps/RocketHideoutB4F.blk"
+
+SECTION "RocketHideoutElevator_Blocks", ROMX
+RocketHideoutElevator_Blocks:
+	INCBIN "maps/RocketHideoutElevator.blk"
+
+SECTION "Route12Gate1F_Blocks", ROMX
+Route12Gate1F_Blocks:
+	INCBIN "maps/Route12Gate1F.blk"
+
+SECTION "Route16Gate1F_Blocks", ROMX
+Route16Gate1F_Blocks:
+	INCBIN "maps/Route16Gate1F.blk"
+
+SECTION "Route22Gate_Blocks", ROMX
+Route22Gate_Blocks:
+	INCBIN "maps/Route22Gate.blk"
+
+SECTION "SSAnne1F_Blocks", ROMX
+SSAnne1F_Blocks:
+	INCBIN "maps/SSAnne1F.blk"
+
+SECTION "SSAnne1FRooms_Blocks", ROMX
+SSAnne1FRooms_Blocks:
+	INCBIN "maps/SSAnne1FRooms.blk"
+
+SECTION "SSAnne2F_Blocks", ROMX
+SSAnne2F_Blocks:
+	INCBIN "maps/SSAnne2F.blk"
+
+SECTION "SSAnne3F_Blocks", ROMX
+SSAnne3F_Blocks:
+	INCBIN "maps/SSAnne3F.blk"
+
+SECTION "SSAnneB1F_Blocks", ROMX
+SSAnneB1F_Blocks:
+	INCBIN "maps/SSAnneB1F.blk"
+
+SECTION "SSAnneBow_Blocks", ROMX
+SSAnneBow_Blocks:
+	INCBIN "maps/SSAnneBow.blk"
+
+SECTION "SSAnneCaptainsRoom_Blocks", ROMX
+SSAnneCaptainsRoom_Blocks:
+	INCBIN "maps/SSAnneCaptainsRoom.blk"
+
+SECTION "SSAnneKitchen_Blocks", ROMX
+SSAnneKitchen_Blocks:
+	INCBIN "maps/SSAnneKitchen.blk"
+
+SECTION "SafariZoneCenter_Blocks", ROMX
+SafariZoneCenter_Blocks:
+	INCBIN "maps/SafariZoneCenter.blk"
+
+SECTION "SafariZoneEast_Blocks", ROMX
+SafariZoneEast_Blocks:
+	INCBIN "maps/SafariZoneEast.blk"
+
+SECTION "SafariZoneNorth_Blocks", ROMX
+SafariZoneNorth_Blocks:
+	INCBIN "maps/SafariZoneNorth.blk"
+
+SECTION "SafariZoneSecretHouse_Blocks", ROMX
+SafariZoneSecretHouse_Blocks:
+	INCBIN "maps/SafariZoneSecretHouse.blk"
+
+SECTION "SafariZoneWest_Blocks", ROMX
+SafariZoneWest_Blocks:
+	INCBIN "maps/SafariZoneWest.blk"
+
+SECTION "SaffronGym_Blocks", ROMX
+SaffronGym_Blocks:
+	INCBIN "maps/SaffronGym.blk"
+
+SECTION "SeafoamIslands1F_Blocks", ROMX
+SeafoamIslands1F_Blocks:
+	INCBIN "maps/SeafoamIslands1F.blk"
+
+SECTION "SeafoamIslandsB1F_Blocks", ROMX
+SeafoamIslandsB1F_Blocks:
+	INCBIN "maps/SeafoamIslandsB1F.blk"
+
+SECTION "SeafoamIslandsB2F_Blocks", ROMX
+SeafoamIslandsB2F_Blocks:
+	INCBIN "maps/SeafoamIslandsB2F.blk"
+
+SECTION "SeafoamIslandsB3F_Blocks", ROMX
+SeafoamIslandsB3F_Blocks:
+	INCBIN "maps/SeafoamIslandsB3F.blk"
+
+SECTION "SeafoamIslandsB4F_Blocks", ROMX
+SeafoamIslandsB4F_Blocks:
+	INCBIN "maps/SeafoamIslandsB4F.blk"
+
+SECTION "SilphCo1F_Blocks", ROMX
+SilphCo1F_Blocks:
+	INCBIN "maps/SilphCo1F.blk"
+
+SECTION "SilphCo2F_Blocks", ROMX
+SilphCo2F_Blocks:
+	INCBIN "maps/SilphCo2F.blk"
+
+SECTION "SilphCo3F_Blocks", ROMX
+SilphCo3F_Blocks:
+	INCBIN "maps/SilphCo3F.blk"
+
+SECTION "SilphCo4F_Blocks", ROMX
+SilphCo4F_Blocks:
+	INCBIN "maps/SilphCo4F.blk"
+
+SECTION "SilphCo5F_Blocks", ROMX
+SilphCo5F_Blocks:
+	INCBIN "maps/SilphCo5F.blk"
+
+SECTION "SilphCo6F_Blocks", ROMX
+SilphCo6F_Blocks:
+	INCBIN "maps/SilphCo6F.blk"
+
+SECTION "SilphCo7F_Blocks", ROMX
+SilphCo7F_Blocks:
+	INCBIN "maps/SilphCo7F.blk"
+
+SECTION "SilphCo8F_Blocks", ROMX
+SilphCo8F_Blocks:
+	INCBIN "maps/SilphCo8F.blk"
+
+SECTION "SilphCo9F_Blocks", ROMX
+SilphCo9F_Blocks:
+	INCBIN "maps/SilphCo9F.blk"
+
+SECTION "SilphCo10F_Blocks", ROMX
+SilphCo10F_Blocks:
+	INCBIN "maps/SilphCo10F.blk"
+
+SECTION "SilphCo11F_Blocks", ROMX
+SilphCo11F_Blocks:
+	INCBIN "maps/SilphCo11F.blk"
+
+SECTION "TradeCenterKanto_Blocks", ROMX
+TradeCenterKanto_Blocks:
+	INCBIN "maps/TradeCenterKanto.blk"
+
+SECTION "UndergroundPathNorthSouth_Blocks", ROMX
+UndergroundPathNorthSouth_Blocks:
+	INCBIN "maps/UndergroundPathNorthSouth.blk"
+
+SECTION "UndergroundPathWestEast_Blocks", ROMX
+UndergroundPathWestEast_Blocks:
+	INCBIN "maps/UndergroundPathWestEast.blk"
+
+SECTION "VermilionDock_Blocks", ROMX
+VermilionDock_Blocks:
+	INCBIN "maps/VermilionDock.blk"
+
+SECTION "VermilionGym_Blocks", ROMX
+VermilionGym_Blocks:
+	INCBIN "maps/VermilionGym.blk"
+
+SECTION "VictoryRoad1F_Blocks", ROMX
+VictoryRoad1F_Blocks:
+	INCBIN "maps/VictoryRoad1F.blk"
+
+SECTION "VictoryRoad2F_Blocks", ROMX
+VictoryRoad2F_Blocks:
+	INCBIN "maps/VictoryRoad2F.blk"
+
+SECTION "VictoryRoad3F_Blocks", ROMX
+VictoryRoad3F_Blocks:
+	INCBIN "maps/VictoryRoad3F.blk"
+
+SECTION "ViridianForest_Blocks", ROMX
+ViridianForest_Blocks:
+	INCBIN "maps/ViridianForest.blk"
+
+SECTION "ViridianGym_Blocks", ROMX
+ViridianGym_Blocks:
+	INCBIN "maps/ViridianGym.blk"
+
+SECTION "WardensHouse_Blocks", ROMX
+WardensHouse_Blocks:
+	INCBIN "maps/WardensHouse.blk"
