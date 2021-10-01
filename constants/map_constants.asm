@@ -385,7 +385,7 @@ NUM_MAP_GROUPS EQU const_value
 	map_const BIKE_SHOP,                                    4,  4
 	map_const BILLS_HOUSE,                                  4,  4
 	map_const BLUES_HOUSE,                                  4,  4
-	map_const BRUNOS_ROOM,                                  5,  6
+	map_const BRUNOS_ROOM_KANTO,                            5,  6
 	map_const CELADON_CHIEF_HOUSE,                          4,  4
 	map_const CELADON_DINER,                                5,  4
 	map_const CELADON_GYM,                                  5,  9
@@ -420,10 +420,10 @@ NUM_MAP_GROUPS EQU const_value
 	map_const CINNABAR_LAB_TRADE_ROOM,                      4,  4
 	map_const CINNABAR_MART,                                4,  4
 	map_const CINNABAR_POKECENTER,                          7,  4
-	map_const COLOSSEUM,                                    5,  4
+	map_const COLOSSEUM_KANTO,                              5,  4
 	map_const COPYCATS_HOUSE_1F,                            4,  4
 	map_const COPYCATS_HOUSE_2F,                            4,  4
-	map_const DAYCARE,                                      4,  4
+	map_const DAY_CARE_KANTO,                               4,  4
 	map_const DIGLETTS_CAVE,                               20, 18
 	map_const DIGLETTS_CAVE_ROUTE_2,                        4,  4
 	map_const DIGLETTS_CAVE_ROUTE_11,                       4,  4
@@ -436,9 +436,9 @@ NUM_MAP_GROUPS EQU const_value
 	map_const FUCHSIA_POKECENTER,                           7,  4
 	map_const GAME_CORNER,                                 10,  9
 	map_const GAME_CORNER_PRIZE_ROOM,                       5,  4
-	map_const HALL_OF_FAME,                                 5,  4
+	map_const HALL_OF_FAME_KANTO,                           5,  4
 	map_const INDIGO_PLATEAU_LOBBY,                         8,  6
-	map_const LANCES_ROOM,                                 13, 13
+	map_const LANCES_ROOM_KANTO,                           13, 13
 	map_const LAVENDER_CUBONE_HOUSE,                        4,  4
 	map_const LAVENDER_MART,                                4,  4
 	map_const LAVENDER_POKECENTER,                          7,  4
@@ -541,7 +541,7 @@ NUM_MAP_GROUPS EQU const_value
 	map_const SS_ANNE_BOW,                                 10,  7
 	map_const SS_ANNE_CAPTAINS_ROOM,                        3,  4
 	map_const SS_ANNE_KITCHEN,                              7,  8
-	map_const TRADE_CENTER,                                 5,  4
+	map_const TRADE_CENTER_KANTO,                           5,  4
 	map_const UNDERGROUND_PATH_NORTH_SOUTH,                 4, 24
 	map_const UNDERGROUND_PATH_ROUTE_5,                     4,  4
 	map_const UNDERGROUND_PATH_ROUTE_6,                     4,  4
