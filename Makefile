@@ -1,4 +1,4 @@
-roms := pokegold.gbc pokesilver.gbc pokegold_debug.gbc pokesilver_debug.gbc
+roms := dualgold.gbc dualblue.gbc
 
 rom_obj := \
 audio.o \
@@ -16,19 +16,15 @@ gfx/sprites.o \
 gfx/tilesets.o
 
 # Distinguish asm files which are game-exclusive for building (*_[gold|silver].asm)
-gs_excl_asm := \
+dual_excl_asm := \
 data/pokemon/dex_entries \
 gfx/pics
 
-gold_excl_obj := $(addsuffix _gold.o,$(gs_excl_asm))
-silver_excl_obj := $(addsuffix _silver.o,$(gs_excl_asm))
-gold_debug_excl_obj := $(addsuffix _gold_debug.o,$(gs_excl_asm))
-silver_debug_excl_obj := $(addsuffix _silver_debug.o,$(gs_excl_asm))
+gold_excl_obj := $(addsuffix _gold.o,$(dual_excl_asm))
+blue_excl_obj := $(addsuffix _silver.o,$(dual_excl_asm))
 
-pokegold_obj := $(rom_obj:.o=_gold.o) $(gold_excl_obj)
-pokesilver_obj := $(rom_obj:.o=_silver.o) $(silver_excl_obj)
-pokegold_debug_obj := $(rom_obj:.o=_gold_debug.o) $(gold_debug_excl_obj)
-pokesilver_debug_obj := $(rom_obj:.o=_silver_debug.o) $(silver_debug_excl_obj)
+dualgold_obj := $(rom_obj:.o=_gold.o) $(gold_excl_obj)
+dualblue_obj := $(rom_obj:.o=_silver.o) $(blue_excl_obj)
 
 
 ### Build tools
@@ -49,22 +45,20 @@ RGBLINK ?= $(RGBDS)rgblink
 ### Build targets
 
 .SUFFIXES:
-.PHONY: all gold silver gold_debug silver_debug clean tidy tools
+.PHONY: all gold blue clean tidy tools
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
 
 all: $(roms)
-gold:         pokegold.gbc
-silver:       pokesilver.gbc
-gold_debug:   pokegold_debug.gbc
-silver_debug: pokesilver_debug.gbc
+gold: dualgold.gbc
+blue: dualblue.gbc
 
 clean: tidy
 	find gfx \( -name "*.[12]bpp" -o -name "*.lz" -o -name "*.gbcpal" -o -name "*.dimensions" -o -name "*.sgb.tilemap" \) -delete
 
 tidy:
-	rm -f $(roms) $(pokegold_obj) $(pokesilver_obj) $(pokegold_debug_obj) $(pokesilver_debug_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
+	rm -f $(roms) $(dualgold_obj) $(dualblue_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
 	$(MAKE) clean -C tools/
 
 tools:
@@ -77,10 +71,8 @@ ifeq ($(DEBUG),1)
 RGBASMFLAGS += -E
 endif
 
-$(pokegold_obj):         RGBASMFLAGS += -D _GOLD
-$(pokesilver_obj):       RGBASMFLAGS += -D _SILVER
-$(pokegold_debug_obj):   RGBASMFLAGS += -D _GOLD -D _DEBUG
-$(pokesilver_debug_obj): RGBASMFLAGS += -D _SILVER -D _DEBUG
+$(dualgold_obj): RGBASMFLAGS += -D _GOLD
+$(dualblue_obj): RGBASMFLAGS += -D _SILVER
 
 rgbdscheck.o: rgbdscheck.asm
 	$(RGBASM) -o $@ $<
@@ -100,30 +92,20 @@ ifeq (,$(filter clean tidy tools,$(MAKECMDGOALS)))
 $(info $(shell $(MAKE) -C tools))
 
 # Dependencies for shared objects (drop _gold and _silver from asm file basenames)
-$(foreach obj, $(filter-out $(gold_excl_obj), $(pokegold_obj)), \
+$(foreach obj, $(filter-out $(gold_excl_obj), $(dualgold_obj)), \
 	$(eval $(call DEP,$(obj),$(obj:_gold.o=.asm))))
-$(foreach obj, $(filter-out $(silver_excl_obj), $(pokesilver_obj)), \
+$(foreach obj, $(filter-out $(blue_excl_obj), $(dualblue_obj)), \
 	$(eval $(call DEP,$(obj),$(obj:_silver.o=.asm))))
-$(foreach obj, $(filter-out $(gold_debug_excl_obj), $(pokegold_debug_obj)), \
-	$(eval $(call DEP,$(obj),$(obj:_gold_debug.o=.asm))))
-$(foreach obj, $(filter-out $(silver_debug_excl_obj), $(pokesilver_debug_obj)), \
-	$(eval $(call DEP,$(obj),$(obj:_silver_debug.o=.asm))))
 
 # Dependencies for game-exclusive objects (keep _gold and _silver in asm file basenames)
-$(foreach obj, $(gold_excl_obj) $(silver_excl_obj), \
+$(foreach obj, $(gold_excl_obj) $(blue_excl_obj), \
 	$(eval $(call DEP,$(obj),$(obj:.o=.asm))))
-$(foreach obj, $(gold_debug_excl_obj), \
-	$(eval $(call DEP,$(obj),$(obj:_gold_debug.o=_gold.asm))))
-$(foreach obj, $(silver_debug_excl_obj), \
-	$(eval $(call DEP,$(obj),$(obj:_silver_debug.o=_silver.asm))))
 
 endif
 
 
-pokegold_opt         = -cjsv -t POKEMON_GLD -i AAUE -k 01 -l 0x33 -m 0x10 -r 3 -p 0
-pokesilver_opt       = -cjsv -t POKEMON_SLV -i AAXE -k 01 -l 0x33 -m 0x10 -r 3 -p 0
-pokegold_debug_opt   = -cjsv -t POKEMON_GLD -i AAUE -k 01 -l 0x33 -m 0x10 -r 3 -p 0
-pokesilver_debug_opt = -cjsv -t POKEMON_SLV -i AAXE -k 01 -l 0x33 -m 0x10 -r 3 -p 0
+dualgold_opt = -cjsv -t POKEMON_GLD -i AAUE -k 01 -l 0x33 -m 0x10 -r 3 -p 0
+dualblue_opt = -cjsv -t POKEMON_BLU -i AAXE -k 01 -l 0x33 -m 0x10 -r 3 -p 0
 
 %.gbc: $$(%_obj) layout.link
 	$(RGBLINK) -n $*.sym -m $*.map -l layout.link -o $@ $(filter %.o,$^)
