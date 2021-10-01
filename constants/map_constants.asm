@@ -542,7 +542,7 @@ NUM_MAP_GROUPS EQU const_value
 	map_const SS_ANNE_CAPTAINS_ROOM,                        3,  4
 	map_const SS_ANNE_KITCHEN,                              7,  8
 	map_const TRADE_CENTER_KANTO,                           5,  4
-	map_const UNDERGROUND_PATH_NORTH_SOUTH,                 4, 24
+	map_const UNDERGROUND_PATH_NORTH_SOUTH,                 4, 23
 	map_const UNDERGROUND_PATH_ROUTE_5,                     4,  4
 	map_const UNDERGROUND_PATH_ROUTE_6,                     4,  4
 	map_const UNDERGROUND_PATH_ROUTE_7,                     4,  4
