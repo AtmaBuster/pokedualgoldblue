@@ -96,4 +96,49 @@ Music:
 	dba Music_LakeOfRageRocketRadio
 	dba Music_Printer
 	dba Music_PostCredits
+	dba Music_RBYPalletTown
+	dba Music_RBYPokecenter
+	dba Music_RBYGym
+	dba Music_RBYCities1
+	dba Music_RBYCities2
+	dba Music_RBYCeladon
+	dba Music_RBYCinnabar
+	dba Music_RBYVermilion
+	dba Music_RBYLavender
+	dba Music_RBYSSAnne
+	dba Music_RBYMeetProfOak
+	dba Music_RBYMeetRival
+	dba Music_RBYMuseumGuy
+	dba Music_RBYSafariZone
+	dba Music_RBYPkmnHealed
+	dba Music_RBYRoutes1
+	dba Music_RBYRoutes2
+	dba Music_RBYRoutes3
+	dba Music_RBYRoutes4
+	dba Music_RBYIndigoPlateau
+	dba Music_RBYGymLeaderBattle
+	dba Music_RBYTrainerBattle
+	dba Music_RBYWildBattle
+	dba Music_RBYFinalBattle
+	dba Music_RBYDefeatedTrainer
+	dba Music_RBYDefeatedWildMon
+	dba Music_RBYDefeatedGymLeader
+	dba Music_RBYTitleScreen
+	dba Music_RBYCredits
+	dba Music_RBYHallOfFame
+	dba Music_RBYOaksLab
+	dba Music_RBYJigglypuffSong
+	dba Music_RBYBikeRiding
+	dba Music_RBYSurfing
+	dba Music_RBYGameCorner
+	dba Music_RBYIntroBattle
+	dba Music_RBYDungeon1
+	dba Music_RBYDungeon2
+	dba Music_RBYDungeon3
+	dba Music_RBYCinnabarMansion
+	dba Music_RBYPokemonTower
+	dba Music_RBYSilphCo
+	dba Music_RBYMeetEvilTrainer
+	dba Music_RBYMeetFemaleTrainer
+	dba Music_RBYMeetMaleTrainer
 	assert_table_length NUM_MUSIC_SONGS
