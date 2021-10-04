@@ -175,7 +175,7 @@ StartTrainerBattle_DetermineWhichAnimation:
 	ld a, [wEnvironment]
 	cp CAVE
 	jr z, .cave
-	cp ENVIRONMENT_5
+	cp SHIP
 	jr z, .cave
 	cp DUNGEON
 	jr z, .cave

@@ -57,19 +57,23 @@ Landmarks:
 	landmark  52, 108, PalletTownName
 	landmark  52,  92, Route1Name
 	landmark  52,  76, ViridianCityName
-	landmark  52,  64, Route2Name
+	landmark  52,  68, Route2Name
+	landmark  52,  60, ViridianForestName
 	landmark  52,  52, PewterCityName
 	landmark  64,  52, Route3Name
 	landmark  76,  52, MtMoonName
 	landmark  88,  52, Route4Name
 	landmark 100,  52, CeruleanCityName
+	landmark  92,  44, CeruleanCaveName
 	landmark 100,  44, Route24Name
 	landmark 108,  36, Route25Name
+	landmark 116,  36, SeaCottageName
 	landmark 100,  60, Route5Name
 	landmark 108,  76, UndergroundName
 	landmark 100,  76, Route6Name
 	landmark 100,  84, VermilionCityName
 	landmark  88,  60, DiglettsCaveName
+	landmark 100,  92, SSAnneName
 	landmark  88,  68, Route7Name
 	landmark 116,  68, Route8Name
 	landmark 116,  52, Route9Name
@@ -78,8 +82,11 @@ Landmarks:
 	landmark 132,  60, PowerPlantName
 	landmark 132,  68, LavenderTownName
 	landmark 140,  68, LavRadioTowerName
+	landmark 140,  68, PokemonTowerName
 	landmark  76,  68, CeladonCityName
+	landmark  76,  68, RocketHQName
 	landmark 100,  68, SaffronCityName
+	landmark 100,  68, SilphCoName
 	landmark 116,  84, Route11Name
 	landmark 132,  80, Route12Name
 	landmark 124, 100, Route13Name
@@ -89,10 +96,12 @@ Landmarks:
 	landmark  68,  92, Route17Name
 	landmark  80, 116, Route18Name
 	landmark  92, 116, FuchsiaCityName
+	landmark  92, 108, SafariZoneName
 	landmark  92, 128, Route19Name
 	landmark  76, 132, Route20Name
 	landmark  68, 132, SeafoamIslandsName
 	landmark  52, 132, CinnabarIslandName
+	landmark  52, 128, PokemonMansionName
 	landmark  52, 120, Route21Name
 	landmark  36,  68, Route22Name
 	landmark  28,  52, VictoryRoadName
@@ -141,16 +150,16 @@ CeladonCityName:     db "CELADON¯CITY@"
 SaffronCityName:     db "SAFFRON¯CITY@"
 FuchsiaCityName:     db "FUCHSIA¯CITY@"
 CinnabarIslandName:  db "CINNABAR¯ISLAND@"
-IndigoPlateauName:   db "INDIGO¯PLATEAU@"
+IndigoPlateauName:   db "#MON¯LEAGUE@"
 VictoryRoadName:     db "VICTORY¯ROAD@"
 MtMoonName:          db "MT.MOON@"
 RockTunnelName:      db "ROCK TUNNEL@"
 LavRadioTowerName:   db "LAV¯RADIO TOWER@"
-SilphCoName:         db "SILPH CO.@" ; unreferenced
-SafariZoneName:      db "SAFARI ZONE@" ; unreferenced
+SilphCoName:         db "SILPH CO.@"
+SafariZoneName:      db "SAFARI ZONE@"
 SeafoamIslandsName:  db "SEAFOAM¯ISLANDS@"
-PokemonMansionName:  db "#MON¯MANSION@" ; unreferenced
-CeruleanCaveName:    db "CERULEAN¯CAVE@" ; unreferenced
+PokemonMansionName:  db "#MON¯MANSION@"
+CeruleanCaveName:    db "CERULEAN¯CAVE@"
 Route1Name:          db "ROUTE 1@"
 Route2Name:          db "ROUTE 2@"
 Route3Name:          db "ROUTE 3@"
@@ -169,9 +178,9 @@ Route15Name:         db "ROUTE 15@"
 Route16Name:         db "ROUTE 16@"
 Route17Name:         db "ROUTE 17@"
 Route18Name:         db "ROUTE 18@"
-Route19Name:         db "ROUTE 19@"
-Route20Name:         db "ROUTE 20@"
-Route21Name:         db "ROUTE 21@"
+Route19Name:         db "SEA ROUTE¯19@"
+Route20Name:         db "SEA ROUTE¯20@"
+Route21Name:         db "SEA ROUTE¯21@"
 Route22Name:         db "ROUTE 22@"
 Route23Name:         db "ROUTE 23@"
 Route24Name:         db "ROUTE 24@"
@@ -201,8 +210,12 @@ DarkCaveName:        db "DARK CAVE@"
 IlexForestName:      db "ILEX¯FOREST@"
 BurnedTowerName:     db "BURNED¯TOWER@"
 FastShipName:        db "FAST SHIP@"
-ViridianForestName:  db "VIRIDIAN¯FOREST@" ; unreferenced
+ViridianForestName:  db "VIRIDIAN¯FOREST@"
 DiglettsCaveName:    db "DIGLETT's¯CAVE@"
 TohjoFallsName:      db "TOHJO FALLS@"
-UndergroundName:     db "UNDERGROUND@"
+UndergroundName:     db "UNDERGROUND¯PATH@"
+SeaCottageName:      db "SEA¯COTTAGE@"
+SSAnneName:          db "S.S.ANNE@"
+PokemonTowerName:    db "#MON¯TOWER@"
+RocketHQName:        db "ROCKET HQ@"
 SpecialMapName:      db "SPECIAL@"

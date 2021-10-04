@@ -233,7 +233,7 @@ CheckUnknownMap:: ; unreferenced
 	ret z
 	cp GATE
 	ret z
-	cp ENVIRONMENT_5
+	cp SHIP
 	ret
 
 LoadMapAttributes::

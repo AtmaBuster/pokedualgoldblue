@@ -542,8 +542,8 @@ endr
 	jr z, .cave
 	cp DUNGEON
 	jr z, .cave
-	cp ENVIRONMENT_5
-	jr z, .env5
+	cp SHIP
+	jr z, .ship
 	cp GATE
 	jr z, .gate
 	ld a, [wMapGroup]
@@ -562,7 +562,7 @@ endr
 	ld a, PREDEFPAL_DUNGEONS
 	ret
 
-.env5
+.ship
 	ld a, PREDEFPAL_VERMILION
 	ret
 

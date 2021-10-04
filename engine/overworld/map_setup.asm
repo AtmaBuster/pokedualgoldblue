@@ -132,7 +132,7 @@ CheckUpdatePlayerSprite::
 	call GetMapEnvironment
 	cp INDOOR
 	jr z, .no_biking
-	cp ENVIRONMENT_5
+	cp SHIP
 	jr z, .no_biking
 	cp DUNGEON
 	jr z, .no_biking
