@@ -82,9 +82,10 @@ ROMX $24
 	"bank24"
 ROMX $25
 	"Maps"
-	"Events"
 ROMX $26
 	"Title Screen"
+ROMX $27
+	"Events"
 ROMX $2e
 	"bank2E"
 ROMX $30

@@ -573,10 +573,7 @@ ENDM
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 
-
 ; TODO: correct border blocks for Kanto maps
-
-/*
 	map_attributes AgathasRoom, AGATHAS_ROOM, $00, 0
 	map_attributes BikeShop, BIKE_SHOP, $00, 0
 	map_attributes BillsHouse, BILLS_HOUSE, $00, 0
@@ -763,4 +760,3 @@ ENDM
 	map_attributes ViridianPokecenter, VIRIDIAN_POKECENTER, $00, 0
 	map_attributes ViridianSchoolHouse, VIRIDIAN_SCHOOL_HOUSE, $00, 0
 	map_attributes WardensHouse, WARDENS_HOUSE, $00, 0
-*/

@@ -393,193 +393,375 @@ INCLUDE "maps/MrPokemonsHouse.asm"
 INCLUDE "maps/Route31VioletGate.asm"
 
 
-; TODO: place Kanto maps
-
-/*
+floating_section
 INCLUDE "maps/AgathasRoom.asm"
+floating_section
 INCLUDE "maps/BikeShop.asm"
+floating_section
 INCLUDE "maps/BillsHouse.asm"
+floating_section
 INCLUDE "maps/BluesHouse.asm"
+floating_section
 INCLUDE "maps/BrunosRoomKanto.asm"
+floating_section
 INCLUDE "maps/CeladonChiefHouse.asm"
+floating_section
 INCLUDE "maps/CeladonDiner.asm"
+floating_section
 INCLUDE "maps/CeladonGym.asm"
+floating_section
 INCLUDE "maps/CeladonHotel.asm"
+floating_section
 INCLUDE "maps/CeladonMansion1F.asm"
+floating_section
 INCLUDE "maps/CeladonMansion2F.asm"
+floating_section
 INCLUDE "maps/CeladonMansion3F.asm"
+floating_section
 INCLUDE "maps/CeladonMansionRoof.asm"
+floating_section
 INCLUDE "maps/CeladonMansionRoofHouse.asm"
+floating_section
 INCLUDE "maps/CeladonMart1F.asm"
+floating_section
 INCLUDE "maps/CeladonMart2F.asm"
+floating_section
 INCLUDE "maps/CeladonMart3F.asm"
+floating_section
 INCLUDE "maps/CeladonMart4F.asm"
+floating_section
 INCLUDE "maps/CeladonMart5F.asm"
+floating_section
 INCLUDE "maps/CeladonMartElevator.asm"
+floating_section
 INCLUDE "maps/CeladonMartRoof.asm"
+floating_section
 INCLUDE "maps/CeladonPokecenter.asm"
+floating_section
 INCLUDE "maps/CeruleanBadgeHouse.asm"
+floating_section
 INCLUDE "maps/CeruleanCave1F.asm"
+floating_section
 INCLUDE "maps/CeruleanCave2F.asm"
+floating_section
 INCLUDE "maps/CeruleanCaveB1F.asm"
+floating_section
 INCLUDE "maps/CeruleanGym.asm"
+floating_section
 INCLUDE "maps/CeruleanMart.asm"
+floating_section
 INCLUDE "maps/CeruleanPokecenter.asm"
+floating_section
 INCLUDE "maps/CeruleanTradeHouse.asm"
+floating_section
 INCLUDE "maps/CeruleanTrashedHouse.asm"
+floating_section
 INCLUDE "maps/ChampionsRoom.asm"
+floating_section
 INCLUDE "maps/CinnabarGym.asm"
+floating_section
 INCLUDE "maps/CinnabarLab.asm"
+floating_section
 INCLUDE "maps/CinnabarLabFossilRoom.asm"
+floating_section
 INCLUDE "maps/CinnabarLabMetronomeRoom.asm"
+floating_section
 INCLUDE "maps/CinnabarLabTradeRoom.asm"
+floating_section
 INCLUDE "maps/CinnabarMart.asm"
+floating_section
 INCLUDE "maps/CinnabarPokecenter.asm"
+floating_section
 INCLUDE "maps/ColosseumKanto.asm"
+floating_section
 INCLUDE "maps/CopycatsHouse1F.asm"
+floating_section
 INCLUDE "maps/CopycatsHouse2F.asm"
+floating_section
 INCLUDE "maps/DayCareKanto.asm"
+floating_section
 INCLUDE "maps/DiglettsCave.asm"
+floating_section
 INCLUDE "maps/DiglettsCaveRoute2.asm"
+floating_section
 INCLUDE "maps/DiglettsCaveRoute11.asm"
+floating_section
 INCLUDE "maps/FightingDojo.asm"
+floating_section
 INCLUDE "maps/FuchsiaBillsGrandpasHouse.asm"
+floating_section
 INCLUDE "maps/FuchsiaGoodRodHouse.asm"
+floating_section
 INCLUDE "maps/FuchsiaGym.asm"
+floating_section
 INCLUDE "maps/FuchsiaMart.asm"
+floating_section
 INCLUDE "maps/FuchsiaMeetingRoom.asm"
+floating_section
 INCLUDE "maps/FuchsiaPokecenter.asm"
+floating_section
 INCLUDE "maps/GameCorner.asm"
+floating_section
 INCLUDE "maps/GameCornerPrizeRoom.asm"
+floating_section
 INCLUDE "maps/HallOfFameKanto.asm"
+floating_section
 INCLUDE "maps/IndigoPlateauLobby.asm"
+floating_section
 INCLUDE "maps/LancesRoomKanto.asm"
+floating_section
 INCLUDE "maps/LavenderCuboneHouse.asm"
+floating_section
 INCLUDE "maps/LavenderMart.asm"
+floating_section
 INCLUDE "maps/LavenderPokecenter.asm"
+floating_section
 INCLUDE "maps/LoreleisRoom.asm"
+floating_section
 INCLUDE "maps/MrFujisHouse.asm"
+floating_section
 INCLUDE "maps/MrPsychicsHouse.asm"
+floating_section
 INCLUDE "maps/MtMoon1F.asm"
+floating_section
 INCLUDE "maps/MtMoonB1F.asm"
+floating_section
 INCLUDE "maps/MtMoonB2F.asm"
+floating_section
 INCLUDE "maps/MtMoonPokecenter.asm"
+floating_section
 INCLUDE "maps/Museum1F.asm"
+floating_section
 INCLUDE "maps/Museum2F.asm"
+floating_section
 INCLUDE "maps/NameRatersHouse.asm"
+floating_section
 INCLUDE "maps/OaksLab.asm"
+floating_section
 INCLUDE "maps/PewterGym.asm"
+floating_section
 INCLUDE "maps/PewterMart.asm"
+floating_section
 INCLUDE "maps/PewterNidoranHouse.asm"
+floating_section
 INCLUDE "maps/PewterPokecenter.asm"
+floating_section
 INCLUDE "maps/PewterSpeechHouse.asm"
+floating_section
 INCLUDE "maps/PokemonFanClub.asm"
+floating_section
 INCLUDE "maps/PokemonMansion1F.asm"
+floating_section
 INCLUDE "maps/PokemonMansion2F.asm"
+floating_section
 INCLUDE "maps/PokemonMansion3F.asm"
+floating_section
 INCLUDE "maps/PokemonMansionB1F.asm"
+floating_section
 INCLUDE "maps/PokemonTower1F.asm"
+floating_section
 INCLUDE "maps/PokemonTower2F.asm"
+floating_section
 INCLUDE "maps/PokemonTower3F.asm"
+floating_section
 INCLUDE "maps/PokemonTower4F.asm"
+floating_section
 INCLUDE "maps/PokemonTower5F.asm"
+floating_section
 INCLUDE "maps/PokemonTower6F.asm"
+floating_section
 INCLUDE "maps/PokemonTower7F.asm"
+floating_section
 INCLUDE "maps/PowerPlant.asm"
+floating_section
 INCLUDE "maps/RedsHouse1F.asm"
+floating_section
 INCLUDE "maps/RedsHouse2F.asm"
+floating_section
 INCLUDE "maps/RocketHideoutB1F.asm"
+floating_section
 INCLUDE "maps/RocketHideoutB2F.asm"
+floating_section
 INCLUDE "maps/RocketHideoutB3F.asm"
+floating_section
 INCLUDE "maps/RocketHideoutB4F.asm"
+floating_section
 INCLUDE "maps/RocketHideoutElevator.asm"
+floating_section
 INCLUDE "maps/RockTunnel1F.asm"
+floating_section
 INCLUDE "maps/RockTunnelB1F.asm"
+floating_section
 INCLUDE "maps/RockTunnelPokecenter.asm"
+floating_section
 INCLUDE "maps/Route2Gate.asm"
+floating_section
 INCLUDE "maps/Route2TradeHouse.asm"
+floating_section
 INCLUDE "maps/Route5Gate.asm"
+floating_section
 INCLUDE "maps/Route6Gate.asm"
+floating_section
 INCLUDE "maps/Route7Gate.asm"
+floating_section
 INCLUDE "maps/Route8Gate.asm"
+floating_section
 INCLUDE "maps/Route11Gate1F.asm"
+floating_section
 INCLUDE "maps/Route11Gate2F.asm"
+floating_section
 INCLUDE "maps/Route12Gate1F.asm"
+floating_section
 INCLUDE "maps/Route12Gate2F.asm"
+floating_section
 INCLUDE "maps/Route12SuperRodHouse.asm"
+floating_section
 INCLUDE "maps/Route15Gate1F.asm"
+floating_section
 INCLUDE "maps/Route15Gate2F.asm"
+floating_section
 INCLUDE "maps/Route16FlyHouse.asm"
+floating_section
 INCLUDE "maps/Route16Gate1F.asm"
+floating_section
 INCLUDE "maps/Route16Gate2F.asm"
+floating_section
 INCLUDE "maps/Route18Gate1F.asm"
+floating_section
 INCLUDE "maps/Route18Gate2F.asm"
+floating_section
 INCLUDE "maps/Route22Gate.asm"
+floating_section
 INCLUDE "maps/SafariZoneCenter.asm"
+floating_section
 INCLUDE "maps/SafariZoneCenterRestHouse.asm"
+floating_section
 INCLUDE "maps/SafariZoneEast.asm"
+floating_section
 INCLUDE "maps/SafariZoneEastRestHouse.asm"
+floating_section
 INCLUDE "maps/SafariZoneGate.asm"
+floating_section
 INCLUDE "maps/SafariZoneNorth.asm"
+floating_section
 INCLUDE "maps/SafariZoneNorthRestHouse.asm"
+floating_section
 INCLUDE "maps/SafariZoneSecretHouse.asm"
+floating_section
 INCLUDE "maps/SafariZoneWest.asm"
+floating_section
 INCLUDE "maps/SafariZoneWestRestHouse.asm"
+floating_section
 INCLUDE "maps/SaffronGym.asm"
+floating_section
 INCLUDE "maps/SaffronMart.asm"
+floating_section
 INCLUDE "maps/SaffronPidgeyHouse.asm"
+floating_section
 INCLUDE "maps/SaffronPokecenter.asm"
+floating_section
 INCLUDE "maps/SeafoamIslands1F.asm"
+floating_section
 INCLUDE "maps/SeafoamIslandsB1F.asm"
+floating_section
 INCLUDE "maps/SeafoamIslandsB2F.asm"
+floating_section
 INCLUDE "maps/SeafoamIslandsB3F.asm"
+floating_section
 INCLUDE "maps/SeafoamIslandsB4F.asm"
+floating_section
 INCLUDE "maps/SilphCo1F.asm"
+floating_section
 INCLUDE "maps/SilphCo2F.asm"
+floating_section
 INCLUDE "maps/SilphCo3F.asm"
+floating_section
 INCLUDE "maps/SilphCo4F.asm"
+floating_section
 INCLUDE "maps/SilphCo5F.asm"
+floating_section
 INCLUDE "maps/SilphCo6F.asm"
+floating_section
 INCLUDE "maps/SilphCo7F.asm"
+floating_section
 INCLUDE "maps/SilphCo8F.asm"
+floating_section
 INCLUDE "maps/SilphCo9F.asm"
+floating_section
 INCLUDE "maps/SilphCo10F.asm"
+floating_section
 INCLUDE "maps/SilphCo11F.asm"
+floating_section
 INCLUDE "maps/SilphCoElevator.asm"
+floating_section
 INCLUDE "maps/SSAnne1F.asm"
+floating_section
 INCLUDE "maps/SSAnne1FRooms.asm"
+floating_section
 INCLUDE "maps/SSAnne2F.asm"
+floating_section
 INCLUDE "maps/SSAnne2FRooms.asm"
+floating_section
 INCLUDE "maps/SSAnne3F.asm"
+floating_section
 INCLUDE "maps/SSAnneB1F.asm"
+floating_section
 INCLUDE "maps/SSAnneB1FRooms.asm"
+floating_section
 INCLUDE "maps/SSAnneBow.asm"
+floating_section
 INCLUDE "maps/SSAnneCaptainsRoom.asm"
+floating_section
 INCLUDE "maps/SSAnneKitchen.asm"
+floating_section
 INCLUDE "maps/TradeCenterKanto.asm"
+floating_section
 INCLUDE "maps/UndergroundPathNorthSouth.asm"
+floating_section
 INCLUDE "maps/UndergroundPathRoute5.asm"
+floating_section
 INCLUDE "maps/UndergroundPathRoute6.asm"
+floating_section
 INCLUDE "maps/UndergroundPathRoute7.asm"
+floating_section
 INCLUDE "maps/UndergroundPathRoute8.asm"
+floating_section
 INCLUDE "maps/UndergroundPathWestEast.asm"
+floating_section
 INCLUDE "maps/VermilionDock.asm"
+floating_section
 INCLUDE "maps/VermilionGym.asm"
+floating_section
 INCLUDE "maps/VermilionMart.asm"
+floating_section
 INCLUDE "maps/VermilionOldRodHouse.asm"
+floating_section
 INCLUDE "maps/VermilionPidgeyHouse.asm"
+floating_section
 INCLUDE "maps/VermilionPokecenter.asm"
+floating_section
 INCLUDE "maps/VermilionTradeHouse.asm"
+floating_section
 INCLUDE "maps/VictoryRoad1F.asm"
+floating_section
 INCLUDE "maps/VictoryRoad2F.asm"
+floating_section
 INCLUDE "maps/VictoryRoad3F.asm"
+floating_section
 INCLUDE "maps/ViridianForest.asm"
+floating_section
 INCLUDE "maps/ViridianForestNorthGate.asm"
+floating_section
 INCLUDE "maps/ViridianForestSouthGate.asm"
+floating_section
 INCLUDE "maps/ViridianGym.asm"
+floating_section
 INCLUDE "maps/ViridianMart.asm"
+floating_section
 INCLUDE "maps/ViridianNicknameHouse.asm"
+floating_section
 INCLUDE "maps/ViridianPokecenter.asm"
+floating_section
 INCLUDE "maps/ViridianSchoolHouse.asm"
+floating_section
 INCLUDE "maps/WardensHouse.asm"
-*/
