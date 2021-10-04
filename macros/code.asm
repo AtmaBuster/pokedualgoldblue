@@ -1,3 +1,7 @@
+; Structure macros
+
+floating_section EQUS "SECTION STRFMT(\"Floating Section (%s:%d)\", __FILE__, __LINE__), ROMX"
+
 ; Syntactic sugar macros
 
 lb: MACRO ; r, hi, lo

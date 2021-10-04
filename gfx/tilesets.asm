@@ -6,539 +6,539 @@ tilecoll: MACRO
 ENDM
 
 
-SECTION "TilesetKantoMeta", ROMX
+floating_section
 TilesetKantoMeta::
 INCBIN "data/tilesets/kanto_metatiles.bin"
 
-SECTION "TilesetKantoColl", ROMX
+floating_section
 TilesetKantoColl::
 INCLUDE "data/tilesets/kanto_collision.asm"
 
-SECTION "TilesetJohtoGFX", ROMX
+floating_section
 Tileset0GFX::
 TilesetJohtoGFX::
 INCBIN "gfx/tilesets/johto.2bpp.lz"
 
-SECTION "TilesetJohtoMeta", ROMX
+floating_section
 Tileset0Meta::
 TilesetJohtoMeta::
 INCBIN "data/tilesets/johto_metatiles.bin"
 
-SECTION "TilesetJohtoColl", ROMX
+floating_section
 Tileset0Coll::
 TilesetJohtoColl::
 INCLUDE "data/tilesets/johto_collision.asm"
 
-SECTION "TilesetJohtoModernGFX", ROMX
+floating_section
 TilesetJohtoModernGFX::
 INCBIN "gfx/tilesets/johto_modern.2bpp.lz"
 
-SECTION "TilesetJohtoModernMeta", ROMX
+floating_section
 TilesetJohtoModernMeta::
 INCBIN "data/tilesets/johto_modern_metatiles.bin"
 
-SECTION "TilesetJohtoModernColl", ROMX
+floating_section
 TilesetJohtoModernColl::
 INCLUDE "data/tilesets/johto_modern_collision.asm"
 
-SECTION "TilesetTraditionalHouseGFX", ROMX
+floating_section
 TilesetTraditionalHouseGFX::
 INCBIN "gfx/tilesets/traditional_house.2bpp.lz"
 
-SECTION "TilesetTraditionalHouseMeta", ROMX
+floating_section
 TilesetTraditionalHouseMeta::
 INCBIN "data/tilesets/traditional_house_metatiles.bin"
 
-SECTION "TilesetTraditionalHouseColl", ROMX
+floating_section
 TilesetTraditionalHouseColl::
 INCLUDE "data/tilesets/traditional_house_collision.asm"
 
-SECTION "TilesetGateGFX", ROMX
+floating_section
 TilesetGateGFX::
 INCBIN "gfx/tilesets/gate.2bpp.lz"
 
-SECTION "TilesetGateMeta", ROMX
+floating_section
 TilesetGateMeta::
 INCBIN "data/tilesets/gate_metatiles.bin"
 
-SECTION "TilesetGateColl", ROMX
+floating_section
 TilesetGateColl::
 INCLUDE "data/tilesets/gate_collision.asm"
 
-SECTION "TilesetPokecenterGFX", ROMX
+floating_section
 TilesetPokecenterGFX::
 INCBIN "gfx/tilesets/pokecenter.2bpp.lz"
 
-SECTION "TilesetPokecenterMeta", ROMX
+floating_section
 TilesetPokecenterMeta::
 INCBIN "data/tilesets/pokecenter_metatiles.bin"
 
-SECTION "TilesetPokecenterColl", ROMX
+floating_section
 TilesetPokecenterColl::
 INCLUDE "data/tilesets/pokecenter_collision.asm"
 
-SECTION "TilesetPortGFX", ROMX
+floating_section
 TilesetPortGFX::
 INCBIN "gfx/tilesets/port.2bpp.lz"
 
-SECTION "TilesetPortMeta", ROMX
+floating_section
 TilesetPortMeta::
 INCBIN "data/tilesets/port_metatiles.bin"
 
-SECTION "TilesetPortColl", ROMX
+floating_section
 TilesetPortColl::
 INCLUDE "data/tilesets/port_collision.asm"
 
-SECTION "TilesetPlayersHouseGFX", ROMX
+floating_section
 TilesetPlayersHouseGFX::
 INCBIN "gfx/tilesets/players_house.2bpp.lz"
 
-SECTION "TilesetPlayersHouseMeta", ROMX
+floating_section
 TilesetPlayersHouseMeta::
 INCBIN "data/tilesets/players_house_metatiles.bin"
 
-SECTION "TilesetPlayersHouseColl", ROMX
+floating_section
 TilesetPlayersHouseColl::
 INCLUDE "data/tilesets/players_house_collision.asm"
 
-SECTION "TilesetMansionGFX", ROMX
+floating_section
 TilesetMansionGFX::
 INCBIN "gfx/tilesets/mansion.2bpp.lz"
 
-SECTION "TilesetMansionMeta", ROMX
+floating_section
 TilesetMansionMeta::
 INCBIN "data/tilesets/mansion_metatiles.bin"
 
-SECTION "TilesetMansionColl", ROMX
+floating_section
 TilesetMansionColl::
 INCLUDE "data/tilesets/mansion_collision.asm"
 
-SECTION "TilesetCaveGFX", ROMX
+floating_section
 TilesetCaveGFX::
 INCBIN "gfx/tilesets/cave.2bpp.lz"
 
-SECTION "TilesetCaveMeta", ROMX
+floating_section
 TilesetCaveMeta::
 TilesetDarkCaveMeta::
 INCBIN "data/tilesets/cave_metatiles.bin"
 
-SECTION "TilesetCaveColl", ROMX
+floating_section
 TilesetCaveColl::
 TilesetDarkCaveColl::
 INCLUDE "data/tilesets/cave_collision.asm"
 
-SECTION "TilesetTowerGFX", ROMX
+floating_section
 TilesetTowerGFX::
 INCBIN "gfx/tilesets/tower.2bpp.lz"
 
-SECTION "TilesetTowerMeta", ROMX
+floating_section
 TilesetTowerMeta::
 INCBIN "data/tilesets/tower_metatiles.bin"
 
-SECTION "TilesetTowerColl", ROMX
+floating_section
 TilesetTowerColl::
 INCLUDE "data/tilesets/tower_collision.asm"
 
-SECTION "TilesetLabGFX", ROMX
+floating_section
 TilesetLabGFX::
 INCBIN "gfx/tilesets/lab.2bpp.lz"
 
-SECTION "TilesetLabMeta", ROMX
+floating_section
 TilesetLabMeta::
 INCBIN "data/tilesets/lab_metatiles.bin"
 
-SECTION "TilesetLabColl", ROMX
+floating_section
 TilesetLabColl::
 INCLUDE "data/tilesets/lab_collision.asm"
 
-SECTION "TilesetFacilityGFX", ROMX
+floating_section
 TilesetFacilityGFX::
 INCBIN "gfx/tilesets/facility.2bpp.lz"
 
-SECTION "TilesetFacilityMeta", ROMX
+floating_section
 TilesetFacilityMeta::
 INCBIN "data/tilesets/facility_metatiles.bin"
 
-SECTION "TilesetFacilityColl", ROMX
+floating_section
 TilesetFacilityColl::
 INCLUDE "data/tilesets/facility_collision.asm"
 
-SECTION "TilesetMartGFX", ROMX
+floating_section
 TilesetMartGFX::
 INCBIN "gfx/tilesets/mart.2bpp.lz"
 
-SECTION "TilesetMartMeta", ROMX
+floating_section
 TilesetMartMeta::
 INCBIN "data/tilesets/mart_metatiles.bin"
 
-SECTION "TilesetMartColl", ROMX
+floating_section
 TilesetMartColl::
 INCLUDE "data/tilesets/mart_collision.asm"
 
-SECTION "TilesetGameCornerGFX", ROMX
+floating_section
 TilesetGameCornerGFX::
 INCBIN "gfx/tilesets/game_corner.2bpp.lz"
 
-SECTION "TilesetGameCornerMeta", ROMX
+floating_section
 TilesetGameCornerMeta::
 INCBIN "data/tilesets/game_corner_metatiles.bin"
 
-SECTION "TilesetGameCornerColl", ROMX
+floating_section
 TilesetGameCornerColl::
 INCLUDE "data/tilesets/game_corner_collision.asm"
 
-SECTION "TilesetTrainStationGFX", ROMX
+floating_section
 TilesetTrainStationGFX::
 INCBIN "gfx/tilesets/train_station.2bpp.lz"
 
-SECTION "TilesetTrainStationMeta", ROMX
+floating_section
 TilesetTrainStationMeta::
 INCBIN "data/tilesets/train_station_metatiles.bin"
 
-SECTION "TilesetTrainStationColl", ROMX
+floating_section
 TilesetTrainStationColl::
 INCLUDE "data/tilesets/train_station_collision.asm"
 
-SECTION "TilesetForestMeta", ROMX
+floating_section
 TilesetForestMeta::
 INCBIN "data/tilesets/forest_metatiles.bin"
 
-SECTION "TilesetEliteFourRoomGFX", ROMX
+floating_section
 TilesetEliteFourRoomGFX::
 INCBIN "gfx/tilesets/elite_four_room.2bpp.lz"
 
-SECTION "TilesetEliteFourRoomMeta", ROMX
+floating_section
 TilesetEliteFourRoomMeta::
 INCBIN "data/tilesets/elite_four_room_metatiles.bin"
 
-SECTION "TilesetEliteFourRoomColl", ROMX
+floating_section
 TilesetEliteFourRoomColl::
 INCLUDE "data/tilesets/elite_four_room_collision.asm"
 
-SECTION "TilesetParkGFX", ROMX
+floating_section
 TilesetParkGFX::
 INCBIN "gfx/tilesets/park.2bpp.lz"
 
-SECTION "TilesetParkMeta", ROMX
+floating_section
 TilesetParkMeta::
 INCBIN "data/tilesets/park_metatiles.bin"
 
-SECTION "TilesetParkColl", ROMX
+floating_section
 TilesetParkColl::
 INCLUDE "data/tilesets/park_collision.asm"
 
-SECTION "TilesetRuinsOfAlphGFX", ROMX
+floating_section
 TilesetRuinsOfAlphGFX::
 INCBIN "gfx/tilesets/ruins_of_alph.2bpp.lz"
 
-SECTION "TilesetRuinsOfAlphMeta", ROMX
+floating_section
 TilesetRuinsOfAlphMeta::
 INCBIN "data/tilesets/ruins_of_alph_metatiles.bin"
 
-SECTION "TilesetRuinsOfAlphColl", ROMX
+floating_section
 TilesetRuinsOfAlphColl::
 INCLUDE "data/tilesets/ruins_of_alph_collision.asm"
 
-SECTION "TilesetRadioTowerGFX", ROMX
+floating_section
 TilesetRadioTowerGFX::
 INCBIN "gfx/tilesets/radio_tower.2bpp.lz"
 
-SECTION "TilesetRadioTowerMeta", ROMX
+floating_section
 TilesetRadioTowerMeta::
 INCBIN "data/tilesets/radio_tower_metatiles.bin"
 
-SECTION "TilesetRadioTowerColl", ROMX
+floating_section
 TilesetRadioTowerColl::
 INCLUDE "data/tilesets/radio_tower_collision.asm"
 
-SECTION "TilesetUndergroundGFX", ROMX
+floating_section
 TilesetUndergroundGFX::
 INCBIN "gfx/tilesets/underground.2bpp.lz"
 
-SECTION "TilesetUndergroundMeta", ROMX
+floating_section
 TilesetUndergroundMeta::
 INCBIN "data/tilesets/underground_metatiles.bin"
 
-SECTION "TilesetUndergroundColl", ROMX
+floating_section
 TilesetUndergroundColl::
 INCLUDE "data/tilesets/underground_collision.asm"
 
-SECTION "TilesetIcePathGFX", ROMX
+floating_section
 TilesetIcePathGFX::
 INCBIN "gfx/tilesets/ice_path.2bpp.lz"
 
-SECTION "TilesetIcePathMeta", ROMX
+floating_section
 TilesetIcePathMeta::
 INCBIN "data/tilesets/ice_path_metatiles.bin"
 
-SECTION "TilesetIcePathColl", ROMX
+floating_section
 TilesetIcePathColl::
 INCLUDE "data/tilesets/ice_path_collision.asm"
 
-SECTION "TilesetDarkCaveGFX", ROMX
+floating_section
 TilesetDarkCaveGFX::
 INCBIN "gfx/tilesets/dark_cave.2bpp.lz"
 
-SECTION "TilesetForestGFX", ROMX
+floating_section
 TilesetForestGFX::
 INCBIN "gfx/tilesets/forest.2bpp.lz"
 
-SECTION "TilesetChampionsRoomGFX", ROMX
+floating_section
 TilesetChampionsRoomGFX::
 INCBIN "gfx/tilesets/champions_room.2bpp.lz"
 
-SECTION "TilesetChampionsRoomMeta", ROMX
+floating_section
 TilesetChampionsRoomMeta::
 INCBIN "data/tilesets/champions_room_metatiles.bin"
 
-SECTION "TilesetChampionsRoomColl", ROMX
+floating_section
 TilesetChampionsRoomColl::
 INCLUDE "data/tilesets/champions_room_collision.asm"
 
-SECTION "TilesetHouseGFX", ROMX
+floating_section
 TilesetHouseGFX::
 INCBIN "gfx/tilesets/house.2bpp.lz"
 
-SECTION "TilesetHouseMeta", ROMX
+floating_section
 TilesetHouseMeta::
 INCBIN "data/tilesets/house_metatiles.bin"
 
-SECTION "TilesetHouseColl", ROMX
+floating_section
 TilesetHouseColl::
 INCLUDE "data/tilesets/house_collision.asm"
 
-SECTION "TilesetLighthouseGFX", ROMX
+floating_section
 TilesetLighthouseGFX::
 INCBIN "gfx/tilesets/lighthouse.2bpp.lz"
 
-SECTION "TilesetLighthouseMeta", ROMX
+floating_section
 TilesetLighthouseMeta::
 INCBIN "data/tilesets/lighthouse_metatiles.bin"
 
-SECTION "TilesetLighthouseColl", ROMX
+floating_section
 TilesetLighthouseColl::
 INCLUDE "data/tilesets/lighthouse_collision.asm"
 
-SECTION "TilesetPlayersRoomGFX", ROMX
+floating_section
 TilesetPlayersRoomGFX::
 INCBIN "gfx/tilesets/players_room.2bpp.lz"
 
-SECTION "TilesetPlayersRoomMeta", ROMX
+floating_section
 TilesetPlayersRoomMeta::
 INCBIN "data/tilesets/players_room_metatiles.bin"
 
-SECTION "TilesetPlayersRoomColl", ROMX
+floating_section
 TilesetPlayersRoomColl::
 INCLUDE "data/tilesets/players_room_collision.asm"
 
-SECTION "TilesetForestColl", ROMX
+floating_section
 TilesetForestColl::
 INCLUDE "data/tilesets/forest_collision.asm"
 
-SECTION "TilesetKantoGFX", ROMX
+floating_section
 TilesetKantoGFX::
 INCBIN "gfx/tilesets/kanto.2bpp.lz"
 
-SECTION "TilesetCavernGFX", ROMX
+floating_section
 TilesetCavernGFX::
 INCBIN "gfx/tilesets/cavern.2bpp.lz"
 
-SECTION "TilesetCavernMeta", ROMX
+floating_section
 TilesetCavernMeta::
 INCBIN "data/tilesets/cavern_metatiles.bin"
 
-SECTION "TilesetCavernColl", ROMX
+floating_section
 TilesetCavernColl::
 INCLUDE "data/tilesets/cavern_collision.asm"
 
-SECTION "TilesetCemeteryGFX", ROMX
+floating_section
 TilesetCemeteryGFX::
 INCBIN "gfx/tilesets/cemetery.2bpp.lz"
 
-SECTION "TilesetCemeteryMeta", ROMX
+floating_section
 TilesetCemeteryMeta::
 INCBIN "data/tilesets/cemetery_metatiles.bin"
 
-SECTION "TilesetCemeteryColl", ROMX
+floating_section
 TilesetCemeteryColl::
 INCLUDE "data/tilesets/cemetery_collision.asm"
 
-SECTION "TilesetClubGFX", ROMX
+floating_section
 TilesetClubGFX::
 INCBIN "gfx/tilesets/club.2bpp.lz"
 
-SECTION "TilesetClubMeta", ROMX
+floating_section
 TilesetClubMeta::
 INCBIN "data/tilesets/club_metatiles.bin"
 
-SECTION "TilesetClubColl", ROMX
+floating_section
 TilesetClubColl::
 INCLUDE "data/tilesets/club_collision.asm"
 
-SECTION "TilesetFacilityKantoGFX", ROMX
+floating_section
 TilesetFacilityKantoGFX::
 INCBIN "gfx/tilesets/facility_kanto.2bpp.lz"
 
-SECTION "TilesetFacilityKantoMeta", ROMX
+floating_section
 TilesetFacilityKantoMeta::
 INCBIN "data/tilesets/facility_kanto_metatiles.bin"
 
-SECTION "TilesetFacilityKantoColl", ROMX
+floating_section
 TilesetFacilityKantoColl::
 INCLUDE "data/tilesets/facility_kanto_collision.asm"
 
-SECTION "TilesetGymGFX", ROMX
+floating_section
 TilesetGymGFX::
 INCBIN "gfx/tilesets/gym.2bpp.lz"
 
-SECTION "TilesetGymMeta", ROMX
+floating_section
 TilesetGymMeta::
 INCBIN "data/tilesets/gym_metatiles.bin"
 
-SECTION "TilesetGymColl", ROMX
+floating_section
 TilesetGymColl::
 INCLUDE "data/tilesets/gym_collision.asm"
 
-SECTION "TilesetHouseKantoGFX", ROMX
+floating_section
 TilesetHouseKantoGFX::
 INCBIN "gfx/tilesets/house_kanto.2bpp.lz"
 
-SECTION "TilesetHouseKantoMeta", ROMX
+floating_section
 TilesetHouseKantoMeta::
 INCBIN "data/tilesets/house_kanto_metatiles.bin"
 
-SECTION "TilesetHouseKantoColl", ROMX
+floating_section
 TilesetHouseKantoColl::
 INCLUDE "data/tilesets/house_kanto_collision.asm"
 
-SECTION "TilesetInteriorGFX", ROMX
+floating_section
 TilesetInteriorGFX::
 INCBIN "gfx/tilesets/interior.2bpp.lz"
 
-SECTION "TilesetInteriorMeta", ROMX
+floating_section
 TilesetInteriorMeta::
 INCBIN "data/tilesets/interior_metatiles.bin"
 
-SECTION "TilesetInteriorColl", ROMX
+floating_section
 TilesetInteriorColl::
 INCLUDE "data/tilesets/interior_collision.asm"
 
-SECTION "TilesetLabKantoGFX", ROMX
+floating_section
 TilesetLabKantoGFX::
 INCBIN "gfx/tilesets/lab_kanto.2bpp.lz"
 
-SECTION "TilesetLabKantoMeta", ROMX
+floating_section
 TilesetLabKantoMeta::
 INCBIN "data/tilesets/lab_kanto_metatiles.bin"
 
-SECTION "TilesetLabKantoColl", ROMX
+floating_section
 TilesetLabKantoColl::
 INCLUDE "data/tilesets/lab_kanto_collision.asm"
 
-SECTION "TilesetLobbyGFX", ROMX
+floating_section
 TilesetLobbyGFX::
 INCBIN "gfx/tilesets/lobby.2bpp.lz"
 
-SECTION "TilesetLobbyMeta", ROMX
+floating_section
 TilesetLobbyMeta::
 INCBIN "data/tilesets/lobby_metatiles.bin"
 
-SECTION "TilesetLobbyColl", ROMX
+floating_section
 TilesetLobbyColl::
 INCLUDE "data/tilesets/lobby_collision.asm"
 
-SECTION "TilesetMuseumGFX", ROMX
+floating_section
 TilesetMuseumGFX::
 INCBIN "gfx/tilesets/museum.2bpp.lz"
 
-SECTION "TilesetMuseumMeta", ROMX
+floating_section
 TilesetMuseumMeta::
 INCBIN "data/tilesets/museum_metatiles.bin"
 
-SECTION "TilesetMuseumColl", ROMX
+floating_section
 TilesetMuseumColl::
 INCLUDE "data/tilesets/museum_collision.asm"
 
-SECTION "TilesetPlateauGFX", ROMX
+floating_section
 TilesetPlateauGFX::
 INCBIN "gfx/tilesets/plateau.2bpp.lz"
 
-SECTION "TilesetPlateauMeta", ROMX
+floating_section
 TilesetPlateauMeta::
 INCBIN "data/tilesets/plateau_metatiles.bin"
 
-SECTION "TilesetPlateauColl", ROMX
+floating_section
 TilesetPlateauColl::
 INCLUDE "data/tilesets/plateau_collision.asm"
 
-SECTION "TilesetPokecenterKantoGFX", ROMX
+floating_section
 TilesetPokecenterKantoGFX::
 INCBIN "gfx/tilesets/pokecenter_kanto.2bpp.lz"
 
-SECTION "TilesetPokecenterKantoMeta", ROMX
+floating_section
 TilesetPokecenterKantoMeta::
 INCBIN "data/tilesets/pokecenter_kanto_metatiles.bin"
 
-SECTION "TilesetPokecenterKantoColl", ROMX
+floating_section
 TilesetPokecenterKantoColl::
 INCLUDE "data/tilesets/pokecenter_kanto_collision.asm"
 
-SECTION "TilesetRedsHouseGFX", ROMX
+floating_section
 TilesetRedsHouseGFX::
 INCBIN "gfx/tilesets/reds_house.2bpp.lz"
 
-SECTION "TilesetRedsHouseMeta", ROMX
+floating_section
 TilesetRedsHouseMeta::
 INCBIN "data/tilesets/reds_house_metatiles.bin"
 
-SECTION "TilesetRedsHouseColl", ROMX
+floating_section
 TilesetRedsHouseColl::
 INCLUDE "data/tilesets/reds_house_collision.asm"
 
-SECTION "TilesetSafariGFX", ROMX
+floating_section
 TilesetSafariGFX::
 INCBIN "gfx/tilesets/safari.2bpp.lz"
 
-SECTION "TilesetSafariMeta", ROMX
+floating_section
 TilesetSafariMeta::
 INCBIN "data/tilesets/safari_metatiles.bin"
 
-SECTION "TilesetSafariColl", ROMX
+floating_section
 TilesetSafariColl::
 INCLUDE "data/tilesets/safari_collision.asm"
 
-SECTION "TilesetShipGFX", ROMX
+floating_section
 TilesetShipGFX::
 INCBIN "gfx/tilesets/ship.2bpp.lz"
 
-SECTION "TilesetShipMeta", ROMX
+floating_section
 TilesetShipMeta::
 INCBIN "data/tilesets/ship_metatiles.bin"
 
-SECTION "TilesetShipColl", ROMX
+floating_section
 TilesetShipColl::
 INCLUDE "data/tilesets/ship_collision.asm"
 
-SECTION "TilesetShipPortGFX", ROMX
+floating_section
 TilesetShipPortGFX::
 INCBIN "gfx/tilesets/ship_port.2bpp.lz"
 
-SECTION "TilesetShipPortMeta", ROMX
+floating_section
 TilesetShipPortMeta::
 INCBIN "data/tilesets/ship_port_metatiles.bin"
 
-SECTION "TilesetShipPortColl", ROMX
+floating_section
 TilesetShipPortColl::
 INCLUDE "data/tilesets/ship_port_collision.asm"
 
-SECTION "TilesetTunnelGFX", ROMX
+floating_section
 TilesetTunnelGFX::
 INCBIN "gfx/tilesets/tunnel.2bpp.lz"
 
-SECTION "TilesetTunnelMeta", ROMX
+floating_section
 TilesetTunnelMeta::
 INCBIN "data/tilesets/tunnel_metatiles.bin"
 
-SECTION "TilesetTunnelColl", ROMX
+floating_section
 TilesetTunnelColl::
 INCLUDE "data/tilesets/tunnel_collision.asm"

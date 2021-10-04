@@ -1,140 +1,140 @@
-SECTION "Route32_Blocks", ROMX
+floating_section
 Route32_Blocks:
 	INCBIN "maps/Route32.blk"
 
-SECTION "Route40_Blocks", ROMX
+floating_section
 Route40_Blocks:
 	INCBIN "maps/Route40.blk"
 
-SECTION "Route36_Blocks", ROMX
+floating_section
 Route36_Blocks:
 	INCBIN "maps/Route36.blk"
 
-SECTION "Route44_Blocks", ROMX
+floating_section
 Route44_Blocks:
 	INCBIN "maps/Route44.blk"
 
-SECTION "Route28_Blocks", ROMX
+floating_section
 Route28_Blocks:
 	INCBIN "maps/Route28.blk"
 
-SECTION "CeladonCity_Blocks", ROMX
+floating_section
 CeladonCity_Blocks:
 	INCBIN "maps/CeladonCity.blk"
 
-SECTION "SaffronCity_Blocks", ROMX
+floating_section
 SaffronCity_Blocks:
 	INCBIN "maps/SaffronCity.blk"
 
-SECTION "Route2_Blocks", ROMX
+floating_section
 Route2_Blocks:
 	INCBIN "maps/Route2.blk"
 
-SECTION "ElmsHouse_Blocks", ROMX
+floating_section
 ElmsHouse_Blocks:
 	INCBIN "maps/ElmsHouse.blk"
 
-SECTION "Route11_Blocks", ROMX
+floating_section
 Route11_Blocks:
 	INCBIN "maps/Route11.blk"
 
-SECTION "Route15_Blocks", ROMX
+floating_section
 Route15_Blocks:
 	INCBIN "maps/Route15.blk"
 
-SECTION "Route19_Blocks", ROMX
+floating_section
 Route19_Blocks:
 	INCBIN "maps/Route19.blk"
 
-SECTION "Route10South_Blocks", ROMX
+floating_section
 Route10South_Blocks:
 	INCBIN "maps/Route10South.blk"
 
-SECTION "Pokecenter2F_Blocks", ROMX
+floating_section
 Pokecenter2F_Blocks:
 	INCBIN "maps/Pokecenter2F.blk"
 
-SECTION "Route41_Blocks", ROMX
+floating_section
 Route41_Blocks:
 	INCBIN "maps/Route41.blk"
 
-SECTION "Route33_Blocks", ROMX
+floating_section
 Route33_Blocks:
 	INCBIN "maps/Route33.blk"
 
-SECTION "Route45_Blocks", ROMX
+floating_section
 Route45_Blocks:
 	INCBIN "maps/Route45.blk"
 
-SECTION "Route29_Blocks", ROMX
+floating_section
 Route29_Blocks:
 	INCBIN "maps/Route29.blk"
 
-SECTION "Route37_Blocks", ROMX
+floating_section
 Route37_Blocks:
 	INCBIN "maps/Route37.blk"
 
-SECTION "LavenderTown_Blocks", ROMX
+floating_section
 LavenderTown_Blocks:
 	INCBIN "maps/LavenderTown.blk"
 
-SECTION "PalletTown_Blocks", ROMX
+floating_section
 PalletTown_Blocks:
 	INCBIN "maps/PalletTown.blk"
 
-SECTION "Route25_Blocks", ROMX
+floating_section
 Route25_Blocks:
 	INCBIN "maps/Route25.blk"
 
-SECTION "Route24_Blocks", ROMX
+floating_section
 Route24_Blocks:
 	INCBIN "maps/Route24.blk"
 
-SECTION "Route3_Blocks", ROMX
+floating_section
 Route3_Blocks:
 	INCBIN "maps/Route3.blk"
 
-SECTION "PewterCity_Blocks", ROMX
+floating_section
 PewterCity_Blocks:
 	INCBIN "maps/PewterCity.blk"
 
-SECTION "Route12_Blocks", ROMX
+floating_section
 Route12_Blocks:
 	INCBIN "maps/Route12.blk"
 
-SECTION "Route20_Blocks", ROMX
+floating_section
 Route20_Blocks:
 	INCBIN "maps/Route20.blk"
 
-SECTION "Route30_Blocks", ROMX
+floating_section
 Route30_Blocks:
 	INCBIN "maps/Route30.blk"
 
-SECTION "Route26_Blocks", ROMX
+floating_section
 Route26_Blocks:
 	INCBIN "maps/Route26.blk"
 
-SECTION "Route42_Blocks", ROMX
+floating_section
 Route42_Blocks:
 	INCBIN "maps/Route42.blk"
 
-SECTION "Route34_Blocks", ROMX
+floating_section
 Route34_Blocks:
 	INCBIN "maps/Route34.blk"
 
-SECTION "Route46_Blocks", ROMX
+floating_section
 Route46_Blocks:
 	INCBIN "maps/Route46.blk"
 
-SECTION "FuchsiaCity_Blocks", ROMX
+floating_section
 FuchsiaCity_Blocks:
 	INCBIN "maps/FuchsiaCity.blk"
 
-SECTION "Route38_Blocks", ROMX
+floating_section
 Route38_Blocks:
 	INCBIN "maps/Route38.blk"
 
-SECTION "House1_Blocks", ROMX
+floating_section
 OlivineTimsHouse_Blocks:
 OlivineHouseBeta_Blocks:
 OlivinePunishmentSpeechHouse_Blocks:
@@ -167,7 +167,7 @@ CherrygroveEvolutionSpeechHouse_Blocks:
 Route30BerryHouse_Blocks:
 	INCBIN "maps/House1.blk"
 
-SECTION "NorthSouthGate_Blocks", ROMX
+floating_section
 Route43MahoganyGate_Blocks:
 Route43Gate_Blocks:
 Route35GoldenrodGate_Blocks:
@@ -177,59 +177,59 @@ Route40BattleTowerGate_Blocks:
 Route29Route46Gate_Blocks:
 	INCBIN "maps/NorthSouthGate.blk"
 
-SECTION "CinnabarIsland_Blocks", ROMX
+floating_section
 CinnabarIsland_Blocks:
 	INCBIN "maps/CinnabarIsland.blk"
 
-SECTION "Route4_Blocks", ROMX
+floating_section
 Route4_Blocks:
 	INCBIN "maps/Route4.blk"
 
-SECTION "Route8_Blocks", ROMX
+floating_section
 Route8_Blocks:
 	INCBIN "maps/Route8.blk"
 
-SECTION "ViridianCity_Blocks", ROMX
+floating_section
 ViridianCity_Blocks:
 	INCBIN "maps/ViridianCity.blk"
 
-SECTION "Route13_Blocks", ROMX
+floating_section
 Route13_Blocks:
 	INCBIN "maps/Route13.blk"
 
-SECTION "Route21_Blocks", ROMX
+floating_section
 Route21_Blocks:
 	INCBIN "maps/Route21.blk"
 
-SECTION "Route17_Blocks", ROMX
+floating_section
 Route17_Blocks:
 	INCBIN "maps/Route17.blk"
 
-SECTION "Route31_Blocks", ROMX
+floating_section
 Route31_Blocks:
 	INCBIN "maps/Route31.blk"
 
-SECTION "Route27_Blocks", ROMX
+floating_section
 Route27_Blocks:
 	INCBIN "maps/Route27.blk"
 
-SECTION "Route35_Blocks", ROMX
+floating_section
 Route35_Blocks:
 	INCBIN "maps/Route35.blk"
 
-SECTION "Route43_Blocks", ROMX
+floating_section
 Route43_Blocks:
 	INCBIN "maps/Route43.blk"
 
-SECTION "Route39_Blocks", ROMX
+floating_section
 Route39_Blocks:
 	INCBIN "maps/Route39.blk"
 
-SECTION "PlayersHouse1F_Blocks", ROMX
+floating_section
 PlayersHouse1F_Blocks:
 	INCBIN "maps/PlayersHouse1F.blk"
 
-SECTION "EastWestGate_Blocks", ROMX
+floating_section
 Route38EcruteakGate_Blocks:
 Route42EcruteakGate_Blocks:
 Route32RuinsOfAlphGate_Blocks:
@@ -237,39 +237,39 @@ IlexForestAzaleaGate_Blocks:
 Route31VioletGate_Blocks:
 	INCBIN "maps/EastWestGate.blk"
 
-SECTION "VermilionCity_Blocks", ROMX
+floating_section
 VermilionCity_Blocks:
 	INCBIN "maps/VermilionCity.blk"
 
-SECTION "ElmsLab_Blocks", ROMX
+floating_section
 ElmsLab_Blocks:
 	INCBIN "maps/ElmsLab.blk"
 
-SECTION "CeruleanCity_Blocks", ROMX
+floating_section
 CeruleanCity_Blocks:
 	INCBIN "maps/CeruleanCity.blk"
 
-SECTION "Route1_Blocks", ROMX
+floating_section
 Route1_Blocks:
 	INCBIN "maps/Route1.blk"
 
-SECTION "Route5_Blocks", ROMX
+floating_section
 Route5_Blocks:
 	INCBIN "maps/Route5.blk"
 
-SECTION "Route9_Blocks", ROMX
+floating_section
 Route9_Blocks:
 	INCBIN "maps/Route9.blk"
 
-SECTION "Route22_Blocks", ROMX
+floating_section
 Route22_Blocks:
 	INCBIN "maps/Route22.blk"
 
-SECTION "Route14_Blocks", ROMX
+floating_section
 Route14_Blocks:
 	INCBIN "maps/Route14.blk"
 
-SECTION "OlivineMart_Blocks", ROMX
+floating_section
 OlivineMart_Blocks:
 EcruteakMart_Blocks:
 BlackthornMart_Blocks:
@@ -278,11 +278,11 @@ VioletMart_Blocks:
 CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
-SECTION "Route10North_Blocks", ROMX
+floating_section
 Route10North_Blocks:
 	INCBIN "maps/Route10North.blk"
 
-SECTION "Pokecenter1F_Blocks", ROMX
+floating_section
 OlivinePokecenter1F_Blocks:
 MahoganyPokecenter1F_Blocks:
 EcruteakPokecenter1F_Blocks:
@@ -296,580 +296,580 @@ CianwoodPokecenter1F_Blocks:
 CherrygrovePokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
-SECTION "EarlsPokemonAcademy_Blocks", ROMX
+floating_section
 EarlsPokemonAcademy_Blocks:
 	INCBIN "maps/EarlsPokemonAcademy.blk"
 
-SECTION "GoldenrodDeptStore1F_Blocks", ROMX
+floating_section
 GoldenrodDeptStore1F_Blocks:
 	INCBIN "maps/GoldenrodDeptStore1F.blk"
 
-SECTION "GoldenrodDeptStore2F_Blocks", ROMX
+floating_section
 GoldenrodDeptStore2F_Blocks:
 	INCBIN "maps/GoldenrodDeptStore2F.blk"
 
-SECTION "GoldenrodDeptStore3F_Blocks", ROMX
+floating_section
 GoldenrodDeptStore3F_Blocks:
 	INCBIN "maps/GoldenrodDeptStore3F.blk"
 
-SECTION "GoldenrodDeptStore4F_Blocks", ROMX
+floating_section
 GoldenrodDeptStore4F_Blocks:
 	INCBIN "maps/GoldenrodDeptStore4F.blk"
 
-SECTION "GoldenrodDeptStore5F_Blocks", ROMX
+floating_section
 GoldenrodDeptStore5F_Blocks:
 	INCBIN "maps/GoldenrodDeptStore5F.blk"
 
-SECTION "GoldenrodDeptStore6F_Blocks", ROMX
+floating_section
 GoldenrodDeptStore6F_Blocks:
 	INCBIN "maps/GoldenrodDeptStore6F.blk"
 
-SECTION "GoldenrodDeptStoreElevator_Blocks", ROMX
+floating_section
 GoldenrodDeptStoreElevator_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreElevator.blk"
 
-SECTION "Colosseum_Blocks", ROMX
+floating_section
 Colosseum_Blocks:
 	INCBIN "maps/Colosseum.blk"
 
-SECTION "TradeCenter_Blocks", ROMX
+floating_section
 TradeCenter_Blocks:
 TimeCapsule_Blocks:
 	INCBIN "maps/TradeCenter.blk"
 
-SECTION "House2_Blocks", ROMX
+floating_section
 EcruteakLugiaSpeechHouse_Blocks:
 EcruteakItemfinderHouse_Blocks:
 VioletNicknameSpeechHouse_Blocks:
 VioletKylesHouse_Blocks:
 	INCBIN "maps/House2.blk"
 
-SECTION "UnionCaveB1F_Blocks", ROMX
+floating_section
 UnionCaveB1F_Blocks:
 	INCBIN "maps/UnionCaveB1F.blk"
 
-SECTION "UnionCaveB2F_Blocks", ROMX
+floating_section
 UnionCaveB2F_Blocks:
 	INCBIN "maps/UnionCaveB2F.blk"
 
-SECTION "UnionCave1F_Blocks", ROMX
+floating_section
 UnionCave1F_Blocks:
 	INCBIN "maps/UnionCave1F.blk"
 
-SECTION "NationalPark_Blocks", ROMX
+floating_section
 NationalPark_Blocks:
 NationalParkBugContest_Blocks:
 	INCBIN "maps/NationalPark.blk"
 
-SECTION "KurtsHouse_Blocks", ROMX
+floating_section
 KurtsHouse_Blocks:
 	INCBIN "maps/KurtsHouse.blk"
 
-SECTION "GoldenrodMagnetTrainStation_Blocks", ROMX
+floating_section
 GoldenrodMagnetTrainStation_Blocks:
 	INCBIN "maps/GoldenrodMagnetTrainStation.blk"
 
-SECTION "RuinsOfAlphOutside_Blocks", ROMX
+floating_section
 RuinsOfAlphOutside_Blocks:
 	INCBIN "maps/RuinsOfAlphOutside.blk"
 
-SECTION "RuinsOfAlphPuzzleChamber_Blocks", ROMX
+floating_section
 RuinsOfAlphHoOhChamber_Blocks:
 RuinsOfAlphKabutoChamber_Blocks:
 RuinsOfAlphOmanyteChamber_Blocks:
 RuinsOfAlphAerodactylChamber_Blocks:
 	INCBIN "maps/RuinsOfAlphPuzzleChamber.blk"
 
-SECTION "RuinsOfAlphInnerChamber_Blocks", ROMX
+floating_section
 RuinsOfAlphInnerChamber_Blocks:
 	INCBIN "maps/RuinsOfAlphInnerChamber.blk"
 
-SECTION "SproutTower1F_Blocks", ROMX
+floating_section
 SproutTower1F_Blocks:
 	INCBIN "maps/SproutTower1F.blk"
 
-SECTION "SproutTower2F_Blocks", ROMX
+floating_section
 SproutTower2F_Blocks:
 	INCBIN "maps/SproutTower2F.blk"
 
-SECTION "SproutTower3F_Blocks", ROMX
+floating_section
 SproutTower3F_Blocks:
 	INCBIN "maps/SproutTower3F.blk"
 
-SECTION "RadioTower1F_Blocks", ROMX
+floating_section
 RadioTower1F_Blocks:
 	INCBIN "maps/RadioTower1F.blk"
 
-SECTION "RadioTower2F_Blocks", ROMX
+floating_section
 RadioTower2F_Blocks:
 	INCBIN "maps/RadioTower2F.blk"
 
-SECTION "RadioTower3F_Blocks", ROMX
+floating_section
 RadioTower3F_Blocks:
 	INCBIN "maps/RadioTower3F.blk"
 
-SECTION "RadioTower4F_Blocks", ROMX
+floating_section
 RadioTower4F_Blocks:
 	INCBIN "maps/RadioTower4F.blk"
 
-SECTION "RadioTower5F_Blocks", ROMX
+floating_section
 RadioTower5F_Blocks:
 	INCBIN "maps/RadioTower5F.blk"
 
-SECTION "NewBarkTown_Blocks", ROMX
+floating_section
 NewBarkTown_Blocks:
 	INCBIN "maps/NewBarkTown.blk"
 
-SECTION "CherrygroveCity_Blocks", ROMX
+floating_section
 CherrygroveCity_Blocks:
 	INCBIN "maps/CherrygroveCity.blk"
 
-SECTION "VioletCity_Blocks", ROMX
+floating_section
 VioletCity_Blocks:
 	INCBIN "maps/VioletCity.blk"
 
-SECTION "AzaleaTown_Blocks", ROMX
+floating_section
 AzaleaTown_Blocks:
 	INCBIN "maps/AzaleaTown.blk"
 
-SECTION "CianwoodCity_Blocks", ROMX
+floating_section
 CianwoodCity_Blocks:
 	INCBIN "maps/CianwoodCity.blk"
 
-SECTION "GoldenrodCity_Blocks", ROMX
+floating_section
 GoldenrodCity_Blocks:
 	INCBIN "maps/GoldenrodCity.blk"
 
-SECTION "OlivineCity_Blocks", ROMX
+floating_section
 OlivineCity_Blocks:
 	INCBIN "maps/OlivineCity.blk"
 
-SECTION "EcruteakCity_Blocks", ROMX
+floating_section
 EcruteakCity_Blocks:
 	INCBIN "maps/EcruteakCity.blk"
 
-SECTION "MahoganyTown_Blocks", ROMX
+floating_section
 MahoganyTown_Blocks:
 	INCBIN "maps/MahoganyTown.blk"
 
-SECTION "LakeOfRage_Blocks", ROMX
+floating_section
 LakeOfRage_Blocks:
 	INCBIN "maps/LakeOfRage.blk"
 
-SECTION "BlackthornCity_Blocks", ROMX
+floating_section
 BlackthornCity_Blocks:
 	INCBIN "maps/BlackthornCity.blk"
 
-SECTION "SilverCaveOutside_Blocks", ROMX
+floating_section
 SilverCaveOutside_Blocks:
 	INCBIN "maps/SilverCaveOutside.blk"
 
-SECTION "Route6_Blocks", ROMX
+floating_section
 Route6_Blocks:
 	INCBIN "maps/Route6.blk"
 
-SECTION "Route7_Blocks", ROMX
+floating_section
 Route7_Blocks:
 	INCBIN "maps/Route7.blk"
 
-SECTION "Route16_Blocks", ROMX
+floating_section
 Route16_Blocks:
 	INCBIN "maps/Route16.blk"
 
-SECTION "Route18_Blocks", ROMX
+floating_section
 Route18_Blocks:
 	INCBIN "maps/Route18.blk"
 
-SECTION "GoldenrodUnderground_Blocks", ROMX
+floating_section
 GoldenrodUnderground_Blocks:
 	INCBIN "maps/GoldenrodUnderground.blk"
 
-SECTION "GoldenrodUndergroundSwitchRoomEntrances_Blocks", ROMX
+floating_section
 GoldenrodUndergroundSwitchRoomEntrances_Blocks:
 	INCBIN "maps/GoldenrodUndergroundSwitchRoomEntrances.blk"
 
-SECTION "GoldenrodDeptStoreB1F_Blocks", ROMX
+floating_section
 GoldenrodDeptStoreB1F_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreB1F.blk"
 
-SECTION "GoldenrodUndergroundWarehouse_Blocks", ROMX
+floating_section
 GoldenrodUndergroundWarehouse_Blocks:
 	INCBIN "maps/GoldenrodUndergroundWarehouse.blk"
 
-SECTION "TinTower1F_Blocks", ROMX
+floating_section
 TinTower1F_Blocks:
 	INCBIN "maps/TinTower1F.blk"
 
-SECTION "TinTower2F_Blocks", ROMX
+floating_section
 TinTower2F_Blocks:
 	INCBIN "maps/TinTower2F.blk"
 
-SECTION "TinTower3F_Blocks", ROMX
+floating_section
 TinTower3F_Blocks:
 	INCBIN "maps/TinTower3F.blk"
 
-SECTION "TinTower4F_Blocks", ROMX
+floating_section
 TinTower4F_Blocks:
 	INCBIN "maps/TinTower4F.blk"
 
-SECTION "TinTower5F_Blocks", ROMX
+floating_section
 TinTower5F_Blocks:
 	INCBIN "maps/TinTower5F.blk"
 
-SECTION "TinTower6F_Blocks", ROMX
+floating_section
 TinTower6F_Blocks:
 	INCBIN "maps/TinTower6F.blk"
 
-SECTION "TinTower7F_Blocks", ROMX
+floating_section
 TinTower7F_Blocks:
 	INCBIN "maps/TinTower7F.blk"
 
-SECTION "TinTower8F_Blocks", ROMX
+floating_section
 TinTower8F_Blocks:
 	INCBIN "maps/TinTower8F.blk"
 
-SECTION "TinTower9F_Blocks", ROMX
+floating_section
 TinTower9F_Blocks:
 	INCBIN "maps/TinTower9F.blk"
 
-SECTION "TinTowerRoof_Blocks", ROMX
+floating_section
 TinTowerRoof_Blocks:
 	INCBIN "maps/TinTowerRoof.blk"
 
-SECTION "BurnedTower1F_Blocks", ROMX
+floating_section
 BurnedTower1F_Blocks:
 	INCBIN "maps/BurnedTower1F.blk"
 
-SECTION "BurnedTowerB1F_Blocks", ROMX
+floating_section
 BurnedTowerB1F_Blocks:
 	INCBIN "maps/BurnedTowerB1F.blk"
 
-SECTION "MountMortar1FOutside_Blocks", ROMX
+floating_section
 MountMortar1FOutside_Blocks:
 	INCBIN "maps/MountMortar1FOutside.blk"
 
-SECTION "MountMortar1FInside_Blocks", ROMX
+floating_section
 MountMortar1FInside_Blocks:
 	INCBIN "maps/MountMortar1FInside.blk"
 
-SECTION "MountMortar2FInside_Blocks", ROMX
+floating_section
 MountMortar2FInside_Blocks:
 	INCBIN "maps/MountMortar2FInside.blk"
 
-SECTION "MountMortarB1F_Blocks", ROMX
+floating_section
 MountMortarB1F_Blocks:
 	INCBIN "maps/MountMortarB1F.blk"
 
-SECTION "IcePath1F_Blocks", ROMX
+floating_section
 IcePath1F_Blocks:
 	INCBIN "maps/IcePath1F.blk"
 
-SECTION "IcePathB1F_Blocks", ROMX
+floating_section
 IcePathB1F_Blocks:
 	INCBIN "maps/IcePathB1F.blk"
 
-SECTION "IcePathB2FMahoganySide_Blocks", ROMX
+floating_section
 IcePathB2FMahoganySide_Blocks:
 	INCBIN "maps/IcePathB2FMahoganySide.blk"
 
-SECTION "IcePathB2FBlackthornSide_Blocks", ROMX
+floating_section
 IcePathB2FBlackthornSide_Blocks:
 	INCBIN "maps/IcePathB2FBlackthornSide.blk"
 
-SECTION "IcePathB3F_Blocks", ROMX
+floating_section
 IcePathB3F_Blocks:
 	INCBIN "maps/IcePathB3F.blk"
 
-SECTION "WhirlIslandNW_Blocks", ROMX
+floating_section
 WhirlIslandNW_Blocks:
 	INCBIN "maps/WhirlIslandNW.blk"
 
-SECTION "WhirlIslandNE_Blocks", ROMX
+floating_section
 WhirlIslandNE_Blocks:
 	INCBIN "maps/WhirlIslandNE.blk"
 
-SECTION "WhirlIslandSW_Blocks", ROMX
+floating_section
 WhirlIslandSW_Blocks:
 	INCBIN "maps/WhirlIslandSW.blk"
 
-SECTION "WhirlIslandCave_Blocks", ROMX
+floating_section
 WhirlIslandCave_Blocks:
 	INCBIN "maps/WhirlIslandCave.blk"
 
-SECTION "WhirlIslandSE_Blocks", ROMX
+floating_section
 WhirlIslandSE_Blocks:
 	INCBIN "maps/WhirlIslandSE.blk"
 
-SECTION "WhirlIslandB1F_Blocks", ROMX
+floating_section
 WhirlIslandB1F_Blocks:
 	INCBIN "maps/WhirlIslandB1F.blk"
 
-SECTION "WhirlIslandB2F_Blocks", ROMX
+floating_section
 WhirlIslandB2F_Blocks:
 	INCBIN "maps/WhirlIslandB2F.blk"
 
-SECTION "WhirlIslandLugiaChamber_Blocks", ROMX
+floating_section
 WhirlIslandLugiaChamber_Blocks:
 	INCBIN "maps/WhirlIslandLugiaChamber.blk"
 
-SECTION "SilverCaveRoom1_Blocks", ROMX
+floating_section
 SilverCaveRoom1_Blocks:
 	INCBIN "maps/SilverCaveRoom1.blk"
 
-SECTION "SilverCaveRoom2_Blocks", ROMX
+floating_section
 SilverCaveRoom2_Blocks:
 	INCBIN "maps/SilverCaveRoom2.blk"
 
-SECTION "SilverCaveRoom3_Blocks", ROMX
+floating_section
 SilverCaveRoom3_Blocks:
 	INCBIN "maps/SilverCaveRoom3.blk"
 
-SECTION "MahoganyMart1F_Blocks", ROMX
+floating_section
 MahoganyMart1F_Blocks:
 	INCBIN "maps/MahoganyMart1F.blk"
 
-SECTION "TeamRocketBaseB1F_Blocks", ROMX
+floating_section
 TeamRocketBaseB1F_Blocks:
 	INCBIN "maps/TeamRocketBaseB1F.blk"
 
-SECTION "TeamRocketBaseB2F_Blocks", ROMX
+floating_section
 TeamRocketBaseB2F_Blocks:
 	INCBIN "maps/TeamRocketBaseB2F.blk"
 
-SECTION "TeamRocketBaseB3F_Blocks", ROMX
+floating_section
 TeamRocketBaseB3F_Blocks:
 	INCBIN "maps/TeamRocketBaseB3F.blk"
 
-SECTION "IndigoPlateauPokecenter1F_Blocks", ROMX
+floating_section
 IndigoPlateauPokecenter1F_Blocks:
 	INCBIN "maps/IndigoPlateauPokecenter1F.blk"
 
-SECTION "WillsRoom_Blocks", ROMX
+floating_section
 WillsRoom_Blocks:
 	INCBIN "maps/WillsRoom.blk"
 
-SECTION "KogasRoom_Blocks", ROMX
+floating_section
 KogasRoom_Blocks:
 	INCBIN "maps/KogasRoom.blk"
 
-SECTION "BrunosRoom_Blocks", ROMX
+floating_section
 BrunosRoom_Blocks:
 	INCBIN "maps/BrunosRoom.blk"
 
-SECTION "KarensRoom_Blocks", ROMX
+floating_section
 KarensRoom_Blocks:
 	INCBIN "maps/KarensRoom.blk"
 
-SECTION "AzaleaGym_Blocks", ROMX
+floating_section
 AzaleaGym_Blocks:
 	INCBIN "maps/AzaleaGym.blk"
 
-SECTION "VioletGym_Blocks", ROMX
+floating_section
 VioletGym_Blocks:
 	INCBIN "maps/VioletGym.blk"
 
-SECTION "GoldenrodGym_Blocks", ROMX
+floating_section
 GoldenrodGym_Blocks:
 	INCBIN "maps/GoldenrodGym.blk"
 
-SECTION "EcruteakGym_Blocks", ROMX
+floating_section
 EcruteakGym_Blocks:
 	INCBIN "maps/EcruteakGym.blk"
 
-SECTION "MahoganyGym_Blocks", ROMX
+floating_section
 MahoganyGym_Blocks:
 	INCBIN "maps/MahoganyGym.blk"
 
-SECTION "OlivineGym_Blocks", ROMX
+floating_section
 OlivineGym_Blocks:
 	INCBIN "maps/OlivineGym.blk"
 
-SECTION "CianwoodGym_Blocks", ROMX
+floating_section
 CianwoodGym_Blocks:
 	INCBIN "maps/CianwoodGym.blk"
 
-SECTION "BlackthornGym1F_Blocks", ROMX
+floating_section
 BlackthornGym1F_Blocks:
 	INCBIN "maps/BlackthornGym1F.blk"
 
-SECTION "BlackthornGym2F_Blocks", ROMX
+floating_section
 BlackthornGym2F_Blocks:
 	INCBIN "maps/BlackthornGym2F.blk"
 
-SECTION "OlivineLighthouse1F_Blocks", ROMX
+floating_section
 OlivineLighthouse1F_Blocks:
 	INCBIN "maps/OlivineLighthouse1F.blk"
 
-SECTION "OlivineLighthouse2F_Blocks", ROMX
+floating_section
 OlivineLighthouse2F_Blocks:
 	INCBIN "maps/OlivineLighthouse2F.blk"
 
-SECTION "OlivineLighthouse3F_Blocks", ROMX
+floating_section
 OlivineLighthouse3F_Blocks:
 	INCBIN "maps/OlivineLighthouse3F.blk"
 
-SECTION "OlivineLighthouse4F_Blocks", ROMX
+floating_section
 OlivineLighthouse4F_Blocks:
 	INCBIN "maps/OlivineLighthouse4F.blk"
 
-SECTION "OlivineLighthouse5F_Blocks", ROMX
+floating_section
 OlivineLighthouse5F_Blocks:
 	INCBIN "maps/OlivineLighthouse5F.blk"
 
-SECTION "OlivineLighthouse6F_Blocks", ROMX
+floating_section
 OlivineLighthouse6F_Blocks:
 	INCBIN "maps/OlivineLighthouse6F.blk"
 
-SECTION "SlowpokeWellB1F_Blocks", ROMX
+floating_section
 SlowpokeWellB1F_Blocks:
 	INCBIN "maps/SlowpokeWellB1F.blk"
 
-SECTION "SlowpokeWellB2F_Blocks", ROMX
+floating_section
 SlowpokeWellB2F_Blocks:
 	INCBIN "maps/SlowpokeWellB2F.blk"
 
-SECTION "IlexForest_Blocks", ROMX
+floating_section
 IlexForest_Blocks:
 	INCBIN "maps/IlexForest.blk"
 
-SECTION "DarkCaveVioletEntrance_Blocks", ROMX
+floating_section
 DarkCaveVioletEntrance_Blocks:
 	INCBIN "maps/DarkCaveVioletEntrance.blk"
 
-SECTION "DarkCaveBlackthornEntrance_Blocks", ROMX
+floating_section
 DarkCaveBlackthornEntrance_Blocks:
 	INCBIN "maps/DarkCaveBlackthornEntrance.blk"
 
-SECTION "RuinsOfAlphResearchCenter_Blocks", ROMX
+floating_section
 RuinsOfAlphResearchCenter_Blocks:
 	INCBIN "maps/RuinsOfAlphResearchCenter.blk"
 
-SECTION "GoldenrodBikeShop_Blocks", ROMX
+floating_section
 GoldenrodBikeShop_Blocks:
 	INCBIN "maps/GoldenrodBikeShop.blk"
 
-SECTION "DanceTheatre_Blocks", ROMX
+floating_section
 DanceTheatre_Blocks:
 	INCBIN "maps/DanceTheatre.blk"
 
-SECTION "EcruteakTinTowerEntrance_Blocks", ROMX
+floating_section
 EcruteakTinTowerEntrance_Blocks:
 	INCBIN "maps/EcruteakTinTowerEntrance.blk"
 
-SECTION "GoldenrodGameCorner_Blocks", ROMX
+floating_section
 GoldenrodGameCorner_Blocks:
 	INCBIN "maps/GoldenrodGameCorner.blk"
 
-SECTION "Route35NationalParkGate_Blocks", ROMX
+floating_section
 Route35NationalParkGate_Blocks:
 	INCBIN "maps/Route35NationalParkGate.blk"
 
-SECTION "Route36NationalParkGate_Blocks", ROMX
+floating_section
 Route36NationalParkGate_Blocks:
 	INCBIN "maps/Route36NationalParkGate.blk"
 
-SECTION "FastShip1F_Blocks", ROMX
+floating_section
 FastShip1F_Blocks:
 	INCBIN "maps/FastShip1F.blk"
 
-SECTION "FastShipB1F_Blocks", ROMX
+floating_section
 FastShipB1F_Blocks:
 	INCBIN "maps/FastShipB1F.blk"
 
-SECTION "FastShipCabins_NNW_NNE_NE_Blocks", ROMX
+floating_section
 FastShipCabins_NNW_NNE_NE_Blocks:
 	INCBIN "maps/FastShipCabins_NNW_NNE_NE.blk"
 
-SECTION "FastShipCabins_SW_SSW_NW_Blocks", ROMX
+floating_section
 FastShipCabins_SW_SSW_NW_Blocks:
 	INCBIN "maps/FastShipCabins_SW_SSW_NW.blk"
 
-SECTION "FastShipCabins_SE_SSE_CaptainsCabin_Blocks", ROMX
+floating_section
 FastShipCabins_SE_SSE_CaptainsCabin_Blocks:
 	INCBIN "maps/FastShipCabins_SE_SSE_CaptainsCabin.blk"
 
-SECTION "OlivinePort_Blocks", ROMX
+floating_section
 OlivinePort_Blocks:
 	INCBIN "maps/OlivinePort.blk"
 
-SECTION "VermilionPort_Blocks", ROMX
+floating_section
 VermilionPort_Blocks:
 	INCBIN "maps/VermilionPort.blk"
 
-SECTION "OlivineCafe_Blocks", ROMX
+floating_section
 OlivineCafe_Blocks:
 	INCBIN "maps/OlivineCafe.blk"
 
-SECTION "PlayersHouse2F_Blocks", ROMX
+floating_section
 PlayersHouse2F_Blocks:
 	INCBIN "maps/PlayersHouse2F.blk"
 
-SECTION "SilverCaveItemRooms_Blocks", ROMX
+floating_section
 SilverCaveItemRooms_Blocks:
 	INCBIN "maps/SilverCaveItemRooms.blk"
 
-SECTION "DayCare_Blocks", ROMX
+floating_section
 DayCare_Blocks:
 	INCBIN "maps/DayCare.blk"
 
-SECTION "MrPokemonsHouse_Blocks", ROMX
+floating_section
 MrPokemonsHouse_Blocks:
 	INCBIN "maps/MrPokemonsHouse.blk"
 
-SECTION "VictoryRoadGate_Blocks", ROMX
+floating_section
 VictoryRoadGate_Blocks:
 	INCBIN "maps/VictoryRoadGate.blk"
 
-SECTION "OlivinePortPassage_Blocks", ROMX
+floating_section
 OlivinePortPassage_Blocks:
 VermilionPortPassage_Blocks:
 	INCBIN "maps/PortPassage.blk"
 
-SECTION "Route39Barn_Blocks", ROMX
+floating_section
 Route39Barn_Blocks:
 	INCBIN "maps/Route39Barn.blk"
 
-SECTION "VictoryRoad_Blocks", ROMX
+floating_section
 VictoryRoad_Blocks:
 	INCBIN "maps/VictoryRoad.blk"
 
-SECTION "Route23_Blocks", ROMX
+floating_section
 Route23_Blocks:
 	INCBIN "maps/Route23.blk"
 
-SECTION "IndigoPlateau_Blocks", ROMX
+floating_section
 IndigoPlateau_Blocks:
 	INCBIN "maps/IndigoPlateau.blk"
 
-SECTION "LancesRoom_Blocks", ROMX
+floating_section
 LancesRoom_Blocks:
 	INCBIN "maps/LancesRoom.blk"
 
-SECTION "HallOfFame_Blocks", ROMX
+floating_section
 HallOfFame_Blocks:
 	INCBIN "maps/HallOfFame.blk"
 
-SECTION "GoldenrodFlowerShop_Blocks", ROMX
+floating_section
 GoldenrodFlowerShop_Blocks:
 	INCBIN "maps/GoldenrodFlowerShop.blk"
 
-SECTION "EcruteakTinTowerBackEntrance_Blocks", ROMX
+floating_section
 EcruteakTinTowerBackEntrance_Blocks:
 	INCBIN "maps/EcruteakTinTowerBackEntrance.blk"
 
-SECTION "DragonsDen1F_Blocks", ROMX
+floating_section
 DragonsDen1F_Blocks:
 	INCBIN "maps/DragonsDen1F.blk"
 
-SECTION "DragonsDenB1F_Blocks", ROMX
+floating_section
 DragonsDenB1F_Blocks:
 	INCBIN "maps/DragonsDenB1F.blk"
 
-SECTION "TohjoFalls_Blocks", ROMX
+floating_section
 TohjoFalls_Blocks:
 	INCBIN "maps/TohjoFalls.blk"
 
-SECTION "KantoPokecenter_Blocks", ROMX
+floating_section
 CeladonPokecenter_Blocks:
 CeruleanPokecenter_Blocks:
 CinnabarPokecenter_Blocks:
@@ -883,7 +883,7 @@ VermilionPokecenter_Blocks:
 ViridianPokecenter_Blocks:
 	INCBIN "maps/KantoPokecenter.blk"
 
-SECTION "KantoMart_Blocks", ROMX
+floating_section
 CeruleanMart_Blocks:
 CinnabarMart_Blocks:
 FuchsiaMart_Blocks:
@@ -894,7 +894,7 @@ VermilionMart_Blocks:
 ViridianMart_Blocks:
 	INCBIN "maps/KantoMart.blk"
 
-SECTION "KantoHouse_Blocks", ROMX
+floating_section
 BluesHouse_Blocks:
 CeruleanTradeHouse_Blocks:
 DayCareKanto_Blocks:
@@ -915,29 +915,29 @@ VermilionTradeHouse_Blocks:
 ViridianNicknameHouse_Blocks:
 	INCBIN "maps/KantoHouse.blk"
 
-SECTION "KantoBackDoorHouse_Blocks", ROMX
+floating_section
 CeruleanBadgeHouse_Blocks:
 FuchsiaGoodRodHouse_Blocks:
 	INCBIN "maps/KantoBackDoorHouse.blk"
 
-SECTION "KantoNorthSouthGate_Blocks", ROMX
+floating_section
 Route5Gate_Blocks:
 Route6Gate_Blocks:
 SafariZoneGate_Blocks:
 	INCBIN "maps/KantoNorthSouthGate.blk"
 
-SECTION "KantoEastWestGate_Blocks", ROMX
+floating_section
 Route7Gate_Blocks:
 Route8Gate_Blocks:
 	INCBIN "maps/KantoEastWestGate.blk"
 
-SECTION "KantoEastWestGate1F_Blocks", ROMX
+floating_section
 Route11Gate1F_Blocks:
 Route15Gate1F_Blocks:
 Route18Gate1F_Blocks:
 	INCBIN "maps/KantoEastWestGate1F.blk"
 
-SECTION "KantoGate2F_Blocks", ROMX
+floating_section
 Route11Gate2F_Blocks:
 Route12Gate2F_Blocks:
 Route15Gate2F_Blocks:
@@ -945,496 +945,496 @@ Route16Gate2F_Blocks:
 Route18Gate2F_Blocks:
 	INCBIN "maps/KantoGate2F.blk"
 
-SECTION "Route2Gate_Blocks", ROMX
+floating_section
 Route2Gate_Blocks:
 ViridianForestNorthGate_Blocks:
 ViridianForestSouthGate_Blocks:
 	INCBIN "maps/Route2Gate.blk"
 
-SECTION "UndergroundPathGate_Blocks", ROMX
+floating_section
 UndergroundPathRoute5_Blocks:
 UndergroundPathRoute6_Blocks:
 UndergroundPathRoute7_Blocks:
 UndergroundPathRoute8_Blocks:
 	INCBIN "maps/UndergroundPathGate.blk"
 
-SECTION "SafariZoneRestHouse_Blocks", ROMX
+floating_section
 SafariZoneCenterRestHouse_Blocks:
 SafariZoneEastRestHouse_Blocks:
 SafariZoneNorthRestHouse_Blocks:
 SafariZoneWestRestHouse_Blocks:
 	INCBIN "maps/SafariZoneRestHouse.blk"
 
-SECTION "CeladonMartElevator_Blocks", ROMX
+floating_section
 CeladonMartElevator_Blocks:
 SilphCoElevator_Blocks:
 	INCBIN "maps/CeladonMartElevator.blk"
 
-SECTION "RedsHouse1F_Blocks", ROMX
+floating_section
 RedsHouse1F_Blocks:
 CopycatsHouse1F_Blocks:
 	INCBIN "maps/RedsHouse1F.blk"
 
-SECTION "RedsHouse2F_Blocks", ROMX
+floating_section
 RedsHouse2F_Blocks:
 CopycatsHouse2F_Blocks:
 	INCBIN "maps/RedsHouse2F.blk"
 
-SECTION "ViridianSchoolHouse_Blocks", ROMX
+floating_section
 ViridianSchoolHouse_Blocks:
 CeladonMansionRoofHouse_Blocks:
 	INCBIN "maps/ViridianSchoolHouse.blk"
 
-SECTION "DiglettsCaveEntranceExit_Blocks", ROMX
+floating_section
 DiglettsCaveRoute2_Blocks:
 DiglettsCaveRoute11_Blocks:
 	INCBIN "maps/DiglettsCaveEntranceExit.blk"
 
-SECTION "SSAnne2FRooms_Blocks", ROMX
+floating_section
 SSAnne2FRooms_Blocks:
 SSAnneB1FRooms_Blocks:
 	INCBIN "maps/SSAnne2FRooms.blk"
 
-SECTION "AgathasRoom_Blocks", ROMX
+floating_section
 AgathasRoom_Blocks:
 	INCBIN "maps/AgathasRoom.blk"
 
-SECTION "BikeShop_Blocks", ROMX
+floating_section
 BikeShop_Blocks:
 	INCBIN "maps/BikeShop.blk"
 
-SECTION "BillsHouse_Blocks", ROMX
+floating_section
 BillsHouse_Blocks:
 	INCBIN "maps/BillsHouse.blk"
 
-SECTION "BrunosRoomKanto_Blocks", ROMX
+floating_section
 BrunosRoomKanto_Blocks:
 	INCBIN "maps/BrunosRoomKanto.blk"
 
-SECTION "CeladonChiefHouse_Blocks", ROMX
+floating_section
 CeladonChiefHouse_Blocks:
 	INCBIN "maps/CeladonChiefHouse.blk"
 
-SECTION "CeladonDiner_Blocks", ROMX
+floating_section
 CeladonDiner_Blocks:
 	INCBIN "maps/CeladonDiner.blk"
 
-SECTION "CeladonGym_Blocks", ROMX
+floating_section
 CeladonGym_Blocks:
 	INCBIN "maps/CeladonGym.blk"
 
-SECTION "CeladonHotel_Blocks", ROMX
+floating_section
 CeladonHotel_Blocks:
 	INCBIN "maps/CeladonHotel.blk"
 
-SECTION "CeladonMansion1F_Blocks", ROMX
+floating_section
 CeladonMansion1F_Blocks:
 	INCBIN "maps/CeladonMansion1F.blk"
 
-SECTION "CeladonMansion2F_Blocks", ROMX
+floating_section
 CeladonMansion2F_Blocks:
 	INCBIN "maps/CeladonMansion2F.blk"
 
-SECTION "CeladonMansion3F_Blocks", ROMX
+floating_section
 CeladonMansion3F_Blocks:
 	INCBIN "maps/CeladonMansion3F.blk"
 
-SECTION "CeladonMansionRoof_Blocks", ROMX
+floating_section
 CeladonMansionRoof_Blocks:
 	INCBIN "maps/CeladonMansionRoof.blk"
 
-SECTION "CeladonMart1F_Blocks", ROMX
+floating_section
 CeladonMart1F_Blocks:
 	INCBIN "maps/CeladonMart1F.blk"
 
-SECTION "CeladonMart2F_Blocks", ROMX
+floating_section
 CeladonMart2F_Blocks:
 	INCBIN "maps/CeladonMart2F.blk"
 
-SECTION "CeladonMart3F_Blocks", ROMX
+floating_section
 CeladonMart3F_Blocks:
 	INCBIN "maps/CeladonMart3F.blk"
 
-SECTION "CeladonMart4F_Blocks", ROMX
+floating_section
 CeladonMart4F_Blocks:
 	INCBIN "maps/CeladonMart4F.blk"
 
-SECTION "CeladonMart5F_Blocks", ROMX
+floating_section
 CeladonMart5F_Blocks:
 	INCBIN "maps/CeladonMart5F.blk"
 
-SECTION "CeladonMartRoof_Blocks", ROMX
+floating_section
 CeladonMartRoof_Blocks:
 	INCBIN "maps/CeladonMartRoof.blk"
 
-SECTION "CeruleanCave1F_Blocks", ROMX
+floating_section
 CeruleanCave1F_Blocks:
 	INCBIN "maps/CeruleanCave1F.blk"
 
-SECTION "CeruleanCave2F_Blocks", ROMX
+floating_section
 CeruleanCave2F_Blocks:
 	INCBIN "maps/CeruleanCave2F.blk"
 
-SECTION "CeruleanCaveB1F_Blocks", ROMX
+floating_section
 CeruleanCaveB1F_Blocks:
 	INCBIN "maps/CeruleanCaveB1F.blk"
 
-SECTION "CeruleanGym_Blocks", ROMX
+floating_section
 CeruleanGym_Blocks:
 	INCBIN "maps/CeruleanGym.blk"
 
-SECTION "CeruleanTrashedHouse_Blocks", ROMX
+floating_section
 CeruleanTrashedHouse_Blocks:
 	INCBIN "maps/CeruleanTrashedHouse.blk"
 
-SECTION "ChampionsRoom_Blocks", ROMX
+floating_section
 ChampionsRoom_Blocks:
 	INCBIN "maps/ChampionsRoom.blk"
 
-SECTION "CinnabarGym_Blocks", ROMX
+floating_section
 CinnabarGym_Blocks:
 	INCBIN "maps/CinnabarGym.blk"
 
-SECTION "CinnabarLab_Blocks", ROMX
+floating_section
 CinnabarLab_Blocks:
 	INCBIN "maps/CinnabarLab.blk"
 
-SECTION "CinnabarLabFossilRoom_Blocks", ROMX
+floating_section
 CinnabarLabFossilRoom_Blocks:
 	INCBIN "maps/CinnabarLabFossilRoom.blk"
 
-SECTION "CinnabarLabMetronomeRoom_Blocks", ROMX
+floating_section
 CinnabarLabMetronomeRoom_Blocks:
 	INCBIN "maps/CinnabarLabMetronomeRoom.blk"
 
-SECTION "CinnabarLabTradeRoom_Blocks", ROMX
+floating_section
 CinnabarLabTradeRoom_Blocks:
 	INCBIN "maps/CinnabarLabTradeRoom.blk"
 
-SECTION "ColosseumKanto_Blocks", ROMX
+floating_section
 ColosseumKanto_Blocks:
 	INCBIN "maps/ColosseumKanto.blk"
 
-SECTION "DiglettsCave_Blocks", ROMX
+floating_section
 DiglettsCave_Blocks:
 	INCBIN "maps/DiglettsCave.blk"
 
-SECTION "FightingDojo_Blocks", ROMX
+floating_section
 FightingDojo_Blocks:
 	INCBIN "maps/FightingDojo.blk"
 
-SECTION "FuchsiaGym_Blocks", ROMX
+floating_section
 FuchsiaGym_Blocks:
 	INCBIN "maps/FuchsiaGym.blk"
 
-SECTION "FuchsiaMeetingRoom_Blocks", ROMX
+floating_section
 FuchsiaMeetingRoom_Blocks:
 	INCBIN "maps/FuchsiaMeetingRoom.blk"
 
-SECTION "GameCorner_Blocks", ROMX
+floating_section
 GameCorner_Blocks:
 	INCBIN "maps/GameCorner.blk"
 
-SECTION "GameCornerPrizeRoom_Blocks", ROMX
+floating_section
 GameCornerPrizeRoom_Blocks:
 	INCBIN "maps/GameCornerPrizeRoom.blk"
 
-SECTION "HallOfFameKanto_Blocks", ROMX
+floating_section
 HallOfFameKanto_Blocks:
 	INCBIN "maps/HallOfFameKanto.blk"
 
-SECTION "IndigoPlateauLobby_Blocks", ROMX
+floating_section
 IndigoPlateauLobby_Blocks:
 	INCBIN "maps/IndigoPlateauLobby.blk"
 
-SECTION "LancesRoomKanto_Blocks", ROMX
+floating_section
 LancesRoomKanto_Blocks:
 	INCBIN "maps/LancesRoomKanto.blk"
 
-SECTION "LoreleisRoom_Blocks", ROMX
+floating_section
 LoreleisRoom_Blocks:
 	INCBIN "maps/LoreleisRoom.blk"
 
-SECTION "MtMoon1F_Blocks", ROMX
+floating_section
 MtMoon1F_Blocks:
 	INCBIN "maps/MtMoon1F.blk"
 
-SECTION "MtMoonB1F_Blocks", ROMX
+floating_section
 MtMoonB1F_Blocks:
 	INCBIN "maps/MtMoonB1F.blk"
 
-SECTION "MtMoonB2F_Blocks", ROMX
+floating_section
 MtMoonB2F_Blocks:
 	INCBIN "maps/MtMoonB2F.blk"
 
-SECTION "Museum1F_Blocks", ROMX
+floating_section
 Museum1F_Blocks:
 	INCBIN "maps/Museum1F.blk"
 
-SECTION "Museum2F_Blocks", ROMX
+floating_section
 Museum2F_Blocks:
 	INCBIN "maps/Museum2F.blk"
 
-SECTION "OaksLab_Blocks", ROMX
+floating_section
 OaksLab_Blocks:
 	INCBIN "maps/OaksLab.blk"
 
-SECTION "PewterGym_Blocks", ROMX
+floating_section
 PewterGym_Blocks:
 	INCBIN "maps/PewterGym.blk"
 
-SECTION "PokemonFanClub_Blocks", ROMX
+floating_section
 PokemonFanClub_Blocks:
 	INCBIN "maps/PokemonFanClub.blk"
 
-SECTION "PokemonMansion1F_Blocks", ROMX
+floating_section
 PokemonMansion1F_Blocks:
 	INCBIN "maps/PokemonMansion1F.blk"
 
-SECTION "PokemonMansion2F_Blocks", ROMX
+floating_section
 PokemonMansion2F_Blocks:
 	INCBIN "maps/PokemonMansion2F.blk"
 
-SECTION "PokemonMansion3F_Blocks", ROMX
+floating_section
 PokemonMansion3F_Blocks:
 	INCBIN "maps/PokemonMansion3F.blk"
 
-SECTION "PokemonMansionB1F_Blocks", ROMX
+floating_section
 PokemonMansionB1F_Blocks:
 	INCBIN "maps/PokemonMansionB1F.blk"
 
-SECTION "PokemonTower1F_Blocks", ROMX
+floating_section
 PokemonTower1F_Blocks:
 	INCBIN "maps/PokemonTower1F.blk"
 
-SECTION "PokemonTower2F_Blocks", ROMX
+floating_section
 PokemonTower2F_Blocks:
 	INCBIN "maps/PokemonTower2F.blk"
 
-SECTION "PokemonTower3F_Blocks", ROMX
+floating_section
 PokemonTower3F_Blocks:
 	INCBIN "maps/PokemonTower3F.blk"
 
-SECTION "PokemonTower4F_Blocks", ROMX
+floating_section
 PokemonTower4F_Blocks:
 	INCBIN "maps/PokemonTower4F.blk"
 
-SECTION "PokemonTower5F_Blocks", ROMX
+floating_section
 PokemonTower5F_Blocks:
 	INCBIN "maps/PokemonTower5F.blk"
 
-SECTION "PokemonTower6F_Blocks", ROMX
+floating_section
 PokemonTower6F_Blocks:
 	INCBIN "maps/PokemonTower6F.blk"
 
-SECTION "PokemonTower7F_Blocks", ROMX
+floating_section
 PokemonTower7F_Blocks:
 	INCBIN "maps/PokemonTower7F.blk"
 
-SECTION "PowerPlant_Blocks", ROMX
+floating_section
 PowerPlant_Blocks:
 	INCBIN "maps/PowerPlant.blk"
 
-SECTION "RockTunnel1F_Blocks", ROMX
+floating_section
 RockTunnel1F_Blocks:
 	INCBIN "maps/RockTunnel1F.blk"
 
-SECTION "RockTunnelB1F_Blocks", ROMX
+floating_section
 RockTunnelB1F_Blocks:
 	INCBIN "maps/RockTunnelB1F.blk"
 
-SECTION "RocketHideoutB1F_Blocks", ROMX
+floating_section
 RocketHideoutB1F_Blocks:
 	INCBIN "maps/RocketHideoutB1F.blk"
 
-SECTION "RocketHideoutB2F_Blocks", ROMX
+floating_section
 RocketHideoutB2F_Blocks:
 	INCBIN "maps/RocketHideoutB2F.blk"
 
-SECTION "RocketHideoutB3F_Blocks", ROMX
+floating_section
 RocketHideoutB3F_Blocks:
 	INCBIN "maps/RocketHideoutB3F.blk"
 
-SECTION "RocketHideoutB4F_Blocks", ROMX
+floating_section
 RocketHideoutB4F_Blocks:
 	INCBIN "maps/RocketHideoutB4F.blk"
 
-SECTION "RocketHideoutElevator_Blocks", ROMX
+floating_section
 RocketHideoutElevator_Blocks:
 	INCBIN "maps/RocketHideoutElevator.blk"
 
-SECTION "Route12Gate1F_Blocks", ROMX
+floating_section
 Route12Gate1F_Blocks:
 	INCBIN "maps/Route12Gate1F.blk"
 
-SECTION "Route16Gate1F_Blocks", ROMX
+floating_section
 Route16Gate1F_Blocks:
 	INCBIN "maps/Route16Gate1F.blk"
 
-SECTION "Route22Gate_Blocks", ROMX
+floating_section
 Route22Gate_Blocks:
 	INCBIN "maps/Route22Gate.blk"
 
-SECTION "SSAnne1F_Blocks", ROMX
+floating_section
 SSAnne1F_Blocks:
 	INCBIN "maps/SSAnne1F.blk"
 
-SECTION "SSAnne1FRooms_Blocks", ROMX
+floating_section
 SSAnne1FRooms_Blocks:
 	INCBIN "maps/SSAnne1FRooms.blk"
 
-SECTION "SSAnne2F_Blocks", ROMX
+floating_section
 SSAnne2F_Blocks:
 	INCBIN "maps/SSAnne2F.blk"
 
-SECTION "SSAnne3F_Blocks", ROMX
+floating_section
 SSAnne3F_Blocks:
 	INCBIN "maps/SSAnne3F.blk"
 
-SECTION "SSAnneB1F_Blocks", ROMX
+floating_section
 SSAnneB1F_Blocks:
 	INCBIN "maps/SSAnneB1F.blk"
 
-SECTION "SSAnneBow_Blocks", ROMX
+floating_section
 SSAnneBow_Blocks:
 	INCBIN "maps/SSAnneBow.blk"
 
-SECTION "SSAnneCaptainsRoom_Blocks", ROMX
+floating_section
 SSAnneCaptainsRoom_Blocks:
 	INCBIN "maps/SSAnneCaptainsRoom.blk"
 
-SECTION "SSAnneKitchen_Blocks", ROMX
+floating_section
 SSAnneKitchen_Blocks:
 	INCBIN "maps/SSAnneKitchen.blk"
 
-SECTION "SafariZoneCenter_Blocks", ROMX
+floating_section
 SafariZoneCenter_Blocks:
 	INCBIN "maps/SafariZoneCenter.blk"
 
-SECTION "SafariZoneEast_Blocks", ROMX
+floating_section
 SafariZoneEast_Blocks:
 	INCBIN "maps/SafariZoneEast.blk"
 
-SECTION "SafariZoneNorth_Blocks", ROMX
+floating_section
 SafariZoneNorth_Blocks:
 	INCBIN "maps/SafariZoneNorth.blk"
 
-SECTION "SafariZoneSecretHouse_Blocks", ROMX
+floating_section
 SafariZoneSecretHouse_Blocks:
 	INCBIN "maps/SafariZoneSecretHouse.blk"
 
-SECTION "SafariZoneWest_Blocks", ROMX
+floating_section
 SafariZoneWest_Blocks:
 	INCBIN "maps/SafariZoneWest.blk"
 
-SECTION "SaffronGym_Blocks", ROMX
+floating_section
 SaffronGym_Blocks:
 	INCBIN "maps/SaffronGym.blk"
 
-SECTION "SeafoamIslands1F_Blocks", ROMX
+floating_section
 SeafoamIslands1F_Blocks:
 	INCBIN "maps/SeafoamIslands1F.blk"
 
-SECTION "SeafoamIslandsB1F_Blocks", ROMX
+floating_section
 SeafoamIslandsB1F_Blocks:
 	INCBIN "maps/SeafoamIslandsB1F.blk"
 
-SECTION "SeafoamIslandsB2F_Blocks", ROMX
+floating_section
 SeafoamIslandsB2F_Blocks:
 	INCBIN "maps/SeafoamIslandsB2F.blk"
 
-SECTION "SeafoamIslandsB3F_Blocks", ROMX
+floating_section
 SeafoamIslandsB3F_Blocks:
 	INCBIN "maps/SeafoamIslandsB3F.blk"
 
-SECTION "SeafoamIslandsB4F_Blocks", ROMX
+floating_section
 SeafoamIslandsB4F_Blocks:
 	INCBIN "maps/SeafoamIslandsB4F.blk"
 
-SECTION "SilphCo1F_Blocks", ROMX
+floating_section
 SilphCo1F_Blocks:
 	INCBIN "maps/SilphCo1F.blk"
 
-SECTION "SilphCo2F_Blocks", ROMX
+floating_section
 SilphCo2F_Blocks:
 	INCBIN "maps/SilphCo2F.blk"
 
-SECTION "SilphCo3F_Blocks", ROMX
+floating_section
 SilphCo3F_Blocks:
 	INCBIN "maps/SilphCo3F.blk"
 
-SECTION "SilphCo4F_Blocks", ROMX
+floating_section
 SilphCo4F_Blocks:
 	INCBIN "maps/SilphCo4F.blk"
 
-SECTION "SilphCo5F_Blocks", ROMX
+floating_section
 SilphCo5F_Blocks:
 	INCBIN "maps/SilphCo5F.blk"
 
-SECTION "SilphCo6F_Blocks", ROMX
+floating_section
 SilphCo6F_Blocks:
 	INCBIN "maps/SilphCo6F.blk"
 
-SECTION "SilphCo7F_Blocks", ROMX
+floating_section
 SilphCo7F_Blocks:
 	INCBIN "maps/SilphCo7F.blk"
 
-SECTION "SilphCo8F_Blocks", ROMX
+floating_section
 SilphCo8F_Blocks:
 	INCBIN "maps/SilphCo8F.blk"
 
-SECTION "SilphCo9F_Blocks", ROMX
+floating_section
 SilphCo9F_Blocks:
 	INCBIN "maps/SilphCo9F.blk"
 
-SECTION "SilphCo10F_Blocks", ROMX
+floating_section
 SilphCo10F_Blocks:
 	INCBIN "maps/SilphCo10F.blk"
 
-SECTION "SilphCo11F_Blocks", ROMX
+floating_section
 SilphCo11F_Blocks:
 	INCBIN "maps/SilphCo11F.blk"
 
-SECTION "TradeCenterKanto_Blocks", ROMX
+floating_section
 TradeCenterKanto_Blocks:
 	INCBIN "maps/TradeCenterKanto.blk"
 
-SECTION "UndergroundPathNorthSouth_Blocks", ROMX
+floating_section
 UndergroundPathNorthSouth_Blocks:
 	INCBIN "maps/UndergroundPathNorthSouth.blk"
 
-SECTION "UndergroundPathWestEast_Blocks", ROMX
+floating_section
 UndergroundPathWestEast_Blocks:
 	INCBIN "maps/UndergroundPathWestEast.blk"
 
-SECTION "VermilionDock_Blocks", ROMX
+floating_section
 VermilionDock_Blocks:
 	INCBIN "maps/VermilionDock.blk"
 
-SECTION "VermilionGym_Blocks", ROMX
+floating_section
 VermilionGym_Blocks:
 	INCBIN "maps/VermilionGym.blk"
 
-SECTION "VictoryRoad1F_Blocks", ROMX
+floating_section
 VictoryRoad1F_Blocks:
 	INCBIN "maps/VictoryRoad1F.blk"
 
-SECTION "VictoryRoad2F_Blocks", ROMX
+floating_section
 VictoryRoad2F_Blocks:
 	INCBIN "maps/VictoryRoad2F.blk"
 
-SECTION "VictoryRoad3F_Blocks", ROMX
+floating_section
 VictoryRoad3F_Blocks:
 	INCBIN "maps/VictoryRoad3F.blk"
 
-SECTION "ViridianForest_Blocks", ROMX
+floating_section
 ViridianForest_Blocks:
 	INCBIN "maps/ViridianForest.blk"
 
-SECTION "ViridianGym_Blocks", ROMX
+floating_section
 ViridianGym_Blocks:
 	INCBIN "maps/ViridianGym.blk"
 
-SECTION "WardensHouse_Blocks", ROMX
+floating_section
 WardensHouse_Blocks:
 	INCBIN "maps/WardensHouse.blk"
