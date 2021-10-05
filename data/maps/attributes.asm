@@ -666,14 +666,14 @@ ENDM
 	map_attributes PowerPlant, POWER_PLANT, $00, 0
 	map_attributes RedsHouse1F, REDS_HOUSE_1F, $00, 0
 	map_attributes RedsHouse2F, REDS_HOUSE_2F, $00, 0
-	map_attributes RocketHideoutB1F, ROCK_TUNNEL_1F, $00, 0
-	map_attributes RocketHideoutB2F, ROCK_TUNNEL_B1F, $00, 0
-	map_attributes RocketHideoutB3F, ROCK_TUNNEL_POKECENTER, $00, 0
-	map_attributes RocketHideoutB4F, ROCKET_HIDEOUT_B1F, $00, 0
-	map_attributes RocketHideoutElevator, ROCKET_HIDEOUT_B2F, $00, 0
-	map_attributes RockTunnel1F, ROCKET_HIDEOUT_B3F, $00, 0
-	map_attributes RockTunnelB1F, ROCKET_HIDEOUT_B4F, $00, 0
-	map_attributes RockTunnelPokecenter, ROCKET_HIDEOUT_ELEVATOR, $00, 0
+	map_attributes RocketHideoutB1F, ROCKET_HIDEOUT_B1F, $00, 0
+	map_attributes RocketHideoutB2F, ROCKET_HIDEOUT_B2F, $00, 0
+	map_attributes RocketHideoutB3F, ROCKET_HIDEOUT_B3F, $00, 0
+	map_attributes RocketHideoutB4F, ROCKET_HIDEOUT_B4F, $00, 0
+	map_attributes RocketHideoutElevator, ROCKET_HIDEOUT_ELEVATOR, $00, 0
+	map_attributes RockTunnel1F, ROCK_TUNNEL_1F, $00, 0
+	map_attributes RockTunnelB1F, ROCK_TUNNEL_B1F, $00, 0
+	map_attributes RockTunnelPokecenter, ROCK_TUNNEL_POKECENTER, $00, 0
 	map_attributes Route2Gate, ROUTE_2_GATE, $00, 0
 	map_attributes Route2TradeHouse, ROUTE_2_TRADE_HOUSE, $00, 0
 	map_attributes Route5Gate, ROUTE_5_GATE, $00, 0
