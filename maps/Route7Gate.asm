@@ -9,6 +9,10 @@ Route7Gate_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  0,  3, ROUTE_7, 4
+	warp_event  0,  4, ROUTE_7, 4
+	warp_event  5,  3, ROUTE_7, 1
+	warp_event  5,  4, ROUTE_7, 2
 
 	def_coord_events
 

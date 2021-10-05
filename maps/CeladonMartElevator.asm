@@ -9,6 +9,8 @@ CeladonMartElevator_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  1,  3, CELADON_MART_1F, 6
+	warp_event  2,  3, CELADON_MART_1F, 6
 
 	def_coord_events
 

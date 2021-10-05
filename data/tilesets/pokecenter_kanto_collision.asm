@@ -35,3 +35,4 @@
 	tilecoll COUNTER, FLOOR, FLOOR, FLOOR ; 22
 	tilecoll COUNTER, COUNTER, FLOOR, PC ; 23
 	tilecoll WALL, WALL, WALL, WALL ; 24
+	tilecoll COUNTER, COUNTER, FLOOR, PC ; 25

@@ -9,6 +9,8 @@ Route2TradeHouse_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  2,  7, ROUTE_2, 3
+	warp_event  3,  7, ROUTE_2, 3
 
 	def_coord_events
 

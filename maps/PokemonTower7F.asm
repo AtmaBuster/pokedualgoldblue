@@ -9,6 +9,7 @@ PokemonTower7F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  9, 16, POKEMON_TOWER_6F, 2
 
 	def_coord_events
 

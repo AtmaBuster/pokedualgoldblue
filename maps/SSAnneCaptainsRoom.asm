@@ -9,6 +9,7 @@ SSAnneCaptainsRoom_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  0,  7, SS_ANNE_2F, 9
 
 	def_coord_events
 

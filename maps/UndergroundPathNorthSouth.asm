@@ -9,6 +9,8 @@ UndergroundPathNorthSouth_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  5,  4, UNDERGROUND_PATH_ROUTE_5, 3
+	warp_event  2, 41, UNDERGROUND_PATH_ROUTE_6, 3
 
 	def_coord_events
 

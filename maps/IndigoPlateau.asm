@@ -14,8 +14,13 @@ IndigoPlateau_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+IF DEF(_GOLD)
 	warp_event  9,  5, INDIGO_PLATEAU_POKECENTER_1F, 1
 	warp_event 10,  5, INDIGO_PLATEAU_POKECENTER_1F, 2
+ELIF DEF(_SILVER)
+	warp_event  9,  5, INDIGO_PLATEAU_LOBBY, 1
+	warp_event 10,  5, INDIGO_PLATEAU_LOBBY, 2
+ENDC
 
 	def_coord_events
 

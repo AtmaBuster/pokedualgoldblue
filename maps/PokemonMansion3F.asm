@@ -9,6 +9,9 @@ PokemonMansion3F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  7, 10, POKEMON_MANSION_2F, 2
+	warp_event  6,  1, POKEMON_MANSION_2F, 4
+	warp_event 25, 14, POKEMON_MANSION_2F, 3
 
 	def_coord_events
 

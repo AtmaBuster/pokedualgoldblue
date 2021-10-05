@@ -586,7 +586,7 @@ ENDM
 	map_attributes CeladonMansion1F, CELADON_MANSION_1F, $00, 0
 	map_attributes CeladonMansion2F, CELADON_MANSION_2F, $00, 0
 	map_attributes CeladonMansion3F, CELADON_MANSION_3F, $00, 0
-	map_attributes CeladonMansionRoof, CELADON_MANSION_ROOF, $00, 0
+	map_attributes CeladonMansionRoof, CELADON_MANSION_ROOF, $09, 0
 	map_attributes CeladonMansionRoofHouse, CELADON_MANSION_ROOF_HOUSE, $00, 0
 	map_attributes CeladonMart1F, CELADON_MART_1F, $00, 0
 	map_attributes CeladonMart2F, CELADON_MART_2F, $00, 0
@@ -594,7 +594,7 @@ ENDM
 	map_attributes CeladonMart4F, CELADON_MART_4F, $00, 0
 	map_attributes CeladonMart5F, CELADON_MART_5F, $00, 0
 	map_attributes CeladonMartElevator, CELADON_MART_ELEVATOR, $00, 0
-	map_attributes CeladonMartRoof, CELADON_MART_ROOF, $00, 0
+	map_attributes CeladonMartRoof, CELADON_MART_ROOF, $42, 0
 	map_attributes CeladonPokecenter, CELADON_POKECENTER, $00, 0
 	map_attributes CeruleanBadgeHouse, CERULEAN_BADGE_HOUSE, $00, 0
 	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $00, 0
@@ -652,17 +652,17 @@ ENDM
 	map_attributes PewterPokecenter, PEWTER_POKECENTER, $00, 0
 	map_attributes PewterSpeechHouse, PEWTER_SPEECH_HOUSE, $00, 0
 	map_attributes PokemonFanClub, POKEMON_FAN_CLUB, $00, 0
-	map_attributes PokemonMansion1F, POKEMON_MANSION_1F, $00, 0
-	map_attributes PokemonMansion2F, POKEMON_MANSION_2F, $00, 0
-	map_attributes PokemonMansion3F, POKEMON_MANSION_3F, $00, 0
-	map_attributes PokemonMansionB1F, POKEMON_MANSION_B1F, $00, 0
-	map_attributes PokemonTower1F, POKEMON_TOWER_1F, $00, 0
-	map_attributes PokemonTower2F, POKEMON_TOWER_2F, $00, 0
-	map_attributes PokemonTower3F, POKEMON_TOWER_3F, $00, 0
-	map_attributes PokemonTower4F, POKEMON_TOWER_4F, $00, 0
-	map_attributes PokemonTower5F, POKEMON_TOWER_5F, $00, 0
-	map_attributes PokemonTower6F, POKEMON_TOWER_6F, $00, 0
-	map_attributes PokemonTower7F, POKEMON_TOWER_7F, $00, 0
+	map_attributes PokemonMansion1F, POKEMON_MANSION_1F, $01, 0
+	map_attributes PokemonMansion2F, POKEMON_MANSION_2F, $01, 0
+	map_attributes PokemonMansion3F, POKEMON_MANSION_3F, $01, 0
+	map_attributes PokemonMansionB1F, POKEMON_MANSION_B1F, $01, 0
+	map_attributes PokemonTower1F, POKEMON_TOWER_1F, $01, 0
+	map_attributes PokemonTower2F, POKEMON_TOWER_2F, $01, 0
+	map_attributes PokemonTower3F, POKEMON_TOWER_3F, $01, 0
+	map_attributes PokemonTower4F, POKEMON_TOWER_4F, $01, 0
+	map_attributes PokemonTower5F, POKEMON_TOWER_5F, $01, 0
+	map_attributes PokemonTower6F, POKEMON_TOWER_6F, $01, 0
+	map_attributes PokemonTower7F, POKEMON_TOWER_7F, $01, 0
 	map_attributes PowerPlant, POWER_PLANT, $00, 0
 	map_attributes RedsHouse1F, REDS_HOUSE_1F, $00, 0
 	map_attributes RedsHouse2F, REDS_HOUSE_2F, $00, 0
@@ -731,7 +731,7 @@ ENDM
 	map_attributes SSAnne3F, SS_ANNE_3F, $00, 0
 	map_attributes SSAnneB1F, SS_ANNE_B1F, $00, 0
 	map_attributes SSAnneB1FRooms, SS_ANNE_B1F_ROOMS, $00, 0
-	map_attributes SSAnneBow, SS_ANNE_BOW, $00, 0
+	map_attributes SSAnneBow, SS_ANNE_BOW, $23, 0
 	map_attributes SSAnneCaptainsRoom, SS_ANNE_CAPTAINS_ROOM, $00, 0
 	map_attributes SSAnneKitchen, SS_ANNE_KITCHEN, $00, 0
 	map_attributes TradeCenterKanto, TRADE_CENTER_KANTO, $00, 0

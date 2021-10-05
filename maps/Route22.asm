@@ -9,7 +9,11 @@ Route22_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+IF DEF(_GOLD)
 	warp_event  8,  5, VICTORY_ROAD_GATE, 1
+ELIF DEF(_SILVER)
+	warp_event  8,  5, ROUTE_22_GATE, 1
+ENDC
 
 	def_coord_events
 
