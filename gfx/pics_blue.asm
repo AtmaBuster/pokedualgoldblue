@@ -23,31 +23,31 @@ INCLUDE "data/trainers/pic_pointers.asm"
 floating_section
 AbraBackpic:         INCBIN "gfx/pokemon/abra/back.2bpp.lz"
 floating_section
-AbraFrontpic:        INCBIN "gfx/pokemon/abra/front_silver.2bpp.lz"
+AbraFrontpic:        INCBIN "gfx/pokemon/abra/front_blue.2bpp.lz"
 floating_section
 AerodactylBackpic:   INCBIN "gfx/pokemon/aerodactyl/back.2bpp.lz"
 floating_section
-AerodactylFrontpic:  INCBIN "gfx/pokemon/aerodactyl/front_silver.2bpp.lz"
+AerodactylFrontpic:  INCBIN "gfx/pokemon/aerodactyl/front_blue.2bpp.lz"
 floating_section
 AipomBackpic:        INCBIN "gfx/pokemon/aipom/back.2bpp.lz"
 floating_section
-AipomFrontpic:       INCBIN "gfx/pokemon/aipom/front_silver.2bpp.lz"
+AipomFrontpic:       INCBIN "gfx/pokemon/aipom/front_blue.2bpp.lz"
 floating_section
-AlakazamBackpic:     INCBIN "gfx/pokemon/alakazam/back_silver.2bpp.lz"
+AlakazamBackpic:     INCBIN "gfx/pokemon/alakazam/back.2bpp.lz"
 floating_section
-AlakazamFrontpic:    INCBIN "gfx/pokemon/alakazam/front_silver.2bpp.lz"
+AlakazamFrontpic:    INCBIN "gfx/pokemon/alakazam/front_blue.2bpp.lz"
 floating_section
 AmpharosBackpic:     INCBIN "gfx/pokemon/ampharos/back.2bpp.lz"
 floating_section
-AmpharosFrontpic:    INCBIN "gfx/pokemon/ampharos/front_silver.2bpp.lz"
+AmpharosFrontpic:    INCBIN "gfx/pokemon/ampharos/front_blue.2bpp.lz"
 floating_section
 ArbokBackpic:        INCBIN "gfx/pokemon/arbok/back.2bpp.lz"
 floating_section
-ArbokFrontpic:       INCBIN "gfx/pokemon/arbok/front_silver.2bpp.lz"
+ArbokFrontpic:       INCBIN "gfx/pokemon/arbok/front_blue.2bpp.lz"
 floating_section
 ArcanineBackpic:     INCBIN "gfx/pokemon/arcanine/back.2bpp.lz"
 floating_section
-ArcanineFrontpic:    INCBIN "gfx/pokemon/arcanine/front_silver.2bpp.lz"
+ArcanineFrontpic:    INCBIN "gfx/pokemon/arcanine/front_blue.2bpp.lz"
 floating_section
 AriadosBackpic:      INCBIN "gfx/pokemon/ariados/back.2bpp.lz"
 floating_section
@@ -55,11 +55,11 @@ AriadosFrontpic:     INCBIN "gfx/pokemon/ariados/front.2bpp.lz"
 floating_section
 ArticunoBackpic:     INCBIN "gfx/pokemon/articuno/back.2bpp.lz"
 floating_section
-ArticunoFrontpic:    INCBIN "gfx/pokemon/articuno/front_silver.2bpp.lz"
+ArticunoFrontpic:    INCBIN "gfx/pokemon/articuno/front_blue.2bpp.lz"
 floating_section
 AzumarillBackpic:    INCBIN "gfx/pokemon/azumarill/back.2bpp.lz"
 floating_section
-AzumarillFrontpic:   INCBIN "gfx/pokemon/azumarill/front_silver.2bpp.lz"
+AzumarillFrontpic:   INCBIN "gfx/pokemon/azumarill/front_blue.2bpp.lz"
 floating_section
 BayleefBackpic:      INCBIN "gfx/pokemon/bayleef/back.2bpp.lz"
 floating_section
@@ -67,171 +67,171 @@ BayleefFrontpic:     INCBIN "gfx/pokemon/bayleef/front.2bpp.lz"
 floating_section
 BeedrillBackpic:     INCBIN "gfx/pokemon/beedrill/back.2bpp.lz"
 floating_section
-BeedrillFrontpic:    INCBIN "gfx/pokemon/beedrill/front_silver.2bpp.lz"
+BeedrillFrontpic:    INCBIN "gfx/pokemon/beedrill/front_blue.2bpp.lz"
 floating_section
 BellossomBackpic:    INCBIN "gfx/pokemon/bellossom/back.2bpp.lz"
 floating_section
-BellossomFrontpic:   INCBIN "gfx/pokemon/bellossom/front_silver.2bpp.lz"
+BellossomFrontpic:   INCBIN "gfx/pokemon/bellossom/front_blue.2bpp.lz"
 floating_section
 BellsproutBackpic:   INCBIN "gfx/pokemon/bellsprout/back.2bpp.lz"
 floating_section
-BellsproutFrontpic:  INCBIN "gfx/pokemon/bellsprout/front_silver.2bpp.lz"
+BellsproutFrontpic:  INCBIN "gfx/pokemon/bellsprout/front_blue.2bpp.lz"
 floating_section
 BlastoiseBackpic:    INCBIN "gfx/pokemon/blastoise/back.2bpp.lz"
 floating_section
-BlastoiseFrontpic:   INCBIN "gfx/pokemon/blastoise/front_silver.2bpp.lz"
+BlastoiseFrontpic:   INCBIN "gfx/pokemon/blastoise/front_blue.2bpp.lz"
 floating_section
 BlisseyBackpic:      INCBIN "gfx/pokemon/blissey/back.2bpp.lz"
 floating_section
-BlisseyFrontpic:     INCBIN "gfx/pokemon/blissey/front_silver.2bpp.lz"
+BlisseyFrontpic:     INCBIN "gfx/pokemon/blissey/front_blue.2bpp.lz"
 floating_section
 BulbasaurBackpic:    INCBIN "gfx/pokemon/bulbasaur/back.2bpp.lz"
 floating_section
-BulbasaurFrontpic:   INCBIN "gfx/pokemon/bulbasaur/front_silver.2bpp.lz"
+BulbasaurFrontpic:   INCBIN "gfx/pokemon/bulbasaur/front_blue.2bpp.lz"
 floating_section
 ButterfreeBackpic:   INCBIN "gfx/pokemon/butterfree/back.2bpp.lz"
 floating_section
-ButterfreeFrontpic:  INCBIN "gfx/pokemon/butterfree/front_silver.2bpp.lz"
+ButterfreeFrontpic:  INCBIN "gfx/pokemon/butterfree/front_blue.2bpp.lz"
 floating_section
 CaterpieBackpic:     INCBIN "gfx/pokemon/caterpie/back.2bpp.lz"
 floating_section
-CaterpieFrontpic:    INCBIN "gfx/pokemon/caterpie/front_silver.2bpp.lz"
+CaterpieFrontpic:    INCBIN "gfx/pokemon/caterpie/front_blue.2bpp.lz"
 floating_section
 CelebiBackpic:       INCBIN "gfx/pokemon/celebi/back.2bpp.lz"
 floating_section
-CelebiFrontpic:      INCBIN "gfx/pokemon/celebi/front_silver.2bpp.lz"
+CelebiFrontpic:      INCBIN "gfx/pokemon/celebi/front_blue.2bpp.lz"
 floating_section
 ChanseyBackpic:      INCBIN "gfx/pokemon/chansey/back.2bpp.lz"
 floating_section
-ChanseyFrontpic:     INCBIN "gfx/pokemon/chansey/front_silver.2bpp.lz"
+ChanseyFrontpic:     INCBIN "gfx/pokemon/chansey/front_blue.2bpp.lz"
 floating_section
 CharizardBackpic:    INCBIN "gfx/pokemon/charizard/back.2bpp.lz"
 floating_section
-CharizardFrontpic:   INCBIN "gfx/pokemon/charizard/front_silver.2bpp.lz"
+CharizardFrontpic:   INCBIN "gfx/pokemon/charizard/front_blue.2bpp.lz"
 floating_section
 CharmanderBackpic:   INCBIN "gfx/pokemon/charmander/back.2bpp.lz"
 floating_section
-CharmanderFrontpic:  INCBIN "gfx/pokemon/charmander/front_silver.2bpp.lz"
+CharmanderFrontpic:  INCBIN "gfx/pokemon/charmander/front_blue.2bpp.lz"
 floating_section
 CharmeleonBackpic:   INCBIN "gfx/pokemon/charmeleon/back.2bpp.lz"
 floating_section
-CharmeleonFrontpic:  INCBIN "gfx/pokemon/charmeleon/front_silver.2bpp.lz"
+CharmeleonFrontpic:  INCBIN "gfx/pokemon/charmeleon/front_blue.2bpp.lz"
 floating_section
 ChikoritaBackpic:    INCBIN "gfx/pokemon/chikorita/back.2bpp.lz"
 floating_section
-ChikoritaFrontpic:   INCBIN "gfx/pokemon/chikorita/front_silver.2bpp.lz"
+ChikoritaFrontpic:   INCBIN "gfx/pokemon/chikorita/front_blue.2bpp.lz"
 floating_section
 ChinchouBackpic:     INCBIN "gfx/pokemon/chinchou/back.2bpp.lz"
 floating_section
-ChinchouFrontpic:    INCBIN "gfx/pokemon/chinchou/front_silver.2bpp.lz"
+ChinchouFrontpic:    INCBIN "gfx/pokemon/chinchou/front_blue.2bpp.lz"
 floating_section
 ClefableBackpic:     INCBIN "gfx/pokemon/clefable/back.2bpp.lz"
 floating_section
-ClefableFrontpic:    INCBIN "gfx/pokemon/clefable/front_silver.2bpp.lz"
+ClefableFrontpic:    INCBIN "gfx/pokemon/clefable/front_blue.2bpp.lz"
 floating_section
 ClefairyBackpic:     INCBIN "gfx/pokemon/clefairy/back.2bpp.lz"
 floating_section
-ClefairyFrontpic:    INCBIN "gfx/pokemon/clefairy/front_silver.2bpp.lz"
+ClefairyFrontpic:    INCBIN "gfx/pokemon/clefairy/front_blue.2bpp.lz"
 floating_section
 CleffaBackpic:       INCBIN "gfx/pokemon/cleffa/back.2bpp.lz"
 floating_section
-CleffaFrontpic:      INCBIN "gfx/pokemon/cleffa/front_silver.2bpp.lz"
+CleffaFrontpic:      INCBIN "gfx/pokemon/cleffa/front_blue.2bpp.lz"
 floating_section
 CloysterBackpic:     INCBIN "gfx/pokemon/cloyster/back.2bpp.lz"
 floating_section
-CloysterFrontpic:    INCBIN "gfx/pokemon/cloyster/front_silver.2bpp.lz"
+CloysterFrontpic:    INCBIN "gfx/pokemon/cloyster/front_blue.2bpp.lz"
 floating_section
 CorsolaBackpic:      INCBIN "gfx/pokemon/corsola/back.2bpp.lz"
 floating_section
-CorsolaFrontpic:     INCBIN "gfx/pokemon/corsola/front_silver.2bpp.lz"
+CorsolaFrontpic:     INCBIN "gfx/pokemon/corsola/front_blue.2bpp.lz"
 floating_section
 CrobatBackpic:       INCBIN "gfx/pokemon/crobat/back.2bpp.lz"
 floating_section
-CrobatFrontpic:      INCBIN "gfx/pokemon/crobat/front_silver.2bpp.lz"
+CrobatFrontpic:      INCBIN "gfx/pokemon/crobat/front_blue.2bpp.lz"
 floating_section
 CroconawBackpic:     INCBIN "gfx/pokemon/croconaw/back.2bpp.lz"
 floating_section
-CroconawFrontpic:    INCBIN "gfx/pokemon/croconaw/front_silver.2bpp.lz"
+CroconawFrontpic:    INCBIN "gfx/pokemon/croconaw/front_blue.2bpp.lz"
 floating_section
 CuboneBackpic:       INCBIN "gfx/pokemon/cubone/back.2bpp.lz"
 floating_section
-CuboneFrontpic:      INCBIN "gfx/pokemon/cubone/front_silver.2bpp.lz"
+CuboneFrontpic:      INCBIN "gfx/pokemon/cubone/front_blue.2bpp.lz"
 floating_section
 CyndaquilBackpic:    INCBIN "gfx/pokemon/cyndaquil/back.2bpp.lz"
 floating_section
-CyndaquilFrontpic:   INCBIN "gfx/pokemon/cyndaquil/front_silver.2bpp.lz"
+CyndaquilFrontpic:   INCBIN "gfx/pokemon/cyndaquil/front_blue.2bpp.lz"
 floating_section
 DelibirdBackpic:     INCBIN "gfx/pokemon/delibird/back.2bpp.lz"
 floating_section
-DelibirdFrontpic:    INCBIN "gfx/pokemon/delibird/front_silver.2bpp.lz"
+DelibirdFrontpic:    INCBIN "gfx/pokemon/delibird/front_blue.2bpp.lz"
 floating_section
 DewgongBackpic:      INCBIN "gfx/pokemon/dewgong/back.2bpp.lz"
 floating_section
-DewgongFrontpic:     INCBIN "gfx/pokemon/dewgong/front_silver.2bpp.lz"
+DewgongFrontpic:     INCBIN "gfx/pokemon/dewgong/front_blue.2bpp.lz"
 floating_section
 DiglettBackpic:      INCBIN "gfx/pokemon/diglett/back.2bpp.lz"
 floating_section
-DiglettFrontpic:     INCBIN "gfx/pokemon/diglett/front_silver.2bpp.lz"
+DiglettFrontpic:     INCBIN "gfx/pokemon/diglett/front_blue.2bpp.lz"
 floating_section
 DittoBackpic:        INCBIN "gfx/pokemon/ditto/back.2bpp.lz"
 floating_section
-DittoFrontpic:       INCBIN "gfx/pokemon/ditto/front_silver.2bpp.lz"
+DittoFrontpic:       INCBIN "gfx/pokemon/ditto/front_blue.2bpp.lz"
 floating_section
 DodrioBackpic:       INCBIN "gfx/pokemon/dodrio/back.2bpp.lz"
 floating_section
-DodrioFrontpic:      INCBIN "gfx/pokemon/dodrio/front_silver.2bpp.lz"
+DodrioFrontpic:      INCBIN "gfx/pokemon/dodrio/front_blue.2bpp.lz"
 floating_section
 DoduoBackpic:        INCBIN "gfx/pokemon/doduo/back.2bpp.lz"
 floating_section
-DoduoFrontpic:       INCBIN "gfx/pokemon/doduo/front_silver.2bpp.lz"
+DoduoFrontpic:       INCBIN "gfx/pokemon/doduo/front_blue.2bpp.lz"
 floating_section
 DonphanBackpic:      INCBIN "gfx/pokemon/donphan/back.2bpp.lz"
 floating_section
-DonphanFrontpic:     INCBIN "gfx/pokemon/donphan/front_silver.2bpp.lz"
+DonphanFrontpic:     INCBIN "gfx/pokemon/donphan/front_blue.2bpp.lz"
 floating_section
 DragonairBackpic:    INCBIN "gfx/pokemon/dragonair/back.2bpp.lz"
 floating_section
-DragonairFrontpic:   INCBIN "gfx/pokemon/dragonair/front_silver.2bpp.lz"
+DragonairFrontpic:   INCBIN "gfx/pokemon/dragonair/front_blue.2bpp.lz"
 floating_section
 DragoniteBackpic:    INCBIN "gfx/pokemon/dragonite/back.2bpp.lz"
 floating_section
-DragoniteFrontpic:   INCBIN "gfx/pokemon/dragonite/front_silver.2bpp.lz"
+DragoniteFrontpic:   INCBIN "gfx/pokemon/dragonite/front_blue.2bpp.lz"
 floating_section
 DratiniBackpic:      INCBIN "gfx/pokemon/dratini/back.2bpp.lz"
 floating_section
-DratiniFrontpic:     INCBIN "gfx/pokemon/dratini/front_silver.2bpp.lz"
+DratiniFrontpic:     INCBIN "gfx/pokemon/dratini/front_blue.2bpp.lz"
 floating_section
 DrowzeeBackpic:      INCBIN "gfx/pokemon/drowzee/back.2bpp.lz"
 floating_section
-DrowzeeFrontpic:     INCBIN "gfx/pokemon/drowzee/front_silver.2bpp.lz"
+DrowzeeFrontpic:     INCBIN "gfx/pokemon/drowzee/front_blue.2bpp.lz"
 floating_section
 DugtrioBackpic:      INCBIN "gfx/pokemon/dugtrio/back.2bpp.lz"
 floating_section
-DugtrioFrontpic:     INCBIN "gfx/pokemon/dugtrio/front_silver.2bpp.lz"
+DugtrioFrontpic:     INCBIN "gfx/pokemon/dugtrio/front_blue.2bpp.lz"
 floating_section
 DunsparceBackpic:    INCBIN "gfx/pokemon/dunsparce/back.2bpp.lz"
 floating_section
-DunsparceFrontpic:   INCBIN "gfx/pokemon/dunsparce/front_silver.2bpp.lz"
+DunsparceFrontpic:   INCBIN "gfx/pokemon/dunsparce/front_blue.2bpp.lz"
 floating_section
 EeveeBackpic:        INCBIN "gfx/pokemon/eevee/back.2bpp.lz"
 floating_section
-EeveeFrontpic:       INCBIN "gfx/pokemon/eevee/front_silver.2bpp.lz"
+EeveeFrontpic:       INCBIN "gfx/pokemon/eevee/front_blue.2bpp.lz"
 floating_section
 EkansBackpic:        INCBIN "gfx/pokemon/ekans/back.2bpp.lz"
 floating_section
-EkansFrontpic:       INCBIN "gfx/pokemon/ekans/front_silver.2bpp.lz"
+EkansFrontpic:       INCBIN "gfx/pokemon/ekans/front_blue.2bpp.lz"
 floating_section
 ElectabuzzBackpic:   INCBIN "gfx/pokemon/electabuzz/back.2bpp.lz"
 floating_section
-ElectabuzzFrontpic:  INCBIN "gfx/pokemon/electabuzz/front_silver.2bpp.lz"
+ElectabuzzFrontpic:  INCBIN "gfx/pokemon/electabuzz/front_blue.2bpp.lz"
 floating_section
 ElectrodeBackpic:    INCBIN "gfx/pokemon/electrode/back.2bpp.lz"
 floating_section
-ElectrodeFrontpic:   INCBIN "gfx/pokemon/electrode/front_silver.2bpp.lz"
+ElectrodeFrontpic:   INCBIN "gfx/pokemon/electrode/front_blue.2bpp.lz"
 floating_section
 ElekidBackpic:       INCBIN "gfx/pokemon/elekid/back.2bpp.lz"
 floating_section
-ElekidFrontpic:      INCBIN "gfx/pokemon/elekid/front_silver.2bpp.lz"
+ElekidFrontpic:      INCBIN "gfx/pokemon/elekid/front_blue.2bpp.lz"
 floating_section
 EnteiBackpic:        INCBIN "gfx/pokemon/entei/back.2bpp.lz"
 floating_section
@@ -239,499 +239,499 @@ EnteiFrontpic:       INCBIN "gfx/pokemon/entei/front.2bpp.lz"
 floating_section
 EspeonBackpic:       INCBIN "gfx/pokemon/espeon/back.2bpp.lz"
 floating_section
-EspeonFrontpic:      INCBIN "gfx/pokemon/espeon/front_silver.2bpp.lz"
+EspeonFrontpic:      INCBIN "gfx/pokemon/espeon/front_blue.2bpp.lz"
 floating_section
 ExeggcuteBackpic:    INCBIN "gfx/pokemon/exeggcute/back.2bpp.lz"
 floating_section
-ExeggcuteFrontpic:   INCBIN "gfx/pokemon/exeggcute/front_silver.2bpp.lz"
+ExeggcuteFrontpic:   INCBIN "gfx/pokemon/exeggcute/front_blue.2bpp.lz"
 floating_section
 ExeggutorBackpic:    INCBIN "gfx/pokemon/exeggutor/back.2bpp.lz"
 floating_section
-ExeggutorFrontpic:   INCBIN "gfx/pokemon/exeggutor/front_silver.2bpp.lz"
+ExeggutorFrontpic:   INCBIN "gfx/pokemon/exeggutor/front_blue.2bpp.lz"
 floating_section
 FarfetchDBackpic:    INCBIN "gfx/pokemon/farfetch_d/back.2bpp.lz"
 floating_section
-FarfetchDFrontpic:   INCBIN "gfx/pokemon/farfetch_d/front_silver.2bpp.lz"
+FarfetchDFrontpic:   INCBIN "gfx/pokemon/farfetch_d/front_blue.2bpp.lz"
 floating_section
 FearowBackpic:       INCBIN "gfx/pokemon/fearow/back.2bpp.lz"
 floating_section
-FearowFrontpic:      INCBIN "gfx/pokemon/fearow/front_silver.2bpp.lz"
+FearowFrontpic:      INCBIN "gfx/pokemon/fearow/front_blue.2bpp.lz"
 floating_section
 FeraligatrBackpic:   INCBIN "gfx/pokemon/feraligatr/back.2bpp.lz"
 floating_section
-FeraligatrFrontpic:  INCBIN "gfx/pokemon/feraligatr/front_silver.2bpp.lz"
+FeraligatrFrontpic:  INCBIN "gfx/pokemon/feraligatr/front_blue.2bpp.lz"
 floating_section
 FlaaffyBackpic:      INCBIN "gfx/pokemon/flaaffy/back.2bpp.lz"
 floating_section
-FlaaffyFrontpic:     INCBIN "gfx/pokemon/flaaffy/front_silver.2bpp.lz"
+FlaaffyFrontpic:     INCBIN "gfx/pokemon/flaaffy/front_blue.2bpp.lz"
 floating_section
 FlareonBackpic:      INCBIN "gfx/pokemon/flareon/back.2bpp.lz"
 floating_section
-FlareonFrontpic:     INCBIN "gfx/pokemon/flareon/front_silver.2bpp.lz"
+FlareonFrontpic:     INCBIN "gfx/pokemon/flareon/front_blue.2bpp.lz"
 floating_section
 ForretressBackpic:   INCBIN "gfx/pokemon/forretress/back.2bpp.lz"
 floating_section
-ForretressFrontpic:  INCBIN "gfx/pokemon/forretress/front_silver.2bpp.lz"
+ForretressFrontpic:  INCBIN "gfx/pokemon/forretress/front_blue.2bpp.lz"
 floating_section
 FurretBackpic:       INCBIN "gfx/pokemon/furret/back.2bpp.lz"
 floating_section
-FurretFrontpic:      INCBIN "gfx/pokemon/furret/front_silver.2bpp.lz"
+FurretFrontpic:      INCBIN "gfx/pokemon/furret/front_blue.2bpp.lz"
 floating_section
 GastlyBackpic:       INCBIN "gfx/pokemon/gastly/back.2bpp.lz"
 floating_section
-GastlyFrontpic:      INCBIN "gfx/pokemon/gastly/front_silver.2bpp.lz"
+GastlyFrontpic:      INCBIN "gfx/pokemon/gastly/front_blue.2bpp.lz"
 floating_section
 GengarBackpic:       INCBIN "gfx/pokemon/gengar/back.2bpp.lz"
 floating_section
-GengarFrontpic:      INCBIN "gfx/pokemon/gengar/front_silver.2bpp.lz"
+GengarFrontpic:      INCBIN "gfx/pokemon/gengar/front_blue.2bpp.lz"
 floating_section
 GeodudeBackpic:      INCBIN "gfx/pokemon/geodude/back.2bpp.lz"
 floating_section
-GeodudeFrontpic:     INCBIN "gfx/pokemon/geodude/front_silver.2bpp.lz"
+GeodudeFrontpic:     INCBIN "gfx/pokemon/geodude/front_blue.2bpp.lz"
 floating_section
 GirafarigBackpic:    INCBIN "gfx/pokemon/girafarig/back.2bpp.lz"
 floating_section
-GirafarigFrontpic:   INCBIN "gfx/pokemon/girafarig/front_silver.2bpp.lz"
+GirafarigFrontpic:   INCBIN "gfx/pokemon/girafarig/front_blue.2bpp.lz"
 floating_section
 GligarBackpic:       INCBIN "gfx/pokemon/gligar/back.2bpp.lz"
 floating_section
-GligarFrontpic:      INCBIN "gfx/pokemon/gligar/front_silver.2bpp.lz"
+GligarFrontpic:      INCBIN "gfx/pokemon/gligar/front_blue.2bpp.lz"
 floating_section
 GloomBackpic:        INCBIN "gfx/pokemon/gloom/back.2bpp.lz"
 floating_section
-GloomFrontpic:       INCBIN "gfx/pokemon/gloom/front_silver.2bpp.lz"
+GloomFrontpic:       INCBIN "gfx/pokemon/gloom/front_blue.2bpp.lz"
 floating_section
 GolbatBackpic:       INCBIN "gfx/pokemon/golbat/back.2bpp.lz"
 floating_section
-GolbatFrontpic:      INCBIN "gfx/pokemon/golbat/front_silver.2bpp.lz"
+GolbatFrontpic:      INCBIN "gfx/pokemon/golbat/front_blue.2bpp.lz"
 floating_section
 GoldeenBackpic:      INCBIN "gfx/pokemon/goldeen/back.2bpp.lz"
 floating_section
-GoldeenFrontpic:     INCBIN "gfx/pokemon/goldeen/front_silver.2bpp.lz"
+GoldeenFrontpic:     INCBIN "gfx/pokemon/goldeen/front_blue.2bpp.lz"
 floating_section
 GolduckBackpic:      INCBIN "gfx/pokemon/golduck/back.2bpp.lz"
 floating_section
-GolduckFrontpic:     INCBIN "gfx/pokemon/golduck/front_silver.2bpp.lz"
+GolduckFrontpic:     INCBIN "gfx/pokemon/golduck/front_blue.2bpp.lz"
 floating_section
 GolemBackpic:        INCBIN "gfx/pokemon/golem/back.2bpp.lz"
 floating_section
-GolemFrontpic:       INCBIN "gfx/pokemon/golem/front_silver.2bpp.lz"
+GolemFrontpic:       INCBIN "gfx/pokemon/golem/front_blue.2bpp.lz"
 floating_section
 GranbullBackpic:     INCBIN "gfx/pokemon/granbull/back.2bpp.lz"
 floating_section
-GranbullFrontpic:    INCBIN "gfx/pokemon/granbull/front_silver.2bpp.lz"
+GranbullFrontpic:    INCBIN "gfx/pokemon/granbull/front_blue.2bpp.lz"
 floating_section
 GravelerBackpic:     INCBIN "gfx/pokemon/graveler/back.2bpp.lz"
 floating_section
-GravelerFrontpic:    INCBIN "gfx/pokemon/graveler/front_silver.2bpp.lz"
+GravelerFrontpic:    INCBIN "gfx/pokemon/graveler/front_blue.2bpp.lz"
 floating_section
 GrimerBackpic:       INCBIN "gfx/pokemon/grimer/back.2bpp.lz"
 floating_section
-GrimerFrontpic:      INCBIN "gfx/pokemon/grimer/front_silver.2bpp.lz"
+GrimerFrontpic:      INCBIN "gfx/pokemon/grimer/front_blue.2bpp.lz"
 floating_section
 GrowlitheBackpic:    INCBIN "gfx/pokemon/growlithe/back.2bpp.lz"
 floating_section
-GrowlitheFrontpic:   INCBIN "gfx/pokemon/growlithe/front_silver.2bpp.lz"
+GrowlitheFrontpic:   INCBIN "gfx/pokemon/growlithe/front_blue.2bpp.lz"
 floating_section
 GyaradosBackpic:     INCBIN "gfx/pokemon/gyarados/back.2bpp.lz"
 floating_section
-GyaradosFrontpic:    INCBIN "gfx/pokemon/gyarados/front_silver.2bpp.lz"
+GyaradosFrontpic:    INCBIN "gfx/pokemon/gyarados/front_blue.2bpp.lz"
 floating_section
 HaunterBackpic:      INCBIN "gfx/pokemon/haunter/back.2bpp.lz"
 floating_section
-HaunterFrontpic:     INCBIN "gfx/pokemon/haunter/front_silver.2bpp.lz"
+HaunterFrontpic:     INCBIN "gfx/pokemon/haunter/front_blue.2bpp.lz"
 floating_section
 HeracrossBackpic:    INCBIN "gfx/pokemon/heracross/back.2bpp.lz"
 floating_section
-HeracrossFrontpic:   INCBIN "gfx/pokemon/heracross/front_silver.2bpp.lz"
+HeracrossFrontpic:   INCBIN "gfx/pokemon/heracross/front_blue.2bpp.lz"
 floating_section
 HitmonchanBackpic:   INCBIN "gfx/pokemon/hitmonchan/back.2bpp.lz"
 floating_section
-HitmonchanFrontpic:  INCBIN "gfx/pokemon/hitmonchan/front_silver.2bpp.lz"
+HitmonchanFrontpic:  INCBIN "gfx/pokemon/hitmonchan/front_blue.2bpp.lz"
 floating_section
 HitmonleeBackpic:    INCBIN "gfx/pokemon/hitmonlee/back.2bpp.lz"
 floating_section
-HitmonleeFrontpic:   INCBIN "gfx/pokemon/hitmonlee/front_silver.2bpp.lz"
+HitmonleeFrontpic:   INCBIN "gfx/pokemon/hitmonlee/front_blue.2bpp.lz"
 floating_section
-HitmontopBackpic:    INCBIN "gfx/pokemon/hitmontop/back_silver.2bpp.lz"
+HitmontopBackpic:    INCBIN "gfx/pokemon/hitmontop/back.2bpp.lz"
 floating_section
-HitmontopFrontpic:   INCBIN "gfx/pokemon/hitmontop/front_silver.2bpp.lz"
+HitmontopFrontpic:   INCBIN "gfx/pokemon/hitmontop/front_blue.2bpp.lz"
 floating_section
 HoOhBackpic:         INCBIN "gfx/pokemon/ho_oh/back.2bpp.lz"
 floating_section
-HoOhFrontpic:        INCBIN "gfx/pokemon/ho_oh/front_silver.2bpp.lz"
+HoOhFrontpic:        INCBIN "gfx/pokemon/ho_oh/front_blue.2bpp.lz"
 floating_section
 HoothootBackpic:     INCBIN "gfx/pokemon/hoothoot/back.2bpp.lz"
 floating_section
-HoothootFrontpic:    INCBIN "gfx/pokemon/hoothoot/front_silver.2bpp.lz"
+HoothootFrontpic:    INCBIN "gfx/pokemon/hoothoot/front_blue.2bpp.lz"
 floating_section
 HoppipBackpic:       INCBIN "gfx/pokemon/hoppip/back.2bpp.lz"
 floating_section
-HoppipFrontpic:      INCBIN "gfx/pokemon/hoppip/front_silver.2bpp.lz"
+HoppipFrontpic:      INCBIN "gfx/pokemon/hoppip/front_blue.2bpp.lz"
 floating_section
 HorseaBackpic:       INCBIN "gfx/pokemon/horsea/back.2bpp.lz"
 floating_section
-HorseaFrontpic:      INCBIN "gfx/pokemon/horsea/front_silver.2bpp.lz"
+HorseaFrontpic:      INCBIN "gfx/pokemon/horsea/front_blue.2bpp.lz"
 floating_section
 HoundoomBackpic:     INCBIN "gfx/pokemon/houndoom/back.2bpp.lz"
 floating_section
-HoundoomFrontpic:    INCBIN "gfx/pokemon/houndoom/front_silver.2bpp.lz"
+HoundoomFrontpic:    INCBIN "gfx/pokemon/houndoom/front_blue.2bpp.lz"
 floating_section
 HoundourBackpic:     INCBIN "gfx/pokemon/houndour/back.2bpp.lz"
 floating_section
-HoundourFrontpic:    INCBIN "gfx/pokemon/houndour/front_silver.2bpp.lz"
+HoundourFrontpic:    INCBIN "gfx/pokemon/houndour/front_blue.2bpp.lz"
 floating_section
 HypnoBackpic:        INCBIN "gfx/pokemon/hypno/back.2bpp.lz"
 floating_section
-HypnoFrontpic:       INCBIN "gfx/pokemon/hypno/front_silver.2bpp.lz"
+HypnoFrontpic:       INCBIN "gfx/pokemon/hypno/front_blue.2bpp.lz"
 floating_section
 IgglybuffBackpic:    INCBIN "gfx/pokemon/igglybuff/back.2bpp.lz"
 floating_section
-IgglybuffFrontpic:   INCBIN "gfx/pokemon/igglybuff/front_silver.2bpp.lz"
+IgglybuffFrontpic:   INCBIN "gfx/pokemon/igglybuff/front_blue.2bpp.lz"
 floating_section
 IvysaurBackpic:      INCBIN "gfx/pokemon/ivysaur/back.2bpp.lz"
 floating_section
-IvysaurFrontpic:     INCBIN "gfx/pokemon/ivysaur/front_silver.2bpp.lz"
+IvysaurFrontpic:     INCBIN "gfx/pokemon/ivysaur/front_blue.2bpp.lz"
 floating_section
 JigglypuffBackpic:   INCBIN "gfx/pokemon/jigglypuff/back.2bpp.lz"
 floating_section
-JigglypuffFrontpic:  INCBIN "gfx/pokemon/jigglypuff/front_silver.2bpp.lz"
+JigglypuffFrontpic:  INCBIN "gfx/pokemon/jigglypuff/front_blue.2bpp.lz"
 floating_section
 JolteonBackpic:      INCBIN "gfx/pokemon/jolteon/back.2bpp.lz"
 floating_section
-JolteonFrontpic:     INCBIN "gfx/pokemon/jolteon/front_silver.2bpp.lz"
+JolteonFrontpic:     INCBIN "gfx/pokemon/jolteon/front_blue.2bpp.lz"
 floating_section
 JumpluffBackpic:     INCBIN "gfx/pokemon/jumpluff/back.2bpp.lz"
 floating_section
-JumpluffFrontpic:    INCBIN "gfx/pokemon/jumpluff/front_silver.2bpp.lz"
+JumpluffFrontpic:    INCBIN "gfx/pokemon/jumpluff/front_blue.2bpp.lz"
 floating_section
 JynxBackpic:         INCBIN "gfx/pokemon/jynx/back.2bpp.lz"
 floating_section
-JynxFrontpic:        INCBIN "gfx/pokemon/jynx/front_silver.2bpp.lz"
+JynxFrontpic:        INCBIN "gfx/pokemon/jynx/front_blue.2bpp.lz"
 floating_section
 KabutoBackpic:       INCBIN "gfx/pokemon/kabuto/back.2bpp.lz"
 floating_section
-KabutoFrontpic:      INCBIN "gfx/pokemon/kabuto/front_silver.2bpp.lz"
+KabutoFrontpic:      INCBIN "gfx/pokemon/kabuto/front_blue.2bpp.lz"
 floating_section
 KabutopsBackpic:     INCBIN "gfx/pokemon/kabutops/back.2bpp.lz"
 floating_section
-KabutopsFrontpic:    INCBIN "gfx/pokemon/kabutops/front_silver.2bpp.lz"
+KabutopsFrontpic:    INCBIN "gfx/pokemon/kabutops/front_blue.2bpp.lz"
 floating_section
 KadabraBackpic:      INCBIN "gfx/pokemon/kadabra/back.2bpp.lz"
 floating_section
-KadabraFrontpic:     INCBIN "gfx/pokemon/kadabra/front_silver.2bpp.lz"
+KadabraFrontpic:     INCBIN "gfx/pokemon/kadabra/front_blue.2bpp.lz"
 floating_section
 KakunaBackpic:       INCBIN "gfx/pokemon/kakuna/back.2bpp.lz"
 floating_section
-KakunaFrontpic:      INCBIN "gfx/pokemon/kakuna/front_silver.2bpp.lz"
+KakunaFrontpic:      INCBIN "gfx/pokemon/kakuna/front_blue.2bpp.lz"
 floating_section
 KangaskhanBackpic:   INCBIN "gfx/pokemon/kangaskhan/back.2bpp.lz"
 floating_section
-KangaskhanFrontpic:  INCBIN "gfx/pokemon/kangaskhan/front_silver.2bpp.lz"
+KangaskhanFrontpic:  INCBIN "gfx/pokemon/kangaskhan/front_blue.2bpp.lz"
 floating_section
 KingdraBackpic:      INCBIN "gfx/pokemon/kingdra/back.2bpp.lz"
 floating_section
-KingdraFrontpic:     INCBIN "gfx/pokemon/kingdra/front_silver.2bpp.lz"
+KingdraFrontpic:     INCBIN "gfx/pokemon/kingdra/front_blue.2bpp.lz"
 floating_section
 KinglerBackpic:      INCBIN "gfx/pokemon/kingler/back.2bpp.lz"
 floating_section
-KinglerFrontpic:     INCBIN "gfx/pokemon/kingler/front_silver.2bpp.lz"
+KinglerFrontpic:     INCBIN "gfx/pokemon/kingler/front_blue.2bpp.lz"
 floating_section
 KoffingBackpic:      INCBIN "gfx/pokemon/koffing/back.2bpp.lz"
 floating_section
-KoffingFrontpic:     INCBIN "gfx/pokemon/koffing/front_silver.2bpp.lz"
+KoffingFrontpic:     INCBIN "gfx/pokemon/koffing/front_blue.2bpp.lz"
 floating_section
 KrabbyBackpic:       INCBIN "gfx/pokemon/krabby/back.2bpp.lz"
 floating_section
-KrabbyFrontpic:      INCBIN "gfx/pokemon/krabby/front_silver.2bpp.lz"
+KrabbyFrontpic:      INCBIN "gfx/pokemon/krabby/front_blue.2bpp.lz"
 floating_section
 LanturnBackpic:      INCBIN "gfx/pokemon/lanturn/back.2bpp.lz"
 floating_section
-LanturnFrontpic:     INCBIN "gfx/pokemon/lanturn/front_silver.2bpp.lz"
+LanturnFrontpic:     INCBIN "gfx/pokemon/lanturn/front_blue.2bpp.lz"
 floating_section
 LaprasBackpic:       INCBIN "gfx/pokemon/lapras/back.2bpp.lz"
 floating_section
-LaprasFrontpic:      INCBIN "gfx/pokemon/lapras/front_silver.2bpp.lz"
+LaprasFrontpic:      INCBIN "gfx/pokemon/lapras/front_blue.2bpp.lz"
 floating_section
 LarvitarBackpic:     INCBIN "gfx/pokemon/larvitar/back.2bpp.lz"
 floating_section
-LarvitarFrontpic:    INCBIN "gfx/pokemon/larvitar/front_silver.2bpp.lz"
+LarvitarFrontpic:    INCBIN "gfx/pokemon/larvitar/front_blue.2bpp.lz"
 floating_section
 LedianBackpic:       INCBIN "gfx/pokemon/ledian/back.2bpp.lz"
 floating_section
-LedianFrontpic:      INCBIN "gfx/pokemon/ledian/front_silver.2bpp.lz"
+LedianFrontpic:      INCBIN "gfx/pokemon/ledian/front_blue.2bpp.lz"
 floating_section
 LedybaBackpic:       INCBIN "gfx/pokemon/ledyba/back.2bpp.lz"
 floating_section
-LedybaFrontpic:      INCBIN "gfx/pokemon/ledyba/front_silver.2bpp.lz"
+LedybaFrontpic:      INCBIN "gfx/pokemon/ledyba/front_blue.2bpp.lz"
 floating_section
 LickitungBackpic:    INCBIN "gfx/pokemon/lickitung/back.2bpp.lz"
 floating_section
-LickitungFrontpic:   INCBIN "gfx/pokemon/lickitung/front_silver.2bpp.lz"
+LickitungFrontpic:   INCBIN "gfx/pokemon/lickitung/front_blue.2bpp.lz"
 floating_section
 LugiaBackpic:        INCBIN "gfx/pokemon/lugia/back.2bpp.lz"
 floating_section
-LugiaFrontpic:       INCBIN "gfx/pokemon/lugia/front_silver.2bpp.lz"
+LugiaFrontpic:       INCBIN "gfx/pokemon/lugia/front_blue.2bpp.lz"
 floating_section
 MachampBackpic:      INCBIN "gfx/pokemon/machamp/back.2bpp.lz"
 floating_section
-MachampFrontpic:     INCBIN "gfx/pokemon/machamp/front_silver.2bpp.lz"
+MachampFrontpic:     INCBIN "gfx/pokemon/machamp/front_blue.2bpp.lz"
 floating_section
 MachokeBackpic:      INCBIN "gfx/pokemon/machoke/back.2bpp.lz"
 floating_section
-MachokeFrontpic:     INCBIN "gfx/pokemon/machoke/front_silver.2bpp.lz"
+MachokeFrontpic:     INCBIN "gfx/pokemon/machoke/front_blue.2bpp.lz"
 floating_section
 MachopBackpic:       INCBIN "gfx/pokemon/machop/back.2bpp.lz"
 floating_section
-MachopFrontpic:      INCBIN "gfx/pokemon/machop/front_silver.2bpp.lz"
+MachopFrontpic:      INCBIN "gfx/pokemon/machop/front_blue.2bpp.lz"
 floating_section
 MagbyBackpic:        INCBIN "gfx/pokemon/magby/back.2bpp.lz"
 floating_section
-MagbyFrontpic:       INCBIN "gfx/pokemon/magby/front_silver.2bpp.lz"
+MagbyFrontpic:       INCBIN "gfx/pokemon/magby/front_blue.2bpp.lz"
 floating_section
 MagcargoBackpic:     INCBIN "gfx/pokemon/magcargo/back.2bpp.lz"
 floating_section
-MagcargoFrontpic:    INCBIN "gfx/pokemon/magcargo/front_silver.2bpp.lz"
+MagcargoFrontpic:    INCBIN "gfx/pokemon/magcargo/front_blue.2bpp.lz"
 floating_section
 MagikarpBackpic:     INCBIN "gfx/pokemon/magikarp/back.2bpp.lz"
 floating_section
-MagikarpFrontpic:    INCBIN "gfx/pokemon/magikarp/front_silver.2bpp.lz"
+MagikarpFrontpic:    INCBIN "gfx/pokemon/magikarp/front_blue.2bpp.lz"
 floating_section
 MagmarBackpic:       INCBIN "gfx/pokemon/magmar/back.2bpp.lz"
 floating_section
-MagmarFrontpic:      INCBIN "gfx/pokemon/magmar/front_silver.2bpp.lz"
+MagmarFrontpic:      INCBIN "gfx/pokemon/magmar/front_blue.2bpp.lz"
 floating_section
 MagnemiteBackpic:    INCBIN "gfx/pokemon/magnemite/back.2bpp.lz"
 floating_section
-MagnemiteFrontpic:   INCBIN "gfx/pokemon/magnemite/front_silver.2bpp.lz"
+MagnemiteFrontpic:   INCBIN "gfx/pokemon/magnemite/front_blue.2bpp.lz"
 floating_section
 MagnetonBackpic:     INCBIN "gfx/pokemon/magneton/back.2bpp.lz"
 floating_section
-MagnetonFrontpic:    INCBIN "gfx/pokemon/magneton/front_silver.2bpp.lz"
+MagnetonFrontpic:    INCBIN "gfx/pokemon/magneton/front_blue.2bpp.lz"
 floating_section
 MankeyBackpic:       INCBIN "gfx/pokemon/mankey/back.2bpp.lz"
 floating_section
-MankeyFrontpic:      INCBIN "gfx/pokemon/mankey/front_silver.2bpp.lz"
+MankeyFrontpic:      INCBIN "gfx/pokemon/mankey/front_blue.2bpp.lz"
 floating_section
 MantineBackpic:      INCBIN "gfx/pokemon/mantine/back.2bpp.lz"
 floating_section
-MantineFrontpic:     INCBIN "gfx/pokemon/mantine/front_silver.2bpp.lz"
+MantineFrontpic:     INCBIN "gfx/pokemon/mantine/front_blue.2bpp.lz"
 floating_section
 MareepBackpic:       INCBIN "gfx/pokemon/mareep/back.2bpp.lz"
 floating_section
-MareepFrontpic:      INCBIN "gfx/pokemon/mareep/front_silver.2bpp.lz"
+MareepFrontpic:      INCBIN "gfx/pokemon/mareep/front_blue.2bpp.lz"
 floating_section
 MarillBackpic:       INCBIN "gfx/pokemon/marill/back.2bpp.lz"
 floating_section
-MarillFrontpic:      INCBIN "gfx/pokemon/marill/front_silver.2bpp.lz"
+MarillFrontpic:      INCBIN "gfx/pokemon/marill/front_blue.2bpp.lz"
 floating_section
 MarowakBackpic:      INCBIN "gfx/pokemon/marowak/back.2bpp.lz"
 floating_section
-MarowakFrontpic:     INCBIN "gfx/pokemon/marowak/front_silver.2bpp.lz"
+MarowakFrontpic:     INCBIN "gfx/pokemon/marowak/front_blue.2bpp.lz"
 floating_section
 MeganiumBackpic:     INCBIN "gfx/pokemon/meganium/back.2bpp.lz"
 floating_section
-MeganiumFrontpic:    INCBIN "gfx/pokemon/meganium/front_silver.2bpp.lz"
+MeganiumFrontpic:    INCBIN "gfx/pokemon/meganium/front_blue.2bpp.lz"
 floating_section
 MeowthBackpic:       INCBIN "gfx/pokemon/meowth/back.2bpp.lz"
 floating_section
-MeowthFrontpic:      INCBIN "gfx/pokemon/meowth/front_silver.2bpp.lz"
+MeowthFrontpic:      INCBIN "gfx/pokemon/meowth/front_blue.2bpp.lz"
 floating_section
 MetapodBackpic:      INCBIN "gfx/pokemon/metapod/back.2bpp.lz"
 floating_section
-MetapodFrontpic:     INCBIN "gfx/pokemon/metapod/front_silver.2bpp.lz"
+MetapodFrontpic:     INCBIN "gfx/pokemon/metapod/front_blue.2bpp.lz"
 floating_section
 MewBackpic:          INCBIN "gfx/pokemon/mew/back.2bpp.lz"
 floating_section
-MewFrontpic:         INCBIN "gfx/pokemon/mew/front_silver.2bpp.lz"
+MewFrontpic:         INCBIN "gfx/pokemon/mew/front_blue.2bpp.lz"
 floating_section
 MewtwoBackpic:       INCBIN "gfx/pokemon/mewtwo/back.2bpp.lz"
 floating_section
-MewtwoFrontpic:      INCBIN "gfx/pokemon/mewtwo/front_silver.2bpp.lz"
+MewtwoFrontpic:      INCBIN "gfx/pokemon/mewtwo/front_blue.2bpp.lz"
 floating_section
-MiltankBackpic:      INCBIN "gfx/pokemon/miltank/back_silver.2bpp.lz"
+MiltankBackpic:      INCBIN "gfx/pokemon/miltank/back.2bpp.lz"
 floating_section
-MiltankFrontpic:     INCBIN "gfx/pokemon/miltank/front_silver.2bpp.lz"
+MiltankFrontpic:     INCBIN "gfx/pokemon/miltank/front_blue.2bpp.lz"
 floating_section
 MisdreavusBackpic:   INCBIN "gfx/pokemon/misdreavus/back.2bpp.lz"
 floating_section
-MisdreavusFrontpic:  INCBIN "gfx/pokemon/misdreavus/front_silver.2bpp.lz"
+MisdreavusFrontpic:  INCBIN "gfx/pokemon/misdreavus/front_blue.2bpp.lz"
 floating_section
 MoltresBackpic:      INCBIN "gfx/pokemon/moltres/back.2bpp.lz"
 floating_section
-MoltresFrontpic:     INCBIN "gfx/pokemon/moltres/front_silver.2bpp.lz"
+MoltresFrontpic:     INCBIN "gfx/pokemon/moltres/front_blue.2bpp.lz"
 floating_section
 MrMimeBackpic:       INCBIN "gfx/pokemon/mr__mime/back.2bpp.lz"
 floating_section
-MrMimeFrontpic:      INCBIN "gfx/pokemon/mr__mime/front_silver.2bpp.lz"
+MrMimeFrontpic:      INCBIN "gfx/pokemon/mr__mime/front_blue.2bpp.lz"
 floating_section
 MukBackpic:          INCBIN "gfx/pokemon/muk/back.2bpp.lz"
 floating_section
-MukFrontpic:         INCBIN "gfx/pokemon/muk/front_silver.2bpp.lz"
+MukFrontpic:         INCBIN "gfx/pokemon/muk/front_blue.2bpp.lz"
 floating_section
 MurkrowBackpic:      INCBIN "gfx/pokemon/murkrow/back.2bpp.lz"
 floating_section
-MurkrowFrontpic:     INCBIN "gfx/pokemon/murkrow/front_silver.2bpp.lz"
+MurkrowFrontpic:     INCBIN "gfx/pokemon/murkrow/front_blue.2bpp.lz"
 floating_section
 NatuBackpic:         INCBIN "gfx/pokemon/natu/back.2bpp.lz"
 floating_section
-NatuFrontpic:        INCBIN "gfx/pokemon/natu/front_silver.2bpp.lz"
+NatuFrontpic:        INCBIN "gfx/pokemon/natu/front_blue.2bpp.lz"
 floating_section
 NidokingBackpic:     INCBIN "gfx/pokemon/nidoking/back.2bpp.lz"
 floating_section
-NidokingFrontpic:    INCBIN "gfx/pokemon/nidoking/front_silver.2bpp.lz"
+NidokingFrontpic:    INCBIN "gfx/pokemon/nidoking/front_blue.2bpp.lz"
 floating_section
 NidoqueenBackpic:    INCBIN "gfx/pokemon/nidoqueen/back.2bpp.lz"
 floating_section
-NidoqueenFrontpic:   INCBIN "gfx/pokemon/nidoqueen/front_silver.2bpp.lz"
+NidoqueenFrontpic:   INCBIN "gfx/pokemon/nidoqueen/front_blue.2bpp.lz"
 floating_section
 NidoranFBackpic:     INCBIN "gfx/pokemon/nidoran_f/back.2bpp.lz"
 floating_section
-NidoranFFrontpic:    INCBIN "gfx/pokemon/nidoran_f/front_silver.2bpp.lz"
+NidoranFFrontpic:    INCBIN "gfx/pokemon/nidoran_f/front_blue.2bpp.lz"
 floating_section
 NidoranMBackpic:     INCBIN "gfx/pokemon/nidoran_m/back.2bpp.lz"
 floating_section
-NidoranMFrontpic:    INCBIN "gfx/pokemon/nidoran_m/front_silver.2bpp.lz"
+NidoranMFrontpic:    INCBIN "gfx/pokemon/nidoran_m/front_blue.2bpp.lz"
 floating_section
 NidorinaBackpic:     INCBIN "gfx/pokemon/nidorina/back.2bpp.lz"
 floating_section
-NidorinaFrontpic:    INCBIN "gfx/pokemon/nidorina/front_silver.2bpp.lz"
+NidorinaFrontpic:    INCBIN "gfx/pokemon/nidorina/front_blue.2bpp.lz"
 floating_section
 NidorinoBackpic:     INCBIN "gfx/pokemon/nidorino/back.2bpp.lz"
 floating_section
-NidorinoFrontpic:    INCBIN "gfx/pokemon/nidorino/front_silver.2bpp.lz"
+NidorinoFrontpic:    INCBIN "gfx/pokemon/nidorino/front_blue.2bpp.lz"
 floating_section
 NinetalesBackpic:    INCBIN "gfx/pokemon/ninetales/back.2bpp.lz"
 floating_section
-NinetalesFrontpic:   INCBIN "gfx/pokemon/ninetales/front_silver.2bpp.lz"
+NinetalesFrontpic:   INCBIN "gfx/pokemon/ninetales/front_blue.2bpp.lz"
 floating_section
 NoctowlBackpic:      INCBIN "gfx/pokemon/noctowl/back.2bpp.lz"
 floating_section
-NoctowlFrontpic:     INCBIN "gfx/pokemon/noctowl/front_silver.2bpp.lz"
+NoctowlFrontpic:     INCBIN "gfx/pokemon/noctowl/front_blue.2bpp.lz"
 floating_section
 OctilleryBackpic:    INCBIN "gfx/pokemon/octillery/back.2bpp.lz"
 floating_section
-OctilleryFrontpic:   INCBIN "gfx/pokemon/octillery/front_silver.2bpp.lz"
+OctilleryFrontpic:   INCBIN "gfx/pokemon/octillery/front_blue.2bpp.lz"
 floating_section
 OddishBackpic:       INCBIN "gfx/pokemon/oddish/back.2bpp.lz"
 floating_section
-OddishFrontpic:      INCBIN "gfx/pokemon/oddish/front_silver.2bpp.lz"
+OddishFrontpic:      INCBIN "gfx/pokemon/oddish/front_blue.2bpp.lz"
 floating_section
 OmanyteBackpic:      INCBIN "gfx/pokemon/omanyte/back.2bpp.lz"
 floating_section
-OmanyteFrontpic:     INCBIN "gfx/pokemon/omanyte/front_silver.2bpp.lz"
+OmanyteFrontpic:     INCBIN "gfx/pokemon/omanyte/front_blue.2bpp.lz"
 floating_section
 OmastarBackpic:      INCBIN "gfx/pokemon/omastar/back.2bpp.lz"
 floating_section
-OmastarFrontpic:     INCBIN "gfx/pokemon/omastar/front_silver.2bpp.lz"
+OmastarFrontpic:     INCBIN "gfx/pokemon/omastar/front_blue.2bpp.lz"
 floating_section
 OnixBackpic:         INCBIN "gfx/pokemon/onix/back.2bpp.lz"
 floating_section
-OnixFrontpic:        INCBIN "gfx/pokemon/onix/front_silver.2bpp.lz"
+OnixFrontpic:        INCBIN "gfx/pokemon/onix/front_blue.2bpp.lz"
 floating_section
 ParasBackpic:        INCBIN "gfx/pokemon/paras/back.2bpp.lz"
 floating_section
-ParasFrontpic:       INCBIN "gfx/pokemon/paras/front_silver.2bpp.lz"
+ParasFrontpic:       INCBIN "gfx/pokemon/paras/front_blue.2bpp.lz"
 floating_section
 ParasectBackpic:     INCBIN "gfx/pokemon/parasect/back.2bpp.lz"
 floating_section
-ParasectFrontpic:    INCBIN "gfx/pokemon/parasect/front_silver.2bpp.lz"
+ParasectFrontpic:    INCBIN "gfx/pokemon/parasect/front_blue.2bpp.lz"
 floating_section
 PersianBackpic:      INCBIN "gfx/pokemon/persian/back.2bpp.lz"
 floating_section
-PersianFrontpic:     INCBIN "gfx/pokemon/persian/front_silver.2bpp.lz"
+PersianFrontpic:     INCBIN "gfx/pokemon/persian/front_blue.2bpp.lz"
 floating_section
 PhanpyBackpic:       INCBIN "gfx/pokemon/phanpy/back.2bpp.lz"
 floating_section
-PhanpyFrontpic:      INCBIN "gfx/pokemon/phanpy/front_silver.2bpp.lz"
+PhanpyFrontpic:      INCBIN "gfx/pokemon/phanpy/front_blue.2bpp.lz"
 floating_section
 PichuBackpic:        INCBIN "gfx/pokemon/pichu/back.2bpp.lz"
 floating_section
-PichuFrontpic:       INCBIN "gfx/pokemon/pichu/front_silver.2bpp.lz"
+PichuFrontpic:       INCBIN "gfx/pokemon/pichu/front_blue.2bpp.lz"
 floating_section
 PidgeotBackpic:      INCBIN "gfx/pokemon/pidgeot/back.2bpp.lz"
 floating_section
-PidgeotFrontpic:     INCBIN "gfx/pokemon/pidgeot/front_silver.2bpp.lz"
+PidgeotFrontpic:     INCBIN "gfx/pokemon/pidgeot/front_blue.2bpp.lz"
 floating_section
 PidgeottoBackpic:    INCBIN "gfx/pokemon/pidgeotto/back.2bpp.lz"
 floating_section
-PidgeottoFrontpic:   INCBIN "gfx/pokemon/pidgeotto/front_silver.2bpp.lz"
+PidgeottoFrontpic:   INCBIN "gfx/pokemon/pidgeotto/front_blue.2bpp.lz"
 floating_section
 PidgeyBackpic:       INCBIN "gfx/pokemon/pidgey/back.2bpp.lz"
 floating_section
-PidgeyFrontpic:      INCBIN "gfx/pokemon/pidgey/front_silver.2bpp.lz"
+PidgeyFrontpic:      INCBIN "gfx/pokemon/pidgey/front_blue.2bpp.lz"
 floating_section
 PikachuBackpic:      INCBIN "gfx/pokemon/pikachu/back.2bpp.lz"
 floating_section
-PikachuFrontpic:     INCBIN "gfx/pokemon/pikachu/front_silver.2bpp.lz"
+PikachuFrontpic:     INCBIN "gfx/pokemon/pikachu/front_blue.2bpp.lz"
 floating_section
 PiloswineBackpic:    INCBIN "gfx/pokemon/piloswine/back.2bpp.lz"
 floating_section
-PiloswineFrontpic:   INCBIN "gfx/pokemon/piloswine/front_silver.2bpp.lz"
+PiloswineFrontpic:   INCBIN "gfx/pokemon/piloswine/front_blue.2bpp.lz"
 floating_section
 PinecoBackpic:       INCBIN "gfx/pokemon/pineco/back.2bpp.lz"
 floating_section
-PinecoFrontpic:      INCBIN "gfx/pokemon/pineco/front_silver.2bpp.lz"
+PinecoFrontpic:      INCBIN "gfx/pokemon/pineco/front_blue.2bpp.lz"
 floating_section
 PinsirBackpic:       INCBIN "gfx/pokemon/pinsir/back.2bpp.lz"
 floating_section
-PinsirFrontpic:      INCBIN "gfx/pokemon/pinsir/front_silver.2bpp.lz"
+PinsirFrontpic:      INCBIN "gfx/pokemon/pinsir/front_blue.2bpp.lz"
 floating_section
 PolitoedBackpic:     INCBIN "gfx/pokemon/politoed/back.2bpp.lz"
 floating_section
-PolitoedFrontpic:    INCBIN "gfx/pokemon/politoed/front_silver.2bpp.lz"
+PolitoedFrontpic:    INCBIN "gfx/pokemon/politoed/front_blue.2bpp.lz"
 floating_section
 PoliwagBackpic:      INCBIN "gfx/pokemon/poliwag/back.2bpp.lz"
 floating_section
-PoliwagFrontpic:     INCBIN "gfx/pokemon/poliwag/front_silver.2bpp.lz"
+PoliwagFrontpic:     INCBIN "gfx/pokemon/poliwag/front_blue.2bpp.lz"
 floating_section
 PoliwhirlBackpic:    INCBIN "gfx/pokemon/poliwhirl/back.2bpp.lz"
 floating_section
-PoliwhirlFrontpic:   INCBIN "gfx/pokemon/poliwhirl/front_silver.2bpp.lz"
+PoliwhirlFrontpic:   INCBIN "gfx/pokemon/poliwhirl/front_blue.2bpp.lz"
 floating_section
 PoliwrathBackpic:    INCBIN "gfx/pokemon/poliwrath/back.2bpp.lz"
 floating_section
-PoliwrathFrontpic:   INCBIN "gfx/pokemon/poliwrath/front_silver.2bpp.lz"
+PoliwrathFrontpic:   INCBIN "gfx/pokemon/poliwrath/front_blue.2bpp.lz"
 floating_section
 PonytaBackpic:       INCBIN "gfx/pokemon/ponyta/back.2bpp.lz"
 floating_section
-PonytaFrontpic:      INCBIN "gfx/pokemon/ponyta/front_silver.2bpp.lz"
+PonytaFrontpic:      INCBIN "gfx/pokemon/ponyta/front_blue.2bpp.lz"
 floating_section
 PorygonBackpic:      INCBIN "gfx/pokemon/porygon/back.2bpp.lz"
 floating_section
-PorygonFrontpic:     INCBIN "gfx/pokemon/porygon/front_silver.2bpp.lz"
+PorygonFrontpic:     INCBIN "gfx/pokemon/porygon/front_blue.2bpp.lz"
 floating_section
 Porygon2Backpic:     INCBIN "gfx/pokemon/porygon2/back.2bpp.lz"
 floating_section
-Porygon2Frontpic:    INCBIN "gfx/pokemon/porygon2/front_silver.2bpp.lz"
+Porygon2Frontpic:    INCBIN "gfx/pokemon/porygon2/front_blue.2bpp.lz"
 floating_section
 PrimeapeBackpic:     INCBIN "gfx/pokemon/primeape/back.2bpp.lz"
 floating_section
-PrimeapeFrontpic:    INCBIN "gfx/pokemon/primeape/front_silver.2bpp.lz"
+PrimeapeFrontpic:    INCBIN "gfx/pokemon/primeape/front_blue.2bpp.lz"
 floating_section
 PsyduckBackpic:      INCBIN "gfx/pokemon/psyduck/back.2bpp.lz"
 floating_section
-PsyduckFrontpic:     INCBIN "gfx/pokemon/psyduck/front_silver.2bpp.lz"
+PsyduckFrontpic:     INCBIN "gfx/pokemon/psyduck/front_blue.2bpp.lz"
 floating_section
 PupitarBackpic:      INCBIN "gfx/pokemon/pupitar/back.2bpp.lz"
 floating_section
-PupitarFrontpic:     INCBIN "gfx/pokemon/pupitar/front_silver.2bpp.lz"
+PupitarFrontpic:     INCBIN "gfx/pokemon/pupitar/front_blue.2bpp.lz"
 floating_section
 QuagsireBackpic:     INCBIN "gfx/pokemon/quagsire/back.2bpp.lz"
 floating_section
-QuagsireFrontpic:    INCBIN "gfx/pokemon/quagsire/front_silver.2bpp.lz"
+QuagsireFrontpic:    INCBIN "gfx/pokemon/quagsire/front_blue.2bpp.lz"
 floating_section
 QuilavaBackpic:      INCBIN "gfx/pokemon/quilava/back.2bpp.lz"
 floating_section
-QuilavaFrontpic:     INCBIN "gfx/pokemon/quilava/front_silver.2bpp.lz"
+QuilavaFrontpic:     INCBIN "gfx/pokemon/quilava/front_blue.2bpp.lz"
 floating_section
 QwilfishBackpic:     INCBIN "gfx/pokemon/qwilfish/back.2bpp.lz"
 floating_section
-QwilfishFrontpic:    INCBIN "gfx/pokemon/qwilfish/front_silver.2bpp.lz"
+QwilfishFrontpic:    INCBIN "gfx/pokemon/qwilfish/front_blue.2bpp.lz"
 floating_section
 RaichuBackpic:       INCBIN "gfx/pokemon/raichu/back.2bpp.lz"
 floating_section
-RaichuFrontpic:      INCBIN "gfx/pokemon/raichu/front_silver.2bpp.lz"
+RaichuFrontpic:      INCBIN "gfx/pokemon/raichu/front_blue.2bpp.lz"
 floating_section
 RaikouBackpic:       INCBIN "gfx/pokemon/raikou/back.2bpp.lz"
 floating_section
@@ -739,99 +739,99 @@ RaikouFrontpic:      INCBIN "gfx/pokemon/raikou/front.2bpp.lz"
 floating_section
 RapidashBackpic:     INCBIN "gfx/pokemon/rapidash/back.2bpp.lz"
 floating_section
-RapidashFrontpic:    INCBIN "gfx/pokemon/rapidash/front_silver.2bpp.lz"
+RapidashFrontpic:    INCBIN "gfx/pokemon/rapidash/front_blue.2bpp.lz"
 floating_section
 RaticateBackpic:     INCBIN "gfx/pokemon/raticate/back.2bpp.lz"
 floating_section
-RaticateFrontpic:    INCBIN "gfx/pokemon/raticate/front_silver.2bpp.lz"
+RaticateFrontpic:    INCBIN "gfx/pokemon/raticate/front_blue.2bpp.lz"
 floating_section
 RattataBackpic:      INCBIN "gfx/pokemon/rattata/back.2bpp.lz"
 floating_section
-RattataFrontpic:     INCBIN "gfx/pokemon/rattata/front_silver.2bpp.lz"
+RattataFrontpic:     INCBIN "gfx/pokemon/rattata/front_blue.2bpp.lz"
 floating_section
 RemoraidBackpic:     INCBIN "gfx/pokemon/remoraid/back.2bpp.lz"
 floating_section
-RemoraidFrontpic:    INCBIN "gfx/pokemon/remoraid/front_silver.2bpp.lz"
+RemoraidFrontpic:    INCBIN "gfx/pokemon/remoraid/front_blue.2bpp.lz"
 floating_section
 RhydonBackpic:       INCBIN "gfx/pokemon/rhydon/back.2bpp.lz"
 floating_section
-RhydonFrontpic:      INCBIN "gfx/pokemon/rhydon/front_silver.2bpp.lz"
+RhydonFrontpic:      INCBIN "gfx/pokemon/rhydon/front_blue.2bpp.lz"
 floating_section
 RhyhornBackpic:      INCBIN "gfx/pokemon/rhyhorn/back.2bpp.lz"
 floating_section
-RhyhornFrontpic:     INCBIN "gfx/pokemon/rhyhorn/front_silver.2bpp.lz"
+RhyhornFrontpic:     INCBIN "gfx/pokemon/rhyhorn/front_blue.2bpp.lz"
 floating_section
 SandshrewBackpic:    INCBIN "gfx/pokemon/sandshrew/back.2bpp.lz"
 floating_section
-SandshrewFrontpic:   INCBIN "gfx/pokemon/sandshrew/front_silver.2bpp.lz"
+SandshrewFrontpic:   INCBIN "gfx/pokemon/sandshrew/front_blue.2bpp.lz"
 floating_section
 SandslashBackpic:    INCBIN "gfx/pokemon/sandslash/back.2bpp.lz"
 floating_section
-SandslashFrontpic:   INCBIN "gfx/pokemon/sandslash/front_silver.2bpp.lz"
+SandslashFrontpic:   INCBIN "gfx/pokemon/sandslash/front_blue.2bpp.lz"
 floating_section
 ScizorBackpic:       INCBIN "gfx/pokemon/scizor/back.2bpp.lz"
 floating_section
-ScizorFrontpic:      INCBIN "gfx/pokemon/scizor/front_silver.2bpp.lz"
+ScizorFrontpic:      INCBIN "gfx/pokemon/scizor/front_blue.2bpp.lz"
 floating_section
 ScytherBackpic:      INCBIN "gfx/pokemon/scyther/back.2bpp.lz"
 floating_section
-ScytherFrontpic:     INCBIN "gfx/pokemon/scyther/front_silver.2bpp.lz"
+ScytherFrontpic:     INCBIN "gfx/pokemon/scyther/front_blue.2bpp.lz"
 floating_section
 SeadraBackpic:       INCBIN "gfx/pokemon/seadra/back.2bpp.lz"
 floating_section
-SeadraFrontpic:      INCBIN "gfx/pokemon/seadra/front_silver.2bpp.lz"
+SeadraFrontpic:      INCBIN "gfx/pokemon/seadra/front_blue.2bpp.lz"
 floating_section
 SeakingBackpic:      INCBIN "gfx/pokemon/seaking/back.2bpp.lz"
 floating_section
-SeakingFrontpic:     INCBIN "gfx/pokemon/seaking/front_silver.2bpp.lz"
+SeakingFrontpic:     INCBIN "gfx/pokemon/seaking/front_blue.2bpp.lz"
 floating_section
 SeelBackpic:         INCBIN "gfx/pokemon/seel/back.2bpp.lz"
 floating_section
-SeelFrontpic:        INCBIN "gfx/pokemon/seel/front_silver.2bpp.lz"
+SeelFrontpic:        INCBIN "gfx/pokemon/seel/front_blue.2bpp.lz"
 floating_section
 SentretBackpic:      INCBIN "gfx/pokemon/sentret/back.2bpp.lz"
 floating_section
-SentretFrontpic:     INCBIN "gfx/pokemon/sentret/front_silver.2bpp.lz"
+SentretFrontpic:     INCBIN "gfx/pokemon/sentret/front_blue.2bpp.lz"
 floating_section
 ShellderBackpic:     INCBIN "gfx/pokemon/shellder/back.2bpp.lz"
 floating_section
-ShellderFrontpic:    INCBIN "gfx/pokemon/shellder/front_silver.2bpp.lz"
+ShellderFrontpic:    INCBIN "gfx/pokemon/shellder/front_blue.2bpp.lz"
 floating_section
 ShuckleBackpic:      INCBIN "gfx/pokemon/shuckle/back.2bpp.lz"
 floating_section
-ShuckleFrontpic:     INCBIN "gfx/pokemon/shuckle/front_silver.2bpp.lz"
+ShuckleFrontpic:     INCBIN "gfx/pokemon/shuckle/front_blue.2bpp.lz"
 floating_section
 SkarmoryBackpic:     INCBIN "gfx/pokemon/skarmory/back.2bpp.lz"
 floating_section
-SkarmoryFrontpic:    INCBIN "gfx/pokemon/skarmory/front_silver.2bpp.lz"
+SkarmoryFrontpic:    INCBIN "gfx/pokemon/skarmory/front_blue.2bpp.lz"
 floating_section
 SkiploomBackpic:     INCBIN "gfx/pokemon/skiploom/back.2bpp.lz"
 floating_section
-SkiploomFrontpic:    INCBIN "gfx/pokemon/skiploom/front_silver.2bpp.lz"
+SkiploomFrontpic:    INCBIN "gfx/pokemon/skiploom/front_blue.2bpp.lz"
 floating_section
 SlowbroBackpic:      INCBIN "gfx/pokemon/slowbro/back.2bpp.lz"
 floating_section
-SlowbroFrontpic:     INCBIN "gfx/pokemon/slowbro/front_silver.2bpp.lz"
+SlowbroFrontpic:     INCBIN "gfx/pokemon/slowbro/front_blue.2bpp.lz"
 floating_section
 SlowkingBackpic:     INCBIN "gfx/pokemon/slowking/back.2bpp.lz"
 floating_section
-SlowkingFrontpic:    INCBIN "gfx/pokemon/slowking/front_silver.2bpp.lz"
+SlowkingFrontpic:    INCBIN "gfx/pokemon/slowking/front_blue.2bpp.lz"
 floating_section
 SlowpokeBackpic:     INCBIN "gfx/pokemon/slowpoke/back.2bpp.lz"
 floating_section
-SlowpokeFrontpic:    INCBIN "gfx/pokemon/slowpoke/front_silver.2bpp.lz"
+SlowpokeFrontpic:    INCBIN "gfx/pokemon/slowpoke/front_blue.2bpp.lz"
 floating_section
 SlugmaBackpic:       INCBIN "gfx/pokemon/slugma/back.2bpp.lz"
 floating_section
-SlugmaFrontpic:      INCBIN "gfx/pokemon/slugma/front_silver.2bpp.lz"
+SlugmaFrontpic:      INCBIN "gfx/pokemon/slugma/front_blue.2bpp.lz"
 floating_section
 SmeargleBackpic:     INCBIN "gfx/pokemon/smeargle/back.2bpp.lz"
 floating_section
-SmeargleFrontpic:    INCBIN "gfx/pokemon/smeargle/front_silver.2bpp.lz"
+SmeargleFrontpic:    INCBIN "gfx/pokemon/smeargle/front_blue.2bpp.lz"
 floating_section
 SmoochumBackpic:     INCBIN "gfx/pokemon/smoochum/back.2bpp.lz"
 floating_section
-SmoochumFrontpic:    INCBIN "gfx/pokemon/smoochum/front_silver.2bpp.lz"
+SmoochumFrontpic:    INCBIN "gfx/pokemon/smoochum/front_blue.2bpp.lz"
 floating_section
 SneaselBackpic:      INCBIN "gfx/pokemon/sneasel/back.2bpp.lz"
 floating_section
@@ -839,15 +839,15 @@ SneaselFrontpic:     INCBIN "gfx/pokemon/sneasel/front.2bpp.lz"
 floating_section
 SnorlaxBackpic:      INCBIN "gfx/pokemon/snorlax/back.2bpp.lz"
 floating_section
-SnorlaxFrontpic:     INCBIN "gfx/pokemon/snorlax/front_silver.2bpp.lz"
+SnorlaxFrontpic:     INCBIN "gfx/pokemon/snorlax/front_blue.2bpp.lz"
 floating_section
 SnubbullBackpic:     INCBIN "gfx/pokemon/snubbull/back.2bpp.lz"
 floating_section
-SnubbullFrontpic:    INCBIN "gfx/pokemon/snubbull/front_silver.2bpp.lz"
+SnubbullFrontpic:    INCBIN "gfx/pokemon/snubbull/front_blue.2bpp.lz"
 floating_section
 SpearowBackpic:      INCBIN "gfx/pokemon/spearow/back.2bpp.lz"
 floating_section
-SpearowFrontpic:     INCBIN "gfx/pokemon/spearow/front_silver.2bpp.lz"
+SpearowFrontpic:     INCBIN "gfx/pokemon/spearow/front_blue.2bpp.lz"
 floating_section
 SpinarakBackpic:     INCBIN "gfx/pokemon/spinarak/back.2bpp.lz"
 floating_section
@@ -855,27 +855,27 @@ SpinarakFrontpic:    INCBIN "gfx/pokemon/spinarak/front.2bpp.lz"
 floating_section
 SquirtleBackpic:     INCBIN "gfx/pokemon/squirtle/back.2bpp.lz"
 floating_section
-SquirtleFrontpic:    INCBIN "gfx/pokemon/squirtle/front_silver.2bpp.lz"
+SquirtleFrontpic:    INCBIN "gfx/pokemon/squirtle/front_blue.2bpp.lz"
 floating_section
 StantlerBackpic:     INCBIN "gfx/pokemon/stantler/back.2bpp.lz"
 floating_section
-StantlerFrontpic:    INCBIN "gfx/pokemon/stantler/front_silver.2bpp.lz"
+StantlerFrontpic:    INCBIN "gfx/pokemon/stantler/front_blue.2bpp.lz"
 floating_section
 StarmieBackpic:      INCBIN "gfx/pokemon/starmie/back.2bpp.lz"
 floating_section
-StarmieFrontpic:     INCBIN "gfx/pokemon/starmie/front_silver.2bpp.lz"
+StarmieFrontpic:     INCBIN "gfx/pokemon/starmie/front_blue.2bpp.lz"
 floating_section
 StaryuBackpic:       INCBIN "gfx/pokemon/staryu/back.2bpp.lz"
 floating_section
-StaryuFrontpic:      INCBIN "gfx/pokemon/staryu/front_silver.2bpp.lz"
+StaryuFrontpic:      INCBIN "gfx/pokemon/staryu/front_blue.2bpp.lz"
 floating_section
 SteelixBackpic:      INCBIN "gfx/pokemon/steelix/back.2bpp.lz"
 floating_section
-SteelixFrontpic:     INCBIN "gfx/pokemon/steelix/front_silver.2bpp.lz"
+SteelixFrontpic:     INCBIN "gfx/pokemon/steelix/front_blue.2bpp.lz"
 floating_section
 SudowoodoBackpic:    INCBIN "gfx/pokemon/sudowoodo/back.2bpp.lz"
 floating_section
-SudowoodoFrontpic:   INCBIN "gfx/pokemon/sudowoodo/front_silver.2bpp.lz"
+SudowoodoFrontpic:   INCBIN "gfx/pokemon/sudowoodo/front_blue.2bpp.lz"
 floating_section
 SuicuneBackpic:      INCBIN "gfx/pokemon/suicune/back.2bpp.lz"
 floating_section
@@ -883,11 +883,11 @@ SuicuneFrontpic:     INCBIN "gfx/pokemon/suicune/front.2bpp.lz"
 floating_section
 SunfloraBackpic:     INCBIN "gfx/pokemon/sunflora/back.2bpp.lz"
 floating_section
-SunfloraFrontpic:    INCBIN "gfx/pokemon/sunflora/front_silver.2bpp.lz"
+SunfloraFrontpic:    INCBIN "gfx/pokemon/sunflora/front_blue.2bpp.lz"
 floating_section
 SunkernBackpic:      INCBIN "gfx/pokemon/sunkern/back.2bpp.lz"
 floating_section
-SunkernFrontpic:     INCBIN "gfx/pokemon/sunkern/front_silver.2bpp.lz"
+SunkernFrontpic:     INCBIN "gfx/pokemon/sunkern/front_blue.2bpp.lz"
 floating_section
 SwinubBackpic:       INCBIN "gfx/pokemon/swinub/back.2bpp.lz"
 floating_section
@@ -895,51 +895,51 @@ SwinubFrontpic:      INCBIN "gfx/pokemon/swinub/front.2bpp.lz"
 floating_section
 TangelaBackpic:      INCBIN "gfx/pokemon/tangela/back.2bpp.lz"
 floating_section
-TangelaFrontpic:     INCBIN "gfx/pokemon/tangela/front_silver.2bpp.lz"
+TangelaFrontpic:     INCBIN "gfx/pokemon/tangela/front_blue.2bpp.lz"
 floating_section
 TaurosBackpic:       INCBIN "gfx/pokemon/tauros/back.2bpp.lz"
 floating_section
-TaurosFrontpic:      INCBIN "gfx/pokemon/tauros/front_silver.2bpp.lz"
+TaurosFrontpic:      INCBIN "gfx/pokemon/tauros/front_blue.2bpp.lz"
 floating_section
 TeddiursaBackpic:    INCBIN "gfx/pokemon/teddiursa/back.2bpp.lz"
 floating_section
-TeddiursaFrontpic:   INCBIN "gfx/pokemon/teddiursa/front_silver.2bpp.lz"
+TeddiursaFrontpic:   INCBIN "gfx/pokemon/teddiursa/front_blue.2bpp.lz"
 floating_section
 TentacoolBackpic:    INCBIN "gfx/pokemon/tentacool/back.2bpp.lz"
 floating_section
-TentacoolFrontpic:   INCBIN "gfx/pokemon/tentacool/front_silver.2bpp.lz"
+TentacoolFrontpic:   INCBIN "gfx/pokemon/tentacool/front_blue.2bpp.lz"
 floating_section
 TentacruelBackpic:   INCBIN "gfx/pokemon/tentacruel/back.2bpp.lz"
 floating_section
-TentacruelFrontpic:  INCBIN "gfx/pokemon/tentacruel/front_silver.2bpp.lz"
+TentacruelFrontpic:  INCBIN "gfx/pokemon/tentacruel/front_blue.2bpp.lz"
 floating_section
 TogepiBackpic:       INCBIN "gfx/pokemon/togepi/back.2bpp.lz"
 floating_section
-TogepiFrontpic:      INCBIN "gfx/pokemon/togepi/front_silver.2bpp.lz"
+TogepiFrontpic:      INCBIN "gfx/pokemon/togepi/front_blue.2bpp.lz"
 floating_section
 TogeticBackpic:      INCBIN "gfx/pokemon/togetic/back.2bpp.lz"
 floating_section
-TogeticFrontpic:     INCBIN "gfx/pokemon/togetic/front_silver.2bpp.lz"
+TogeticFrontpic:     INCBIN "gfx/pokemon/togetic/front_blue.2bpp.lz"
 floating_section
 TotodileBackpic:     INCBIN "gfx/pokemon/totodile/back.2bpp.lz"
 floating_section
-TotodileFrontpic:    INCBIN "gfx/pokemon/totodile/front_silver.2bpp.lz"
+TotodileFrontpic:    INCBIN "gfx/pokemon/totodile/front_blue.2bpp.lz"
 floating_section
 TyphlosionBackpic:   INCBIN "gfx/pokemon/typhlosion/back.2bpp.lz"
 floating_section
-TyphlosionFrontpic:  INCBIN "gfx/pokemon/typhlosion/front_silver.2bpp.lz"
+TyphlosionFrontpic:  INCBIN "gfx/pokemon/typhlosion/front_blue.2bpp.lz"
 floating_section
 TyranitarBackpic:    INCBIN "gfx/pokemon/tyranitar/back.2bpp.lz"
 floating_section
-TyranitarFrontpic:   INCBIN "gfx/pokemon/tyranitar/front_silver.2bpp.lz"
+TyranitarFrontpic:   INCBIN "gfx/pokemon/tyranitar/front_blue.2bpp.lz"
 floating_section
 TyrogueBackpic:      INCBIN "gfx/pokemon/tyrogue/back.2bpp.lz"
 floating_section
-TyrogueFrontpic:     INCBIN "gfx/pokemon/tyrogue/front_silver.2bpp.lz"
+TyrogueFrontpic:     INCBIN "gfx/pokemon/tyrogue/front_blue.2bpp.lz"
 floating_section
 UmbreonBackpic:      INCBIN "gfx/pokemon/umbreon/back.2bpp.lz"
 floating_section
-UmbreonFrontpic:     INCBIN "gfx/pokemon/umbreon/front_silver.2bpp.lz"
+UmbreonFrontpic:     INCBIN "gfx/pokemon/umbreon/front_blue.2bpp.lz"
 floating_section
 UnownABackpic:       INCBIN "gfx/pokemon/unown_a/back.2bpp.lz"
 floating_section
@@ -1047,83 +1047,83 @@ UnownZFrontpic:      INCBIN "gfx/pokemon/unown_z/front.2bpp.lz"
 floating_section
 UrsaringBackpic:     INCBIN "gfx/pokemon/ursaring/back.2bpp.lz"
 floating_section
-UrsaringFrontpic:    INCBIN "gfx/pokemon/ursaring/front_silver.2bpp.lz"
+UrsaringFrontpic:    INCBIN "gfx/pokemon/ursaring/front_blue.2bpp.lz"
 floating_section
 VaporeonBackpic:     INCBIN "gfx/pokemon/vaporeon/back.2bpp.lz"
 floating_section
-VaporeonFrontpic:    INCBIN "gfx/pokemon/vaporeon/front_silver.2bpp.lz"
+VaporeonFrontpic:    INCBIN "gfx/pokemon/vaporeon/front_blue.2bpp.lz"
 floating_section
 VenomothBackpic:     INCBIN "gfx/pokemon/venomoth/back.2bpp.lz"
 floating_section
-VenomothFrontpic:    INCBIN "gfx/pokemon/venomoth/front_silver.2bpp.lz"
+VenomothFrontpic:    INCBIN "gfx/pokemon/venomoth/front_blue.2bpp.lz"
 floating_section
 VenonatBackpic:      INCBIN "gfx/pokemon/venonat/back.2bpp.lz"
 floating_section
-VenonatFrontpic:     INCBIN "gfx/pokemon/venonat/front_silver.2bpp.lz"
+VenonatFrontpic:     INCBIN "gfx/pokemon/venonat/front_blue.2bpp.lz"
 floating_section
 VenusaurBackpic:     INCBIN "gfx/pokemon/venusaur/back.2bpp.lz"
 floating_section
-VenusaurFrontpic:    INCBIN "gfx/pokemon/venusaur/front_silver.2bpp.lz"
+VenusaurFrontpic:    INCBIN "gfx/pokemon/venusaur/front_blue.2bpp.lz"
 floating_section
 VictreebelBackpic:   INCBIN "gfx/pokemon/victreebel/back.2bpp.lz"
 floating_section
-VictreebelFrontpic:  INCBIN "gfx/pokemon/victreebel/front_silver.2bpp.lz"
+VictreebelFrontpic:  INCBIN "gfx/pokemon/victreebel/front_blue.2bpp.lz"
 floating_section
 VileplumeBackpic:    INCBIN "gfx/pokemon/vileplume/back.2bpp.lz"
 floating_section
-VileplumeFrontpic:   INCBIN "gfx/pokemon/vileplume/front_silver.2bpp.lz"
+VileplumeFrontpic:   INCBIN "gfx/pokemon/vileplume/front_blue.2bpp.lz"
 floating_section
 VoltorbBackpic:      INCBIN "gfx/pokemon/voltorb/back.2bpp.lz"
 floating_section
-VoltorbFrontpic:     INCBIN "gfx/pokemon/voltorb/front_silver.2bpp.lz"
+VoltorbFrontpic:     INCBIN "gfx/pokemon/voltorb/front_blue.2bpp.lz"
 floating_section
 VulpixBackpic:       INCBIN "gfx/pokemon/vulpix/back.2bpp.lz"
 floating_section
-VulpixFrontpic:      INCBIN "gfx/pokemon/vulpix/front_silver.2bpp.lz"
+VulpixFrontpic:      INCBIN "gfx/pokemon/vulpix/front_blue.2bpp.lz"
 floating_section
 WartortleBackpic:    INCBIN "gfx/pokemon/wartortle/back.2bpp.lz"
 floating_section
-WartortleFrontpic:   INCBIN "gfx/pokemon/wartortle/front_silver.2bpp.lz"
+WartortleFrontpic:   INCBIN "gfx/pokemon/wartortle/front_blue.2bpp.lz"
 floating_section
 WeedleBackpic:       INCBIN "gfx/pokemon/weedle/back.2bpp.lz"
 floating_section
-WeedleFrontpic:      INCBIN "gfx/pokemon/weedle/front_silver.2bpp.lz"
+WeedleFrontpic:      INCBIN "gfx/pokemon/weedle/front_blue.2bpp.lz"
 floating_section
 WeepinbellBackpic:   INCBIN "gfx/pokemon/weepinbell/back.2bpp.lz"
 floating_section
-WeepinbellFrontpic:  INCBIN "gfx/pokemon/weepinbell/front_silver.2bpp.lz"
+WeepinbellFrontpic:  INCBIN "gfx/pokemon/weepinbell/front_blue.2bpp.lz"
 floating_section
 WeezingBackpic:      INCBIN "gfx/pokemon/weezing/back.2bpp.lz"
 floating_section
-WeezingFrontpic:     INCBIN "gfx/pokemon/weezing/front_silver.2bpp.lz"
+WeezingFrontpic:     INCBIN "gfx/pokemon/weezing/front_blue.2bpp.lz"
 floating_section
 WigglytuffBackpic:   INCBIN "gfx/pokemon/wigglytuff/back.2bpp.lz"
 floating_section
-WigglytuffFrontpic:  INCBIN "gfx/pokemon/wigglytuff/front_silver.2bpp.lz"
+WigglytuffFrontpic:  INCBIN "gfx/pokemon/wigglytuff/front_blue.2bpp.lz"
 floating_section
 WobbuffetBackpic:    INCBIN "gfx/pokemon/wobbuffet/back.2bpp.lz"
 floating_section
-WobbuffetFrontpic:   INCBIN "gfx/pokemon/wobbuffet/front_silver.2bpp.lz"
+WobbuffetFrontpic:   INCBIN "gfx/pokemon/wobbuffet/front_blue.2bpp.lz"
 floating_section
 WooperBackpic:       INCBIN "gfx/pokemon/wooper/back.2bpp.lz"
 floating_section
-WooperFrontpic:      INCBIN "gfx/pokemon/wooper/front_silver.2bpp.lz"
+WooperFrontpic:      INCBIN "gfx/pokemon/wooper/front_blue.2bpp.lz"
 floating_section
 XatuBackpic:         INCBIN "gfx/pokemon/xatu/back.2bpp.lz"
 floating_section
-XatuFrontpic:        INCBIN "gfx/pokemon/xatu/front_silver.2bpp.lz"
+XatuFrontpic:        INCBIN "gfx/pokemon/xatu/front_blue.2bpp.lz"
 floating_section
 YanmaBackpic:        INCBIN "gfx/pokemon/yanma/back.2bpp.lz"
 floating_section
-YanmaFrontpic:       INCBIN "gfx/pokemon/yanma/front_silver.2bpp.lz"
+YanmaFrontpic:       INCBIN "gfx/pokemon/yanma/front_blue.2bpp.lz"
 floating_section
 ZapdosBackpic:       INCBIN "gfx/pokemon/zapdos/back.2bpp.lz"
 floating_section
-ZapdosFrontpic:      INCBIN "gfx/pokemon/zapdos/front_silver.2bpp.lz"
+ZapdosFrontpic:      INCBIN "gfx/pokemon/zapdos/front_blue.2bpp.lz"
 floating_section
 ZubatBackpic:        INCBIN "gfx/pokemon/zubat/back.2bpp.lz"
 floating_section
-ZubatFrontpic:       INCBIN "gfx/pokemon/zubat/front_silver.2bpp.lz"
+ZubatFrontpic:       INCBIN "gfx/pokemon/zubat/front_blue.2bpp.lz"
 floating_section
 BeautyPic:           INCBIN "gfx/trainers/beauty.2bpp.lz"
 floating_section

@@ -33,7 +33,7 @@ AipomBackpic:        INCBIN "gfx/pokemon/aipom/back.2bpp.lz"
 floating_section
 AipomFrontpic:       INCBIN "gfx/pokemon/aipom/front_gold.2bpp.lz"
 floating_section
-AlakazamBackpic:     INCBIN "gfx/pokemon/alakazam/back_gold.2bpp.lz"
+AlakazamBackpic:     INCBIN "gfx/pokemon/alakazam/back.2bpp.lz"
 floating_section
 AlakazamFrontpic:    INCBIN "gfx/pokemon/alakazam/front_gold.2bpp.lz"
 floating_section
@@ -353,7 +353,7 @@ HitmonleeBackpic:    INCBIN "gfx/pokemon/hitmonlee/back.2bpp.lz"
 floating_section
 HitmonleeFrontpic:   INCBIN "gfx/pokemon/hitmonlee/front_gold.2bpp.lz"
 floating_section
-HitmontopBackpic:    INCBIN "gfx/pokemon/hitmontop/back_gold.2bpp.lz"
+HitmontopBackpic:    INCBIN "gfx/pokemon/hitmontop/back.2bpp.lz"
 floating_section
 HitmontopFrontpic:   INCBIN "gfx/pokemon/hitmontop/front_gold.2bpp.lz"
 floating_section
@@ -549,7 +549,7 @@ MewtwoBackpic:       INCBIN "gfx/pokemon/mewtwo/back.2bpp.lz"
 floating_section
 MewtwoFrontpic:      INCBIN "gfx/pokemon/mewtwo/front_gold.2bpp.lz"
 floating_section
-MiltankBackpic:      INCBIN "gfx/pokemon/miltank/back_gold.2bpp.lz"
+MiltankBackpic:      INCBIN "gfx/pokemon/miltank/back.2bpp.lz"
 floating_section
 MiltankFrontpic:     INCBIN "gfx/pokemon/miltank/front_gold.2bpp.lz"
 floating_section

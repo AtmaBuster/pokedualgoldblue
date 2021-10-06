@@ -12,11 +12,11 @@ INCBIN "gfx/title/logo_bottom_gold.2bpp.lz"
 TitleScreenGFX2::
 INCBIN "gfx/title/logo_top_gold.2bpp.lz"
 
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 TitleScreenGFX1::
-INCBIN "gfx/title/logo_bottom_silver.2bpp.lz"
+INCBIN "gfx/title/logo_bottom_blue.2bpp.lz"
 TitleScreenGFX2::
-INCBIN "gfx/title/logo_top_silver.2bpp.lz"
+INCBIN "gfx/title/logo_top_blue.2bpp.lz"
 ENDC
 
 TitleScreenTilemap::
@@ -49,11 +49,11 @@ INCBIN "gfx/title/title_trail_gold.2bpp"
 TitleScreenGFX4::
 INCBIN "gfx/title/hooh_gold.2bpp.lz"
 
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 TitleScreenGFX3::
-INCBIN "gfx/title/title_trail_silver.2bpp"
+INCBIN "gfx/title/title_trail_blue.2bpp"
 TitleScreenGFX4::
-INCBIN "gfx/title/lugia_silver.2bpp.lz"
+INCBIN "gfx/title/lugia_blue.2bpp.lz"
 ENDC
 
 
