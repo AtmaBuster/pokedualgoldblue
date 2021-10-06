@@ -89,7 +89,7 @@ NameRival:
 .DefaultName:
 IF DEF(_GOLD)
 	db "SILVER@"
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	db "GOLD@"
 ENDC
 

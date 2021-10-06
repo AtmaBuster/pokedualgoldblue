@@ -107,7 +107,7 @@ IF DEF(_GOLD)
 	ldh [rOBP0], a
 	ld a, %11111000
 	ldh [rOBP1], a
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	ld a, %11110000
 	ldh [rOBP0], a
 	ld a, %11110000
@@ -123,7 +123,7 @@ IF DEF(_GOLD)
 	ldh [rOBP0], a
 	ld a, %11100100
 	ldh [rOBP1], a
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	ld a, %11110000
 	ldh [rOBP0], a
 	ld a, %11100000
@@ -134,7 +134,7 @@ ENDC
 .cgb
 	ld a, %11100100
 	call DmgToCgbBGPals
-IF DEF(_SILVER)
+IF DEF(_BLUE)
 	ld a, %11100000
 ENDC
 	call DmgToCgbObjPal0

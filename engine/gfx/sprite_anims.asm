@@ -781,7 +781,7 @@ IF DEF(_GOLD)
 	ld [hl], a
 	ret
 
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 .zero
 	ld a, [wIntroSceneTimer]
 	and $30
@@ -825,7 +825,7 @@ IF DEF(_GOLD)
 	inc a
 	ld [hl], a
 	ld d, 2
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	dec a
 	ld [hl], a
 	ld d, 8

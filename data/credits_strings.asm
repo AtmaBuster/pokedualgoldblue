@@ -54,7 +54,7 @@ Credits_End::                 db "END@"                       ; "おしまい@"
 Credits_Staff::               db "      #MON"                 ; "ポケットモンスター"
                             IF DEF(_GOLD)
                             next "    GOLD VERSION"
-                            ELIF DEF(_SILVER)
+                            ELIF DEF(_BLUE)
                             next "   SILVER VERSION"
                             ENDC
                             next "       STAFF@"

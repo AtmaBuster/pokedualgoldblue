@@ -94,7 +94,7 @@ IF DEF(_GOLD)
 	dbw $00, .OAMData_GSIntroHoOh3             ; SPRITE_ANIM_OAMSET_GS_INTRO_HO_OH_3
 	dbw $00, .OAMData_GSIntroHoOh4             ; SPRITE_ANIM_OAMSET_GS_INTRO_HO_OH_4
 	dbw $00, .OAMData_GSIntroHoOh5             ; SPRITE_ANIM_OAMSET_GS_INTRO_HO_OH_5
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	dbw $00, .OAMData_GSIntroLugia1            ; SPRITE_ANIM_OAMSET_GS_INTRO_HO_OH_1
 	dbw $20, .OAMData_GSIntroLugia1            ; SPRITE_ANIM_OAMSET_GS_INTRO_HO_OH_2
 	dbw $40, .OAMData_GSIntroLugia2            ; SPRITE_ANIM_OAMSET_GS_INTRO_HO_OH_3
@@ -727,7 +727,7 @@ IF DEF(_GOLD)
 	db 1
 	dbsprite -1, -1,  4,  4, $00, 1 | OBP_NUM
 
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 .OAMData_GSIntroLugia1:
 	db 16
 	dbsprite -5, -2,  0,  0, $00, 0

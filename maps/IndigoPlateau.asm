@@ -17,7 +17,7 @@ IndigoPlateau_MapEvents:
 IF DEF(_GOLD)
 	warp_event  9,  5, INDIGO_PLATEAU_POKECENTER_1F, 1
 	warp_event 10,  5, INDIGO_PLATEAU_POKECENTER_1F, 2
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	warp_event  9,  5, INDIGO_PLATEAU_LOBBY, 1
 	warp_event 10,  5, INDIGO_PLATEAU_LOBBY, 2
 ENDC

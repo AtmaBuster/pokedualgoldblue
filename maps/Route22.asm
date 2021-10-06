@@ -11,7 +11,7 @@ Route22_MapEvents:
 	def_warp_events
 IF DEF(_GOLD)
 	warp_event  8,  5, VICTORY_ROAD_GATE, 1
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	warp_event  8,  5, ROUTE_22_GATE, 1
 ENDC
 

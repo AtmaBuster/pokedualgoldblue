@@ -357,7 +357,7 @@ JohtoGrassWildMons:
 	db 13, SUNKERN
 	db 14, PIDGEY
 	db 14, PIDGEY
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 10, WEEDLE
 	db 10, KAKUNA
@@ -468,7 +468,7 @@ JohtoGrassWildMons:
 	db 7, ZUBAT
 	db 6, ONIX
 	db 6, ONIX
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 6, GEODUDE
 	db 6, RATTATA
@@ -523,7 +523,7 @@ JohtoGrassWildMons:
 	db 9, ZUBAT
 	db 6, RATTATA
 	db 6, RATTATA
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 8, GEODUDE
 	db 8, RATTATA
@@ -654,7 +654,7 @@ JohtoGrassWildMons:
 	db 5, ZUBAT
 	db 6, PARAS
 	db 6, PARAS
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 5, WEEDLE
 	db 6, KAKUNA
@@ -822,7 +822,7 @@ JohtoGrassWildMons:
 	db 22, ZUBAT
 	db 22, JYNX
 	db 22, JYNX
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 21, SWINUB
 	db 22, GOLBAT
@@ -877,7 +877,7 @@ JohtoGrassWildMons:
 	db 22, ZUBAT
 	db 22, JYNX
 	db 22, JYNX
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 21, SWINUB
 	db 22, GOLBAT
@@ -932,7 +932,7 @@ JohtoGrassWildMons:
 	db 23, ZUBAT
 	db 23, JYNX
 	db 23, JYNX
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 22, SWINUB
 	db 23, GOLBAT
@@ -987,7 +987,7 @@ JohtoGrassWildMons:
 	db 23, ZUBAT
 	db 23, JYNX
 	db 23, JYNX
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 22, SWINUB
 	db 23, GOLBAT
@@ -1042,7 +1042,7 @@ JohtoGrassWildMons:
 	db 24, ZUBAT
 	db 24, JYNX
 	db 24, JYNX
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 23, SWINUB
 	db 24, GOLBAT
@@ -1321,7 +1321,7 @@ JohtoGrassWildMons:
 	db 45, GOLBAT
 	db 20, LARVITAR
 	db 15, LARVITAR
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 42, ONIX
 	db 44, DONPHAN
@@ -1376,7 +1376,7 @@ JohtoGrassWildMons:
 	db 48, GOLBAT
 	db 20, LARVITAR
 	db 15, LARVITAR
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 45, QUAGSIRE
 	db 48, GOLDUCK
@@ -1431,7 +1431,7 @@ JohtoGrassWildMons:
 	db 51, GOLDUCK
 	db 20, LARVITAR
 	db 15, LARVITAR
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 51, GOLBAT
 	db 48, ONIX
@@ -1486,7 +1486,7 @@ JohtoGrassWildMons:
 	db 48, GOLBAT
 	db 20, LARVITAR
 	db 15, LARVITAR
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 45, QUAGSIRE
 	db 48, GOLDUCK
@@ -1625,7 +1625,7 @@ JohtoGrassWildMons:
 	db 4, HOOTHOOT
 	db 4, HOOTHOOT
 	db 4, HOOTHOOT
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 3, LEDYBA
 	db 3, WEEDLE
@@ -1680,7 +1680,7 @@ JohtoGrassWildMons:
 	db 5, HOOTHOOT
 	db 5, HOOTHOOT
 	db 5, HOOTHOOT
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 4, LEDYBA
 	db 4, WEEDLE
@@ -1735,7 +1735,7 @@ JohtoGrassWildMons:
 	db 8, WOOPER
 	db 8, ZUBAT
 	db 8, ZUBAT
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 6, BELLSPROUT
 	db 4, EKANS
@@ -1790,7 +1790,7 @@ JohtoGrassWildMons:
 	db 8, ZUBAT
 	db 8, ZUBAT
 	db 8, ZUBAT
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 6, HOPPIP
 	db 7, EKANS
@@ -1873,7 +1873,7 @@ JohtoGrassWildMons:
 	db 14, HOOTHOOT
 	db 10, DITTO
 	db 12, YANMA
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
@@ -1928,7 +1928,7 @@ JohtoGrassWildMons:
 	db 13, STANTLER
 	db 15, HOOTHOOT
 	db 15, HOOTHOOT
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
@@ -1983,7 +1983,7 @@ JohtoGrassWildMons:
 	db 15, SPINARAK
 	db 15, SPINARAK
 	db 15, SPINARAK
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 13, LEDYBA
 	db 15, STANTLER
@@ -2038,7 +2038,7 @@ JohtoGrassWildMons:
 	db 13, MILTANK
 	db 13, TAUROS
 	db 13, SNUBBULL
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 16, MEOWTH
 	db 16, RATICATE
@@ -2093,7 +2093,7 @@ JohtoGrassWildMons:
 	db 15, MILTANK
 	db 15, TAUROS
 	db 15, TAUROS
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	db 16, MEOWTH
@@ -2149,7 +2149,7 @@ JohtoGrassWildMons:
 	db 15, FLAAFFY
 	db 17, FLAAFFY
 	db 17, FLAAFFY
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 13, MAREEP
 	db 14, SPEAROW
@@ -2260,7 +2260,7 @@ JohtoGrassWildMons:
 	db 25, GRAVELER
 	db 27, GRAVELER
 	db 27, GRAVELER
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 23, GEODUDE
 	db 23, GRAVELER
@@ -2343,7 +2343,7 @@ JohtoGrassWildMons:
 	db 38, SNEASEL
 	db 42, SNEASEL
 	db 42, SNEASEL
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 41, TANGELA
 	db 42, PONYTA

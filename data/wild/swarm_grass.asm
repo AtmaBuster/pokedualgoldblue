@@ -59,7 +59,7 @@ SwarmGrassWildMons:
 	db 13, MILTANK
 	db 13, TAUROS
 	db 13, TAUROS
-	ELIF DEF(_SILVER)
+	ELIF DEF(_BLUE)
 	; morn
 	db 16, SNUBBULL
 	db 16, MEOWTH

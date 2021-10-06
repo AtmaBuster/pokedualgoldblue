@@ -13,8 +13,8 @@
 	db 5 ; unknown 2
 IF DEF(_GOLD)
 	INCBIN "gfx/pokemon/chansey/front_gold.dimensions"
-ELIF DEF(_SILVER)
-	INCBIN "gfx/pokemon/chansey/front_silver.dimensions"
+ELIF DEF(_BLUE)
+	INCBIN "gfx/pokemon/chansey/front_blue.dimensions"
 ENDC
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_FAST ; growth rate

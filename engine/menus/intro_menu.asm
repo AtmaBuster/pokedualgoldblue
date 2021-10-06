@@ -961,7 +961,7 @@ TitleScreenTimer:
 	ld hl, wTitleScreenTimer
 IF DEF(_GOLD)
 	ld de, 84 * 60 + 16
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	ld de, 73 * 60 + 36
 ENDC
 	ld [hl], e
@@ -1099,7 +1099,7 @@ IF DEF(_GOLD)
 	ret z
 	ld e, a
 	ld d, [hl]
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	depixel 15, 11, 4, 0
 ENDC
 	ld a, SPRITE_ANIM_INDEX_GS_TITLE_TRAIL

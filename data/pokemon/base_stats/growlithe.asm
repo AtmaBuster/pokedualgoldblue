@@ -13,8 +13,8 @@
 	db 5 ; unknown 2
 IF DEF(_GOLD)
 	INCBIN "gfx/pokemon/growlithe/front_gold.dimensions"
-ELIF DEF(_SILVER)
-	INCBIN "gfx/pokemon/growlithe/front_silver.dimensions"
+ELIF DEF(_BLUE)
+	INCBIN "gfx/pokemon/growlithe/front_blue.dimensions"
 ENDC
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_SLOW ; growth rate

@@ -15,7 +15,7 @@ IF DEF(_GOLD)
 	db "HIRO@"
 	db "TAYLOR@"
 	db "KARL@"
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 	db "SILVER@"
 	db "KAMON@"
 	db "OSCAR@"

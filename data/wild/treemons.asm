@@ -52,7 +52,7 @@ IF DEF(_GOLD)
 	db  5, BUTTERFREE, 10
 	db -1
 
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 ; common
 	db 50, WEEDLE,     10
 	db 15, WEEDLE,     10

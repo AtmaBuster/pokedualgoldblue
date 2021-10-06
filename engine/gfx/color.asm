@@ -1093,21 +1093,21 @@ SGBBorderMapAndPalettes:
 ; interleaved tile ids and palette ids, without the center 20x18 screen area
 IF DEF(_GOLD)
 INCBIN "gfx/sgb/gold_border.sgb.tilemap"
-ELIF DEF(_SILVER)
-INCBIN "gfx/sgb/silver_border.sgb.tilemap"
+ELIF DEF(_BLUE)
+INCBIN "gfx/sgb/blue_border.sgb.tilemap"
 ENDC
 ; four SGB palettes of 16 colors each; only the first 4 colors are used
 IF DEF(_GOLD)
 INCLUDE "gfx/sgb/gold_border.pal"
-ELIF DEF(_SILVER)
-INCLUDE "gfx/sgb/silver_border.pal"
+ELIF DEF(_BLUE)
+INCLUDE "gfx/sgb/blue_border.pal"
 ENDC
 
 SGBBorderGFX:
 IF DEF(_GOLD)
 INCBIN "gfx/sgb/gold_border.2bpp"
-ELIF DEF(_SILVER)
-INCBIN "gfx/sgb/silver_border.2bpp"
+ELIF DEF(_BLUE)
+INCBIN "gfx/sgb/blue_border.2bpp"
 ENDC
 
 HPBarPals:
@@ -1231,8 +1231,8 @@ INCLUDE "gfx/battle_anims/unused_battle_anims.pal"
 GSTitleBGPals:
 IF DEF(_GOLD)
 INCLUDE "gfx/title/title_bg_gold.pal"
-ELIF DEF(_SILVER)
-INCLUDE "gfx/title/title_bg_silver.pal"
+ELIF DEF(_BLUE)
+INCLUDE "gfx/title/title_bg_blue.pal"
 ENDC
 
 GSTitleOBPals:
@@ -1247,6 +1247,6 @@ INCLUDE "gfx/beta_poker/beta_poker.pal"
 SlotMachinePals:
 IF DEF(_GOLD)
 INCLUDE "gfx/slots/slots_gold.pal"
-ELIF DEF(_SILVER)
-INCLUDE "gfx/slots/slots_silver.pal"
+ELIF DEF(_BLUE)
+INCLUDE "gfx/slots/slots_blue.pal"
 ENDC

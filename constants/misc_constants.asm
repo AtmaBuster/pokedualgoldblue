@@ -16,7 +16,7 @@ FEMALE EQU 1
 ; Mystery Gift uses incremented values 1 and 2
 IF DEF(_GOLD)
 GS_VERSION EQU 0
-ELIF DEF(_SILVER)
+ELIF DEF(_BLUE)
 GS_VERSION EQU 1
 ENDC
 ; Pokémon Pikachu 2, a step counter / virtual pet device (used by Mystery Gift)

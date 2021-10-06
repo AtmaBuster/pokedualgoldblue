@@ -15,16 +15,16 @@ gfx/misc.o \
 gfx/sprites.o \
 gfx/tilesets.o
 
-# Distinguish asm files which are game-exclusive for building (*_[gold|silver].asm)
+# Distinguish asm files which are game-exclusive for building (*_[gold|blue].asm)
 dual_excl_asm := \
 data/pokemon/dex_entries \
 gfx/pics
 
 gold_excl_obj := $(addsuffix _gold.o,$(dual_excl_asm))
-blue_excl_obj := $(addsuffix _silver.o,$(dual_excl_asm))
+blue_excl_obj := $(addsuffix _blue.o,$(dual_excl_asm))
 
 dualgold_obj := $(rom_obj:.o=_gold.o) $(gold_excl_obj)
-dualblue_obj := $(rom_obj:.o=_silver.o) $(blue_excl_obj)
+dualblue_obj := $(rom_obj:.o=_blue.o) $(blue_excl_obj)
 
 
 ### Build tools
@@ -72,7 +72,7 @@ RGBASMFLAGS += -E
 endif
 
 $(dualgold_obj): RGBASMFLAGS += -D _GOLD
-$(dualblue_obj): RGBASMFLAGS += -D _SILVER
+$(dualblue_obj): RGBASMFLAGS += -D _BLUE
 
 rgbdscheck.o: rgbdscheck.asm
 	$(RGBASM) -o $@ $<
@@ -91,13 +91,13 @@ ifeq (,$(filter clean tidy tools,$(MAKECMDGOALS)))
 
 $(info $(shell $(MAKE) -C tools))
 
-# Dependencies for shared objects (drop _gold and _silver from asm file basenames)
+# Dependencies for shared objects (drop _gold and _blue from asm file basenames)
 $(foreach obj, $(filter-out $(gold_excl_obj), $(dualgold_obj)), \
 	$(eval $(call DEP,$(obj),$(obj:_gold.o=.asm))))
 $(foreach obj, $(filter-out $(blue_excl_obj), $(dualblue_obj)), \
-	$(eval $(call DEP,$(obj),$(obj:_silver.o=.asm))))
+	$(eval $(call DEP,$(obj),$(obj:_blue.o=.asm))))
 
-# Dependencies for game-exclusive objects (keep _gold and _silver in asm file basenames)
+# Dependencies for game-exclusive objects (keep _gold and _blue in asm file basenames)
 $(foreach obj, $(gold_excl_obj) $(blue_excl_obj), \
 	$(eval $(call DEP,$(obj),$(obj:.o=.asm))))
 
@@ -122,21 +122,9 @@ dualblue_opt = -cjsv -t POKEMON_BLU -i AAXE -k 01 -l 0x33 -m 0x10 -r 3 -p 0
 
 gfx/pokemon/%/front.2bpp: rgbgfx += -h
 gfx/pokemon/%/front_gold.2bpp: rgbgfx += -h
-gfx/pokemon/%/front_silver.2bpp: rgbgfx += -h
+gfx/pokemon/%/front_blue.2bpp: rgbgfx += -h
 
 gfx/pokemon/%/back.2bpp: rgbgfx += -h
-gfx/pokemon/%/back_gold.2bpp: rgbgfx += -h
-gfx/pokemon/%/back_silver.2bpp: rgbgfx += -h
-
-gfx/pokemon/%/back_gold.2bpp: gfx/pokemon/%/back.png
-	$(RGBGFX) $(rgbgfx) -o $@ $<
-	$(if $(tools/gfx),\
-		tools/gfx $(tools/gfx) -o $@ $@)
-
-gfx/pokemon/%/back_silver.2bpp: gfx/pokemon/%/back.png
-	$(RGBGFX) $(rgbgfx) -o $@ $<
-	$(if $(tools/gfx),\
-		tools/gfx $(tools/gfx) -o $@ $@)
 
 gfx/trainers/%.2bpp: rgbgfx += -h
 
@@ -166,9 +154,9 @@ gfx/mystery_gift/mystery_gift_2.2bpp: tools/gfx += --trim-whitespace
 gfx/mystery_gift/question_mark.1bpp: tools/gfx += --remove-whitespace
 
 gfx/title/logo_bottom_gold.2bpp: tools/gfx += --trim-whitespace
-gfx/title/logo_bottom_silver.2bpp: tools/gfx += --trim-whitespace
+gfx/title/logo_bottom_blue.2bpp: tools/gfx += --trim-whitespace
 gfx/title/hooh_gold.2bpp: tools/gfx += --interleave --png=$<
-gfx/title/lugia_silver.2bpp: tools/gfx += --interleave --png=$<
+gfx/title/lugia_blue.2bpp: tools/gfx += --interleave --png=$<
 
 gfx/trade/ball.2bpp: tools/gfx += --remove-whitespace
 gfx/trade/game_boy.2bpp: tools/gfx += --remove-duplicates --preserve=0x23,0x27
@@ -213,9 +201,9 @@ gfx/battle/dude.2bpp: rgbgfx += -h
 gfx/font/unused_bold_font.1bpp: tools/gfx += --trim-whitespace
 
 gfx/sgb/gold_border.2bpp: tools/gfx += --trim-whitespace
-gfx/sgb/silver_border.2bpp: tools/gfx += --trim-whitespace
+gfx/sgb/blue_border.2bpp: tools/gfx += --trim-whitespace
 gfx/sgb/gold_border.sgb.tilemap: gfx/sgb/gold_border.bin ; tr < $< -d '\000' > $@
-gfx/sgb/silver_border.sgb.tilemap: gfx/sgb/silver_border.bin ; tr < $< -d '\000' > $@
+gfx/sgb/blue_border.sgb.tilemap: gfx/sgb/blue_border.bin ; tr < $< -d '\000' > $@
 
 
 ### Catch-all graphics rules
