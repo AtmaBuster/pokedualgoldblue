@@ -217,6 +217,7 @@ ENDM
 
 ; see data/moves/tmhm_moves.asm for moves
 TM01 EQU const_value
+IF DEF(_GOLD)
 	add_tm DYNAMICPUNCH ; bf
 	add_tm HEADBUTT     ; c0
 	add_tm CURSE        ; c1
@@ -269,6 +270,60 @@ TM01 EQU const_value
 	add_tm FIRE_PUNCH   ; f0
 	add_tm FURY_CUTTER  ; f1
 	add_tm NIGHTMARE    ; f2
+ELIF DEF(_BLUE)
+	add_tm MEGA_PUNCH   ; bf
+	add_tm RAZOR_WIND   ; c0
+	add_tm SWORDS_DANCE ; c1
+	add_tm WHIRLWIND    ; c2
+	const ITEM_C3       ; c3
+	add_tm MEGA_KICK    ; c4
+	add_tm TOXIC        ; c5
+	add_tm HORN_DRILL   ; c6
+	add_tm BODY_SLAM    ; c7
+	add_tm TAKE_DOWN    ; c8
+	add_tm DOUBLE_EDGE  ; c9
+	add_tm BUBBLEBEAM   ; ca
+	add_tm WATER_GUN    ; cb
+	add_tm ICE_BEAM     ; cc
+	add_tm BLIZZARD     ; cd
+	add_tm HYPER_BEAM   ; ce
+	add_tm PAY_DAY      ; cf
+	add_tm SUBMISSION   ; d0
+	add_tm COUNTER      ; d1
+	add_tm SEISMIC_TOSS ; d2
+	add_tm RAGE         ; d3
+	add_tm MEGA_DRAIN   ; d4
+	add_tm SOLARBEAM    ; d5
+	add_tm DRAGON_RAGE  ; d6
+	add_tm THUNDERBOLT  ; d7
+	add_tm THUNDER      ; d8
+	add_tm EARTHQUAKE   ; d9
+	add_tm FISSURE      ; da
+	add_tm DIG          ; db
+	const ITEM_DC       ; dc
+	add_tm PSYCHIC_M    ; dd
+	add_tm TELEPORT     ; de
+	add_tm MIMIC        ; df
+	add_tm DOUBLE_TEAM  ; e0
+	add_tm REFLECT      ; e1
+	add_tm BIDE         ; e2
+	add_tm METRONOME    ; e3
+	add_tm SELFDESTRUCT ; e4
+	add_tm EGG_BOMB     ; e5
+	add_tm FIRE_BLAST   ; e6
+	add_tm SWIFT        ; e7
+	add_tm SKULL_BASH   ; e8
+	add_tm SOFTBOILED   ; e9
+	add_tm DREAM_EATER  ; ea
+	add_tm SKY_ATTACK   ; eb
+	add_tm REST         ; ec
+	add_tm THUNDER_WAVE ; ed
+	add_tm PSYWAVE      ; ee
+	add_tm EXPLOSION    ; ef
+	add_tm ROCK_SLIDE   ; f0
+	add_tm TRI_ATTACK   ; f1
+	add_tm SUBSTITUTE   ; f2
+ENDC
 NUM_TMS EQU __tmhm_value__ - 1
 
 add_hm: MACRO
@@ -303,3 +358,40 @@ ITEM_FROM_MEM  EQU $ff
 SAFARI_BALL    EQU $08 ; MOON_STONE
 MOON_STONE_RED EQU $0a ; BURN_HEAL
 FULL_HEAL_RED  EQU $34 ; X_SPEED
+
+; TODO: replace uses of these Gold TMs in Johto data/scripts with appropriate Blue TMs
+IF DEF(_BLUE)
+TM_ATTRACT EQU BRICK_PIECE
+TM_DEFENSE_CURL EQU BRICK_PIECE
+TM_DETECT EQU BRICK_PIECE
+TM_DRAGONBREATH EQU BRICK_PIECE
+TM_DYNAMICPUNCH EQU BRICK_PIECE
+TM_ENDURE EQU BRICK_PIECE
+TM_FIRE_PUNCH EQU BRICK_PIECE
+TM_FRUSTRATION EQU BRICK_PIECE
+TM_FURY_CUTTER EQU BRICK_PIECE
+TM_HEADBUTT EQU BRICK_PIECE
+TM_HIDDEN_POWER EQU BRICK_PIECE
+TM_ICE_PUNCH EQU BRICK_PIECE
+TM_ICY_WIND EQU BRICK_PIECE
+TM_IRON_TAIL EQU BRICK_PIECE
+TM_MUD_SLAP EQU BRICK_PIECE
+TM_NIGHTMARE EQU BRICK_PIECE
+TM_PROTECT EQU BRICK_PIECE
+TM_RAIN_DANCE EQU BRICK_PIECE
+TM_RETURN EQU BRICK_PIECE
+TM_ROAR EQU BRICK_PIECE
+TM_ROCK_SMASH EQU BRICK_PIECE
+TM_ROLLOUT EQU BRICK_PIECE
+TM_SANDSTORM EQU BRICK_PIECE
+TM_SHADOW_BALL EQU BRICK_PIECE
+TM_SLEEP_TALK EQU BRICK_PIECE
+TM_SLUDGE_BOMB EQU BRICK_PIECE
+TM_SNORE EQU BRICK_PIECE
+TM_STEEL_WING EQU BRICK_PIECE
+TM_SUNNY_DAY EQU BRICK_PIECE
+TM_SWAGGER EQU BRICK_PIECE
+TM_SWEET_SCENT EQU BRICK_PIECE
+TM_THIEF EQU BRICK_PIECE
+TM_THUNDERPUNCH EQU BRICK_PIECE
+ENDC

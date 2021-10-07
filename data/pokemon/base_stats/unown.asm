@@ -17,5 +17,9 @@
 	dn EGG_NONE, EGG_NONE ; egg groups
 
 	; tm/hm learnset
+IF DEF(_GOLD)
 	tmhm
+ELIF DEF(_BLUE)
+	tmhm ; TODO
+ENDC
 	; end

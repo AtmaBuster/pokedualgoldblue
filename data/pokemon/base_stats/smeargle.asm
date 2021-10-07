@@ -21,5 +21,9 @@ ENDC
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
+IF DEF(_GOLD)
 	tmhm
+ELIF DEF(_BLUE)
+	tmhm ; TODO
+ENDC
 	; end
