@@ -1,10 +1,10 @@
 	db "SHELLFISH@" ; species name
 	dw 403, 890 ; height, weight
 
-	db   "With sharp claws,"
-	next "this ferocious,"
-	next "ancient #MON"
+	db   "Its sleek shape is"
+	next "perfect for swim-"
+	next "ming. It slashes"
 
-	page "rips apart prey"
-	next "and sucks their"
-	next "body fluids.@"
+	page "prey with its"
+	next "claws and drains"
+	next "the body fluids.@"

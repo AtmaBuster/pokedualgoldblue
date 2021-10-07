@@ -1,10 +1,10 @@
 	db "DRAGON@" ; species name
 	dw 703, 4630 ; height, weight
 
-	db   "This marine #-"
-	next "MON has an impres-"
-	next "sive build that"
+	db   "An extremely"
+	next "rarely seen"
+	next "marine #MON."
 
-	page "lets it freely fly"
-	next "over raging seas"
-	next "without trouble.@"
+	page "Its intelligence"
+	next "is said to match"
+	next "that of humans.@"

@@ -1,10 +1,10 @@
 	db "DOPEY@" ; species name
 	dw 311, 790 ; height, weight
 
-	db   "A sweet sap leaks"
-	next "from its tail's"
-	next "tip. Although not"
+	db   "Incredibly slow"
+	next "and dopey. It"
+	next "takes 5 seconds"
 
-	page "nutritious, the"
-	next "tail is pleasant"
-	next "to chew on.@"
+	page "for it to feel"
+	next "pain when under"
+	next "attack.@"

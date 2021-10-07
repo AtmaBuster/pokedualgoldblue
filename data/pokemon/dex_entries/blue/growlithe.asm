@@ -1,10 +1,10 @@
 	db "PUPPY@" ; species name
 	dw 204, 420 ; height, weight
 
-	db   "Extremely loyal,"
-	next "it will fearlessly"
-	next "bark at any oppo-"
+	db   "Very protective"
+	next "of its territory."
+	next "It will bark and"
 
-	page "nent to protect"
-	next "its own trainer"
-	next "from harm.@"
+	page "bite to repel"
+	next "intruders from"
+	next "its space.@"

@@ -1,10 +1,10 @@
 	db "TINY BIRD@" ; species name
 	dw 100, 40 ; height, weight
 
-	db   "Common in grassy"
-	next "areas and forests,"
-	next "it is very docile"
+	db   "A common sight in"
+	next "forests and woods."
+	next "It flaps its"
 
-	page "and will chase off"
-	next "enemies by flap-"
-	next "ping up sand.@"
+	page "wings at ground"
+	next "level to kick up"
+	next "blinding sand.@"

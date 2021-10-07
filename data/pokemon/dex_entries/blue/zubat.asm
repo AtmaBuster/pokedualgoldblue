@@ -1,10 +1,10 @@
 	db "BAT@" ; species name
 	dw 207, 170 ; height, weight
 
-	db   "Capable of flying"
-	next "safely in dark"
-	next "places, it emits"
+	db   "Forms colonies in"
+	next "perpetually dark"
+	next "places. Uses"
 
-	page "ultrasonic cries"
-	next "to check for any"
-	next "obstacles.@"
+	page "ultrasonic waves"
+	next "to identify and"
+	next "approach targets.@"

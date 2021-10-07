@@ -1,10 +1,10 @@
 	db "KICKING@" ; species name
 	dw 411, 1100 ; height, weight
 
-	db   "If it starts kick-"
-	next "ing repeatedly,"
-	next "both legs will"
+	db   "When in a hurry,"
+	next "its legs lengthen"
+	next "progressively."
 
-	page "stretch even long-"
-	next "er to strike a"
-	next "fleeing foe.@"
+	page "It runs smoothly"
+	next "with extra long,"
+	next "loping strides.@"

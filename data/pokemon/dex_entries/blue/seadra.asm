@@ -1,10 +1,10 @@
 	db "DRAGON@" ; species name
 	dw 311, 550 ; height, weight
 
-	db   "Its fin-tips leak"
-	next "poison. Its fins"
-	next "and bones are"
+	db   "Capable of swim-"
+	next "ming backwards by"
+	next "rapidly flapping"
 
-	page "highly valued as"
-	next "ingredients in"
-	next "herbal medicine.@"
+	page "its wing-like"
+	next "pectoral fins and"
+	next "stout tail.@"

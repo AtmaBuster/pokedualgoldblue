@@ -1,10 +1,10 @@
 	db "BUTTERFLY@" ; species name
 	dw 307, 710 ; height, weight
 
-	db   "Water-repellent"
-	next "powder on its"
-	next "wings enables it"
+	db   "In battle, it"
+	next "flaps its wings"
+	next "at high speed to"
 
-	page "to collect honey,"
-	next "even in the heav-"
-	next "iest of rains.@"
+	page "release highly"
+	next "toxic dust into"
+	next "the air.@"

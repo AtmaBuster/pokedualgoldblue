@@ -1,10 +1,10 @@
 	db "POISONMOTH@" ; species name
 	dw 411, 280 ; height, weight
 
-	db   "The powder on its"
-	next "wings is poisonous"
-	next "if it is dark in"
+	db   "The dust-like"
+	next "scales covering"
+	next "its wings are"
 
-	page "color. If it is"
-	next "light, it causes"
-	next "paralysis.@"
+	page "color coded to"
+	next "indicate the kinds"
+	next "of poison it has.@"

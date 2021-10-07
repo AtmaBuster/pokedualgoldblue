@@ -1,10 +1,10 @@
 	db "GAS@" ; species name
 	dw 503, 2 ; height, weight
 
-	db   "Its tongue is made"
-	next "of gas. If licked,"
-	next "its victim starts"
+	db   "Because of its"
+	next "ability to slip"
+	next "through block"
 
-	page "shaking constantly"
-	next "until death even-"
-	next "tually comes.@"
+	page "walls, it is said"
+	next "to be from an-"
+	next "other dimension.@"

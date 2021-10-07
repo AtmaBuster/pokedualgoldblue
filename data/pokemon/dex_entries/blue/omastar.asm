@@ -1,10 +1,10 @@
 	db "SPIRAL@" ; species name
 	dw 303, 770 ; height, weight
 
-	db   "Once wrapped"
-	next "around its prey,"
-	next "it never lets go."
+	db   "A prehistoric"
+	next "#MON that died"
+	next "out when its"
 
-	page "It eats the prey"
-	next "by tearing at it"
-	next "with sharp fangs.@"
+	page "heavy shell made"
+	next "it impossible to"
+	next "catch prey.@"

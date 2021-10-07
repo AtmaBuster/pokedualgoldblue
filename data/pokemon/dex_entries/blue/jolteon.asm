@@ -1,10 +1,10 @@
 	db "LIGHTNING@" ; species name
 	dw 207, 540 ; height, weight
 
-	db   "Every hair on its"
-	next "body starts to"
-	next "stand sharply on"
+	db   "It accumulates"
+	next "negative ions in"
+	next "the atmosphere to"
 
-	page "end if it becomes"
-	next "charged with"
-	next "electricity.@"
+	page "blast out 10000-"
+	next "volt lightning"
+	next "bolts.@"

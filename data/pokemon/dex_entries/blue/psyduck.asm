@@ -1,10 +1,10 @@
 	db "DUCK@" ; species name
 	dw 207, 430 ; height, weight
 
-	db   "If its chronic"
-	next "headache peaks, it"
-	next "may exhibit odd"
+	db   "While lulling its"
+	next "enemies with its"
+	next "vacant look, this"
 
-	page "powers. It seems"
-	next "unable to recall"
-	next "such an episode.@"
+	page "wily #MON will"
+	next "use psychokinetic"
+	next "powers.@"

@@ -1,10 +1,10 @@
 	db "MOLE@" ; species name
 	dw 204, 730 ; height, weight
 
-	db   "Extremely power-"
-	next "ful, they can DIG"
-	next "through even the"
+	db   "A team of DIGLETT"
+	next "triplets."
+	next "It triggers huge"
 
-	page "hardest ground to"
-	next "a depth of over 60"
-	next "miles.@"
+	page "earthquakes by"
+	next "burrowing 60 miles"
+	next "underground.@"

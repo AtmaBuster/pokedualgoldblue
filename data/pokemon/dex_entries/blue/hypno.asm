@@ -1,10 +1,10 @@
 	db "HYPNOSIS@" ; species name
 	dw 503, 1670 ; height, weight
 
-	db   "Always holding a"
-	next "pendulum that it"
-	next "rocks at a steady"
+	db   "When it locks eyes"
+	next "with an enemy, it"
+	next "will use a mix of"
 
-	page "rhythm, it causes"
-	next "drowsiness in any-"
-	next "one nearby.@"
+	page "PSI moves such as"
+	next "HYPNOSIS and"
+	next "CONFUSION.@"

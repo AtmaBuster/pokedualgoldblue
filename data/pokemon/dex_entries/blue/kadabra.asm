@@ -1,10 +1,10 @@
 	db "PSI@" ; species name
 	dw 403, 1250 ; height, weight
 
-	db   "If it uses its"
-	next "abilities, it"
-	next "emits special"
+	db   "It emits special"
+	next "alpha waves from"
+	next "its body that"
 
-	page "alpha waves that"
-	next "cause machines to"
-	next "malfunction.@"
+	page "induce headaches"
+	next "just by being"
+	next "close by.@"

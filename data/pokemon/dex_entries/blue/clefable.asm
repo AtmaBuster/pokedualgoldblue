@@ -1,10 +1,10 @@
 	db "FAIRY@" ; species name
 	dw 403, 880 ; height, weight
 
-	db   "Its very sensitive"
-	next "ears lets it dis-"
-	next "tinguish distant"
+	db   "A timid fairy"
+	next "#MON that is"
+	next "rarely seen. It"
 
-	page "sounds. As a re-"
-	next "sult, it prefers"
-	next "quiet places.@"
+	page "will run and hide"
+	next "the moment it"
+	next "senses people.@"

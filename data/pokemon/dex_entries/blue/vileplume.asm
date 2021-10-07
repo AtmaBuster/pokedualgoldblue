@@ -1,10 +1,10 @@
 	db "FLOWER@" ; species name
 	dw 311, 410 ; height, weight
 
-	db   "The bud bursts"
-	next "into bloom with a"
-	next "bang. It then"
+	db   "The larger its"
+	next "petals, the more"
+	next "toxic pollen it"
 
-	page "starts scattering"
-	next "allergenic, poi-"
-	next "sonous pollen.@"
+	page "contains. Its big"
+	next "head is heavy and"
+	next "hard to hold up.@"

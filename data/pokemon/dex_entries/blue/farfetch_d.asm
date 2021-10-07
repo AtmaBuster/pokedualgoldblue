@@ -1,10 +1,10 @@
 	db "WILD DUCK@" ; species name
 	dw 207, 330 ; height, weight
 
-	db   "If it eats the"
-	next "plant stick it"
-	next "carries as emer-"
+	db   "The sprig of"
+	next "green onions it"
+	next "holds is its"
 
-	page "gency rations, it"
-	next "runs off in search"
-	next "of a new stick.@"
+	page "weapon. It is"
+	next "used much like a"
+	next "metal sword.@"

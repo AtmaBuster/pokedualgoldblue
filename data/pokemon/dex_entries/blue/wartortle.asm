@@ -1,10 +1,10 @@
 	db "TURTLE@" ; species name
 	dw 303, 500 ; height, weight
 
-	db   "It cleverly con-"
-	next "trols its furry"
-	next "ears and tail to"
+	db   "Often hides in"
+	next "water to stalk"
+	next "unwary prey. For"
 
-	page "maintain its"
-	next "balance while"
-	next "swimming.@"
+	page "swimming fast, it"
+	next "moves its ears to"
+	next "maintain balance.@"

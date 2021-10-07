@@ -1,10 +1,10 @@
 	db "HYPNOSIS@" ; species name
 	dw 303, 710 ; height, weight
 
-	db   "It remembers every"
-	next "dream it eats. It"
-	next "rarely eats the"
+	db   "Puts enemies to"
+	next "sleep then eats"
+	next "their dreams."
 
-	page "dreams of adults"
-	next "because children's"
-	next "are much tastier.@"
+	page "Occasionally gets"
+	next "sick from eating"
+	next "bad dreams.@"

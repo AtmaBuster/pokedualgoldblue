@@ -1,10 +1,10 @@
 	db "PUNCHING@" ; species name
 	dw 407, 1110 ; height, weight
 
-	db   "Its punches slice"
-	next "the air. They are"
-	next "launched at such"
+	db   "While apparently"
+	next "doing nothing, it"
+	next "fires punches in"
 
-	page "high speed, even a"
-	next "slight graze could"
-	next "cause a burn.@"
+	page "lightning fast"
+	next "volleys that are"
+	next "impossible to see.@"

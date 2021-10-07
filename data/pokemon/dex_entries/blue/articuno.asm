@@ -1,10 +1,10 @@
 	db "FREEZE@" ; species name
 	dw 507, 1220 ; height, weight
 
-	db   "One of the legen-"
-	next "dary bird #MON,"
-	next "it chills moisture"
+	db   "A legendary bird"
+	next "#MON that is"
+	next "said to appear to"
 
-	page "in the atmosphere"
-	next "to create snow"
-	next "while flying.@"
+	page "doomed people who"
+	next "are lost in icy"
+	next "mountains.@"

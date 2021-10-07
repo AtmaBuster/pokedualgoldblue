@@ -1,10 +1,10 @@
 	db "SEED@" ; species name
 	dw 303, 290 ; height, weight
 
-	db   "If the bud on its"
-	next "back starts to"
-	next "smell sweet, it"
+	db   "When the bulb on"
+	next "its back grows"
+	next "large, it appears"
 
-	page "is evidence that"
-	next "the large flower"
-	next "will soon bloom.@"
+	page "to lose the"
+	next "ability to stand"
+	next "on its hind legs.@"

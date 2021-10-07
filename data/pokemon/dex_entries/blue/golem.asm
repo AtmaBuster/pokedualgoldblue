@@ -1,10 +1,10 @@
 	db "MEGATON@" ; species name
 	dw 407, 6620 ; height, weight
 
-	db   "It is capable of"
-	next "blowing itself up."
-	next "It uses this"
+	db   "Its boulder-like"
+	next "body is extremely"
+	next "hard. It can"
 
-	page "explosive force to"
-	next "jump from mountain"
-	next "to mountain.@"
+	page "easily withstand"
+	next "dynamite blasts"
+	next "without damage.@"

@@ -1,10 +1,10 @@
 	db "PSI@" ; species name
 	dw 411, 1060 ; height, weight
 
-	db   "Its brain cells"
-	next "multiply continu-"
-	next "ally until it"
+	db   "Its brain can out-"
+	next "perform a super-"
+	next "computer."
 
-	page "dies. As a result,"
-	next "it remembers"
-	next "everything.@"
+	page "Its intelligence"
+	next "quotient is said"
+	next "to be 5,000.@"

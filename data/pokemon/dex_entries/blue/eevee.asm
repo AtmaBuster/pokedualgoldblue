@@ -1,10 +1,10 @@
 	db "EVOLUTION@" ; species name
 	dw 100, 140 ; height, weight
 
-	db   "Its irregularly"
-	next "configured DNA is"
-	next "affected by its"
+	db   "Its genetic code"
+	next "is irregular."
+	next "It may mutate if"
 
-	page "surroundings. It"
-	next "evolves if its en-"
-	next "vironment changes.@"
+	page "it is exposed to"
+	next "radiation from"
+	next "element STONEs.@"

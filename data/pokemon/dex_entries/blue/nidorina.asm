@@ -1,10 +1,10 @@
 	db "POISON PIN@" ; species name
 	dw 207, 440 ; height, weight
 
-	db   "It has a calm and"
-	next "caring nature."
-	next "Because its horn"
+	db   "The female's horn"
+	next "develops slowly."
+	next "Prefers physical"
 
-	page "grows slowly, it"
-	next "prefers not to"
-	next "fight.@"
+	page "attacks such as"
+	next "clawing and"
+	next "biting.@"

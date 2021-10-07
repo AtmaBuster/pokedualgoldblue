@@ -1,10 +1,10 @@
 	db "SHADOW@" ; species name
 	dw 411, 890 ; height, weight
 
-	db   "To steal the life"
-	next "of its target, it"
-	next "slips into the"
+	db   "Under a full moon,"
+	next "this #MON"
+	next "likes to mimic"
 
-	page "prey's shadow and"
-	next "silently waits for"
-	next "an opportunity.@"
+	page "the shadows of"
+	next "people and laugh"
+	next "at their fright.@"

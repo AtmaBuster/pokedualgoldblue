@@ -1,10 +1,10 @@
 	db "COCOON@" ; species name
 	dw 204, 220 ; height, weight
 
-	db   "It prepares for"
-	next "evolution by har-"
-	next "dening its shell"
+	db   "This #MON is"
+	next "vulnerable to"
+	next "attack while its"
 
-	page "as much as possi-"
-	next "ble to protect its"
-	next "soft body.@"
+	page "shell is soft,"
+	next "exposing its weak"
+	next "and tender body.@"

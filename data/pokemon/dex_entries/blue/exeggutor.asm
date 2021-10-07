@@ -1,10 +1,10 @@
 	db "COCONUT@" ; species name
 	dw 607, 2650 ; height, weight
 
-	db   "If a head drops"
-	next "off, it emits a"
-	next "telepathic call in"
+	db   "Legend has it that"
+	next "on rare occasions,"
+	next "one of its heads"
 
-	page "search of others"
-	next "to form an"
-	next "EXEGGCUTE cluster.@"
+	page "will drop off and"
+	next "continue on as an"
+	next "EXEGGCUTE.@"

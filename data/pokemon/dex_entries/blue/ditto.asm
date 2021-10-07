@@ -1,10 +1,10 @@
 	db "TRANSFORM@" ; species name
 	dw 100, 90 ; height, weight
 
-	db   "Its transformation"
-	next "ability is per-"
-	next "fect. However, if"
+	db   "Capable of copying"
+	next "an enemy's genetic"
+	next "code to instantly"
 
-	page "made to laugh, it"
-	next "can't maintain its"
-	next "disguise.@"
+	page "transform itself"
+	next "into a duplicate"
+	next "of the enemy.@"

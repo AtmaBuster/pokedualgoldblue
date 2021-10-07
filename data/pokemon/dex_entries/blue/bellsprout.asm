@@ -1,10 +1,10 @@
 	db "FLOWER@" ; species name
 	dw 204, 90 ; height, weight
 
-	db   "It plants its feet"
-	next "deep underground"
-	next "to replenish wa-"
+	db   "A carnivorous"
+	next "#MON that traps"
+	next "and eats bugs."
 
-	page "ter. It can't es-"
-	next "cape its enemy"
-	next "while it's rooted.@"
+	page "It uses its root"
+	next "feet to soak up"
+	next "needed moisture.@"

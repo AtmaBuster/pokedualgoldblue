@@ -1,10 +1,10 @@
 	db "WORM@" ; species name
 	dw 100, 60 ; height, weight
 
-	db   "Its feet have"
-	next "suction cups"
-	next "designed to stick"
+	db   "Its short feet"
+	next "are tipped with"
+	next "suction pads that"
 
-	page "to any surface. It"
-	next "tenaciously climbs"
-	next "trees to forage.@"
+	page "enable it to"
+	next "tirelessly climb"
+	next "slopes and walls.@"

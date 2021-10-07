@@ -1,10 +1,10 @@
 	db "BALL@" ; species name
 	dw 108, 230 ; height, weight
 
-	db   "It was discovered"
-	next "when # BALLS"
-	next "were introduced."
+	db   "Usually found in"
+	next "power plants."
+	next "Easily mistaken"
 
-	page "It is said that"
-	next "there is some"
-	next "connection.@"
+	page "for a # BALL,"
+	next "they have zapped"
+	next "many people.@"

@@ -1,10 +1,10 @@
 	db "FOSSIL@" ; species name
 	dw 511, 1300 ; height, weight
 
-	db   "This vicious #-"
-	next "MON is said to"
-	next "have flown in an-"
+	db   "A ferocious, pre-"
+	next "historic #MON"
+	next "that goes for the"
 
-	page "cient skies while"
-	next "shrieking high-"
-	next "pitched cries.@"
+	page "enemy's throat"
+	next "with its serrated"
+	next "saw-like fangs.@"

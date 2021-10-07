@@ -1,10 +1,10 @@
 	db "ROCK@" ; species name
 	dw 104, 440 ; height, weight
 
-	db   "It uses its arms"
-	next "to steadily climb"
-	next "steep mountain"
+	db   "Found in fields"
+	next "and mountains."
+	next "Mistaking them"
 
-	page "paths. It swings"
-	next "its fists around"
-	next "if angered.@"
+	page "for boulders,"
+	next "people often step"
+	next "or trip on them.@"

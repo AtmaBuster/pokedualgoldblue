@@ -1,10 +1,10 @@
 	db "MOUSE@" ; species name
 	dw 207, 660 ; height, weight
 
-	db   "If the electric"
-	next "pouches in its"
-	next "cheeks become"
+	db   "Its long tail"
+	next "serves as a"
+	next "ground to protect"
 
-	page "fully charged,"
-	next "both ears will"
-	next "stand straight up.@"
+	page "itself from its"
+	next "own high voltage"
+	next "power.@"

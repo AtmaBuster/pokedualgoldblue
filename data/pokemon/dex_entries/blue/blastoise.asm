@@ -1,10 +1,10 @@
 	db "SHELLFISH@" ; species name
 	dw 503, 1890 ; height, weight
 
-	db   "The rocket cannons"
-	next "on its shell fire"
-	next "jets of water"
+	db   "A brutal #MON"
+	next "with pressurized"
+	next "water jets on its"
 
-	page "capable of punch-"
-	next "ing holes through"
-	next "thick steel.@"
+	page "shell. They are"
+	next "used for high"
+	next "speed tackles.@"

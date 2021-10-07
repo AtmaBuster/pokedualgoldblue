@@ -1,10 +1,10 @@
 	db "VINE@" ; species name
 	dw 303, 770 ; height, weight
 
-	db   "It tangles any"
-	next "moving thing with"
-	next "its vines. Their"
+	db   "The whole body is"
+	next "swathed with wide"
+	next "vines that are"
 
-	page "subtle shaking"
-	next "is ticklish if you"
-	next "get ensnared.@"
+	page "similar to sea-"
+	next "weed. Its vines"
+	next "shake as it walks.@"

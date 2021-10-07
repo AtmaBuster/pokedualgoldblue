@@ -1,10 +1,10 @@
 	db "SUPERPOWER@" ; species name
 	dw 411, 1550 ; height, weight
 
-	db   "The muscles cover-"
-	next "ing its body teem"
-	next "with power. Even"
+	db   "Its muscular body"
+	next "is so powerful, it"
+	next "must wear a power"
 
-	page "when still, it"
-	next "exudes an amazing"
-	next "sense of strength.@"
+	page "save belt to be"
+	next "able to regulate"
+	next "its motions.@"

@@ -1,10 +1,10 @@
 	db "BALL@" ; species name
 	dw 311, 1470 ; height, weight
 
-	db   "It stores an over-"
-	next "flowing amount of"
-	next "electric energy"
+	db   "It stores electric"
+	next "energy under very"
+	next "high pressure."
 
-	page "inside its body."
-	next "Even a small shock"
-	next "makes it explode.@"
+	page "It often explodes"
+	next "with little or no"
+	next "provocation.@"

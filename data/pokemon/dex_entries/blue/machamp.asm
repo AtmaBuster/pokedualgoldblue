@@ -1,10 +1,10 @@
 	db "SUPERPOWER@" ; species name
 	dw 503, 2870 ; height, weight
 
-	db   "It uses its four"
-	next "powerful arms to"
-	next "pin the limbs of"
+	db   "Using its heavy"
+	next "muscles, it throws"
+	next "powerful punches"
 
-	page "its foe, then"
-	next "throws the victim"
-	next "over the horizon.@"
+	page "that can send the"
+	next "victim clear over"
+	next "the horizon.@"

@@ -1,10 +1,10 @@
 	db "POISON GAS@" ; species name
 	dw 200, 20 ; height, weight
 
-	db   "The poisonous"
-	next "gases it contains"
-	next "are a little bit"
+	db   "Because it stores"
+	next "several kinds of"
+	next "toxic gases in"
 
-	page "lighter than air,"
-	next "keeping it slight-"
-	next "ly airborne.@"
+	page "its body, it is"
+	next "prone to exploding"
+	next "without warning.@"

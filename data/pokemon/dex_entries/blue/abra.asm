@@ -1,10 +1,10 @@
 	db "PSI@" ; species name
 	dw 211, 430 ; height, weight
 
-	db   "If it decides to"
-	next "TELEPORT randomly,"
-	next "it creates the"
+	db   "Using its ability"
+	next "to read minds, it"
+	next "will identify"
 
-	page "illusion that it"
-	next "has created copies"
-	next "of itself.@"
+	page "impending danger"
+	next "and TELEPORT to"
+	next "safety.@"

@@ -1,10 +1,10 @@
 	db "POISON GAS@" ; species name
 	dw 311, 210 ; height, weight
 
-	db   "Top-grade perfume"
-	next "is made using its"
-	next "internal poison"
+	db   "Where two kinds"
+	next "of poison gases"
+	next "meet, 2 KOFFINGs"
 
-	page "gases by diluting"
-	next "them to the high-"
-	next "est level.@"
+	page "can fuse into a"
+	next "WEEZING over many"
+	next "years.@"

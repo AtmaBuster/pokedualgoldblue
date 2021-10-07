@@ -1,10 +1,10 @@
 	db "FLAME@" ; species name
 	dw 507, 2000 ; height, weight
 
-	db   "Breathing intense,"
-	next "hot flames, it can"
-	next "melt almost any-"
+	db   "Spits fire that"
+	next "is hot enough to"
+	next "melt boulders."
 
-	page "thing. Its breath"
-	next "inflicts terrible"
-	next "pain on enemies.@"
+	page "Known to cause"
+	next "forest fires"
+	next "unintentionally.@"

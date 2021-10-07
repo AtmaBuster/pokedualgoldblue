@@ -1,10 +1,10 @@
 	db "DRILL@" ; species name
 	dw 403, 1320 ; height, weight
 
-	db   "It uses its scaly,"
-	next "rugged body to"
-	next "seal the entrance"
+	db   "Its hard scales"
+	next "provide strong"
+	next "protection. It"
 
-	page "of its nest and"
-	next "protect its young"
-	next "from predators.@"
+	page "uses its hefty"
+	next "bulk to execute"
+	next "powerful moves.@"

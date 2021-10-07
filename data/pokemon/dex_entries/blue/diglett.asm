@@ -1,10 +1,10 @@
 	db "MOLE@" ; species name
 	dw 8, 20 ; height, weight
 
-	db   "If a DIGLETT DIGS"
-	next "through a field,"
-	next "it leaves the soil"
+	db   "Lives about one"
+	next "yard underground"
+	next "where it feeds on"
 
-	page "perfectly tilled"
-	next "and ideal for"
-	next "planting crops.@"
+	page "plant roots. It"
+	next "sometimes appears"
+	next "above ground.@"

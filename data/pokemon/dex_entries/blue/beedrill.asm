@@ -1,10 +1,10 @@
 	db "POISON BEE@" ; species name
 	dw 303, 650 ; height, weight
 
-	db   "It has three"
-	next "poison barbs."
-	next "The barb on its"
+	db   "Flies at high"
+	next "speed and attacks"
+	next "using its large"
 
-	page "tail secretes the"
-	next "most powerful"
-	next "poison.@"
+	page "venomous stingers"
+	next "on its forelegs"
+	next "and tail.@"

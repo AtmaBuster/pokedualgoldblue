@@ -1,10 +1,10 @@
 	db "DRAGON@" ; species name
 	dw 1301, 360 ; height, weight
 
-	db   "Its crystalline"
-	next "orbs appear to"
-	next "give this #MON"
+	db   "A mystical #MON"
+	next "that exudes a"
+	next "gentle aura."
 
-	page "the power to"
-	next "freely control the"
-	next "weather.@"
+	page "Has the ability"
+	next "to change climate"
+	next "conditions.@"

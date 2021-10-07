@@ -1,10 +1,10 @@
 	db "JELLYFISH@" ; species name
 	dw 211, 1000 ; height, weight
 
-	db   "It drifts aimless-"
-	next "ly in waves. Very"
-	next "difficult to see"
+	db   "Drifts in shallow"
+	next "seas. Anglers who"
+	next "hook them by"
 
-	page "in water, it may"
-	next "not be noticed"
-	next "until it stings.@"
+	page "accident are"
+	next "often punished by"
+	next "its stinging acid.@"

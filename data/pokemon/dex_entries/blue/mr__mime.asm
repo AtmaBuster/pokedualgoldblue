@@ -1,10 +1,10 @@
 	db "BARRIER@" ; species name
 	dw 403, 1200 ; height, weight
 
-	db   "Its fingertips"
-	next "emit a peculiar"
-	next "force field that"
+	db   "If interrupted"
+	next "while it is"
+	next "miming, it will"
 
-	page "hardens air to"
-	next "create an actual"
-	next "wall.@"
+	page "slap around the"
+	next "offender with its"
+	next "broad hands.@"

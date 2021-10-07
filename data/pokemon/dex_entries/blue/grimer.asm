@@ -1,10 +1,10 @@
 	db "SLUDGE@" ; species name
 	dw 211, 660 ; height, weight
 
-	db   "Wherever GRIMER"
-	next "has passed, so"
-	next "many germs are"
+	db   "Appears in filthy"
+	next "areas. Thrives by"
+	next "sucking up"
 
-	page "left behind that"
-	next "no plants will"
-	next "ever grow again.@"
+	page "polluted sludge"
+	next "that is pumped"
+	next "out of factories.@"

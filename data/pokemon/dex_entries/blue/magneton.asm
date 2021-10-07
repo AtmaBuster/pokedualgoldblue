@@ -1,10 +1,10 @@
 	db "MAGNET@" ; species name
 	dw 303, 1320 ; height, weight
 
-	db   "The MAGNEMITE are"
-	next "united by a mag-"
-	next "netism so power-"
+	db   "Formed by several"
+	next "MAGNEMITEs linked"
+	next "together. They"
 
-	page "ful, it dries all"
-	next "moisture in its"
-	next "vicinities.@"
+	page "frequently appear"
+	next "when sunspots"
+	next "flare up.@"

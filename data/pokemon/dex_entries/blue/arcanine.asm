@@ -1,10 +1,10 @@
 	db "LEGENDARY@" ; species name
 	dw 603, 3420 ; height, weight
 
-	db   "Its magnificent"
-	next "bark conveys a"
-	next "sense of majesty."
+	db   "A #MON that"
+	next "has been admired"
+	next "since the past"
 
-	page "Anyone hearing it"
-	next "can't help but"
-	next "grovel before it.@"
+	page "for its beauty."
+	next "It runs agilely"
+	next "as if on wings.@"

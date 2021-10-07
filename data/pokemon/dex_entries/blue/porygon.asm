@@ -1,10 +1,10 @@
 	db "VIRTUAL@" ; species name
 	dw 207, 800 ; height, weight
 
-	db   "A manmade #MON"
-	next "that came about as"
-	next "a result of re-"
+	db   "A #MON that"
+	next "consists entirely"
+	next "of programming"
 
-	page "search. It is pro-"
-	next "grammed with only"
-	next "basic motions.@"
+	page "code. Capable of"
+	next "moving freely in"
+	next "cyberspace.@"

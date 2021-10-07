@@ -1,10 +1,10 @@
 	db "STAGBEETLE@" ; species name
 	dw 411, 1210 ; height, weight
 
-	db   "Swings its long"
-	next "antlers wildly to"
-	next "attack. During"
+	db   "If it fails to"
+	next "crush the victim"
+	next "in its pincers,"
 
-	page "cold periods, it"
-	next "hides deep in"
-	next "forests.@"
+	page "it will swing it"
+	next "around and toss"
+	next "it hard.@"

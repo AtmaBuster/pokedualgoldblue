@@ -1,10 +1,10 @@
 	db "EGG@" ; species name
 	dw 307, 760 ; height, weight
 
-	db   "Few in number and"
-	next "difficult to cap-"
-	next "ture, it is said"
+	db   "A rare and elusive"
+	next "#MON that is"
+	next "said to bring"
 
-	page "to bring happiness"
-	next "to the trainer who"
-	next "catches it.@"
+	page "happiness to those"
+	next "who manage to get"
+	next "it.@"

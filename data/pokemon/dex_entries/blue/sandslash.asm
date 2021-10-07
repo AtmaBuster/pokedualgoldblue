@@ -1,10 +1,10 @@
 	db "MOUSE@" ; species name
 	dw 303, 650 ; height, weight
 
-	db   "If it digs at an"
-	next "incredible pace,"
-	next "it may snap off"
+	db   "Curls up into a"
+	next "spiny ball when"
+	next "threatened. It"
 
-	page "its spikes and"
-	next "claws. They grow"
-	next "back in a day.@"
+	page "can roll while"
+	next "curled up to"
+	next "attack or escape.@"

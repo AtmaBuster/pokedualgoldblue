@@ -1,10 +1,10 @@
 	db "DRAGON@" ; species name
 	dw 511, 70 ; height, weight
 
-	db   "This #MON is"
-	next "full of life ener-"
-	next "gy. It continually"
+	db   "Long considered a"
+	next "mythical #MON"
+	next "until recently"
 
-	page "sheds its skin and"
-	next "grows steadily"
-	next "larger.@"
+	page "when a small"
+	next "colony was found"
+	next "living underwater.@"

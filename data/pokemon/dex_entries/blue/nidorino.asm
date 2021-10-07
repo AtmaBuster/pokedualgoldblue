@@ -1,10 +1,10 @@
 	db "POISON PIN@" ; species name
 	dw 211, 430 ; height, weight
 
-	db   "Quick to anger, it"
-	next "stabs enemies with"
-	next "its horn to inject"
+	db   "An aggressive"
+	next "#MON that is"
+	next "quick to attack."
 
-	page "a powerful poison"
-	next "when it becomes"
-	next "agitated.@"
+	page "The horn on its"
+	next "head secretes a"
+	next "powerful venom.@"

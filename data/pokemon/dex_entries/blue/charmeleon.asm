@@ -1,10 +1,10 @@
 	db "FLAME@" ; species name
 	dw 307, 420 ; height, weight
 
-	db   "It has a barbaric"
-	next "nature. In battle,"
-	next "it whips its"
+	db   "When it swings"
+	next "its burning tail,"
+	next "it elevates the"
 
-	page "fiery tail around"
-	next "and slashes away"
-	next "with sharp claws.@"
+	page "temperature to"
+	next "unbearably high"
+	next "levels.@"

@@ -1,10 +1,10 @@
 	db "COCOON@" ; species name
 	dw 200, 220 ; height, weight
 
-	db   "From this form,"
-	next "it will grow into"
-	next "an adult. As its"
+	db   "Almost incapable"
+	next "of moving, this"
+	next "#MON can only"
 
-	page "body becomes soft-"
-	next "er, the external"
-	next "shell hardens.@"
+	page "harden its shell"
+	next "to protect itself"
+	next "from predators.@"

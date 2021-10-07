@@ -1,10 +1,10 @@
 	db "TADPOLE@" ; species name
 	dw 403, 1190 ; height, weight
 
-	db   "Although an ener-"
-	next "getic, skilled"
-	next "swimmer that uses"
+	db   "An adept swimmer"
+	next "at both the front"
+	next "crawl and breast"
 
-	page "all of its mus-"
-	next "cles, it lives on"
-	next "dry land.@"
+	page "stroke. Easily"
+	next "overtakes the best"
+	next "human swimmers.@"

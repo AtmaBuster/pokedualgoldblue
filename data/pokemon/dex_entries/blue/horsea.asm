@@ -1,10 +1,10 @@
 	db "DRAGON@" ; species name
 	dw 104, 180 ; height, weight
 
-	db   "Its big, developed"
-	next "fins move rapidly,"
-	next "allowing it to"
+	db   "Known to shoot"
+	next "down flying bugs"
+	next "with precision"
 
-	page "swim backward"
-	next "while still facing"
-	next "forward.@"
+	page "blasts of ink"
+	next "from the surface"
+	next "of the water.@"

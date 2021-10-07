@@ -1,10 +1,10 @@
 	db "PINCER@" ; species name
 	dw 403, 1320 ; height, weight
 
-	db   "Its pincers grow"
-	next "peculiarly large."
-	next "If it lifts the"
+	db   "The large pincer"
+	next "has 10000 hp of"
+	next "crushing power."
 
-	page "pincers too fast,"
-	next "it loses its bal-"
-	next "ance and staggers.@"
+	page "However, its huge"
+	next "size makes it"
+	next "unwieldy to use.@"

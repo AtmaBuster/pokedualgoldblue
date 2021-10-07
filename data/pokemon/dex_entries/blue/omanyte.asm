@@ -1,10 +1,10 @@
 	db "SPIRAL@" ; species name
 	dw 104, 170 ; height, weight
 
-	db   "This #MON from"
-	next "ancient times is"
-	next "said to have navi-"
+	db   "Although long"
+	next "extinct, in rare"
+	next "cases, it can be"
 
-	page "gated the sea by"
-	next "adeptly twisting"
-	next "its 10 tentacles.@"
+	page "genetically"
+	next "resurrected from"
+	next "fossils.@"

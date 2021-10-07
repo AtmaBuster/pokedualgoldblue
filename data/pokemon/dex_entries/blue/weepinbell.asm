@@ -1,10 +1,10 @@
 	db "FLYCATCHER@" ; species name
 	dw 303, 140 ; height, weight
 
-	db   "If its prey is"
-	next "bigger than its"
-	next "mouth, it slices"
+	db   "It spits out"
+	next "POISONPOWDER to"
+	next "immobilize the"
 
-	page "up the victim with"
-	next "sharp leaves, then"
-	next "eats every morsel.@"
+	page "enemy and then"
+	next "finishes it with"
+	next "a spray of ACID.@"

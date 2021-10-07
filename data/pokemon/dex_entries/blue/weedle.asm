@@ -1,10 +1,10 @@
 	db "HAIRY BUG@" ; species name
 	dw 100, 70 ; height, weight
 
-	db   "It attacks using a"
-	next "two-inch poison"
-	next "barb on its head."
+	db   "Often found in"
+	next "forests, eating"
+	next "leaves."
 
-	page "It can usually be"
-	next "found under the"
-	next "leaves it eats.@"
+	page "It has a sharp"
+	next "venomous stinger"
+	next "on its head.@"

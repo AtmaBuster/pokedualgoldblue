@@ -1,10 +1,10 @@
 	db "SPITFIRE@" ; species name
 	dw 403, 980 ; height, weight
 
-	db   "The fiery surface"
-	next "of its body gives"
-	next "off a wavering,"
+	db   "Its body always"
+	next "burns with an"
+	next "orange glow that"
 
-	page "rippling glare"
-	next "that is similar to"
-	next "the sun.@"
+	page "enables it to"
+	next "hide perfectly"
+	next "among flames.@"

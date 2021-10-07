@@ -1,10 +1,10 @@
 	db "MUSHROOM@" ; species name
 	dw 303, 650 ; height, weight
 
-	db   "The larger the"
-	next "mushroom on its"
-	next "back grows, the"
+	db   "A host-parasite"
+	next "pair in which the"
+	next "parasite mushroom"
 
-	page "stronger the mush-"
-	next "room spores it"
-	next "scatters.@"
+	page "has taken over the"
+	next "host bug. Prefers"
+	next "damp places.@"

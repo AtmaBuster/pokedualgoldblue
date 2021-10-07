@@ -1,10 +1,10 @@
 	db "SEA LION@" ; species name
 	dw 507, 2650 ; height, weight
 
-	db   "It loves frigid"
-	next "seas with ice"
-	next "floes. It uses its"
+	db   "Stores thermal"
+	next "energy in its"
+	next "body. Swims at a"
 
-	page "long tail to"
-	next "change swimming"
-	next "direction quickly.@"
+	page "steady 8 knots"
+	next "even in intensely"
+	next "cold waters.@"

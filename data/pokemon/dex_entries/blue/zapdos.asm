@@ -1,10 +1,10 @@
 	db "ELECTRIC@" ; species name
 	dw 503, 1160 ; height, weight
 
-	db   "This legendary"
-	next "bird #MON is"
+	db   "A legendary bird"
+	next "#MON that is"
 	next "said to appear"
 
-	page "only when a thun-"
-	next "dercloud parts"
-	next "into two halves.@"
+	page "from clouds while"
+	next "dropping enormous"
+	next "lightning bolts.@"

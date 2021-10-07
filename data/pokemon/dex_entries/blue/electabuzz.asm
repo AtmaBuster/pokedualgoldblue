@@ -1,10 +1,10 @@
 	db "ELECTRIC@" ; species name
 	dw 307, 660 ; height, weight
 
-	db   "Its body constant-"
-	next "ly discharges"
-	next "electricity. Get-"
+	db   "Normally found"
+	next "near power plants,"
+	next "they can wander"
 
-	page "ting close to it"
-	next "will make your"
-	next "hair stand on end.@"
+	page "away and cause"
+	next "major blackouts"
+	next "in cities.@"

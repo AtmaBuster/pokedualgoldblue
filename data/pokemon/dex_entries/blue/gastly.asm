@@ -1,10 +1,10 @@
 	db "GAS@" ; species name
 	dw 403, 2 ; height, weight
 
-	db   "Its thin body is"
-	next "made of gas. It"
-	next "can envelop an"
+	db   "Almost invisible,"
+	next "this gaseous"
+	next "#MON cloaks"
 
-	page "opponent of any"
-	next "size and cause"
-	next "suffocation.@"
+	page "the target and"
+	next "puts it to sleep"
+	next "without notice.@"

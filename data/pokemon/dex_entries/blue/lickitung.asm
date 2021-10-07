@@ -1,10 +1,10 @@
 	db "LICKING@" ; species name
 	dw 311, 1440 ; height, weight
 
-	db   "Its long tongue,"
-	next "slathered with a"
-	next "gooey saliva,"
+	db   "Its tongue can be"
+	next "extended like a"
+	next "chameleon's. It"
 
-	page "sticks to any-"
-	next "thing, so it is"
-	next "very useful.@"
+	page "leaves a tingling"
+	next "sensation when it"
+	next "licks enemies.@"

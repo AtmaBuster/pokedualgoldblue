@@ -1,10 +1,10 @@
 	db "TADPOLE@" ; species name
 	dw 200, 270 ; height, weight
 
-	db   "The direction of"
-	next "its belly spiral"
-	next "differs by area."
+	db   "Its newly grown"
+	next "legs prevent it"
+	next "from running. It"
 
-	page "The equator is"
-	next "thought to have an"
-	next "effect on this.@"
+	page "appears to prefer"
+	next "swimming than"
+	next "trying to stand.@"

@@ -1,10 +1,10 @@
 	db "LONELY@" ; species name
 	dw 104, 140 ; height, weight
 
-	db   "It always wears"
-	next "the skull of its"
-	next "dead mother, so no"
+	db   "Because it never"
+	next "removes its skull"
+	next "helmet, no one"
 
-	page "one has any idea"
-	next "what its hidden"
-	next "face looks like.@"
+	page "has ever seen"
+	next "this #MON's"
+	next "real face.@"

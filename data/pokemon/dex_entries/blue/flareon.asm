@@ -1,10 +1,10 @@
 	db "FLAME@" ; species name
 	dw 211, 550 ; height, weight
 
-	db   "It fluffs out its"
-	next "fur collar to cool"
-	next "down its body"
+	db   "When storing"
+	next "thermal energy in"
+	next "its body, its"
 
-	page "temperature, which"
-	next "can reach 1,650"
+	page "temperature could"
+	next "soar to over 1600"
 	next "degrees.@"

@@ -1,10 +1,10 @@
 	db "BAT@" ; species name
 	dw 503, 1210 ; height, weight
 
-	db   "It can drink more"
-	next "than 10 ounces of"
-	next "blood at once. If"
+	db   "Once it strikes,"
+	next "it will not stop"
+	next "draining energy"
 
-	page "it has too much,"
-	next "it gets heavy and"
-	next "flies clumsily.@"
+	page "from the victim"
+	next "even if it gets"
+	next "too heavy to fly.@"

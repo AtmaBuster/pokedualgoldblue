@@ -1,10 +1,10 @@
 	db "FISH@" ; species name
 	dw 211, 220 ; height, weight
 
-	db   "For no reason, it"
-	next "jumps and splashes"
-	next "about, making it"
+	db   "In the distant"
+	next "past, it was"
+	next "somewhat stronger"
 
-	page "easy for predators"
-	next "like PIDGEOTTO to"
-	next "catch it mid-jump.@"
+	page "than the horribly"
+	next "weak descendants"
+	next "that exist today.@"

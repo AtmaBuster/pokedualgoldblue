@@ -1,10 +1,10 @@
 	db "FOX@" ; species name
 	dw 200, 220 ; height, weight
 
-	db   "If it is attacked"
-	next "by an enemy that"
-	next "is stronger than"
+	db   "At the time of"
+	next "birth, it has"
+	next "just one tail."
 
-	page "itself, it feigns"
-	next "injury to fool the"
-	next "enemy and escapes.@"
+	page "The tail splits"
+	next "from its tip as"
+	next "it grows older.@"

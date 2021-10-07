@@ -1,10 +1,10 @@
 	db "WEED@" ; species name
 	dw 207, 190 ; height, weight
 
-	db   "It secretes a"
-	next "sticky, drool-like"
-	next "honey. Although"
+	db   "The fluid that"
+	next "oozes from its"
+	next "mouth isn't drool."
 
-	page "sweet, it smells"
-	next "too repulsive to"
-	next "get very close.@"
+	page "It is a nectar"
+	next "that is used to"
+	next "attract prey.@"

@@ -1,10 +1,10 @@
 	db "TWIN BIRD@" ; species name
 	dw 407, 860 ; height, weight
 
-	db   "It races through"
-	next "grassy plains with"
-	next "powerful strides,"
+	db   "A bird that makes"
+	next "up for its poor"
+	next "flying with its"
 
-	page "leaving footprints"
-	next "up to four inches"
-	next "deep.@"
+	page "fast foot speed."
+	next "Leaves giant"
+	next "footprints.@"

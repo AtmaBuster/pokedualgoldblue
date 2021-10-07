@@ -1,10 +1,10 @@
 	db "BIVALVE@" ; species name
 	dw 411, 2920 ; height, weight
 
-	db   "CLOYSTER that live"
-	next "in seas with harsh"
-	next "tidal currents"
+	db   "When attacked, it"
+	next "launches its"
+	next "horns in quick"
 
-	page "grow large, sharp"
-	next "spikes on their"
-	next "shells.@"
+	page "volleys. Its"
+	next "innards have"
+	next "never been seen.@"

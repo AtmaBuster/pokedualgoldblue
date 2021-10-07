@@ -1,10 +1,10 @@
 	db "EGG@" ; species name
 	dw 104, 60 ; height, weight
 
-	db   "Using telepathy"
-	next "only they can"
-	next "receive, they"
+	db   "Often mistaken"
+	next "for eggs."
+	next "When disturbed,"
 
-	page "always form a"
-	next "cluster of six"
-	next "EXEGGCUTE.@"
+	page "they quickly"
+	next "gather and attack"
+	next "in swarms.@"

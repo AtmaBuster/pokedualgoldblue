@@ -1,10 +1,10 @@
 	db "TRANSPORT@" ; species name
 	dw 802, 4850 ; height, weight
 
-	db   "It ferries people"
-	next "across the sea on"
-	next "its back. It may"
+	db   "A #MON that"
+	next "has been over-"
+	next "hunted almost to"
 
-	page "sing an enchanting"
-	next "cry if it is in a"
-	next "good mood.@"
+	page "extinction. It"
+	next "can ferry people"
+	next "across the water.@"

@@ -1,10 +1,10 @@
 	db "MANTIS@" ; species name
 	dw 411, 1230 ; height, weight
 
-	db   "When it moves, it"
-	next "leaves only a"
-	next "blur. If it hides"
+	db   "With ninja-like"
+	next "agility and speed,"
+	next "it can create the"
 
-	page "in grass, its pro-"
-	next "tective colors"
-	next "make it invisible.@"
+	page "illusion that"
+	next "there is more"
+	next "than one.@"

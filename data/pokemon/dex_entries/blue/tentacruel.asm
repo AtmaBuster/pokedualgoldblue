@@ -1,10 +1,10 @@
 	db "JELLYFISH@" ; species name
 	dw 503, 1210 ; height, weight
 
-	db   "In battle, it"
-	next "extends all 80 of"
-	next "its tentacles to"
+	db   "The tentacles are"
+	next "normally kept"
+	next "short. On hunts,"
 
-	page "entrap its oppo-"
-	next "nent inside a"
-	next "poisonous net.@"
+	page "they are extended"
+	next "to ensnare and"
+	next "immobilize prey.@"

@@ -1,10 +1,10 @@
 	db "SPIKES@" ; species name
 	dw 303, 2540 ; height, weight
 
-	db   "It doesn't care if"
-	next "there is anything"
-	next "in its way. It"
+	db   "Its massive bones"
+	next "are 1000 times"
+	next "harder than human"
 
-	page "just charges and"
-	next "destroys all ob-"
-	next "stacles.@"
+	page "bones. It can"
+	next "easily knock a"
+	next "trailer flying.@"

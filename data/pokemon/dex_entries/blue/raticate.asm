@@ -1,10 +1,10 @@
 	db "RAT@" ; species name
 	dw 204, 410 ; height, weight
 
-	db   "Its whiskers help"
-	next "it to maintain"
-	next "balance. Its fangs"
+	db   "It uses its whis-"
+	next "kers to maintain"
+	next "its balance."
 
-	page "never stop grow-"
-	next "ing, so it gnaws"
-	next "to pare them down.@"
+	page "It apparently"
+	next "slows down if"
+	next "they are cut off.@"

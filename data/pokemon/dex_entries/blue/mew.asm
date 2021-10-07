@@ -1,10 +1,10 @@
 	db "NEW SPECIE@" ; species name
 	dw 104, 90 ; height, weight
 
-	db   "Its DNA is said to"
-	next "contain the genet-"
-	next "ic codes of all"
+	db   "So rare that it"
+	next "is still said to"
+	next "be a mirage by"
 
-	page "#MON, so it can"
-	next "use all kinds of"
-	next "techniques.@"
+	page "many experts. Only"
+	next "a few people have"
+	next "seen it worldwide.@"

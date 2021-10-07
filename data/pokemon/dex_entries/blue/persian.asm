@@ -1,10 +1,10 @@
 	db "CLASSY CAT@" ; species name
 	dw 303, 710 ; height, weight
 
-	db   "Its lithe muscles"
-	next "allow it to walk"
-	next "without making"
+	db   "Although its fur"
+	next "has many admirers,"
+	next "it is tough to"
 
-	page "a sound. It"
-	next "attacks in an"
-	next "instant.@"
+	page "raise as a pet"
+	next "because of its"
+	next "fickle meanness.@"

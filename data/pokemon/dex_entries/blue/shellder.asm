@@ -1,10 +1,10 @@
 	db "BIVALVE@" ; species name
 	dw 100, 90 ; height, weight
 
-	db   "Grains of sand"
-	next "trapped in its"
-	next "shells mix with"
+	db   "Its hard shell"
+	next "repels any kind"
+	next "of attack."
 
-	page "its body fluids to"
-	next "form beautiful"
-	next "pearls.@"
+	page "It is vulnerable"
+	next "only when its"
+	next "shell is open.@"

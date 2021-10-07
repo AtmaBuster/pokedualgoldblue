@@ -1,10 +1,10 @@
 	db "SLUDGE@" ; species name
 	dw 311, 660 ; height, weight
 
-	db   "Its body is made"
-	next "of a powerful poi-"
-	next "son. Touching it"
+	db   "Thickly covered"
+	next "with a filthy,"
+	next "vile sludge. It"
 
-	page "accidentally will"
-	next "cause a fever that"
-	next "requires bed rest.@"
+	page "is so toxic, even"
+	next "its footprints"
+	next "contain poison.@"

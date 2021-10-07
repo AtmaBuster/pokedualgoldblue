@@ -1,10 +1,10 @@
 	db "TADPOLE@" ; species name
 	dw 303, 440 ; height, weight
 
-	db   "The skin on most"
-	next "of its body is"
-	next "moist. However,"
+	db   "Capable of living"
+	next "in or out of"
+	next "water. When out"
 
-	page "the skin on its"
-	next "belly spiral feels"
-	next "smooth.@"
+	page "of water, it"
+	next "sweats to keep"
+	next "its body slimy.@"

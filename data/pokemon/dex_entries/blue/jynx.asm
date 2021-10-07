@@ -1,10 +1,10 @@
 	db "HUMANSHAPE@" ; species name
 	dw 407, 900 ; height, weight
 
-	db   "It speaks a lan-"
-	next "guage similar to"
-	next "that of humans."
+	db   "It seductively"
+	next "wiggles its hips"
+	next "as it walks. It"
 
-	page "However, it seems"
-	next "to use dancing to"
-	next "communicate.@"
+	page "can cause people"
+	next "to dance in"
+	next "unison with it.@"

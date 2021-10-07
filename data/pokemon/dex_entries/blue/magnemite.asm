@@ -1,10 +1,10 @@
 	db "MAGNET@" ; species name
 	dw 100, 130 ; height, weight
 
-	db   "The units at the"
-	next "sides of its body"
-	next "generate anti-"
+	db   "Uses anti-gravity"
+	next "to stay suspended."
+	next "Appears without"
 
-	page "gravity energy to"
-	next "keep it aloft in"
-	next "the air.@"
+	page "warning and uses"
+	next "THUNDER WAVE and"
+	next "similar moves.@"

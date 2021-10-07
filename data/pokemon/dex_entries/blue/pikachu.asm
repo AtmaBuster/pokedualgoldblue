@@ -1,10 +1,10 @@
 	db "MOUSE@" ; species name
 	dw 104, 130 ; height, weight
 
-	db   "It raises its tail"
-	next "to check its sur-"
-	next "roundings. The"
+	db   "When several of"
+	next "these #MON"
+	next "gather, their"
 
-	page "tail is sometimes"
-	next "struck by light-"
-	next "ning in this pose.@"
+	page "electricity could"
+	next "build and cause"
+	next "lightning storms.@"

@@ -1,10 +1,10 @@
 	db "HERMITCRAB@" ; species name
 	dw 503, 1730 ; height, weight
 
-	db   "Naturally dull to"
-	next "begin with, it"
-	next "lost its ability"
+	db   "The SHELLDER that"
+	next "is latched onto"
+	next "SLOWPOKE's tail"
 
-	page "to feel pain due"
-	next "to SHELLDER's"
-	next "seeping poison.@"
+	page "is said to feed"
+	next "on the host's left"
+	next "over scraps.@"

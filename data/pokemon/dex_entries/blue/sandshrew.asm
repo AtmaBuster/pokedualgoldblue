@@ -1,10 +1,10 @@
 	db "MOUSE@" ; species name
 	dw 200, 260 ; height, weight
 
-	db   "Disliking water,"
-	next "it lives in deep"
-	next "burrows in arid"
+	db   "Burrows deep"
+	next "underground in"
+	next "arid locations"
 
-	page "areas. It can roll"
-	next "itself instantly"
-	next "into a ball.@"
+	page "far from water."
+	next "It only emerges"
+	next "to hunt for food.@"

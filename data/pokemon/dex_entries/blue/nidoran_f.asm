@@ -1,10 +1,10 @@
 	db "POISON PIN@" ; species name
 	dw 104, 150 ; height, weight
 
-	db   "Although not very"
-	next "combative, it will"
-	next "torment its foes"
+	db   "Although small,"
+	next "its venomous"
+	next "barbs render this"
 
-	page "with poison spikes"
-	next "if it is threat-"
-	next "ened in any way.@"
+	page "#MON dangerous."
+	next "The female has"
+	next "smaller horns.@"

@@ -1,10 +1,10 @@
 	db "PARENT@" ; species name
 	dw 703, 1760 ; height, weight
 
-	db   "To protect its"
-	next "young, it will"
-	next "never give up"
+	db   "The infant rarely"
+	next "ventures out of"
+	next "its mother's"
 
-	page "during battle, no"
-	next "matter how badly"
-	next "wounded it is.@"
+	page "protective pouch"
+	next "until it is 3"
+	next "years old.@"
