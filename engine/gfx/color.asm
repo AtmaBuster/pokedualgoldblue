@@ -1185,8 +1185,19 @@ LoadMapPals:
 	cp ROUTE
 	ret nz
 .outside
-	ld a, [wSplitMapGroup]
+	ld a, [wMapGroup]
 	ld l, a
+
+; Route 6 is in Vermilion City's map group, but
+; its northmost rows can see Saffron City's roofs
+	cp GROUP_VERMILION_CITY
+	jr nz, .not_south_of_saffron
+	ld a, [wSplitMapGroup]
+	cp GROUP_SAFFRON_CITY
+	jr nz, .not_south_of_saffron
+	ld l, a
+.not_south_of_saffron
+
 	ld h, 0
 	add hl, hl
 	add hl, hl
