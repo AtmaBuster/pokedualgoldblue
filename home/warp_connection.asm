@@ -291,8 +291,67 @@ EnterMapConnection::
 	ld a, h
 	ld [wOverworldMapAnchor + 1], a
 .done
+	call GetSplitMapGroup
 	scf
 	ret
+
+GetSplitMapGroup::
+	push hl
+	push bc
+	push de
+
+	ld hl, wMapGroup
+	ld a, [hli]
+	ld b, a
+	assert wMapGroup + 1 == wMapNumber
+	ld a, [hli]
+	ld c, a
+	assert wMapGroup + 2 == wYCoord
+	ld a, [hli]
+	ld e, a
+	assert wMapGroup + 3 == wXCoord
+	ld d, [hl]
+
+	ld hl, SplitMapGroups
+.loop
+	ld a, [hli]
+	and a
+	jr z, .done
+	cp b
+	jr nz, .next5
+	ld a, [hli]
+	cp c
+	jr nz, .next4
+	ld a, [hli]
+	dec a ; EAST_WEST?
+	ld a, [wXCoord]
+	jr z, .got_coord
+	ld a, [wYCoord]
+.got_coord
+	cp [hl]
+	jr c, .north_west
+	inc hl
+.north_west
+	inc hl
+	ld b, [hl]
+.done
+	ld a, b
+	ld [wSplitMapGroup], a
+	pop de
+	pop bc
+	pop hl
+	ret
+
+.next5
+	inc hl
+.next4
+	inc hl
+	inc hl
+	inc hl
+	inc hl
+	jr .loop
+
+INCLUDE "data/maps/split_groups.asm"
 
 CheckWarpTile::
 	call GetDestinationWarpNumber

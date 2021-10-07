@@ -1185,7 +1185,7 @@ LoadMapPals:
 	cp ROUTE
 	ret nz
 .outside
-	ld a, [wMapGroup]
+	ld a, [wSplitMapGroup]
 	ld l, a
 	ld h, 0
 	add hl, hl

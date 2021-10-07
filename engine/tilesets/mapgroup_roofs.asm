@@ -1,5 +1,5 @@
 LoadMapGroupRoof::
-	ld a, [wMapGroup]
+	ld a, [wSplitMapGroup]
 	ld e, a
 	ld d, 0
 	ld hl, MapGroupRoofs

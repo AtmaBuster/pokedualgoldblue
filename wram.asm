@@ -2639,8 +2639,9 @@ wBackupMapNumber::  db
 wLastSpawnMapGroup:: db
 wLastSpawnMapNumber:: db
 
-	ds 2
+	ds 1
 
+wSplitMapGroup:: db
 wWarpNumber:: db
 wMapGroup:: db
 wMapNumber:: db

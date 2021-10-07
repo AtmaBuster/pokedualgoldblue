@@ -98,6 +98,7 @@ MapSetupScript_Train:
 	mapsetup EnterMapWarp
 	mapsetup LoadMapAttributes
 	mapsetup GetWarpDestCoords
+	mapsetup GetSplitMapGroup
 	mapsetup HandleNewMap
 	mapsetup RefreshPlayerCoords
 	mapsetup LoadBlockData

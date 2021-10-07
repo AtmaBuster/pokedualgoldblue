@@ -19,6 +19,7 @@ EnterMapSpawnPoint:
 	ld [wXCoord], a
 	ld a, [hli]
 	ld [wYCoord], a
+	call GetSplitMapGroup
 .spawn_n_a
 	pop de
 	pop hl
