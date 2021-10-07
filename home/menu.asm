@@ -295,9 +295,6 @@ MenuTextbox::
 	pop hl
 	jp PrintText
 
-Menu_DummyFunction:: ; unreferenced
-	ret
-
 LoadMenuTextbox::
 	ld hl, .MenuHeader
 	call LoadMenuHeader
@@ -383,12 +380,6 @@ YesNoBox::
 	lb bc, SCREEN_WIDTH - 6, 7
 
 PlaceYesNoBox::
-	jr _YesNoBox
-
-PlaceGenericTwoOptionBox:: ; unreferenced
-	call LoadMenuHeader
-	jr InterpretTwoOptionMenu
-
 _YesNoBox::
 ; Return nc (yes) or c (no).
 	push bc
@@ -677,15 +668,6 @@ PlaceNthMenuStrings::
 	ld e, a
 	pop hl
 	call PlaceString
-	ret
-
-GetNthMenuStrings:: ; unreferenced
-	call GetMenuDataPointerTableEntry
-	inc hl
-	inc hl
-	ld a, [hli]
-	ld d, [hl]
-	ld e, a
 	ret
 
 MenuJumptable::
