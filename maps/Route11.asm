@@ -28,6 +28,7 @@ Route11_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  1,  5, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 10, 14, SPRITE_GAMBLER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

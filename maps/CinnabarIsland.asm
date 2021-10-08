@@ -25,6 +25,11 @@ CinnabarIsland_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  9,  5, BGEVENT_READ, BGEvent
+	bg_event 16, 11, BGEVENT_READ, BGEvent
+	bg_event 12, 11, BGEVENT_READ, BGEvent
+	bg_event  9, 11, BGEVENT_READ, BGEvent
+	bg_event 13,  3, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 12,  5, SPRITE_GIRL, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

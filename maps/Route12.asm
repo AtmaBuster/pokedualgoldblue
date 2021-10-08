@@ -27,6 +27,8 @@ Route12_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 13, 13, BGEVENT_READ, BGEvent
+	bg_event 11, 63, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 10, 62, SPRITE_KANTO_SNORLAX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

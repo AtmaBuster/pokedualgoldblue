@@ -19,6 +19,8 @@ Museum2F_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 11,  2, BGEVENT_READ, BGEvent
+	bg_event  2,  5, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  1,  7, SPRITE_KANTO_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

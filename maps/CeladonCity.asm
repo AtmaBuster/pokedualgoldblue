@@ -40,6 +40,15 @@ CeladonCity_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 27, 15, BGEVENT_READ, BGEvent
+	bg_event 19, 15, BGEVENT_READ, BGEvent
+	bg_event 42,  9, BGEVENT_READ, BGEvent
+	bg_event 13, 29, BGEVENT_READ, BGEvent
+	bg_event 21,  9, BGEVENT_READ, BGEvent
+	bg_event 12, 13, BGEVENT_READ, BGEvent
+	bg_event 39, 21, BGEVENT_READ, BGEvent
+	bg_event 33, 21, BGEVENT_READ, BGEvent
+	bg_event 27, 21, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  8, 17, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_WANDER, 4, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

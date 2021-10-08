@@ -30,6 +30,12 @@ ViridianCity_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 17, 17, BGEVENT_READ, BGEvent
+	bg_event 19,  1, BGEVENT_READ, BGEvent
+	bg_event 21, 29, BGEVENT_READ, BGEvent
+	bg_event 30, 19, BGEVENT_READ, BGEvent
+	bg_event 24, 25, BGEVENT_READ, BGEvent
+	bg_event 27,  7, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 13, 20, SPRITE_KANTO_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

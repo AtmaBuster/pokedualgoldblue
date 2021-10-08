@@ -23,6 +23,12 @@ Route17_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  9, 51, BGEVENT_READ, BGEvent
+	bg_event  9, 63, BGEVENT_READ, BGEvent
+	bg_event  9, 75, BGEVENT_READ, BGEvent
+	bg_event  9, 87, BGEVENT_READ, BGEvent
+	bg_event  9, 111, BGEVENT_READ, BGEvent
+	bg_event  9, 141, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 12, 19, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

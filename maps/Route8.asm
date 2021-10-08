@@ -27,6 +27,7 @@ Route8_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 17,  3, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  8,  5, SPRITE_KANTO_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

@@ -27,6 +27,12 @@ ViridianForest_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 24, 40, BGEVENT_READ, BGEvent
+	bg_event 16, 32, BGEVENT_READ, BGEvent
+	bg_event 26, 17, BGEVENT_READ, BGEvent
+	bg_event  4, 24, BGEVENT_READ, BGEvent
+	bg_event 18, 45, BGEVENT_READ, BGEvent
+	bg_event  2,  1, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 16, 43, SPRITE_KANTO_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

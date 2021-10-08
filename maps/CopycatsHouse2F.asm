@@ -19,6 +19,8 @@ CopycatsHouse2F_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  3,  5, BGEVENT_READ, BGEvent
+	bg_event  0,  1, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  4,  3, SPRITE_BRUNETTE_GIRL, SPRITEMOVEDATA_WANDER, 4, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

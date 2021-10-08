@@ -18,5 +18,6 @@ Route5_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 17, 29, BGEVENT_READ, BGEvent
 
 	def_object_events

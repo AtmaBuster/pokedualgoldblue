@@ -20,6 +20,8 @@ Route18_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 43,  7, BGEVENT_READ, BGEvent
+	bg_event 33,  5, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 36, 11, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

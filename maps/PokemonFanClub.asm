@@ -21,6 +21,8 @@ PokemonFanClub_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  1,  0, BGEVENT_READ, BGEvent
+	bg_event  6,  0, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  6,  3, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

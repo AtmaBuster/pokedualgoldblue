@@ -20,6 +20,7 @@ CeladonMart2F_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 14,  1, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  5,  3, SPRITE_KANTO_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

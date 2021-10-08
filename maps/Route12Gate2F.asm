@@ -15,6 +15,8 @@ Route12Gate2F_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  1,  2, BGEVENT_READ, BGEvent
+	bg_event  6,  2, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  3,  4, SPRITE_BRUNETTE_GIRL, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

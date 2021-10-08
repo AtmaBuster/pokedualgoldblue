@@ -28,6 +28,7 @@ Route15_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 39,  9, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 41, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

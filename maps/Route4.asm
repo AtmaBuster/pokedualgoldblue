@@ -19,6 +19,9 @@ Route4_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 12,  5, BGEVENT_READ, BGEvent
+	bg_event 17,  7, BGEVENT_READ, BGEvent
+	bg_event 27,  7, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  9,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 4, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

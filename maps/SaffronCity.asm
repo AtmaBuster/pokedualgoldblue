@@ -41,6 +41,16 @@ SaffronCity_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 17,  5, BGEVENT_READ, BGEvent
+	bg_event 27,  5, BGEVENT_READ, BGEvent
+	bg_event 35,  5, BGEVENT_READ, BGEvent
+	bg_event 26, 11, BGEVENT_READ, BGEvent
+	bg_event 39, 19, BGEVENT_READ, BGEvent
+	bg_event  5, 21, BGEVENT_READ, BGEvent
+	bg_event 15, 21, BGEVENT_READ, BGEvent
+	bg_event 10, 29, BGEVENT_READ, BGEvent
+	bg_event 27, 29, BGEVENT_READ, BGEvent
+	bg_event  1, 19, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  7,  6, SPRITE_KANTO_ROCKET, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

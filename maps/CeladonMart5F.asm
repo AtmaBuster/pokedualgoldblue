@@ -20,6 +20,7 @@ CeladonMart5F_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 14,  1, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 14,  5, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

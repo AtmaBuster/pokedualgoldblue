@@ -30,6 +30,13 @@ PewterCity_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 19, 29, BGEVENT_READ, BGEvent
+	bg_event 33, 19, BGEVENT_READ, BGEvent
+	bg_event 24, 17, BGEVENT_READ, BGEvent
+	bg_event 14, 25, BGEVENT_READ, BGEvent
+	bg_event 15,  9, BGEVENT_READ, BGEvent
+	bg_event 11, 17, BGEVENT_READ, BGEvent
+	bg_event 25, 23, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  8, 15, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

@@ -33,6 +33,13 @@ VermilionCity_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 27,  3, BGEVENT_READ, BGEvent
+	bg_event 37, 13, BGEVENT_READ, BGEvent
+	bg_event 24, 13, BGEVENT_READ, BGEvent
+	bg_event 12,  3, BGEVENT_READ, BGEvent
+	bg_event  7, 13, BGEVENT_READ, BGEvent
+	bg_event  7, 19, BGEVENT_READ, BGEvent
+	bg_event 29, 15, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 19,  7, SPRITE_KANTO_BEAUTY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

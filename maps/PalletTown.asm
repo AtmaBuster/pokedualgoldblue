@@ -24,6 +24,10 @@ PalletTown_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 13, 13, BGEVENT_READ, BGEvent
+	bg_event  7,  9, BGEVENT_READ, BGEvent
+	bg_event  3,  5, BGEVENT_READ, BGEvent
+	bg_event 11,  5, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  8,  5, SPRITE_OAK, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

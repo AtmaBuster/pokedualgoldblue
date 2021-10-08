@@ -21,6 +21,10 @@ CeladonMansion3F_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  1,  3, BGEVENT_READ, BGEvent
+	bg_event  4,  3, BGEVENT_READ, BGEvent
+	bg_event  1,  6, BGEVENT_READ, BGEvent
+	bg_event  4,  9, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  0,  4, SPRITE_BIKE_SHOP_CLERK, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

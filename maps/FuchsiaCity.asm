@@ -37,6 +37,20 @@ FuchsiaCity_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 15, 23, BGEVENT_READ, BGEvent
+	bg_event 25, 15, BGEVENT_READ, BGEvent
+	bg_event 17,  5, BGEVENT_READ, BGEvent
+	bg_event  6, 13, BGEVENT_READ, BGEvent
+	bg_event 20, 27, BGEVENT_READ, BGEvent
+	bg_event 27, 29, BGEVENT_READ, BGEvent
+	bg_event 21, 15, BGEVENT_READ, BGEvent
+	bg_event  5, 29, BGEVENT_READ, BGEvent
+	bg_event 33,  7, BGEVENT_READ, BGEvent
+	bg_event 27,  7, BGEVENT_READ, BGEvent
+	bg_event 13,  7, BGEVENT_READ, BGEvent
+	bg_event 31, 13, BGEVENT_READ, BGEvent
+	bg_event 13, 15, BGEVENT_READ, BGEvent
+	bg_event  7,  7, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 10, 12, SPRITE_KANTO_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

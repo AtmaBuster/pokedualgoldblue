@@ -19,6 +19,10 @@ CinnabarLab_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  3,  2, BGEVENT_READ, BGEvent
+	bg_event  9,  4, BGEVENT_READ, BGEvent
+	bg_event 13,  4, BGEVENT_READ, BGEvent
+	bg_event 17,  4, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  1,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

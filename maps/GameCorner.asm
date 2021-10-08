@@ -27,6 +27,7 @@ GameCorner_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  9,  4, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  2,  6, SPRITE_KANTO_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

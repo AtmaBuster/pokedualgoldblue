@@ -39,6 +39,12 @@ CeruleanCity_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 23, 19, BGEVENT_READ, BGEvent
+	bg_event 17, 29, BGEVENT_READ, BGEvent
+	bg_event 26, 25, BGEVENT_READ, BGEvent
+	bg_event 20, 17, BGEVENT_READ, BGEvent
+	bg_event 11, 25, BGEVENT_READ, BGEvent
+	bg_event 27, 21, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 20,  2, SPRITE_KANTO_BLUE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

@@ -1001,7 +1001,7 @@ ObjectEventText::
 	text_far _ObjectEventText
 	text_end
 
-BGEvent:: ; unreferenced
+BGEvent::
 	jumptext BGEventText
 
 BGEventText::

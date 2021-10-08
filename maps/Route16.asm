@@ -29,6 +29,8 @@ Route16_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 27, 11, BGEVENT_READ, BGEvent
+	bg_event  5, 17, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 17, 12, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

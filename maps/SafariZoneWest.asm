@@ -25,6 +25,10 @@ SafariZoneWest_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 12, 12, BGEVENT_READ, BGEvent
+	bg_event 17,  3, BGEVENT_READ, BGEvent
+	bg_event 26,  4, BGEVENT_READ, BGEvent
+	bg_event 24, 22, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  8, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

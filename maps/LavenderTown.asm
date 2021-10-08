@@ -27,6 +27,12 @@ LavenderTown_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 11,  9, BGEVENT_READ, BGEvent
+	bg_event  9,  3, BGEVENT_READ, BGEvent
+	bg_event 16, 13, BGEVENT_READ, BGEvent
+	bg_event  4,  5, BGEVENT_READ, BGEvent
+	bg_event  5,  9, BGEVENT_READ, BGEvent
+	bg_event 17,  7, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event 15,  9, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_WANDER, 4, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

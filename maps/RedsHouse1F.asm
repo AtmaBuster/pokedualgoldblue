@@ -17,6 +17,7 @@ RedsHouse1F_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  3,  1, BGEVENT_READ, BGEvent
 
 	def_object_events
 	object_event  5,  4, SPRITE_KANTO_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

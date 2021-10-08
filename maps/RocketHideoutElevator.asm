@@ -15,5 +15,6 @@ RocketHideoutElevator_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  1,  1, BGEVENT_READ, BGEvent
 
 	def_object_events
