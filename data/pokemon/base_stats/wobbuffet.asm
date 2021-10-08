@@ -24,6 +24,6 @@ ENDC
 IF DEF(_GOLD)
 	tmhm
 ELIF DEF(_BLUE)
-	tmhm ; TODO
+	tmhm
 ENDC
 	; end
