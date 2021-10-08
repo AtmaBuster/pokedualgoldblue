@@ -1,4 +1,5 @@
 	object_const_def
+	const HALLOFFAMEKANTO_OAK
 
 HallOfFameKanto_MapScripts:
 	def_scene_scripts
@@ -17,3 +18,4 @@ HallOfFameKanto_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  5,  2, SPRITE_OAK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

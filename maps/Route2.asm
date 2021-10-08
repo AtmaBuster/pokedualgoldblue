@@ -1,4 +1,6 @@
 	object_const_def
+	const ROUTE2_POKE_BALL1
+	const ROUTE2_POKE_BALL2
 
 Route2_MapScripts:
 	def_scene_scripts
@@ -21,3 +23,5 @@ Route2_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 13, 54, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 13, 45, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

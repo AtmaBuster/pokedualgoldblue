@@ -1,4 +1,5 @@
 	object_const_def
+	const VERMILIONTRADEHOUSE_LITTLE_GIRL
 
 VermilionTradeHouse_MapScripts:
 	def_scene_scripts
@@ -17,3 +18,4 @@ VermilionTradeHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  3,  5, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

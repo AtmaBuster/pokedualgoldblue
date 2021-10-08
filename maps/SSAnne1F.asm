@@ -1,4 +1,6 @@
 	object_const_def
+	const SSANNE1F_WAITER
+	const SSANNE1F_KANTO_SAILOR
 
 SSAnne1F_MapScripts:
 	def_scene_scripts
@@ -26,3 +28,5 @@ SSAnne1F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 12,  6, SPRITE_WAITER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 27,  5, SPRITE_KANTO_SAILOR, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

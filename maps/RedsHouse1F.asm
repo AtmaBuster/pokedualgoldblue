@@ -1,4 +1,5 @@
 	object_const_def
+	const REDSHOUSE1F_KANTO_MOM
 
 RedsHouse1F_MapScripts:
 	def_scene_scripts
@@ -18,3 +19,4 @@ RedsHouse1F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  5,  4, SPRITE_KANTO_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

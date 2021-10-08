@@ -1,4 +1,6 @@
 	object_const_def
+	const VIRIDIANFORESTSOUTHGATE_GIRL
+	const VIRIDIANFORESTSOUTHGATE_LITTLE_GIRL
 
 ViridianForestSouthGate_MapScripts:
 	def_scene_scripts
@@ -19,3 +21,5 @@ ViridianForestSouthGate_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  8,  4, SPRITE_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  2,  4, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

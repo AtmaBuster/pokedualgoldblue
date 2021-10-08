@@ -1,4 +1,6 @@
 	object_const_def
+	const GAMECORNERPRIZEROOM_BALDING_GUY
+	const GAMECORNERPRIZEROOM_GAMBLER
 
 GameCornerPrizeRoom_MapScripts:
 	def_scene_scripts
@@ -17,3 +19,5 @@ GameCornerPrizeRoom_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  1,  4, SPRITE_BALDING_GUY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  7,  3, SPRITE_GAMBLER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

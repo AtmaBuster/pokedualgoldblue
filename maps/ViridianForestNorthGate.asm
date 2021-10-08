@@ -1,4 +1,6 @@
 	object_const_def
+	const VIRIDIANFORESTNORTHGATE_KANTO_SUPER_NERD
+	const VIRIDIANFORESTNORTHGATE_KANTO_GRAMPS
 
 ViridianForestNorthGate_MapScripts:
 	def_scene_scripts
@@ -19,3 +21,5 @@ ViridianForestNorthGate_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  3,  2, SPRITE_KANTO_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  2,  5, SPRITE_KANTO_GRAMPS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

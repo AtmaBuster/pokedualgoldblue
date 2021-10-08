@@ -1,4 +1,7 @@
 	object_const_def
+	const ROUTE4_COOLTRAINER_F1
+	const ROUTE4_COOLTRAINER_F2
+	const ROUTE4_POKE_BALL
 
 Route4_MapScripts:
 	def_scene_scripts
@@ -18,3 +21,6 @@ Route4_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  9,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 4, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 63,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
+	object_event 57,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

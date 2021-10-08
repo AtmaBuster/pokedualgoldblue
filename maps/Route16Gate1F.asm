@@ -1,4 +1,6 @@
 	object_const_def
+	const ROUTE16GATE1F_GUARD
+	const ROUTE16GATE1F_GAMBLER
 
 Route16Gate1F_MapScripts:
 	def_scene_scripts
@@ -24,3 +26,5 @@ Route16Gate1F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  4,  5, SPRITE_GUARD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  4,  3, SPRITE_GAMBLER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

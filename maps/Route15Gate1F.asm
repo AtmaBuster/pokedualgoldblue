@@ -1,4 +1,5 @@
 	object_const_def
+	const ROUTE15GATE1F_GUARD
 
 Route15Gate1F_MapScripts:
 	def_scene_scripts
@@ -20,3 +21,4 @@ Route15Gate1F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  4,  1, SPRITE_GUARD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

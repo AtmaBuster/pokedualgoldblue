@@ -1,4 +1,8 @@
 	object_const_def
+	const ROCKTUNNELPOKECENTER_KANTO_NURSE
+	const ROCKTUNNELPOKECENTER_GENTLEMAN
+	const ROCKTUNNELPOKECENTER_FISHER
+	const ROCKTUNNELPOKECENTER_OLD_LINK_RECEPTIONIST
 
 RockTunnelPokecenter_MapScripts:
 	def_scene_scripts
@@ -17,3 +21,7 @@ RockTunnelPokecenter_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  3,  1, SPRITE_KANTO_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  7,  3, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  2,  5, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 11,  2, SPRITE_OLD_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

@@ -1,4 +1,11 @@
 	object_const_def
+	const SSANNEKITCHEN_COOK1
+	const SSANNEKITCHEN_COOK2
+	const SSANNEKITCHEN_COOK3
+	const SSANNEKITCHEN_COOK4
+	const SSANNEKITCHEN_COOK5
+	const SSANNEKITCHEN_COOK6
+	const SSANNEKITCHEN_COOK7
 
 SSAnneKitchen_MapScripts:
 	def_scene_scripts
@@ -16,3 +23,10 @@ SSAnneKitchen_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  1,  8, SPRITE_COOK, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  5,  8, SPRITE_COOK, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  9,  7, SPRITE_COOK, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 13,  6, SPRITE_COOK, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 13,  8, SPRITE_COOK, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 13, 10, SPRITE_COOK, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 11, 13, SPRITE_COOK, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

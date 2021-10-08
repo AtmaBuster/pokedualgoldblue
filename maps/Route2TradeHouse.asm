@@ -1,4 +1,6 @@
 	object_const_def
+	const ROUTE2TRADEHOUSE_KANTO_SCIENTIST
+	const ROUTE2TRADEHOUSE_GAMEBOY_KID
 
 Route2TradeHouse_MapScripts:
 	def_scene_scripts
@@ -17,3 +19,5 @@ Route2TradeHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  2,  4, SPRITE_KANTO_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  4,  1, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

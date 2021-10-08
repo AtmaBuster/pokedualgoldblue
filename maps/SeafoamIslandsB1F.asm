@@ -1,4 +1,6 @@
 	object_const_def
+	const SEAFOAMISLANDSB1F_KANTO_BOULDER1
+	const SEAFOAMISLANDSB1F_KANTO_BOULDER2
 
 SeafoamIslandsB1F_MapScripts:
 	def_scene_scripts
@@ -22,3 +24,5 @@ SeafoamIslandsB1F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 17,  6, SPRITE_KANTO_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 22,  6, SPRITE_KANTO_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

@@ -1,4 +1,5 @@
 	object_const_def
+	const SSANNE3F_KANTO_SAILOR
 
 SSAnne3F_MapScripts:
 	def_scene_scripts
@@ -17,3 +18,4 @@ SSAnne3F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  9,  3, SPRITE_KANTO_SAILOR, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

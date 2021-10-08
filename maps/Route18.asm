@@ -1,4 +1,7 @@
 	object_const_def
+	const ROUTE18_COOLTRAINER_M1
+	const ROUTE18_COOLTRAINER_M2
+	const ROUTE18_COOLTRAINER_M3
 
 Route18_MapScripts:
 	def_scene_scripts
@@ -19,3 +22,6 @@ Route18_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 36, 11, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
+	object_event 40, 15, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
+	object_event 42, 13, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

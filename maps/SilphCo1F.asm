@@ -1,4 +1,5 @@
 	object_const_def
+	const SILPHCO1F_OLD_LINK_RECEPTIONIST
 
 SilphCo1F_MapScripts:
 	def_scene_scripts
@@ -20,3 +21,4 @@ SilphCo1F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  4,  2, SPRITE_OLD_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

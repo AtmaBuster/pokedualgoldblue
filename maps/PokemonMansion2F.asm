@@ -1,4 +1,8 @@
 	object_const_def
+	const POKEMONMANSION2F_KANTO_SUPER_NERD
+	const POKEMONMANSION2F_POKE_BALL
+	const POKEMONMANSION2F_POKEDEX1
+	const POKEMONMANSION2F_POKEDEX2
 
 PokemonMansion2F_MapScripts:
 	def_scene_scripts
@@ -19,3 +23,7 @@ PokemonMansion2F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  3, 17, SPRITE_KANTO_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
+	object_event 28,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 18,  2, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  3, 22, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

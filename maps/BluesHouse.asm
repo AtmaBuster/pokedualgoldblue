@@ -1,4 +1,7 @@
 	object_const_def
+	const BLUESHOUSE_DAISY1
+	const BLUESHOUSE_DAISY2
+	const BLUESHOUSE_POKEDEX
 
 BluesHouse_MapScripts:
 	def_scene_scripts
@@ -17,3 +20,6 @@ BluesHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  2,  3, SPRITE_DAISY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  6,  4, SPRITE_DAISY, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  3,  3, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

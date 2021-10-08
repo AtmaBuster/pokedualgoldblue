@@ -1,4 +1,5 @@
 	object_const_def
+	const UNDERGROUNDPATHROUTE6_GIRL
 
 UndergroundPathRoute6_MapScripts:
 	def_scene_scripts
@@ -18,3 +19,4 @@ UndergroundPathRoute6_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  2,  3, SPRITE_GIRL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

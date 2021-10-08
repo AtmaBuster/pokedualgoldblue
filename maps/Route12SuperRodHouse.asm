@@ -1,4 +1,5 @@
 	object_const_def
+	const ROUTE12SUPERRODHOUSE_FISHING_GURU
 
 Route12SuperRodHouse_MapScripts:
 	def_scene_scripts
@@ -17,3 +18,4 @@ Route12SuperRodHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  2,  4, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

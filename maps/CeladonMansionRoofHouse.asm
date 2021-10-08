@@ -1,4 +1,6 @@
 	object_const_def
+	const CELADONMANSIONROOFHOUSE_HIKER
+	const CELADONMANSIONROOFHOUSE_POKE_BALL
 
 CeladonMansionRoofHouse_MapScripts:
 	def_scene_scripts
@@ -17,3 +19,5 @@ CeladonMansionRoofHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  2,  2, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  4,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

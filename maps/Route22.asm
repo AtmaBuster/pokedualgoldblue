@@ -1,4 +1,6 @@
 	object_const_def
+	const ROUTE22_KANTO_BLUE1
+	const ROUTE22_KANTO_BLUE2
 
 Route22_MapScripts:
 	def_scene_scripts
@@ -20,3 +22,5 @@ ENDC
 	def_bg_events
 
 	def_object_events
+	object_event 25,  5, SPRITE_KANTO_BLUE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 25,  5, SPRITE_KANTO_BLUE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

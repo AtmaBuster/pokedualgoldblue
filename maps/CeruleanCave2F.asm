@@ -1,4 +1,7 @@
 	object_const_def
+	const CERULEANCAVE2F_POKE_BALL1
+	const CERULEANCAVE2F_POKE_BALL2
+	const CERULEANCAVE2F_POKE_BALL3
 
 CeruleanCave2F_MapScripts:
 	def_scene_scripts
@@ -21,3 +24,6 @@ CeruleanCave2F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 29,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  4, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 13,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

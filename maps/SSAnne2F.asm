@@ -1,4 +1,6 @@
 	object_const_def
+	const SSANNE2F_WAITER
+	const SSANNE2F_KANTO_BLUE
 
 SSAnne2F_MapScripts:
 	def_scene_scripts
@@ -24,3 +26,5 @@ SSAnne2F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  3,  7, SPRITE_WAITER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 36,  4, SPRITE_KANTO_BLUE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

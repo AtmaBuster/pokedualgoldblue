@@ -1,4 +1,5 @@
 	object_const_def
+	const DIGLETTSCAVEROUTE2_FISHING_GURU
 
 DiglettsCaveRoute2_MapScripts:
 	def_scene_scripts
@@ -18,3 +19,4 @@ DiglettsCaveRoute2_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  3,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

@@ -1,4 +1,8 @@
 	object_const_def
+	const ROCKETHIDEOUTB3F_KANTO_ROCKET1
+	const ROCKETHIDEOUTB3F_KANTO_ROCKET2
+	const ROCKETHIDEOUTB3F_POKE_BALL1
+	const ROCKETHIDEOUTB3F_POKE_BALL2
 
 RocketHideoutB3F_MapScripts:
 	def_scene_scripts
@@ -17,3 +21,7 @@ RocketHideoutB3F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 10, 22, SPRITE_KANTO_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
+	object_event 26, 12, SPRITE_KANTO_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
+	object_event 26, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 20, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

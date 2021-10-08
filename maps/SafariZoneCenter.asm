@@ -1,4 +1,5 @@
 	object_const_def
+	const SAFARIZONECENTER_POKE_BALL
 
 SafariZoneCenter_MapScripts:
 	def_scene_scripts
@@ -24,3 +25,4 @@ SafariZoneCenter_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 14, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

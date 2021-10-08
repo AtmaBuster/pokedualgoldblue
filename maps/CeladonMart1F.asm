@@ -1,4 +1,5 @@
 	object_const_def
+	const CELADONMART1F_OLD_LINK_RECEPTIONIST
 
 CeladonMart1F_MapScripts:
 	def_scene_scripts
@@ -21,3 +22,4 @@ CeladonMart1F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  8,  3, SPRITE_OLD_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

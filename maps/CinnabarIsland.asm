@@ -1,4 +1,6 @@
 	object_const_def
+	const CINNABARISLAND_GIRL
+	const CINNABARISLAND_GAMBLER
 
 CinnabarIsland_MapScripts:
 	def_scene_scripts
@@ -25,3 +27,5 @@ CinnabarIsland_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 12,  5, SPRITE_GIRL, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 14,  6, SPRITE_GAMBLER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

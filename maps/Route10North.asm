@@ -1,4 +1,6 @@
 	object_const_def
+	const ROUTE10NORTH_KANTO_SUPER_NERD
+	const ROUTE10NORTH_COOLTRAINER_F
 
 Route10North_MapScripts:
 	def_scene_scripts
@@ -18,3 +20,5 @@ Route10North_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 10, 44, SPRITE_KANTO_SUPER_NERD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
+	object_event  7, 25, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

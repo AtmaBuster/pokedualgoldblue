@@ -1,4 +1,8 @@
 	object_const_def
+	const SAFFRONPOKECENTER_KANTO_NURSE
+	const SAFFRONPOKECENTER_KANTO_BEAUTY
+	const SAFFRONPOKECENTER_GENTLEMAN
+	const SAFFRONPOKECENTER_OLD_LINK_RECEPTIONIST
 
 SaffronPokecenter_MapScripts:
 	def_scene_scripts
@@ -17,3 +21,7 @@ SaffronPokecenter_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  3,  1, SPRITE_KANTO_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  5,  5, SPRITE_KANTO_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  8,  3, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 11,  2, SPRITE_OLD_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

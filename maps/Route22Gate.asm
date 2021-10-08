@@ -1,4 +1,5 @@
 	object_const_def
+	const ROUTE22GATE_GUARD
 
 Route22Gate_MapScripts:
 	def_scene_scripts
@@ -19,3 +20,4 @@ Route22Gate_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  6,  2, SPRITE_GUARD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

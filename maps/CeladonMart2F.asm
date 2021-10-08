@@ -1,4 +1,8 @@
 	object_const_def
+	const CELADONMART2F_KANTO_CLERK1
+	const CELADONMART2F_KANTO_CLERK2
+	const CELADONMART2F_POKEFAN_M
+	const CELADONMART2F_GIRL
 
 CeladonMart2F_MapScripts:
 	def_scene_scripts
@@ -18,3 +22,7 @@ CeladonMart2F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  5,  3, SPRITE_KANTO_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  6,  3, SPRITE_KANTO_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 19,  5, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 14,  4, SPRITE_GIRL, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

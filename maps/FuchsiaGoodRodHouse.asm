@@ -1,4 +1,5 @@
 	object_const_def
+	const FUCHSIAGOODRODHOUSE_FISHING_GURU
 
 FuchsiaGoodRodHouse_MapScripts:
 	def_scene_scripts
@@ -18,3 +19,4 @@ FuchsiaGoodRodHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  5,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

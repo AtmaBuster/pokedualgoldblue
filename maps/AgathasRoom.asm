@@ -1,4 +1,5 @@
 	object_const_def
+	const AGATHASROOM_AGATHA
 
 AgathasRoom_MapScripts:
 	def_scene_scripts
@@ -19,3 +20,4 @@ AgathasRoom_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  5,  2, SPRITE_AGATHA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

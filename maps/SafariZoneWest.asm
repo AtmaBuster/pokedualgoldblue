@@ -1,4 +1,8 @@
 	object_const_def
+	const SAFARIZONEWEST_POKE_BALL1
+	const SAFARIZONEWEST_POKE_BALL2
+	const SAFARIZONEWEST_POKE_BALL3
+	const SAFARIZONEWEST_POKE_BALL4
 
 SafariZoneWest_MapScripts:
 	def_scene_scripts
@@ -23,3 +27,7 @@ SafariZoneWest_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  8, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  9,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 18, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 19,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

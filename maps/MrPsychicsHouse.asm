@@ -1,4 +1,5 @@
 	object_const_def
+	const MRPSYCHICSHOUSE_FISHING_GURU
 
 MrPsychicsHouse_MapScripts:
 	def_scene_scripts
@@ -17,3 +18,4 @@ MrPsychicsHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  5,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

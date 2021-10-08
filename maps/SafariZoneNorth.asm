@@ -1,4 +1,6 @@
 	object_const_def
+	const SAFARIZONENORTH_POKE_BALL1
+	const SAFARIZONENORTH_POKE_BALL2
 
 SafariZoneNorth_MapScripts:
 	def_scene_scripts
@@ -24,3 +26,5 @@ SafariZoneNorth_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 25,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 19,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

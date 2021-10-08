@@ -1,4 +1,7 @@
 	object_const_def
+	const CINNABARMART_KANTO_CLERK
+	const CINNABARMART_KANTO_ERIKA
+	const CINNABARMART_KANTO_SCIENTIST
 
 CinnabarMart_MapScripts:
 	def_scene_scripts
@@ -17,3 +20,6 @@ CinnabarMart_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  0,  5, SPRITE_KANTO_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  6,  2, SPRITE_KANTO_ERIKA, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  3,  4, SPRITE_KANTO_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

@@ -1,4 +1,8 @@
 	object_const_def
+	const SILPHCO8F_SILPH_WORKER
+	const SILPHCO8F_KANTO_ROCKET1
+	const SILPHCO8F_KANTO_SCIENTIST
+	const SILPHCO8F_KANTO_ROCKET2
 
 SilphCo8F_MapScripts:
 	def_scene_scripts
@@ -22,3 +26,7 @@ SilphCo8F_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  4,  2, SPRITE_SILPH_WORKER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 19,  2, SPRITE_KANTO_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
+	object_event 10,  2, SPRITE_KANTO_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
+	object_event 12, 15, SPRITE_KANTO_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1

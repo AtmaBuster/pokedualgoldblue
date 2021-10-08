@@ -1,4 +1,7 @@
 	object_const_def
+	const LAVENDERTOWN_LITTLE_GIRL
+	const LAVENDERTOWN_COOLTRAINER_M
+	const LAVENDERTOWN_KANTO_SUPER_NERD
 
 LavenderTown_MapScripts:
 	def_scene_scripts
@@ -26,3 +29,6 @@ LavenderTown_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event 15,  9, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_WANDER, 4, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  9, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  8,  7, SPRITE_KANTO_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

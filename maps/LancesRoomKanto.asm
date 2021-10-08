@@ -1,4 +1,5 @@
 	object_const_def
+	const LANCESROOMKANTO_LANCE
 
 LancesRoomKanto_MapScripts:
 	def_scene_scripts
@@ -18,3 +19,4 @@ LancesRoomKanto_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  6,  1, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, ObjectEvent, -1
