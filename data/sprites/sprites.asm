@@ -76,7 +76,7 @@ OverworldSprites:
 	overworld_sprite OfficerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite CalSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite SlowpokeSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
-	overworld_sprite CaptainSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite CaptainSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
 	overworld_sprite BigLaprasSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite GymGuideSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite SailorSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
@@ -102,4 +102,48 @@ OverworldSprites:
 	overworld_sprite FruitTreeSpriteGFX, 4, STILL_SPRITE, PAL_OW_TREE
 	overworld_sprite GoldTrophySpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
 	overworld_sprite SilverTrophySpriteGFX, 4, STILL_SPRITE, PAL_OW_SILVER
+	overworld_sprite KantoBlueSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite KantoYoungsterSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite LittleGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite KantoBirdSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite GamblerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite KantoSuperNerdSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite GirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite HikerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite KantoBeautySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite KantoSailorSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite CookSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite BikeShopClerkSpriteGFX, 12, STANDING_SPRITE, PAL_OW_GREEN
+	overworld_sprite GiovanniSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite KantoRocketSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite ChannelerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite WaiterSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite KantoErikaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite BrunetteGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite KantoScientistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite KantoRockerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite SafariZoneWorkerSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite KantoGymGuideSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite KantoGrampsSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite KantoClerkSpriteGFX, 12, STANDING_SPRITE, PAL_OW_GREEN
+	overworld_sprite KantoGrannySpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite KantoNurseSpriteGFX, 12, STANDING_SPRITE, PAL_OW_RED
+	overworld_sprite SilphPresidentSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite SilphWorkerSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite WardenSpriteGFX, 12, STANDING_SPRITE, PAL_OW_RED
+	overworld_sprite KantoKogaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite GuardSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite KantoMomSpriteGFX, 12, STANDING_SPRITE, PAL_OW_RED
+	overworld_sprite BaldingGuySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite LittleBoySpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite AgathaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite LoreleiSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite SeelSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite FossilSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite KantoBoulderSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite ClipboardSpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
+	overworld_sprite KantoSnorlaxSpriteGFX, 4, STILL_SPRITE, PAL_OW_BLUE
+	overworld_sprite OldAmberSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite GamblerAsleepSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
+	overworld_sprite RedBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	assert_table_length NUM_OVERWORLD_SPRITES
