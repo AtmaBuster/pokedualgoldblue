@@ -44,7 +44,6 @@
 	const TILESET_SAFARI               ; 2a
 	const TILESET_SHIP                 ; 2b
 	const TILESET_SHIP_PORT            ; 2c
-	const TILESET_TUNNEL               ; 2d
 NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size

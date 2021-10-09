@@ -139,9 +139,6 @@ INCLUDE "gfx/tilesets/ship_palette_map.asm"
 TilesetShipPortPalMap:
 INCLUDE "gfx/tilesets/ship_port_palette_map.asm"
 
-TilesetTunnelPalMap:
-INCLUDE "gfx/tilesets/tunnel_palette_map.asm"
-
 MapGroupPalettes:
 ; entries correspond to MAPGROUP_* constants
 rept NUM_MAP_GROUPS

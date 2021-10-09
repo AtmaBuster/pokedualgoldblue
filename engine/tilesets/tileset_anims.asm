@@ -187,7 +187,6 @@ TilesetRedsHouseAnim:
 TilesetSafariAnim:
 TilesetShipAnim:
 TilesetShipPortAnim:
-TilesetTunnelAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

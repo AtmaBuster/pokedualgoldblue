@@ -154,7 +154,7 @@ ENDM
 	map_const SS_ANNE_B1F_ROOMS,                           12,  8
 	map_const SS_ANNE_KITCHEN,                              7,  8
 	map_const SS_ANNE_CAPTAINS_ROOM,                        3,  4
-	map_const UNDERGROUND_PATH_NORTH_SOUTH,                 4, 23
+	map_const UNDERGROUND_PATH_NORTH_SOUTH,                 4, 21
 	map_const UNDERGROUND_PATH_WEST_EAST,                  25,  4
 	map_const ROCK_TUNNEL_1F,                              20, 18
 	map_const ROCK_TUNNEL_B1F,                             20, 18

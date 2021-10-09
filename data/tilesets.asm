@@ -58,5 +58,4 @@ Tilesets::
 	tileset TilesetSafari
 	tileset TilesetShip
 	tileset TilesetShipPort
-	tileset TilesetTunnel
 	assert_table_length NUM_TILESETS + 1

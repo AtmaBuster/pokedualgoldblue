@@ -530,15 +530,3 @@ INCBIN "data/tilesets/ship_port_metatiles.bin"
 floating_section
 TilesetShipPortColl::
 INCLUDE "data/tilesets/ship_port_collision.asm"
-
-floating_section
-TilesetTunnelGFX::
-INCBIN "gfx/tilesets/tunnel.2bpp.lz"
-
-floating_section
-TilesetTunnelMeta::
-INCBIN "data/tilesets/tunnel_metatiles.bin"
-
-floating_section
-TilesetTunnelColl::
-INCLUDE "data/tilesets/tunnel_collision.asm"
