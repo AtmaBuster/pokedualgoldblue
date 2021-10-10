@@ -404,8 +404,6 @@ ENDM
 	endgroup
 
 	newgroup FUCHSIA
-	map_const ROUTE_13,                                    30,  9
-	map_const ROUTE_14,                                    10, 27
 	map_const ROUTE_15,                                    30,  9
 	map_const ROUTE_18,                                    25,  9
 	map_const FUCHSIA_CITY,                                20, 18
@@ -418,6 +416,11 @@ ENDM
 	map_const WARDENS_HOUSE,                                5,  4
 	map_const ROUTE_15_GATE_1F,                             4,  5
 	map_const ROUTE_15_GATE_2F,                             4,  4
+	endgroup
+
+	newgroup SILENCE_BRIDGE
+	map_const ROUTE_13,                                    30,  9
+	map_const ROUTE_14,                                    10, 27
 	endgroup
 
 	newgroup LAVENDER
@@ -456,7 +459,6 @@ ENDM
 	newgroup CELADON
 	map_const ROUTE_7,                                     10,  9
 	map_const ROUTE_16,                                    20,  9
-	map_const ROUTE_17,                                    10, 72
 	map_const CELADON_CITY,                                25, 18
 	map_const CELADON_MART_1F,                             10,  4
 	map_const CELADON_MART_2F,                             10,  4
@@ -484,6 +486,10 @@ ENDM
 	map_const UNDERGROUND_PATH_ROUTE_7,                     4,  4
 	map_const ROUTE_18_GATE_1F,                             4,  5
 	map_const ROUTE_18_GATE_2F,                             4,  4
+	endgroup
+
+	newgroup CYCLING_ROAD
+	map_const ROUTE_17,                                    10, 72
 	endgroup
 
 	newgroup CIANWOOD

@@ -17,32 +17,34 @@ ENDM
 MapGroupPointers::
 ; pointers to the first map of each map group
 	table_width 2, MapGroupPointers
-	dw MapGroup_Olivine     ;  1
-	dw MapGroup_Mahogany    ;  2
-	dw MapGroup_Dungeons    ;  3
-	dw MapGroup_Ecruteak    ;  4
-	dw MapGroup_Blackthorn  ;  5
-	dw MapGroup_Cinnabar    ;  6
-	dw MapGroup_Cerulean    ;  7
-	dw MapGroup_Azalea      ;  8
-	dw MapGroup_LakeOfRage  ;  9
-	dw MapGroup_Violet      ; 10
-	dw MapGroup_Goldenrod   ; 11
-	dw MapGroup_Vermilion   ; 12
-	dw MapGroup_Pallet      ; 13
-	dw MapGroup_Pewter      ; 14
-	dw MapGroup_FastShip    ; 15
-	dw MapGroup_Indigo      ; 16
-	dw MapGroup_Fuchsia     ; 17
-	dw MapGroup_Lavender    ; 18
-	dw MapGroup_Silver      ; 19
-	dw MapGroup_CableClub   ; 20
-	dw MapGroup_Celadon     ; 21
-	dw MapGroup_Cianwood    ; 22
-	dw MapGroup_Viridian    ; 23
-	dw MapGroup_NewBark     ; 24
-	dw MapGroup_Saffron     ; 25
-	dw MapGroup_Cherrygrove ; 26
+	dw MapGroup_Olivine
+	dw MapGroup_Mahogany
+	dw MapGroup_Dungeons
+	dw MapGroup_Ecruteak
+	dw MapGroup_Blackthorn
+	dw MapGroup_Cinnabar
+	dw MapGroup_Cerulean
+	dw MapGroup_Azalea
+	dw MapGroup_LakeOfRage
+	dw MapGroup_Violet
+	dw MapGroup_Goldenrod
+	dw MapGroup_Vermilion
+	dw MapGroup_Pallet
+	dw MapGroup_Pewter
+	dw MapGroup_FastShip
+	dw MapGroup_Indigo
+	dw MapGroup_Fuchsia
+	dw MapGroup_SilenceBridge
+	dw MapGroup_Lavender
+	dw MapGroup_Silver
+	dw MapGroup_CableClub
+	dw MapGroup_Celadon
+	dw MapGroup_CyclingRoad
+	dw MapGroup_Cianwood
+	dw MapGroup_Viridian
+	dw MapGroup_NewBark
+	dw MapGroup_Saffron
+	dw MapGroup_Cherrygrove
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -431,8 +433,6 @@ MapGroup_Indigo:
 
 MapGroup_Fuchsia:
 	table_width MAP_LENGTH, MapGroup_Fuchsia
-	map Route13, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_13, MUSIC_RBY_ROUTES4, FALSE, PALETTE_AUTO, FISHGROUP_QWILFISH_NO_SWARM
-	map Route14, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_14, MUSIC_RBY_ROUTES4, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
 	map Route15, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_15, MUSIC_RBY_ROUTES4, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
 	map Route18, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_18, MUSIC_RBY_ROUTES3, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
 	map FuchsiaCity, TILESET_KANTO, TOWN, LANDMARK_FUCHSIA_CITY, MUSIC_RBY_CITIES2, FALSE, PALETTE_AUTO, FISHGROUP_GYARADOS
@@ -446,6 +446,12 @@ MapGroup_Fuchsia:
 	map Route15Gate1F, TILESET_MUSEUM, GATE, LANDMARK_ROUTE_15, MUSIC_RBY_CITIES1, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map Route15Gate2F, TILESET_MUSEUM, INDOOR, LANDMARK_SPECIAL, MUSIC_RBY_CITIES1, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	assert_table_length NUM_FUCHSIA_MAPS
+
+MapGroup_SilenceBridge:
+	table_width MAP_LENGTH, MapGroup_SilenceBridge
+	map Route13, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_13, MUSIC_RBY_ROUTES4, FALSE, PALETTE_AUTO, FISHGROUP_QWILFISH_NO_SWARM
+	map Route14, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_14, MUSIC_RBY_ROUTES4, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	assert_table_length NUM_SILENCE_BRIDGE_MAPS
 
 MapGroup_Lavender:
 	table_width MAP_LENGTH, MapGroup_Lavender
@@ -487,7 +493,6 @@ MapGroup_Celadon:
 	table_width MAP_LENGTH, MapGroup_Celadon
 	map Route7, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_7, MUSIC_RBY_ROUTES3, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
 	map Route16, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_16, MUSIC_RBY_ROUTES3, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
-	map Route17, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_17, MUSIC_RBY_ROUTES3, FALSE, PALETTE_AUTO, FISHGROUP_NONE
 	map CeladonCity, TILESET_KANTO, TOWN, LANDMARK_CELADON_CITY, MUSIC_RBY_CELADON, FALSE, PALETTE_AUTO, FISHGROUP_NONE
 	map CeladonMart1F, TILESET_LOBBY, INDOOR, LANDMARK_CELADON_CITY, MUSIC_RBY_POKECENTER, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map CeladonMart2F, TILESET_LOBBY, INDOOR, LANDMARK_CELADON_CITY, MUSIC_RBY_POKECENTER, FALSE, PALETTE_DAY, FISHGROUP_SHORE
@@ -516,6 +521,11 @@ MapGroup_Celadon:
 	map Route18Gate1F, TILESET_MUSEUM, GATE, LANDMARK_ROUTE_18, MUSIC_RBY_CITIES1, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map Route18Gate2F, TILESET_MUSEUM, INDOOR, LANDMARK_SPECIAL, MUSIC_RBY_CITIES1, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	assert_table_length NUM_CELADON_MAPS
+
+MapGroup_CyclingRoad:
+	table_width MAP_LENGTH, MapGroup_CyclingRoad
+	map Route17, TILESET_KANTO, ROUTE, LANDMARK_ROUTE_17, MUSIC_RBY_ROUTES3, FALSE, PALETTE_AUTO, FISHGROUP_NONE
+	assert_table_length NUM_CYCLING_ROAD_MAPS
 
 MapGroup_Cianwood:
 	table_width MAP_LENGTH, MapGroup_Cianwood
