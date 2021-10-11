@@ -100,7 +100,7 @@ AddIndoorSprites:
 	ret
 
 AddOutdoorSprites:
-	ld a, [wMapGroup]
+	ld a, [wSplitMapGroup]
 	dec a
 	ld c, a
 	ld b, 0
