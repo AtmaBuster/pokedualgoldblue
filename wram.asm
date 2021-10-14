@@ -2505,8 +2505,9 @@ wVermilionPortSceneID::                           db
 wFastShip1FSceneID::                              db
 wFastShipB1FSceneID::                             db
 wRedsHouse2FSceneID::                             db
+wBluesHouseSceneID::                              db
 
-	ds 205
+	ds 204
 
 wEventFlags:: flag_array NUM_EVENTS
 

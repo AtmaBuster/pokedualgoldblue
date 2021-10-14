@@ -197,10 +197,13 @@
 	const_next 200
 ; Kanto story events
 	const EVENT_RESTORED_POWER_TO_KANTO
+	const EVENT_ENTERED_BLUES_HOUSE
+	const EVENT_GOT_TOWN_MAP
+	const EVENT_GOT_POKEDEX
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
-; Unused: next 397 events
+; Unused: next 394 events
 
 	const_next 600
 ; Kurt Apricorn events
@@ -1230,8 +1233,11 @@
 ; Kanto people
 	const EVENT_INDIGO_PLATEAU_POKECENTER_RIVAL
 	const EVENT_TELEPORT_GUY
+	const EVENT_BLUES_HOUSE_DAISY_STANDING
+	const EVENT_BLUES_HOUSE_DAISY_WALKING
+	const EVENT_BLUES_HOUSE_TOWN_MAP
 ; Kanto itemballs
-; Unused: next 146 events
+; Unused: next 143 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 800
