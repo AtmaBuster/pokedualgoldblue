@@ -1240,7 +1240,9 @@
 	const EVENT_BLUES_HOUSE_TOWN_MAP
 	const EVENT_PALLET_TOWN_PROF_OAK
 ; Kanto itemballs
-; Unused: next 143 events
+	const EVENT_ROUTE_2_MOON_STONE
+	const EVENT_ROUTE_2_HP_UP
+; Unused: next 141 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 800
