@@ -1851,3 +1851,66 @@ _UsedSurfText::
 	text " used"
 	line "SURF!"
 	done
+
+_OaksAideHiText::
+	text "Hi! Remember me?"
+	line "I'm PROF.OAK's"
+	cont "AIDE!"
+
+	para "If you caught @"
+	text_decimal wScriptVar, 1, 3
+	text_start
+	line "kinds of #MON,"
+	cont "I'm supposed to"
+	cont "give you an"
+	cont "@"
+	text_ram wStringBuffer3
+	text "!"
+
+	para "So, <PLAYER>! Have"
+	line "you caught at"
+	cont "least @"
+	text_decimal wScriptVar, 1, 3
+	text " kinds of"
+	cont "#MON?"
+	done
+
+_OaksAideUhOhText::
+	text "Let's see..."
+	line "Uh-oh! You have"
+	cont "caught only @"
+	text_decimal wStringBuffer2, 1, 3
+	text_start
+	cont "kinds of #MON!"
+
+	para "You need @"
+	text_decimal wStringBuffer2+1, 1, 3
+	text " kinds"
+	line "if you want the"
+	cont "@"
+	text_ram wStringBuffer3
+	text "."
+	done
+
+_OaksAideComeBackText::
+	text "Oh. I see."
+
+	para "When you get @"
+	text_decimal wScriptVar, 1, 3
+	text_start
+	line "kinds, come back"
+	cont "for @"
+	text_ram wStringBuffer3
+	text "."
+	done
+
+_OaksAideHereYouGoText::
+	text "Great! You have"
+	line "caught @"
+	text_decimal wStringBuffer2, 1, 3
+	text " kinds "
+	cont "of #MON!"
+	cont "Congratulations!"
+
+	para "Here you go!"
+	prompt

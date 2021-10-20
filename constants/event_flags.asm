@@ -202,10 +202,11 @@
 	const EVENT_GOT_POKEDEX
 	const EVENT_GOT_POKEBALLS_FROM_OAK
 	const EVENT_GOT_POTION_SAMPLE
+	const EVENT_GOT_HM05_KANTO
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
-; Unused: next 392 events
+; Unused: next 391 events
 
 	const_next 600
 ; Kurt Apricorn events
