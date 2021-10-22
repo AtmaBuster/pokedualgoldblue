@@ -58,4 +58,5 @@ MapScenes::
 	scene_var REDS_HOUSE_2F,                               wRedsHouse2FSceneID
 	scene_var BLUES_HOUSE,                                 wBluesHouseSceneID
 	scene_var PALLET_TOWN,                                 wPalletTownSceneID
+	scene_var VIRIDIAN_CITY,                               wViridianCitySceneID
 	db -1 ; end

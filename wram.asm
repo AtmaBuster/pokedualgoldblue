@@ -2507,8 +2507,9 @@ wFastShipB1FSceneID::                             db
 wRedsHouse2FSceneID::                             db
 wBluesHouseSceneID::                              db
 wPalletTownSceneID::                              db
+wViridianCitySceneID::                            db
 
-	ds 203
+	ds 202
 
 wEventFlags:: flag_array NUM_EVENTS
 

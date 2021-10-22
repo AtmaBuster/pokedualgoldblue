@@ -547,6 +547,7 @@ InitializeEventsScript:
 
 	setevent EVENT_BLUES_HOUSE_DAISY_WALKING
 	setevent EVENT_PALLET_TOWN_PROF_OAK
+	setevent EVENT_VIRIDIAN_CITY_OLD_MAN_AWAKE
 
 	setevent EVENT_INITIALIZED_EVENTS
 	endcallback
