@@ -1875,15 +1875,17 @@ _OaksAideHiText::
 	cont "#MON?"
 	done
 
-_OaksAideUhOhText::
+_OaksAideUhOhText1::
 	text "Let's see..."
 	line "Uh-oh! You have"
 	cont "caught only @"
 	text_decimal wStringBuffer2, 1, 3
 	text_start
 	cont "kinds of #MON!"
+	prompt
 
-	para "You need @"
+_OaksAideUhOhText2::
+	text "You need @"
 	text_decimal wStringBuffer2+1, 1, 3
 	text " kinds"
 	line "if you want the"

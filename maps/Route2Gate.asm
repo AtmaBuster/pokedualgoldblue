@@ -18,7 +18,7 @@ Route2Gate_AideScript:
 	yesorno
 	iffalse .ChoseNo
 	setval 10
-	callasm .CountDex
+	readvar VAR_DEXCAUGHT
 	ifless 10, .NotEnoughMons
 	writetext .HereYouGo
 	verbosegiveitem HM_FLASH
@@ -32,7 +32,9 @@ Route2Gate_AideScript:
 	end
 
 .NotEnoughMons
-	writetext .UhOhText
+	writetext .UhOhText1
+	setval 10
+	writetext .UhOhText2
 	waitbutton
 	closetext
 	end
@@ -48,8 +50,12 @@ Route2Gate_AideScript:
 	text_far _OaksAideHiText
 	text_end
 
-.UhOhText
-	text_far _OaksAideUhOhText
+.UhOhText1
+	text_far _OaksAideUhOhText1
+	text_end
+
+.UhOhText2
+	text_far _OaksAideUhOhText2
 	text_end
 
 .ComeBackText
@@ -59,17 +65,6 @@ Route2Gate_AideScript:
 .HereYouGo
 	text_far _OaksAideHereYouGoText
 	text_end
-
-.CountDex
-	ld a, [wScriptVar]
-	ld [wStringBuffer2 + 1], a
-	ld hl, wPokedexCaught
-	ld b, wEndPokedexCaught - wPokedexCaught
-	call CountSetBits
-	ld a, [wNumSetBits]
-	ld [wStringBuffer2], a
-	ld [wScriptVar], a
-	ret
 
 .AfterText
 	text "The HM FLASH"
