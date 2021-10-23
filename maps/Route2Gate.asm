@@ -14,13 +14,12 @@ Route2Gate_AideScript:
 	iftrue .GotItem
 	setval 10
 	getitemname STRING_BUFFER_3, HM_FLASH
-	writetext .HiText
+	farwritetext _OaksAideHiText
 	yesorno
 	iffalse .ChoseNo
-	setval 10
 	readvar VAR_DEXCAUGHT
 	ifless 10, .NotEnoughMons
-	writetext .HereYouGo
+	farwritetext _OaksAideHereYouGoText
 	verbosegiveitem HM_FLASH
 	iffalse .BagFull
 	setevent EVENT_GOT_HM05_KANTO
@@ -32,39 +31,19 @@ Route2Gate_AideScript:
 	end
 
 .NotEnoughMons
-	writetext .UhOhText1
+	farwritetext _OaksAideUhOhText1
 	setval 10
-	writetext .UhOhText2
+	farwritetext _OaksAideUhOhText2
 	waitbutton
 	closetext
 	end
 
 .ChoseNo
 	setval 10
-	writetext .ComeBackText
+	farwritetext _OaksAideComeBackText
 	waitbutton
 	closetext
 	end
-
-.HiText
-	text_far _OaksAideHiText
-	text_end
-
-.UhOhText1
-	text_far _OaksAideUhOhText1
-	text_end
-
-.UhOhText2
-	text_far _OaksAideUhOhText2
-	text_end
-
-.ComeBackText
-	text_far _OaksAideComeBackText
-	text_end
-
-.HereYouGo
-	text_far _OaksAideHereYouGoText
-	text_end
 
 .AfterText
 	text "The HM FLASH"
