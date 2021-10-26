@@ -206,11 +206,12 @@
 	const EVENT_VIRIDIAN_GYM_OPEN
 	const EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
 	const EVENT_GOT_TM42
+	const EVENT_OAK_GOT_PARCEL
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
 	const EVENT_VIRIDIAN_CITY_HIDDEN_POTION
-; Unused: next 388 events
+; Unused: next 387 events
 
 	const_next 600
 ; Kurt Apricorn events
