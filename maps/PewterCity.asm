@@ -247,6 +247,9 @@ PewterCity_YoureATrainerScript:
 	done
 
 PewterCity_RightStuffScript:
+	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterFollowMove
+	stopfollow
+	special RestartMapMusic
 	scall .ShowText
 	applymovement PEWTERCITY_KANTO_YOUNGSTER, .MoveOffScreen
 	disappear PEWTERCITY_KANTO_YOUNGSTER
@@ -276,9 +279,6 @@ PewterCity_YoungsterTalkScript:
 	playmusic MUSIC_SHOW_ME_AROUND
 	follow PEWTERCITY_KANTO_YOUNGSTER, PLAYER
 	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterMove_SetupT
-	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterFollowMove
-	stopfollow
-	special RestartMapMusic
 	sjump PewterCity_RightStuffScript
 
 PewterCity_YoungsterScript1:
@@ -289,9 +289,6 @@ PewterCity_YoungsterScript1:
 	stopfollow
 	follow PEWTERCITY_KANTO_YOUNGSTER, PLAYER
 	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterMove_Setup1_2
-	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterFollowMove
-	stopfollow
-	special RestartMapMusic
 	sjump PewterCity_RightStuffScript
 
 PewterCity_YoungsterScript2:
@@ -300,9 +297,6 @@ PewterCity_YoungsterScript2:
 	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterMove_Setup2_1
 	follow PEWTERCITY_KANTO_YOUNGSTER, PLAYER
 	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterMove_Setup2_2
-	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterFollowMove
-	stopfollow
-	special RestartMapMusic
 	sjump PewterCity_RightStuffScript
 
 PewterCity_YoungsterScript3:
@@ -311,9 +305,6 @@ PewterCity_YoungsterScript3:
 	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterMove_Setup3_1
 	applymovement PLAYER, PewterCity_YoungsterMove_Setup3_2
 	follow PEWTERCITY_KANTO_YOUNGSTER, PLAYER
-	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterFollowMove
-	stopfollow
-	special RestartMapMusic
 	sjump PewterCity_RightStuffScript
 
 PewterCity_YoungsterScript4:
@@ -322,9 +313,6 @@ PewterCity_YoungsterScript4:
 	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterMove_Setup4_1
 	applymovement PLAYER, PewterCity_YoungsterMove_Setup4_2
 	follow PEWTERCITY_KANTO_YOUNGSTER, PLAYER
-	applymovement PEWTERCITY_KANTO_YOUNGSTER, PewterCity_YoungsterFollowMove
-	stopfollow
-	special RestartMapMusic
 	sjump PewterCity_RightStuffScript
 
 PewterCity_YoungsterMove_SetupT:

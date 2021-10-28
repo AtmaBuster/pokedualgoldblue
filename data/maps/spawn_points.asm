@@ -9,7 +9,7 @@ SpawnPoints:
 	table_width 4, SpawnPoints
 
 	spawn PLAYERS_HOUSE_2F,            3,  3
-	spawn PALLET_TOWN,                 9,  6
+	spawn PEWTER_CITY,                23, 18
 
 	spawn PALLET_TOWN,                 5,  6
 	spawn VIRIDIAN_CITY,              23, 26
