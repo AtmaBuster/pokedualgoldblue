@@ -2509,8 +2509,9 @@ wBluesHouseSceneID::                              db
 wPalletTownSceneID::                              db
 wViridianCitySceneID::                            db
 wViridianMartSceneID::                            db
+wPewterCitySceneID::                              db
 
-	ds 201
+	ds 200
 
 wEventFlags:: flag_array NUM_EVENTS
 

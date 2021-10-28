@@ -207,11 +207,12 @@
 	const EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
 	const EVENT_GOT_TM42
 	const EVENT_OAK_GOT_PARCEL
+	const EVENT_BOUGHT_MUSEUM_TICKET
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
 	const EVENT_VIRIDIAN_CITY_HIDDEN_POTION
-; Unused: next 387 events
+; Unused: next 385 events
 
 	const_next 600
 ; Kurt Apricorn events
@@ -1247,10 +1248,12 @@
 	const EVENT_PALLET_TOWN_PROF_OAK
 	const EVENT_VIRIDIAN_CITY_OLD_MAN_ASLEEP
 	const EVENT_VIRIDIAN_CITY_OLD_MAN_AWAKE
+	const EVENT_PEWTER_CITY_YOUNGSTER
+	const EVENT_PEWTER_CITY_MUSEUM_GUY
 ; Kanto itemballs
 	const EVENT_ROUTE_2_MOON_STONE
 	const EVENT_ROUTE_2_HP_UP
-; Unused: next 138 events
+; Unused: next 136 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 800

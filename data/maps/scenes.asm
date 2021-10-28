@@ -60,4 +60,5 @@ MapScenes::
 	scene_var PALLET_TOWN,                                 wPalletTownSceneID
 	scene_var VIRIDIAN_CITY,                               wViridianCitySceneID
 	scene_var VIRIDIAN_MART,                               wViridianMartSceneID
+	scene_var PEWTER_CITY,                                 wPewterCitySceneID
 	db -1 ; end
