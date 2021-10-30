@@ -2510,8 +2510,9 @@ wPalletTownSceneID::                              db
 wViridianCitySceneID::                            db
 wViridianMartSceneID::                            db
 wPewterCitySceneID::                              db
+wMuseum1FSceneID::                                db
 
-	ds 200
+	ds 199
 
 wEventFlags:: flag_array NUM_EVENTS
 

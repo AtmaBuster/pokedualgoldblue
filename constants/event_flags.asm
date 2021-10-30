@@ -208,11 +208,12 @@
 	const EVENT_GOT_TM42
 	const EVENT_OAK_GOT_PARCEL
 	const EVENT_BOUGHT_MUSEUM_TICKET
+	const EVENT_GOT_OLD_AMBER
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
 	const EVENT_VIRIDIAN_CITY_HIDDEN_POTION
-; Unused: next 385 events
+; Unused: next 384 events
 
 	const_next 600
 ; Kurt Apricorn events
@@ -1250,10 +1251,11 @@
 	const EVENT_VIRIDIAN_CITY_OLD_MAN_AWAKE
 	const EVENT_PEWTER_CITY_YOUNGSTER
 	const EVENT_PEWTER_CITY_MUSEUM_GUY
+	const EVENT_MUSEUM1F_OLD_AMBER
 ; Kanto itemballs
 	const EVENT_ROUTE_2_MOON_STONE
 	const EVENT_ROUTE_2_HP_UP
-; Unused: next 136 events
+; Unused: next 135 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 800

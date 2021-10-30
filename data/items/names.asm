@@ -114,7 +114,7 @@ ItemNames::
 	li "EVERSTONE"
 	li "SPELL TAG"
 	li "RAGECANDYBAR"
-	li "TERU-SAMA"
+	li "OLD AMBER"
 	li "TERU-SAMA"
 	li "MIRACLE SEED"
 	li "THICK CLUB"

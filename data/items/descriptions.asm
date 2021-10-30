@@ -115,7 +115,7 @@ ItemDescriptions:
 	dw EverStoneDesc
 	dw SpellTagDesc
 	dw RageCandyBarDesc
-	dw TeruSama9Desc
+	dw OldAmberDesc
 	dw TeruSama10Desc
 	dw MiracleSeedDesc
 	dw ThickClubDesc
@@ -704,8 +704,9 @@ RageCandyBarDesc:
 	db   "Restores #MON"
 	next "HP by 20.@"
 
-TeruSama9Desc:
-	db   "?@"
+OldAmberDesc:
+	db   "Stone with ancient"
+	next "#MON genes.@"
 
 TeruSama10Desc:
 	db   "?@"
