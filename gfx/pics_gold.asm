@@ -1256,3 +1256,93 @@ floating_section
 WillPic:             INCBIN "gfx/trainers/will.2bpp.lz"
 floating_section
 YoungsterPic:        INCBIN "gfx/trainers/youngster.2bpp.lz"
+floating_section
+YoungsterGen1Pic: INCBIN "gfx/trainers/gen1/youngster.2bpp.lz"
+floating_section
+BugCatcherGen1Pic: INCBIN "gfx/trainers/gen1/bugcatcher.2bpp.lz"
+floating_section
+LassGen1Pic: INCBIN "gfx/trainers/gen1/lass.2bpp.lz"
+floating_section
+SailorGen1Pic: INCBIN "gfx/trainers/gen1/sailor.2bpp.lz"
+floating_section
+JrTrainerMGen1Pic: INCBIN "gfx/trainers/gen1/jrtrainerm.2bpp.lz"
+floating_section
+JrTrainerFGen1Pic: INCBIN "gfx/trainers/gen1/jrtrainerf.2bpp.lz"
+floating_section
+PokemaniacGen1Pic: INCBIN "gfx/trainers/gen1/pokemaniac.2bpp.lz"
+floating_section
+SuperNerdGen1Pic: INCBIN "gfx/trainers/gen1/supernerd.2bpp.lz"
+floating_section
+HikerGen1Pic: INCBIN "gfx/trainers/gen1/hiker.2bpp.lz"
+floating_section
+BikerGen1Pic: INCBIN "gfx/trainers/gen1/biker.2bpp.lz"
+floating_section
+BurglarGen1Pic: INCBIN "gfx/trainers/gen1/burglar.2bpp.lz"
+floating_section
+EngineerGen1Pic: INCBIN "gfx/trainers/gen1/engineer.2bpp.lz"
+floating_section
+FisherGen1Pic: INCBIN "gfx/trainers/gen1/fisher.2bpp.lz"
+floating_section
+SwimmerGen1Pic: INCBIN "gfx/trainers/gen1/swimmer.2bpp.lz"
+floating_section
+CueBallGen1Pic: INCBIN "gfx/trainers/gen1/cueball.2bpp.lz"
+floating_section
+GamblerGen1Pic: INCBIN "gfx/trainers/gen1/gambler.2bpp.lz"
+floating_section
+BeautyGen1Pic: INCBIN "gfx/trainers/gen1/beauty.2bpp.lz"
+floating_section
+PsychicGen1Pic: INCBIN "gfx/trainers/gen1/psychic.2bpp.lz"
+floating_section
+RockerGen1Pic: INCBIN "gfx/trainers/gen1/rocker.2bpp.lz"
+floating_section
+JugglerGen1Pic: INCBIN "gfx/trainers/gen1/juggler.2bpp.lz"
+floating_section
+TamerGen1Pic: INCBIN "gfx/trainers/gen1/tamer.2bpp.lz"
+floating_section
+BirdKeeperGen1Pic: INCBIN "gfx/trainers/gen1/birdkeeper.2bpp.lz"
+floating_section
+BlackbeltGen1Pic: INCBIN "gfx/trainers/gen1/blackbelt.2bpp.lz"
+floating_section
+Rival1Gen1Pic: INCBIN "gfx/trainers/gen1/rival1.2bpp.lz"
+floating_section
+ProfOakGen1Pic: INCBIN "gfx/trainers/gen1/profoak.2bpp.lz"
+floating_section
+ScientistGen1Pic: INCBIN "gfx/trainers/gen1/scientist.2bpp.lz"
+floating_section
+GiovanniGen1Pic: INCBIN "gfx/trainers/gen1/giovanni.2bpp.lz"
+floating_section
+RocketGen1Pic: INCBIN "gfx/trainers/gen1/rocket.2bpp.lz"
+floating_section
+CooltrainerMGen1Pic: INCBIN "gfx/trainers/gen1/cooltrainerm.2bpp.lz"
+floating_section
+CooltrainerFGen1Pic: INCBIN "gfx/trainers/gen1/cooltrainerf.2bpp.lz"
+floating_section
+BrunoGen1Pic: INCBIN "gfx/trainers/gen1/bruno.2bpp.lz"
+floating_section
+BrockGen1Pic: INCBIN "gfx/trainers/gen1/brock.2bpp.lz"
+floating_section
+MistyGen1Pic: INCBIN "gfx/trainers/gen1/misty.2bpp.lz"
+floating_section
+LtSurgeGen1Pic: INCBIN "gfx/trainers/gen1/ltsurge.2bpp.lz"
+floating_section
+ErikaGen1Pic: INCBIN "gfx/trainers/gen1/erika.2bpp.lz"
+floating_section
+KogaGen1Pic: INCBIN "gfx/trainers/gen1/koga.2bpp.lz"
+floating_section
+BlaineGen1Pic: INCBIN "gfx/trainers/gen1/blaine.2bpp.lz"
+floating_section
+SabrinaGen1Pic: INCBIN "gfx/trainers/gen1/sabrina.2bpp.lz"
+floating_section
+GentlemanGen1Pic: INCBIN "gfx/trainers/gen1/gentleman.2bpp.lz"
+floating_section
+Rival2Gen1Pic: INCBIN "gfx/trainers/gen1/rival2.2bpp.lz"
+floating_section
+Rival3Gen1Pic: INCBIN "gfx/trainers/gen1/rival3.2bpp.lz"
+floating_section
+LoreleiGen1Pic: INCBIN "gfx/trainers/gen1/lorelei.2bpp.lz"
+floating_section
+ChannelerGen1Pic: INCBIN "gfx/trainers/gen1/channeler.2bpp.lz"
+floating_section
+AgathaGen1Pic: INCBIN "gfx/trainers/gen1/agatha.2bpp.lz"
+floating_section
+LanceGen1Pic: INCBIN "gfx/trainers/gen1/lance.2bpp.lz"

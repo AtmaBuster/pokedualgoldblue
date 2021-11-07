@@ -69,4 +69,51 @@ TrainerPicPointers::
 	dba BluePic
 	dba OfficerPic
 	dba GruntfPic
+
+	dba YoungsterGen1Pic
+	dba BugCatcherGen1Pic
+	dba LassGen1Pic
+	dba SailorGen1Pic
+	dba JrTrainerMGen1Pic
+	dba JrTrainerFGen1Pic
+	dba PokemaniacGen1Pic
+	dba SuperNerdGen1Pic
+	dba HikerGen1Pic
+	dba BikerGen1Pic
+	dba BurglarGen1Pic
+	dba EngineerGen1Pic
+	dba FisherGen1Pic
+	dba SwimmerGen1Pic
+	dba CueBallGen1Pic
+	dba GamblerGen1Pic
+	dba BeautyGen1Pic
+	dba PsychicGen1Pic
+	dba RockerGen1Pic
+	dba JugglerGen1Pic
+	dba TamerGen1Pic
+	dba BirdKeeperGen1Pic
+	dba BlackbeltGen1Pic
+	dba Rival1Gen1Pic
+	dba ProfOakGen1Pic
+	dba ScientistGen1Pic
+	dba GiovanniGen1Pic
+	dba RocketGen1Pic
+	dba CooltrainerMGen1Pic
+	dba CooltrainerFGen1Pic
+	dba BrunoGen1Pic
+	dba BrockGen1Pic
+	dba MistyGen1Pic
+	dba LtSurgeGen1Pic
+	dba ErikaGen1Pic
+	dba KogaGen1Pic
+	dba BlaineGen1Pic
+	dba SabrinaGen1Pic
+	dba GentlemanGen1Pic
+	dba Rival2Gen1Pic
+	dba Rival3Gen1Pic
+	dba LoreleiGen1Pic
+	dba ChannelerGen1Pic
+	dba AgathaGen1Pic
+	dba LanceGen1Pic
+
 	assert_table_length NUM_TRAINER_CLASSES

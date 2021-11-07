@@ -398,4 +398,275 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; vv placeholder vv
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Youngster / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 0 ; base reward
+	dw AI_BASIC | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 	assert_table_length NUM_TRAINER_CLASSES

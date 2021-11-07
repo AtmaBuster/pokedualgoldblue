@@ -2160,7 +2160,8 @@ wCurBaseDataEnd::
 
 wCurDamage:: dw
 
-	ds 2
+wOtherTrainerType:: db
+wTrainerGroupBank:: db
 
 wMornEncounterRate::  db
 wDayEncounterRate::   db

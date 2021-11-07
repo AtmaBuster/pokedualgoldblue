@@ -1,6 +1,3 @@
-INCLUDE "data/trainers/party_pointers.asm"
-
-Trainers:
 ; Trainer data structure:
 ; - db "NAME@", TRAINERTYPE_* constant
 ; - 1 to 6 Pokémon:
@@ -9,6 +6,8 @@ Trainers:
 ;    * for TRAINERTYPE_ITEM:       db level, species, item
 ;    * for TRAINERTYPE_ITEM_MOVES: db level, species, item, 4 moves
 ; - db -1 ; end
+
+SECTION "Enemy Trainer Parties 1", ROMX
 
 FalknerGroup:
 	; FALKNER (1)
@@ -3204,4 +3203,2435 @@ GruntFGroup:
 	db "GRUNT@", TRAINERTYPE_MOVES
 	db 18, EKANS,      WRAP, LEER, POISON_STING, BITE
 	db 18, GLOOM,      ABSORB, SWEET_SCENT, STUN_SPORE, SLEEP_POWDER
+	db -1 ; end
+
+SECTION "Enemy Trainer Parties 2", ROMX
+
+YoungsterGen1_Group:
+	; YOUNGSTER (1)
+	db "JIMMY@", TRAINERTYPE_NORMAL
+	db 11, RATTATA
+	db 11, EKANS
+	db -1 ; end
+
+	; YOUNGSTER (2)
+	db "WARREN@", TRAINERTYPE_NORMAL
+	db 14, SPEAROW
+	db -1 ; end
+
+	; YOUNGSTER (3)
+	db "JOSH@", TRAINERTYPE_NORMAL
+	db 10, RATTATA
+	db 10, RATTATA
+	db 10, ZUBAT
+	db -1 ; end
+
+	; YOUNGSTER (4)
+	db "TIMMY@", TRAINERTYPE_NORMAL
+	db 14, RATTATA
+	db 14, EKANS
+	db 14, ZUBAT
+	db -1 ; end
+
+	; YOUNGSTER (5)
+	db "CALVIN@", TRAINERTYPE_NORMAL
+	db 15, RATTATA
+	db 15, SPEAROW
+	db -1 ; end
+
+	; YOUNGSTER (6)
+	db "DAN@", TRAINERTYPE_NORMAL
+	db 17, SLOWPOKE
+	db -1 ; end
+
+	; YOUNGSTER (7)
+	db "CHAD@", TRAINERTYPE_NORMAL
+	db 14, EKANS
+	db 14, SANDSHREW
+	db -1 ; end
+
+	; YOUNGSTER (8)
+	db "TYLER@", TRAINERTYPE_NORMAL
+	db 21, NIDORAN_M
+	db -1 ; end
+
+	; YOUNGSTER (9)
+	db "EDDIE@", TRAINERTYPE_NORMAL
+	db 21, EKANS
+	db -1 ; end
+
+	; YOUNGSTER (10)
+	db "DILLON@", TRAINERTYPE_NORMAL
+	db 19, SANDSHREW
+	db 19, ZUBAT
+	db -1 ; end
+
+	; YOUNGSTER (11)
+	db "YASU@", TRAINERTYPE_NORMAL
+	db 17, RATTATA
+	db 17, RATTATA
+	db 17, RATICATE
+	db -1 ; end
+
+	; YOUNGSTER (12)
+	db "DAVE@", TRAINERTYPE_NORMAL
+	db 18, NIDORAN_M
+	db 18, NIDORINO
+	db -1 ; end
+
+BugCatcherGen1_Group:
+	; BUG_CATCHER (1)
+	db "RICK@", TRAINERTYPE_NORMAL
+	db  6, WEEDLE
+	db  6, CATERPIE
+	db -1 ; end
+
+	; BUG_CATCHER (2)
+	db "DOUG@", TRAINERTYPE_NORMAL
+	db  7, WEEDLE
+	db  7, KAKUNA
+	db  7, WEEDLE
+	db -1 ; end
+
+	; BUG_CATCHER (3)
+	db "SAMMY@", TRAINERTYPE_NORMAL
+	db  9, WEEDLE
+	db -1 ; end
+
+	; BUG_CATCHER (4)
+	db "RICK@", TRAINERTYPE_NORMAL
+	db 10, CATERPIE
+	db 10, WEEDLE
+	db 10, CATERPIE
+	db -1 ; end
+
+	; BUG_CATCHER (5)
+	db "GREG@", TRAINERTYPE_NORMAL
+	db  9, WEEDLE
+	db  9, KAKUNA
+	db  9, CATERPIE
+	db  9, METAPOD
+	db -1 ; end
+
+	; BUG_CATCHER (6)
+	db "JAMES@", TRAINERTYPE_NORMAL
+	db 11, CATERPIE
+	db 11, METAPOD
+	db -1 ; end
+
+	; BUG_CATCHER (7)
+	db "KENT@", TRAINERTYPE_NORMAL
+	db 11, WEEDLE
+	db 11, KAKUNA
+	db -1 ; end
+
+	; BUG_CATCHER (8)
+	db "ROBBY@", TRAINERTYPE_NORMAL
+	db 10, CATERPIE
+	db 10, METAPOD
+	db 10, CATERPIE
+	db -1 ; end
+
+	; BUG_CATCHER (9)
+	db "CALE@", TRAINERTYPE_NORMAL
+	db 14, CATERPIE
+	db 14, WEEDLE
+	db -1 ; end
+
+	; BUG_CATCHER (10)
+	db "KEIGO@", TRAINERTYPE_NORMAL
+	db 16, WEEDLE
+	db 16, CATERPIE
+	db 16, WEEDLE
+	db -1 ; end
+
+	; BUG_CATCHER (11)
+	db "ELIJAH@", TRAINERTYPE_NORMAL
+	db 20, BUTTERFREE
+	db -1 ; end
+
+	; BUG_CATCHER (12)
+	db "BRENT@", TRAINERTYPE_NORMAL
+	db 19, BEEDRILL
+	db 19, BEEDRILL
+	db -1 ; end
+
+	; BUG_CATCHER (13)
+	db "SID@", TRAINERTYPE_NORMAL
+	db 20, CATERPIE
+	db 20, WEEDLE
+	db 20, VENONAT
+	db -1 ; end
+
+LassGen1_Group:
+	; LASS (1)
+	db "JANICE@", TRAINERTYPE_NORMAL
+	db  9, PIDGEY
+	db  9, PIDGEY
+	db -1 ; end
+
+	; LASS (2)
+	db "SALLY@", TRAINERTYPE_NORMAL
+	db 10, RATTATA
+	db 10, NIDORAN_M
+	db -1 ; end
+
+	; LASS (3)
+	db "ROBIN@", TRAINERTYPE_NORMAL
+	db 14, JIGGLYPUFF
+	db -1 ; end
+
+	; LASS (4)
+	db "CRISSY@", TRAINERTYPE_NORMAL
+	db 31, PARAS
+	db 31, PARAS
+	db 31, PARASECT
+	db -1 ; end
+
+	; LASS (5)
+	db "MIRIAM@", TRAINERTYPE_NORMAL
+	db 11, ODDISH
+	db 11, BELLSPROUT
+	db -1 ; end
+
+	; LASS (6)
+	db "IRIS@", TRAINERTYPE_NORMAL
+	db 14, CLEFAIRY
+	db -1 ; end
+
+	; LASS (7)
+	db "ALI@", TRAINERTYPE_NORMAL
+	db 16, PIDGEY
+	db 16, NIDORAN_F
+	db -1 ; end
+
+	; LASS (8)
+	db "RELI@", TRAINERTYPE_NORMAL
+	db 14, PIDGEY
+	db 14, NIDORAN_F
+	db -1 ; end
+
+	; LASS (9)
+	db "KELSEY@", TRAINERTYPE_NORMAL
+	db 15, NIDORAN_M
+	db 15, NIDORAN_F
+	db -1 ; end
+
+	; LASS (10)
+	db "HALEY@", TRAINERTYPE_NORMAL
+	db 13, ODDISH
+	db 13, PIDGEY
+	db 13, ODDISH
+	db -1 ; end
+
+	; LASS (11)
+	db "ANN@", TRAINERTYPE_NORMAL
+	db 18, PIDGEY
+	db 18, NIDORAN_F
+	db -1 ; end
+
+	; LASS (12)
+	db "DAWN@", TRAINERTYPE_NORMAL
+	db 18, RATTATA
+	db 18, PIKACHU
+	db -1 ; end
+
+	; LASS (13)
+	db "PAIGE@", TRAINERTYPE_NORMAL
+	db 23, NIDORAN_F
+	db 23, NIDORINA
+	db -1 ; end
+
+	; LASS (14)
+	db "ANDREA@", TRAINERTYPE_NORMAL
+	db 24, MEOWTH
+	db 24, MEOWTH
+	db 24, MEOWTH
+	db -1 ; end
+
+	; LASS (15)
+	db "MEGAN@", TRAINERTYPE_NORMAL
+	db 19, PIDGEY
+	db 19, RATTATA
+	db 19, NIDORAN_M
+	db 19, MEOWTH
+	db 19, PIKACHU
+	db -1 ; end
+
+	; LASS (16)
+	db "JULIA@", TRAINERTYPE_NORMAL
+	db 22, CLEFAIRY
+	db 22, CLEFAIRY
+	db -1 ; end
+
+	; LASS (17)
+	db "KAY@", TRAINERTYPE_NORMAL
+	db 23, BELLSPROUT
+	db 23, WEEPINBELL
+	db -1 ; end
+
+	; LASS (18)
+	db "LISA@", TRAINERTYPE_NORMAL
+	db 23, ODDISH
+	db 23, GLOOM
+	db -1 ; end
+
+SailorGen1_Group:
+	; SAILOR (1)
+	db "EDMOND@", TRAINERTYPE_NORMAL
+	db 18, MACHOP
+	db 18, SHELLDER
+	db -1 ; end
+
+	; SAILOR (2)
+	db "TREVOR@", TRAINERTYPE_NORMAL
+	db 17, MACHOP
+	db 17, TENTACOOL
+	db -1 ; end
+
+	; SAILOR (3)
+	db "LEONARD@", TRAINERTYPE_NORMAL
+	db 21, SHELLDER
+	db -1 ; end
+
+	; SAILOR (4)
+	db "DUNCAN@", TRAINERTYPE_NORMAL
+	db 17, HORSEA
+	db 17, SHELLDER
+	db 17, TENTACOOL
+	db -1 ; end
+
+	; SAILOR (5)
+	db "HUEY@", TRAINERTYPE_NORMAL
+	db 18, TENTACOOL
+	db 18, STARYU
+	db -1 ; end
+
+	; SAILOR (6)
+	db "DYLAN@", TRAINERTYPE_NORMAL
+	db 17, HORSEA
+	db 17, HORSEA
+	db 17, HORSEA
+	db -1 ; end
+
+	; SAILOR (7)
+	db "PHILLIP@", TRAINERTYPE_NORMAL
+	db 20, MACHOP
+	db -1 ; end
+
+	; SAILOR (8)
+	db "DWAYNE@", TRAINERTYPE_NORMAL
+	db 21, PIKACHU
+	db 21, PIKACHU
+	db -1 ; end
+
+JrTrainerMGen1_Group:
+	; JR_TRAINER_M (1)
+	db "JERRY@", TRAINERTYPE_NORMAL
+	db 11, DIGLETT
+	db 11, SANDSHREW
+	db -1 ; end
+
+	; JR_TRAINER_M (2)
+	db "SHANE@", TRAINERTYPE_NORMAL
+	db 14, RATTATA
+	db 14, EKANS
+	db -1 ; end
+
+	; JR_TRAINER_M (3)
+	db "ETHAN@", TRAINERTYPE_NORMAL
+	db 18, MANKEY
+	db -1 ; end
+
+	; JR_TRAINER_M (4)
+	db "RICKY@", TRAINERTYPE_NORMAL
+	db 20, SQUIRTLE
+	db -1 ; end
+
+	; JR_TRAINER_M (5)
+	db "JEFF@", TRAINERTYPE_NORMAL
+	db 16, SPEAROW
+	db 16, RATICATE
+	db -1 ; end
+
+	; JR_TRAINER_M (6)
+	db "FLINT@", TRAINERTYPE_NORMAL
+	db 14, RATTATA
+	db 14, EKANS
+	db -1 ; end
+
+	; JR_TRAINER_M (7)
+	db "CHRIS@", TRAINERTYPE_NORMAL
+	db 21, GROWLITHE
+	db 21, CHARMANDER
+	db -1 ; end
+
+	; JR_TRAINER_M (8)
+	db "DREW@", TRAINERTYPE_NORMAL
+	db 19, RATTATA
+	db 19, DIGLETT
+	db 19, EKANS
+	db 19, SANDSHREW
+	db -1 ; end
+
+	; JR_TRAINER_M (9)
+	db "JUSTIN@", TRAINERTYPE_NORMAL
+	db 29, NIDORAN_M
+	db 29, NIDORINO
+	db -1 ; end
+
+JrTrainerFGen1_Group:
+	; JR_TRAINER_F (1)
+	db "DIANA@", TRAINERTYPE_NORMAL
+	db 19, GOLDEEN
+	db -1 ; end
+
+	; JR_TRAINER_F (2)
+	db "NANCY@", TRAINERTYPE_NORMAL
+	db 16, RATTATA
+	db 16, PIKACHU
+	db -1 ; end
+
+	; JR_TRAINER_F (3)
+	db "ISABEL@", TRAINERTYPE_NORMAL
+	db 16, PIDGEY
+	db 16, PIDGEY
+	db 16, PIDGEY
+	db -1 ; end
+
+	; JR_TRAINER_F (4)
+	db "ALICIA@", TRAINERTYPE_NORMAL
+	db 18, ODDISH
+	db 18, BELLSPROUT
+	db 18, ODDISH
+	db 18, BELLSPROUT
+	db -1 ; end
+
+	; JR_TRAINER_F (5)
+	db "CAITY@", TRAINERTYPE_NORMAL
+	db 23, MEOWTH
+	db -1 ; end
+
+	; JR_TRAINER_F (6)
+	db "HEIDI@", TRAINERTYPE_NORMAL
+	db 20, PIKACHU
+	db 20, CLEFAIRY
+	db -1 ; end
+
+	; JR_TRAINER_F (7)
+	db "CAROL@", TRAINERTYPE_NORMAL
+	db 21, PIDGEY
+	db 21, PIDGEOTTO
+	db -1 ; end
+
+	; JR_TRAINER_F (8)
+	db "SOFIA@", TRAINERTYPE_NORMAL
+	db 21, JIGGLYPUFF
+	db 21, PIDGEY
+	db 21, MEOWTH
+	db -1 ; end
+
+	; JR_TRAINER_F (9)
+	db "MARTHA@", TRAINERTYPE_NORMAL
+	db 22, ODDISH
+	db 22, BULBASAUR
+	db -1 ; end
+
+	; JR_TRAINER_F (10)
+	db "TANYA@", TRAINERTYPE_NORMAL
+	db 24, BULBASAUR
+	db 24, IVYSAUR
+	db -1 ; end
+
+	; JR_TRAINER_F (11)
+	db "SUSIE@", TRAINERTYPE_NORMAL
+	db 24, PIDGEY
+	db 24, MEOWTH
+	db 24, RATTATA
+	db 24, PIKACHU
+	db 24, MEOWTH
+	db -1 ; end
+
+	; JR_TRAINER_F (12)
+	db "GINGER@", TRAINERTYPE_NORMAL
+	db 30, POLIWAG
+	db 30, POLIWAG
+	db -1 ; end
+
+	; JR_TRAINER_F (13)
+	db "GWEN@", TRAINERTYPE_NORMAL
+	db 27, PIDGEY
+	db 27, MEOWTH
+	db 27, PIDGEY
+	db 27, PIDGEOTTO
+	db -1 ; end
+
+	; JR_TRAINER_F (14)
+	db "ALMA@", TRAINERTYPE_NORMAL
+	db 28, GOLDEEN
+	db 28, POLIWAG
+	db 28, HORSEA
+	db -1 ; end
+
+	; JR_TRAINER_F (15)
+	db "MISSY@", TRAINERTYPE_NORMAL
+	db 31, GOLDEEN
+	db 31, SEAKING
+	db -1 ; end
+
+	; JR_TRAINER_F (16)
+	db "LEAH@", TRAINERTYPE_NORMAL
+	db 22, BELLSPROUT
+	db 22, CLEFAIRY
+	db -1 ; end
+
+	; JR_TRAINER_F (17)
+	db "DANA@", TRAINERTYPE_NORMAL
+	db 20, MEOWTH
+	db 20, ODDISH
+	db 20, PIDGEY
+	db -1 ; end
+
+	; JR_TRAINER_F (18)
+	db "ARIANA@", TRAINERTYPE_NORMAL
+	db 19, PIDGEY
+	db 19, RATTATA
+	db 19, RATTATA
+	db 19, BELLSPROUT
+	db -1 ; end
+
+	; JR_TRAINER_F (19)
+	db "KINDRA@", TRAINERTYPE_NORMAL
+	db 28, GLOOM
+	db 28, ODDISH
+	db 28, ODDISH
+	db -1 ; end
+
+	; JR_TRAINER_F (20)
+	db "BECKY@", TRAINERTYPE_NORMAL
+	db 29, PIKACHU
+	db 29, RAICHU
+	db -1 ; end
+
+	; JR_TRAINER_F (21)
+	db "CELIA@", TRAINERTYPE_NORMAL
+	db 33, CLEFAIRY
+	db -1 ; end
+
+	; JR_TRAINER_F (22)
+	db "YASMIN@", TRAINERTYPE_NORMAL
+	db 29, BELLSPROUT
+	db 29, ODDISH
+	db 29, TANGELA
+	db -1 ; end
+
+	; JR_TRAINER_F (23)
+	db "IRENE@", TRAINERTYPE_NORMAL
+	db 30, TENTACOOL
+	db 30, HORSEA
+	db 30, SEEL
+	db -1 ; end
+
+PokemaniacGen1_Group:
+	; POKEMANIAC (1)
+	db "MARK@", TRAINERTYPE_NORMAL
+	db 30, RHYHORN
+	db 30, LICKITUNG
+	db -1 ; end
+
+	; POKEMANIAC (2)
+	db "HERMAN@", TRAINERTYPE_NORMAL
+	db 20, CUBONE
+	db 20, SLOWPOKE
+	db -1 ; end
+
+	; POKEMANIAC (3)
+	db "COOPER@", TRAINERTYPE_NORMAL
+	db 20, SLOWPOKE
+	db 20, SLOWPOKE
+	db 20, SLOWPOKE
+	db -1 ; end
+
+	; POKEMANIAC (4)
+	db "STEVE@", TRAINERTYPE_NORMAL
+	db 22, CHARMANDER
+	db 22, CUBONE
+	db -1 ; end
+
+	; POKEMANIAC (5)
+	db "WINSTON@", TRAINERTYPE_NORMAL
+	db 25, SLOWPOKE
+	db -1 ; end
+
+	; POKEMANIAC (6)
+	db "DAWSON@", TRAINERTYPE_NORMAL
+	db 40, CHARMELEON
+	db 40, LAPRAS
+	db 40, LICKITUNG
+	db -1 ; end
+
+	; POKEMANIAC (7)
+	db "ASHTON@", TRAINERTYPE_NORMAL
+	db 23, CUBONE
+	db 23, SLOWPOKE
+	db -1 ; end
+
+SuperNerdGen1_Group:
+	; SUPER_NERD (1)
+	db "JOVAN@", TRAINERTYPE_NORMAL
+	db 11, MAGNEMITE
+	db 11, VOLTORB
+	db -1 ; end
+
+	; SUPER_NERD (2)
+	db "MIGUEL@", TRAINERTYPE_NORMAL
+	db 12, GRIMER
+	db 12, VOLTORB
+	db 12, KOFFING
+	db -1 ; end
+
+	; SUPER_NERD (3)
+	db "AIDAN@", TRAINERTYPE_NORMAL
+	db 20, VOLTORB
+	db 20, KOFFING
+	db 20, VOLTORB
+	db 20, MAGNEMITE
+	db -1 ; end
+
+	; SUPER_NERD (4)
+	db "GLENN@", TRAINERTYPE_NORMAL
+	db 22, GRIMER
+	db 22, MUK
+	db 22, GRIMER
+	db -1 ; end
+
+	; SUPER_NERD (5)
+	db "LESLIE@", TRAINERTYPE_NORMAL
+	db 26, KOFFING
+	db -1 ; end
+
+	; SUPER_NERD (6)
+	db "ERIK@", TRAINERTYPE_NORMAL
+	db 36, VULPIX
+	db 36, VULPIX
+	db 36, NINETALES
+	db -1 ; end
+
+	; SUPER_NERD (7)
+	db "AVERY@", TRAINERTYPE_NORMAL
+	db 34, PONYTA
+	db 34, CHARMANDER
+	db 34, VULPIX
+	db 34, GROWLITHE
+	db -1 ; end
+
+	; SUPER_NERD (8)
+	db "DEREK@", TRAINERTYPE_NORMAL
+	db 41, RAPIDASH
+	db -1 ; end
+
+	; SUPER_NERD (9)
+	db "ZAC@", TRAINERTYPE_NORMAL
+	db 37, GROWLITHE
+	db 37, VULPIX
+	db -1 ; end
+
+HikerGen1_Group:
+	; HIKER (1)
+	db "MARCOS@", TRAINERTYPE_NORMAL
+	db 10, GEODUDE
+	db 10, GEODUDE
+	db 10, ONIX
+	db -1 ; end
+
+	; HIKER (2)
+	db "FRANKLIN@", TRAINERTYPE_NORMAL
+	db 15, MACHOP
+	db 15, GEODUDE
+	db -1 ; end
+
+	; HIKER (3)
+	db "NOB@", TRAINERTYPE_NORMAL
+	db 13, GEODUDE
+	db 13, GEODUDE
+	db 13, MACHOP
+	db 13, GEODUDE
+	db -1 ; end
+
+	; HIKER (4)
+	db "WAYNE@", TRAINERTYPE_NORMAL
+	db 17, ONIX
+	db -1 ; end
+
+	; HIKER (5)
+	db "ALAN@", TRAINERTYPE_NORMAL
+	db 21, GEODUDE
+	db 21, ONIX
+	db -1 ; end
+
+	; HIKER (6)
+	db "SIDNEY@", TRAINERTYPE_NORMAL
+	db 20, GEODUDE
+	db 20, MACHOP
+	db 20, GEODUDE
+	db -1 ; end
+
+	; HIKER (7)
+	db "CLARK@", TRAINERTYPE_NORMAL
+	db 21, GEODUDE
+	db 21, ONIX
+	db -1 ; end
+
+	; HIKER (8)
+	db "TRENT@", TRAINERTYPE_NORMAL
+	db 19, ONIX
+	db 19, GRAVELER
+	db -1 ; end
+
+	; HIKER (9)
+	db "DUDLEY@", TRAINERTYPE_NORMAL
+	db 21, GEODUDE
+	db 21, GEODUDE
+	db 21, GRAVELER
+	db -1 ; end
+
+	; HIKER (10)
+	db "ALLEN@", TRAINERTYPE_NORMAL
+	db 25, GEODUDE
+	db -1 ; end
+
+	; HIKER (11)
+	db "JEREMY@", TRAINERTYPE_NORMAL
+	db 20, MACHOP
+	db 20, ONIX
+	db -1 ; end
+
+	; HIKER (12)
+	db "LENNY@", TRAINERTYPE_NORMAL
+	db 19, GEODUDE
+	db 19, MACHOP
+	db 19, GEODUDE
+	db 19, GEODUDE
+	db -1 ; end
+
+	; HIKER (13)
+	db "OLIVER@", TRAINERTYPE_NORMAL
+	db 20, ONIX
+	db 20, ONIX
+	db 20, GEODUDE
+	db -1 ; end
+
+	; HIKER (14)
+	db "LUCAS@", TRAINERTYPE_NORMAL
+	db 21, GEODUDE
+	db 21, GRAVELER
+	db -1 ; end
+
+	; HIKER (15)
+	db "ERIC@", TRAINERTYPE_NORMAL
+	db 20, MACHOP
+	db 20, ONIX
+	db -1 ; end
+
+BikerGen1_Group:
+	; BIKER (1)
+	db "JARED@", TRAINERTYPE_NORMAL
+	db 28, KOFFING
+	db 28, KOFFING
+	db 28, KOFFING
+	db -1 ; end
+
+	; BIKER (2)
+	db "MALIK@", TRAINERTYPE_NORMAL
+	db 29, KOFFING
+	db 29, GRIMER
+	db -1 ; end
+
+	; BIKER (3)
+	db "ERNEST@", TRAINERTYPE_NORMAL
+	db 25, KOFFING
+	db 25, KOFFING
+	db 25, WEEZING
+	db 25, KOFFING
+	db 25, GRIMER
+	db -1 ; end
+
+	; BIKER (4)
+	db "ALEX@", TRAINERTYPE_NORMAL
+	db 28, KOFFING
+	db 28, GRIMER
+	db 28, WEEZING
+	db -1 ; end
+
+	; BIKER (5)
+	db "LAO@", TRAINERTYPE_NORMAL
+	db 29, GRIMER
+	db 29, KOFFING
+	db -1 ; end
+
+	; BIKER (6)
+	db "HIDEO@", TRAINERTYPE_NORMAL
+	db 33, WEEZING
+	db -1 ; end
+
+	; BIKER (7)
+	db "RUBEN@", TRAINERTYPE_NORMAL
+	db 26, GRIMER
+	db 26, GRIMER
+	db 26, GRIMER
+	db 26, GRIMER
+	db -1 ; end
+
+	; BIKER (8)
+	db "VIRGIL@", TRAINERTYPE_NORMAL
+	db 28, WEEZING
+	db 28, KOFFING
+	db 28, WEEZING
+	db -1 ; end
+
+	; BIKER (9)
+	db "BILLY@", TRAINERTYPE_NORMAL
+	db 33, MUK
+	db -1 ; end
+
+	; BIKER (10)
+	db "NIKOLAS@", TRAINERTYPE_NORMAL
+	db 29, VOLTORB
+	db 29, VOLTORB
+	db -1 ; end
+
+	; BIKER (11)
+	db "JAXON@", TRAINERTYPE_NORMAL
+	db 29, WEEZING
+	db 29, MUK
+	db -1 ; end
+
+	; BIKER (12)
+	db "WILLIAM@", TRAINERTYPE_NORMAL
+	db 25, KOFFING
+	db 25, WEEZING
+	db 25, KOFFING
+	db 25, KOFFING
+	db 25, WEEZING
+	db -1 ; end
+
+	; BIKER (13)
+	db "LUKAS@", TRAINERTYPE_NORMAL
+	db 26, KOFFING
+	db 26, KOFFING
+	db 26, GRIMER
+	db 26, KOFFING
+	db -1 ; end
+
+	; BIKER (14)
+	db "ISAAC@", TRAINERTYPE_NORMAL
+	db 28, GRIMER
+	db 28, GRIMER
+	db 28, KOFFING
+	db -1 ; end
+
+	; BIKER (15)
+	db "GERALD@", TRAINERTYPE_NORMAL
+	db 29, KOFFING
+	db 29, MUK
+	db -1 ; end
+
+BurglarGen1_Group:
+	; BURGLAR (1)
+	db "QUINN@", TRAINERTYPE_NORMAL
+	db 36, GROWLITHE
+	db 36, VULPIX
+	db 36, NINETALES
+	db -1 ; end
+
+	; BURGLAR (2)
+	db "RAMON@", TRAINERTYPE_NORMAL
+	db 41, PONYTA
+	db -1 ; end
+
+	; BURGLAR (3)
+	db "DUSTY@", TRAINERTYPE_NORMAL
+	db 37, VULPIX
+	db 37, GROWLITHE
+	db -1 ; end
+
+	; BURGLAR (4)
+	db "ARNIE@", TRAINERTYPE_NORMAL
+	db 34, CHARMANDER
+	db 34, CHARMELEON
+	db -1 ; end
+
+	; BURGLAR (5)
+	db "SIMON@", TRAINERTYPE_NORMAL
+	db 38, NINETALES
+	db -1 ; end
+
+	; BURGLAR (6)
+	db "LEWIS@", TRAINERTYPE_NORMAL
+	db 34, GROWLITHE
+	db 34, PONYTA
+	db -1 ; end
+
+EngineerGen1_Group:
+	; ENGINEER (1)
+	db "BRAXTON@", TRAINERTYPE_NORMAL
+	db 21, MAGNEMITE
+	db -1 ; end
+
+	; ENGINEER (2)
+	db "BERNIE@", TRAINERTYPE_NORMAL
+	db 18, MAGNEMITE
+	db 18, MAGNEMITE
+	db 18, MAGNETON
+	db -1 ; end
+
+FisherGen1_Group:
+	; FISHER (1)
+	db "DALE@", TRAINERTYPE_NORMAL
+	db 17, GOLDEEN
+	db 17, TENTACOOL
+	db 17, GOLDEEN
+	db -1 ; end
+
+	; FISHER (2)
+	db "ELLIOT@", TRAINERTYPE_NORMAL
+	db 17, TENTACOOL
+	db 17, STARYU
+	db 17, SHELLDER
+	db -1 ; end
+
+	; FISHER (3)
+	db "KYLE@", TRAINERTYPE_NORMAL
+	db 22, GOLDEEN
+	db 22, POLIWAG
+	db 22, GOLDEEN
+	db -1 ; end
+
+	; FISHER (4)
+	db "MARTIN@", TRAINERTYPE_NORMAL
+	db 24, TENTACOOL
+	db 24, GOLDEEN
+	db -1 ; end
+
+	; FISHER (5)
+	db "STEPHEN@", TRAINERTYPE_NORMAL
+	db 27, GOLDEEN
+	db -1 ; end
+
+	; FISHER (6)
+	db "BARNEY@", TRAINERTYPE_NORMAL
+	db 21, POLIWAG
+	db 21, SHELLDER
+	db 21, GOLDEEN
+	db 21, HORSEA
+	db -1 ; end
+
+	; FISHER (7)
+	db "RONALD@", TRAINERTYPE_NORMAL
+	db 28, SEAKING
+	db 28, GOLDEEN
+	db 28, SEAKING
+	db 28, SEAKING
+	db -1 ; end
+
+	; FISHER (8)
+	db "CLAUDE@", TRAINERTYPE_NORMAL
+	db 31, SHELLDER
+	db 31, CLOYSTER
+	db -1 ; end
+
+	; FISHER (9)
+	db "WADE@", TRAINERTYPE_NORMAL
+	db 27, MAGIKARP
+	db 27, MAGIKARP
+	db 27, MAGIKARP
+	db 27, MAGIKARP
+	db 27, MAGIKARP
+	db 27, MAGIKARP
+	db -1 ; end
+
+	; FISHER (10)
+	db "NOLAN@", TRAINERTYPE_NORMAL
+	db 33, SEAKING
+	db 33, GOLDEEN
+	db -1 ; end
+
+	; FISHER (11)
+	db "ANDREW@", TRAINERTYPE_NORMAL
+	db 24, MAGIKARP
+	db 24, MAGIKARP
+	db -1 ; end
+
+SwimmerGen1_Group:
+	; SWIMMER (1)
+	db "LUIS@", TRAINERTYPE_NORMAL
+	db 16, HORSEA
+	db 16, SHELLDER
+	db -1 ; end
+
+	; SWIMMER (2)
+	db "RICHARD@", TRAINERTYPE_NORMAL
+	db 30, TENTACOOL
+	db 30, SHELLDER
+	db -1 ; end
+
+	; SWIMMER (3)
+	db "REECE@", TRAINERTYPE_NORMAL
+	db 29, GOLDEEN
+	db 29, HORSEA
+	db 29, STARYU
+	db -1 ; end
+
+	; SWIMMER (4)
+	db "MATTHEW@", TRAINERTYPE_NORMAL
+	db 30, POLIWAG
+	db 30, POLIWHIRL
+	db -1 ; end
+
+	; SWIMMER (5)
+	db "DOUGLAS@", TRAINERTYPE_NORMAL
+	db 27, HORSEA
+	db 27, TENTACOOL
+	db 27, TENTACOOL
+	db 27, GOLDEEN
+	db -1 ; end
+
+	; SWIMMER (6)
+	db "DAVID@", TRAINERTYPE_NORMAL
+	db 29, GOLDEEN
+	db 29, SHELLDER
+	db 29, SEAKING
+	db -1 ; end
+
+	; SWIMMER (7)
+	db "TONY@", TRAINERTYPE_NORMAL
+	db 30, HORSEA
+	db 30, HORSEA
+	db -1 ; end
+
+	; SWIMMER (8)
+	db "AXLE@", TRAINERTYPE_NORMAL
+	db 27, TENTACOOL
+	db 27, TENTACOOL
+	db 27, STARYU
+	db 27, HORSEA
+	db 27, TENTACRUEL
+	db -1 ; end
+
+	; SWIMMER (9)
+	db "TUCKER@", TRAINERTYPE_NORMAL
+	db 31, SHELLDER
+	db 31, CLOYSTER
+	db -1 ; end
+
+	; SWIMMER (10)
+	db "DEAN@", TRAINERTYPE_NORMAL
+	db 35, STARYU
+	db -1 ; end
+
+	; SWIMMER (11)
+	db "DARRIN@", TRAINERTYPE_NORMAL
+	db 28, HORSEA
+	db 28, HORSEA
+	db 28, SEADRA
+	db 28, HORSEA
+	db -1 ; end
+
+	; SWIMMER (12)
+	db "SPENCER@", TRAINERTYPE_NORMAL
+	db 33, SEADRA
+	db 33, TENTACRUEL
+	db -1 ; end
+
+	; SWIMMER (13)
+	db "JACK@", TRAINERTYPE_NORMAL
+	db 37, STARMIE
+	db -1 ; end
+
+	; SWIMMER (14)
+	db "JEROME@", TRAINERTYPE_NORMAL
+	db 33, STARYU
+	db 33, WARTORTLE
+	db -1 ; end
+
+	; SWIMMER (15)
+	db "ROLAND@", TRAINERTYPE_NORMAL
+	db 32, POLIWHIRL
+	db 32, TENTACOOL
+	db 32, SEADRA
+	db -1 ; end
+
+CueBallGen1_Group:
+	; CUE_BALL (1)
+	db "KOJI@", TRAINERTYPE_NORMAL
+	db 28, MACHOP
+	db 28, MANKEY
+	db 28, MACHOP
+	db -1 ; end
+
+	; CUE_BALL (2)
+	db "LUKE@", TRAINERTYPE_NORMAL
+	db 29, MANKEY
+	db 29, MACHOP
+	db -1 ; end
+
+	; CUE_BALL (3)
+	db "CAMRON@", TRAINERTYPE_NORMAL
+	db 33, MACHOP
+	db -1 ; end
+
+	; CUE_BALL (4)
+	db "RAUL@", TRAINERTYPE_NORMAL
+	db 29, MANKEY
+	db 29, PRIMEAPE
+	db -1 ; end
+
+	; CUE_BALL (5)
+	db "ISAIAH@", TRAINERTYPE_NORMAL
+	db 29, MACHOP
+	db 29, MACHOKE
+	db -1 ; end
+
+	; CUE_BALL (6)
+	db "ZEKE@", TRAINERTYPE_NORMAL
+	db 33, MACHOKE
+	db -1 ; end
+
+	; CUE_BALL (7)
+	db "JAMAL@", TRAINERTYPE_NORMAL
+	db 26, MANKEY
+	db 26, MANKEY
+	db 26, MACHAMP
+	db 26, MACHOP
+	db -1 ; end
+
+	; CUE_BALL (8)
+	db "COREY@", TRAINERTYPE_NORMAL
+	db 29, PRIMEAPE
+	db 29, MACHOKE
+	db -1 ; end
+
+	; CUE_BALL (9)
+	db "IAN@", TRAINERTYPE_NORMAL
+	db 31, TENTACOOL
+	db 31, TENTACOOL
+	db 31, TENTACRUEL
+	db -1 ; end
+
+GamblerGen1_Group:
+	; GAMBLER (1)
+	db "HUGO@", TRAINERTYPE_NORMAL
+	db 18, POLIWAG
+	db 18, HORSEA
+	db -1 ; end
+
+	; GAMBLER (2)
+	db "JASPER@", TRAINERTYPE_NORMAL
+	db 18, BELLSPROUT
+	db 18, ODDISH
+	db -1 ; end
+
+	; GAMBLER (3)
+	db "DIRK@", TRAINERTYPE_NORMAL
+	db 18, VOLTORB
+	db 18, MAGNEMITE
+	db -1 ; end
+
+	; GAMBLER (4)
+	db "DARIAN@", TRAINERTYPE_NORMAL
+	db 18, GROWLITHE
+	db 18, VULPIX
+	db -1 ; end
+
+	; GAMBLER (5)
+	db "STAN@", TRAINERTYPE_NORMAL
+	db 22, POLIWAG
+	db 22, POLIWAG
+	db 22, POLIWHIRL
+	db -1 ; end
+
+	; GAMBLER (6)
+	db "RICH@", TRAINERTYPE_NORMAL
+	db 24, GROWLITHE
+	db 24, VULPIX
+	db -1 ; end
+
+BeautyGen1_Group:
+	; BEAUTY (1)
+	db "BRIDGET@", TRAINERTYPE_NORMAL
+	db 21, ODDISH
+	db 21, BELLSPROUT
+	db 21, ODDISH
+	db 21, BELLSPROUT
+	db -1 ; end
+
+	; BEAUTY (2)
+	db "TAMIA@", TRAINERTYPE_NORMAL
+	db 24, BELLSPROUT
+	db 24, BELLSPROUT
+	db -1 ; end
+
+	; BEAUTY (3)
+	db "LORI@", TRAINERTYPE_NORMAL
+	db 26, EXEGGCUTE
+	db -1 ; end
+
+	; BEAUTY (4)
+	db "LOLA@", TRAINERTYPE_NORMAL
+	db 27, RATTATA
+	db 27, PIKACHU
+	db 27, RATTATA
+	db -1 ; end
+
+	; BEAUTY (5)
+	db "SHEILA@", TRAINERTYPE_NORMAL
+	db 29, CLEFAIRY
+	db 29, MEOWTH
+	db -1 ; end
+
+	; BEAUTY (6)
+	db "TIFFANY@", TRAINERTYPE_NORMAL
+	db 35, SEAKING
+	db -1 ; end
+
+	; BEAUTY (7)
+	db "NORA@", TRAINERTYPE_NORMAL
+	db 30, SHELLDER
+	db 30, SHELLDER
+	db 30, CLOYSTER
+	db -1 ; end
+
+	; BEAUTY (8)
+	db "MELISSA@", TRAINERTYPE_NORMAL
+	db 31, POLIWAG
+	db 31, SEAKING
+	db -1 ; end
+
+	; BEAUTY (9)
+	db "GRACE@", TRAINERTYPE_NORMAL
+	db 29, PIDGEOTTO
+	db 29, WIGGLYTUFF
+	db -1 ; end
+
+	; BEAUTY (10)
+	db "OLIVIA@", TRAINERTYPE_NORMAL
+	db 29, BULBASAUR
+	db 29, IVYSAUR
+	db -1 ; end
+
+	; BEAUTY (11)
+	db "ANYA@", TRAINERTYPE_NORMAL
+	db 27, POLIWAG
+	db 27, GOLDEEN
+	db 27, SEAKING
+	db 27, GOLDEEN
+	db 27, POLIWAG
+	db -1 ; end
+
+	; BEAUTY (12)
+	db "ALICE@", TRAINERTYPE_NORMAL
+	db 30, GOLDEEN
+	db 30, SEAKING
+	db -1 ; end
+
+	; BEAUTY (13)
+	db "CONNIE@", TRAINERTYPE_NORMAL
+	db 29, STARYU
+	db 29, STARYU
+	db 29, STARYU
+	db -1 ; end
+
+	; BEAUTY (14)
+	db "SHIRLEY@", TRAINERTYPE_NORMAL
+	db 30, SEADRA
+	db 30, HORSEA
+	db 30, SEADRA
+	db -1 ; end
+
+PsychicGen1_Group:
+	; PSYCHIC_TR (1)
+	db "JOHAN@", TRAINERTYPE_NORMAL
+	db 31, KADABRA
+	db 31, SLOWPOKE
+	db 31, MR__MIME
+	db 31, KADABRA
+	db -1 ; end
+
+	; PSYCHIC_TR (2)
+	db "TYRON@", TRAINERTYPE_NORMAL
+	db 34, MR__MIME
+	db 34, KADABRA
+	db -1 ; end
+
+	; PSYCHIC_TR (3)
+	db "CAMERON@", TRAINERTYPE_NORMAL
+	db 33, SLOWPOKE
+	db 33, SLOWPOKE
+	db 33, SLOWBRO
+	db -1 ; end
+
+	; PSYCHIC_TR (4)
+	db "PRESTON@", TRAINERTYPE_NORMAL
+	db 38, SLOWBRO
+	db -1 ; end
+
+RockerGen1_Group:
+	; ROCKER (1)
+	db "VINCENT@", TRAINERTYPE_NORMAL
+	db 20, VOLTORB
+	db 20, MAGNEMITE
+	db 20, VOLTORB
+	db -1 ; end
+
+	; ROCKER (2)
+	db "LUCA@", TRAINERTYPE_NORMAL
+	db 29, VOLTORB
+	db 29, ELECTRODE
+	db -1 ; end
+
+JugglerGen1_Group:
+	; JUGGLER (1)
+	db "DALTON@", TRAINERTYPE_NORMAL
+	db 29, KADABRA
+	db 29, MR__MIME
+	db -1 ; end
+
+	; JUGGLER (2)
+	db "NELSON@", TRAINERTYPE_NORMAL
+	db 41, DROWZEE
+	db 41, HYPNO
+	db 41, KADABRA
+	db 41, KADABRA
+	db -1 ; end
+
+	; JUGGLER (3)
+	db "KIRK@", TRAINERTYPE_NORMAL
+	db 31, DROWZEE
+	db 31, DROWZEE
+	db 31, KADABRA
+	db 31, DROWZEE
+	db -1 ; end
+
+	; JUGGLER (4)
+	db "SHAWN@", TRAINERTYPE_NORMAL
+	db 34, DROWZEE
+	db 34, HYPNO
+	db -1 ; end
+
+	; JUGGLER (5)
+	db "GREGORY@", TRAINERTYPE_NORMAL
+	db 48, MR__MIME
+	db -1 ; end
+
+	; JUGGLER (6)
+	db "KAYDEN@", TRAINERTYPE_NORMAL
+	db 38, HYPNO
+	db -1 ; end
+
+	; JUGGLER (7)
+	db "NATE@", TRAINERTYPE_NORMAL
+	db 34, DROWZEE
+	db 34, KADABRA
+	db -1 ; end
+
+TamerGen1_Group:
+	; TAMER (1)
+	db "PHIL@", TRAINERTYPE_NORMAL
+	db 34, SANDSLASH
+	db 34, ARBOK
+	db -1 ; end
+
+	; TAMER (2)
+	db "EDGAR@", TRAINERTYPE_NORMAL
+	db 33, ARBOK
+	db 33, SANDSLASH
+	db 33, ARBOK
+	db -1 ; end
+
+	; TAMER (3)
+	db "JASON@", TRAINERTYPE_NORMAL
+	db 43, RHYHORN
+	db -1 ; end
+
+	; TAMER (4)
+	db "COLE@", TRAINERTYPE_NORMAL
+	db 39, ARBOK
+	db 39, TAUROS
+	db -1 ; end
+
+	; TAMER (5)
+	db "VINCENT@", TRAINERTYPE_NORMAL
+	db 44, PERSIAN
+	db 44, GOLDUCK
+	db -1 ; end
+
+BirdKeeperGen1_Group:
+	; BIRD_KEEPER (1)
+	db "BRET@", TRAINERTYPE_NORMAL
+	db 29, PIDGEY
+	db 29, PIDGEOTTO
+	db -1 ; end
+
+	; BIRD_KEEPER (2)
+	db "PERRY@", TRAINERTYPE_NORMAL
+	db 25, SPEAROW
+	db 25, PIDGEY
+	db 25, PIDGEY
+	db 25, SPEAROW
+	db 25, SPEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (3)
+	db "ROBERT@", TRAINERTYPE_NORMAL
+	db 26, PIDGEY
+	db 26, PIDGEOTTO
+	db 26, SPEAROW
+	db 26, FEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (4)
+	db "DONALD@", TRAINERTYPE_NORMAL
+	db 33, FARFETCH_D
+	db -1 ; end
+
+	; BIRD_KEEPER (5)
+	db "BENNY@", TRAINERTYPE_NORMAL
+	db 29, SPEAROW
+	db 29, FEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (6)
+	db "CHIP@", TRAINERTYPE_NORMAL
+	db 26, PIDGEOTTO
+	db 26, FARFETCH_D
+	db 26, DODUO
+	db 26, PIDGEY
+	db -1 ; end
+
+	; BIRD_KEEPER (7)
+	db "EDWIN@", TRAINERTYPE_NORMAL
+	db 28, DODRIO
+	db 28, DODUO
+	db 28, DODUO
+	db -1 ; end
+
+	; BIRD_KEEPER (8)
+	db "WILTON@", TRAINERTYPE_NORMAL
+	db 29, SPEAROW
+	db 29, FEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (9)
+	db "BORIS@", TRAINERTYPE_NORMAL
+	db 34, DODRIO
+	db -1 ; end
+
+	; BIRD_KEEPER (10)
+	db "JACOB@", TRAINERTYPE_NORMAL
+	db 26, SPEAROW
+	db 26, SPEAROW
+	db 26, FEAROW
+	db 26, SPEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (11)
+	db "ROGER@", TRAINERTYPE_NORMAL
+	db 30, FEAROW
+	db 30, FEAROW
+	db 30, PIDGEOTTO
+	db -1 ; end
+
+	; BIRD_KEEPER (12)
+	db "CARTER@", TRAINERTYPE_NORMAL
+	db 28, PIDGEY
+	db 28, DODUO
+	db 28, PIDGEOTTO
+	db -1 ; end
+
+	; BIRD_KEEPER (13)
+	db "MITCH@", TRAINERTYPE_NORMAL
+	db 26, PIDGEY
+	db 26, SPEAROW
+	db 26, PIDGEY
+	db 26, FEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (14)
+	db "BECK@", TRAINERTYPE_NORMAL
+	db 29, PIDGEOTTO
+	db 29, FEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (15)
+	db "MARLON@", TRAINERTYPE_NORMAL
+	db 28, SPEAROW
+	db 28, DODUO
+	db 28, FEAROW
+	db -1 ; end
+
+BlackbeltGen1_Group:
+	; BLACKBELT (1)
+	db "KIYO@", TRAINERTYPE_NORMAL
+	db 37, HITMONLEE
+	db 37, HITMONCHAN
+	db -1 ; end
+
+	; BLACKBELT (2)
+	db "MIKE@", TRAINERTYPE_NORMAL
+	db 31, MANKEY
+	db 31, MANKEY
+	db 31, PRIMEAPE
+	db -1 ; end
+
+	; BLACKBELT (3)
+	db "HIDEKI@", TRAINERTYPE_NORMAL
+	db 32, MACHOP
+	db 32, MACHOKE
+	db -1 ; end
+
+	; BLACKBELT (4)
+	db "AARON@", TRAINERTYPE_NORMAL
+	db 36, PRIMEAPE
+	db -1 ; end
+
+	; BLACKBELT (5)
+	db "HITOSHI@", TRAINERTYPE_NORMAL
+	db 31, MACHOP
+	db 31, MANKEY
+	db 31, PRIMEAPE
+	db -1 ; end
+
+	; BLACKBELT (6)
+	db "ATSUSHI@", TRAINERTYPE_NORMAL
+	db 40, MACHOP
+	db 40, MACHOKE
+	db -1 ; end
+
+	; BLACKBELT (7)
+	db "KOICHI@", TRAINERTYPE_NORMAL
+	db 43, MACHOKE
+	db -1 ; end
+
+	; BLACKBELT (8)
+	db "TAKASHI@", TRAINERTYPE_NORMAL
+	db 38, MACHOKE
+	db 38, MACHOP
+	db 38, MACHOKE
+	db -1 ; end
+
+	; BLACKBELT (9)
+	db "DAISUKE@", TRAINERTYPE_NORMAL
+	db 43, MACHOKE
+	db 43, MACHOP
+	db 43, MACHOKE
+	db -1 ; end
+
+Green1Gen1_Group:
+	; RIVAL1 (1)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db  5, SQUIRTLE
+	db -1 ; end
+
+	; RIVAL1 (2)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db  5, BULBASAUR
+	db -1 ; end
+
+	; RIVAL1 (3)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db  5, CHARMANDER
+	db -1 ; end
+
+	; RIVAL1 (4)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db  9, PIDGEY
+	db  8, SQUIRTLE
+	db -1 ; end
+
+	; RIVAL1 (5)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db  9, PIDGEY
+	db  8, BULBASAUR
+	db -1 ; end
+
+	; RIVAL1 (6)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db  9, PIDGEY
+	db  8, CHARMANDER
+	db -1 ; end
+
+	; RIVAL1 (7)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 18, PIDGEOTTO
+	db 15, ABRA
+	db 15, RATTATA
+	db 17, SQUIRTLE
+	db -1 ; end
+
+	; RIVAL1 (8)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 18, PIDGEOTTO
+	db 15, ABRA
+	db 15, RATTATA
+	db 17, BULBASAUR
+	db -1 ; end
+
+	; RIVAL1 (9)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 18, PIDGEOTTO
+	db 15, ABRA
+	db 15, RATTATA
+	db 17, CHARMANDER
+	db -1 ; end
+
+ProfOakGen1_Group:
+	; PROF_OAK (1)
+	db "OAK@", TRAINERTYPE_NORMAL
+	db 66, TAUROS
+	db 67, EXEGGUTOR
+	db 68, ARCANINE
+	db 69, BLASTOISE
+	db 70, GYARADOS
+	db -1 ; end
+
+	; PROF_OAK (2)
+	db "OAK@", TRAINERTYPE_NORMAL
+	db 66, TAUROS
+	db 67, EXEGGUTOR
+	db 68, ARCANINE
+	db 69, VENUSAUR
+	db 70, GYARADOS
+	db -1 ; end
+
+	; PROF_OAK (3)
+	db "OAK@", TRAINERTYPE_NORMAL
+	db 66, TAUROS
+	db 67, EXEGGUTOR
+	db 68, ARCANINE
+	db 69, CHARIZARD
+	db 70, GYARADOS
+	db -1 ; end
+
+ScientistGen1_Group:
+	; SCIENTIST (1)
+	db "TED@", TRAINERTYPE_NORMAL
+	db 29, ELECTRODE
+	db 29, WEEZING
+	db -1 ; end
+
+	; SCIENTIST (2)
+	db "CONNOR@", TRAINERTYPE_NORMAL
+	db 26, GRIMER
+	db 26, WEEZING
+	db 26, KOFFING
+	db 26, WEEZING
+	db -1 ; end
+
+	; SCIENTIST (3)
+	db "LIAM@", TRAINERTYPE_NORMAL
+	db 28, MAGNEMITE
+	db 28, VOLTORB
+	db 28, MAGNETON
+	db -1 ; end
+
+	; SCIENTIST (4)
+	db "JOSE@", TRAINERTYPE_NORMAL
+	db 29, ELECTRODE
+	db 29, WEEZING
+	db -1 ; end
+
+	; SCIENTIST (5)
+	db "RODNEY@", TRAINERTYPE_NORMAL
+	db 33, ELECTRODE
+	db -1 ; end
+
+	; SCIENTIST (6)
+	db "BEAU@", TRAINERTYPE_NORMAL
+	db 26, MAGNETON
+	db 26, KOFFING
+	db 26, WEEZING
+	db 26, MAGNEMITE
+	db -1 ; end
+
+	; SCIENTIST (7)
+	db "TAYLOR@", TRAINERTYPE_NORMAL
+	db 25, VOLTORB
+	db 25, KOFFING
+	db 25, MAGNETON
+	db 25, MAGNEMITE
+	db 25, KOFFING
+	db -1 ; end
+
+	; SCIENTIST (8)
+	db "JOSHUA@", TRAINERTYPE_NORMAL
+	db 29, ELECTRODE
+	db 29, MUK
+	db -1 ; end
+
+	; SCIENTIST (9)
+	db "PARKER@", TRAINERTYPE_NORMAL
+	db 29, GRIMER
+	db 29, ELECTRODE
+	db -1 ; end
+
+	; SCIENTIST (10)
+	db "ED@", TRAINERTYPE_NORMAL
+	db 28, VOLTORB
+	db 28, KOFFING
+	db 28, MAGNETON
+	db -1 ; end
+
+	; SCIENTIST (11)
+	db "TRAVIS@", TRAINERTYPE_NORMAL
+	db 29, MAGNEMITE
+	db 29, KOFFING
+	db -1 ; end
+
+	; SCIENTIST (12)
+	db "BRAYDON@", TRAINERTYPE_NORMAL
+	db 33, MAGNEMITE
+	db 33, MAGNETON
+	db 33, VOLTORB
+	db -1 ; end
+
+	; SCIENTIST (13)
+	db "IVAN@", TRAINERTYPE_NORMAL
+	db 34, MAGNEMITE
+	db 34, ELECTRODE
+	db -1 ; end
+
+GiovanniGen1_Group:
+	; GIOVANNI (1)
+	db "GIOVANNI@", TRAINERTYPE_NORMAL
+	db 25, ONIX
+	db 24, RHYHORN
+	db 29, KANGASKHAN
+	db -1 ; end
+
+	; GIOVANNI (2)
+	db "GIOVANNI@", TRAINERTYPE_NORMAL
+	db 37, NIDORINO
+	db 35, KANGASKHAN
+	db 37, RHYHORN
+	db 41, NIDOQUEEN
+	db -1 ; end
+
+	; GIOVANNI (3)
+	db "GIOVANNI@", TRAINERTYPE_MOVES
+	db 45, RHYHORN, STOMP, TAIL_WHIP, FURY_ATTACK, HORN_DRILL
+	db 42, DUGTRIO, DIG, SAND_ATTACK, FISSURE, EARTHQUAKE
+	db 44, NIDOQUEEN, DOUBLE_KICK, TAIL_WHIP, EARTHQUAKE, THUNDER
+	db 45, NIDOKING, DOUBLE_KICK, THRASH, EARTHQUAKE, BLIZZARD
+	db 50, RHYDON, FURY_ATTACK, HORN_DRILL, EARTHQUAKE, ROCK_SLIDE
+	db -1 ; end
+
+RocketGen1_Group:
+	; ROCKET (1)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 13, RATTATA
+	db 13, ZUBAT
+	db -1 ; end
+
+	; ROCKET (2)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 11, SANDSHREW
+	db 11, RATTATA
+	db 11, ZUBAT
+	db -1 ; end
+
+	; ROCKET (3)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 12, ZUBAT
+	db 12, EKANS
+	db -1 ; end
+
+	; ROCKET (4)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 16, RATICATE
+	db -1 ; end
+
+	; ROCKET (5)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 17, MACHOP
+	db 17, DROWZEE
+	db -1 ; end
+
+	; ROCKET (6)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 15, EKANS
+	db 15, ZUBAT
+	db -1 ; end
+
+	; ROCKET (7)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 20, RATICATE
+	db 20, ZUBAT
+	db -1 ; end
+
+	; ROCKET (8)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 21, DROWZEE
+	db 21, MACHOP
+	db -1 ; end
+
+	; ROCKET (9)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 21, RATICATE
+	db 21, RATICATE
+	db -1 ; end
+
+	; ROCKET (10)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 20, GRIMER
+	db 20, KOFFING
+	db 20, KOFFING
+	db -1 ; end
+
+	; ROCKET (11)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 19, RATTATA
+	db 19, RATICATE
+	db 19, RATICATE
+	db 19, RATTATA
+	db -1 ; end
+
+	; ROCKET (12)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 22, GRIMER
+	db 22, KOFFING
+	db -1 ; end
+
+	; ROCKET (13)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 17, ZUBAT
+	db 17, KOFFING
+	db 17, GRIMER
+	db 17, ZUBAT
+	db 17, RATICATE
+	db -1 ; end
+
+	; ROCKET (14)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 20, RATTATA
+	db 20, RATICATE
+	db 20, DROWZEE
+	db -1 ; end
+
+	; ROCKET (15)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 21, MACHOP
+	db 21, MACHOP
+	db -1 ; end
+
+	; ROCKET (16)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 23, SANDSHREW
+	db 23, EKANS
+	db 23, SANDSLASH
+	db -1 ; end
+
+	; ROCKET (17)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 23, EKANS
+	db 23, SANDSHREW
+	db 23, ARBOK
+	db -1 ; end
+
+	; ROCKET (18)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 21, KOFFING
+	db 21, ZUBAT
+	db -1 ; end
+
+	; ROCKET (19)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 25, ZUBAT
+	db 25, ZUBAT
+	db 25, GOLBAT
+	db -1 ; end
+
+	; ROCKET (20)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 26, KOFFING
+	db 26, DROWZEE
+	db -1 ; end
+
+	; ROCKET (21)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 23, ZUBAT
+	db 23, RATTATA
+	db 23, RATICATE
+	db 23, ZUBAT
+	db -1 ; end
+
+	; ROCKET (22)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 29, CUBONE
+	db 29, ZUBAT
+	db -1 ; end
+
+	; ROCKET (23)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 25, GOLBAT
+	db 25, ZUBAT
+	db 25, ZUBAT
+	db 25, RATICATE
+	db 25, ZUBAT
+	db -1 ; end
+
+	; ROCKET (24)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 28, RATICATE
+	db 28, HYPNO
+	db 28, RATICATE
+	db -1 ; end
+
+	; ROCKET (25)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 29, MACHOP
+	db 29, DROWZEE
+	db -1 ; end
+
+	; ROCKET (26)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 28, EKANS
+	db 28, ZUBAT
+	db 28, CUBONE
+	db -1 ; end
+
+	; ROCKET (27)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 33, ARBOK
+	db -1 ; end
+
+	; ROCKET (28)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 33, HYPNO
+	db -1 ; end
+
+	; ROCKET (29)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 29, MACHOP
+	db 29, MACHOKE
+	db -1 ; end
+
+	; ROCKET (30)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 28, ZUBAT
+	db 28, ZUBAT
+	db 28, GOLBAT
+	db -1 ; end
+
+	; ROCKET (31)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 26, RATICATE
+	db 26, ARBOK
+	db 26, KOFFING
+	db 26, GOLBAT
+	db -1 ; end
+
+	; ROCKET (32)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 29, CUBONE
+	db 29, CUBONE
+	db -1 ; end
+
+	; ROCKET (33)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 29, SANDSHREW
+	db 29, SANDSLASH
+	db -1 ; end
+
+	; ROCKET (34)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 26, RATICATE
+	db 26, ZUBAT
+	db 26, GOLBAT
+	db 26, RATTATA
+	db -1 ; end
+
+	; ROCKET (35)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 28, WEEZING
+	db 28, GOLBAT
+	db 28, KOFFING
+	db -1 ; end
+
+	; ROCKET (36)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 28, DROWZEE
+	db 28, GRIMER
+	db 28, MACHOP
+	db -1 ; end
+
+	; ROCKET (37)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 28, GOLBAT
+	db 28, DROWZEE
+	db 28, HYPNO
+	db -1 ; end
+
+	; ROCKET (38)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 33, MACHOKE
+	db -1 ; end
+
+	; ROCKET (39)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 25, RATTATA
+	db 25, RATTATA
+	db 25, ZUBAT
+	db 25, RATTATA
+	db 25, EKANS
+	db -1 ; end
+
+	; ROCKET (40)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 32, CUBONE
+	db 32, DROWZEE
+	db 32, MAROWAK
+	db -1 ; end
+
+CooltrainerMGen1_Group:
+	; COOLTRAINER_M (1)
+	db "SAUL@", TRAINERTYPE_NORMAL
+	db 38, SANDSLASH
+	db 38, SANDSLASH
+	db 38, RHYHORN
+	db 38, NIDORINO
+	db 38, NIDOKING
+	db -1 ; end
+
+	; COOLTRAINER_M (2)
+	db "BEN@", TRAINERTYPE_NORMAL
+	db 42, EXEGGUTOR
+	db 42, SANDSLASH
+	db 42, CLOYSTER
+	db 42, ELECTRODE
+	db 42, ARCANINE
+	db -1 ; end
+
+	; COOLTRAINER_M (3)
+	db "COLBY@", TRAINERTYPE_NORMAL
+	db 42, KINGLER
+	db 42, POLIWHIRL
+	db 42, TENTACRUEL
+	db 42, SEADRA
+	db 42, BLASTOISE
+	db -1 ; end
+
+	; COOLTRAINER_M (4)
+	db "HANK@", TRAINERTYPE_NORMAL
+	db 42, RATICATE
+	db 42, IVYSAUR
+	db 42, WARTORTLE
+	db 42, CHARMELEON
+	db 42, CHARIZARD
+	db -1 ; end
+
+	; COOLTRAINER_M (5)
+	db "YUJI@", TRAINERTYPE_NORMAL
+	db 38, SANDSLASH
+	db 38, GRAVELER
+	db 38, ONIX
+	db 38, DUGTRIO
+	db 38, MAROWAK
+	db -1 ; end
+
+	; COOLTRAINER_M (6)
+	db "WREN@", TRAINERTYPE_NORMAL
+	db 39, MAROWAK
+	db 39, MAROWAK
+	db 39, RHYHORN
+	db 39, NIDORINA
+	db 39, NIDOQUEEN
+	db -1 ; end
+
+CooltrainerFGen1_Group:
+	; COOLTRAINER_F (1)
+	db "MARY@", TRAINERTYPE_NORMAL
+	db 24, WEEPINBELL
+	db 24, GLOOM
+	db 24, IVYSAUR
+	db -1 ; end
+
+	; COOLTRAINER_F (2)
+	db "TINA@", TRAINERTYPE_NORMAL
+	db 42, BELLSPROUT
+	db 42, WEEPINBELL
+	db 42, VICTREEBEL
+	db 42, PARAS
+	db 42, PARASECT
+	db -1 ; end
+
+	; COOLTRAINER_F (3)
+	db "ALEXA@", TRAINERTYPE_NORMAL
+	db 42, CLEFAIRY
+	db 42, JIGGLYPUFF
+	db 42, PERSIAN
+	db 42, DEWGONG
+	db 42, CHANSEY
+	db -1 ; end
+
+	; COOLTRAINER_F (4)
+	db "NAOMI@", TRAINERTYPE_NORMAL
+	db 42, PERSIAN
+	db 42, PONYTA
+	db 42, RAPIDASH
+	db 42, VULPIX
+	db 42, NINETALES
+	db -1 ; end
+
+BrunoGen1_Group:
+	; BRUNO (1)
+	db "BRUNO@", TRAINERTYPE_MOVES
+	db 53, ONIX, EARTHQUAKE, SCREECH, ROCK_SLIDE, BIND
+	db 55, HITMONCHAN, ICE_PUNCH, THUNDERPUNCH, FIRE_PUNCH, MEGA_PUNCH
+	db 55, HITMONLEE, FOCUS_ENERGY, HI_JUMP_KICK, MEGA_KICK, COUNTER
+	db 56, ONIX, EARTHQUAKE, EXPLOSION, ROCK_SLIDE, BIND
+	db 58, MACHAMP, BODY_SLAM, EARTHQUAKE, HYPER_BEAM, SUBMISSION
+	db -1 ; end
+
+BrockGen1_Group:
+	; BROCK (1)
+	db "BROCK@", TRAINERTYPE_MOVES
+	db 12, GEODUDE, TACKLE, DEFENSE_CURL, NO_MOVE, NO_MOVE
+	db 14, ONIX, TACKLE, SCREECH, BIDE, BIND
+	db -1 ; end
+
+MistyGen1_Group:
+	; MISTY (1)
+	db "MISTY@", TRAINERTYPE_MOVES
+	db 18, STARYU, TACKLE, WATER_GUN, NO_MOVE, NO_MOVE
+	db 21, STARMIE, TACKLE, WATER_GUN, HARDEN, BUBBLEBEAM
+	db -1 ; end
+
+LtSurgeGen1_Group:
+	; LT_SURGE (1)
+	db "LT.SURGE@", TRAINERTYPE_MOVES
+	db 21, VOLTORB, TACKLE, SCREECH, SONICBOOM, SELFDESTRUCT
+	db 18, PIKACHU, TAIL_WHIP, THUNDER_WAVE, QUICK_ATTACK, DOUBLE_TEAM
+	db 24, RAICHU, THUNDER_WAVE, MEGA_PUNCH, DOUBLE_TEAM, THUNDERBOLT
+	db -1 ; end
+
+ErikaGen1_Group:
+	; ERIKA (1)
+	db "ERIKA@", TRAINERTYPE_MOVES
+	db 29, VICTREEBEL, SLEEP_POWDER, STUN_SPORE, ACID, RAZOR_LEAF
+	db 24, TANGELA, CONSTRICT, BIND, MEGA_DRAIN, NO_MOVE
+	db 29, VILEPLUME, POISONPOWDER, SLEEP_POWDER, ACID, PETAL_DANCE
+	db -1 ; end
+
+KogaGen1_Group:
+	; KOGA (1)
+	db "KOGA@", TRAINERTYPE_MOVES
+	db 37, GOLBAT, TOXIC, BITE, CONFUSE_RAY, WING_ATTACK
+	db 39, MUK, DISABLE, TOXIC, MINIMIZE, SLUDGE
+	db 40, VENOMOTH, POISONPOWDER, LEECH_LIFE, STUN_SPORE, PSYBEAM
+	db 43, WEEZING, TACKLE, SLUDGE, SMOKESCREEN, TOXIC
+	db -1 ; end
+
+BlaineGen1_Group:
+	; BLAINE (1)
+	db "BLAINE@", TRAINERTYPE_MOVES
+	db 42, MAGMAR, LEER, CONFUSE_RAY, FIRE_PUNCH, FIRE_BLAST
+	db 41, NINETALES, QUICK_ATTACK, CONFUSE_RAY, FLAMETHROWER, FIRE_SPIN
+	db 42, RAPIDASH, TAIL_WHIP, STOMP, FIRE_SPIN, FIRE_BLAST
+	db 47, ARCANINE, ROAR, TAKE_DOWN, AGILITY, FIRE_BLAST
+	db -1 ; end
+
+SabrinaGen1_Group:
+	; SABRINA (1)
+	db "SABRINA@", TRAINERTYPE_MOVES
+	db 38, KADABRA, KINESIS, DISABLE, RECOVER, PSYCHIC_M
+	db 37, MR__MIME, BARRIER, LIGHT_SCREEN, DOUBLESLAP, PSYCHIC_M
+	db 38, HYPNO, HYPNOSIS, DISABLE, HEADBUTT, PSYCHIC_M
+	db 43, ALAKAZAM, PSYWAVE, RECOVER, PSYCHIC_M, REFLECT
+	db -1 ; end
+
+GentlemanGen1_Group:
+	; GENTLEMAN (1)
+	db "THOMAS@", TRAINERTYPE_NORMAL
+	db 18, GROWLITHE
+	db 18, GROWLITHE
+	db -1 ; end
+
+	; GENTLEMAN (2)
+	db "ARTHUR@", TRAINERTYPE_NORMAL
+	db 19, NIDORAN_M
+	db 19, NIDORAN_F
+	db -1 ; end
+
+	; GENTLEMAN (3)
+	db "BROOKS@", TRAINERTYPE_NORMAL
+	db 23, PIKACHU
+	db -1 ; end
+
+	; GENTLEMAN (4)
+	db "TUCKER@", TRAINERTYPE_NORMAL
+	db 22, VOLTORB
+	db 22, MAGNEMITE
+	db -1 ; end
+
+	; GENTLEMAN (5)
+	db "LAMAR@", TRAINERTYPE_NORMAL
+	db 17, GROWLITHE
+	db 17, PONYTA
+	db -1 ; end
+
+Green2Gen1_Group:
+	; RIVAL2 (1)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 19, PIDGEOTTO
+	db 16, RATICATE
+	db 18, KADABRA
+	db 20, WARTORTLE
+	db -1 ; end
+
+	; RIVAL2 (2)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 19, PIDGEOTTO
+	db 16, RATICATE
+	db 18, KADABRA
+	db 20, IVYSAUR
+	db -1 ; end
+
+	; RIVAL2 (3)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 19, PIDGEOTTO
+	db 16, RATICATE
+	db 18, KADABRA
+	db 20, CHARMELEON
+	db -1 ; end
+
+	; RIVAL2 (4)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 25, PIDGEOTTO
+	db 23, GROWLITHE
+	db 22, EXEGGCUTE
+	db 20, KADABRA
+	db 25, WARTORTLE
+	db -1 ; end
+
+	; RIVAL2 (5)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 25, PIDGEOTTO
+	db 23, GYARADOS
+	db 22, GROWLITHE
+	db 20, KADABRA
+	db 25, IVYSAUR
+	db -1 ; end
+
+	; RIVAL2 (6)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 25, PIDGEOTTO
+	db 23, EXEGGCUTE
+	db 22, GYARADOS
+	db 20, KADABRA
+	db 25, CHARMELEON
+	db -1 ; end
+
+	; RIVAL2 (7)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 37, PIDGEOT
+	db 38, GROWLITHE
+	db 35, EXEGGCUTE
+	db 35, ALAKAZAM
+	db 40, BLASTOISE
+	db -1 ; end
+
+	; RIVAL2 (8)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 37, PIDGEOT
+	db 38, GYARADOS
+	db 35, GROWLITHE
+	db 35, ALAKAZAM
+	db 40, VENUSAUR
+	db -1 ; end
+
+	; RIVAL2 (9)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 37, PIDGEOT
+	db 38, EXEGGCUTE
+	db 35, GYARADOS
+	db 35, ALAKAZAM
+	db 40, CHARIZARD
+	db -1 ; end
+
+	; RIVAL2 (10)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 47, PIDGEOT
+	db 45, RHYHORN
+	db 45, GROWLITHE
+	db 47, EXEGGCUTE
+	db 50, ALAKAZAM
+	db 53, BLASTOISE
+	db -1 ; end
+
+	; RIVAL2 (11)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 47, PIDGEOT
+	db 45, RHYHORN
+	db 45, GYARADOS
+	db 47, GROWLITHE
+	db 50, ALAKAZAM
+	db 53, VENUSAUR
+	db -1 ; end
+
+	; RIVAL2 (12)
+	db "<RIVAL>@", TRAINERTYPE_NORMAL
+	db 47, PIDGEOT
+	db 45, RHYHORN
+	db 45, EXEGGCUTE
+	db 47, GYARADOS
+	db 50, ALAKAZAM
+	db 53, CHARIZARD
+	db -1 ; end
+
+Green3Gen1_Group:
+	; RIVAL3 (1)
+	db "<RIVAL>@", TRAINERTYPE_MOVES
+	db 61, PIDGEOT, DOUBLE_EDGE, MIRROR_MOVE, SKY_ATTACK, WHIRLWIND
+	db 59, ALAKAZAM, PSYCHIC_M, REFLECT, RECOVER, THUNDER_WAVE
+	db 61, RHYDON, EARTHQUAKE, ROCK_SLIDE, HORN_DRILL, BODY_SLAM
+	db 61, ARCANINE, ROAR, REFLECT, FIRE_BLAST, HYPER_BEAM
+	db 63, EXEGGUTOR, SLEEP_POWDER, PSYCHIC_M, DOUBLE_EDGE, MEGA_DRAIN
+	db 65, BLASTOISE, BLIZZARD, EARTHQUAKE, BODY_SLAM, SURF
+	db -1 ; end
+
+	; RIVAL3 (2)
+	db "<RIVAL>@", TRAINERTYPE_MOVES
+	db 61, PIDGEOT, DOUBLE_EDGE, MIRROR_MOVE, SKY_ATTACK, WHIRLWIND
+	db 59, ALAKAZAM, PSYCHIC_M, REFLECT, RECOVER, THUNDER_WAVE
+	db 61, RHYDON, EARTHQUAKE, ROCK_SLIDE, HORN_DRILL, BODY_SLAM
+	db 61, GYARADOS, BLIZZARD, THUNDERBOLT, BODY_SLAM, HYPER_BEAM
+	db 63, ARCANINE, ROAR, REFLECT, FIRE_BLAST, HYPER_BEAM
+	db 65, VENUSAUR, SWORDS_DANCE, BODY_SLAM, RAZOR_LEAF, SLEEP_POWDER
+	db -1 ; end
+
+	; RIVAL3 (3)
+	db "<RIVAL>@", TRAINERTYPE_MOVES
+	db 61, PIDGEOT, DOUBLE_EDGE, MIRROR_MOVE, SKY_ATTACK, WHIRLWIND
+	db 59, ALAKAZAM, PSYCHIC_M, REFLECT, RECOVER, THUNDER_WAVE
+	db 61, RHYDON, EARTHQUAKE, ROCK_SLIDE, HORN_DRILL, BODY_SLAM
+	db 61, EXEGGUTOR, SLEEP_POWDER, PSYCHIC_M, DOUBLE_EDGE, MEGA_DRAIN
+	db 63, GYARADOS, BLIZZARD, THUNDERBOLT, BODY_SLAM, HYPER_BEAM
+	db 65, CHARIZARD, SWORDS_DANCE, EARTHQUAKE, FIRE_BLAST, HYPER_BEAM
+	db -1 ; end
+
+LoreleiGen1_Group:
+	; LORELEI (1)
+	db "LORELEI@", TRAINERTYPE_MOVES
+	db 54, DEWGONG, AURORA_BEAM, BODY_SLAM, DOUBLE_TEAM, REST
+	db 53, CLOYSTER, SUPERSONIC, CLAMP, ICE_BEAM, HYPER_BEAM
+	db 54, SLOWBRO, SURF, PSYCHIC_M, WITHDRAW, AMNESIA
+	db 56, JYNX, LOVELY_KISS, ICE_PUNCH, PSYCHIC_M, THRASH
+	db 56, LAPRAS, BODY_SLAM, CONFUSE_RAY, THUNDERBOLT, BLIZZARD
+	db -1 ; end
+
+ChannelerGen1_Group:
+	; CHANNELER (1)
+	db "HOPE@", TRAINERTYPE_NORMAL
+	db 23, GASTLY
+	db -1 ; end
+
+	; CHANNELER (2)
+	db "CARLY@", TRAINERTYPE_NORMAL
+	db 24, GASTLY
+	db -1 ; end
+
+	; CHANNELER (3)
+	db "PATRICIA@", TRAINERTYPE_NORMAL
+	db 22, GASTLY
+	db -1 ; end
+
+	; CHANNELER (4)
+	db "PAULA@", TRAINERTYPE_NORMAL
+	db 24, GASTLY
+	db -1 ; end
+
+	; CHANNELER (5)
+	db "LAUREL@", TRAINERTYPE_NORMAL
+	db 23, GASTLY
+	db 23, GASTLY
+	db -1 ; end
+
+	; CHANNELER (6)
+	db "JODY@", TRAINERTYPE_NORMAL
+	db 22, GASTLY
+	db -1 ; end
+
+	; CHANNELER (7)
+	db "TAMMY@", TRAINERTYPE_NORMAL
+	db 23, HAUNTER
+	db -1 ; end
+
+	; CHANNELER (8)
+	db "RUTH@", TRAINERTYPE_NORMAL
+	db 22, GASTLY
+	db -1 ; end
+
+	; CHANNELER (9)
+	db "KARINA@", TRAINERTYPE_NORMAL
+	db 24, GASTLY
+	db -1 ; end
+
+	; CHANNELER (10)
+	db "JANAE@", TRAINERTYPE_NORMAL
+	db 22, HAUNTER
+	db -1 ; end
+
+	; CHANNELER (11)
+	db "ANGEL@", TRAINERTYPE_NORMAL
+	db 22, GASTLY
+	db 22, GASTLY
+	db 22, GASTLY
+	db -1 ; end
+
+	; CHANNELER (12)
+	db "JENNY@", TRAINERTYPE_NORMAL
+	db 24, GASTLY
+	db -1 ; end
+
+	; CHANNELER (13)
+	db "EMILIA@", TRAINERTYPE_NORMAL
+	db 24, GASTLY
+	db -1 ; end
+
+	; CHANNELER (14)
+	db "AMANDA@", TRAINERTYPE_NORMAL
+	db 34, GASTLY
+	db 34, HAUNTER
+	db -1 ; end
+
+	; CHANNELER (15)
+	db "STACY@", TRAINERTYPE_NORMAL
+	db 38, HAUNTER
+	db -1 ; end
+
+	; CHANNELER (16)
+	db "TASHA@", TRAINERTYPE_NORMAL
+	db 33, GASTLY
+	db 33, GASTLY
+	db 33, HAUNTER
+	db -1 ; end
+
+AgathaGen1_Group:
+	; AGATHA (1)
+	db "AGATHA@", TRAINERTYPE_MOVES
+	db 56, GENGAR, CONFUSE_RAY, SUBSTITUTE, HYPNOSIS, DREAM_EATER
+	db 56, GOLBAT, SCREECH, CONFUSE_RAY, TOXIC, HYPER_BEAM
+	db 55, HAUNTER, LICK, NIGHT_SHADE, HYPNOSIS, DREAM_EATER
+	db 58, ARBOK, WRAP, GLARE, MEGA_DRAIN, ACID
+	db 60, GENGAR, HYPNOSIS, PSYCHIC_M, THUNDERBOLT, MEGA_DRAIN
+	db -1 ; end
+
+LanceGen1_Group:
+	; LANCE (1)
+	db "LANCE@", TRAINERTYPE_MOVES
+	db 58, GYARADOS, ICE_BEAM, THUNDERBOLT, DRAGON_RAGE, HYPER_BEAM
+	db 56, DRAGONAIR, AGILITY, WRAP, DRAGON_RAGE, HYPER_BEAM
+	db 56, DRAGONAIR, AGILITY, WRAP, DRAGON_RAGE, HYPER_BEAM
+	db 60, AERODACTYL, SKY_ATTACK, REFLECT, ROCK_SLIDE, HYPER_BEAM
+	db 62, DRAGONITE, BLIZZARD, FIRE_BLAST, THUNDER, HYPER_BEAM
 	db -1 ; end

@@ -657,4 +657,453 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const GRUNTF_4
 	const GRUNTF_5
 
+	trainerclass YOUNGSTER_GEN1     ; 43
+	const JIMMY_GEN1
+	const WARREN_GEN1
+	const JOSH_GEN1
+	const TIMMY_GEN1
+	const CALVIN_GEN1
+	const DAN_GEN1
+	const CHAD_GEN1
+	const TYLER_GEN1
+	const EDDIE_GEN1
+	const DILLON_GEN1
+	const YASU_GEN1
+	const DAVE_GEN1
+
+	trainerclass BUG_CATCHER_GEN1   ; 44
+	const RICK1_GEN1
+	const DOUG_GEN1
+	const SAMMY_GEN1
+	const RICK2_GEN1
+	const GREG_GEN1
+	const JAMES_GEN1
+	const KENT_GEN1
+	const ROBBY_GEN1
+	const CALE_GEN1
+	const KEIGO_GEN1
+	const ELIJAH_GEN1
+	const BRENT_GEN1
+	const SID_GEN1
+
+	trainerclass LASS_GEN1          ; 45
+	const JANICE_GEN1
+	const SALLY_GEN1
+	const ROBIN_GEN1
+	const CRISSY_GEN1
+	const MIRIAM_GEN1
+	const IRIS_GEN1
+	const ALI_GEN1
+	const RELI_GEN1
+	const KELSEY_GEN1
+	const HALEY_GEN1
+	const ANN_GEN1
+	const DAWN_GEN1
+	const PAIGE_GEN1
+	const ANDREA_GEN1
+	const MEGAN_GEN1
+	const JULIA_GEN1
+	const KAY_GEN1
+	const LISA_GEN1
+
+	trainerclass SAILOR_GEN1        ; 46
+	const EDMOND_GEN1
+	const TREVOR_GEN1
+	const LEONARD_GEN1
+	const DUNCAN_GEN1
+	const HUEY_GEN1
+	const DYLAN_GEN1
+	const PHILLIP_GEN1
+	const DWAYNE_GEN1
+
+	trainerclass JR_TRAINER_M_GEN1  ; 47
+	const JERRY_GEN1
+	const SHANE_GEN1
+	const ETHAN_GEN1
+	const RICKY_GEN1
+	const JEFF_GEN1
+	const FLINT_GEN1
+	const CHRIS_GEN1
+	const DREW_GEN1
+	const JUSTIN_GEN1
+
+	trainerclass JR_TRAINER_F_GEN1  ; 48
+	const DIANA_GEN1
+	const NANCY_GEN1
+	const ISABEL_GEN1
+	const ALICIA_GEN1
+	const CAITY_GEN1
+	const HEIDI_GEN1
+	const CAROL_GEN1
+	const SOFIA_GEN1
+	const MARTHA_GEN1
+	const TANYA_GEN1
+	const SUSIE_GEN1
+	const GINGER_GEN1
+	const GWEN_GEN1
+	const ALMA_GEN1
+	const MISSY_GEN1
+	const LEAH_GEN1
+	const DANA_GEN1
+	const ARIANA_GEN1
+	const KINDRA_GEN1
+	const BECKY_GEN1
+	const CELIA_GEN1
+	const YASMIN_GEN1
+	const IRENE_GEN1
+
+	trainerclass POKEMANIAC_GEN1    ; 49
+	const MARK_GEN1
+	const HERMAN_GEN1
+	const COOPER_GEN1
+	const STEVE_GEN1
+	const WINSTON_GEN1
+	const DAWSON_GEN1
+	const ASHTON_GEN1
+
+	trainerclass SUPER_NERD_GEN1    ; 4a
+	const JOVAN_GEN1
+	const MIGUEL_GEN1
+	const AIDAN_GEN1
+	const GLENN_GEN1
+	const LESLIE_GEN1
+	const ERIK_GEN1
+	const AVERY_GEN1
+	const DEREK_GEN1
+	const ZAC_GEN1
+
+	trainerclass HIKER_GEN1         ; 4b
+	const MARCOS_GEN1
+	const FRANKLIN_GEN1
+	const NOB_GEN1
+	const WAYNE_GEN1
+	const ALAN_GEN1
+	const SIDNEY_GEN1
+	const CLARK_GEN1
+	const TRENT_GEN1
+	const DUDLEY_GEN1
+	const ALLEN_GEN1
+	const JEREMY_GEN1
+	const LENNY_GEN1
+	const OLIVER_GEN1
+	const LUCAS_GEN1
+	const ERIC_GEN1
+
+	trainerclass BIKER_GEN1         ; 4c
+	const JARED_GEN1
+	const MALIK_GEN1
+	const ERNEST_GEN1
+	const ALEX_GEN1
+	const LAO_GEN1
+	const HIDEO_GEN1
+	const RUBEN_GEN1
+	const VIRGIL_GEN1
+	const BILLY_GEN1
+	const NIKOLAS_GEN1
+	const JAXON_GEN1
+	const WILLIAM_GEN1
+	const LUKAS_GEN1
+	const ISAAC_GEN1
+	const GERALD_GEN1
+
+	trainerclass BURGLAR_GEN1       ; 4d
+	const QUINN_GEN1
+	const RAMON_GEN1
+	const DUSTY_GEN1
+	const ARNIE_GEN1
+	const SIMON_GEN1
+	const LEWIS_GEN1
+
+	trainerclass ENGINEER_GEN1      ; 4e
+	const BRAXTON_GEN1
+	const BERNIE_GEN1
+
+	trainerclass FISHER_GEN1        ; 4f
+	const DALE_GEN1
+	const ELLIOT_GEN1
+	const KYLE_GEN1
+	const MARTIN_GEN1
+	const STEPHEN_GEN1
+	const BARNEY_GEN1
+	const RONALD_GEN1
+	const CLAUDE_GEN1
+	const WADE_GEN1
+	const NOLAN_GEN1
+	const ANDREW_GEN1
+
+	trainerclass SWIMMER_GEN1       ; 50
+	const LUIS_GEN1
+	const RICHARD_GEN1
+	const REECE_GEN1
+	const MATTHEW_GEN1
+	const DOUGLAS_GEN1
+	const DAVID_GEN1
+	const TONY_GEN1
+	const AXLE_GEN1
+	const TUCKER1_GEN1
+	const DEAN_GEN1
+	const DARRIN_GEN1
+	const SPENCER_GEN1
+	const JACK_GEN1
+	const JEROME_GEN1
+	const ROLAND_GEN1
+
+	trainerclass CUE_BALL_GEN1      ; 51
+	const KOJI_GEN1
+	const LUKE_GEN1
+	const CAMRON_GEN1
+	const RAUL_GEN1
+	const ISAIAH_GEN1
+	const ZEKE_GEN1
+	const JAMAL_GEN1
+	const COREY_GEN1
+	const IAN_GEN1
+
+	trainerclass GAMBLER_GEN1       ; 52
+	const HUGO_GEN1
+	const JASPER_GEN1
+	const DIRK_GEN1
+	const DARIAN_GEN1
+	const STAN_GEN1
+	const RICH_GEN1
+
+	trainerclass BEAUTY_GEN1        ; 53
+	const BRIDGET_GEN1
+	const TAMIA_GEN1
+	const LORI_GEN1
+	const LOLA_GEN1
+	const SHEILA_GEN1
+	const TIFFANY_GEN1
+	const NORA_GEN1
+	const MELISSA_GEN1
+	const GRACE_GEN1
+	const OLIVIA_GEN1
+	const ANYA_GEN1
+	const ALICE_GEN1
+	const CONNIE_GEN1
+	const SHIRLEY_GEN1
+
+	trainerclass PSYCHIC_TR_GEN1    ; 54
+	const JOHAN_GEN1
+	const TYRON_GEN1
+	const CAMERON_GEN1
+	const PRESTON_GEN1
+
+	trainerclass ROCKER_GEN1        ; 55
+	const VINCENT1_GEN1
+	const LUCA_GEN1
+
+	trainerclass JUGGLER_GEN1       ; 56
+	const DALTON_GEN1
+	const NELSON_GEN1
+	const KIRK_GEN1
+	const SHAWN_GEN1
+	const GREGORY_GEN1
+	const KAYDEN_GEN1
+	const NATE_GEN1
+
+	trainerclass TAMER_GEN1         ; 57
+	const PHIL_GEN1
+	const EDGAR_GEN1
+	const JASON_GEN1
+	const COLE_GEN1
+	const VINCENT2_GEN1
+
+	trainerclass BIRD_KEEPER_GEN1   ; 58
+	const BRET_GEN1
+	const PERRY_GEN1
+	const ROBERT_GEN1
+	const DONALD_GEN1
+	const BENNY_GEN1
+	const CHIP_GEN1
+	const EDWIN_GEN1
+	const WILTON_GEN1
+	const BORIS_GEN1
+	const JACOB_GEN1
+	const ROGER_GEN1
+	const CARTER_GEN1
+	const MITCH_GEN1
+	const BECK_GEN1
+	const MARLON_GEN1
+
+	trainerclass BLACKBELT_GEN1     ; 59
+	const KIYO_GEN1
+	const MIKE_GEN1
+	const HIDEKI_GEN1
+	const AARON_GEN1
+	const HITOSHI_GEN1
+	const ATSUSHI_GEN1
+	const KOICHI_GEN1
+	const TAKASHI_GEN1
+	const DAISUKE_GEN1
+
+	trainerclass RIVAL1_GEN1        ; 5a
+	const RIVAL1_1_GEN1
+	const RIVAL1_2_GEN1
+	const RIVAL1_3_GEN1
+	const RIVAL1_4_GEN1
+	const RIVAL1_5_GEN1
+	const RIVAL1_6_GEN1
+	const RIVAL1_7_GEN1
+	const RIVAL1_8_GEN1
+	const RIVAL1_9_GEN1
+
+	trainerclass PROF_OAK_GEN1      ; 5b
+	const OAK1_GEN1
+	const OAK2_GEN1
+	const OAK3_GEN1
+
+	trainerclass SCIENTIST_GEN1     ; 5c
+	const TED_GEN1
+	const CONNOR_GEN1
+	const LIAM_GEN1
+	const JOSE_GEN1
+	const RODNEY_GEN1
+	const BEAU_GEN1
+	const TAYLOR_GEN1
+	const JOSHUA_GEN1
+	const PARKER_GEN1
+	const ED_GEN1
+	const TRAVIS_GEN1
+	const BRAYDON_GEN1
+	const IVAN_GEN1
+
+	trainerclass GIOVANNI_GEN1      ; 5d
+	const GIOVANNI1_GEN1
+	const GIOVANNI2_GEN1
+	const GIOVANNI3_GEN1
+
+	trainerclass ROCKET_GEN1        ; 5e
+	const GRUNT1_GEN1
+	const GRUNT2_GEN1
+	const GRUNT3_GEN1
+	const GRUNT4_GEN1
+	const GRUNT5_GEN1
+	const GRUNT6_GEN1
+	const GRUNT7_GEN1
+	const GRUNT8_GEN1
+	const GRUNT9_GEN1
+	const GRUNT10_GEN1
+	const GRUNT11_GEN1
+	const GRUNT12_GEN1
+	const GRUNT13_GEN1
+	const GRUNT14_GEN1
+	const GRUNT15_GEN1
+	const GRUNT16_GEN1
+	const GRUNT17_GEN1
+	const GRUNT18_GEN1
+	const GRUNT19_GEN1
+	const GRUNT20_GEN1
+	const GRUNT21_GEN1
+	const GRUNT22_GEN1
+	const GRUNT23_GEN1
+	const GRUNT24_GEN1
+	const GRUNT25_GEN1
+	const GRUNT26_GEN1
+	const GRUNT27_GEN1
+	const GRUNT28_GEN1
+	const GRUNT29_GEN1
+	const GRUNT30_GEN1
+	const GRUNT31_GEN1
+	const GRUNT32_GEN1
+	const GRUNT33_GEN1
+	const GRUNT34_GEN1
+	const GRUNT35_GEN1
+	const GRUNT36_GEN1
+	const GRUNT37_GEN1
+	const GRUNT38_GEN1
+	const GRUNT39_GEN1
+	const GRUNT40_GEN1
+
+	trainerclass COOLTRAINER_M_GEN1 ; 5f
+	const SAUL_GEN1
+	const BEN_GEN1
+	const COLBY_GEN1
+	const HANK_GEN1
+	const YUJI_GEN1
+	const WREN_GEN1
+
+	trainerclass COOLTRAINER_F_GEN1 ; 60
+	const MARY_GEN1
+	const TINA_GEN1
+	const ALEXA_GEN1
+	const NAOMI_GEN1
+
+	trainerclass BRUNO_GEN1         ; 61
+	const BRUNO1_GEN1
+
+	trainerclass BROCK_GEN1         ; 62
+	const BROCK1_GEN1
+
+	trainerclass MISTY_GEN1         ; 63
+	const MISTY1_GEN1
+
+	trainerclass LT_SURGE_GEN1      ; 64
+	const LT_SURGE1_GEN1
+
+	trainerclass ERIKA_GEN1         ; 65
+	const ERIKA1_GEN1
+
+	trainerclass KOGA_GEN1          ; 66
+	const KOGA1_GEN1
+
+	trainerclass BLAINE_GEN1        ; 67
+	const BLAINE1_GEN1
+
+	trainerclass SABRINA_GEN1       ; 68
+	const SABRINA1_GEN1
+
+	trainerclass GENTLEMAN_GEN1     ; 69
+	const THOMAS_GEN1
+	const ARTHUR_GEN1
+	const BROOKS_GEN1
+	const TUCKER2_GEN1
+	const LAMAR_GEN1
+
+	trainerclass RIVAL2_GEN1        ; 6a
+	const RIVAL2_1_GEN1
+	const RIVAL2_2_GEN1
+	const RIVAL2_3_GEN1
+	const RIVAL2_4_GEN1
+	const RIVAL2_5_GEN1
+	const RIVAL2_6_GEN1
+	const RIVAL2_7_GEN1
+	const RIVAL2_8_GEN1
+	const RIVAL2_9_GEN1
+	const RIVAL2_10_GEN1
+	const RIVAL2_11_GEN1
+	const RIVAL2_12_GEN1
+
+	trainerclass RIVAL3_GEN1        ; 6b
+	const RIVAL3_1_GEN1
+	const RIVAL3_2_GEN1
+	const RIVAL3_3_GEN1
+
+	trainerclass LORELEI_GEN1       ; 6c
+	const LORELEI1_GEN1
+
+	trainerclass CHANNELER_GEN1     ; 6d
+	const HOPE_GEN1
+	const CARLY_GEN1
+	const PATRICIA_GEN1
+	const PAULA_GEN1
+	const LAUREL_GEN1
+	const JODY_GEN1
+	const TAMMY_GEN1
+	const RUTH_GEN1
+	const KARINA_GEN1
+	const JANAE_GEN1
+	const ANGEL_GEN1
+	const JENNY_GEN1
+	const EMILIA_GEN1
+	const AMANDA_GEN1
+	const STACY_GEN1
+	const TASHA_GEN1
+
+	trainerclass AGATHA_GEN1        ; 6e
+	const AGATHA1_GEN1
+
+	trainerclass LANCE_GEN1         ; 6f
+	const LANCE1_GEN1
+
 NUM_TRAINER_CLASSES EQU __trainer_class__ - 1
