@@ -213,7 +213,9 @@
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
 	const EVENT_VIRIDIAN_CITY_HIDDEN_POTION
-; Unused: next 184 events
+	const EVENT_VIRIDIAN_FOREST_HIDDEN_POTION
+	const EVENT_VIRIDIAN_FOREST_HIDDEN_ANTIDOTE
+; Unused: next 182 events
 
 	const_next 400
 ; Kurt Apricorn events
@@ -1658,7 +1660,10 @@
 ; Kanto itemballs
 	const EVENT_ROUTE_2_MOON_STONE
 	const EVENT_ROUTE_2_HP_UP
-; Unused: next 135 events
+	const EVENT_VIRIDIAN_FOREST_ANTIDOTE
+	const EVENT_VIRIDIAN_FOREST_POTION
+	const EVENT_VIRIDIAN_FOREST_POKE_BALL
+; Unused: next 132 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 800
