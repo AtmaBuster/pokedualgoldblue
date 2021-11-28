@@ -20,7 +20,7 @@ RedsHouse1FTVScript:
 RedsHouse1FRedsMom:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_STARTER
 	iftrue .Heal
 	writetext .LeaveHomeText
 	waitbutton

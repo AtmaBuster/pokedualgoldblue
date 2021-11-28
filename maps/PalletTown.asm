@@ -35,6 +35,12 @@ PalletTownOakMeetScriptJoin:
 	applymovement PALLETTOWN_OAK, PalletTownOakMeetScript_OakFollowToLab
 	disappear PALLETTOWN_OAK
 	applymovement PLAYER, PalletTownOakMeetScript_PlayerEnterLab
+	clearevent EVENT_OAKS_LAB_OAK2
+	setevent EVENT_OAKS_LAB_GIRL
+	setmapscene OAKS_LAB, SCENE_OAKS_LAB_INTRO_START
+	special FadeOutPalettes
+	playsound SFX_ENTER_DOOR
+	waitsfx
 	warpfacing UP, OAKS_LAB, 5, 11
 	end
 

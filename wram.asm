@@ -2512,8 +2512,10 @@ wViridianCitySceneID::                            db
 wViridianMartSceneID::                            db
 wPewterCitySceneID::                              db
 wMuseum1FSceneID::                                db
+wOaksLabSceneID::                                 db
+wRoute22SceneID::                                 db
 
-	ds 199
+	ds 197
 
 wEventFlags:: flag_array NUM_EVENTS
 
