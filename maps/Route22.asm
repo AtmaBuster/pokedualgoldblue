@@ -92,6 +92,7 @@ Route22_Rival1Script:
 	writetext .AfterText
 	waitbutton
 	closetext
+	setevent EVENT_BEAT_ROUTE22_RIVAL_1ST_BATTLE
 	end
 
 .Text:

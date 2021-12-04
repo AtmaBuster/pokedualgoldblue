@@ -811,6 +811,7 @@ OaksLab_OakScript:
 	setevent EVENT_GOT_POKEBALLS_FROM_OAK
 	writetext .GiveBallText
 	verbosegiveitem POKE_BALL, 5
+	closetext
 	end
 
 .PleaseVisit:
