@@ -5,6 +5,14 @@ Route5_MapScripts:
 
 	def_callbacks
 
+Route5_UndergroundSignScript:
+	jumptext .Text
+.Text:
+	text "UNDERGROUND PATH"
+	line "CERULEAN CITY -"
+	cont "VERMILION CITY"
+	done
+
 Route5_MapEvents:
 	db 0, 0 ; filler
 
@@ -18,6 +26,6 @@ Route5_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event 17, 29, BGEVENT_READ, BGEvent
+	bg_event 17, 29, BGEVENT_READ, Route5_UndergroundSignScript
 
 	def_object_events
