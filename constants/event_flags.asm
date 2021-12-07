@@ -223,7 +223,8 @@
 	const EVENT_VIRIDIAN_CITY_HIDDEN_POTION
 	const EVENT_VIRIDIAN_FOREST_HIDDEN_POTION
 	const EVENT_VIRIDIAN_FOREST_HIDDEN_ANTIDOTE
-; Unused: next 175 events
+	const EVENT_ROUTE_4_HIDDEN_GREAT_BALL
+; Unused: next 174 events
 
 	const_next 400
 ; Kurt Apricorn events
@@ -1684,7 +1685,8 @@
 	const EVENT_VIRIDIAN_FOREST_POTION
 	const EVENT_VIRIDIAN_FOREST_POKE_BALL
 	const EVENT_VIRIDIAN_GYM_REVIVE
-; Unused: next 121 events
+	const EVENT_ROUTE_4_TM_WHIRLWIND
+; Unused: next 120 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 800
