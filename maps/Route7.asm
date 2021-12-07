@@ -5,6 +5,14 @@ Route7_MapScripts:
 
 	def_callbacks
 
+Route7_UndergroundSignScript:
+	jumptext .Text
+.Text:
+	text "UNDERGROUND PATH"
+	line "CELADON CITY -"
+	cont "LAVENDER TOWN"
+	done
+
 Route7_MapEvents:
 	db 0, 0 ; filler
 
@@ -18,6 +26,6 @@ Route7_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  3, 13, BGEVENT_READ, BGEvent
+	bg_event  3, 13, BGEVENT_READ, Route7_UndergroundSignScript
 
 	def_object_events
