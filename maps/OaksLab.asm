@@ -733,6 +733,7 @@ OaksLab_OakScript:
 	waitbutton
 	closetext
 	takeitem OAKS_PARCEL
+	setevent EVENT_OAK_GOT_PARCEL
 	playmusic MUSIC_RBY_MEET_RIVAL
 	opentext
 	writetext .RivalEnterText
