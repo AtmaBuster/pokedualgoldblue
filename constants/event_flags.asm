@@ -226,7 +226,8 @@
 	const EVENT_ROUTE_4_HIDDEN_GREAT_BALL
 	const EVENT_ROUTE_9_HIDDEN_ETHER
 	const EVENT_ROUTE_10_NORTH_HIDDEN_SUPER_POTION
-; Unused: next 171 events
+	const EVENT_ROUTE_10_SOUTH_HIDDEN_MAX_ETHER
+; Unused: next 170 events
 
 	const_next 400
 ; Kurt Apricorn events
