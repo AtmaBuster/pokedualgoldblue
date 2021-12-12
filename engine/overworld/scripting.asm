@@ -188,8 +188,8 @@ ScriptCommandTable:
 	dw Script_changeblock                ; 79
 	dw Script_reloadmap                  ; 7a
 	dw Script_reloadmappart              ; 7b
-	dw Script_writecmdqueue              ; 7c
-	dw Script_delcmdqueue                ; 7d
+	dw Script_usestonetable              ; 7c
+	dw Script_clearstonetable            ; 7d
 	dw Script_playmusic                  ; 7e
 	dw Script_encountermusic             ; 7f
 	dw Script_musicfadeout               ; 80
@@ -1928,10 +1928,7 @@ Script_wildon:
 	ret
 
 Script_xycompare:
-	call GetScriptByte
-	ld [wXYComparePointer], a
-	call GetScriptByte
-	ld [wXYComparePointer + 1], a
+; dummied out
 	ret
 
 Script_warpfacing:
@@ -2000,25 +1997,17 @@ Script_dontrestartmapmusic:
 	ld [wDontPlayMapMusicOnReload], a
 	ret
 
-Script_writecmdqueue:
+Script_usestonetable:
 	call GetScriptByte
-	ld e, a
+	ld [wStoneTableAddress], a
 	call GetScriptByte
-	ld d, a
-	ld a, [wScriptBank]
-	ld b, a
-	farcall WriteCmdQueue ; no need to farcall
+	ld [wStoneTableAddress+1], a
 	ret
 
-Script_delcmdqueue:
+Script_clearstonetable:
 	xor a
-	ld [wScriptVar], a
-	call GetScriptByte
-	ld b, a
-	farcall DelCmdQueue ; no need to farcall
-	ret c
-	ld a, TRUE
-	ld [wScriptVar], a
+	ld [wStoneTableAddress], a
+	ld [wStoneTableAddress+1], a
 	ret
 
 Script_changemapblocks:

@@ -33,11 +33,6 @@ EnableEvents::
 	ld [wScriptFlags2], a
 	ret
 
-CheckBit5_ScriptFlags2:
-	ld hl, wScriptFlags2
-	bit 5, [hl]
-	ret
-
 DisableWarpsConnxns: ; unreferenced
 	ld hl, wScriptFlags2
 	res 2, [hl]
@@ -107,9 +102,6 @@ StartMap:
 	farcall InitCallReceiveDelay
 	call ClearJoypad
 EnterMap:
-	xor a
-	ld [wXYComparePointer], a
-	ld [wXYComparePointer + 1], a
 	call SetUpFiveStepWildEncounterCooldown
 	farcall RunMapSetupScript
 	call DisableEvents
@@ -141,7 +133,7 @@ UnusedWait30Frames: ; unreferenced
 HandleMap:
 	call ResetOverworldDelay
 	call HandleMapTimeAndJoypad
-	farcall HandleCmdQueue ; no need to farcall
+	call HandleStoneTable
 	call MapEvents
 
 ; Not immediately entering a connected map will cause problems.
@@ -244,8 +236,6 @@ PlayerEvents:
 	ld a, [wScriptRunning]
 	and a
 	ret nz
-
-	call Dummy_CheckScriptFlags2Bit5 ; This is a waste of time
 
 	call CheckTrainerBattle_GetPlayerEvent
 	jr c, .ok
@@ -380,12 +370,6 @@ SetMinTwoStepWildEncounterCooldown:
 	ret nc
 	ld a, 2
 	ld [wWildEncounterCooldown], a
-	ret
-
-Dummy_CheckScriptFlags2Bit5:
-	call CheckBit5_ScriptFlags2
-	ret z
-	call SetXYCompareFlags
 	ret
 
 RunSceneScript:
@@ -1332,6 +1316,6 @@ DoBikeStep::
 	xor a
 	ret
 
-INCLUDE "engine/overworld/cmd_queue.asm"
+INCLUDE "engine/overworld/stone_table.asm"
 
 INCLUDE "engine/events/trainer_scripts.asm"

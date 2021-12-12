@@ -2236,8 +2236,7 @@ wScriptTextAddr::
 	ds 1
 wWildEncounterCooldown:: db
 
-wXYComparePointer:: dw
-wXYCompareFlags:: flag_array MAX_XYCOMPARE_LENGTH
+	ds 6
 
 wBattleScriptFlags:: db
 	ds 1
@@ -2367,9 +2366,9 @@ wPlayerData1End::
 wPlayerData2::
 ENDU
 
-wCmdQueue:: ds CMDQUEUE_CAPACITY * CMDQUEUE_ENTRY_SIZE
+wStoneTableAddress:: dw
 
-	ds 40
+	ds 62
 
 wMapObjects::
 wPlayerObject:: map_object wPlayer ; player is map object 0
