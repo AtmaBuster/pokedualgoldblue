@@ -65,4 +65,5 @@ MapScenes::
 	scene_var OAKS_LAB,                                    wOaksLabSceneID
 	scene_var ROUTE_22,                                    wRoute22SceneID
 	scene_var CERULEAN_CITY,                               wCeruleanCitySceneID
+	scene_var ROUTE_24,                                    wRoute24SceneID
 	db -1 ; end

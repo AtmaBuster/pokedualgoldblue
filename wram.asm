@@ -2515,8 +2515,9 @@ wMuseum1FSceneID::                                db
 wOaksLabSceneID::                                 db
 wRoute22SceneID::                                 db
 wCeruleanCitySceneID::                            db
+wRoute24SceneID::                                 db
 
-	ds 196
+	ds 195
 
 wEventFlags:: flag_array NUM_EVENTS
 
