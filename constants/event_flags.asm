@@ -234,7 +234,9 @@
 	const EVENT_MT_MOON_B2F_HIDDEN_MOON_STONE
 	const EVENT_MT_MOON_B2F_HIDDEN_ETHER
 	const EVENT_CERULEAN_CITY_HIDDEN_RARE_CANDY
-; Unused: next 164 events
+	const EVENT_ROUTE_25_HIDDEN_ETHER
+	const EVENT_ROUTE_25_HIDDEN_ELIXER
+; Unused: next 162 events
 
 	const_next 400
 ; Kurt Apricorn events
@@ -1714,7 +1716,8 @@
 	const EVENT_MT_MOON_B2F_HP_UP
 	const EVENT_MT_MOON_B2F_TM_MEGA_PUNCH
 	const EVENT_ROUTE_24_TM_THUNDER_WAVE
-; Unused: next 99 events
+	const EVENT_ROUTE_25_TM_SEISMIC_TOSS
+; Unused: next 98 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 800
