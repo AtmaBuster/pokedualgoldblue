@@ -7,8 +7,6 @@ LancesRoomKanto_MapScripts:
 	def_callbacks
 
 LancesRoomKanto_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 24, 16, AGATHAS_ROOM, 3
 	warp_event  5,  0, CHAMPIONS_ROOM, 1

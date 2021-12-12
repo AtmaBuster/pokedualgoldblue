@@ -7,8 +7,6 @@ SilphCo1F_MapScripts:
 	def_callbacks
 
 SilphCo1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 10, 17, SAFFRON_CITY, 6
 	warp_event 11, 17, SAFFRON_CITY, 6

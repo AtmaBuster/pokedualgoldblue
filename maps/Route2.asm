@@ -28,8 +28,6 @@ Route2_HPUpScript:
 	itemball HP_UP
 
 Route2_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 12,  9, DIGLETTS_CAVE_ROUTE_2, 1
 	warp_event  3, 11, VIRIDIAN_FOREST_NORTH_GATE, 2

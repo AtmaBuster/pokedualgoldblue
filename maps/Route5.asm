@@ -14,8 +14,6 @@ Route5_UndergroundSignScript:
 	done
 
 Route5_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 10, 29, ROUTE_5_GATE, 4
 	warp_event  9, 29, ROUTE_5_GATE, 3

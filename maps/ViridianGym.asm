@@ -440,8 +440,6 @@ TrainerCooltrainerMSaul:
 	done
 
 ViridianGym_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 16, 17, VIRIDIAN_CITY, 5
 	warp_event 17, 17, VIRIDIAN_CITY, 5

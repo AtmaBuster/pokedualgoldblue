@@ -166,8 +166,6 @@ PalletTown_RivalsHouseSignScript:
 	done
 
 PalletTown_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  5,  5, REDS_HOUSE_1F, 1
 	warp_event 13,  5, BLUES_HOUSE, 1

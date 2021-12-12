@@ -19,8 +19,6 @@ VictoryRoad2F_MapScripts:
 	def_callbacks
 
 VictoryRoad2F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  0,  8, VICTORY_ROAD_1F, 3
 	warp_event 29,  7, ROUTE_23, 4

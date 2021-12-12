@@ -14,8 +14,6 @@ Route7_UndergroundSignScript:
 	done
 
 Route7_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 18,  9, ROUTE_7_GATE, 3
 	warp_event 18, 10, ROUTE_7_GATE, 4

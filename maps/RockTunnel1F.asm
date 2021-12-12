@@ -13,8 +13,6 @@ RockTunnel1F_MapScripts:
 	def_callbacks
 
 RockTunnel1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 15,  3, ROUTE_10_NORTH, 2
 	warp_event 15,  0, ROUTE_10_NORTH, 2

@@ -10,8 +10,6 @@ PokemonMansion2F_MapScripts:
 	def_callbacks
 
 PokemonMansion2F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  5, 10, POKEMON_MANSION_1F, 5
 	warp_event  7, 10, POKEMON_MANSION_3F, 1

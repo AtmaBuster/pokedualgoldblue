@@ -11,8 +11,6 @@ PokemonTower6F_MapScripts:
 	def_callbacks
 
 PokemonTower6F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 18,  9, POKEMON_TOWER_5F, 2
 	warp_event  9, 16, POKEMON_TOWER_7F, 1

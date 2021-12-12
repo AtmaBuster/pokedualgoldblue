@@ -7,8 +7,6 @@ LoreleisRoom_MapScripts:
 	def_callbacks
 
 LoreleisRoom_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  4, 11, INDIGO_PLATEAU_LOBBY, 3
 	warp_event  5, 11, INDIGO_PLATEAU_LOBBY, 3

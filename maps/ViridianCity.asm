@@ -345,8 +345,6 @@ ViridianCity_HiddenPotion:
 	hiddenitem POTION, EVENT_VIRIDIAN_CITY_HIDDEN_POTION
 
 ViridianCity_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 23, 25, VIRIDIAN_POKECENTER, 1
 	warp_event 29, 19, VIRIDIAN_MART, 1

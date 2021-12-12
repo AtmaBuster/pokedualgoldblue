@@ -26,8 +26,6 @@ ViridianForestSouthGate_GirlScript:
 	done
 
 ViridianForestSouthGate_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  4,  0, VIRIDIAN_FOREST, 4
 	warp_event  5,  0, VIRIDIAN_FOREST, 5

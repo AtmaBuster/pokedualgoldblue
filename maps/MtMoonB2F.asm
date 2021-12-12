@@ -255,8 +255,6 @@ MtMoonB2F_HiddenEther:
 	hiddenitem ETHER, EVENT_MT_MOON_B2F_HIDDEN_ETHER
 
 MtMoonB2F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 25,  9, MT_MOON_B1F, 2
 	warp_event 21, 17, MT_MOON_B1F, 5

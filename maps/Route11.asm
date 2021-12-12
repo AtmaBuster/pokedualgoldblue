@@ -284,8 +284,6 @@ Route11_HiddenEscapeRope:
 	hiddenitem ESCAPE_ROPE, EVENT_ROUTE_11_HIDDEN_ESCAPE_ROPE
 
 Route11_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 49,  8, ROUTE_11_GATE_1F, 1
 	warp_event 49,  9, ROUTE_11_GATE_1F, 2

@@ -10,8 +10,6 @@ CeladonPokecenter_MapScripts:
 	def_callbacks
 
 CeladonPokecenter_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  3,  7, CELADON_CITY, 6
 	warp_event  4,  7, CELADON_CITY, 6

@@ -11,8 +11,6 @@ CeladonMart3F_MapScripts:
 	def_callbacks
 
 CeladonMart3F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 12,  1, CELADON_MART_4F, 1
 	warp_event 16,  1, CELADON_MART_2F, 2

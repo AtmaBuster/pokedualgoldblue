@@ -199,8 +199,6 @@ ViridianForest_HiddenAntidote:
 	hiddenitem ANTIDOTE, EVENT_VIRIDIAN_FOREST_HIDDEN_ANTIDOTE
 
 ViridianForest_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  1,  0, VIRIDIAN_FOREST_NORTH_GATE, 3
 	warp_event  2,  0, VIRIDIAN_FOREST_NORTH_GATE, 4

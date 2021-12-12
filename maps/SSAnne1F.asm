@@ -8,8 +8,6 @@ SSAnne1F_MapScripts:
 	def_callbacks
 
 SSAnne1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 26,  0, VERMILION_DOCK, 2
 	warp_event 27,  0, VERMILION_DOCK, 2

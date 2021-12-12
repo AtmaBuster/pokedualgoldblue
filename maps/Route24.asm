@@ -14,8 +14,6 @@ Route24_MapScripts:
 	def_callbacks
 
 Route24_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 
 	def_coord_events

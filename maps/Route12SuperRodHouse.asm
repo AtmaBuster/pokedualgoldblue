@@ -7,8 +7,6 @@ Route12SuperRodHouse_MapScripts:
 	def_callbacks
 
 Route12SuperRodHouse_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  2,  7, ROUTE_12, 4
 	warp_event  3,  7, ROUTE_12, 4

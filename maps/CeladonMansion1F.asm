@@ -10,8 +10,6 @@ CeladonMansion1F_MapScripts:
 	def_callbacks
 
 CeladonMansion1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  4, 11, CELADON_CITY, 3
 	warp_event  5, 11, CELADON_CITY, 3

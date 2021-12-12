@@ -7,8 +7,6 @@ CinnabarLab_MapScripts:
 	def_callbacks
 
 CinnabarLab_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  2,  7, CINNABAR_ISLAND, 3
 	warp_event  3,  7, CINNABAR_ISLAND, 3

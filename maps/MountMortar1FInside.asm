@@ -25,8 +25,6 @@ MountMortar1FInsideHiddenMaxRepel:
 	hiddenitem MAX_REPEL, EVENT_MOUNT_MORTAR_1F_INSIDE_HIDDEN_MAX_REPEL
 
 MountMortar1FInside_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 11, 47, MOUNT_MORTAR_1F_OUTSIDE, 5
 	warp_event 29, 47, MOUNT_MORTAR_1F_OUTSIDE, 6

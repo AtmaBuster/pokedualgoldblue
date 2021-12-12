@@ -7,8 +7,6 @@ DayCareKanto_MapScripts:
 	def_callbacks
 
 DayCareKanto_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  2,  7, ROUTE_5, 5
 	warp_event  3,  7, ROUTE_5, 5

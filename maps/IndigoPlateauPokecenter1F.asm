@@ -301,8 +301,6 @@ AbraText:
 	done
 
 IndigoPlateauPokecenter1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  5, 13, INDIGO_PLATEAU, 1
 	warp_event  6, 13, INDIGO_PLATEAU, 2

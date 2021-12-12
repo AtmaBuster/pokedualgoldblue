@@ -9,8 +9,6 @@ Route18_MapScripts:
 	def_callbacks
 
 Route18_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 33,  8, ROUTE_18_GATE_1F, 1
 	warp_event 33,  9, ROUTE_18_GATE_1F, 2

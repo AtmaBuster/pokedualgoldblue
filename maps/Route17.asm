@@ -16,8 +16,6 @@ Route17_MapScripts:
 	def_callbacks
 
 Route17_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 
 	def_coord_events

@@ -17,8 +17,6 @@ SSAnneB1FRooms_MapScripts:
 	def_callbacks
 
 SSAnneB1FRooms_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  2,  5, SS_ANNE_B1F, 5
 	warp_event  3,  5, SS_ANNE_B1F, 5

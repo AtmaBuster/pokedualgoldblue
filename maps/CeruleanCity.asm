@@ -441,8 +441,6 @@ CeruleanCity_HiddenRareCandy:
 	hiddenitem RARE_CANDY, EVENT_CERULEAN_CITY_HIDDEN_RARE_CANDY
 
 CeruleanCity_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 27, 11, CERULEAN_TRASHED_HOUSE, 1
 	warp_event 13, 15, CERULEAN_TRADE_HOUSE, 1

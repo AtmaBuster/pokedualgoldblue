@@ -11,8 +11,6 @@ IndigoPlateau_MapScripts:
 	endcallback
 
 IndigoPlateau_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 IF DEF(_GOLD)
 	warp_event  9,  5, INDIGO_PLATEAU_POKECENTER_1F, 1

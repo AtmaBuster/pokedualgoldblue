@@ -6,8 +6,6 @@ MtMoonB1F_MapScripts:
 	def_callbacks
 
 MtMoonB1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  5,  5, MT_MOON_1F, 3
 	warp_event 17, 11, MT_MOON_B2F, 1

@@ -12,8 +12,6 @@ SeafoamIslandsB3F_MapScripts:
 	def_callbacks
 
 SeafoamIslandsB3F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  5, 12, SEAFOAM_ISLANDS_B2F, 2
 	warp_event  8,  6, SEAFOAM_ISLANDS_B4F, 3

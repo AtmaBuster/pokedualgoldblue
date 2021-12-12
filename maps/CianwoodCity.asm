@@ -217,8 +217,6 @@ CianwoodPhotoStudioSignText:
 	done
 
 CianwoodCity_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 17, 41, MANIAS_HOUSE, 1
 	warp_event  8, 43, CIANWOOD_GYM, 1

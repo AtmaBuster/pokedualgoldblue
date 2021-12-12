@@ -11,8 +11,6 @@ RocketHideoutB2F_MapScripts:
 	def_callbacks
 
 RocketHideoutB2F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 27,  8, ROCKET_HIDEOUT_B1F, 1
 	warp_event 21,  8, ROCKET_HIDEOUT_B3F, 1

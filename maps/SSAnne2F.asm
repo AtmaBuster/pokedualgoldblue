@@ -8,8 +8,6 @@ SSAnne2F_MapScripts:
 	def_callbacks
 
 SSAnne2F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  9, 11, SS_ANNE_2F_ROOMS, 1
 	warp_event 13, 11, SS_ANNE_2F_ROOMS, 3

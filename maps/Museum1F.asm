@@ -239,8 +239,6 @@ Museum1F_KabutopsFossilScript:
 	done
 
 Museum1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 10,  7, PEWTER_CITY, 1
 	warp_event 11,  7, PEWTER_CITY, 1

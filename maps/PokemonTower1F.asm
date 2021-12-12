@@ -11,8 +11,6 @@ PokemonTower1F_MapScripts:
 	def_callbacks
 
 PokemonTower1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 10, 17, LAVENDER_TOWN, 2
 	warp_event 11, 17, LAVENDER_TOWN, 2

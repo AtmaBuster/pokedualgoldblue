@@ -14,8 +14,6 @@ LavenderTown_MapScripts:
 	endcallback
 
 LavenderTown_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  3,  5, LAVENDER_POKECENTER, 1
 	warp_event 14,  5, POKEMON_TOWER_1F, 1

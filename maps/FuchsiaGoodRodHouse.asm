@@ -7,8 +7,6 @@ FuchsiaGoodRodHouse_MapScripts:
 	def_callbacks
 
 FuchsiaGoodRodHouse_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  2,  0, FUCHSIA_CITY, 9
 	warp_event  2,  7, FUCHSIA_CITY, 8
