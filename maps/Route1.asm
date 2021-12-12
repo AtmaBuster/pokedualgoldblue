@@ -70,8 +70,6 @@ Route1_SignScript:
 	done
 
 Route1_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 
 	def_coord_events

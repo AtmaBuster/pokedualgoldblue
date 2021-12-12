@@ -7,8 +7,6 @@ Route8Gate_MapScripts:
 	def_callbacks
 
 Route8Gate_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  0,  3, ROUTE_8, 1
 	warp_event  0,  4, ROUTE_8, 2

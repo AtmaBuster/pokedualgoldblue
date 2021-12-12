@@ -6,8 +6,6 @@ CeladonMansionRoof_MapScripts:
 	def_callbacks
 
 CeladonMansionRoof_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  6,  1, CELADON_MANSION_3F, 2
 	warp_event  2,  1, CELADON_MANSION_3F, 3

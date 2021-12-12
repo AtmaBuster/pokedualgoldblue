@@ -8,8 +8,6 @@ CinnabarLabMetronomeRoom_MapScripts:
 	def_callbacks
 
 CinnabarLabMetronomeRoom_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  2,  7, CINNABAR_LAB, 4
 	warp_event  3,  7, CINNABAR_LAB, 4

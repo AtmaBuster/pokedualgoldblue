@@ -9,8 +9,6 @@ CeruleanCave1F_MapScripts:
 	def_callbacks
 
 CeruleanCave1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 24, 17, CERULEAN_CITY, 7
 	warp_event 25, 17, CERULEAN_CITY, 7

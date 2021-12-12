@@ -125,8 +125,6 @@ Route10South_HiddenMaxEther:
 	hiddenitem MAX_ETHER, EVENT_ROUTE_10_SOUTH_HIDDEN_MAX_ETHER
 
 Route10South_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  8,  3, ROCK_TUNNEL_1F, 3
 

@@ -13,8 +13,6 @@ Route16_MapScripts:
 	def_callbacks
 
 Route16_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 17, 10, ROUTE_16_GATE_1F, 1
 	warp_event 17, 11, ROUTE_16_GATE_1F, 2

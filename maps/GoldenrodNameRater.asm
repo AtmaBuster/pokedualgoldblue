@@ -23,8 +23,6 @@ GoldenrodNameRaterRadio:
 INCLUDE "data/text/unused_sweet_honey.asm"
 
 GoldenrodNameRater_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  2,  7, GOLDENROD_CITY, 9
 	warp_event  3,  7, GOLDENROD_CITY, 9

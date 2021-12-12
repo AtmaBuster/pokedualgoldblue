@@ -20,8 +20,6 @@ CeladonCity_MapScripts:
 	endcallback
 
 CeladonCity_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  8, 13, CELADON_MART_1F, 1
 	warp_event 10, 13, CELADON_MART_1F, 3

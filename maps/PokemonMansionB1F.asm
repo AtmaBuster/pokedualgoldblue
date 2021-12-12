@@ -14,8 +14,6 @@ PokemonMansionB1F_MapScripts:
 	def_callbacks
 
 PokemonMansionB1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 23, 22, POKEMON_MANSION_1F, 6
 

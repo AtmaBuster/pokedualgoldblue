@@ -61,8 +61,6 @@ Route2Gate_YoungsterScript:
 	done
 
 Route2Gate_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  4,  0, ROUTE_2, 4
 	warp_event  5,  0, ROUTE_2, 4

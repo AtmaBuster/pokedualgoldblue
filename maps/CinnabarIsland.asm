@@ -13,8 +13,6 @@ CinnabarIsland_MapScripts:
 	endcallback
 
 CinnabarIsland_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  6,  3, POKEMON_MANSION_1F, 2
 	warp_event 18,  3, CINNABAR_GYM, 1

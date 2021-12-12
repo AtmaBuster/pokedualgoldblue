@@ -10,8 +10,6 @@ SilphCo8F_MapScripts:
 	def_callbacks
 
 SilphCo8F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 16,  0, SILPH_CO_9F, 2
 	warp_event 14,  0, SILPH_CO_7F, 1

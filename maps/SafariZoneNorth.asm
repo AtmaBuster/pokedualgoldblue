@@ -8,8 +8,6 @@ SafariZoneNorth_MapScripts:
 	def_callbacks
 
 SafariZoneNorth_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  2, 35, SAFARI_ZONE_WEST, 1
 	warp_event  3, 35, SAFARI_ZONE_WEST, 2

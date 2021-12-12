@@ -8,8 +8,6 @@ CeladonMartRoof_MapScripts:
 	def_callbacks
 
 CeladonMartRoof_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 15,  2, CELADON_MART_5F, 1
 

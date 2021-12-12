@@ -13,8 +13,6 @@ Route23_MapScripts:
 	def_callbacks
 
 Route23_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  7, 139, ROUTE_22_GATE, 3
 	warp_event  8, 139, ROUTE_22_GATE, 4

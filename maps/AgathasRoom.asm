@@ -7,8 +7,6 @@ AgathasRoom_MapScripts:
 	def_callbacks
 
 AgathasRoom_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  4, 11, BRUNOS_ROOM_KANTO, 3
 	warp_event  5, 11, BRUNOS_ROOM_KANTO, 4

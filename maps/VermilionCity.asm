@@ -17,8 +17,6 @@ VermilionCity_MapScripts:
 	endcallback
 
 VermilionCity_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 11,  3, VERMILION_POKECENTER, 1
 	warp_event  9, 13, POKEMON_FAN_CLUB, 1

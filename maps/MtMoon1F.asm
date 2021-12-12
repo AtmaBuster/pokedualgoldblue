@@ -233,8 +233,6 @@ MtMoon1FSignScript:
 	done
 
 MtMoon1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 14, 35, ROUTE_4, 2
 	warp_event 15, 35, ROUTE_4, 2

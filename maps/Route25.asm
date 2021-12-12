@@ -278,8 +278,6 @@ ELIF DEF(_BLUE)
 ENDC
 
 Route25_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 45,  3, BILLS_HOUSE, 1
 

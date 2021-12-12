@@ -7,8 +7,6 @@ VermilionTradeHouse_MapScripts:
 	def_callbacks
 
 VermilionTradeHouse_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  2,  7, VERMILION_CITY, 8
 	warp_event  3,  7, VERMILION_CITY, 8

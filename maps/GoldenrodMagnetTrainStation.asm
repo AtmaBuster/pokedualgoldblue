@@ -157,8 +157,6 @@ GoldenrodMagnetTrainStationGentlemanText:
 	done
 
 GoldenrodMagnetTrainStation_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  8, 17, GOLDENROD_CITY, 5
 	warp_event  9, 17, GOLDENROD_CITY, 5

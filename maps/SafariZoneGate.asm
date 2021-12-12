@@ -8,8 +8,6 @@ SafariZoneGate_MapScripts:
 	def_callbacks
 
 SafariZoneGate_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  3,  5, FUCHSIA_CITY, 5
 	warp_event  4,  5, FUCHSIA_CITY, 5

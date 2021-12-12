@@ -10,8 +10,6 @@ PewterPokecenter_MapScripts:
 	def_callbacks
 
 PewterPokecenter_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  3,  7, PEWTER_CITY, 7
 	warp_event  4,  7, PEWTER_CITY, 7

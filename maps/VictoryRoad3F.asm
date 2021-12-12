@@ -16,8 +16,6 @@ VictoryRoad3F_MapScripts:
 	def_callbacks
 
 VictoryRoad3F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 23,  7, VICTORY_ROAD_2F, 4
 	warp_event 26,  8, VICTORY_ROAD_2F, 6

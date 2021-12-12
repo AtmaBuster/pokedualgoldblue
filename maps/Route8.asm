@@ -262,8 +262,6 @@ Route8_UndergroundSignScript:
 	done
 
 Route8_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  1,  9, ROUTE_8_GATE, 1
 	warp_event  1, 10, ROUTE_8_GATE, 2

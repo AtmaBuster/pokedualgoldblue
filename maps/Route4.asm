@@ -79,8 +79,6 @@ Route4_HiddenGreatBall:
 	hiddenitem GREAT_BALL, EVENT_ROUTE_4_HIDDEN_GREAT_BALL
 
 Route4_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 11,  5, MT_MOON_POKECENTER, 1
 	warp_event 18,  5, MT_MOON_1F, 1

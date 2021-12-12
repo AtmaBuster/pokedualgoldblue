@@ -14,8 +14,6 @@ RockTunnelB1F_MapScripts:
 	def_callbacks
 
 RockTunnelB1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 33, 25, ROCK_TUNNEL_1F, 5
 	warp_event 27,  3, ROCK_TUNNEL_1F, 6

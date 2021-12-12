@@ -352,8 +352,6 @@ endr
 	step_end
 
 PewterCity_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 14,  7, MUSEUM_1F, 1
 	warp_event 19,  5, MUSEUM_1F, 3

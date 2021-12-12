@@ -274,8 +274,6 @@ Route9_HiddenEther:
 	hiddenitem ETHER, EVENT_ROUTE_9_HIDDEN_ETHER
 
 Route9_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 
 	def_coord_events

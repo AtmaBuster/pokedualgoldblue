@@ -6,8 +6,6 @@ UndergroundPathNorthSouth_MapScripts:
 	def_callbacks
 
 UndergroundPathNorthSouth_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  5,  2, UNDERGROUND_PATH_ROUTE_5, 3
 	warp_event  2, 39, UNDERGROUND_PATH_ROUTE_6, 3

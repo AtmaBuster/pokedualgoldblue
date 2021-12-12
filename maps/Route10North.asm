@@ -85,8 +85,6 @@ Route10North_HiddenSuperPotion:
 	hiddenitem SUPER_POTION, EVENT_ROUTE_10_NORTH_HIDDEN_SUPER_POTION
 
 Route10North_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 11, 19, ROCK_TUNNEL_POKECENTER, 1
 	warp_event  8, 17, ROCK_TUNNEL_1F, 1

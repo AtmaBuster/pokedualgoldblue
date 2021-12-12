@@ -7,8 +7,6 @@ SafariZoneCenter_MapScripts:
 	def_callbacks
 
 SafariZoneCenter_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 14, 25, SAFARI_ZONE_GATE, 3
 	warp_event 15, 25, SAFARI_ZONE_GATE, 4

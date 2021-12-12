@@ -33,8 +33,6 @@ MountMortar2FInsideHiddenFullRestore:
 	hiddenitem FULL_RESTORE, EVENT_MOUNT_MORTAR_2F_INSIDE_HIDDEN_FULL_RESTORE
 
 MountMortar2FInside_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event 17, 33, MOUNT_MORTAR_1F_OUTSIDE, 4
 	warp_event  3,  5, MOUNT_MORTAR_1F_INSIDE, 6

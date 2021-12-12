@@ -7,8 +7,6 @@ Route12Gate1F_MapScripts:
 	def_callbacks
 
 Route12Gate1F_MapEvents:
-	db 0, 0 ; filler
-
 	def_warp_events
 	warp_event  4,  0, ROUTE_12, 1
 	warp_event  5,  0, ROUTE_12, 2
