@@ -13,6 +13,9 @@
 
 CeruleanCity_MapScripts:
 	def_scene_scripts
+	scene_script .Dummy ; SCENE_CERULEAN_CITY_RIVAL
+	scene_script .Dummy ; SCENE_CERULEAN_CITY_ROCKET
+	scene_script .Dummy ; SCENE_CERULEAN_CITY_DONE
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, .FlyPoint
@@ -20,6 +23,9 @@ CeruleanCity_MapScripts:
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_CERULEAN
 	endcallback
+
+.Dummy:
+	end
 
 CeruleanCity_RivalScriptL:
 	scall CeruleanCity_RivalScript
