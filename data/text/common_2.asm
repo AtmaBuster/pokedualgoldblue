@@ -334,41 +334,21 @@ _YouCantUseItInABattleText::
 	prompt
 
 _ActorNameText::
-	text "<USER>@@"
+	text "<USER>@"
+	text_end
 
-_UsedMove1Text::
+_UsedMoveText::
 	text_start
-	line "used @@"
-
-_UsedMove2Text::
-	text_start
-	line "used @@"
+	line "used @"
+	text_end
 
 _UsedInsteadText::
 	text "instead,"
-	cont "@@"
+	cont "@"
+	text_end
 
 _MoveNameText::
 	text_ram wStringBuffer2
-	db "@@"
-
-_EndUsedMove1Text::
-	text "!"
-	done
-
-_EndUsedMove2Text::
-	text "!"
-	done
-
-_EndUsedMove3Text::
-	text "!"
-	done
-
-_EndUsedMove4Text::
-	text "!"
-	done
-
-_EndUsedMove5Text::
 	text "!"
 	done
 
