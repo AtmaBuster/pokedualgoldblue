@@ -246,16 +246,14 @@ MartPewter:
 	db -1 ; end
 
 MartCerulean:
-	db 9 ; # items
-	db GREAT_BALL
-	db ULTRA_BALL
-	db SUPER_POTION
-	db SUPER_REPEL
-	db FULL_HEAL
-	db X_DEFEND
-	db X_ATTACK
-	db DIRE_HIT
-	db SURF_MAIL
+	db 7 ; # items
+	db POKE_BALL
+	db POTION
+	db REPEL
+	db ANTIDOTE
+	db BURN_HEAL
+	db AWAKENING
+	db PARLYZ_HEAL
 	db -1 ; end
 
 MartLavender:
