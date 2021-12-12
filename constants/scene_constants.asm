@@ -152,3 +152,9 @@ SCENE_ALWAYS   EQU -1
 	const_def 1
 	const SCENE_ROUTE_22_RIVAL_1 ; 1
 	const SCENE_ROUTE_22_RIVAL_2 ; 2
+
+; wCeruleanCitySceneID
+	const_def
+	const SCENE_CERULEAN_CITY_RIVAL  ; 0
+	const SCENE_CERULEAN_CITY_ROCKET ; 1
+	const SCENE_CERULEAN_CITY_DONE   ; 2

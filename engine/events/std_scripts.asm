@@ -552,6 +552,8 @@ InitializeEventsScript:
 	setevent EVENT_OAKS_LAB_OAK2
 	setevent EVENT_ROUTE_22_RIVAL_1
 	setevent EVENT_ROUTE_22_RIVAL_2
+	setevent EVENT_CERULEAN_CITY_RIVAL
+	setevent EVENT_CERULEAN_CITY_GUARD2
 
 	setevent EVENT_INITIALIZED_EVENTS
 	endcallback
