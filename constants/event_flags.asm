@@ -218,6 +218,7 @@
 	const EVENT_GOT_TM34_BIDE
 	const EVENT_GOT_TM27_FISSURE
 	const EVENT_GOT_FOSSIL
+	const EVENT_GOT_TM_BUBBLEBEAM
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
@@ -231,7 +232,7 @@
 	const EVENT_ROUTE_11_HIDDEN_ESCAPE_ROPE
 	const EVENT_MT_MOON_B2F_HIDDEN_MOON_STONE
 	const EVENT_MT_MOON_B2F_HIDDEN_ETHER
-; Unused: next 166 events
+; Unused: next 165 events
 
 	const_next 400
 ; Kurt Apricorn events
