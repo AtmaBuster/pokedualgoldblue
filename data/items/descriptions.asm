@@ -115,8 +115,8 @@ ItemDescriptions:
 	dw EverStoneDesc
 	dw SpellTagDesc
 	dw RageCandyBarDesc
-	dw OldAmberDesc
-	dw TeruSama10Desc
+	dw FossilDesc
+	dw FossilDesc
 	dw MiracleSeedDesc
 	dw ThickClubDesc
 	dw FocusBandDesc
@@ -129,7 +129,7 @@ ItemDescriptions:
 	dw LuckyEggDesc
 	dw CardKeyDesc
 	dw MachinePartDesc
-	dw TeruSama12Desc
+	dw FossilDesc
 	dw LostItemDesc
 	dw StardustDesc
 	dw StarPieceDesc
@@ -704,7 +704,7 @@ RageCandyBarDesc:
 	db   "Restores #MON"
 	next "HP by 20.@"
 
-OldAmberDesc:
+FossilDesc:
 	db   "Stone with ancient"
 	next "#MON genes.@"
 
