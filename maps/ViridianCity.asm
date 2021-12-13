@@ -9,15 +9,12 @@
 
 ViridianCity_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene ; SCENE_VIRIDIAN_CITY_OLD_MAN
-	scene_script .DummyScene ; SCENE_VIRIDIAN_CITY_GYM_LOCK
-	scene_script .DummyScene ; SCENE_VIRIDIAN_CITY_NOTHING
+	scene_script DummyScript ; SCENE_VIRIDIAN_CITY_OLD_MAN
+	scene_script DummyScript ; SCENE_VIRIDIAN_CITY_GYM_LOCK
+	scene_script DummyScript ; SCENE_VIRIDIAN_CITY_NOTHING
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, .FlyPoint
-
-.DummyScene:
-	end
 
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_VIRIDIAN

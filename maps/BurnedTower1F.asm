@@ -11,19 +11,13 @@
 BurnedTower1F_MapScripts:
 	def_scene_scripts
 	scene_script .RivalScene ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_BURNEDTOWER1F_RIVAL_BATTLE
-	scene_script .DummyScene2 ; SCENE_BURNEDTOWER1F_NOTHING
+	scene_script DummyScript ; SCENE_BURNEDTOWER1F_RIVAL_BATTLE
+	scene_script DummyScript ; SCENE_BURNEDTOWER1F_NOTHING
 
 	def_callbacks
 
 .RivalScene:
 	sdefer .Rival
-	end
-
-.DummyScene1:
-	end
-
-.DummyScene2:
 	end
 
 .Rival:

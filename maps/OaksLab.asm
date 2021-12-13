@@ -13,15 +13,12 @@
 
 OaksLab_MapScripts:
 	def_scene_scripts
-	scene_script .Dummy  ; SCENE_DEFAULT
+	scene_script DummyScript  ; SCENE_DEFAULT
 	scene_script .Intro1 ; SCENE_OAKS_LAB_INTRO_START
-	scene_script .Dummy  ; SCENE_OAKS_LAB_CANT_LEAVE
-	scene_script .Dummy  ; SCENE_OAKS_LAB_RIVAL_BATTLE
+	scene_script DummyScript  ; SCENE_OAKS_LAB_CANT_LEAVE
+	scene_script DummyScript  ; SCENE_OAKS_LAB_RIVAL_BATTLE
 
 	def_callbacks
-
-.Dummy:
-	end
 
 .Intro1:
 	applymovement OAKSLAB_OAK2, OaksLab_OakEntryMovement

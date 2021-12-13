@@ -990,6 +990,9 @@ GetScriptByte::
 	pop hl
 	ret
 
+DummyScript::
+	end
+
 ObjectEvent::
 	jumptextfaceplayer ObjectEventText
 

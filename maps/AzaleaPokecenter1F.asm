@@ -6,12 +6,9 @@
 
 AzaleaPokecenter1F_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene
+	scene_script DummyScript
 
 	def_callbacks
-
-.DummyScene:
-	end
 
 AzaleaPokecenter1FNurseScript:
 	jumpstd PokecenterNurseScript

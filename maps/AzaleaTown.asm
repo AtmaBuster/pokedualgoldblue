@@ -13,17 +13,11 @@
 
 AzaleaTown_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_AZALEATOWN_NOTHING
-	scene_script .DummyScene1 ; SCENE_AZALEATOWN_RIVAL_BATTLE
+	scene_script DummyScript ; SCENE_AZALEATOWN_NOTHING
+	scene_script DummyScript ; SCENE_AZALEATOWN_RIVAL_BATTLE
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, .Flypoint
-
-.DummyScene0:
-	end
-
-.DummyScene1:
-	end
 
 .Flypoint:
 	setflag ENGINE_FLYPOINT_AZALEA

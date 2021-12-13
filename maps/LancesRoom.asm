@@ -6,16 +6,13 @@
 LancesRoom_MapScripts:
 	def_scene_scripts
 	scene_script .LockDoor ; SCENE_DEFAULT
-	scene_script .DummyScene ; SCENE_LANCESROOM_APPROACH_LANCE
+	scene_script DummyScript ; SCENE_LANCESROOM_APPROACH_LANCE
 
 	def_callbacks
 	callback MAPCALLBACK_TILES, .LancesRoomDoors
 
 .LockDoor:
 	sdefer .LancesDoorLocksBehindYou
-	end
-
-.DummyScene:
 	end
 
 .LancesRoomDoors:

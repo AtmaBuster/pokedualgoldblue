@@ -5,16 +5,13 @@
 TimeCapsule_MapScripts:
 	def_scene_scripts
 	scene_script .InitializeTimeCapsule ; SCENE_DEFAULT
-	scene_script .DummyScene ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 	callback MAPCALLBACK_OBJECTS, .SetWhichChris
 
 .InitializeTimeCapsule:
 	sdefer .InitializeAndPreparePokecenter2F
-	end
-
-.DummyScene:
 	end
 
 .SetWhichChris:

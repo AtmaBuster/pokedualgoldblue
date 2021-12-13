@@ -10,13 +10,10 @@
 
 Route24_MapScripts:
 	def_scene_scripts
-	scene_script .Dummy ; SCENE_DEFAULT
-	scene_script .Dummy ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
-
-.Dummy:
-	end
 
 Route24_RocketScript:
 	setlasttalked ROUTE24_COOLTRAINER_M1

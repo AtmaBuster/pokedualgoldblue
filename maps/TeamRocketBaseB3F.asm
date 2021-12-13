@@ -16,24 +16,15 @@
 TeamRocketBaseB3F_MapScripts:
 	def_scene_scripts
 	scene_script .LanceGetsPassword ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_TEAMROCKETBASEB3F_RIVAL_ENCOUNTER
-	scene_script .DummyScene2 ; SCENE_TEAMROCKETBASEB3F_ROCKET_BOSS
-	scene_script .DummyScene3 ; SCENE_TEAMROCKETBASEB3F_NOTHING
+	scene_script DummyScript ; SCENE_TEAMROCKETBASEB3F_RIVAL_ENCOUNTER
+	scene_script DummyScript ; SCENE_TEAMROCKETBASEB3F_ROCKET_BOSS
+	scene_script DummyScript ; SCENE_TEAMROCKETBASEB3F_NOTHING
 
 	def_callbacks
 	callback MAPCALLBACK_TILES, .CheckGiovanniDoor
 
 .LanceGetsPassword:
 	sdefer LanceGetPasswordScript
-	end
-
-.DummyScene1:
-	end
-
-.DummyScene2:
-	end
-
-.DummyScene3:
 	end
 
 .CheckGiovanniDoor:

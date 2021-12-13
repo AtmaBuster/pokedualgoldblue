@@ -3,12 +3,9 @@
 
 CianwoodPharmacy_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene
+	scene_script DummyScript
 
 	def_callbacks
-
-.DummyScene:
-	end
 
 CianwoodPharmacist:
 	faceplayer

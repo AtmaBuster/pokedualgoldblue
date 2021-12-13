@@ -7,14 +7,11 @@
 
 PewterCity_MapScripts:
 	def_scene_scripts
-	scene_script .Dummy ; SCENE_DEFAULT
-	scene_script .Dummy ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, .FlyPoint
-
-.Dummy:
-	end
 
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_PEWTER

@@ -7,13 +7,13 @@ GoldenrodDeptStoreElevatorScript:
 	opentext
 	elevator GoldenrodDeptStoreElevatorData
 	closetext
-	iffalse .Done
+	iffalse DummyScript
 	pause 5
 	playsound SFX_ELEVATOR
 	earthquake 60
 	waitsfx
 	checkevent EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_BLOCKED_OFF
-	iftrue .Done
+	iftrue DummyScript
 	checkevent EVENT_GOLDENROD_DEPT_STORE_B1F_LAYOUT_1
 	iftrue .BoxLayout1
 	checkevent EVENT_GOLDENROD_DEPT_STORE_B1F_LAYOUT_2
@@ -36,9 +36,6 @@ GoldenrodDeptStoreElevatorScript:
 	clearevent EVENT_GOLDENROD_DEPT_STORE_B1F_LAYOUT_1
 	clearevent EVENT_GOLDENROD_DEPT_STORE_B1F_LAYOUT_2
 	setevent EVENT_GOLDENROD_DEPT_STORE_B1F_LAYOUT_3
-	end
-
-.Done:
 	end
 
 GoldenrodDeptStoreElevatorData:

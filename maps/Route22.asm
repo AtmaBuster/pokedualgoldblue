@@ -4,14 +4,11 @@
 
 Route22_MapScripts:
 	def_scene_scripts
-	scene_script .Dummy ; SCENE_DEFAULT
-	scene_script .Dummy ; SCENE_ROUTE_22_RIVAL_1
-	scene_script .Dummy ; SCENE_ROUTE_22_RIVAL_2
+	scene_script DummyScript ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_ROUTE_22_RIVAL_1
+	scene_script DummyScript ; SCENE_ROUTE_22_RIVAL_2
 
 	def_callbacks
-
-.Dummy:
-	end
 
 Route22_Rival1UpScript:
 	playmusic MUSIC_RBY_MEET_RIVAL

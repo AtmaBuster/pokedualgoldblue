@@ -5,14 +5,11 @@
 
 RuinsOfAlphResearchCenter_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_RUINSOFALPHRESEARCHCENTER_NOTHING
+	scene_script DummyScript ; SCENE_RUINSOFALPHRESEARCHCENTER_NOTHING
 	scene_script .GetUnownDex ; SCENE_RUINSOFALPHRESEARCHCENTER_GET_UNOWN_DEX
 
 	def_callbacks
 	callback MAPCALLBACK_OBJECTS, .ScientistCallback
-
-.DummyScene0:
-	end
 
 .GetUnownDex:
 	sdefer .GetUnownDexScript

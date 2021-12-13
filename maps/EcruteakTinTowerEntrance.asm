@@ -6,20 +6,14 @@
 
 EcruteakTinTowerEntrance_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 
-.DummyScene0:
-	end
-
-.DummyScene1:
-	end
-
 EcruteakTinTowerEntranceSageBlocksLeft:
 	checkevent EVENT_ECRUTEAK_TIN_TOWER_ENTRANCE_SAGE_RIGHT
-	iftrue EcruteakTinTowerEntranceAlreadyBlocked
+	iftrue DummyScript
 	applymovement ECRUTEAKTINTOWERENTRANCE_SAGE2, EcruteakTinTowerEntranceSageBlocksLeftMovement
 	moveobject ECRUTEAKTINTOWERENTRANCE_SAGE1, 4, 6
 	appear ECRUTEAKTINTOWERENTRANCE_SAGE1
@@ -29,15 +23,12 @@ EcruteakTinTowerEntranceSageBlocksLeft:
 
 EcruteakTinTowerEntranceSageBlocksRight:
 	checkevent EVENT_ECRUTEAK_TIN_TOWER_ENTRANCE_SAGE_LEFT
-	iftrue EcruteakTinTowerEntranceAlreadyBlocked
+	iftrue DummyScript
 	applymovement ECRUTEAKTINTOWERENTRANCE_SAGE1, EcruteakTinTowerEntranceSageBlocksRightMovement
 	moveobject ECRUTEAKTINTOWERENTRANCE_SAGE2, 5, 6
 	appear ECRUTEAKTINTOWERENTRANCE_SAGE2
 	pause 5
 	disappear ECRUTEAKTINTOWERENTRANCE_SAGE1
-	end
-
-EcruteakTinTowerEntranceAlreadyBlocked:
 	end
 
 EcruteakTinTowerEntranceSageScript:

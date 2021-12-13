@@ -5,14 +5,11 @@
 
 VermilionPort_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_DEFAULT
 	scene_script .LeaveFastShip ; SCENE_VERMILIONPORT_LEAVE_SHIP
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, .FlyPoint
-
-.DummyScene0:
-	end
 
 .LeaveFastShip:
 	sdefer .LeaveFastShipScript
@@ -79,9 +76,9 @@ VermilionPortAlreadyRodeScript:
 VermilionPortWalkUpToShipScript:
 	turnobject VERMILIONPORT_SAILOR2, RIGHT
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	iftrue .skip
+	iftrue DummyScript
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
-	iftrue .skip
+	iftrue DummyScript
 	turnobject PLAYER, LEFT
 	opentext
 	readvar VAR_WEEKDAY
@@ -123,9 +120,6 @@ VermilionPortWalkUpToShipScript:
 	waitbutton
 	closetext
 	applymovement PLAYER, VermilionPortCannotEnterFastShipMovement
-	end
-
-.skip:
 	end
 
 VermilionPortNotRidingScript:

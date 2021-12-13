@@ -6,16 +6,13 @@
 
 PlayersHouse1F_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_FINISHED
+	scene_script .MeetMomScene ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 
-.DummyScene0:
+.MeetMomScene:
 	sdefer MeetMomScript
-	end
-
-.DummyScene1:
 	end
 
 MeetMomScript:

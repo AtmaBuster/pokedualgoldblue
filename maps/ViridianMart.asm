@@ -6,7 +6,7 @@
 ViridianMart_MapScripts:
 	def_scene_scripts
 	scene_script .GetParcel ; SCENE_DEFAULT
-	scene_script .Dummy ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 
@@ -43,9 +43,6 @@ ViridianMart_MapScripts:
 	step UP
 	step LEFT
 	step_end
-
-.Dummy:
-	end
 
 ViridianMart_ClerkScript:
 	opentext

@@ -7,16 +7,13 @@
 
 Museum1F_MapScripts:
 	def_scene_scripts
-	scene_script .Dummy ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_DEFAULT
 
 	def_callbacks
 
-.Dummy:
-	end
-
 Museum1F_BuyTicketScript:
 	checkevent EVENT_BOUGHT_MUSEUM_TICKET
-	iftrue .End
+	iftrue DummyScript
 	turnobject MUSEUM1F_KANTO_SCIENTIST1, LEFT
 	opentext
 	special PlaceMoneyTopRight
@@ -42,7 +39,6 @@ Museum1F_BuyTicketScript:
 	waitbutton
 	closetext
 	applymovement PLAYER, .ForceLeave
-.End:
 	end
 
 .TicketAsk:

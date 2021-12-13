@@ -4,16 +4,13 @@
 BrunosRoom_MapScripts:
 	def_scene_scripts
 	scene_script .LockDoor ; SCENE_DEFAULT
-	scene_script .DummyScene ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 	callback MAPCALLBACK_TILES, .BrunosRoomDoors
 
 .LockDoor:
 	sdefer .BrunosDoorLocksBehindYou
-	end
-
-.DummyScene:
 	end
 
 .BrunosRoomDoors:

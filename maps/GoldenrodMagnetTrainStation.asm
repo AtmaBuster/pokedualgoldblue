@@ -4,12 +4,9 @@
 
 GoldenrodMagnetTrainStation_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_DEFAULT
 
 	def_callbacks
-
-.DummyScene:
-	end
 
 GoldenrodMagnetTrainStationOfficerScript:
 	faceplayer

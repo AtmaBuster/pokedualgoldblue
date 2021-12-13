@@ -5,16 +5,13 @@
 Colosseum_MapScripts:
 	def_scene_scripts
 	scene_script .InitializeColosseum ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 	callback MAPCALLBACK_OBJECTS, .SetWhichChris
 
 .InitializeColosseum:
 	sdefer .InitializeAndPreparePokecenter2F
-	end
-
-.DummyScene1:
 	end
 
 .SetWhichChris:

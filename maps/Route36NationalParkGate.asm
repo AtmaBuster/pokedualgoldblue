@@ -14,19 +14,13 @@
 
 Route36NationalParkGate_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_ROUTE36NATIONALPARKGATE_NOTHING
-	scene_script .DummyScene1 ; SCENE_ROUTE36NATIONALPARKGATE_UNUSED
+	scene_script DummyScript ; SCENE_ROUTE36NATIONALPARKGATE_NOTHING
+	scene_script DummyScript ; SCENE_ROUTE36NATIONALPARKGATE_UNUSED
 	scene_script .LeaveContestEarly ; SCENE_ROUTE36NATIONALPARKGATE_LEAVE_CONTEST_EARLY
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, .CheckIfContestRunning
 	callback MAPCALLBACK_OBJECTS, .CheckIfContestAvailable
-
-.DummyScene0:
-	end
-
-.DummyScene1:
-	end
 
 .LeaveContestEarly:
 	sdefer .LeavingContestEarly

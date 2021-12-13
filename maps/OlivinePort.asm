@@ -9,13 +9,10 @@
 
 OlivinePort_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_DEFAULT
 	scene_script .LeaveFastShip ; SCENE_OLIVINEPORT_LEAVE_SHIP
 
 	def_callbacks
-
-.DummyScene0:
-	end
 
 .LeaveFastShip:
 	sdefer .LeaveFastShipScript
@@ -75,9 +72,9 @@ OlivinePortAlreadyRodeScript:
 OlivinePortWalkUpToShipScript:
 	turnobject OLIVINEPORT_SAILOR3, RIGHT
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	iftrue .skip
+	iftrue DummyScript
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
-	iftrue .skip
+	iftrue DummyScript
 	turnobject PLAYER, LEFT
 	opentext
 	checkevent EVENT_FAST_SHIP_FIRST_TIME
@@ -122,9 +119,6 @@ OlivinePortWalkUpToShipScript:
 	waitbutton
 	closetext
 	applymovement PLAYER, OlivinePortCannotEnterFastShipMovement
-	end
-
-.skip:
 	end
 
 OlivinePortNotRidingScript:

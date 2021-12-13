@@ -8,27 +8,13 @@ ROUTE43GATE_TOLL EQU 1000
 Route43Gate_MapScripts:
 	def_scene_scripts
 	scene_script .RocketShakedown ; SCENE_DEFAULT
-	scene_script .DummyScene ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
-	callback MAPCALLBACK_NEWMAP, .CheckIfRockets
 
 .RocketShakedown:
 	sdefer .RocketTakeover
 	end
-
-.DummyScene:
-	end
-
-.CheckIfRockets:
-	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
-	iftrue .NoRockets
-	setmapscene ROUTE_43, 0 ; Route 43 does not have a scene variable
-	endcallback
-
-.NoRockets:
-	setmapscene ROUTE_43, 1 ; Route 43 does not have a scene variable
-	endcallback
 
 .RocketTakeover:
 	playmusic MUSIC_ROCKET_ENCOUNTER

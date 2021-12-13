@@ -4,15 +4,12 @@
 HallOfFame_MapScripts:
 	def_scene_scripts
 	scene_script .EnterHallOfFame ; SCENE_DEFAULT
-	scene_script .DummyScene ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 
 .EnterHallOfFame:
 	sdefer .EnterHallOfFameScript
-	end
-
-.DummyScene:
 	end
 
 .EnterHallOfFameScript:

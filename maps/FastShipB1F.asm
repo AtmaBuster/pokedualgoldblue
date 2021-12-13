@@ -14,20 +14,14 @@
 
 FastShipB1F_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 
-.DummyScene0:
-	end
-
-.DummyScene1:
-	end
-
 FastShipB1FSailorBlocksLeft:
 	checkevent EVENT_FAST_SHIP_B1F_SAILOR_RIGHT
-	iftrue FastShipB1FAlreadyBlocked
+	iftrue DummyScript
 	applymovement FASTSHIPB1F_SAILOR2, FastShipB1FSailorBlocksLeftMovement
 	moveobject FASTSHIPB1F_SAILOR1, 30, 6
 	appear FASTSHIPB1F_SAILOR1
@@ -37,15 +31,12 @@ FastShipB1FSailorBlocksLeft:
 
 FastShipB1FSailorBlocksRight:
 	checkevent EVENT_FAST_SHIP_B1F_SAILOR_LEFT
-	iftrue FastShipB1FAlreadyBlocked
+	iftrue DummyScript
 	applymovement FASTSHIPB1F_SAILOR1, FastShipB1FSailorBlocksRightMovement
 	moveobject FASTSHIPB1F_SAILOR2, 31, 6
 	appear FASTSHIPB1F_SAILOR2
 	pause 5
 	disappear FASTSHIPB1F_SAILOR1
-	end
-
-FastShipB1FAlreadyBlocked:
 	end
 
 FastShipB1FSailorScript:

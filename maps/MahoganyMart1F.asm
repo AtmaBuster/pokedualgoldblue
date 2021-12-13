@@ -7,14 +7,11 @@
 
 MahoganyMart1F_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_MAHOGANYMART1F_NOTHING
+	scene_script DummyScript ; SCENE_MAHOGANYMART1F_NOTHING
 	scene_script .LanceUncoversStaircase ; SCENE_MAHOGANYMART1F_LANCE_UNCOVERS_STAIRS
 
 	def_callbacks
 	callback MAPCALLBACK_TILES, .MahoganyMart1FStaircase
-
-.DummyScene0:
-	end
 
 .LanceUncoversStaircase:
 	sdefer MahoganyMart1FLanceUncoversStaircaseScript

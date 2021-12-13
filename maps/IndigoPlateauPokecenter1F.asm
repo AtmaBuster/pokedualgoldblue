@@ -8,13 +8,10 @@
 
 IndigoPlateauPokecenter1F_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_DEFAULT
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, .PrepareElite4
-
-.DummyScene:
-	end
 
 .PrepareElite4:
 	setmapscene WILLS_ROOM, SCENE_DEFAULT
@@ -43,15 +40,15 @@ IndigoPlateauPokecenter1F_MapScripts:
 
 PlateauRivalBattle1:
 	checkevent EVENT_BEAT_RIVAL_IN_MT_MOON
-	iffalse PlateauRivalScriptDone
+	iffalse DummyScript
 	checkflag ENGINE_INDIGO_PLATEAU_RIVAL_FIGHT
-	iftrue PlateauRivalScriptDone
+	iftrue DummyScript
 	readvar VAR_WEEKDAY
-	ifequal SUNDAY, PlateauRivalScriptDone
-	ifequal TUESDAY, PlateauRivalScriptDone
-	ifequal THURSDAY, PlateauRivalScriptDone
-	ifequal FRIDAY, PlateauRivalScriptDone
-	ifequal SATURDAY, PlateauRivalScriptDone
+	ifequal SUNDAY, DummyScript
+	ifequal TUESDAY, DummyScript
+	ifequal THURSDAY, DummyScript
+	ifequal FRIDAY, DummyScript
+	ifequal SATURDAY, DummyScript
 	moveobject INDIGOPLATEAUPOKECENTER1F_SILVER, 17, 9
 	appear INDIGOPLATEAUPOKECENTER1F_SILVER
 	turnobject PLAYER, DOWN
@@ -65,15 +62,15 @@ PlateauRivalBattle1:
 
 PlateauRivalBattle2:
 	checkevent EVENT_BEAT_RIVAL_IN_MT_MOON
-	iffalse PlateauRivalScriptDone
+	iffalse DummyScript
 	checkflag ENGINE_INDIGO_PLATEAU_RIVAL_FIGHT
-	iftrue PlateauRivalScriptDone
+	iftrue DummyScript
 	readvar VAR_WEEKDAY
-	ifequal SUNDAY, PlateauRivalScriptDone
-	ifequal TUESDAY, PlateauRivalScriptDone
-	ifequal THURSDAY, PlateauRivalScriptDone
-	ifequal FRIDAY, PlateauRivalScriptDone
-	ifequal SATURDAY, PlateauRivalScriptDone
+	ifequal SUNDAY, DummyScript
+	ifequal TUESDAY, DummyScript
+	ifequal THURSDAY, DummyScript
+	ifequal FRIDAY, DummyScript
+	ifequal SATURDAY, DummyScript
 	appear INDIGOPLATEAUPOKECENTER1F_SILVER
 	turnobject PLAYER, DOWN
 	showemote EMOTE_SHOCK, PLAYER, 15
@@ -131,7 +128,6 @@ PlateauRivalPostBattle:
 	setscene SCENE_DEFAULT
 	playmapmusic
 	setflag ENGINE_INDIGO_PLATEAU_RIVAL_FIGHT
-PlateauRivalScriptDone:
 	end
 
 IndigoPlateauPokecenter1FNurseScript:

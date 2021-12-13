@@ -5,15 +5,12 @@
 MrPokemonsHouse_MapScripts:
 	def_scene_scripts
 	scene_script .MeetMrPokemon ; SCENE_DEFAULT
-	scene_script .DummyScene ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 
 .MeetMrPokemon:
 	sdefer .MrPokemonEvent
-	end
-
-.DummyScene:
 	end
 
 .MrPokemonEvent:

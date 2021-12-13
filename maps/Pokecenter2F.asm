@@ -20,7 +20,6 @@ Pokecenter2F_MapScripts:
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
 	iftrue .Scene0Done
 	sdefer Pokecenter2F_AppearMysteryGiftDeliveryGuy
-
 .Scene0Done:
 	end
 

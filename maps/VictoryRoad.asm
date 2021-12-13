@@ -8,16 +8,10 @@
 
 VictoryRoad_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
-
-.DummyScene0:
-	end
-
-.DummyScene1:
-	end
 
 VictoryRoadRivalLeft:
 	moveobject VICTORYROAD_SILVER, 18, 11

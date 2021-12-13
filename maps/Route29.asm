@@ -10,17 +10,11 @@
 
 Route29_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_ROUTE29_NOTHING
-	scene_script .DummyScene1 ; SCENE_ROUTE29_CATCH_TUTORIAL
+	scene_script DummyScript ; SCENE_ROUTE29_NOTHING
+	scene_script DummyScript ; SCENE_ROUTE29_CATCH_TUTORIAL
 
 	def_callbacks
 	callback MAPCALLBACK_OBJECTS, .Tuscany
-
-.DummyScene0:
-	end
-
-.DummyScene1:
-	end
 
 .Tuscany:
 	checkflag ENGINE_ZEPHYRBADGE

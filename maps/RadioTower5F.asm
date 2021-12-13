@@ -6,20 +6,11 @@
 
 RadioTower5F_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_RADIOTOWER5F_ROCKET_BOSS
-	scene_script .DummyScene2 ; SCENE_RADIOTOWER5F_NOTHING
+	scene_script DummyScript ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_RADIOTOWER5F_ROCKET_BOSS
+	scene_script DummyScript ; SCENE_RADIOTOWER5F_NOTHING
 
 	def_callbacks
-
-.DummyScene0:
-	end
-
-.DummyScene1:
-	end
-
-.DummyScene2:
-	end
 
 FakeDirectorScript:
 	turnobject RADIOTOWER5F_DIRECTOR, UP

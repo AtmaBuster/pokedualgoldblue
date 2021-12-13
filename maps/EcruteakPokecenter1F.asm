@@ -8,15 +8,12 @@
 EcruteakPokecenter1F_MapScripts:
 	def_scene_scripts
 	scene_script .MeetBill ; SCENE_DEFAULT
-	scene_script .DummyScene ; SCENE_FINISHED
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
 
 .MeetBill:
 	sdefer .BillActivatesTimeCapsule
-	end
-
-.DummyScene:
 	end
 
 .BillActivatesTimeCapsule:
