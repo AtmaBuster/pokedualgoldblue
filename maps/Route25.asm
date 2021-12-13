@@ -14,6 +14,23 @@ Route25_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .CheckBillEvent
+
+.CheckBillEvent:
+	checkevent EVENT_HELPED_BILL
+	iftrue .TicketCheck
+	clearevent EVENT_BILLS_HOUSE_MONSTER
+	endcallback
+
+.TicketCheck:
+	checkevent EVENT_GOT_SS_TICKET
+	iffalse .End
+	setevent EVENT_ROUTE_24_ROCKET
+	setevent EVENT_BILLS_HOUSE_BILL1
+	clearevent EVENT_BILLS_HOUSE_BILL2
+	setevent EVENT_LEFT_BILLS_HOUSE_AFTER_HELPING
+.End:
+	endcallback
 
 TrainerYoungsterCalvin:
 	trainer YOUNGSTER_GEN1, CALVIN_GEN1, EVENT_BEAT_YOUNGSTER_CALVIN_GEN1, .SeenText, .BeatenText, 0, .Script
