@@ -20,7 +20,7 @@ NPCTRADE_STRUCT_LENGTH EQU _RS
 	const NPC_TRADE_EMY     ; 3
 	const NPC_TRADE_CHRIS   ; 4
 	const NPC_TRADE_KIM     ; 5
-	const NPC_TRADE_RILEY   ; 6
+	const NPC_TRADE_REYLEY  ; 6
 	const NPC_TRADE_SAIGE   ; 7
 	const NPC_TRADE_TURNER  ; 8
 	const NPC_TRADE_HADEN   ; 9
