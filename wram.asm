@@ -2514,8 +2514,9 @@ wRoute22SceneID::                                 db
 wCeruleanCitySceneID::                            db
 wRoute24SceneID::                                 db
 wSaffronGatesSceneID::                            db
+wRoute16Gate1FSceneID::                           db
 
-	ds 194
+	ds 193
 
 wEventFlags:: flag_array NUM_EVENTS
 
