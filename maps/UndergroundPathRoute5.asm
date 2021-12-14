@@ -6,6 +6,14 @@ UndergroundPathRoute5_MapScripts:
 
 	def_callbacks
 
+UndergroundPathRoute5_SaigeScript:
+	faceplayer
+	opentext
+	trade NPC_TRADE_SAIGE
+	waitbutton
+	closetext
+	end
+
 UndergroundPathRoute5_MapEvents:
 	def_warp_events
 	warp_event  3,  7, ROUTE_5, 4
@@ -17,4 +25,4 @@ UndergroundPathRoute5_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  2,  3, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  2,  3, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, UndergroundPathRoute5_SaigeScript, -1

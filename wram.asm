@@ -2445,7 +2445,7 @@ wHallOfFameCount:: db
 	ds 1
 wTradeFlags:: flag_array NUM_NPC_TRADES
 
-	ds 33
+	ds 32
 
 wMooMooBerries:: db
 wUndergroundSwitchPositions:: db
