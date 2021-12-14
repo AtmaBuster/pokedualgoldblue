@@ -71,4 +71,5 @@ MapScenes::
 	scene_var ROUTE_7_GATE,                                wSaffronGatesSceneID
 	scene_var ROUTE_8_GATE,                                wSaffronGatesSceneID
 	scene_var ROUTE_16_GATE_1F,                            wRoute16Gate1FSceneID
+	scene_var ROUTE_18_GATE_1F,                            wRoute18Gate1FSceneID
 	db -1 ; end
