@@ -5,11 +5,11 @@ UndergroundPathNorthSouth_MapScripts:
 
 	def_callbacks
 
-UndergroundPathNorthSouth_HiddenNugget:
-	hiddenitem NUGGET, EVENT_UNDERGROUND_PATH_HIDDEN_NUGGET
+UndergroundPathNorthSouth_HiddenFullRestore:
+	hiddenitem FULL_RESTORE, EVENT_UNDERGROUND_PATH_HIDDEN_FULL_RESTORE
 
-UndergroundPathNorthSouth_HiddenElixer:
-	hiddenitem ELIXER, EVENT_UNDERGROUND_PATH_HIDDEN_ELIXER
+UndergroundPathNorthSouth_HiddenXSpecial:
+	hiddenitem X_SPECIAL, EVENT_UNDERGROUND_PATH_HIDDEN_X_SPECIAL
 
 UndergroundPathNorthSouth_MapEvents:
 	def_warp_events
@@ -19,7 +19,7 @@ UndergroundPathNorthSouth_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  3,  4, BGEVENT_ITEM, UndergroundPathNorthSouth_HiddenNugget
-	bg_event  4, 34, BGEVENT_ITEM, UndergroundPathNorthSouth_HiddenElixer
+	bg_event  3,  4, BGEVENT_ITEM, UndergroundPathNorthSouth_HiddenFullRestore
+	bg_event  4, 34, BGEVENT_ITEM, UndergroundPathNorthSouth_HiddenXSpecial
 
 	def_object_events
