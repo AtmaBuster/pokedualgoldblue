@@ -2513,8 +2513,9 @@ wOaksLabSceneID::                                 db
 wRoute22SceneID::                                 db
 wCeruleanCitySceneID::                            db
 wRoute24SceneID::                                 db
+wSaffronGatesSceneID::                            db
 
-	ds 195
+	ds 194
 
 wEventFlags:: flag_array NUM_EVENTS
 

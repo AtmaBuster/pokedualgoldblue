@@ -66,4 +66,8 @@ MapScenes::
 	scene_var ROUTE_22,                                    wRoute22SceneID
 	scene_var CERULEAN_CITY,                               wCeruleanCitySceneID
 	scene_var ROUTE_24,                                    wRoute24SceneID
+	scene_var ROUTE_5_GATE,                                wSaffronGatesSceneID
+	scene_var ROUTE_6_GATE,                                wSaffronGatesSceneID
+	scene_var ROUTE_7_GATE,                                wSaffronGatesSceneID
+	scene_var ROUTE_8_GATE,                                wSaffronGatesSceneID
 	db -1 ; end
