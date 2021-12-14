@@ -1886,7 +1886,7 @@ _OaksAideUhOhText1::
 
 _OaksAideUhOhText2::
 	text "You need @"
-	text_decimal wStringBuffer2+1, 1, 3
+	text_decimal wScriptVar, 1, 3
 	text " kinds"
 	line "if you want the"
 	cont "@"
