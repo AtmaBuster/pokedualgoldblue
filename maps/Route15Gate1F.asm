@@ -6,6 +6,16 @@ Route15Gate1F_MapScripts:
 
 	def_callbacks
 
+Route15Gate1F_GuardScript:
+	jumptextfaceplayer .Text
+.Text:
+	text "Are you working"
+	line "on a #DEX?"
+
+	para "PROF.OAK's AIDE"
+	line "came by here."
+	done
+
 Route15Gate1F_MapEvents:
 	def_warp_events
 	warp_event  0,  4, ROUTE_15, 1
@@ -19,4 +29,4 @@ Route15Gate1F_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  4,  1, SPRITE_GUARD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  4,  1, SPRITE_GUARD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route15Gate1F_GuardScript, -1
