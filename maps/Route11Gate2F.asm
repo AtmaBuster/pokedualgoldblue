@@ -20,13 +20,13 @@ Route11Gate2F_OaksAideScript:
 	opentext
 	checkevent EVENT_GOT_ITEMFINDER_KANTO
 	iftrue .GotItem
-	setval 50
+	setval 30
 	getitemname STRING_BUFFER_3, ITEMFINDER
 	farwritetext _OaksAideHiText
 	yesorno
 	iffalse .ChoseNo
 	readvar VAR_DEXCAUGHT
-	ifless 50, .NotEnoughMons
+	ifless 30, .NotEnoughMons
 	farwritetext _OaksAideHereYouGoText
 	verbosegiveitem ITEMFINDER
 	iffalse .BagFull
@@ -40,14 +40,14 @@ Route11Gate2F_OaksAideScript:
 
 .NotEnoughMons
 	farwritetext _OaksAideUhOhText1
-	setval 50
+	setval 30
 	farwritetext _OaksAideUhOhText2
 	waitbutton
 	closetext
 	end
 
 .ChoseNo
-	setval 50
+	setval 30
 	farwritetext _OaksAideComeBackText
 	waitbutton
 	closetext
