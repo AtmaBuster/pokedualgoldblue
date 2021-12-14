@@ -6,6 +6,13 @@ Route12Gate1F_MapScripts:
 
 	def_callbacks
 
+Route12Gate1F_GuardScript:
+	jumptextfaceplayer .Text
+.Text:
+	text "There's a lookout"
+	line "spot upstairs."
+	done
+
 Route12Gate1F_MapEvents:
 	def_warp_events
 	warp_event  4,  0, ROUTE_12, 1
@@ -19,4 +26,4 @@ Route12Gate1F_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  1,  3, SPRITE_GUARD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  1,  3, SPRITE_GUARD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route12Gate1F_GuardScript, -1
