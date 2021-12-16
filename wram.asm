@@ -2516,8 +2516,9 @@ wRoute24SceneID::                                 db
 wSaffronGatesSceneID::                            db
 wRoute16Gate1FSceneID::                           db
 wRoute18Gate1FSceneID::                           db
+wVermilionCitySceneID::                           db
 
-	ds 192
+	ds 191
 
 wEventFlags:: flag_array NUM_EVENTS
 
