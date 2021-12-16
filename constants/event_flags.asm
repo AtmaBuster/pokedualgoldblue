@@ -256,7 +256,7 @@
 	const EVENT_POWER_PLANT_HIDDEN_PP_UP
 	const EVENT_ROUTE_13_HIDDEN_PP_UP
 	const EVENT_ROUTE_13_HIDDEN_CALCIUM
-; Unused: next 147 events
+; Unused: next 148 events
 
 	const_next 400
 ; Kurt Apricorn events
@@ -1722,6 +1722,7 @@
 	const EVENT_BILLS_HOUSE_BILL1
 	const EVENT_BILLS_HOUSE_BILL2
 	const EVENT_ROUTE_12_SNORLAX
+	const EVENT_ROUTE_16_SNORLAX
 	const EVENT_POWER_PLANT_VOLTORB1
 	const EVENT_POWER_PLANT_VOLTORB2
 	const EVENT_POWER_PLANT_VOLTORB3
@@ -1757,8 +1758,7 @@
 	const EVENT_POWER_PLANT_RARE_CANDY
 	const EVENT_POWER_PLANT_TM_THUNDER
 	const EVENT_POWER_PLANT_TM_REFLECT
-	const EVENT_ROUTE_15_TM_RAGE
-; Unused: next 78 events
+; Unused: next 76 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 80
