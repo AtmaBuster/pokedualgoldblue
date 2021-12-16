@@ -254,7 +254,9 @@
 	const EVENT_ROUTE_12_HIDDEN_HYPER_POTION
 	const EVENT_POWER_PLANT_HIDDEN_MAX_ELIXER
 	const EVENT_POWER_PLANT_HIDDEN_PP_UP
-; Unused: next 149 events
+	const EVENT_ROUTE_13_HIDDEN_PP_UP
+	const EVENT_ROUTE_13_HIDDEN_CALCIUM
+; Unused: next 147 events
 
 	const_next 400
 ; Kurt Apricorn events
