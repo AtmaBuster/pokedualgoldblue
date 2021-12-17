@@ -260,7 +260,8 @@
 	const EVENT_ROUTE_13_HIDDEN_PP_UP
 	const EVENT_ROUTE_13_HIDDEN_CALCIUM
 	const EVENT_VERMILION_CITY_HIDDEN_MAX_ETHER
-; Unused: next 144 events
+	const EVENT_SS_ANNE_B1F_ROOMS_HIDDEN_HYPER_POTION
+; Unused: next 143 events
 
 	const_next 400
 ; Kurt Apricorn events
@@ -1766,7 +1767,10 @@
 	const EVENT_SS_ANNE_1F_ROOMS_TM_BODY_SLAM
 	const EVENT_SS_ANNE_2F_ROOMS_MAX_ETHER
 	const EVENT_SS_ANNE_2F_ROOMS_RARE_CANDY
-; Unused: next 72 events
+	const EVENT_SS_ANNE_B1F_ROOMS_ETHER
+	const EVENT_SS_ANNE_B1F_ROOMS_TM_REST
+	const EVENT_SS_ANNE_B1F_ROOMS_MAX_POTION
+; Unused: next 69 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 80
