@@ -73,4 +73,5 @@ MapScenes::
 	scene_var ROUTE_16_GATE_1F,                            wRoute16Gate1FSceneID
 	scene_var ROUTE_18_GATE_1F,                            wRoute18Gate1FSceneID
 	scene_var VERMILION_CITY,                              wVermilionCitySceneID
+	scene_var SS_ANNE_2F,                                  wSSAnne2FSceneID
 	db -1 ; end
