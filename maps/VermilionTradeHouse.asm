@@ -6,6 +6,14 @@ VermilionTradeHouse_MapScripts:
 
 	def_callbacks
 
+VermilionTradeHouse_ElyssaScript:
+	faceplayer
+	opentext
+	trade NPC_TRADE_ELYSSA
+	waitbutton
+	closetext
+	end
+
 VermilionTradeHouse_MapEvents:
 	def_warp_events
 	warp_event  2,  7, VERMILION_CITY, 8
@@ -16,4 +24,4 @@ VermilionTradeHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  3,  5, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  3,  5, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionTradeHouse_ElyssaScript, -1
