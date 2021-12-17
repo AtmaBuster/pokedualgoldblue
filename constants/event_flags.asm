@@ -1764,7 +1764,9 @@
 	const EVENT_POWER_PLANT_TM_THUNDER
 	const EVENT_POWER_PLANT_TM_REFLECT
 	const EVENT_SS_ANNE_1F_ROOMS_TM_BODY_SLAM
-; Unused: next 74 events
+	const EVENT_SS_ANNE_2F_ROOMS_MAX_ETHER
+	const EVENT_SS_ANNE_2F_ROOMS_RARE_CANDY
+; Unused: next 72 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 80
