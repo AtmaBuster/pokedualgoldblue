@@ -262,7 +262,8 @@
 	const EVENT_ROUTE_13_HIDDEN_CALCIUM
 	const EVENT_VERMILION_CITY_HIDDEN_MAX_ETHER
 	const EVENT_SS_ANNE_B1F_ROOMS_HIDDEN_HYPER_POTION
-; Unused: next 142 events
+	const EVENT_SS_ANNE_KITCHEN_HIDDEN_GREAT_BALL
+; Unused: next 141 events
 
 	const_next 400
 ; Kurt Apricorn events
