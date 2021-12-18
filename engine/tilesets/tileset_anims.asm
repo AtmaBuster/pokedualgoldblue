@@ -352,11 +352,13 @@ AnimateFlowerTile:
 	ld a, [wTileAnimationTimer]
 	and %10
 
+IF DEF(_GOLD)
 ; CGB has different tile graphics for flowers
 	ld e, a
 	ldh a, [hCGB]
 	and 1
 	add e
+ENDC
 
 ; hl = .FlowerTileFrames + a * 16
 	swap a
@@ -586,6 +588,7 @@ endr
 AnimateWaterPalette:
 ; Transition between color values 0-2 for color 0 in palette 3.
 
+IF DEF(_GOLD)
 ; Don't update the palette on DMG
 	ldh a, [hCGB]
 	and a
@@ -639,7 +642,12 @@ AnimateWaterPalette:
 	ldh [rBGPD], a
 	ret
 
+ELIF DEF(_BLUE)
+	ret
+ENDC
+
 FlickeringCaveEntrancePalette:
+IF DEF(_GOLD)
 ; Don't update the palette on DMG
 	ldh a, [hCGB]
 	and a
@@ -679,6 +687,10 @@ FlickeringCaveEntrancePalette:
 	ld a, [hli]
 	ldh [rBGPD], a
 	ret
+
+ELIF DEF(_BLUE)
+	ret
+ENDC
 
 TowerPillarTilePointer1:  dw vTiles2 tile $2d, TowerPillarTile1
 TowerPillarTilePointer2:  dw vTiles2 tile $2f, TowerPillarTile2
