@@ -54,12 +54,17 @@ CatchTutorial::
 
 .LoadDudeData:
 	ld hl, wDudeNumItems
+IF DEF(_GOLD)
 	ld [hl], 1
 	inc hl
 	ld [hl], POTION
 	inc hl
 	ld [hl], 1
 	inc hl
+ELIF DEF(_BLUE)
+	ld [hl], 0
+	inc hl
+ENDC
 	ld [hl], -1
 	ld hl, wDudeNumKeyItems
 	ld [hl], 0
@@ -70,12 +75,21 @@ CatchTutorial::
 	ld [hli], a
 	ld a, POKE_BALL
 	ld [hli], a
+IF DEF(_GOLD)
+	ld a, 1
+ELIF DEF(_BLUE)
+	ld a, 50
+ENDC
 	ld [hli], a
 	ld [hl], -1
 	ret
 
 .Dude:
+IF DEF(_GOLD)
 	db "DUDE@"
+ELIF DEF(_BLUE)
+	db "OLD MAN@"
+ENDC
 
 .AutoInput:
 	db NO_INPUT, $ff ; end
