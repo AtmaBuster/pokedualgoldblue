@@ -257,15 +257,16 @@ MartCerulean:
 	db -1 ; end
 
 MartLavender:
-	db 8 ; # items
+	db 9 ; # items
 	db GREAT_BALL
-	db POTION
 	db SUPER_POTION
-	db MAX_REPEL
+	db REVIVE
+	db ESCAPE_ROPE
+	db SUPER_REPEL
 	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
 	db BURN_HEAL
+	db ICE_HEAL
+	db PARLYZ_HEAL
 	db -1 ; end
 
 MartVermilion:
