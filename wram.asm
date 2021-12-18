@@ -2518,8 +2518,9 @@ wRoute16Gate1FSceneID::                           db
 wRoute18Gate1FSceneID::                           db
 wVermilionCitySceneID::                           db
 wSSAnne2FSceneID::                                db
+wPokemonTower2FSceneID::                          db
 
-	ds 190
+	ds 189
 
 wEventFlags:: flag_array NUM_EVENTS
 

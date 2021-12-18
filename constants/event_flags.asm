@@ -1741,6 +1741,7 @@
 	const EVENT_POWER_PLANT_VOLTORB6
 	const EVENT_POWER_PLANT_ZAPDOS
 	const EVENT_SS_ANNE_2F_RIVAL
+	const EVENT_POKEMON_TOWER_2F_RIVAL
 ; Kanto itemballs
 	const EVENT_ROUTE_2_MOON_STONE
 	const EVENT_ROUTE_2_HP_UP
@@ -1773,7 +1774,7 @@
 	const EVENT_SS_ANNE_B1F_ROOMS_ETHER
 	const EVENT_SS_ANNE_B1F_ROOMS_TM_REST
 	const EVENT_SS_ANNE_B1F_ROOMS_MAX_POTION
-; Unused: next 69 events
+; Unused: next 68 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 80
