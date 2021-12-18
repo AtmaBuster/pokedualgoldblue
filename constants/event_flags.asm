@@ -1774,7 +1774,8 @@
 	const EVENT_SS_ANNE_B1F_ROOMS_ETHER
 	const EVENT_SS_ANNE_B1F_ROOMS_TM_REST
 	const EVENT_SS_ANNE_B1F_ROOMS_MAX_POTION
-; Unused: next 68 events
+	const EVENT_POKEMON_TOWER_3F_ESCAPE_ROPE
+; Unused: next 67 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 80
