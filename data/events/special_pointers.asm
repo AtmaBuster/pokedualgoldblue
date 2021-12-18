@@ -127,4 +127,5 @@ SpecialsPointers::
 	add_special InitialSetDSTFlag
 	add_special InitialClearDSTFlag
 	add_special MrChrono
+	add_special SSAnneAnimation
 	add_special UnusedDummySpecial ; unused

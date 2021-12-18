@@ -459,3 +459,5 @@ TrainerHouse:
 	jp CloseSRAM
 
 	nop ; unused
+
+INCLUDE "engine/events/ss_anne_anim.asm"

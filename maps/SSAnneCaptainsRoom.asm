@@ -20,6 +20,7 @@ SSAnneCaptainsRoom_CaptainScript:
 	verbosegiveitem HM_CUT
 	iffalse .BagFull
 	setevent EVENT_GOT_HM01_CUT_KANTO
+	setmapscene VERMILION_DOCK, SCENE_VERMILION_DOCK_SS_ANNE_LEAVING
 .BagFull:
 	closetext
 	end
