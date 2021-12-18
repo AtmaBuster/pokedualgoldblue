@@ -73,7 +73,17 @@ _ResetWRAM:
 	call .InitList
 
 	ld hl, wNumPCItems
+IF DEF(_GOLD)
 	call .InitList
+ELIF DEF(_BLUE)
+	ld [hl], 1
+	inc hl
+	ld [hl], POTION
+	inc hl
+	ld [hl], 1
+	inc hl
+	ld [hl], -1
+ENDC
 
 	xor a
 	ld [wRoamMon1Species], a
