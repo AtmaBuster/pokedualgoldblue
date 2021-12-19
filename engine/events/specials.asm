@@ -90,7 +90,7 @@ NameRival:
 IF DEF(_GOLD)
 	db "SILVER@"
 ELIF DEF(_BLUE)
-	db "GOLD@"
+	db "RED@"
 ENDC
 
 NameRater:

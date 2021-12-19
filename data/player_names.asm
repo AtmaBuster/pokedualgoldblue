@@ -6,7 +6,11 @@ NameMenuHeader:
 
 .Names:
 	db STATICMENU_CURSOR | STATICMENU_PLACE_TITLE | STATICMENU_DISABLE_B ; flags
+IF DEF(_GOLD)
 	db 5 ; items
+ELIF DEF(_BLUE)
+	db 4 ; items
+ENDC
 	db "NEW NAME@"
 
 PlayerNameArray:
@@ -19,7 +23,6 @@ ELIF DEF(_BLUE)
 	db "BLUE@"
 	db "GARY@"
 	db "JOHN@"
-	db "EVAN@"
 ENDC
 	db 2 ; title indent
 	db "NAME@" ; title
@@ -28,17 +31,18 @@ IF DEF(_BLUE)
 RivalNameMenuHeader:
 	db STATICMENU_NO_TOP_SPACING ; flags
 	menu_coords 0, 0, 10, TEXTBOX_Y - 1
-	dw .RivalNames
+	dw .Names
 	db 1 ; default option
 
-.RivalNames:
+.Names:
 	db STATICMENU_CURSOR | STATICMENU_PLACE_TITLE | STATICMENU_DISABLE_B ; flags
-	db 5 ; items
+	db 4 ; items
 	db "NEW NAME@"
 
 RivalNameArray:
 	db "RED@"
 	db "ASH@"
 	db "JACK@"
-	db "KAY@"
+	db 2 ; title indent
+	db "NAME@" ; title
 ENDC

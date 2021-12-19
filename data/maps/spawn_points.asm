@@ -8,7 +8,12 @@ SpawnPoints:
 ; entries correspond to SPAWN_* constants
 	table_width 4, SpawnPoints
 
+IF DEF(_GOLD)
 	spawn PLAYERS_HOUSE_2F,            3,  3
+ELIF DEF(_BLUE)
+	spawn REDS_HOUSE_2F,               3,  6
+ENDC
+
 	spawn REDS_HOUSE_2F,               3,  6 ; debug
 
 	spawn PALLET_TOWN,                 5,  6

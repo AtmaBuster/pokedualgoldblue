@@ -6,11 +6,7 @@ NewGame:
 	call OakSpeech
 	call InitializeWorld
 
-IF DEF(_GOLD)
 	ld a, SPAWN_HOME
-ELIF DEF(_BLUE)
-	ld a, SPAWN_REDS_HOUSE
-ENDC
 	ld [wDefaultSpawnpoint], a
 
 	ld a, MAPSETUP_WARP
