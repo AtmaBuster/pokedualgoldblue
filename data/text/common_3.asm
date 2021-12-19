@@ -82,27 +82,13 @@ _PhoneThankYouText::
 	text "Thank you!"
 	done
 
-_SpaceSpaceColonText:: ; unreferenced
-	text "  :"
-	done
-
-_PasswordAskResetText::
-	text "Password OK."
-	line "Select CONTINUE &"
-	cont "reset settings."
+_AskResetText::
+	text "Select CONTINUE &"
+	line "reset settings."
 	prompt
 
-_PasswordWrongText::
-	text "Wrong password!"
-	prompt
-
-_PasswordAskResetClockText::
+_AskResetClockText::
 	text "Reset the clock?"
-	done
-
-_PasswordAskEnterText::
-	text "Please enter the"
-	line "password."
 	done
 
 _ClearAllSaveDataText::
@@ -166,8 +152,6 @@ Text_MoveForgetCount::
 	text "1, 2 and…@"
 	text_pause
 	text_end
-
-	text_end ; unreferenced
 
 _MoveForgotText::
 	text " Poof!@"
@@ -265,8 +249,6 @@ Text_BallCaught::
 	sound_caught_mon
 	text_end
 
-	text_end ; unreferenced
-
 _WaitButtonText::
 	text_promptbutton
 	text_end
@@ -330,8 +312,6 @@ Text_PlayedPokeFlute::
 	line "# FLUTE.@"
 	text_promptbutton
 	text_end
-
-	text_end ; unreferenced
 
 ; BUG: "done" is not a valid terminator here, needs to change to "text_end"
 _CoinCaseCountText::
