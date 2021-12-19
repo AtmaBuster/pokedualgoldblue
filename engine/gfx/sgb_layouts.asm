@@ -497,11 +497,13 @@ endr
 	ret
 
 .GetMapPalsIndex:
+if DEF(_GOLD)
 	ld a, [wTimeOfDayPal]
 	cp NITE_F
 	jr c, .morn_day
 	ld a, PREDEFPAL_NITE
 	ret
+ENDC
 
 .morn_day
 	ld a, [wEnvironment]
