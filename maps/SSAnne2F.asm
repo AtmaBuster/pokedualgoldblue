@@ -67,6 +67,7 @@ SSAnne2F_RivalScript:
 	writetext .IntroText
 	waitbutton
 	closetext
+	setevent EVENT_SS_ANNE_2F_RIVAL
 	checkevent EVENT_GOT_CHARMANDER
 	iftrue .VsSquirtle
 	checkevent EVENT_GOT_SQUIRTLE
