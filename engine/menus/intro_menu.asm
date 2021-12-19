@@ -6,7 +6,11 @@ NewGame:
 	call OakSpeech
 	call InitializeWorld
 
-	ld a, SPAWN_DEBUG
+IF DEF(_GOLD)
+	ld a, SPAWN_HOME
+ELIF DEF(_BLUE)
+	ld a, SPAWN_REDS_HOUSE
+ENDC
 	ld [wDefaultSpawnpoint], a
 
 	ld a, MAPSETUP_WARP
@@ -305,7 +309,11 @@ Continue:
 	ret
 
 .SpawnAfterE4:
+IF DEF(_GOLD)
 	ld a, SPAWN_NEW_BARK
+ELIF DEF(_BLUE)
+	ld a, SPAWN_PALLET
+ENDC
 	ld [wDefaultSpawnpoint], a
 	call PostCreditsSpawn
 	jp FinishContinueFunction
@@ -507,15 +515,23 @@ Continue_DisplayGameTime:
 	jp PrintNum
 
 OakSpeech:
+IF DEF(_GOLD)
 	farcall InitClock
 	call RotateFourPalettesLeft
+ENDC
 	call ClearTilemap
 
+IF DEF(_GOLD)
 	ld de, MUSIC_ROUTE_30
+ELIF DEF(_BLUE)
+	ld de, MUSIC_RBY_ROUTES2
+ENDC
 	call PlayMusic
 
+if DEF(_GOLD)
 	call RotateFourPalettesRight
 	call RotateThreePalettesRight
+ENDC
 	xor a
 	ld [wCurPartySpecies], a
 	ld a, POKEMON_PROF
@@ -530,14 +546,18 @@ OakSpeech:
 	call PrintText
 	call RotateThreePalettesRight
 	call ClearTilemap
+	call RotateThreePalettesLeft
 
+IF DEF(_GOLD)
 	ld a, MARILL
+ELIF DEF(_BLUE)
+	ld a, NIDORINO
+ENDC
 	ld [wCurSpecies], a
 	ld [wCurPartySpecies], a
 	call GetBaseData
 
 	hlcoord 6, 4
-	hlcoord 6, 4 ; redundant
 	call PrepMonFrontpic
 
 	xor a
@@ -555,6 +575,7 @@ OakSpeech:
 	call RotateThreePalettesRight
 	call ClearTilemap
 
+IF DEF(_GOLD)
 	xor a
 	ld [wCurPartySpecies], a
 	ld a, POKEMON_PROF
@@ -569,10 +590,39 @@ OakSpeech:
 	call PrintText
 	call RotateThreePalettesRight
 	call ClearTilemap
+ENDC
 
 	xor a
 	ld [wCurPartySpecies], a
+IF DEF(_GOLD)
 	ld a, CAL
+ELIF DEF(_BLUE)
+	ld a, RED
+ENDC
+	ld [wTrainerClass], a
+	call Intro_PrepTrainerPic
+
+	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
+	call GetSGBLayout
+if DEF(_GOLD)
+	call Intro_RotatePalettesLeftFrontpic
+ELIF DEF(_BLUE)
+	call Intro_WipeInFrontpic
+ENDC
+
+	ld hl, OakText6
+	call PrintText
+	call NamePlayer
+
+IF DEF(_BLUE)
+	ld hl, OakTextYourName
+	call PrintText
+	call RotateThreePalettesRight
+	call ClearTilemap
+
+	xor a
+	ld [wCurPartySpecies], a
+	ld a, BLUE
 	ld [wTrainerClass], a
 	call Intro_PrepTrainerPic
 
@@ -580,9 +630,25 @@ OakSpeech:
 	call GetSGBLayout
 	call Intro_RotatePalettesLeftFrontpic
 
-	ld hl, OakText6
+	ld hl, OakTextNameRival
 	call PrintText
-	call NamePlayer
+	call IntroNameRival
+	ld hl, OakTextHisName
+	call PrintText
+	call RotateThreePalettesRight
+	call ClearTilemap
+
+	xor a
+	ld [wCurPartySpecies], a
+	ld a, RED
+	ld [wTrainerClass], a
+	call Intro_PrepTrainerPic
+
+	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
+	call GetSGBLayout
+	call Intro_RotatePalettesLeftFrontpic
+ENDC
+
 	ld hl, OakText7
 	call PrintText
 	ret
@@ -594,7 +660,11 @@ OakText1:
 OakText2:
 	text_far _OakText2
 	text_asm
+IF DEF(_GOLD)
 	ld a, MARILL
+ELIF DEF(_BLUE)
+	ld a, NIDORINO
+ENDC
 	call PlayMonCry
 	call WaitSFX
 	ld hl, OakText3
@@ -620,15 +690,68 @@ OakText7:
 	text_far _OakText7
 	text_end
 
+IF DEF(_BLUE)
+OakTextNameRival:
+	text_far _OakTextNameRival
+	text_end
+
+OakTextYourName:
+	text_far _OakTextYourName
+	text_end
+
+OakTextHisName:
+	text_far _OakTextHisName
+	text_end
+
+IntroNameRival:
+	call MovePlayerPicRight
+	ld hl, RivalNameMenuHeader
+	call ShowNamingChoices
+	ld a, [wMenuCursorY]
+	dec a
+	jr z, .NewRivalName
+	ld de, wRivalName
+	call StoreName
+	farcall ApplyMonOrTrainerPals
+	call MovePlayerPicLeft
+	ret
+
+.NewRivalName:
+	ld b, NAME_RIVAL
+	ld de, wRivalName
+	farcall NamingScreen
+
+	call RotateThreePalettesRight
+	call ClearTilemap
+
+	call LoadFontsExtra
+	call WaitBGMap
+
+	xor a
+	ld [wCurPartySpecies], a
+	ld a, BLUE
+	ld [wTrainerClass], a
+	call Intro_PrepTrainerPic
+
+	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
+	call GetSGBLayout
+	call RotateThreePalettesLeft
+
+	ld hl, wRivalName
+	ld de, RivalNameArray
+	call InitName
+	ret
+ENDC
+
 NamePlayer:
 	call MovePlayerPicRight
 	ld hl, NameMenuHeader
-	call ShowPlayerNamingChoices
+	call ShowNamingChoices
 	ld a, [wMenuCursorY]
 	dec a
 	jr z, .NewName
 	ld de, wPlayerName
-	call StorePlayerName
+	call StoreName
 	farcall ApplyMonOrTrainerPals
 	call MovePlayerPicLeft
 	ret
@@ -646,7 +769,11 @@ NamePlayer:
 
 	xor a
 	ld [wCurPartySpecies], a
+IF DEF(_GOLD)
 	ld a, CAL
+ELIF DEF(_BLUE)
+	ld a, RED
+ENDC
 	ld [wTrainerClass], a
 	call Intro_PrepTrainerPic
 
@@ -661,7 +788,7 @@ NamePlayer:
 
 INCLUDE "data/player_names.asm"
 
-ShowPlayerNamingChoices:
+ShowNamingChoices:
 	call LoadMenuHeader
 	call VerticalMenu
 	ld a, [wMenuCursorY]
@@ -670,7 +797,7 @@ ShowPlayerNamingChoices:
 	call CloseWindow
 	ret
 
-StorePlayerName:
+StoreName:
 	ld hl, wStringBuffer2
 	ld bc, NAME_LENGTH
 	call CopyBytes
@@ -816,8 +943,13 @@ ShrinkFrame:
 	ret
 
 Intro_PlaceChrisSprite:
+IF DEF(_GOLD)
 	ld de, ChrisSpriteGFX
 	lb bc, BANK(ChrisSpriteGFX), 12
+ELIF DEF(_BLUE)
+	ld de, RedSpriteGFX
+	lb bc, BANK(RedSpriteGFX), 12
+ENDC
 	ld hl, vTiles0
 	call Request2bpp
 
