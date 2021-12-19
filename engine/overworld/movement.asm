@@ -664,6 +664,7 @@ NormalStep:
 	ld hl, OBJECT_NEXT_TILE
 	add hl, bc
 	ld a, [hl]
+IF DEF(_GOLD)
 	call CheckSuperTallGrassTile
 	jr z, .shake_grass
 
@@ -674,6 +675,7 @@ NormalStep:
 	call ShakeGrass
 
 .skip_grass
+ENDC
 	ld hl, wCenteredObject
 	ldh a, [hMapObjectIndex]
 	cp [hl]

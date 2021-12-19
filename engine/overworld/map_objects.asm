@@ -2028,6 +2028,7 @@ SpawnEmote:
 	; vtile, palette, movement
 	db $f8, PAL_OW_SILVER, SPRITEMOVEDATA_EMOTE
 
+IF DEF(_GOLD)
 ShakeGrass:
 	push bc
 	ld de, .GrassObject
@@ -2039,6 +2040,7 @@ ShakeGrass:
 .GrassObject:
 	; vtile, palette, movement
 	db $fe, PAL_OW_TREE, SPRITEMOVEDATA_GRASS
+ENDC
 
 ShakeScreen:
 	push bc
