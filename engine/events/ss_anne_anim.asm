@@ -2,10 +2,10 @@ SSAnneAnimation:
 	lb de, 0, 8
 .loop_1
 	call SSAnneAnim_DrawColumn
-	; TODO - start smoke puff
+	call SSAnneAnim_SpawnSmokePuff
 	ld b, 16
 .loop_2
-	; TODO - drift smoke puff
+	call SSAnneAnim_DriftSmokePuff
 	ld c, 8
 .loop_3
 	call SSAnneAnim_WaitFrame
@@ -73,7 +73,11 @@ SSAnneAnim_WaitFrame:
 	ret
 
 SSAnneAnim_ClearShip:
-; clear ship tiles after it has left
+; clear ship tiles and smoke puff after it has left
+	ld hl, wVirtualOAMSprite04
+	ld bc, 16
+	xor a
+	call ByteFill
 ; wait for vblank
 	di
 .vblank_wait
@@ -109,4 +113,60 @@ SSAnneAnim_ClearShip:
 	add hl, de
 	dec c
 	jr nz, .loop_y
+	ret
+
+SSAnneAnim_SpawnSmokePuff:
+	ld a, 8
+	sub e
+	swap a
+	push de
+	ld e, a
+	ld a, $4a ; init x
+	sub e
+	ld hl, wVirtualOAMSprite04
+	push af
+	ld d, a
+	ld e, $64 ; init y
+	call .put_oam
+	ld a, d
+	add 8
+	ld d, a
+	call .put_oam
+	pop af
+	ld d, a
+	ld e, $6c
+	call .put_oam
+	ld a, d
+	add 8
+	ld d, a
+	call .put_oam
+	pop de
+	ret
+
+.put_oam
+	ld a, e
+	ld [hli], a
+	ld a, d
+	ld [hli], a
+	ld a, $fe ; tile
+	ld [hli], a
+	ld a, $10
+	ld [hli], a
+	ret
+
+SSAnneAnim_DriftSmokePuff:
+	ld hl, wVirtualOAMSprite04XCoord
+	push bc
+	push de
+	ld bc, 4
+	ld e, 4
+.loop
+	ld a, [hl]
+	add 2
+	ld [hl], a
+	add hl, bc
+	dec e
+	jr nz, .loop
+	pop de
+	pop bc
 	ret
