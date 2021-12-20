@@ -24,9 +24,13 @@ SECTION "bank2", ROMX
 INCLUDE "engine/tilesets/map_palettes.asm"
 INCLUDE "gfx/tileset_palette_maps.asm"
 INCLUDE "engine/overworld/player_object.asm"
-INCLUDE "engine/math/sine.asm"
 INCLUDE "engine/predef.asm"
 INCLUDE "engine/gfx/color.asm"
+
+
+SECTION "Sine", ROMX
+
+INCLUDE "engine/math/sine.asm"
 
 
 SECTION "bank3", ROMX
@@ -329,6 +333,7 @@ INCLUDE "engine/debug/color_picker.asm"
 SECTION "Standard Scripts", ROMX
 
 INCLUDE "engine/events/std_scripts.asm"
+INCLUDE "engine/events/init_events.asm"
 INCLUDE "data/text/battle.asm"
 
 

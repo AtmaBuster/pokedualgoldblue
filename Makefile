@@ -189,6 +189,7 @@ gfx/battle_anims/status.2bpp: tools/gfx += --remove-whitespace
 
 gfx/player/chris.2bpp: rgbgfx += -h
 gfx/player/chris_back.2bpp: rgbgfx += -h
+gfx/player/red_back.2bpp: rgbgfx += -h
 
 gfx/trainer_card/leaders.2bpp: tools/gfx += --trim-whitespace
 
@@ -197,6 +198,7 @@ gfx/overworld/chris_fish.2bpp: tools/gfx += --trim-whitespace
 gfx/sprites/big_onix.2bpp: tools/gfx += --remove-whitespace --remove-xflip
 
 gfx/battle/dude.2bpp: rgbgfx += -h
+gfx/battle/old_man.2bpp: rgbgfx += -h
 
 gfx/font/unused_bold_font.1bpp: tools/gfx += --trim-whitespace
 

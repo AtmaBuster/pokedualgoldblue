@@ -2,23 +2,14 @@
 
 RedsHouse2F_MapScripts:
 	def_scene_scripts
-	scene_script .FaceUp      ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_FINISHED
+	scene_script .FaceUp     ; SCENE_DEFAULT
+	scene_script DummyScript ; SCENE_FINISHED
 
 	def_callbacks
-	callback MAPCALLBACK_NEWMAP, .InitializeRoom
-
-.InitializeRoom
-	checkevent EVENT_INITIALIZED_EVENTS
-	iftrue .SkipInitialization
-	jumpstd InitializeEventsScript
-.SkipInitialization:
-	endcallback
 
 .FaceUp
 	turnobject PLAYER, UP
 	setscene SCENE_FINISHED
-.DummyScene1
 	end
 
 RedsHouse2FPCScript:

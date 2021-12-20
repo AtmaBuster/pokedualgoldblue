@@ -8648,10 +8648,18 @@ CopyBackpic:
 	ret
 
 ChrisBackpic:
+IF DEF(_GOLD)
 INCBIN "gfx/player/chris_back.2bpp.lz"
+ELIF DEF(_BLUE)
+INCBIN "gfx/player/red_back.2bpp.lz"
+ENDC
 
 DudeBackpic:
+IF DEF(_GOLD)
 INCBIN "gfx/battle/dude.2bpp.lz"
+ELIF DEF(_BLUE)
+INCBIN "gfx/battle/old_man.2bpp.lz"
+ENDC
 
 BattleStartMessage:
 	ld a, [wBattleMode]

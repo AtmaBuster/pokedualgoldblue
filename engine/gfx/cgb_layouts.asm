@@ -304,28 +304,6 @@ _CGB_BillsPC:
 	ldh [hCGBPalUpdate], a
 	ret
 
-_CGB_Unknown: ; unreferenced
-	ld hl, BillsPCOrangePalette
-	call LoadHLPaletteIntoDE
-	jr .GotPalette
-
-.GetMonPalette: ; unreferenced
-	ld bc, wTempMonDVs
-	call GetPlayerOrMonPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-.GotPalette:
-	call WipeAttrmap
-	hlcoord 1, 1, wAttrmap
-	lb bc, 7, 7
-	ld a, $1 ; mon palette
-	call FillBoxCGB
-	call InitPartyMenuOBPals
-	call ApplyAttrmap
-	call ApplyPals
-	ld a, TRUE
-	ldh [hCGBPalUpdate], a
-	ret
-
 BillsPCOrangePalette:
 INCLUDE "gfx/pc/orange.pal"
 
@@ -497,10 +475,86 @@ _CGB_Diploma:
 	ret
 
 _CGB_MapPals:
+IF DEF(_GOLD)
 	call LoadMapPals
 	ld a, SCGB_MAPPALS
 	ld [wDefaultSGBLayout], a
 	ret
+ELIF DEF(_BLUE)
+; Get SGB palette
+	call SGBLayoutJumptable.GetMapPalsIndex
+	call GetPredefPal
+	ld de, wBGPals1
+; Copy 7 BG palettes
+	ld b, 7
+.bg_loop
+	call .LoadHLBGPaletteIntoDE
+	dec b
+	jr nz, .bg_loop
+; Copy PAL_BG_TEXT and 6 OB palettes
+	ld b, 7
+.ob_loop
+	call .LoadHLOBPaletteIntoDE
+	dec b
+	jr nz, .ob_loop
+; Copy PAL_OW_TREE and PAL_OW_ROCK
+	call .LoadHLBGPaletteIntoDE
+	call .LoadHLBGPaletteIntoDE
+	ld a, SCGB_MAPPALS
+	ld [wDefaultSGBLayout], a
+	ret
+
+.LoadHLBGPaletteIntoDE:
+; morn/day: shades 0, 1, 2, 3 -> 0, 1, 2, 3
+; nite: shades 0, 1, 2, 3 -> 1, 2, 2, 3
+	push hl
+	ld a, [wTimeOfDayPal]
+	cp NITE_F
+	jr c, .bg_morn_day
+	inc hl
+	inc hl
+	call .LoadHLColorIntoDE
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+	call .LoadHLColorIntoDE
+.bg_done
+	pop hl
+	ret
+
+.bg_morn_day
+	call LoadHLPaletteIntoDE
+	jr .bg_done
+
+.LoadHLOBPaletteIntoDE:
+; shades 0, 1, 2, 3 -> 0, 0, 1, 3
+	push hl
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+	call .LoadHLColorIntoDE
+	inc hl
+	inc hl
+	call .LoadHLColorIntoDE
+	pop hl
+	ret
+
+.LoadHLColorIntoDE:
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBGPals1)
+	ldh [rSVBK], a
+rept PAL_COLOR_SIZE
+	ld a, [hli]
+	ld [de], a
+	inc de
+endr
+	pop af
+	ldh [rSVBK], a
+	ret
+ENDC
 
 _CGB_PartyMenu:
 	ld hl, PalPacket_PartyMenu + 1
@@ -559,12 +613,6 @@ _CGB_GSTitleScreen:
 	ret
 
 _CGB_Unused0D:
-	ld hl, PalPacket_Diploma + 1
-	call CopyFourPalettes
-	call WipeAttrmap
-	call ApplyAttrmap
-	ret
-
 _CGB_UnownPuzzle:
 	ld hl, PalPacket_UnownPuzzle + 1
 	call CopyFourPalettes
@@ -822,14 +870,6 @@ _CGB_PlayerOrMonFrontpicPals:
 	ret
 
 _CGB_Unused1E:
-	ld de, wBGPals1
-	ld a, [wCurPartySpecies]
-	call GetMonPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	call WipeAttrmap
-	call ApplyAttrmap
-	ret
-
 _CGB_TradeTube:
 	ld hl, PalPacket_TradeTube + 1
 	call CopyFourPalettes

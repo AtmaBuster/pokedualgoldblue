@@ -75,4 +75,7 @@ MapScenes::
 	scene_var VERMILION_CITY,                              wVermilionCitySceneID
 	scene_var SS_ANNE_2F,                                  wSSAnne2FSceneID
 	scene_var VERMILION_DOCK,                              wVermilionDockSceneID
+	scene_var POKEMON_TOWER_2F,                            wPokemonTower2FSceneID
+	scene_var POKEMON_TOWER_5F,                            wPokemonTower5FSceneID
+	scene_var POKEMON_TOWER_6F,                            wPokemonTower6FSceneID
 	db -1 ; end

@@ -390,11 +390,7 @@ wMemoryGameNumCardsMatched:: db
 NEXTU
 ; beta poker game
 	ds 50
-wBetaPokerSGBPals:: db
-	ds 2
-wBetaPokerSGBAttr:: db
-wBetaPokerSGBCol:: db
-wBetaPokerSGBRow:: db
+wBetaPokerSGBPals:: ds PALPACKET_LENGTH
 
 NEXTU
 ; unown puzzle
@@ -1222,7 +1218,6 @@ wTradeDialog::
 	db
 wFrameCounter2::
 wPrinterQueueLength::
-wUnusedSGB1eColorOffset::
 	db
 ENDU
 
@@ -2519,8 +2514,11 @@ wRoute18Gate1FSceneID::                           db
 wVermilionCitySceneID::                           db
 wSSAnne2FSceneID::                                db
 wVermilionDockSceneID::                           db
+wPokemonTower2FSceneID::                          db
+wPokemonTower5FSceneID::                          db
+wPokemonTower6FSceneID::                          db
 
-	ds 189
+	ds 186
 
 wEventFlags:: flag_array NUM_EVENTS
 
