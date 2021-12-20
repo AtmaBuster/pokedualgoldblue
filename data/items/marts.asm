@@ -324,15 +324,6 @@ MartCeladon4F:
 	db -1 ; end
 
 MartCeladon5F1:
-	db 5 ; # items
-	db HP_UP
-	db PROTEIN
-	db IRON
-	db CARBOS
-	db CALCIUM
-	db -1 ; end
-
-MartCeladon5F2:
 	db 7 ; # items
 	db X_ACCURACY
 	db GUARD_SPEC
@@ -341,6 +332,15 @@ MartCeladon5F2:
 	db X_DEFEND
 	db X_SPEED
 	db X_SPECIAL
+	db -1 ; end
+
+MartCeladon5F2:
+	db 5 ; # items
+	db HP_UP
+	db PROTEIN
+	db IRON
+	db CARBOS
+	db CALCIUM
 	db -1 ; end
 
 MartFuchsia:
