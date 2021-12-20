@@ -459,3 +459,5 @@ TrainerHouse:
 	jp CloseSRAM
 
 	nop ; unused
+
+INCLUDE "engine/events/celadon_drink_girl.asm"

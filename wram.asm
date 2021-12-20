@@ -1799,6 +1799,11 @@ wCurElevatorCount:: db
 wCurElevatorFloors:: ds 15
 
 NEXTU
+; drink girl menu
+wDrinkGirlCount:: db
+wDrinkGirlItems:: ds 3
+
+NEXTU
 ; mailbox data
 wCurMessageScrollPosition:: db
 wCurMessageIndex:: db
