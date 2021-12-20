@@ -2243,16 +2243,23 @@ FlyMap:
 ; enters Kanto, fly access is restricted until Indigo Plateau is
 ; visited and its flypoint enabled.
 	push af
+IF DEF(_GOLD)
 	ld c, SPAWN_INDIGO
 	call HasVisitedSpawn
 	and a
 	jr z, .NoKanto
+ENDC
 ; Kanto's map is only loaded if we've visited Indigo Plateau
 	ld a, KANTO_FLYPOINT ; first Kanto flypoint
 	ld [wStartFlypoint], a
+IF DEF(_BLUE)
+	ld [wTownMapPlayerIconLandmark], a ; default is Pallet Town in Blue
+ENDC
 	ld a, NUM_FLYPOINTS - 1 ; last Kanto flypoint
 	ld [wEndFlypoint], a
-	ld [wTownMapPlayerIconLandmark], a ; last one is default (Indigo Plateau)
+IF DEF(_GOLD)
+	ld [wTownMapPlayerIconLandmark], a ; default is Indigo Plateau in Gold
+ENDC
 ; Fill out the map
 	call FillKantoMap
 	call .MapHud
