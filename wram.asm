@@ -1614,6 +1614,14 @@ wHiddenItemID:: db
 wHiddenItemDataEnd::
 
 NEXTU
+; hidden coin data
+wHiddenCoinData::
+wHiddenCoinEvent:: dw
+wHiddenCoinAmount:: dw
+wHiddenCoinAmountMax:: dw
+wHiddenCoinDataEnd::
+
+NEXTU
 ; elevator data
 wElevatorData::
 wElevatorPointerBank:: db

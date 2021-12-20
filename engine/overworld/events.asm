@@ -627,6 +627,7 @@ BGEventJumptable:
 	dw .ifnotset
 	dw .itemifset
 	dw .copy
+	dw .coin
 	assert_table_length NUM_BGEVENTS
 
 .up:
@@ -701,6 +702,25 @@ BGEventJumptable:
 	call GetMapScriptsBank
 	call GetFarWord
 	call GetMapScriptsBank
+	call CallScript
+	scf
+	ret
+
+.coin:
+	ld a, COIN_CASE
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr nc, .dontread
+	call CheckBGEventFlag
+	jp nz, .dontread
+	call PlayTalkObject
+	call GetMapScriptsBank
+	ld de, wHiddenCoinData
+	ld bc, wHiddenCoinDataEnd - wHiddenCoinData
+	call FarCopyBytes
+	ld a, BANK(HiddenCoinScript)
+	ld hl, HiddenCoinScript
 	call CallScript
 	scf
 	ret

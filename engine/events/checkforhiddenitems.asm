@@ -43,7 +43,10 @@ CheckForHiddenItems:
 ; Is this BG event a hidden item?  If not, go to the next BG event.
 	call .GetFarByte
 	cp BGEVENT_ITEM
+	jr z, .ok
+	cp BGEVENT_COIN
 	jr nz, .next
+.ok
 ; Has this item already been found?  If not, set off the Itemfinder.
 	ld a, [wCurMapScriptBank]
 	call GetFarWord

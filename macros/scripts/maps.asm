@@ -144,6 +144,12 @@ hiddenitem: MACRO
 	dwb \2, \1
 ENDM
 
+hiddencoin: MACRO
+;\1: amount
+;\2: flag: an EVENT_* constant
+	dw \2, \1, MAX_COINS - \1
+ENDM
+
 elevfloor: MACRO
 ;\1: floor: a FLOOR_* constant
 ;\2: warp destination: starts at 1
