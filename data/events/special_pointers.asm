@@ -128,4 +128,6 @@ SpecialsPointers::
 	add_special InitialClearDSTFlag
 	add_special MrChrono
 	add_special SSAnneAnimation
+	add_special CheckDrinks
+	add_special DrinkGirlMenu
 	add_special UnusedDummySpecial ; unused

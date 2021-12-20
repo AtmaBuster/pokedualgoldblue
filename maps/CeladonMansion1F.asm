@@ -9,6 +9,64 @@ CeladonMansion1F_MapScripts:
 
 	def_callbacks
 
+CeladonMansion1F_MeowthScript:
+	faceplayer
+	opentext
+	writetext .Text
+	cry MEOWTH
+	waitsfx
+	closetext
+	end
+
+.Text:
+	text "MEOWTH: Meow!"
+	done
+
+CeladonMansion1F_WomanScript:
+	jumptextfaceplayer .Text
+.Text:
+	text "My dear #MON"
+	line "keep me company."
+
+	para "MEOWTH even brings"
+	line "money home!"
+	done
+
+CeladonMansion1F_ClefairyScript:
+	faceplayer
+	opentext
+	writetext .Text
+	cry CLEFAIRY
+	waitsfx
+	closetext
+	end
+
+.Text:
+	text "CLEFAIRY: Pi"
+	line "pippippi!"
+	done
+	
+CeladonMansion1F_NidoranScript:
+	faceplayer
+	opentext
+	writetext .Text
+	cry NIDORAN_F
+	waitsfx
+	closetext
+	end
+
+.Text:
+	text "NIDORAN: Kya"
+	line "kyaoo!"
+	done
+
+CeladonMansion1F_SignScript:
+	jumptext .Text
+.Text:
+	text "CELADON MANSION"
+	line "Manager's Suite"
+	done
+
 CeladonMansion1F_MapEvents:
 	def_warp_events
 	warp_event  4, 11, CELADON_CITY, 3
@@ -20,10 +78,10 @@ CeladonMansion1F_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  4,  9, BGEVENT_READ, BGEvent
+	bg_event  4,  9, BGEVENT_READ, CeladonMansion1F_SignScript
 
 	def_object_events
-	object_event  0,  5, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event  1,  5, SPRITE_KANTO_GRANNY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event  1,  8, SPRITE_FAIRY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event  4,  4, SPRITE_MONSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  0,  5, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonMansion1F_MeowthScript, -1
+	object_event  1,  5, SPRITE_KANTO_GRANNY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonMansion1F_WomanScript, -1
+	object_event  1,  8, SPRITE_FAIRY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonMansion1F_ClefairyScript, -1
+	object_event  4,  4, SPRITE_MONSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 4, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonMansion1F_NidoranScript, -1

@@ -90,7 +90,7 @@ NameRival:
 IF DEF(_GOLD)
 	db "SILVER@"
 ELIF DEF(_BLUE)
-	db "GOLD@"
+	db "RED@"
 ENDC
 
 NameRater:
@@ -461,3 +461,4 @@ TrainerHouse:
 	nop ; unused
 
 INCLUDE "engine/events/ss_anne_anim.asm"
+INCLUDE "engine/events/celadon_drink_girl.asm"

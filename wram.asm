@@ -1614,6 +1614,14 @@ wHiddenItemID:: db
 wHiddenItemDataEnd::
 
 NEXTU
+; hidden coin data
+wHiddenCoinData::
+wHiddenCoinEvent:: dw
+wHiddenCoinAmount:: dw
+wHiddenCoinAmountMax:: dw
+wHiddenCoinDataEnd::
+
+NEXTU
 ; elevator data
 wElevatorData::
 wElevatorPointerBank:: db
@@ -1797,6 +1805,11 @@ NEXTU
 ; elevator data
 wCurElevatorCount:: db
 wCurElevatorFloors:: ds 15
+
+NEXTU
+; drink girl menu
+wDrinkGirlCount:: db
+wDrinkGirlItems:: ds 3
 
 NEXTU
 ; mailbox data

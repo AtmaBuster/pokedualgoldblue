@@ -280,56 +280,50 @@ MartVermilion:
 	db -1 ; end
 
 MartCeladon2F1:
-	db 7 ; # items
-	db POTION
-	db SUPER_POTION
-	db HYPER_POTION
-	db MAX_POTION
-	db REVIVE
-	db SUPER_REPEL
-	db MAX_REPEL
-	db -1 ; end
-
-MartCeladon2F2:
-	db 10 ; # items
-	db POKE_BALL
+	db 9 ; # items
 	db GREAT_BALL
-	db ULTRA_BALL
+	db SUPER_POTION
+	db REVIVE
 	db ESCAPE_ROPE
-	db FULL_HEAL
+	db SUPER_REPEL
 	db ANTIDOTE
 	db BURN_HEAL
 	db ICE_HEAL
-	db AWAKENING
 	db PARLYZ_HEAL
 	db -1 ; end
 
+MartCeladon2F2:
+IF DEF(_GOLD)
+	db 1 ; # items
+	db TM_DYNAMICPUNCH
+ELIF DEF(_BLUE)
+	db 9 ; # items
+	db TM_DOUBLE_TEAM
+	db TM_REFLECT
+	db TM_RAZOR_WIND
+	db TM_HORN_DRILL
+	db TM_EGG_BOMB
+	db TM_MEGA_PUNCH
+	db TM_MEGA_KICK
+	db TM_TAKE_DOWN
+	db TM_SUBMISSION
+ENDC
+	db -1 ; end
+
 MartCeladon3F:
-	db 5 ; # items
-	db TM_HIDDEN_POWER
-	db TM_SUNNY_DAY
-	db TM_PROTECT
-	db TM_RAIN_DANCE
-	db TM_SANDSTORM
+	db 0 ; # items
 	db -1 ; end
 
 MartCeladon4F:
-	db 3 ; # items
+	db 5 ; # items
 	db POKE_DOLL
-	db LOVELY_MAIL
-	db SURF_MAIL
+	db FIRE_STONE
+	db THUNDERSTONE
+	db WATER_STONE
+	db LEAF_STONE
 	db -1 ; end
 
 MartCeladon5F1:
-	db 5 ; # items
-	db HP_UP
-	db PROTEIN
-	db IRON
-	db CARBOS
-	db CALCIUM
-	db -1 ; end
-
-MartCeladon5F2:
 	db 7 ; # items
 	db X_ACCURACY
 	db GUARD_SPEC
@@ -338,6 +332,15 @@ MartCeladon5F2:
 	db X_DEFEND
 	db X_SPEED
 	db X_SPECIAL
+	db -1 ; end
+
+MartCeladon5F2:
+	db 5 ; # items
+	db HP_UP
+	db PROTEIN
+	db IRON
+	db CARBOS
+	db CALCIUM
 	db -1 ; end
 
 MartFuchsia:

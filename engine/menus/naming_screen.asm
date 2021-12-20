@@ -119,7 +119,13 @@ NamingScreen:
 	db "NICKNAME?@"
 
 .Player:
+IF DEF(_GOLD)
 	ld de, ChrisSpriteGFX
+	ld b, BANK(ChrisSpriteGFX)
+ELIF DEF(_BLUE)
+	ld de, RedSpriteGFX
+	ld b, BANK(RedSpriteGFX)
+ENDC
 	call .LoadSprite
 	hlcoord 5, 2
 	ld de, .PlayerNameString
@@ -131,7 +137,13 @@ NamingScreen:
 	db "YOUR NAME?@"
 
 .Rival:
+IF DEF(_GOLD)
 	ld de, SilverSpriteGFX
+	ld b, BANK(SilverSpriteGFX)
+ELIF DEF(_BLUE)
+	ld de, KantoBlueSpriteGFX
+	ld b, BANK(KantoBlueSpriteGFX)
+ENDC
 	call .LoadSprite
 	hlcoord 5, 2
 	ld de, .RivalNameString
@@ -144,6 +156,7 @@ NamingScreen:
 
 .Mom:
 	ld de, MomSpriteGFX
+	ld b, BANK(MomSpriteGFX)
 	call .LoadSprite
 	hlcoord 5, 2
 	ld de, .MomNameString
@@ -179,9 +192,10 @@ NamingScreen:
 	db "BOX NAME?@"
 
 .LoadSprite:
+	ld c, 4
+	push bc
 	push de
 	ld hl, vTiles0 tile $00
-	lb bc, BANK(ChrisSpriteGFX), 4
 	call Request2bpp
 	pop de
 	ld hl, 12 tiles
@@ -189,7 +203,7 @@ NamingScreen:
 	ld e, l
 	ld d, h
 	ld hl, vTiles0 tile $04
-	lb bc, BANK(ChrisSpriteGFX), 4
+	pop bc
 	call Request2bpp
 	xor a ; SPRITE_ANIM_DICT_DEFAULT and tile offset $00
 	ld hl, wSpriteAnimDict
