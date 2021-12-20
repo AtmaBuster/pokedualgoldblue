@@ -136,8 +136,8 @@ ItemDescriptions:
 	dw BasementKeyDesc
 	dw PassDesc
 	dw TeruSamaDesc
-	dw TeruSamaDesc
-	dw TeruSamaDesc
+	dw SilphScopeDesc
+	dw LiftKeyDesc
 	dw CharcoalDesc
 	dw BerryJuiceDesc
 	dw ScopeLensDesc
@@ -757,6 +757,14 @@ BasementKeyDesc:
 PassDesc:
 	db   "A ticket for the"
 	next "MAGNET TRAIN.@"
+
+SilphScopeDesc:
+	db   "SILPH CO. product."
+	next "Reveals ghosts.@"
+
+LiftKeyDesc:
+	db   "TEAM ROCKET's key"
+	next "for an elevator.@"
 
 CharcoalDesc:
 	db   "Powers up fire-"
