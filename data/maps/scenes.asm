@@ -78,4 +78,6 @@ MapScenes::
 	scene_var POKEMON_TOWER_2F,                            wPokemonTower2FSceneID
 	scene_var POKEMON_TOWER_5F,                            wPokemonTower5FSceneID
 	scene_var POKEMON_TOWER_6F,                            wPokemonTower6FSceneID
+	scene_var SILPH_CO_7F,                                 wSilphCo7FSceneID
+	scene_var SILPH_CO_11F,                                wSilphCo11FSceneID
 	db -1 ; end

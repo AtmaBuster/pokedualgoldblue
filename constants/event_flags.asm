@@ -264,6 +264,9 @@
 	const EVENT_SILPH_CO_5F_DOOR_2
 	const EVENT_SILPH_CO_5F_DOOR_3
 	const EVENT_SILPH_CO_6F_DOOR_1
+	const EVENT_SILPH_CO_7F_DOOR_1
+	const EVENT_SILPH_CO_7F_DOOR_2
+	const EVENT_SILPH_CO_7F_DOOR_3
 	const_skip
 	const_skip
 	const_skip
@@ -271,9 +274,7 @@
 	const_skip
 	const_skip
 	const_skip
-	const_skip
-	const_skip
-	const_skip
+	const EVENT_SILPH_CO_7F_GOT_LAPRAS
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
@@ -320,7 +321,7 @@
 	const EVENT_ROCKET_HIDEOUT_B3F_HIDDEN_NUGGET
 	const EVENT_ROCKET_HIDEOUT_B4F_HIDDEN_SUPER_POTION
 	const EVENT_SILPH_CO_5F_HIDDEN_ELIXER
-; Unused: next 85 events
+; Unused: next 84 events
 
 	const_next 400
 ; Kurt Apricorn events
@@ -1808,7 +1809,7 @@
 	const EVENT_ROCKET_HIDEOUT_B4F_GIOVANNI
 	const EVENT_SAFFRON_CITY_ROCKET_GROUP1
 	const EVENT_SAFFRON_CITY_ROCKET_GROUP2
-	const_skip
+	const EVENT_SILPH_CO_7F_RIVAL
 	const_skip
 ; Kanto itemballs
 	const EVENT_ROUTE_2_MOON_STONE
@@ -1871,8 +1872,8 @@
 	const EVENT_SILPH_CO_5F_CARD_KEY
 	const EVENT_SILPH_CO_6F_HP_UP
 	const EVENT_SILPH_CO_6F_X_ACCURACY
-	const_skip
-	const_skip
+	const EVENT_SILPH_CO_7F_CALCIUM
+	const EVENT_SILPH_CO_7F_TM_SWORDS_DANCE
 	const_skip
 	const_skip
 	const_skip

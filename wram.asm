@@ -2539,8 +2539,10 @@ wVermilionDockSceneID::                           db
 wPokemonTower2FSceneID::                          db
 wPokemonTower5FSceneID::                          db
 wPokemonTower6FSceneID::                          db
+wSilphCo7FSceneID::                               db
+wSilphCo11FSceneID::                              db
 
-	ds 184
+	ds 182
 
 wVermilionGymPuzzleCans:: dw
 
