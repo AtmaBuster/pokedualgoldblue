@@ -260,9 +260,9 @@
 	const EVENT_SILPH_CO_3F_DOOR_2
 	const EVENT_SILPH_CO_4F_DOOR_1
 	const EVENT_SILPH_CO_4F_DOOR_2
-	const_skip
-	const_skip
-	const_skip
+	const EVENT_SILPH_CO_5F_DOOR_1
+	const EVENT_SILPH_CO_5F_DOOR_2
+	const EVENT_SILPH_CO_5F_DOOR_3
 	const_skip
 	const_skip
 	const_skip
@@ -319,7 +319,8 @@
 	const EVENT_ROCKET_HIDEOUT_B1F_HIDDEN_PP_UP
 	const EVENT_ROCKET_HIDEOUT_B3F_HIDDEN_NUGGET
 	const EVENT_ROCKET_HIDEOUT_B4F_HIDDEN_SUPER_POTION
-; Unused: next 86 events
+	const EVENT_SILPH_CO_5F_HIDDEN_ELIXER
+; Unused: next 85 events
 
 	const_next 400
 ; Kurt Apricorn events
@@ -1865,9 +1866,9 @@
 	const EVENT_SILPH_CO_4F_FULL_HEAL
 	const EVENT_SILPH_CO_4F_MAX_REVIVE
 	const EVENT_SILPH_CO_4F_ESCAPE_ROPE
-	const_skip
-	const_skip
-	const_skip
+	const EVENT_SILPH_CO_5F_TM_TAKE_DOWN
+	const EVENT_SILPH_CO_5F_PROTEIN
+	const EVENT_SILPH_CO_5F_CARD_KEY
 	const_skip
 	const_skip
 	const_skip
