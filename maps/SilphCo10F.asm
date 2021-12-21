@@ -122,6 +122,8 @@ SilphCo10F_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 10,  4, BGEVENT_KEYDOOR, SilphCo10F_Door1
+	bg_event 11,  4, BGEVENT_KEYDOOR, SilphCo10F_Door1
 
 	def_object_events
 	object_event  1,  9, SPRITE_KANTO_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerRocketGrunt38, EVENT_SAFFRON_CITY_ROCKET_GROUP1
