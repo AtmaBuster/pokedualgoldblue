@@ -263,7 +263,7 @@
 	const EVENT_SILPH_CO_5F_DOOR_1
 	const EVENT_SILPH_CO_5F_DOOR_2
 	const EVENT_SILPH_CO_5F_DOOR_3
-	const_skip
+	const EVENT_SILPH_CO_6F_DOOR_1
 	const_skip
 	const_skip
 	const_skip
@@ -1869,8 +1869,8 @@
 	const EVENT_SILPH_CO_5F_TM_TAKE_DOWN
 	const EVENT_SILPH_CO_5F_PROTEIN
 	const EVENT_SILPH_CO_5F_CARD_KEY
-	const_skip
-	const_skip
+	const EVENT_SILPH_CO_6F_HP_UP
+	const EVENT_SILPH_CO_6F_X_ACCURACY
 	const_skip
 	const_skip
 	const_skip
