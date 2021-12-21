@@ -2531,7 +2531,9 @@ wPokemonTower2FSceneID::                          db
 wPokemonTower5FSceneID::                          db
 wPokemonTower6FSceneID::                          db
 
-	ds 186
+	ds 184
+
+wVermilionGymPuzzleCans:: dw
 
 wEventFlags:: flag_array NUM_EVENTS
 

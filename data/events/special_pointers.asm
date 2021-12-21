@@ -130,4 +130,5 @@ SpecialsPointers::
 	add_special SSAnneAnimation
 	add_special CheckDrinks
 	add_special DrinkGirlMenu
+	add_special ResetVermilionGymPuzzle
 	add_special UnusedDummySpecial ; unused
