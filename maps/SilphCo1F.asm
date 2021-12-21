@@ -6,6 +6,16 @@ SilphCo1F_MapScripts:
 
 	def_callbacks
 
+SilphCo1F_ReceptionistScript:
+	jumptextfaceplayer .Text
+.Text:
+	text "Welcome!"
+
+	para "The PRESIDENT is"
+	line "in the boardroom"
+	cont "on 11F!"
+	done
+
 SilphCo1F_MapEvents:
 	def_warp_events
 	warp_event 10, 17, SAFFRON_CITY, 6
@@ -19,4 +29,4 @@ SilphCo1F_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  4,  2, SPRITE_OLD_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  4,  2, SPRITE_OLD_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SilphCo1F_ReceptionistScript, EVENT_SAFFRON_CITY_ROCKET_GROUP2
