@@ -253,6 +253,27 @@
 	const EVENT_VERMILION_GYM_FOUND_FIRST_CAN
 	const EVENT_VERMILION_GYM_LOCK_OPEN
 	const EVENT_GOT_TM_THUNDERBOLT
+	const EVENT_GOT_TM_SELFDESTRUCT
+	const EVENT_SILPH_CO_2F_DOOR_1
+	const EVENT_SILPH_CO_2F_DOOR_2
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
@@ -298,7 +319,7 @@
 	const EVENT_ROCKET_HIDEOUT_B1F_HIDDEN_PP_UP
 	const EVENT_ROCKET_HIDEOUT_B3F_HIDDEN_NUGGET
 	const EVENT_ROCKET_HIDEOUT_B4F_HIDDEN_SUPER_POTION
-; Unused: next 107 events
+; Unused: next 86 events
 
 	const_next 400
 ; Kurt Apricorn events

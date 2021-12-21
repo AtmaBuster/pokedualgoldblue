@@ -1622,6 +1622,15 @@ wHiddenCoinAmountMax:: dw
 wHiddenCoinDataEnd::
 
 NEXTU
+; card key door data
+wKeyDoorData::
+wKeyDoorEvent:: dw
+wKeyDoorBlockX:: db
+wKeyDoorBlockY:: db
+wKeyDoorEmptyBlock:: db
+wKeyDoorDataEnd::
+
+NEXTU
 ; elevator data
 wElevatorData::
 wElevatorPointerBank:: db

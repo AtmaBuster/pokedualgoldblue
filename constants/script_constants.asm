@@ -121,6 +121,7 @@ OBJECT_EVENT_SIZE EQU 13 ; object_event
 	const BGEVENT_ITEM
 	const BGEVENT_COPY
 	const BGEVENT_COIN
+	const BGEVENT_KEYDOOR
 NUM_BGEVENTS EQU const_value
 
 ; object_event types

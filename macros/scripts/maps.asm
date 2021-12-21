@@ -150,6 +150,15 @@ hiddencoin: MACRO
 	dw \2, \1, MAX_COINS - \1
 ENDM
 
+cardkeydoor: MACRO
+;\1: block x
+;\2: block y
+;\3: empty block
+;\4: flag: an EVENT_* constant
+	dw \4
+	db \1*2 + 4, \2*2 + 4, \3
+ENDM
+
 elevfloor: MACRO
 ;\1: floor: a FLOOR_* constant
 ;\2: warp destination: starts at 1

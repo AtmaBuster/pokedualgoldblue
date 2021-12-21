@@ -628,6 +628,7 @@ BGEventJumptable:
 	dw .itemifset
 	dw .copy
 	dw .coin
+	dw .keydoor
 	assert_table_length NUM_BGEVENTS
 
 .up:
@@ -721,6 +722,20 @@ BGEventJumptable:
 	call FarCopyBytes
 	ld a, BANK(HiddenCoinScript)
 	ld hl, HiddenCoinScript
+	call CallScript
+	scf
+	ret
+
+.keydoor:
+	call CheckBGEventFlag
+	jp nz, .dontread
+	call PlayTalkObject
+	call GetMapScriptsBank
+	ld de, wKeyDoorData
+	ld bc, wKeyDoorDataEnd - wKeyDoorData
+	call FarCopyBytes
+	ld a, BANK(CardKeyDoorScript)
+	ld hl, CardKeyDoorScript
 	call CallScript
 	scf
 	ret
