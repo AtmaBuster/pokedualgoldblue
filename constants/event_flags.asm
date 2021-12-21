@@ -267,7 +267,7 @@
 	const EVENT_SILPH_CO_7F_DOOR_1
 	const EVENT_SILPH_CO_7F_DOOR_2
 	const EVENT_SILPH_CO_7F_DOOR_3
-	const_skip
+	const EVENT_SILPH_CO_8F_DOOR_1
 	const_skip
 	const_skip
 	const_skip
