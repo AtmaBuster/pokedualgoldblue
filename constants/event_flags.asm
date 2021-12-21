@@ -258,8 +258,8 @@
 	const EVENT_SILPH_CO_2F_DOOR_2
 	const EVENT_SILPH_CO_3F_DOOR_1
 	const EVENT_SILPH_CO_3F_DOOR_2
-	const_skip
-	const_skip
+	const EVENT_SILPH_CO_4F_DOOR_1
+	const EVENT_SILPH_CO_4F_DOOR_2
 	const_skip
 	const_skip
 	const_skip
@@ -1862,7 +1862,20 @@
 	const EVENT_ROCKET_HIDEOUT_B4F_SILPH_SCOPE
 	const EVENT_ROCKET_HIDEOUT_B4F_LIFT_KEY
 	const EVENT_SILPH_CO_3F_HYPER_POTION
-; Unused: next 35 events
+	const EVENT_SILPH_CO_4F_FULL_HEAL
+	const EVENT_SILPH_CO_4F_MAX_REVIVE
+	const EVENT_SILPH_CO_4F_ESCAPE_ROPE
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+	const_skip
+; Unused: next 22 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 80
