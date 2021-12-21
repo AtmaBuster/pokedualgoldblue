@@ -6,6 +6,41 @@ MrPsychicsHouse_MapScripts:
 
 	def_callbacks
 
+MrPsychicsHouse_MrPsychicScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_TM_PSYCHIC
+	iftrue .After
+	writetext .Text1
+	waitbutton
+	verbosegiveitem TM_PSYCHIC_M
+	iffalse .BagFull
+	setevent EVENT_GOT_TM_PSYCHIC
+.BagFull:
+	closetext
+	end
+
+.After:
+	writetext .Text2
+	waitbutton
+	closetext
+	end
+
+.Text1:
+	text "...Wait! Don't"
+	line "say a word!"
+
+	para "You wanted this!"
+	done
+
+.Text2:
+	text "TM29 is PSYCHIC!"
+
+	para "It can lower the"
+	line "target's SPECIAL"
+	cont "abilities."
+	done
+
 MrPsychicsHouse_MapEvents:
 	def_warp_events
 	warp_event  2,  7, SAFFRON_CITY, 8
@@ -16,4 +51,4 @@ MrPsychicsHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  5,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  5,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MrPsychicsHouse_MrPsychicScript, -1
