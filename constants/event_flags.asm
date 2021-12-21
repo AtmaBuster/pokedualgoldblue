@@ -268,10 +268,10 @@
 	const EVENT_SILPH_CO_7F_DOOR_2
 	const EVENT_SILPH_CO_7F_DOOR_3
 	const EVENT_SILPH_CO_8F_DOOR_1
-	const_skip
-	const_skip
-	const_skip
-	const_skip
+	const EVENT_SILPH_CO_9F_DOOR_1
+	const EVENT_SILPH_CO_9F_DOOR_2
+	const EVENT_SILPH_CO_9F_DOOR_3
+	const EVENT_SILPH_CO_9F_DOOR_4
 	const_skip
 	const_skip
 	const EVENT_SILPH_CO_7F_GOT_LAPRAS
@@ -321,6 +321,7 @@
 	const EVENT_ROCKET_HIDEOUT_B3F_HIDDEN_NUGGET
 	const EVENT_ROCKET_HIDEOUT_B4F_HIDDEN_SUPER_POTION
 	const EVENT_SILPH_CO_5F_HIDDEN_ELIXER
+	const EVENT_SILPH_CO_9F_HIDDEN_MAX_POTION
 ; Unused: next 84 events
 
 	const_next 400
