@@ -272,7 +272,7 @@
 	const EVENT_SILPH_CO_9F_DOOR_2
 	const EVENT_SILPH_CO_9F_DOOR_3
 	const EVENT_SILPH_CO_9F_DOOR_4
-	const_skip
+	const EVENT_SILPH_CO_10F_DOOR_1
 	const_skip
 	const EVENT_SILPH_CO_7F_GOT_LAPRAS
 ; Kanto hidden items
@@ -1875,9 +1875,9 @@
 	const EVENT_SILPH_CO_6F_X_ACCURACY
 	const EVENT_SILPH_CO_7F_CALCIUM
 	const EVENT_SILPH_CO_7F_TM_SWORDS_DANCE
-	const_skip
-	const_skip
-	const_skip
+	const EVENT_SILPH_CO_10F_TM_EARTHQUAKE
+	const EVENT_SILPH_CO_10F_RARE_CANDY
+	const EVENT_SILPH_CO_10F_CARBOS
 ; Unused: next 22 events
 
 	const_next 2048
