@@ -256,8 +256,8 @@
 	const EVENT_GOT_TM_SELFDESTRUCT
 	const EVENT_SILPH_CO_2F_DOOR_1
 	const EVENT_SILPH_CO_2F_DOOR_2
-	const_skip
-	const_skip
+	const EVENT_SILPH_CO_3F_DOOR_1
+	const EVENT_SILPH_CO_3F_DOOR_2
 	const_skip
 	const_skip
 	const_skip
@@ -1861,7 +1861,8 @@
 	const EVENT_ROCKET_HIDEOUT_B4F_IRON
 	const EVENT_ROCKET_HIDEOUT_B4F_SILPH_SCOPE
 	const EVENT_ROCKET_HIDEOUT_B4F_LIFT_KEY
-; Unused: next 36 events
+	const EVENT_SILPH_CO_3F_HYPER_POTION
+; Unused: next 35 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 80
