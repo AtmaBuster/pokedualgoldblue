@@ -1896,7 +1896,8 @@
 	const EVENT_SILPH_CO_10F_RARE_CANDY
 	const EVENT_SILPH_CO_10F_CARBOS
 	const EVENT_WARDENS_HOUSE_RARE_CANDY
-; Unused: next 19 events
+	const EVENT_SAFARI_ZONE_CENTER_NUGGET
+; Unused: next 18 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 80
