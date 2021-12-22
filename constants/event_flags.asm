@@ -289,6 +289,7 @@
 	const EVENT_PIKACHU_FAN_BOAST
 	const EVENT_SEEL_FAN_BOAST
 	const EVENT_GOT_BICYCLE_KANTO
+	const EVENT_GOT_TM_TOXIC
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
@@ -343,7 +344,7 @@
 	const EVENT_ROUTE_17_HIDDEN_MAX_REVIVE
 	const EVENT_ROUTE_17_HIDDEN_MAX_ELIXER
 	const EVENT_SAFARI_ZONE_WEST_HIDDEN_REVIVE
-; Unused: next 65 events
+; Unused: next 64 events
 
 	const_next 400
 ; Kurt Apricorn events
