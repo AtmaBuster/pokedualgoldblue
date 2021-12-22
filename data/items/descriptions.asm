@@ -778,6 +778,14 @@ ScopeLensDesc:
 	db   "Raises critical"
 	next "hit ratio. (HOLD)@"
 
+GoldTeethDesc:
+	db   "The SAFARI ZONE"
+	next "WARDEN's dentures.@"
+
+SecretKeyDesc:
+	db   "A key for CINNABAR"
+	next "ISLAND GYM's door.@"
+
 MetalCoatDesc:
 	db   "Powers up steel-"
 	next "type moves. (HOLD)@"
@@ -785,6 +793,10 @@ MetalCoatDesc:
 DragonFangDesc:
 	db   "Powers up dragon-"
 	next "type moves. (HOLD)@"
+
+BikeVoucherDesc:
+	db   "A voucher for a"
+	next "free bicycle.@"
 
 LeftoversDesc:
 	db   "Restores HP during"
