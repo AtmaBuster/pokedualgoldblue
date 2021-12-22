@@ -141,11 +141,11 @@ ItemDescriptions:
 	dw CharcoalDesc
 	dw BerryJuiceDesc
 	dw ScopeLensDesc
-	dw TeruSamaDesc
-	dw TeruSamaDesc
+	dw GoldTeethDesc
+	dw SecretKeyDesc
 	dw MetalCoatDesc
 	dw DragonFangDesc
-	dw TeruSamaDesc
+	dw BikeVoucherDesc
 	dw LeftoversDesc
 	dw TeruSamaDesc
 	dw TeruSamaDesc

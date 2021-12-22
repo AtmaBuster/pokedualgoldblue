@@ -282,6 +282,8 @@
 	const EVENT_GOT_DOME_FOSSIL
 	const EVENT_GOT_HELIX_FOSSIL
 	const EVENT_GOT_GOOD_ROD_KANTO
+	const EVENT_GAVE_GOLD_TEETH
+	const EVENT_GOT_HM04_STRENGTH_KANTO
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
@@ -335,7 +337,7 @@
 	const EVENT_ROUTE_17_HIDDEN_PP_UP
 	const EVENT_ROUTE_17_HIDDEN_MAX_REVIVE
 	const EVENT_ROUTE_17_HIDDEN_MAX_ELIXER
-; Unused: next 73 events
+; Unused: next 71 events
 
 	const_next 400
 ; Kurt Apricorn events
@@ -1892,7 +1894,8 @@
 	const EVENT_SILPH_CO_10F_TM_EARTHQUAKE
 	const EVENT_SILPH_CO_10F_RARE_CANDY
 	const EVENT_SILPH_CO_10F_CARBOS
-; Unused: next 20 events
+	const EVENT_WARDENS_HOUSE_RARE_CANDY
+; Unused: next 19 events
 
 	const_next 2048
 NUM_EVENTS EQU const_value ; 80
