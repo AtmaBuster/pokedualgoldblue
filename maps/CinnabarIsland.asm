@@ -12,6 +12,7 @@ CinnabarIsland_MapScripts:
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_CINNABAR
 	clearevent EVENT_CINNABAR_LAB_IN_FOSSIL_ROOM
+	clearevent EVENT_POKEMON_MANSION_DOORS
 	endcallback
 
 CinnabarIsland_GirlScript:
