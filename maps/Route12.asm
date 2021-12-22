@@ -238,8 +238,8 @@ TrainerFisherBarney:
 	cont "bug me any more."
 	done
 
-TrainerFisherRonald:
-	trainer FISHER_GEN1, RONALD_GEN1, EVENT_BEAT_FISHER_RONALD_GEN1, .SeenText, .BeatenText, 0, .Script
+TrainerFisherAndrew:
+	trainer FISHER_GEN1, ANDREW_GEN1, EVENT_BEAT_FISHER_ANDREW_GEN1, .SeenText, .BeatenText, 0, .Script
 .Script:
 	endifjustbattled
 	opentext
@@ -313,6 +313,6 @@ Route12_MapEvents:
 	object_event 14, 76, SPRITE_KANTO_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerRockerLuca, -1
 	object_event 12, 40, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerFisherStephen, -1
 	object_event  9, 52, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerFisherBarney, -1
-	object_event  6, 87, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerFisherRonald, -1
+	object_event  6, 87, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerFisherAndrew, -1
 	object_event 14, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12_TMPayDayScript, EVENT_ROUTE_12_TM_PAY_DAY
 	object_event  5, 89, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12_IronScript, EVENT_ROUTE_12_IRON
