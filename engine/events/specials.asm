@@ -511,3 +511,5 @@ ResetVermilionGymPuzzle:
 	db  7, 13, -1, 11 ; can 12 (2, 3)
 	db  8, 14, -1, 12 ; can 13 (3, 3)
 	db  9, -1, -1, 13 ; can 14 (4, 3)
+
+INCLUDE "engine/events/fossil_menu.asm"

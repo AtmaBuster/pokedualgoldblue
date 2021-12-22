@@ -131,4 +131,6 @@ SpecialsPointers::
 	add_special CheckDrinks
 	add_special DrinkGirlMenu
 	add_special ResetVermilionGymPuzzle
+	add_special CheckFossils
+	add_special FossilMenu
 	add_special UnusedDummySpecial ; unused
