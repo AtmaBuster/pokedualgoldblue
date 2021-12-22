@@ -26,7 +26,7 @@ Marts:
 	dw MartVermilion
 	dw MartCeladon2F1
 	dw MartCeladon2F2
-	dw MartCeladon3F
+	dw MartCinnabar
 	dw MartCeladon4F
 	dw MartCeladon5F1
 	dw MartCeladon5F2
@@ -310,8 +310,15 @@ ELIF DEF(_BLUE)
 ENDC
 	db -1 ; end
 
-MartCeladon3F:
-	db 0 ; # items
+MartCinnabar:
+	db 7 ; # items
+	db ULTRA_BALL
+	db GREAT_BALL
+	db HYPER_POTION
+	db MAX_REPEL
+	db ESCAPE_ROPE
+	db FULL_HEAL
+	db REVIVE
 	db -1 ; end
 
 MartCeladon4F:
