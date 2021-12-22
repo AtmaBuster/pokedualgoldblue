@@ -43,4 +43,4 @@ SafariZoneCenter_MapEvents:
 	bg_event 14, 22, BGEVENT_READ, SafariZoneCenter_TrainerTipsScript
 
 	def_object_events
-	object_event 14, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SafariZoneCenter_NuggetScript, EVENT_SAFARI_ZONE_CENTER_NUGGET
+	object_event 14, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SafariZoneCenter_NuggetScript, EVENT_SAFARI_ZONE_CENTER_NUGGET
