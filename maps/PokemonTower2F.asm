@@ -27,6 +27,7 @@ PokemonTower2F_RivalScriptR:
 	scall PokemonTower2F_RivalScript
 	applymovement POKEMONTOWER2F_KANTO_BLUE, .LeaveMovement
 	disappear POKEMONTOWER2F_KANTO_BLUE
+	special RestartMapMusic
 	end
 
 .LeaveMovement:
@@ -46,6 +47,7 @@ PokemonTower2F_RivalScriptD:
 	scall PokemonTower2F_RivalScript
 	applymovement POKEMONTOWER2F_KANTO_BLUE, .LeaveMovement
 	disappear POKEMONTOWER2F_KANTO_BLUE
+	special RestartMapMusic
 	end
 
 .LeaveMovement:
