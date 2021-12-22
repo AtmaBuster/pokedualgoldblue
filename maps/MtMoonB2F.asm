@@ -181,6 +181,7 @@ MtMoonB2F_DomeFossilScript:
 
 .GetFossil:
 	verbosegiveitem DOME_FOSSIL
+	setevent EVENT_GOT_DOME_FOSSIL
 	disappear MTMOONB2F_FOSSIL1
 	closetext
 	applymovement MTMOONB2F_KANTO_SUPER_NERD, .GoToFossilMovement
@@ -212,6 +213,7 @@ MtMoonB2F_HelixFossilScript:
 
 .GetFossil:
 	verbosegiveitem HELIX_FOSSIL
+	setevent EVENT_GOT_HELIX_FOSSIL
 	disappear MTMOONB2F_FOSSIL2
 	closetext
 	applymovement MTMOONB2F_KANTO_SUPER_NERD, .GoToFossilMovement
