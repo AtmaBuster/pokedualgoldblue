@@ -284,6 +284,7 @@
 	const EVENT_GOT_GOOD_ROD_KANTO
 	const EVENT_GAVE_GOLD_TEETH
 	const EVENT_GOT_HM04_STRENGTH_KANTO
+	const EVENT_GOT_HM03_SURF_KANTO
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
@@ -337,7 +338,7 @@
 	const EVENT_ROUTE_17_HIDDEN_PP_UP
 	const EVENT_ROUTE_17_HIDDEN_MAX_REVIVE
 	const EVENT_ROUTE_17_HIDDEN_MAX_ELIXER
-; Unused: next 71 events
+; Unused: next 70 events
 
 	const_next 400
 ; Kurt Apricorn events
