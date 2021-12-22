@@ -281,6 +281,7 @@
 	const EVENT_GOT_TM_PSYCHIC
 	const EVENT_GOT_DOME_FOSSIL
 	const EVENT_GOT_HELIX_FOSSIL
+	const EVENT_GOT_GOOD_ROD_KANTO
 ; Kanto hidden items
 	const EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 	const EVENT_VERMILION_PORT_HIDDEN_IRON
@@ -334,7 +335,7 @@
 	const EVENT_ROUTE_17_HIDDEN_PP_UP
 	const EVENT_ROUTE_17_HIDDEN_MAX_REVIVE
 	const EVENT_ROUTE_17_HIDDEN_MAX_ELIXER
-; Unused: next 74 events
+; Unused: next 73 events
 
 	const_next 400
 ; Kurt Apricorn events
