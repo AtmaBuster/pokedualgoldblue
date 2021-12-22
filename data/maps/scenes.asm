@@ -81,4 +81,5 @@ MapScenes::
 	scene_var SILPH_CO_7F,                                 wSilphCo7FSceneID
 	scene_var SILPH_CO_11F,                                wSilphCo11FSceneID
 	scene_var FIGHTING_DOJO,                               wFightingDojoSceneID
+	scene_var CINNABAR_ISLAND,                             wCinnabarIslandSceneID
 	db -1 ; end

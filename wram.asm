@@ -2542,8 +2542,9 @@ wPokemonTower6FSceneID::                          db
 wSilphCo7FSceneID::                               db
 wSilphCo11FSceneID::                              db
 wFightingDojoSceneID::                            db
+wCinnabarIslandSceneID::                          db
 
-	ds 181
+	ds 180
 
 wVermilionGymPuzzleCans:: dw
 
