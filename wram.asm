@@ -2546,7 +2546,7 @@ wCinnabarIslandSceneID::                          db
 wRoute22GateSceneID::                             db
 wRoute23SceneID::                                 db
 
-	ds 123
+	ds 107
 
 wKantoDayCareFlags:: db
 wKantoDaycareMonNickname:: ds MON_NAME_LENGTH
