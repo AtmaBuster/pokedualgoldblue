@@ -33,6 +33,7 @@ Facings:
 	dw FacingBoulderDust2
 	dw FacingGrass1
 	dw FacingGrass2
+	dw FacingCouchMan
 	assert_table_length NUM_FACINGS
 	dw 0 ; end
 
@@ -236,3 +237,10 @@ FacingGrass2:
 	db 2 ; #
 	db  9, -1, 0, $00
 	db  9,  9, 0 | X_FLIP, $00
+
+FacingCouchMan:
+	db 4 ; #
+	db  4,  4, 0, $00
+	db  4, 12, 0, $01
+	db 12,  4, RELATIVE_ATTRIBUTES, $02
+	db 12, 12, RELATIVE_ATTRIBUTES, $03

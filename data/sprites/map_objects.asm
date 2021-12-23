@@ -298,12 +298,12 @@ SpriteMovementData::
 	db 0 ; flags2
 	db SWIMMING ; palette flags
 
-	assert_table_length NUM_SPRITEMOVEDATA
-
-; unused
-	db SPRITEMOVEFN_00 ; movement function
+; SPRITEMOVEDATA_COUCH_MAN
+	db SPRITEMOVEFN_STRENGTH ; movement function
 	db DOWN ; facing
-	db OBJECT_ACTION_STAND ; action
-	db 0 ; flags1
-	db 0 ; flags2
+	db OBJECT_ACTION_COUCH_MAN ; action
+	db FIXED_FACING | SLIDING ; flags1
+	db LOW_PRIORITY ; flags2
 	db 0 ; palette flags
+
+	assert_table_length NUM_SPRITEMOVEDATA
