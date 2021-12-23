@@ -2544,8 +2544,9 @@ wSilphCo11FSceneID::                              db
 wFightingDojoSceneID::                            db
 wCinnabarIslandSceneID::                          db
 wRoute22GateSceneID::                             db
+wRoute23SceneID::                                 db
 
-	ds 179
+	ds 178
 
 wVermilionGymPuzzleCans:: dw
 

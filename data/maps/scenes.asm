@@ -83,4 +83,5 @@ MapScenes::
 	scene_var FIGHTING_DOJO,                               wFightingDojoSceneID
 	scene_var CINNABAR_ISLAND,                             wCinnabarIslandSceneID
 	scene_var ROUTE_22_GATE,                               wRoute22GateSceneID
+	scene_var ROUTE_23,                                    wRoute23SceneID
 	db -1 ; end
