@@ -279,9 +279,4 @@ GamblerAsleepSpriteGFX::       INCBIN "gfx/sprites/gambler_asleep.2bpp"
 floating_section
 RedBikeSpriteGFX::             INCBIN "gfx/sprites/red_bike.2bpp"
 floating_section
-IF DEF(_GOLD)
 CouchManSpriteGFX::            INCBIN "gfx/sprites/couch_man.2bpp"
-ELIF DEF(_BLUE)
-; Blue version with SGB colors just shows the BG tiles underneath for accuracy
-CouchManSpriteGFX::            ds 4 tiles, $00
-ENDC

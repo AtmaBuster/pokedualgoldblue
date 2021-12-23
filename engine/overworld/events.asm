@@ -507,10 +507,16 @@ PlayTalkObject:
 TryObjectEvent:
 	farcall CheckFacingObject
 	jr c, .IsObject
+.IsNotTalkable
 	xor a
 	ret
 
 .IsObject:
+	ld hl, OBJECT_MOVEMENTTYPE
+	add hl, bc
+	ld a, [hl]
+	cp SPRITEMOVEDATA_COUCH_MAN
+	jr z, .IsNotTalkable
 	call PlayTalkObject
 	ldh a, [hObjectStructIndex]
 	call GetObjectStruct
@@ -526,7 +532,6 @@ TryObjectEvent:
 	ld a, [hl]
 	and %00001111
 
-; Bug: If IsInArray returns nc, data at bc will be executed as code.
 	push bc
 	ld de, 3
 	ld hl, ObjectEventTypeArray
@@ -541,7 +546,7 @@ TryObjectEvent:
 	jp hl
 
 .nope
-	; pop bc
+	pop bc
 	xor a
 	ret
 
