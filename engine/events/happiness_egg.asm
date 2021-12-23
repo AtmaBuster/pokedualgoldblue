@@ -142,6 +142,28 @@ StepHappiness::
 DayCareStep::
 ; Raise the experience of Day-Care Pokémon every step cycle.
 
+	ld a, [wKantoDayCareFlags]
+	bit DAYCAREKANTO_HAS_MON_F, a
+	jr z, .day_care_man
+
+	ld a, [wKantoDaycareMonLevel] ; level
+	cp MAX_LEVEL
+	jr nc, .day_care_man
+	ld hl, wKantoDaycareMonExp + 2 ; exp
+	inc [hl]
+	jr nz, .day_care_man
+	dec hl
+	inc [hl]
+	jr nz, .day_care_man
+	dec hl
+	inc [hl]
+	ld a, [hl]
+	cp HIGH(MAX_DAY_CARE_EXP >> 8)
+	jr c, .day_care_man
+	ld a, HIGH(MAX_DAY_CARE_EXP >> 8)
+	ld [hl], a
+
+.day_care_man
 	ld a, [wDayCareMan]
 	bit DAYCAREMAN_HAS_MON_F, a
 	jr z, .day_care_lady

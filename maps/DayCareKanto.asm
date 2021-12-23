@@ -6,6 +6,14 @@ DayCareKanto_MapScripts:
 
 	def_callbacks
 
+DayCareKanto_DayCareManScript:
+	faceplayer
+	opentext
+	special DayCareKanto
+	waitbutton
+	closetext
+	end
+
 DayCareKanto_MapEvents:
 	def_warp_events
 	warp_event  2,  7, ROUTE_5, 5
@@ -16,4 +24,4 @@ DayCareKanto_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  2,  3, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  2,  3, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareKanto_DayCareManScript, -1
