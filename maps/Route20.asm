@@ -14,6 +14,33 @@ Route20_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .ResetSeafoam
+
+.ResetSeafoam:
+	checkevent EVENT_SEAFOAM_ISLANDS_BOULDER_1D
+	iftrue .Reset1
+	checkevent EVENT_SEAFOAM_ISLANDS_BOULDER_2D
+	iffalse .Check2
+.Reset1:
+	clearevent EVENT_SEAFOAM_ISLANDS_BOULDER_1A
+	clearevent EVENT_SEAFOAM_ISLANDS_BOULDER_2A
+	setevent EVENT_SEAFOAM_ISLANDS_BOULDER_1B
+	setevent EVENT_SEAFOAM_ISLANDS_BOULDER_2B
+	setevent EVENT_SEAFOAM_ISLANDS_BOULDER_1C
+	setevent EVENT_SEAFOAM_ISLANDS_BOULDER_2C
+	setevent EVENT_SEAFOAM_ISLANDS_BOULDER_1D
+	setevent EVENT_SEAFOAM_ISLANDS_BOULDER_2D
+.Check2:
+	checkevent EVENT_SEAFOAM_ISLANDS_BOULDER_3B
+	iftrue .Reset2
+	checkevent EVENT_SEAFOAM_ISLANDS_BOULDER_4B
+	iffalse DummyScript
+.Reset2:
+	clearevent EVENT_SEAFOAM_ISLANDS_BOULDER_3A
+	clearevent EVENT_SEAFOAM_ISLANDS_BOULDER_4A
+	setevent EVENT_SEAFOAM_ISLANDS_BOULDER_3B
+	setevent EVENT_SEAFOAM_ISLANDS_BOULDER_4B
+	endcallback
 
 TrainerSwimmerTucker:
 	trainer SWIMMER_GEN1, TUCKER1_GEN1, EVENT_BEAT_SWIMMER_TUCKER_GEN1, .SeenText, .BeatenText, 0, .Script
