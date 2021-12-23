@@ -16,6 +16,8 @@ SeafoamIslandsB2F_MapEvents:
 	warp_event 25,  3, SEAFOAM_ISLANDS_B3F, 4
 	warp_event 25, 11, SEAFOAM_ISLANDS_B1F, 6
 	warp_event 25, 14, SEAFOAM_ISLANDS_B3F, 5
+	warp_event 19,  7, SEAFOAM_ISLANDS_B1F, 10
+	warp_event 22,  7, SEAFOAM_ISLANDS_B1F, 11
 
 	def_coord_events
 
