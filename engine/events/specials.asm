@@ -513,3 +513,70 @@ ResetVermilionGymPuzzle:
 	db  9, -1, -1, 13 ; can 14 (4, 3)
 
 INCLUDE "engine/events/fossil_menu.asm"
+
+BadgeMenu:
+	ld hl, BadgeMenuHeader
+	call CopyMenuHeader
+	call InitScrollingMenu
+	call UpdateSprites
+	xor a
+	ld [wMenuScrollPosition], a
+	call ScrollingMenu
+	ld a, [wMenuJoypad]
+	cp B_BUTTON
+	jr z, .cancel
+	ld a, [wScrollingMenuCursorPosition]
+	ld [wScriptVar], a
+	ret
+
+.cancel
+	ld a, -1
+	ld [wScriptVar], a
+	ret
+
+BadgeMenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 5, 3, 18, 11
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db SCROLLINGMENU_DISPLAY_ARROWS ; flags
+	db 4, 0 ; rows, columns
+	db SCROLLINGMENU_ITEMS_NORMAL
+	dba .Items
+	dba .GetBadgeNames
+	dba NULL
+	dba NULL
+
+.Items:
+	db 8
+	db 0
+	db 1
+	db 2
+	db 3
+	db 4
+	db 5
+	db 6
+	db 7
+	db -1 ; cancel
+
+.GetBadgeNames:
+	push de
+	ld a, [wMenuSelection]
+	ld hl, .BadgeNames
+	call GetNthString
+	ld d, h
+	ld e, l
+	pop hl
+	jp PlaceString
+
+.BadgeNames:
+	db "BOULDERBADGE@"
+	db "CASCADEBADGE@"
+	db "THUNDERBADGE@"
+	db "RAINBOWBADGE@"
+	db "SOULBADGE@"
+	db "MARSHBADGE@"
+	db "VOLCANOBADGE@"
+	db "EARTHBADGE@"
