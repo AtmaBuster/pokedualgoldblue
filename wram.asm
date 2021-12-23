@@ -2545,8 +2545,10 @@ wFightingDojoSceneID::                            db
 wCinnabarIslandSceneID::                          db
 wRoute22GateSceneID::                             db
 wRoute23SceneID::                                 db
+wSeafoamIslandsB3FSceneID::                       db
+wSeafoamIslandsB4FSceneID::                       db
 
-	ds 107
+	ds 105
 
 wKantoDayCareFlags:: db
 wKantoDaycareMonNickname:: ds MON_NAME_LENGTH

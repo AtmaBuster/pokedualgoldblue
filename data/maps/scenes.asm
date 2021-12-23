@@ -84,4 +84,6 @@ MapScenes::
 	scene_var CINNABAR_ISLAND,                             wCinnabarIslandSceneID
 	scene_var ROUTE_22_GATE,                               wRoute22GateSceneID
 	scene_var ROUTE_23,                                    wRoute23SceneID
+	scene_var SEAFOAM_ISLANDS_B3F,                         wSeafoamIslandsB3FSceneID
+	scene_var SEAFOAM_ISLANDS_B4F,                         wSeafoamIslandsB4FSceneID
 	db -1 ; end
