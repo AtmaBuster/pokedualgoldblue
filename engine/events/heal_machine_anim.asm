@@ -58,6 +58,7 @@ HealMachineAnim:
 	dw .Pokecenter
 	dw .ElmsLab
 	dw .HallOfFame
+	dw .KantoPokecenter
 
 healmachineanimseq: MACRO
 rept _NARG
@@ -72,6 +73,8 @@ ENDM
 	healmachineanimseq LOADGFX, PCLOADBALLS, PLAYMUSIC, FINISH
 .HallOfFame:
 	healmachineanimseq LOADGFX, HOFLOADBALLS, HOFPLAYSFX, FINISH
+.KantoPokecenter:
+	healmachineanimseq LOADGFX, PCLOADBALLS, PLAYMUSIC, FINISH
 
 .Jumptable:
 ; entries correspond to HEALMACHINESTATE_* constants
@@ -232,6 +235,9 @@ INCLUDE "gfx/overworld/heal_machine.pal"
 	ld a, [wHealMachineAnimType]
 	bcpixel 2, 4
 	cp HEALMACHINE_ELMS_LAB
+	jr z, .okay
+	bcpixel 2, 1
+	cp HEALMACHINE_KANTO_POKECENTER
 	jr z, .okay
 	bcpixel 0, 0
 

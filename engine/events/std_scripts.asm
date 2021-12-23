@@ -49,6 +49,8 @@ StdScripts::
 	add_stdscript PCScript
 	add_stdscript GameCornerCoinVendorScript
 	add_stdscript HappinessCheckScript
+	add_stdscript KantoPokecenterLinkReceptionist
+	add_stdscript PokecenterKantoNurseScript
 
 PokecenterNurseScript:
 	opentext
@@ -655,3 +657,51 @@ Movement_ContestResults_WalkAfterWarp:
 	step_end
 
 INCLUDE "data/text/std_text.asm"
+
+KantoPokecenterLinkReceptionist:
+	opentext
+	writetext .NYIText
+	waitbutton
+	closetext
+	end
+
+.NYIText:
+	text "Not yet"
+	line "implemented"
+	done
+
+PokecenterKantoNurseScript:
+	opentext
+	writetext NurseDayText
+	promptbutton
+	writetext NurseAskHealText
+	yesorno
+	iffalse .done
+
+	writetext NurseTakePokemonText
+	pause 20
+	turnobject LAST_TALKED, LEFT
+	pause 10
+	special HealParty
+	playmusic MUSIC_NONE
+	setval HEALMACHINE_KANTO_POKECENTER
+	special HealMachineAnim
+	pause 30
+	special RestartMapMusic
+	turnobject LAST_TALKED, DOWN
+	pause 10
+
+	writetext NurseReturnPokemonText
+	pause 20
+
+.done
+	writetext NurseGoodbyeText
+
+	turnobject LAST_TALKED, UP
+	pause 10
+	turnobject LAST_TALKED, DOWN
+	pause 10
+
+	waitbutton
+	closetext
+	end
