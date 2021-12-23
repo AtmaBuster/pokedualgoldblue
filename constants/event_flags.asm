@@ -363,7 +363,10 @@
 	const EVENT_ROUTE_23_HIDDEN_FULL_RESTORE
 	const EVENT_ROUTE_23_HIDDEN_ULTRA_BALL
 	const EVENT_ROUTE_23_HIDDEN_MAX_ETHER
-; Unused: next 45 events
+	const EVENT_SEAFOAM_ISLANDS_B2F_HIDDEN_NUGGET
+	const_skip
+	const_skip
+; Unused: next 42 events
 
 	const_next 400
 ; Kurt Apricorn events
