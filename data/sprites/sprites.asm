@@ -146,5 +146,7 @@ OverworldSprites:
 	overworld_sprite OldAmberSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
 	overworld_sprite GamblerAsleepSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
 	overworld_sprite RedBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+IF DEF(_GOLD)
 	overworld_sprite CouchManSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
+ENDC
 	assert_table_length NUM_OVERWORLD_SPRITES

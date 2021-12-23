@@ -141,7 +141,9 @@
 	const SPRITE_OLD_AMBER ; 89
 	const SPRITE_GAMBLER_ASLEEP ; 8a
 	const SPRITE_RED_BIKE ; 8b
+IF DEF(_GOLD)
 	const SPRITE_COUCH_MAN ; 8c
+ENDC
 NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

@@ -298,6 +298,7 @@ SpriteMovementData::
 	db 0 ; flags2
 	db SWIMMING ; palette flags
 
+IF DEF(_GOLD)
 ; SPRITEMOVEDATA_COUCH_MAN
 	db SPRITEMOVEFN_STRENGTH ; movement function
 	db DOWN ; facing
@@ -305,5 +306,6 @@ SpriteMovementData::
 	db FIXED_FACING | SLIDING ; flags1
 	db LOW_PRIORITY ; flags2
 	db 0 ; palette flags
+ENDC
 
 	assert_table_length NUM_SPRITEMOVEDATA

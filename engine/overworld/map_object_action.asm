@@ -18,7 +18,9 @@ ObjectActionPairPointers:
 	dw SetFacingBigDoll,               SetFacingBigDoll
 	dw SetFacingBoulderDust,           SetFacingStanding
 	dw SetFacingGrassShake,            SetFacingStanding
+IF DEF(_GOLD)
 	dw SetFacingCouchMan,              SetFacingCouchMan
+ENDC
 	assert_table_length NUM_OBJECT_ACTIONS
 
 SetFacingStanding:
@@ -271,8 +273,10 @@ SetFacingGrassShake:
 	ld [hl], a
 	ret
 
+IF DEF(_GOLD)
 SetFacingCouchMan:
 	ld hl, OBJECT_FACING_STEP
 	add hl, bc
 	ld [hl], FACING_COUCH_MAN
 	ret
+ENDC

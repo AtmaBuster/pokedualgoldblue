@@ -507,16 +507,18 @@ PlayTalkObject:
 TryObjectEvent:
 	farcall CheckFacingObject
 	jr c, .IsObject
-.IsNotTalkable
+.IsNotTalkable:
 	xor a
 	ret
 
 .IsObject:
+IF DEF(_GOLD)
 	ld hl, OBJECT_MOVEMENTTYPE
 	add hl, bc
 	ld a, [hl]
 	cp SPRITEMOVEDATA_COUCH_MAN
 	jr z, .IsNotTalkable
+ENDC
 	call PlayTalkObject
 	ldh a, [hObjectStructIndex]
 	call GetObjectStruct
