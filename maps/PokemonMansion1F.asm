@@ -118,6 +118,7 @@ PokemonMansion1F_MapEvents:
 	warp_event 21, 23, POKEMON_MANSION_B1F, 1
 	warp_event 26, 27, CINNABAR_ISLAND, 1
 	warp_event 27, 27, CINNABAR_ISLAND, 1
+	warp_event 16, 14, POKEMON_MANSION_3F, 4
 
 	def_coord_events
 

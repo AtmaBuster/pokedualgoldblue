@@ -127,6 +127,7 @@ PokemonMansion2F_MapEvents:
 	warp_event  7, 10, POKEMON_MANSION_3F, 1
 	warp_event 25, 14, POKEMON_MANSION_3F, 3
 	warp_event  6,  1, POKEMON_MANSION_3F, 2
+	warp_event 18, 14, POKEMON_MANSION_3F, 5
 
 	def_coord_events
 
