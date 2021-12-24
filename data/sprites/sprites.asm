@@ -139,11 +139,15 @@ OverworldSprites:
 	overworld_sprite AgathaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite LoreleiSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite SeelSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite FossilSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite FossilSpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
+IF DEF(_BLUE)
+	overworld_sprite KantoBoulderSpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
+ELIF DEF(_GOLD)
 	overworld_sprite KantoBoulderSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+ENDC
 	overworld_sprite ClipboardSpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
 	overworld_sprite KantoSnorlaxSpriteGFX, 4, STILL_SPRITE, PAL_OW_BLUE
-	overworld_sprite OldAmberSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite OldAmberSpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
 	overworld_sprite GamblerAsleepSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
 	overworld_sprite RedBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 IF DEF(_GOLD)
