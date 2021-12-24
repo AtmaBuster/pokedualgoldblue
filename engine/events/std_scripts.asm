@@ -658,18 +658,6 @@ Movement_ContestResults_WalkAfterWarp:
 
 INCLUDE "data/text/std_text.asm"
 
-KantoPokecenterLinkReceptionist:
-	opentext
-	writetext .NYIText
-	waitbutton
-	closetext
-	end
-
-.NYIText:
-	text "Not yet"
-	line "implemented"
-	done
-
 PokecenterKantoNurseScript:
 	opentext
 	writetext NurseDayText
@@ -705,3 +693,208 @@ PokecenterKantoNurseScript:
 	waitbutton
 	closetext
 	end
+
+KantoPokecenterLinkReceptionist:
+	opentext
+	writetext .AskTrade
+	yesorno
+	iftrue .ReceptionistTradeScript
+	writetext .AskBattle
+	yesorno
+	iftrue .ReceptionistBattleScript
+	closetext
+	end
+
+.AskTrade:
+	text "Would you like to"
+	line "access the TRADE"
+	cont "CENTER?"
+	done
+
+.AskBattle:
+	text "Would you like to"
+	line "access the"
+	cont "COLOSSEUM?"
+	done
+
+.ReceptionistTradeScript:
+	checkevent EVENT_GOT_POKEDEX
+	iffalse .Script_TradeCenterClosed
+	special SetBitsForLinkTradeRequest
+	opentext
+	writetext .Text_TradeReceptionistIntro
+	yesorno
+	iffalse .AbortLink
+	writetext .Text_PleaseWait
+	special WaitForLinkedFriend
+	iffalse .FriendNotReady
+	writetext .Text_MustSaveGame
+	yesorno
+	iffalse .DidNotSave
+	special TryQuickSave
+	iffalse .DidNotSave
+	writetext .Text_PleaseWait
+	special CheckLinkTimeout_Receptionist
+	iffalse .LinkTimedOut
+	readmem wOtherPlayerLinkMode
+	iffalse .LinkedToFirstGen
+	special CheckBothSelectedSameRoom
+	iffalse .IncompatibleRooms
+	writetext .Text_PleaseComeIn
+	waitbutton
+	closetext
+	warpcheck
+	end
+
+.FriendNotReady:
+	special WaitForOtherPlayerToExit
+	writetext .YourFriendIsNotReadyText
+	closetext
+	end
+
+.LinkedToFirstGen:
+	special FailedLinkToPast
+	writetext .Text_CantLinkToThePast
+	special CloseLink
+	closetext
+	end
+
+.IncompatibleRooms:
+	writetext .Text_IncompatibleRooms
+	special CloseLink
+	closetext
+	end
+
+.LinkTimedOut:
+	writetext .Text_LinkTimedOut
+	sjump .AbortLink
+
+.DidNotSave:
+	writetext .Text_PleaseComeAgain
+.AbortLink:
+	special WaitForOtherPlayerToExit
+	closetext
+	end
+
+.Script_TradeCenterClosed:
+	faceplayer
+	opentext
+	writetext .Text_TradeRoomClosed
+	waitbutton
+	closetext
+	end
+
+.ReceptionistBattleScript:
+	checkevent EVENT_GOT_POKEDEX
+	iffalse .Script_BattleRoomClosed
+	special SetBitsForBattleRequest
+	opentext
+	writetext .Text_BattleReceptionistIntro
+	yesorno
+	iffalse .AbortLink
+	writetext .Text_PleaseWait
+	special WaitForLinkedFriend
+	iffalse .FriendNotReady
+	writetext .Text_MustSaveGame
+	yesorno
+	iffalse .DidNotSave
+	special TryQuickSave
+	iffalse .DidNotSave
+	writetext .Text_PleaseWait
+	special CheckLinkTimeout_Receptionist
+	iffalse .LinkTimedOut
+	readmem wOtherPlayerLinkMode
+	iffalse .LinkedToFirstGen
+	special CheckBothSelectedSameRoom
+	iffalse .IncompatibleRooms
+	writetext .Text_PleaseComeIn
+	waitbutton
+	closetext
+	warpcheck
+	end
+
+.Script_BattleRoomClosed:
+	faceplayer
+	opentext
+	writetext .Text_BattleRoomClosed
+	waitbutton
+	closetext
+	end
+
+.Text_TradeReceptionistIntro:
+	text "Welcome to CABLE"
+	line "CLUB TRADE CENTER."
+
+	para "You may trade your"
+	line "#MON here with"
+	cont "a friend."
+
+	para "Would you like to"
+	line "trade?"
+	done
+
+.Text_PleaseWait:
+	text "Please wait."
+	done
+
+.Text_MustSaveGame:
+	text "Before opening the"
+	line "link, you must"
+	cont "save your game."
+	done
+
+.Text_PleaseComeIn:
+	text "Please come in."
+	done
+
+.YourFriendIsNotReadyText:
+	text "Your friend is not"
+	line "ready."
+	prompt
+
+.Text_CantLinkToThePast:
+	text "You can't link to"
+	line "the past here."
+	prompt
+
+.Text_IncompatibleRooms:
+	text "Your friend chose"
+	line "a different room."
+	prompt
+
+.Text_LinkTimedOut:
+	text "The link has been"
+	line "closed because of"
+	cont "inactivity."
+
+	para "Please contact"
+	line "your friend and"
+	cont "come again."
+	prompt
+
+.Text_PleaseComeAgain:
+	text "Please come again."
+	prompt
+
+.Text_TradeRoomClosed:
+	text "I'm sorry--the"
+	line "TRADE MACHINE is"
+	cont "being adjusted."
+	done
+
+.Text_BattleReceptionistIntro:
+	text "Welcome to CABLE"
+	line "CLUB COLOSSEUM."
+
+	para "You may battle a"
+	line "friend here."
+
+	para "Would you like to"
+	line "battle?"
+	done
+
+.Text_BattleRoomClosed:
+	text "I'm sorry--the"
+	line "BATTLE MACHINE is"
+	cont "being adjusted."
+	done
