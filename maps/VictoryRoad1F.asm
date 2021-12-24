@@ -12,6 +12,14 @@ VictoryRoad1F_MapScripts:
 
 	def_callbacks
 	callback MAPCALLBACK_STONETABLE, .SetUpStoneTable
+	callback MAPCALLBACK_TILES, .Blockade
+
+.Blockade:
+	checkevent EVENT_VICTORY_ROAD_1F_STONE_ON_BUTTON
+	iffalse .Skip
+	changeblock 8, 12, $1d
+.Skip:
+	endcallback
 
 .SetUpStoneTable:
 	usestonetable .StoneTable
