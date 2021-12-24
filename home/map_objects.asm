@@ -155,6 +155,10 @@ CheckPitTile::
 	cp COLL_PIT
 	ret
 
+CheckButtonTile::
+	cp COLL_BUTTON
+	ret
+
 CheckIceTile::
 	cp COLL_ICE
 	ret z

@@ -27,8 +27,11 @@ HandleStoneTable::
 	add hl, de
 	ld a, [hl]
 	call CheckPitTile
+	jr z, .got_it
+	call CheckButtonTile
 	jr nz, .next
 
+.got_it
 	ld hl, OBJECT_DIRECTION_WALKING
 	add hl, de
 	ld a, [hl]
