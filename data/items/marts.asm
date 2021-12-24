@@ -35,6 +35,7 @@ Marts:
 	dw MartMtMoon
 	dw MartIndigoPlateau
 	dw MartUnderground
+	dw MartKantoIndigo
 	assert_table_length NUM_MARTS
 
 MartCherrygrove:
@@ -397,6 +398,17 @@ MartUnderground:
 	db ENERGY_ROOT
 	db HEAL_POWDER
 	db REVIVAL_HERB
+	db -1 ; end
+
+MartKantoIndigo:
+	db 7 ; # items
+	db ULTRA_BALL
+	db GREAT_BALL
+	db FULL_RESTORE
+	db MAX_POTION
+	db FULL_HEAL
+	db REVIVE
+	db MAX_REPEL
 	db -1 ; end
 
 DefaultMart:

@@ -10,6 +10,48 @@ IndigoPlateauLobby_MapScripts:
 
 	def_callbacks
 
+IndigoPlateauLobby_NurseScript:
+	jumpstd PokecenterKantoNurseScript
+
+IndigoPlateauLobby_GymGuyScript:
+	jumptextfaceplayer .Text
+.Text:
+	text "Yo! Champ in"
+	line "making!"
+
+	para "At #MON LEAGUE,"
+	line "you have to face"
+	cont "the ELITE FOUR in"
+	cont "succession."
+
+	para "If you lose, you"
+	line "have to start all"
+	cont "over again! This"
+	cont "is it! Go for it!"
+	done
+
+IndigoPlateauLobby_CooltrainerScript:
+	jumptextfaceplayer .Text
+.Text:
+	text "From here on, you"
+	line "face the ELITE"
+	cont "FOUR one by one!"
+
+	para "If you win, a"
+	line "door opens to the"
+	cont "next trainer!"
+	cont "Good luck!"
+	done
+
+IndigoPlateauLobby_ClerkScript:
+	opentext
+	pokemart MARTTYPE_STANDARD, MART_KANTO_INDIGO
+	closetext
+	end
+
+IndigoPlateauLobby_ReceptionistScript:
+	jumpstd KantoPokecenterLinkReceptionist
+
 IndigoPlateauLobby_MapEvents:
 	def_warp_events
 	warp_event  7, 11, INDIGO_PLATEAU, 1
@@ -21,8 +63,8 @@ IndigoPlateauLobby_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  7,  5, SPRITE_KANTO_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event  4,  9, SPRITE_KANTO_GYM_GUIDE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event  5,  1, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event  0,  5, SPRITE_KANTO_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event 13,  6, SPRITE_OLD_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  7,  5, SPRITE_KANTO_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IndigoPlateauLobby_NurseScript, -1
+	object_event  4,  9, SPRITE_KANTO_GYM_GUIDE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IndigoPlateauLobby_GymGuyScript, -1
+	object_event  5,  1, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IndigoPlateauLobby_CooltrainerScript, -1
+	object_event  0,  5, SPRITE_KANTO_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IndigoPlateauLobby_ClerkScript, -1
+	object_event 13,  6, SPRITE_OLD_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IndigoPlateauLobby_ReceptionistScript, -1
