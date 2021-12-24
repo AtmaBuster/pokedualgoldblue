@@ -3,9 +3,13 @@ HandleStoneQueue::
 	push af
 
 	call SwitchToMapScriptsBank
+	push de
 	call .WarpAction
+	pop de
 	jr c, .finished
+	push de
 	call .ButtonAction
+	pop de
 
 .finished
 	pop bc
