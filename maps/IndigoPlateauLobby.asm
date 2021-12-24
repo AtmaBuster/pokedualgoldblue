@@ -9,6 +9,26 @@ IndigoPlateauLobby_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .SetUpElite4
+
+.SetUpElite4:
+	setmapscene LORELEIS_ROOM, SCENE_DEFAULT
+	setmapscene BRUNOS_ROOM_KANTO, SCENE_DEFAULT
+	setmapscene AGATHAS_ROOM, SCENE_DEFAULT
+	setmapscene LANCES_ROOM_KANTO, SCENE_DEFAULT
+	setmapscene CHAMPIONS_ROOM, SCENE_DEFAULT
+	setmapscene HALL_OF_FAME_KANTO, SCENE_DEFAULT
+	clearevent EVENT_LORELEIS_ROOM_EXIT_OPEN
+	clearevent EVENT_BRUNOS_ROOM_KANTO_EXIT_OPEN
+	clearevent EVENT_AGATHAS_ROOM_EXIT_OPEN
+	clearevent EVENT_LANCES_ROOM_KANTO_EXIT_OPEN
+	clearevent EVENT_BEAT_LORELEI_GEN1
+	clearevent EVENT_BEAT_BRUNO_GEN1
+	clearevent EVENT_BEAT_AGATHA_GEN1
+	clearevent EVENT_BEAT_LANCE_GEN1
+	clearevent EVENT_BEAT_CHAMPION_GEN1
+	setevent EVENT_CHAMPIONS_ROOM_PROF_OAK
+	endcallback
 
 IndigoPlateauLobby_NurseScript:
 	jumpstd PokecenterKantoNurseScript

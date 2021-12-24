@@ -2547,8 +2547,14 @@ wRoute22GateSceneID::                             db
 wRoute23SceneID::                                 db
 wSeafoamIslandsB3FSceneID::                       db
 wSeafoamIslandsB4FSceneID::                       db
+wLoreleisRoomSceneID::                            db
+wBrunosRoomKantoSceneID::                         db
+wAgathasRoomSceneID::                             db
+wLancesRoomKantoSceneID::                         db
+wChampionsRoomSceneID::                           db
+wHallOfFameKantoSceneID::                         db
 
-	ds 105
+	ds 99
 
 wKantoDayCareFlags:: db
 wKantoDaycareMonNickname:: ds MON_NAME_LENGTH

@@ -86,4 +86,10 @@ MapScenes::
 	scene_var ROUTE_23,                                    wRoute23SceneID
 	scene_var SEAFOAM_ISLANDS_B3F,                         wSeafoamIslandsB3FSceneID
 	scene_var SEAFOAM_ISLANDS_B4F,                         wSeafoamIslandsB4FSceneID
+	scene_var LORELEIS_ROOM,                               wLoreleisRoomSceneID
+	scene_var BRUNOS_ROOM_KANTO,                           wBrunosRoomKantoSceneID
+	scene_var AGATHAS_ROOM,                                wAgathasRoomSceneID
+	scene_var LANCES_ROOM_KANTO,                           wLancesRoomKantoSceneID
+	scene_var CHAMPIONS_ROOM,                              wChampionsRoomSceneID
+	scene_var HALL_OF_FAME_KANTO,                          wHallOfFameKantoSceneID
 	db -1 ; end
