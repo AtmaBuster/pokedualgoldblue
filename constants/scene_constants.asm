@@ -173,3 +173,7 @@ SCENE_ALWAYS   EQU -1
 	const SCENE_ROUTE_23_VOLCANOBADGE ; 5
 	const SCENE_ROUTE_23_EARTHBADGE   ; 6
 	const SCENE_ROUTE_23_FINISHED     ; 7
+
+; wLancesRoomKantoSceneID
+	const_def 2
+	const SCENE_FIGHT_LANCE ; 2
