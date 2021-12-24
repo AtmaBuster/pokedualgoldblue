@@ -20,6 +20,7 @@ HallOfFameKanto_MapScripts:
 	waitbutton
 	setevent EVENT_BEAT_CHAMPION_GEN1
 	setevent EVENT_BEAT_LEAGUE
+	setevent EVENT_CERULEAN_CITY_SUPER_NERD
 	halloffame
 	end
 
