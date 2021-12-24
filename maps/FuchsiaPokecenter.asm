@@ -18,6 +18,7 @@ FuchsiaPokecenter_NurseScript:
 FuchsiaPokecenter_RockerScript:
 	jumptextfaceplayer .Text
 .Text:
+	text "You can't win"
 	line "with just one"
 	cont "strong #MON."
 
