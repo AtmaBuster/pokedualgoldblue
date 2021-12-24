@@ -236,6 +236,12 @@ ENDC
 VictoryRoad2F_GuardSpecScript:
 	itemball GUARD_SPEC
 
+VictoryRoad2F_HiddenUltraBall:
+	hiddenitem ULTRA_BALL, EVENT_VICTORY_ROAD_2F_HIDDEN_ULTRA_BALL
+
+VictoryRoad2F_HiddenFullRestore:
+	hiddenitem FULL_RESTORE, EVENT_VICTORY_ROAD_2F_HIDDEN_FULL_RESTORE
+
 VictoryRoad2F_BoulderScript:
 	jumpstd StrengthBoulderScript
 
@@ -248,10 +254,13 @@ VictoryRoad2F_MapEvents:
 	warp_event 25, 14, VICTORY_ROAD_3F, 3
 	warp_event 27,  7, VICTORY_ROAD_3F, 2
 	warp_event  1,  1, VICTORY_ROAD_3F, 4
+	warp_event 22, 16, VICTORY_ROAD_3F, 5
 
 	def_coord_events
 
 	def_bg_events
+	bg_event  5,  2, BGEVENT_ITEM, VictoryRoad2F_HiddenUltraBall
+	bg_event 26,  7, BGEVENT_ITEM, VictoryRoad2F_HiddenFullRestore
 
 	def_object_events
 	object_event 12,  9, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBlackbeltDaisuke, -1
