@@ -555,9 +555,55 @@ EnterMapWarp::
 	call GetAnyMapTileset
 	ld a, c
 	cp TILESET_POKECENTER
+	jr z, .pokecenter
+	cp TILESET_POKECENTER_KANTO
 	ret nz
+	call .check_kanto_pokecenter_map
+	ret nc
+.pokecenter
 	ld a, [wPrevMapGroup]
 	ld [wLastSpawnMapGroup], a
 	ld a, [wPrevMapNumber]
 	ld [wLastSpawnMapNumber], a
 	ret
+
+.check_kanto_pokecenter_map
+	ld a, [wNextMapGroup]
+	ld b, a
+	ld a, [wNextMapNumber]
+	ld c, a
+	ld hl, .kanto_pokecenter_maps
+.loop
+	ld a, [hli]
+	cp -1
+	jr z, .not_pokecenter_map
+	cp b
+	jr nz, .next
+	ld a, [hli]
+	cp c
+	jr nz, .loop
+	scf
+	ret
+
+.next
+	inc hl
+	jr .loop
+
+.not_pokecenter_map
+	and a
+	ret
+
+.kanto_pokecenter_maps
+	map_id VIRIDIAN_POKECENTER
+	map_id PEWTER_POKECENTER
+	map_id MT_MOON_POKECENTER
+	map_id CERULEAN_POKECENTER
+	map_id VERMILION_POKECENTER
+	map_id ROCK_TUNNEL_POKECENTER
+	map_id LAVENDER_POKECENTER
+	map_id CELADON_POKECENTER
+	map_id SAFFRON_POKECENTER
+	map_id FUCHSIA_POKECENTER
+	map_id CINNABAR_POKECENTER
+	map_id INDIGO_PLATEAU_LOBBY
+	db -1
