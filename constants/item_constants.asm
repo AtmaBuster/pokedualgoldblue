@@ -141,16 +141,16 @@
 	const BASEMENT_KEY ; 85
 	const PASS         ; 86
 	const ITEM_87      ; 87
-	const ITEM_88      ; 88
-	const ITEM_89      ; 89
+	const SILPH_SCOPE  ; 88
+	const LIFT_KEY     ; 89
 	const CHARCOAL     ; 8a
 	const BERRY_JUICE  ; 8b
 	const SCOPE_LENS   ; 8c
-	const ITEM_8D      ; 8d
-	const ITEM_8E      ; 8e
+	const GOLD_TEETH   ; 8d
+	const SECRET_KEY   ; 8e
 	const METAL_COAT   ; 8f
 	const DRAGON_FANG  ; 90
-	const ITEM_91      ; 91
+	const BIKE_VOUCHER ; 91
 	const LEFTOVERS    ; 92
 	const ITEM_93      ; 93
 	const ITEM_94      ; 94

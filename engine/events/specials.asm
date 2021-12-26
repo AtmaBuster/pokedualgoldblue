@@ -459,3 +459,124 @@ TrainerHouse:
 	jp CloseSRAM
 
 	nop ; unused
+
+INCLUDE "engine/events/ss_anne_anim.asm"
+INCLUDE "engine/events/celadon_drink_girl.asm"
+
+ResetVermilionGymPuzzle:
+; generate first can
+.can_1_loop
+	call Random
+	and %1111
+	cp $f
+	jr nc, .can_1_loop
+; got can 1
+	ld [wVermilionGymPuzzleCans], a
+; generate second can
+	add a
+	add a
+	ld c, a
+	ld b, 0
+	ld hl, .CanNeighbors
+	add hl, bc
+.can_2_loop
+	call Random
+	and %11
+	ld c, a
+	ld b, 0
+	push hl
+	add hl, bc
+	ld a, [hl]
+	pop hl
+	cp -1
+	jr z, .can_2_loop
+; got can 2
+	ld [wVermilionGymPuzzleCans + 1], a
+	ret
+
+.CanNeighbors:
+	;   U   R   D   L
+	db -1,  1,  5, -1 ; can 0  (0, 0)
+	db -1,  2,  6,  0 ; can 1  (1, 0)
+	db -1,  3,  7,  1 ; can 2  (2, 0)
+	db -1,  4,  8,  2 ; can 3  (3, 0)
+	db -1, -1,  9,  3 ; can 4  (4, 0)
+	db  0,  6, 10, -1 ; can 5  (0, 2)
+	db  1,  7, 11,  5 ; can 6  (1, 2)
+	db  2,  8, 12,  6 ; can 7  (2, 2)
+	db  3,  9, 13,  7 ; can 8  (3, 2)
+	db  4, -1, 14,  8 ; can 9  (4, 2)
+	db  5, 11, -1, -1 ; can 10 (0, 3)
+	db  6, 12, -1, 10 ; can 11 (1, 3)
+	db  7, 13, -1, 11 ; can 12 (2, 3)
+	db  8, 14, -1, 12 ; can 13 (3, 3)
+	db  9, -1, -1, 13 ; can 14 (4, 3)
+
+INCLUDE "engine/events/fossil_menu.asm"
+
+BadgeMenu:
+	ld hl, BadgeMenuHeader
+	call CopyMenuHeader
+	call InitScrollingMenu
+	call UpdateSprites
+	xor a
+	ld [wMenuScrollPosition], a
+	call ScrollingMenu
+	ld a, [wMenuJoypad]
+	cp B_BUTTON
+	jr z, .cancel
+	ld a, [wScrollingMenuCursorPosition]
+	ld [wScriptVar], a
+	ret
+
+.cancel
+	ld a, -1
+	ld [wScriptVar], a
+	ret
+
+BadgeMenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 5, 3, 18, 11
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db SCROLLINGMENU_DISPLAY_ARROWS ; flags
+	db 4, 0 ; rows, columns
+	db SCROLLINGMENU_ITEMS_NORMAL
+	dba .Items
+	dba .GetBadgeNames
+	dba NULL
+	dba NULL
+
+.Items:
+	db 8
+	db 0
+	db 1
+	db 2
+	db 3
+	db 4
+	db 5
+	db 6
+	db 7
+	db -1 ; cancel
+
+.GetBadgeNames:
+	push de
+	ld a, [wMenuSelection]
+	ld hl, .BadgeNames
+	call GetNthString
+	ld d, h
+	ld e, l
+	pop hl
+	jp PlaceString
+
+.BadgeNames:
+	db "BOULDERBADGE@"
+	db "CASCADEBADGE@"
+	db "THUNDERBADGE@"
+	db "RAINBOWBADGE@"
+	db "SOULBADGE@"
+	db "MARSHBADGE@"
+	db "VOLCANOBADGE@"
+	db "EARTHBADGE@"

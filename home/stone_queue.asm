@@ -3,8 +3,15 @@ HandleStoneQueue::
 	push af
 
 	call SwitchToMapScriptsBank
+	push de
 	call .WarpAction
+	pop de
+	jr c, .finished
+	push de
+	call .ButtonAction
+	pop de
 
+.finished
 	pop bc
 	ld a, b
 	rst Bankswitch
@@ -130,5 +137,44 @@ HandleStoneQueue::
 	ret
 
 .yes
+	scf
+	ret
+
+.ButtonAction:
+	ld hl, OBJECT_MAP_OBJECT_INDEX
+	add hl, de
+	ld a, [hl]
+	cp $ff
+	jr z, .nope
+
+	ld l, a
+	push hl
+	call .IsObjectOnButton
+	pop hl
+	jr nc, .nope
+	ld d, a
+	ld e, l
+	call .IsObjectInStoneTable
+	jr nc, .nope
+	call CallMapScript
+	farcall EnableScriptMode
+	scf
+	ret
+
+.IsObjectOnButton:
+	push de
+
+	ld hl, OBJECT_NEXT_TILE
+	add hl, de
+	ld a, [hl]
+	call CheckButtonTile
+
+	pop de
+	ld a, 0
+	jr z, .got_button
+	and a
+	ret
+
+.got_button
 	scf
 	ret

@@ -74,7 +74,22 @@ MapScenes::
 	scene_var ROUTE_18_GATE_1F,                            wRoute18Gate1FSceneID
 	scene_var VERMILION_CITY,                              wVermilionCitySceneID
 	scene_var SS_ANNE_2F,                                  wSSAnne2FSceneID
+	scene_var VERMILION_DOCK,                              wVermilionDockSceneID
 	scene_var POKEMON_TOWER_2F,                            wPokemonTower2FSceneID
 	scene_var POKEMON_TOWER_5F,                            wPokemonTower5FSceneID
 	scene_var POKEMON_TOWER_6F,                            wPokemonTower6FSceneID
+	scene_var SILPH_CO_7F,                                 wSilphCo7FSceneID
+	scene_var SILPH_CO_11F,                                wSilphCo11FSceneID
+	scene_var FIGHTING_DOJO,                               wFightingDojoSceneID
+	scene_var CINNABAR_ISLAND,                             wCinnabarIslandSceneID
+	scene_var ROUTE_22_GATE,                               wRoute22GateSceneID
+	scene_var ROUTE_23,                                    wRoute23SceneID
+	scene_var SEAFOAM_ISLANDS_B3F,                         wSeafoamIslandsB3FSceneID
+	scene_var SEAFOAM_ISLANDS_B4F,                         wSeafoamIslandsB4FSceneID
+	scene_var LORELEIS_ROOM,                               wLoreleisRoomSceneID
+	scene_var BRUNOS_ROOM_KANTO,                           wBrunosRoomKantoSceneID
+	scene_var AGATHAS_ROOM,                                wAgathasRoomSceneID
+	scene_var LANCES_ROOM_KANTO,                           wLancesRoomKantoSceneID
+	scene_var CHAMPIONS_ROOM,                              wChampionsRoomSceneID
+	scene_var HALL_OF_FAME_KANTO,                          wHallOfFameKantoSceneID
 	db -1 ; end

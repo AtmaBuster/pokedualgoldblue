@@ -136,16 +136,16 @@ ItemDescriptions:
 	dw BasementKeyDesc
 	dw PassDesc
 	dw TeruSamaDesc
-	dw TeruSamaDesc
-	dw TeruSamaDesc
+	dw SilphScopeDesc
+	dw LiftKeyDesc
 	dw CharcoalDesc
 	dw BerryJuiceDesc
 	dw ScopeLensDesc
-	dw TeruSamaDesc
-	dw TeruSamaDesc
+	dw GoldTeethDesc
+	dw SecretKeyDesc
 	dw MetalCoatDesc
 	dw DragonFangDesc
-	dw TeruSamaDesc
+	dw BikeVoucherDesc
 	dw LeftoversDesc
 	dw TeruSamaDesc
 	dw TeruSamaDesc
@@ -758,6 +758,14 @@ PassDesc:
 	db   "A ticket for the"
 	next "MAGNET TRAIN.@"
 
+SilphScopeDesc:
+	db   "SILPH CO. product."
+	next "Reveals ghosts.@"
+
+LiftKeyDesc:
+	db   "TEAM ROCKET's key"
+	next "for an elevator.@"
+
 CharcoalDesc:
 	db   "Powers up fire-"
 	next "type moves. (HOLD)@"
@@ -770,6 +778,14 @@ ScopeLensDesc:
 	db   "Raises critical"
 	next "hit ratio. (HOLD)@"
 
+GoldTeethDesc:
+	db   "The SAFARI ZONE"
+	next "WARDEN's dentures.@"
+
+SecretKeyDesc:
+	db   "A key for CINNABAR"
+	next "ISLAND GYM's door.@"
+
 MetalCoatDesc:
 	db   "Powers up steel-"
 	next "type moves. (HOLD)@"
@@ -777,6 +793,10 @@ MetalCoatDesc:
 DragonFangDesc:
 	db   "Powers up dragon-"
 	next "type moves. (HOLD)@"
+
+BikeVoucherDesc:
+	db   "A voucher for a"
+	next "free bicycle.@"
 
 LeftoversDesc:
 	db   "Restores HP during"

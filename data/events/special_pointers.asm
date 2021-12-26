@@ -127,4 +127,12 @@ SpecialsPointers::
 	add_special InitialSetDSTFlag
 	add_special InitialClearDSTFlag
 	add_special MrChrono
+	add_special SSAnneAnimation
+	add_special CheckDrinks
+	add_special DrinkGirlMenu
+	add_special ResetVermilionGymPuzzle
+	add_special CheckFossils
+	add_special FossilMenu
+	add_special BadgeMenu
+	add_special DayCareKanto
 	add_special UnusedDummySpecial ; unused

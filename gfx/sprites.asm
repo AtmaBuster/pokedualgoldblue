@@ -278,3 +278,5 @@ floating_section
 GamblerAsleepSpriteGFX::       INCBIN "gfx/sprites/gambler_asleep.2bpp"
 floating_section
 RedBikeSpriteGFX::             INCBIN "gfx/sprites/red_bike.2bpp"
+floating_section
+CouchManSpriteGFX::            INCBIN "gfx/sprites/couch_man.2bpp"

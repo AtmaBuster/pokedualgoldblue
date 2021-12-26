@@ -800,7 +800,21 @@ RetrieveMonFromDayCareLady:
 	ld [wCurPartyLevel], a
 	ld a, PC_DEPOSIT
 	ld [wPokemonWithdrawDepositParameter], a
-	jp RetrieveBreedmon ; pointless
+	jp RetrieveBreedmon
+
+RetrieveMonFromDayCareKanto:
+	ld a, [wKantoDaycareMonSpecies]
+	ld [wCurPartySpecies], a
+	ld de, SFX_TRANSACTION
+	call PlaySFX
+	call WaitSFX
+	call GetKantoDayCareMonLevelGrowth
+	ld a, b
+	ld [wPrevPartyLevel], a
+	ld a, e
+	ld [wCurPartyLevel], a
+	ld a, 2
+	ld [wPokemonWithdrawDepositParameter], a
 
 RetrieveBreedmon:
 	ld hl, wPartyCount
@@ -817,6 +831,10 @@ RetrieveBreedmon:
 	ld b, 0
 	add hl, bc
 	ld a, [wPokemonWithdrawDepositParameter]
+	cp 2
+	ld a, [wKantoDaycareMonSpecies]
+	ld de, wKantoDaycareMonNickname
+	jr z, .okay
 	and a
 	ld a, [wBreedMon1Species]
 	ld de, wBreedMon1Nickname
@@ -917,6 +935,13 @@ DepositMonWithDayCareMan:
 
 DepositMonWithDayCareLady:
 	ld de, wBreedMon2Nickname
+	call DepositBreedmon
+	xor a ; REMOVE_PARTY
+	ld [wPokemonWithdrawDepositParameter], a
+	jp RemoveMonFromPartyOrBox
+
+DepositMonWithDayCareKanto:
+	ld de, wKantoDaycareMonNickname
 	call DepositBreedmon
 	xor a ; REMOVE_PARTY
 	ld [wPokemonWithdrawDepositParameter], a

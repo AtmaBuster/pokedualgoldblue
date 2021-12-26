@@ -25,3 +25,17 @@ GetBreedMon2LevelGrowth:
 	sub b
 	ld d, a
 	ret
+
+GetKantoDayCareMonLevelGrowth:
+	ld hl, wKantoDaycareMon
+	ld de, wTempMon
+	ld bc, BOXMON_STRUCT_LENGTH
+	call CopyBytes
+	callfar CalcLevel
+	ld a, [wKantoDaycareMonLevel]
+	ld b, a
+	ld a, d
+	ld e, a
+	sub b
+	ld d, a
+	ret

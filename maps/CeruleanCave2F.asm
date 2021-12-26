@@ -8,6 +8,15 @@ CeruleanCave2F_MapScripts:
 
 	def_callbacks
 
+CeruleanCave2F_PPUpScript:
+	itemball PP_UP
+
+CeruleanCave2F_UltraBallScript:
+	itemball ULTRA_BALL
+
+CeruleanCave2F_FullRestoreScript:
+	itemball FULL_RESTORE
+
 CeruleanCave2F_MapEvents:
 	def_warp_events
 	warp_event 29,  1, CERULEAN_CAVE_1F, 3
@@ -22,6 +31,6 @@ CeruleanCave2F_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event 29,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event  4, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event 13,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 29,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CeruleanCave2F_PPUpScript, EVENT_CERULEAN_CAVE_2F_PP_UP
+	object_event  4, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CeruleanCave2F_UltraBallScript, EVENT_CERULEAN_CAVE_2F_ULTRA_BALL
+	object_event 13,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CeruleanCave2F_FullRestoreScript, EVENT_CERULEAN_CAVE_2F_FULL_RESTORE

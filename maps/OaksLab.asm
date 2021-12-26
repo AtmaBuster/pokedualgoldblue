@@ -685,7 +685,8 @@ OaksLab_OakScript:
 	iffalse .NextCheck
 .ShowRating:
 	writetext .RatingText
-	; display rating
+	special ProfOaksPCBoot
+	waitbutton
 	closetext
 	end
 

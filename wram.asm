@@ -1614,6 +1614,23 @@ wHiddenItemID:: db
 wHiddenItemDataEnd::
 
 NEXTU
+; hidden coin data
+wHiddenCoinData::
+wHiddenCoinEvent:: dw
+wHiddenCoinAmount:: dw
+wHiddenCoinAmountMax:: dw
+wHiddenCoinDataEnd::
+
+NEXTU
+; card key door data
+wKeyDoorData::
+wKeyDoorEvent:: dw
+wKeyDoorBlockX:: db
+wKeyDoorBlockY:: db
+wKeyDoorEmptyBlock:: db
+wKeyDoorDataEnd::
+
+NEXTU
 ; elevator data
 wElevatorData::
 wElevatorPointerBank:: db
@@ -1797,6 +1814,11 @@ NEXTU
 ; elevator data
 wCurElevatorCount:: db
 wCurElevatorFloors:: ds 15
+
+NEXTU
+; drink girl menu
+wDrinkGirlCount:: db
+wDrinkGirlItems:: ds 3
 
 NEXTU
 ; mailbox data
@@ -2513,11 +2535,33 @@ wRoute16Gate1FSceneID::                           db
 wRoute18Gate1FSceneID::                           db
 wVermilionCitySceneID::                           db
 wSSAnne2FSceneID::                                db
+wVermilionDockSceneID::                           db
 wPokemonTower2FSceneID::                          db
 wPokemonTower5FSceneID::                          db
 wPokemonTower6FSceneID::                          db
+wSilphCo7FSceneID::                               db
+wSilphCo11FSceneID::                              db
+wFightingDojoSceneID::                            db
+wCinnabarIslandSceneID::                          db
+wRoute22GateSceneID::                             db
+wRoute23SceneID::                                 db
+wSeafoamIslandsB3FSceneID::                       db
+wSeafoamIslandsB4FSceneID::                       db
+wLoreleisRoomSceneID::                            db
+wBrunosRoomKantoSceneID::                         db
+wAgathasRoomSceneID::                             db
+wLancesRoomKantoSceneID::                         db
+wChampionsRoomSceneID::                           db
+wHallOfFameKantoSceneID::                         db
 
-	ds 187
+	ds 99
+
+wKantoDayCareFlags:: db
+wKantoDaycareMonNickname:: ds MON_NAME_LENGTH
+wKantoDaycareMonOT:: ds NAME_LENGTH
+wKantoDaycareMon:: box_struct wKantoDaycareMon
+
+wVermilionGymPuzzleCans:: dw
 
 wEventFlags:: flag_array NUM_EVENTS
 

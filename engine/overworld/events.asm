@@ -507,10 +507,18 @@ PlayTalkObject:
 TryObjectEvent:
 	farcall CheckFacingObject
 	jr c, .IsObject
+.IsNotTalkable:
 	xor a
 	ret
 
 .IsObject:
+IF DEF(_GOLD)
+	ld hl, OBJECT_MOVEMENTTYPE
+	add hl, bc
+	ld a, [hl]
+	cp SPRITEMOVEDATA_COUCH_MAN
+	jr z, .IsNotTalkable
+ENDC
 	call PlayTalkObject
 	ldh a, [hObjectStructIndex]
 	call GetObjectStruct
@@ -526,7 +534,6 @@ TryObjectEvent:
 	ld a, [hl]
 	and %00001111
 
-; Bug: If IsInArray returns nc, data at bc will be executed as code.
 	push bc
 	ld de, 3
 	ld hl, ObjectEventTypeArray
@@ -541,7 +548,7 @@ TryObjectEvent:
 	jp hl
 
 .nope
-	; pop bc
+	pop bc
 	xor a
 	ret
 
@@ -627,6 +634,8 @@ BGEventJumptable:
 	dw .ifnotset
 	dw .itemifset
 	dw .copy
+	dw .coin
+	dw .keydoor
 	assert_table_length NUM_BGEVENTS
 
 .up:
@@ -701,6 +710,39 @@ BGEventJumptable:
 	call GetMapScriptsBank
 	call GetFarWord
 	call GetMapScriptsBank
+	call CallScript
+	scf
+	ret
+
+.coin:
+	ld a, COIN_CASE
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr nc, .dontread
+	call CheckBGEventFlag
+	jp nz, .dontread
+	call PlayTalkObject
+	call GetMapScriptsBank
+	ld de, wHiddenCoinData
+	ld bc, wHiddenCoinDataEnd - wHiddenCoinData
+	call FarCopyBytes
+	ld a, BANK(HiddenCoinScript)
+	ld hl, HiddenCoinScript
+	call CallScript
+	scf
+	ret
+
+.keydoor:
+	call CheckBGEventFlag
+	jp nz, .dontread
+	call PlayTalkObject
+	call GetMapScriptsBank
+	ld de, wKeyDoorData
+	ld bc, wKeyDoorDataEnd - wKeyDoorData
+	call FarCopyBytes
+	ld a, BANK(CardKeyDoorScript)
+	ld hl, CardKeyDoorScript
 	call CallScript
 	scf
 	ret

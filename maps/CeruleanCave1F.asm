@@ -8,6 +8,18 @@ CeruleanCave1F_MapScripts:
 
 	def_callbacks
 
+CeruleanCave1F_FullRestoreScript:
+	itemball FULL_RESTORE
+
+CeruleanCave1F_MaxElixerScript:
+	itemball MAX_ELIXER
+
+CeruleanCave1F_NuggetScript:
+	itemball NUGGET
+
+CeruleanCave1F_HiddenRareCandy:
+	hiddenitem RARE_CANDY, EVENT_CERULEAN_CAVE_1F_HIDDEN_RARE_CANDY
+
 CeruleanCave1F_MapEvents:
 	def_warp_events
 	warp_event 24, 17, CERULEAN_CITY, 7
@@ -23,8 +35,9 @@ CeruleanCave1F_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 14, 11, BGEVENT_ITEM, CeruleanCave1F_HiddenRareCandy
 
 	def_object_events
-	object_event  7, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event 19,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
-	object_event  5,  0, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  7, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CeruleanCave1F_FullRestoreScript, EVENT_CERULEAN_CAVE_1F_FULL_RESTORE
+	object_event 19,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CeruleanCave1F_MaxElixerScript, EVENT_CERULEAN_CAVE_1F_MAX_ELIXER
+	object_event  5,  0, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CeruleanCave1F_NuggetScript, EVENT_CERULEAN_CAVE_1F_NUGGET

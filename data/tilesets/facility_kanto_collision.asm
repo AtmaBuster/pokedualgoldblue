@@ -32,7 +32,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; 1f
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 20
 	tilecoll FLOOR, FLOOR, LADDER, FLOOR ; 21
-	tilecoll FLOOR, FLOOR, WALL, WALL ; 22
+	tilecoll COUNTER, FLOOR, WALL, WALL ; 22
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 23
 	tilecoll STAIRCASE, WALL, FLOOR, FLOOR ; 24
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 25
@@ -118,7 +118,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; 75
 	tilecoll WALL, WALL, WALL, WALL ; 76
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 77
-	tilecoll WALL, WALL, WALL, WALL ; 78
+	tilecoll PIT, PIT, WALL, WALL ; 78
 	tilecoll WALL, WALL, WALL, FLOOR ; 79
 	tilecoll WALL, WALL, WALL, FLOOR ; 7a
 	tilecoll WALL, WALL, WALL, WALL ; 7b

@@ -25,27 +25,22 @@ ViridianSchoolHouse_BlackboardScript:
 
 .Poison:
 	writetext .BlackboardPoisonText
-	waitbutton
 	sjump .Loop
 
 .Paralysis:
 	writetext .BlackboardParalysisText
-	waitbutton
 	sjump .Loop
 
 .Sleep:
 	writetext .BlackboardSleepText
-	waitbutton
 	sjump .Loop
 
 .Burn:
 	writetext .BlackboardBurnText
-	waitbutton
 	sjump .Loop
 
 .Freeze:
 	writetext .BlackboardFreezeText
-	waitbutton
 	sjump .Loop
 
 .BlackboardMenuHeader:

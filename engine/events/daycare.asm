@@ -20,6 +20,20 @@
 	const DAYCARETEXT_NOT_ENOUGH_MONEY
 	const DAYCARETEXT_OH_FINE
 	const DAYCARETEXT_COME_AGAIN
+	const DAYCARETEXT_KANTO_INTRO
+	const DAYCARETEXT_KANTO_COME_AGAIN
+	const DAYCARETEXT_KANTO_COME_AGAIN_FULL
+	const DAYCARETEXT_KANTO_WHICH_ONE
+	const DAYCARETEXT_KANTO_LAST_MON
+	const DAYCARETEXT_KANTO_DEPOSIT
+	const DAYCARETEXT_KANTO_COME_BACK_LATER
+	const DAYCARETEXT_KANTO_TOO_SOON
+	const DAYCARETEXT_KANTO_GENIUSES
+	const DAYCARETEXT_KANTO_ASK_WITHDRAW
+	const DAYCARETEXT_KANTO_WITHDRAW
+	const DAYCARETEXT_KANTO_GOT_BACK
+	const DAYCARETEXT_KANTO_PARTY_FULL
+	const DAYCARETEXT_KANTO_NOT_ENOUGH_MONEY
 
 DayCareMan:
 	ld hl, wDayCareMan
@@ -108,6 +122,27 @@ DayCareIntroText:
 	call YesNoBox
 	ret
 
+DayCareAskDepositPokemonKanto:
+	ld a, [wPartyCount]
+	cp 2
+	jr c, .OnlyOneMon
+	ld a, DAYCARETEXT_KANTO_WHICH_ONE
+	call PrintDayCareText
+	ld b, PARTYMENUACTION_GIVE_MON
+	farcall SelectTradeOrDayCareMon
+	jr c, .Declined
+	jr DayCareAskDepositPokemon.Join
+
+.OnlyOneMon:
+	ld a, DAYCARETEXT_KANTO_LAST_MON
+	scf
+	ret
+
+.Declined:
+	ld a, DAYCARETEXT_KANTO_COME_AGAIN_FULL
+	scf
+	ret
+
 DayCareAskDepositPokemon:
 	ld a, [wPartyCount]
 	cp 2
@@ -117,6 +152,7 @@ DayCareAskDepositPokemon:
 	ld b, PARTYMENUACTION_GIVE_MON
 	farcall SelectTradeOrDayCareMon
 	jr c, .Declined
+.Join:
 	ld a, [wCurPartySpecies]
 	cp EGG
 	jr z, .Egg
@@ -171,6 +207,65 @@ DayCare_DepositPokemonText:
 	call PlayMonCry
 	ld a, DAYCARETEXT_COME_BACK_LATER
 	call PrintDayCareText
+	ret
+
+DayCare_DepositPokemonTextKanto:
+	ld a, DAYCARETEXT_KANTO_DEPOSIT
+	call PrintDayCareText
+	ld a, [wCurPartySpecies]
+	call PlayMonCry
+	ld a, DAYCARETEXT_KANTO_COME_BACK_LATER
+	call PrintDayCareText
+	ret
+
+DayCare_KantoCheckPartySpace:
+	ld a, [wPartyCount]
+	cp PARTY_LENGTH
+	ret c
+	call DayCare_KantoShowGrowthText
+	ld a, DAYCARETEXT_KANTO_PARTY_FULL
+	call PrintDayCareText
+	ret
+
+DayCare_KantoShowGrowthText:
+	ld a, [wStringBuffer2 + 1]
+	and a
+	jr nz, .grew_at_least_one_level
+	ld a, DAYCARETEXT_KANTO_TOO_SOON
+	call PrintDayCareText
+	ret
+
+.grew_at_least_one_level
+	ld a, DAYCARETEXT_KANTO_GENIUSES
+	call PrintDayCareText
+	ret
+
+DayCare_AskWithdrawBreedMonKanto:
+	call DayCare_KantoShowGrowthText
+	ld a, DAYCARETEXT_KANTO_ASK_WITHDRAW
+	call PrintDayCareText
+	call YesNoBox
+	jr c, .said_no
+
+.check_money
+	ld de, wMoney
+	ld bc, wStringBuffer2 + 2
+	farcall CompareMoney
+	jr c, .not_enough_money
+	and a
+	ret
+
+.not_enough_money
+	ld a, DAYCARETEXT_KANTO_NOT_ENOUGH_MONEY
+	call PrintDayCareText
+	xor a
+	scf
+	ret
+
+.said_no
+	xor a
+	inc a
+	scf
 	ret
 
 DayCare_AskWithdrawBreedMon:
@@ -231,6 +326,18 @@ DayCare_GetBackMonForMoney:
 	call PrintDayCareText
 	ret
 
+DayCare_GetBackMonForMoneyKanto:
+	ld bc, wStringBuffer2 + 2
+	ld de, wMoney
+	farcall TakeMoney
+	ld a, DAYCARETEXT_KANTO_WITHDRAW
+	call PrintDayCareText
+	ld a, [wCurPartySpecies]
+	call PlayMonCry
+	ld a, DAYCARETEXT_KANTO_GOT_BACK
+	call PrintDayCareText
+	ret
+
 GetPriceToRetrieveBreedmon:
 	ld a, b
 	ld [wStringBuffer2], a
@@ -287,6 +394,20 @@ PrintDayCareText:
 	dw .NotEnoughMoneyText ; 11
 	dw .OhFineThenText ; 12
 	dw .ComeAgainText ; 13
+	dw .DayCareKantoIntroText ; 14
+	dw .DayCareKantoComeAgainText ; 15
+	dw .DayCareKantoComeAgainTextFull ; 16
+	dw .DayCareKantoWhichOneText ; 17
+	dw .DayCareKantoLastMonText ; 18
+	dw .DayCareKantoDepositText ; 19
+	dw .DayCareKantoComeBackLaterText ; 1a
+	dw .DayCareKantoTooSoonText ; 1b
+	dw .DayCareKantoGeniusesText ; 1c
+	dw .DayCareKantoAskWithdrawText ; 1d
+	dw .DayCareKantoWithdrawText ; 1e
+	dw .DayCareKantoGotBackMonText ; 1f
+	dw .DayCareKantoPartyFullText ; 20
+	dw .DayCareKantoNotEnoughtMoneyText ; 21
 
 .DayCareManIntroText:
 	text_far _DayCareManIntroText
@@ -367,6 +488,98 @@ PrintDayCareText:
 .ComeAgainText:
 	text_far _ComeAgainText
 	text_end
+
+.DayCareKantoIntroText:
+	text "I run a DAYCARE."
+	line "Would you like me"
+	cont "to raise one of"
+	cont "your #MON?"
+	done
+
+.DayCareKantoComeAgainText:
+	text "come again."
+	done
+
+.DayCareKantoComeAgainTextFull:
+	text "All right then,"
+	line "come again"
+	done
+
+.DayCareKantoWhichOneText:
+	text "Which #MON"
+	line "should I raise?"
+	prompt
+
+.DayCareKantoLastMonText:
+	text "You only have one"
+	line "#MON with you."
+	done
+
+.DayCareKantoDepositText:
+	text "Fine, I'll look"
+	line "after @"
+	text_ram wStringBuffer1
+	text_start
+	cont "for a while."
+	prompt
+
+.DayCareKantoComeBackLaterText:
+	text "Come see me in"
+	line "a while."
+	done
+
+.DayCareKantoTooSoonText:
+	text "Back already?"
+	line "Your @"
+	text_ram wStringBuffer1
+	text_start
+	cont "needs some more"
+	cont "time with me."
+	prompt
+
+.DayCareKantoGeniusesText:
+	text "Your @"
+	text_ram wStringBuffer1
+	text_start
+	line "has grown a lot!"
+
+	para "By level, it's"
+	line "grown by @"
+	text_decimal wStringBuffer2 + 1, 1, 3
+	text "!"
+
+	para "Aren't I great?"
+	prompt
+
+.DayCareKantoAskWithdrawText:
+	text "You owe me ¥@"
+	text_decimal wStringBuffer2 + 2, 3, 4
+	text_start
+	line "for the return"
+	cont "of this #MON."
+	done
+
+.DayCareKantoWithdrawText:
+	text "Thank you! Here's"
+	line "your #MON!"
+	prompt
+
+.DayCareKantoGotBackMonText:
+	text "<PLAYER> got"
+	line "@"
+	text_ram wStringBuffer1
+	text " back!"
+	done
+
+.DayCareKantoPartyFullText:
+	text "You have no room"
+	line "for this #MON!"
+	done
+
+.DayCareKantoNotEnoughtMoneyText:
+	text "Hey, you don't"
+	line "have enough ¥!"
+	done
 
 DayCareManOutside:
 	ld hl, wDayCareMan
@@ -716,3 +929,46 @@ DayCare_InitBreeding:
 
 .String_EGG:
 	db "EGG@"
+
+DayCareKanto:
+	ld hl, wKantoDayCareFlags
+	bit DAYCAREKANTO_HAS_MON_F, [hl]
+	jr nz, .AskWithdrawMon
+	ld hl, wKantoDayCareFlags
+	ld a, DAYCARETEXT_KANTO_INTRO
+	call PrintDayCareText
+	call YesNoBox
+	jr c, .cancel
+	call DayCareAskDepositPokemonKanto
+	jr c, .print_text
+	farcall DepositMonWithDayCareKanto
+	ld hl, wKantoDayCareFlags
+	set DAYCAREKANTO_HAS_MON_F, [hl]
+	call DayCare_DepositPokemonTextKanto
+	ret
+
+.AskWithdrawMon:
+	farcall GetKantoDayCareMonLevelGrowth
+	ld hl, wKantoDaycareMonNickname
+	call GetPriceToRetrieveBreedmon
+	call DayCare_KantoCheckPartySpace
+	ret nc
+	call DayCare_AskWithdrawBreedMonKanto
+	jr c, .cancel2
+	farcall RetrieveMonFromDayCareKanto
+	call DayCare_GetBackMonForMoneyKanto
+	ld hl, wKantoDayCareFlags
+	res DAYCAREKANTO_HAS_MON_F, [hl]
+	ret
+
+.cancel
+	ld a, DAYCARETEXT_KANTO_COME_AGAIN
+.print_text
+	call PrintDayCareText
+	ret
+
+.cancel2
+	ret z
+	ld a, DAYCARETEXT_KANTO_COME_AGAIN_FULL
+	call PrintDayCareText
+	ret

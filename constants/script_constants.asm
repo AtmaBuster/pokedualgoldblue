@@ -120,6 +120,8 @@ OBJECT_EVENT_SIZE EQU 13 ; object_event
 	const BGEVENT_IFNOTSET
 	const BGEVENT_ITEM
 	const BGEVENT_COPY
+	const BGEVENT_COIN
+	const BGEVENT_KEYDOOR
 NUM_BGEVENTS EQU const_value
 
 ; object_event types
@@ -263,9 +265,10 @@ BUG_CONTESTANT_SIZE EQU 4
 ; HealMachineAnim setval arguments
 ; HealMachineAnim.Pointers indexes (see engine/events/heal_machine_anim.asm)
 	const_def
-	const HEALMACHINE_POKECENTER   ; 0
-	const HEALMACHINE_ELMS_LAB     ; 1
-	const HEALMACHINE_HALL_OF_FAME ; 2
+	const HEALMACHINE_POKECENTER       ; 0
+	const HEALMACHINE_ELMS_LAB         ; 1
+	const HEALMACHINE_HALL_OF_FAME     ; 2
+	const HEALMACHINE_KANTO_POKECENTER ; 3
 
 ; UnownPuzzle setval arguments
 ; LoadUnownPuzzlePiecesGFX.LZPointers indexes (see engine/games/unown_puzzle.asm)
