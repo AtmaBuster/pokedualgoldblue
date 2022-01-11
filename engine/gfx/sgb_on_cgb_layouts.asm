@@ -1,4 +1,5 @@
 ; Replaces the functionality of sgb.asm to work with CGB hardware.
+; Taken from Pokémon RedGold/BlueSilver
 
 CheckCGB:
 	ldh a, [hCGB]
@@ -8,28 +9,28 @@ CheckCGB:
 LoadSGBLayoutCGB:
 	ld a, b
 	cp SCGB_DEFAULT
-	jr nz, .not_default
+	jr nz, .not_ram
 	ld a, [wDefaultSGBLayout]
-.not_default
+.not_ram
 	cp SCGB_PARTY_MENU_HP_BARS
 	jp z, CGB_ApplyPartyMenuHPPals
 	call ResetBGPals
 	ld l, a
 	ld h, 0
 	add hl, hl
-	ld de, CGBLayoutJumptable
+	ld de, .dw
 	add hl, de
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-	ld de, .done
+	ld de, .ReturnFromJumpTable
 	push de
 	jp hl
-.done:
+
+.ReturnFromJumpTable:
 	ret
 
-CGBLayoutJumptable:
-	table_width 2, CGBLayoutJumptable
+.dw
 	dw _CGB_BattleGrayscale
 	dw _CGB_BattleColors
 	dw _CGB_PokegearPals
@@ -43,7 +44,7 @@ CGBLayoutJumptable:
 	dw _CGB_PartyMenu
 	dw _CGB_Evolution
 	dw _CGB_GSTitleScreen
-	dw _CGB_Unused0D
+	dw _CGB0d
 	dw _CGB_MoveList
 	dw _CGB_BetaPikachuMinigame
 	dw _CGB_PokedexSearchOption
@@ -60,9 +61,8 @@ CGBLayoutJumptable:
 	dw _CGB_TradeTube
 	dw _CGB_TrainerOrMonFrontpicPals
 	dw _CGB_MysteryGift
-	dw _CGB_Unused1E
+	dw _CGB1e
 	dw _CGB_Pokedex_5x5
-	assert_table_length NUM_SCGB_LAYOUTS
 
 _CGB_BattleGrayscale:
 	ld hl, PalPacket_BattleGrayscale + 1
@@ -83,48 +83,32 @@ _CGB_BattleColors:
 	ld de, wBGPals1
 	call GetBattlemonBackpicPalettePointer
 	push hl
-	call LoadPalette_White_Col1_Col2_Black ; PAL_BATTLE_BG_PLAYER
+	call LoadHLPaletteIntoDE ; PAL_BATTLE_BG_PLAYER
 	call GetEnemyFrontpicPalettePointer
 	push hl
-	call LoadPalette_White_Col1_Col2_Black ; PAL_BATTLE_BG_ENEMY
+	call LoadHLPaletteIntoDE ; PAL_BATTLE_BG_ENEMY
 	ld a, [wEnemyHPPal]
-	ld l, a
-	ld h, 0
-	add hl, hl
-	add hl, hl
-	ld bc, HPBarPals
-	add hl, bc
-	call LoadPalette_White_Col1_Col2_Black ; PAL_BATTLE_BG_ENEMY_HP
+	add PREDEFPAL_HP_GREEN
+	call GetPredefPal
+	call LoadHLPaletteIntoDE ; PAL_BATTLE_BG_ENEMY_HP
 	ld a, [wPlayerHPPal]
-	ld l, a
-	ld h, 0
-	add hl, hl
-	add hl, hl
-	ld bc, HPBarPals
-	add hl, bc
-IF DEF(_BLUE)
-	push hl
-ENDC
-	call LoadPalette_White_Col1_Col2_Black ; PAL_BATTLE_BG_PLAYER_HP
-IF DEF(_GOLD)
-	ld hl, ExpBarPalette
-ELIF DEF(_BLUE)
-	pop hl
-ENDC
-	call LoadPalette_White_Col1_Col2_Black ; PAL_BATTLE_BG_EXP
+	add PREDEFPAL_HP_GREEN
+	call GetPredefPal
+	call LoadHLPaletteIntoDE ; PAL_BATTLE_BG_PLAYER_HP
+	; on the SGB, the EXP Bar was the same color as your HP bar
 	ld de, wOBPals1
 	pop hl
-	call LoadPalette_White_Col1_Col2_Black ; PAL_BATTLE_OB_ENEMY
+	call LoadHLPaletteIntoDE ; PAL_BATTLE_OB_ENEMY
 	pop hl
-	call LoadPalette_White_Col1_Col2_Black ; PAL_BATTLE_OB_PLAYER
+	call LoadHLPaletteIntoDE ; PAL_BATTLE_OB_PLAYER
 	ld a, SCGB_BATTLE_COLORS
 	ld [wDefaultSGBLayout], a
 	call ApplyPals
 _CGB_FinishBattleScreenLayout:
-	ld hl, TilesetBGPalette palette PAL_BATTLE_BG_TEXT
-	ld de, wBGPals1 palette PAL_BATTLE_BG_TEXT
-	ld bc, 1 palettes
-	call CopyBytes
+	ld de, wBGPals1 palette 7
+	ld a, PREDEFPAL_RB_GRAYMON
+	call GetPredefPal
+	call LoadHLPaletteIntoDE
 	hlcoord 0, 0, wAttrmap
 	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
 	ld a, PAL_BATTLE_BG_ENEMY_HP
@@ -147,56 +131,48 @@ _CGB_FinishBattleScreenLayout:
 	call FillBoxCGB
 	hlcoord 10, 11, wAttrmap
 	lb bc, 1, 9
-	ld a, PAL_BATTLE_BG_EXP
+	ld a, PAL_BATTLE_BG_PLAYER_HP ; PAL_BATTLE_BG_EXP originally. Shared HP color on SGB.
 	call FillBoxCGB
 	hlcoord 0, 12, wAttrmap
 	ld bc, 6 * SCREEN_WIDTH
 	ld a, PAL_BATTLE_BG_TEXT
 	call ByteFill
-	ld hl, BattleObjectPals
-	ld de, wOBPals1 palette PAL_BATTLE_OB_GRAY
-	ld bc, 6 palettes
-	call CopyBytes
+	call LoadBattleObjectPals
 	call ApplyAttrmap
 	ret
 
 _CGB_PokegearPals:
-	ld hl, PokegearPals
+	ld a, PREDEFPAL_POKEGEAR
+	call GetPredefPal
 	ld de, wBGPals1
-	ld bc, 6 palettes
-	call CopyBytes
+	push hl
+	call LoadHLPaletteIntoDE
+	pop hl
+	ld de, wOBPals1
+	call _CGB_MapPals.LoadHLOBPaletteIntoDE
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
 _CGB_StatsScreenHPPals:
 	ld de, wBGPals1
 	ld a, [wCurHPPal]
-	ld l, a
-	ld h, 0
-	add hl, hl
-	add hl, hl
-	ld bc, HPBarPals
-	add hl, bc
-IF DEF(_BLUE)
+	add PREDEFPAL_HP_GREEN
+	call GetPredefPal
 	push hl
-ENDC
-	call LoadPalette_White_Col1_Col2_Black ; hp palette
+	call LoadHLPaletteIntoDE ; hp palette
 	ld a, [wCurPartySpecies]
 	ld bc, wTempMonDVs
 	call GetPlayerOrMonPalettePointer
-	call LoadPalette_White_Col1_Col2_Black ; mon palette
-IF DEF(_GOLD)
-	ld hl, ExpBarPalette
-ELIF DEF(_BLUE)
-	pop hl
-ENDC
-	call LoadPalette_White_Col1_Col2_Black ; exp palette
-	ld hl, StatsScreenPagePals
+	call LoadHLPaletteIntoDE ; mon palette
+	pop hl ; EXP Bar matches HP Bar in SGB mode
+	call LoadHLPaletteIntoDE ; exp palette
 	ld de, wBGPals1 palette 3
-	ld bc, 3 palettes ; pink, green, and blue page palettes
-	call CopyBytes
+	; page button palettes
+	ld a, PREDEFPAL_HP_GREEN
+	call GetPredefPal
+	call LoadHLPaletteIntoDE
 	call WipeAttrmap
 
 	hlcoord 0, 0, wAttrmap
@@ -210,31 +186,15 @@ ENDC
 	call ByteFill
 
 	hlcoord 13, 5, wAttrmap
-	lb bc, 2, 2
-	ld a, $3 ; pink page palette
-	call FillBoxCGB
-
-	hlcoord 15, 5, wAttrmap
-	lb bc, 2, 2
-	ld a, $4 ; green page palette
-	call FillBoxCGB
-
-	hlcoord 17, 5, wAttrmap
-	lb bc, 2, 2
-	ld a, $5 ; blue page palette
+	lb bc, 2, 6
+	ld a, $3 ; pages palette
 	call FillBoxCGB
 
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
-
-StatsScreenPagePals:
-INCLUDE "gfx/stats/pages.pal"
-
-StatsScreenPals:
-INCLUDE "gfx/stats/stats.pal"
 
 _CGB_Pokedex:
 	call _CGB_Pokedex_Init
@@ -254,142 +214,131 @@ _CGB_Pokedex_5x5:
 
 _CGB_Pokedex_Init:
 	ld de, wBGPals1
-	ld a, PREDEFPAL_POKEDEX
+	ld a, PREDEFPAL_RB_REDMON
 	call GetPredefPal
 	call LoadHLPaletteIntoDE ; dex interface palette
 	ld a, [wCurPartySpecies]
 	cp $ff
 	jr nz, .is_pokemon
-	ld hl, PokedexQuestionMarkPalette
-	call LoadHLPaletteIntoDE ; green question mark palette
+	ld a, PREDEFPAL_RB_GRAYMON
+	call GetPredefPal
+	call LoadHLPaletteIntoDE ; question mark palette
 	jr .got_palette
 
 .is_pokemon
 	call GetMonPalettePointer
-	call LoadPalette_White_Col1_Col2_Black ; mon palette
+	call LoadHLPaletteIntoDE ; mon palette
 .got_palette
 	call WipeAttrmap
 	ret
 
 _CGB_Pokedex_Resume:
 	call InitPartyMenuOBPals
-	ld hl, PokedexCursorPalette
-	ld de, wOBPals1 palette 7 ; green cursor palette
-	ld bc, 1 palettes
-	call CopyBytes
+	ld a, PREDEFPAL_RB_REDMON
+	call GetPredefPal
+	ld de, wOBPals1 palette 7 ; cursor palette
+	call LoadHLPaletteIntoDE
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
-PokedexCursorPalette:
-INCLUDE "gfx/pokedex/cursor.pal"
-
-PokedexQuestionMarkPalette:
-INCLUDE "gfx/pokedex/question_mark.pal"
-
 _CGB_BillsPC:
 	ld de, wBGPals1
-	ld a, PREDEFPAL_POKEDEX
+	ld a, PREDEFPAL_RB_REDMON
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
 	ld a, [wCurPartySpecies]
 	cp $ff
 	jr nz, .GetMonPalette
-	ld hl, BillsPCOrangePalette
+	ld a, PREDEFPAL_RB_GRAYMON
+	call GetPredefPal
 	call LoadHLPaletteIntoDE
 	jr .GotPalette
 
 .GetMonPalette:
 	ld bc, wTempMonDVs
 	call GetPlayerOrMonPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
+	call LoadHLPaletteIntoDE
 .GotPalette:
 	call WipeAttrmap
 	hlcoord 1, 4, wAttrmap
 	lb bc, 7, 7
-	ld a, $1 ; mon palette
+	ld a, $1
 	call FillBoxCGB
 	call InitPartyMenuOBPals
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
-BillsPCOrangePalette:
-INCLUDE "gfx/pc/orange.pal"
-
 _CGB_PokedexUnownMode:
 	ld de, wBGPals1
-	ld a, PREDEFPAL_POKEDEX
+	ld a, PREDEFPAL_RB_REDMON
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
 	ld a, [wCurPartySpecies]
 	call GetMonPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
+	call LoadHLPaletteIntoDE
 	call WipeAttrmap
 	hlcoord 7, 5, wAttrmap
 	lb bc, 7, 7
-	ld a, $1 ; mon palette
+	ld a, $1
 	call FillBoxCGB
 	call InitPartyMenuOBPals
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
 _CGB_SlotMachine:
-	ld hl, SlotMachinePals
-	ld de, wBGPals1
-	ld bc, 16 palettes
-	call CopyBytes
+	; grab the SGB color packet
+	ld hl, PalPacket_SlotMachine + 1
+	call CopyFourPalettes
+	; in SGB, Slot Reels use Pal 0
+	; fill OB Pals with Pal 0
+	ld de, wOBPals1
+	ld a, PREDEFPAL_SLOT_MACHINE_0
+	call GetPredefPal
+	ld b, 8
+.loop
+	push hl
+	call LoadHLPaletteIntoDE
+	pop hl
+	dec b
+	jr nz, .loop
+	; Apply the palettes to the screen like SGB
 	call WipeAttrmap
 	hlcoord 0, 2, wAttrmap
 	lb bc, 10, 3
-	ld a, $2 ; "3" palette
+	ld a, $1
 	call FillBoxCGB
 	hlcoord 17, 2, wAttrmap
 	lb bc, 10, 3
-	ld a, $2 ; "3" palette
+	ld a, $1
 	call FillBoxCGB
 	hlcoord 0, 4, wAttrmap
 	lb bc, 6, 3
-	ld a, $3 ; "2" palette
+	ld a, $2
 	call FillBoxCGB
 	hlcoord 17, 4, wAttrmap
 	lb bc, 6, 3
-	ld a, $3 ; "2" palette
+	ld a, $2
 	call FillBoxCGB
 	hlcoord 0, 6, wAttrmap
 	lb bc, 2, 3
-	ld a, $4 ; "1" palette
+	ld a, $3
 	call FillBoxCGB
 	hlcoord 17, 6, wAttrmap
 	lb bc, 2, 3
-	ld a, $4 ; "1" palette
+	ld a, $3
 	call FillBoxCGB
-	hlcoord 4, 2, wAttrmap
-	lb bc, 2, 12
-	ld a, $1 ; Vileplume palette
-	call FillBoxCGB
-	hlcoord 3, 2, wAttrmap
-	lb bc, 10, 1
-	ld a, $1 ; lights palette
-	call FillBoxCGB
-	hlcoord 16, 2, wAttrmap
-	lb bc, 10, 1
-	ld a, $1 ; lights palette
-	call FillBoxCGB
-	hlcoord 0, 12, wAttrmap
-	ld bc, 6 * SCREEN_WIDTH
-	ld a, $7 ; text palette
-	call ByteFill
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
@@ -407,7 +356,7 @@ _CGB_BetaTitleScreen:
 	call FillBoxCGB
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
@@ -427,21 +376,19 @@ _CGB_GSIntro:
 	dw .StartersCharizardScene
 
 .ShellderLaprasScene:
-	ld hl, .ShellderLaprasBGPalette
+	ld a, PREDEFPAL_GS_INTRO_SHELLDER_LAPRAS
+	call GetPredefPal
+	push hl
+	push hl
 	ld de, wBGPals1
 	call LoadHLPaletteIntoDE
-	ld hl, .ShellderLaprasOBPals
+	pop hl
 	ld de, wOBPals1
-	ld bc, 2 palettes
-	call CopyBytes
+	call LoadHLPaletteIntoDE
+	pop hl
+	call LoadHLPaletteIntoDE
 	call WipeAttrmap
 	ret
-
-.ShellderLaprasBGPalette:
-INCLUDE "gfx/intro/shellder_lapras_bg.pal"
-
-.ShellderLaprasOBPals:
-INCLUDE "gfx/intro/shellder_lapras_ob.pal"
 
 .JigglypuffPikachuScene:
 	ld de, wBGPals1
@@ -457,8 +404,10 @@ INCLUDE "gfx/intro/shellder_lapras_ob.pal"
 	ret
 
 .StartersCharizardScene:
-	ld hl, PalPacket_Pack + 1
-	call CopyFourPalettes
+	ld a, PREDEFPAL_RB_REDMON ; Charizard
+	call GetPredefPal
+	ld de, wBGPals1
+	call LoadHLPaletteIntoDE
 	ld de, wOBPals1
 	ld a, PREDEFPAL_GS_INTRO_STARTERS_TRANSITION
 	call GetPredefPal
@@ -467,34 +416,30 @@ INCLUDE "gfx/intro/shellder_lapras_ob.pal"
 	ret
 
 _CGB_BetaPoker:
-	ld hl, BetaPokerPals
-	ld de, wBGPals1
-	ld bc, 5 palettes
-	call CopyBytes
+	ld hl, PalPacket_BetaPoker + 1
+	call CopyFourPalettes
+	call InitPartyMenuOBPals
 	call ApplyPals
 	call WipeAttrmap
 	call ApplyAttrmap
 	ret
 
 _CGB_Diploma:
-	ld hl, DiplomaPalettes
-	ld de, wBGPals1
-	ld bc, 16 palettes
-	call CopyBytes
-
+; Start by loading PREDEFPAL_RB_MEWMON for 2 object pals
+	ld de, wOBPals1
+	ld a, PREDEFPAL_DIPLOMA
+	call GetPredefPal
+	push hl
+	call _CGB_MapPals.LoadHLOBPaletteIntoDE
+	pop hl
+	call _CGB_MapPals.LoadHLOBPaletteIntoDE
+; then load diploma palettes
 	ld hl, PalPacket_Diploma + 1
 	call CopyFourPalettes
 	call WipeAttrmap
-	call ApplyAttrmap
-	ret
+	jp ApplyAttrmap
 
 _CGB_MapPals:
-IF DEF(_GOLD)
-	call LoadMapPals
-	ld a, SCGB_MAPPALS
-	ld [wDefaultSGBLayout], a
-	ret
-ELIF DEF(_BLUE)
 ; Get SGB palette
 	call SGBLayoutJumptable.GetMapPalsIndex
 	call GetPredefPal
@@ -505,13 +450,13 @@ ELIF DEF(_BLUE)
 	call .LoadHLBGPaletteIntoDE
 	dec b
 	jr nz, .bg_loop
-; Copy PAL_BG_TEXT and 6 OB palettes
+; Copy PREDEFPAL_BG_TEXT and 6 OB palettes
 	ld b, 7
 .ob_loop
 	call .LoadHLOBPaletteIntoDE
 	dec b
 	jr nz, .ob_loop
-; Copy PAL_OW_TREE and PAL_OW_ROCK
+; Copy PREDEFPAL_OW_TREE and PREDEFPAL_OW_ROCK
 	call .LoadHLBGPaletteIntoDE
 	call .LoadHLBGPaletteIntoDE
 	ld a, SCGB_MAPPALS
@@ -568,7 +513,6 @@ endr
 	pop af
 	ldh [rSVBK], a
 	ret
-ENDC
 
 _CGB_PartyMenu:
 	ld hl, PalPacket_PartyMenu + 1
@@ -596,24 +540,20 @@ _CGB_Evolution:
 	ld b, h
 	ld a, [wPlayerHPPal]
 	call GetPlayerOrMonPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	ld hl, BattleObjectPals
-	ld de, wOBPals1 palette PAL_BATTLE_OB_GRAY
-	ld bc, 6 palettes
-	call CopyBytes
+	call LoadHLPaletteIntoDE
+	call LoadBattleObjectPals
 
 .got_palette
 	call WipeAttrmap
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
-if DEF(_BLUE)
 LoadBattleObjectPals:
 	ld de, wOBPals1 palette PAL_BATTLE_OB_GRAY
-	ld a, PREDEFPAL_CGB_BADGE
+	ld a, PREDEFPAL_RB_GRAYMON
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
 	ld a, PREDEFPAL_RB_YELLOWMON
@@ -631,25 +571,29 @@ LoadBattleObjectPals:
 	ld a, PREDEFPAL_RB_BROWNMON
 	call GetPredefPal
 	jp LoadHLPaletteIntoDE
-ENDC
 
 _CGB_GSTitleScreen:
-	ld hl, GSTitleBGPals
-	ld de, wBGPals1
-	ld bc, 5 palettes
-	call CopyBytes
-	ld hl, GSTitleOBPals
+; Start by loading object pal
 	ld de, wOBPals1
-	ld bc, 2 palettes
-	call CopyBytes
-	ld a, SCGB_DIPLOMA
-	ld [wDefaultSGBLayout], a
-	call ApplyPals
-	ld a, TRUE
-	ldh [hCGBPalUpdate], a
+	ld a, PREDEFPAL_GS_TITLE_SCREEN_0
+	call GetPredefPal
+	push hl
+	call LoadHLPaletteIntoDE
+; then background palette
+	pop hl
+	ld de, wBGPals1
+	call LoadHLPaletteIntoDE
+; and apply it to the whole screen
+	call WipeAttrmap
+	jp ApplyAttrmap
+
+_CGB0d:
+	ld hl, PalPacket_Diploma + 1
+	call CopyFourPalettes
+	call WipeAttrmap
+	call ApplyAttrmap
 	ret
 
-_CGB_Unused0D:
 _CGB_UnownPuzzle:
 	ld hl, PalPacket_UnownPuzzle + 1
 	call CopyFourPalettes
@@ -667,79 +611,51 @@ _CGB_UnownPuzzle:
 	ret
 
 _CGB_TrainerCard:
+	; Palettes for border and trainers
 	ld de, wBGPals1
-	xor a ; CHRIS
-	call GetTrainerPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	ld a, FALKNER
-	call GetTrainerPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	ld a, BUGSY
-	call GetTrainerPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	ld a, WHITNEY
-	call GetTrainerPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	ld a, MORTY
-	call GetTrainerPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	ld a, CHUCK
-	call GetTrainerPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	ld a, JASMINE
-	call GetTrainerPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	ld a, PRYCE
-	call GetTrainerPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
-	ld a, PREDEFPAL_CGB_BADGE
+	ld a, PREDEFPAL_RB_CYANMON
+	call GetPredefPal
+	call LoadHLPaletteIntoDE
+	ld a, PREDEFPAL_RB_REDMON
+	call GetPredefPal
+	call LoadHLPaletteIntoDE
+	ld a, PREDEFPAL_RB_MEWMON
+	call GetPredefPal
+	call LoadHLPaletteIntoDE
+	; palette for the badges when visible
+	ld de, wOBPals1
+	ld a, PREDEFPAL_RB_GRAYMON
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
 
-	; card border
+	; fill screen with gender-specific palette for the card border
 	hlcoord 0, 0, wAttrmap
 	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
-	ld a, $1 ; falkner
+	; TODO: Player Gender, and Gender-based trainer card pal
+	;ld a, [wPlayerGender]
+	;and a
+	ld a, $1 ; red
+	;jr z, .got_gender
+	;xor a ; cyan
+;.got_gender
 	call ByteFill
-	; trainer sprite area
+	; fill trainer sprite area with trainer palette
 	hlcoord 14, 1, wAttrmap
 	lb bc, 7, 5
-	xor a ; chris
+	ld a, $2
 	call FillBoxCGB
 	; top-right corner still uses the border's palette
+	hlcoord  0, 0, wAttrmap
+	ld a, [hl]
 	hlcoord 18, 1, wAttrmap
-	ld [hl], $1
-	hlcoord 2, 11, wAttrmap
-	lb bc, 2, 4
-	ld a, $1 ; falkner
-	call FillBoxCGB
-	hlcoord 6, 11, wAttrmap
-	lb bc, 2, 4
-	ld a, $2 ; bugsy
-	call FillBoxCGB
-	hlcoord 10, 11, wAttrmap
-	lb bc, 2, 4
-	ld a, $3 ; whitney
-	call FillBoxCGB
-	hlcoord 14, 11, wAttrmap
-	lb bc, 2, 4
-	ld a, $4 ; morty
-	call FillBoxCGB
-	hlcoord 2, 14, wAttrmap
-	lb bc, 2, 4
-	ld a, $5 ; chuck
-	call FillBoxCGB
-	hlcoord 6, 14, wAttrmap
-	lb bc, 2, 4
-	ld a, $6 ; jasmine
-	call FillBoxCGB
-	hlcoord 10, 14, wAttrmap
-	lb bc, 2, 4
-	ld a, $7 ; pryce
+	ld [hl], a
+	hlcoord 2, 10, wAttrmap
+	lb bc, 6, 16
+	ld a, $2 ; trainer faces
 	call FillBoxCGB
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
@@ -749,13 +665,9 @@ _CGB_MoveList:
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
 	ld a, [wPlayerHPPal]
-	ld l, a
-	ld h, 0
-	add hl, hl
-	add hl, hl
-	ld bc, HPBarPals
-	add hl, bc
-	call LoadPalette_White_Col1_Col2_Black
+	add PREDEFPAL_HP_GREEN
+	call GetPredefPal
+	call LoadHLPaletteIntoDE
 	call WipeAttrmap
 	hlcoord 11, 1, wAttrmap
 	lb bc, 2, 9
@@ -763,7 +675,7 @@ _CGB_MoveList:
 	call FillBoxCGB
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
@@ -773,7 +685,7 @@ _CGB_BetaPikachuMinigame:
 	call WipeAttrmap
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
@@ -785,44 +697,22 @@ _CGB_PokedexSearchOption:
 	call WipeAttrmap
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
 _CGB_PackPals:
+; pack pals
 	ld de, wBGPals1
-	ld hl, .PackPals
-	ld bc, 8 palettes ; 6 palettes?
-	call CopyBytes
+	ld a, PREDEFPAL_PACK
+	call GetPredefPal
+	call LoadHLPaletteIntoDE
 	call WipeAttrmap
-	hlcoord 0, 0, wAttrmap
-	lb bc, 1, 10
-	ld a, $1
-	call FillBoxCGB
-	hlcoord 10, 0, wAttrmap
-	lb bc, 1, 10
-	ld a, $2
-	call FillBoxCGB
-	hlcoord 7, 2, wAttrmap
-	lb bc, 9, 1
-	ld a, $3
-	call FillBoxCGB
-	hlcoord 0, 7, wAttrmap
-	lb bc, 3, 5
-	ld a, $4
-	call FillBoxCGB
-	hlcoord 0, 3, wAttrmap
-	lb bc, 3, 5
-	ld a, $5
-	call FillBoxCGB
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
-
-.PackPals:
-INCLUDE "gfx/pack/pack.pal"
 
 _CGB_Pokepic:
 	call _CGB_MapPals
@@ -840,7 +730,7 @@ _CGB_Pokepic:
 .found_top
 	ld a, [wMenuBorderLeftCoord]
 	ld e, a
-	ld d, 0
+	ld d, $0
 	add hl, de
 	ld a, [wMenuBorderTopCoord]
 	ld b, a
@@ -854,41 +744,41 @@ _CGB_Pokepic:
 	sub c
 	inc a
 	ld c, a
-	ld a, PAL_BG_GRAY
+	ld a, $0
 	call FillBoxCGB
 	call ApplyAttrmap
 	ret
 
-_CGB_MagnetTrain: ; unused
+_CGB_MagnetTrain:
 	ld hl, PalPacket_MagnetTrain + 1
 	call CopyFourPalettes
 	call WipeAttrmap
 	hlcoord 0, 4, wAttrmap
 	lb bc, 10, SCREEN_WIDTH
-	ld a, PAL_BG_GREEN
+	ld a, $2
 	call FillBoxCGB
 	hlcoord 0, 6, wAttrmap
 	lb bc, 6, SCREEN_WIDTH
-	ld a, PAL_BG_RED
+	ld a, $1
 	call FillBoxCGB
 	call ApplyAttrmap
 	call ApplyPals
-	ld a, TRUE
+	ld a, $1
 	ldh [hCGBPalUpdate], a
 	ret
 
 _CGB_GamefreakLogo:
 	ld de, wBGPals1
-	ld a, PREDEFPAL_GAMEFREAK_LOGO_BG
+	ld a, PREDEFPAL_GS_INTRO_GAMEFREAK_LOGO
 	call GetPredefPal
+	push hl
+	push hl
 	call LoadHLPaletteIntoDE
 	ld de, wOBPals1
-	ld a, PREDEFPAL_GAMEFREAK_LOGO_OB
-	call GetPredefPal
+	pop hl
 	call LoadHLPaletteIntoDE
 	ld de, wOBPals1 palette 1
-	ld a, PREDEFPAL_GAMEFREAK_LOGO_OB
-	call GetPredefPal
+	pop hl
 	call LoadHLPaletteIntoDE
 	call WipeAttrmap
 	call ApplyAttrmap
@@ -900,20 +790,25 @@ _CGB_PlayerOrMonFrontpicPals:
 	ld a, [wCurPartySpecies]
 	ld bc, wTempMonDVs
 	call GetPlayerOrMonPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
+	call LoadHLPaletteIntoDE
 	call WipeAttrmap
 	call ApplyAttrmap
 	call ApplyPals
 	ret
 
-_CGB_Unused1E:
+_CGB1e:
+	ld de, wBGPals1
+	ld a, [wCurPartySpecies]
+	call GetMonPalettePointer
+	call LoadHLPaletteIntoDE
+	call WipeAttrmap
+	call ApplyAttrmap
+	ret
+
 _CGB_TradeTube:
 	ld hl, PalPacket_TradeTube + 1
 	call CopyFourPalettes
-	ld hl, PartyMenuOBPals
-	ld de, wOBPals1
-	ld bc, 1 palettes
-	call CopyBytes
+	call InitPartyMenuOBPals
 	ld de, wOBPals1 palette 7
 	ld a, PREDEFPAL_TRADE_TUBE
 	call GetPredefPal
@@ -926,7 +821,7 @@ _CGB_TrainerOrMonFrontpicPals:
 	ld a, [wCurPartySpecies]
 	ld bc, wTempMonDVs
 	call GetFrontpicPalettePointer
-	call LoadPalette_White_Col1_Col2_Black
+	call LoadHLPaletteIntoDE
 	call WipeAttrmap
 	call ApplyAttrmap
 	call ApplyPals
@@ -943,4 +838,7 @@ _CGB_MysteryGift:
 	ret
 
 .MysteryGiftPalette:
-INCLUDE "gfx/mystery_gift/mystery_gift.pal"
+	RGB 31, 31, 31
+	RGB 09, 31, 31
+	RGB 10, 12, 31
+	RGB 00, 03, 19

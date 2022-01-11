@@ -247,6 +247,7 @@ ApplyHPBarPals:
 	ret
 
 LoadStatsScreenPals:
+IF DEF(_GOLD)
 	call CheckCGB
 	ret z
 	ld hl, StatsScreenPals
@@ -263,6 +264,7 @@ LoadStatsScreenPals:
 	call ApplyPals
 	ld a, TRUE
 	ldh [hCGBPalUpdate], a
+ENDC
 	ret
 
 LoadMailPalettes:
@@ -309,7 +311,11 @@ LoadMailPalettes:
 .MailPals:
 INCLUDE "gfx/mail/mail.pal"
 
+IF DEF(_GOLD)
 INCLUDE "engine/gfx/cgb_layouts.asm"
+ELIF DEF(_BLUE)
+INCLUDE "engine/gfx/sgb_on_cgb_layouts.asm"
+ENDC
 
 CopyFourPalettes:
 	ld de, wBGPals1
@@ -497,12 +503,23 @@ CGB_ApplyPartyMenuHPPals:
 	call FillBoxCGB
 	ret
 
+IF DEF(_GOLD)
 InitPartyMenuOBPals:
 	ld hl, PartyMenuOBPals
 	ld de, wOBPals1
 	ld bc, 2 palettes
 	call CopyBytes
 	ret
+ELIF DEF(_BLUE)
+InitPartyMenuOBPals:
+	ld de, wOBPals1
+	ld a, PREDEFPAL_BETA_SHINY_GRAYMON
+	call GetPredefPal
+	push hl
+	call _CGB_MapPals.LoadHLOBPaletteIntoDE
+	pop hl
+	jp _CGB_MapPals.LoadHLOBPaletteIntoDE
+ENDC
 
 GetBattlemonBackpicPalettePointer:
 	push de
@@ -524,6 +541,7 @@ GetEnemyFrontpicPalettePointer:
 	pop de
 	ret
 
+IF DEF(_GOLD)
 GetPlayerOrMonPalettePointer:
 	and a
 	jp nz, GetMonNormalOrShinyPalettePointer
@@ -573,6 +591,49 @@ rept 4
 	inc hl
 endr
 	ret
+
+ELIF DEF(_BLUE)
+GetPlayerOrMonPalettePointer:
+	and a
+	jp nz, GetMonNormalOrShinyPalettePointer
+	jr GetTrainerPalettePointer
+
+GetFrontpicPalettePointer:
+	and a
+	jp nz, GetMonNormalOrShinyPalettePointer
+	; fallthrough
+
+GetTrainerPalettePointer:
+	ld a, PREDEFPAL_RB_MEWMON
+	jp GetPredefPal
+
+GetMonPalettePointer:
+	call _GetMonPalettePointer
+	ret
+
+_GetMonPalettePointer:
+	ld hl, PokemonPalettes
+	ld c, a
+	ld b, $0
+	add hl, bc
+	ld a, [hl]
+	jp GetPredefPal
+
+GetMonNormalOrShinyPalettePointer:
+	push bc
+	call _GetMonPalettePointer
+	pop bc
+	push hl
+	call CheckShininess
+	pop hl
+	ret nc
+	; all shiny mons of the same color use the same shiny palette, offset from the normal palette
+	push bc
+	ld bc, (PREDEFPAL_BETA_SHINY_MEWMON - PREDEFPAL_RB_MEWMON) * 4
+	add hl, bc
+	pop bc
+	ret
+ENDC
 
 PushSGBPals:
 	ld a, [wJoypadDisable]
@@ -942,7 +1003,11 @@ INCLUDE "gfx/battle/hp_bar.pal"
 ExpBarPalette:
 INCLUDE "gfx/battle/exp_bar.pal"
 
+IF DEF(_GOLD)
 INCLUDE "data/pokemon/palettes.asm"
+ELIF DEF (_BLUE)
+INCLUDE "data/pokemon/sgb_palettes.asm"
+ENDC
 
 INCLUDE "data/trainers/palettes.asm"
 
