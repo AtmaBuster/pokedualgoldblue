@@ -158,8 +158,10 @@ INCBIN "gfx/overworld/heal_machine.2bpp"
 	dbsprite  11,   7, 5, 1, $7d, PAL_OW_TREE | OBP_NUM
 
 .LoadPalettes:
+IF DEF(_GOLD)
 	call IsCGB
 	jr nz, .cgb
+ENDC
 	ld a, %11100000
 	ldh [rOBP1], a
 	ret
