@@ -1095,6 +1095,7 @@ LoadMapPals:
 	add hl, hl
 	ld de, RoofPals
 	add hl, de
+IF DEF(_GOLD)
 	ld a, [wTimeOfDayPal]
 	maskbits NUM_DAYTIMES
 	cp NITE_F
@@ -1102,6 +1103,7 @@ LoadMapPals:
 rept 4
 	inc hl
 endr
+ENDC
 .morn_day
 	ld de, wBGPals1 palette PAL_BG_ROOF color 1
 	ld bc, 4

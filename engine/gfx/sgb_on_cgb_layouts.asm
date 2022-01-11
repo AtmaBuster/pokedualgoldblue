@@ -467,6 +467,7 @@ _CGB_MapPals:
 ; morn/day: shades 0, 1, 2, 3 -> 0, 1, 2, 3
 ; nite: shades 0, 1, 2, 3 -> 1, 2, 2, 3
 	push hl
+IF DEF(_GOLD)
 	ld a, [wTimeOfDayPal]
 	cp NITE_F
 	jr c, .bg_morn_day
@@ -481,10 +482,15 @@ _CGB_MapPals:
 .bg_done
 	pop hl
 	ret
-
+ENDC
 .bg_morn_day
 	call LoadHLPaletteIntoDE
+IF DEF(_GOLD)
 	jr .bg_done
+ELIF DEF(_BLUE)
+	pop hl
+	ret
+ENDC
 
 .LoadHLOBPaletteIntoDE:
 ; shades 0, 1, 2, 3 -> 0, 0, 1, 3
