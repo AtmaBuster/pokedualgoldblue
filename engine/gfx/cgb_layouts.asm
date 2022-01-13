@@ -62,6 +62,7 @@ CGBLayoutJumptable:
 	dw _CGB_MysteryGift
 	dw _CGB_Unused1E
 	dw _CGB_Pokedex_5x5
+	dw _CGB_TrainerCardKanto
 	assert_table_length NUM_SCGB_LAYOUTS
 
 _CGB_BattleGrayscale:
@@ -701,7 +702,7 @@ _CGB_TrainerCard:
 	ld a, PREDEFPAL_CGB_BADGE
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
-
+	
 	; card border
 	hlcoord 0, 0, wAttrmap
 	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
@@ -742,6 +743,85 @@ _CGB_TrainerCard:
 	hlcoord 10, 14, wAttrmap
 	lb bc, 2, 4
 	ld a, $7 ; pryce
+	call FillBoxCGB
+	call ApplyAttrmap
+	call ApplyPals
+	ld a, TRUE
+	ldh [hCGBPalUpdate], a
+	ret
+
+_CGB_TrainerCardKanto:
+	ld de, wBGPals1
+	xor a ; CHRIS
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	; Still use the Johto trainer palettes
+	; The Kanto ones are too similar
+	ld a, FALKNER
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, BUGSY
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, WHITNEY
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, MORTY
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, CHUCK
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, JASMINE
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, PRYCE
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, PREDEFPAL_CGB_BADGE
+	call GetPredefPal
+	call LoadHLPaletteIntoDE
+
+	; card border
+	hlcoord 0, 0, wAttrmap
+	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
+	ld a, $1 ; Falkner's colors for border
+	call ByteFill
+	; trainer sprite area
+	hlcoord 14, 1, wAttrmap
+	lb bc, 7, 5
+	xor a ; Red
+	call FillBoxCGB
+	; top-right corner still uses the border's palette
+	hlcoord 18, 1, wAttrmap
+	ld [hl], $1 ; Falkner's colors for border
+	hlcoord 2, 11, wAttrmap
+	lb bc, 2, 4
+	ld a, $6 ; Brock (Jasmine's palette)
+	call FillBoxCGB
+	hlcoord 6, 11, wAttrmap
+	lb bc, 2, 4
+	ld a, $3 ; Misty (Whitney's palette)
+	call FillBoxCGB
+	hlcoord 10, 11, wAttrmap
+	lb bc, 2, 4
+	ld a, $5 ; Surge (Chuck's palette)
+	call FillBoxCGB
+	hlcoord 14, 11, wAttrmap
+	lb bc, 2, 4
+	ld a, $1 ; Erika (Falkner's palette)
+	call FillBoxCGB
+	hlcoord 2, 14, wAttrmap
+	lb bc, 2, 4
+	ld a, $4 ; Koga (Morty's palette)
+	call FillBoxCGB
+	hlcoord 6, 14, wAttrmap
+	lb bc, 2, 4
+	ld a, $6 ; Sabrina (Jasmine's palette)
+	call FillBoxCGB
+	hlcoord 10, 14, wAttrmap
+	lb bc, 2, 4
+	ld a, $7 ; Blaine (Pryce's palette)
 	call FillBoxCGB
 	call ApplyAttrmap
 	call ApplyPals

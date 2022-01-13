@@ -55,6 +55,7 @@ SGBLayoutJumptable:
 	dw .SGB_MysteryGift
 	dw .SGB_Unused1E
 	dw .SGB_Pokedex_5x5
+	dw .SGB_TrainerCard
 	assert_table_length NUM_SCGB_LAYOUTS
 
 .SGB_BattleGrayscale:

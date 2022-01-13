@@ -63,6 +63,7 @@ LoadSGBLayoutCGB:
 	dw _CGB_MysteryGift
 	dw _CGB1e
 	dw _CGB_Pokedex_5x5
+	dw _CGB_TrainerCard
 
 _CGB_BattleGrayscale:
 	ld hl, PalPacket_BattleGrayscale + 1
@@ -619,18 +620,18 @@ _CGB_UnownPuzzle:
 _CGB_TrainerCard:
 	; Palettes for border and trainers
 	ld de, wBGPals1
-	ld a, PREDEFPAL_RB_CYANMON
+	ld a, PREDEFPAL_DIPLOMA
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
-	ld a, PREDEFPAL_RB_REDMON
+	ld a, PREDEFPAL_DIPLOMA
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
-	ld a, PREDEFPAL_RB_MEWMON
+	ld a, PREDEFPAL_DIPLOMA
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
 	; palette for the badges when visible
 	ld de, wOBPals1
-	ld a, PREDEFPAL_RB_GRAYMON
+	ld a, PREDEFPAL_DIPLOMA
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
 
