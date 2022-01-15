@@ -17,6 +17,7 @@ Script_Whiteout:
 	callasm HalveMoney
 	callasm GetWhiteoutSpawn
 	farscall Script_AbortBugContest
+	farscall Script_AbortSafariGame
 	special WarpToSpawnPoint
 	newloadmap MAPSETUP_WARP
 	endall

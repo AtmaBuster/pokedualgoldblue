@@ -31,10 +31,12 @@ StartMenu::
 	ld [wMenuCursorPosition], a
 	call .DrawMenuAccount
 	call DrawVariableLengthMenuBox
+	call .DrawSafariGameStatusBox
 	call .DrawBugContestStatusBox
 	call SafeUpdateSprites
 	call _OpenAndCloseMenu_HDMATransferTilemapAndAttrmap
 	farcall LoadFonts_NoOAMUpdate
+	call .DrawSafariGameStatus
 	call .DrawBugContestStatus
 	call UpdateTimePals
 	jr .Select
@@ -149,6 +151,7 @@ StartMenu::
 	call ReloadTilesetAndPalettes
 	call .DrawMenuAccount
 	call DrawVariableLengthMenuBox
+	call .DrawSafariGameStatus
 	call .DrawBugContestStatus
 	call UpdateSprites
 	call ReloadPalettes
@@ -386,6 +389,13 @@ endr
 	and 1 << MENU_ACCOUNT
 	ret
 
+.DrawSafariGameStatusBox:
+	ld hl, wStatusFlags2
+	bit STATUSFLAGS2_IN_SAFARI_GAME_F, [hl]
+	ret z
+	farcall StartMenu_DrawSafariGameStatusBox
+	ret
+
 .DrawBugContestStatusBox:
 	ld hl, wStatusFlags2
 	bit STATUSFLAGS2_BUG_CONTEST_TIMER_F, [hl]
@@ -393,12 +403,17 @@ endr
 	farcall StartMenu_DrawBugContestStatusBox
 	ret
 
+.DrawSafariGameStatus:
+	ld hl, wStatusFlags2
+	bit STATUSFLAGS2_IN_SAFARI_GAME_F, [hl]
+	ret z
+	farcall StartMenu_PrintSafariGameStatus
+	ret
+
 .DrawBugContestStatus:
 	ld hl, wStatusFlags2
 	bit STATUSFLAGS2_BUG_CONTEST_TIMER_F, [hl]
-	jr nz, .contest
-	ret
-.contest
+	ret z
 	farcall StartMenu_PrintBugContestStatus
 	ret
 

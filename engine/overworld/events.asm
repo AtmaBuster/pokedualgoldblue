@@ -891,6 +891,10 @@ CountStep:
 	farcall CheckSpecialPhoneCall
 	jr c, .doscript
 
+	; If Safari steps run out, don't count the step
+	call DoSafariStep
+	jr c, .doscript
+
 	; If Repel wore off, don't count the step.
 	call DoRepelStep
 	jr c, .doscript
@@ -963,6 +967,29 @@ DoRepelStep:
 
 	ld a, BANK(RepelWoreOffScript)
 	ld hl, RepelWoreOffScript
+	call CallScript
+	scf
+	ret
+
+DoSafariStep:
+	; only do step if in Safari game
+	ld a, [wStatusFlags2]
+	bit STATUSFLAGS2_IN_SAFARI_GAME_F, a
+	ret z
+
+	ld hl, wSafariSteps + 1
+	ld a, [hld]
+	ld d, [hl]
+	ld e, a
+	dec de
+	ld a, d
+	ld [hli], a
+	ld [hl], e
+	or e
+	ret nz ; or never sets carry
+
+	ld a, BANK(SafariGameOverScript)
+	ld hl, SafariGameOverScript
 	call CallScript
 	scf
 	ret
@@ -1169,8 +1196,16 @@ RandomEncounter::
 	ret
 
 .ok
+	ld a, [wStatusFlags2]
+	bit STATUSFLAGS2_IN_SAFARI_GAME_F, a
+	jr nz, .ok_safari
 	ld a, BANK(WildBattleScript)
 	ld hl, WildBattleScript
+	jr .done
+
+.ok_safari
+	ld a, BANK(SafariGameBattleScript)
+	ld hl, SafariGameBattleScript
 	jr .done
 
 .ok_bug_contest

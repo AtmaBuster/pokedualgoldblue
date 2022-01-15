@@ -596,6 +596,7 @@ FlyFunction:
 	special UpdateTimePals
 	callasm FlyFromAnim
 	farscall Script_AbortBugContest
+	farscall Script_AbortSafariGame
 	special WarpToSpawnPoint
 	callasm SkipUpdateMapSprites
 	loadvar VAR_MOVEMENT, PLAYER_NORMAL
@@ -830,6 +831,7 @@ EscapeRopeOrDig:
 	playsound SFX_WARP_TO
 	applymovement PLAYER, .DigOut
 	farscall Script_AbortBugContest
+	farscall Script_AbortSafariGame
 	special WarpToSpawnPoint
 	loadvar VAR_MOVEMENT, PLAYER_NORMAL
 	newloadmap MAPSETUP_DOOR
@@ -915,6 +917,7 @@ TeleportFunction:
 	playsound SFX_WARP_TO
 	applymovement PLAYER, .TeleportFrom
 	farscall Script_AbortBugContest
+	farscall Script_AbortSafariGame
 	special WarpToSpawnPoint
 	loadvar VAR_MOVEMENT, PLAYER_NORMAL
 	newloadmap MAPSETUP_TELEPORT
@@ -1450,7 +1453,12 @@ FishFunction:
 	ld [wTempWildMonSpecies], a
 	ld a, e
 	ld [wCurPartyLevel], a
+	ld a, [wStatusFlags2]
+	bit STATUSFLAGS2_IN_SAFARI_GAME_F, a
+	ld a, BATTLETYPE_SAFARI
+	jr nz, .safari
 	ld a, BATTLETYPE_FISH
+.safari
 	ld [wBattleType], a
 	ld a, $2
 	ret

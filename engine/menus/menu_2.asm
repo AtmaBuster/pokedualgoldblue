@@ -112,17 +112,20 @@ ShowMoney_TerminatorString:
 UnusedEmptyString: ; unreferenced
 	db "@"
 
-StartMenu_PrintSafariGameStatus: ; unreferenced
-	ld hl, wOptions
-	ld a, [hl]
-	push af
-	set NO_TEXT_SCROLL, [hl]
+StartMenu_DrawSafariGameStatusBox:
 	hlcoord 0, 0
 	ld b, 3
 	ld c, 7
 	call Textbox
+	ret
+
+StartMenu_PrintSafariGameStatus:
+	ld hl, wOptions
+	ld a, [hl]
+	push af
+	set NO_TEXT_SCROLL, [hl]
 	hlcoord 1, 1
-	ld de, wSafariTimeRemaining
+	ld de, wSafariSteps
 	lb bc, 2, 3
 	call PrintNum
 	hlcoord 4, 1
@@ -131,7 +134,7 @@ StartMenu_PrintSafariGameStatus: ; unreferenced
 	hlcoord 1, 3
 	ld de, .booru_ko
 	call PlaceString
-	hlcoord 5, 3
+	hlcoord 6, 3
 	ld de, wSafariBallsRemaining
 	lb bc, 1, 2
 	call PrintNum
@@ -140,9 +143,9 @@ StartMenu_PrintSafariGameStatus: ; unreferenced
 	ret
 
 .slash_500
-	db "／５００@"
+	db "/500@"
 .booru_ko
-	db "ボール　　　こ@"
+	db "BALL×@"
 
 StartMenu_DrawBugContestStatusBox:
 	hlcoord 0, 0

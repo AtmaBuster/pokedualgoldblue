@@ -92,4 +92,5 @@ MapScenes::
 	scene_var LANCES_ROOM_KANTO,                           wLancesRoomKantoSceneID
 	scene_var CHAMPIONS_ROOM,                              wChampionsRoomSceneID
 	scene_var HALL_OF_FAME_KANTO,                          wHallOfFameKantoSceneID
+	scene_var SAFARI_ZONE_GATE,                            wSafariZoneGateSceneID
 	db -1 ; end

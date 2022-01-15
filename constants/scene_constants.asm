@@ -177,3 +177,9 @@ SCENE_ALWAYS   EQU -1
 ; wLancesRoomKantoSceneID
 	const_def 2
 	const SCENE_FIGHT_LANCE ; 2
+
+; wSafariZoneGateSceneID
+	const_def
+	const SCENE_SAFARI_ZONE_GATE_NOTHING   ; 0
+	const SCENE_SAFARI_ZONE_GATE_TRY_LEAVE ; 1
+	const SCENE_SAFARI_ZONE_GATE_GAME_OVER ; 2

@@ -2553,8 +2553,9 @@ wAgathasRoomSceneID::                             db
 wLancesRoomKantoSceneID::                         db
 wChampionsRoomSceneID::                           db
 wHallOfFameKantoSceneID::                         db
+wSafariZoneGateSceneID::                          db
 
-	ds 99
+	ds 98
 
 wKantoDayCareFlags:: db
 wKantoDaycareMonNickname:: ds MON_NAME_LENGTH
@@ -2660,7 +2661,7 @@ wHappinessStepCount:: db
 
 wParkBallsRemaining::
 wSafariBallsRemaining:: db
-wSafariTimeRemaining:: dw
+wSafariSteps:: dw
 
 wPhoneList:: ds CONTACT_LIST_SIZE + 1
 
