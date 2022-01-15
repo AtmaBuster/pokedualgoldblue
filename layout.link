@@ -200,6 +200,8 @@ ROMX $6d
 	"Move Descriptions"
 ROMX $6e
 	"Item Descriptions"
+ROMX $6f
+	"Gambling"
 ROMX $70
 	"bank70"
 	"Pokégear GFX"
