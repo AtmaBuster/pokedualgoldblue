@@ -22,6 +22,17 @@ FishGroups:
 	fishgroup 50 percent + 1, .Qwilfish_Old,         .Qwilfish_Good,         .Qwilfish_Super
 	fishgroup 50 percent + 1, .Remoraid_Old,         .Remoraid_Good,         .Remoraid_Super
 	fishgroup 50 percent + 1, .Qwilfish_NoSwarm_Old, .Qwilfish_NoSwarm_Good, .Qwilfish_NoSwarm_Super
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_Default
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_1
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_2
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_3
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_4
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_5
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_6
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_7
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_8
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_9
+	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_10
 	assert_table_length NUM_FISHGROUPS
 
 .Shore_Old:
@@ -206,6 +217,79 @@ FishGroups:
 	db  70 percent,     time_group 7
 	db  90 percent + 1, MAGIKARP,   40
 	db 100 percent,     REMORAID,   40
+
+.Kanto_Old:
+	db  70 percent + 1, MAGIKARP,    5
+	db  85 percent + 1, MAGIKARP,    5
+	db 100 percent,     MAGIKARP,    5
+.Kanto_Good:
+.Kanto_Super_Default:
+; Old and Good Rods work everywhere in Gen 1 Kanto, but Super Rod doesn't
+; We'll compromise and make Super Rod behave like Good Rod by default
+	db  25 percent,     GOLDEEN,    10
+	db  50 percent,     POLIWAG,    10
+	db  75 percent,     POLIWAG,    10
+	db 100 percent,     GOLDEEN,    10
+
+.Kanto_Super_1:
+	db  25 percent,   TENTACOOL,    15
+	db  50 percent,     POLIWAG,    15
+	db  75 percent,     POLIWAG,    15
+	db 100 percent,   TENTACOOL,    15
+
+.Kanto_Super_2:
+	db  25 percent,     GOLDEEN,    15
+	db  50 percent,     POLIWAG,    15
+	db  75 percent,     POLIWAG,    15
+	db 100 percent,     GOLDEEN,    15
+
+.Kanto_Super_3:
+	db  33 percent,     PSYDUCK,    15
+	db  67 percent,     GOLDEEN,    15
+	db  99 percent,      KRABBY,    15
+	db 100 percent,      KRABBY,    15
+
+.Kanto_Super_4:
+	db  25 percent,      KRABBY,    15
+	db  50 percent,    SHELLDER,    15
+	db  75 percent,    SHELLDER,    15
+	db 100 percent,      KRABBY,    15
+
+.Kanto_Super_5:
+	db  25 percent,   POLIWHIRL,    23
+	db  50 percent,    SLOWPOKE,    15
+	db  75 percent,    SLOWPOKE,    15
+	db 100 percent,   POLIWHIRL,    23
+
+.Kanto_Super_6:
+	db  25 percent,     DRATINI,    15
+	db  50 percent,      KRABBY,    15
+	db  75 percent,     PSYDUCK,    15
+	db 100 percent,    SLOWPOKE,    15
+
+.Kanto_Super_7:
+	db  25 percent,   TENTACOOL,     5
+	db  50 percent,      KRABBY,    15
+	db  75 percent,     GOLDEEN,    15
+	db 100 percent,    MAGIKARP,    15
+
+.Kanto_Super_8:
+	db  25 percent,      STARYU,    15
+	db  50 percent,      HORSEA,    15
+	db  75 percent,    SHELLDER,    15
+	db 100 percent,     GOLDEEN,    15
+
+.Kanto_Super_9:
+	db  25 percent,     SLOWBRO,    23
+	db  50 percent,     SEAKING,    23
+	db  75 percent,     KINGLER,    23
+	db 100 percent,      SEADRA,    23
+
+.Kanto_Super_10:
+	db  25 percent,     SEAKING,    23
+	db  50 percent,      KRABBY,    15
+	db  75 percent,     GOLDEEN,    15
+	db 100 percent,    MAGIKARP,    15
 
 TimeFishGroups:
 	;  day              nite
