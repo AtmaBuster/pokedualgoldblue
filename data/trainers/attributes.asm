@@ -398,275 +398,280 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; vv placeholder vv
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
+; Gen 2 payouts are base * last mon level * 4
+; Gen 1 payouts are base * last mon level / 100
+; These payouts are ceil(Gen 1 rate / 400)
+; So payouts are slightly higher than in Gen 1
+; AI settings are copied from equivalent Gen 2 trainers
 
 ; Youngster / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
+	db 4 ; base reward
 	dw AI_BASIC | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Bug Catcher / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 3 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Lass / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 4 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Sailor / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Jr Trainer M / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 5 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Jr Trainer F / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 5 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Pokemaniac / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 13 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Super Nerd / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 7 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Hiker / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 9 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Biker / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 5 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Burglar / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 23 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Engineer / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 13 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Fisher / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 9 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Swimmer / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 2 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OFFENSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Cue Ball / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 7 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY | AI_OFFENSIVE
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Gambler / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 18 ; base reward
+	dw AI_BASIC | AI_OPPORTUNIST | AI_AGGRESSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Beauty / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 18 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Psychic / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 3 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Rocker / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 7 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Juggler / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 9 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Tamer / Gen1
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Bird Keeper / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 7 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Blackbelt / Gen1
+	db X_ATTACK, NO_ITEM ; items
+	db 7 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Rival 1 / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 9 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Prof Oak / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 25 ; base reward
+	dw AI_BASIC | AI_AGGRESSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Scientist / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 13 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Giovanni / Gen1
+	db GUARD_SPEC, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Rocket / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Cooltrainer M / Gen1
+	db X_ATTACK, NO_ITEM ; items
+	db 9 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Cooltrainer F / Gen1
+	db HYPER_POTION, NO_ITEM ; items
+	db 9 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Bruno / Gen1
+	db X_DEFEND, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Brock / Gen1
+	db FULL_HEAL, FULL_HEAL ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Misty / Gen1
+	db X_DEFEND, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Lt. Surge / Gen1
+	db X_SPEED, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Erika / Gen1
+	db SUPER_POTION, SUPER_POTION ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Koga / Gen1
+	db X_ATTACK, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Blaine / Gen1
+	db SUPER_POTION, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Sabrina / Gen1
+	db HYPER_POTION, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Gentleman / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 18 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_AGGRESSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Rival 2 / Gen1
+	db POTION, NO_ITEM ; items
+	db 17 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Rival 3 / Gen1
+	db FULL_RESTORE, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Lorelei / Gen1
+	db SUPER_POTION, SUPER_POTION ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
+; Channeler / Gen1
 	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Agatha / Gen1
+	db SUPER_POTION, SUPER_POTION ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Youngster / Gen1
-	db NO_ITEM, NO_ITEM ; items
-	db 0 ; base reward
-	dw AI_BASIC | AI_STATUS
+; Lance / Gen1
+	db HYPER_POTION, HYPER_POTION ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 	assert_table_length NUM_TRAINER_CLASSES
