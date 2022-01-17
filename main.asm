@@ -252,8 +252,6 @@ INCLUDE "engine/rtc/timeset.asm"
 INCLUDE "engine/pokegear/pokegear.asm"
 INCLUDE "engine/overworld/landmarks.asm"
 INCLUDE "engine/events/fish.asm"
-INCLUDE "engine/games/slot_machine.asm"
-
 
 SECTION "bank2E", ROMX
 
@@ -370,6 +368,11 @@ INCLUDE "data/moves/descriptions.asm"
 SECTION "Item Descriptions", ROMX
 
 INCLUDE "data/items/descriptions.asm"
+
+
+SECTION "Gambling", ROMX
+
+INCLUDE "engine/games/slot_machine.asm"
 
 
 SECTION "bank70", ROMX

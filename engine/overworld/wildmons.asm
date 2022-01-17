@@ -1,13 +1,21 @@
 LoadWildMonData:
 	call _GrassWildmonLookup
-	jr c, .copy
-	ld hl, wMornEncounterRate
+	jr c, .check_region
 	xor a
+
+.fill
+	ld hl, wMornEncounterRate
 	ld [hli], a
 	ld [hli], a
 	ld [hl], a
 	jr .done_copy
-
+.check_region
+	call IsInJohto
+	jr z, .copy
+	inc hl
+	inc hl
+	ld a, [hl]
+	jr .fill
 .copy
 	inc hl
 	inc hl
@@ -49,9 +57,9 @@ FindNest:
 .kanto
 	decoord 0, 0
 	ld hl, KantoGrassWildMons
-	call .FindGrass
+	call .FindKanto
 	ld hl, KantoWaterWildMons
-	jp .FindWater
+	jp .FindKanto
 
 .FindGrass:
 	ld a, [hl]
@@ -98,6 +106,28 @@ FindNest:
 	ld bc, WATER_WILDDATA_LENGTH
 	add hl, bc
 	jr .FindWater
+
+.FindKanto:
+	ld a, [hl]
+	cp -1
+	ret z
+	push hl
+	ld a, [hli]
+	ld b, a
+	ld a, [hli]
+	ld c, a
+	inc hl
+	ld a, NUM_KANTOMON
+	call .SearchMapForMon
+	jr nc, .next_kanto
+	ld [de], a
+	inc de
+
+.next_kanto
+	pop hl
+	ld bc, KANTO_WILDDATA_LENGTH
+	add hl, bc
+	jr .FindKanto
 
 .SearchMapForMon:
 	inc hl
@@ -275,9 +305,12 @@ ChooseWildEncounter:
 	inc hl
 	inc hl
 	inc hl
+	call IsInJohto
+	ld de, KantoMonProbTable
+	jr nz, .roll_encounter
 	call CheckOnWater
 	ld de, WaterMonProbTable
-	jr z, .watermon
+	jr z, .roll_encounter
 	inc hl
 	inc hl
 	ld a, [wTimeOfDay]
@@ -285,7 +318,7 @@ ChooseWildEncounter:
 	call AddNTimes
 	ld de, GrassMonProbTable
 
-.watermon
+.roll_encounter
 ; hl contains the pointer to the wild mon data, let's save that to the stack
 	push hl
 .randomloop
@@ -405,8 +438,8 @@ _GrassWildmonLookup:
 	ret c
 	ld hl, JohtoGrassWildMons
 	ld de, KantoGrassWildMons
-	call _JohtoWildmonCheck
 	ld bc, GRASS_WILDDATA_LENGTH
+	call _JohtoWildmonCheck
 	jr _NormalWildmonOK
 
 _WaterWildmonLookup:
@@ -416,8 +449,8 @@ _WaterWildmonLookup:
 	ret c
 	ld hl, JohtoWaterWildMons
 	ld de, KantoWaterWildMons
-	call _JohtoWildmonCheck
 	ld bc, WATER_WILDDATA_LENGTH
+	call _JohtoWildmonCheck
 	jr _NormalWildmonOK
 
 _JohtoWildmonCheck:
@@ -426,6 +459,7 @@ _JohtoWildmonCheck:
 	ret z
 	ld h, d
 	ld l, e
+	ld bc, KANTO_WILDDATA_LENGTH
 	ret
 
 _SwarmWildmonCheck:
@@ -773,6 +807,8 @@ ValidateTempWildMonSpecies:
 
 ; Finds a rare wild Pokemon in the route of the trainer calling, then checks if it's been Seen already.
 ; The trainer will then tell you about the Pokemon if you haven't seen it.
+; This does not need to be updated for Kanto's new wildmon structure.
+; No Kanto trainers have phone calls anymore.
 RandomUnseenWildMon:
 	farcall GetCallerLocation
 	ld d, b
@@ -780,9 +816,10 @@ RandomUnseenWildMon:
 	ld hl, JohtoGrassWildMons
 	ld bc, GRASS_WILDDATA_LENGTH
 	call LookUpWildmonsForMapDE
-	jr c, .GetGrassmon
-	ld hl, KantoGrassWildMons
-	call LookUpWildmonsForMapDE
+	; don't bother checking Kanto
+	; jr c, .GetGrassmon
+	; ld hl, KantoGrassWildMons
+	; call LookUpWildmonsForMapDE
 	jr nc, .done
 
 .GetGrassmon:
@@ -845,15 +882,18 @@ RandomUnseenWildMon:
 	text_end
 
 RandomPhoneWildMon:
+	; This does not need to be updated for Kanto's new wildmon structure.
+	; No Kanto trainers have phone calls anymore.
 	farcall GetCallerLocation
 	ld d, b
 	ld e, c
 	ld hl, JohtoGrassWildMons
 	ld bc, GRASS_WILDDATA_LENGTH
 	call LookUpWildmonsForMapDE
-	jr c, .ok
-	ld hl, KantoGrassWildMons
-	call LookUpWildmonsForMapDE
+	; don't bother checking Kanto
+	; jr c, .ok
+	; ld hl, KantoGrassWildMons
+	; call LookUpWildmonsForMapDE
 
 .ok
 	ld bc, 5 + 0 * 2

@@ -172,6 +172,8 @@ OaksPKMNTalk3:
 
 OaksPKMNTalk4:
 ; Choose a random route, and a random Pokemon from that route.
+; This does not need to be updated for Kanto's different wild structure.
+; Oak only talks about Johto routes.
 .sample
 	call Random
 	and %11111
