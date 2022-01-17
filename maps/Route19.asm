@@ -40,8 +40,7 @@ TrainerSwimmerRichard:
 	done
 
 .BeatenText:
-	text "All"
-	line "warmed up!"
+	text "All warmed up!"
 	done
 
 .AfterText:
@@ -65,8 +64,7 @@ TrainerSwimmerReece:
 	done
 
 .BeatenText:
-	text "Ooh!"
-	line "That's chilly!"
+	text "Ooh! That's chilly!"
 	done
 
 .AfterText:
@@ -90,8 +88,7 @@ TrainerSwimmerMatthew:
 	done
 
 .BeatenText:
-	text "Belly"
-	line "flop!"
+	text "Belly flop!"
 	done
 
 .AfterText:
@@ -164,8 +161,7 @@ TrainerSwimmerTony:
 	done
 
 .BeatenText:
-	text "Ooh!"
-	line "Traumatic!"
+	text "Ooh! Traumatic!"
 	done
 
 .AfterText:
@@ -190,8 +186,7 @@ TrainerBeautyAnya:
 	done
 
 .BeatenText:
-	text "Oh!"
-	line "I lost!"
+	text "Oh! I lost!"
 	done
 
 .AfterText:
@@ -241,8 +236,7 @@ TrainerSwimmerAxle:
 	done
 
 .BeatenText:
-	text "Ooh!"
-	line "Dangerous!"
+	text "Ooh! Dangerous!"
 	done
 
 .AfterText:
@@ -266,8 +260,7 @@ TrainerBeautyConnie:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "exhausted..."
+	text "I'm exhausted..."
 	done
 
 .AfterText:

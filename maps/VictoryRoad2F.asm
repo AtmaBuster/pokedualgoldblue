@@ -32,8 +32,8 @@ VictoryRoad2F_MapScripts:
 	endcallback
 
 .SetUpStoneTable:
-	checkevent EVENT_VICTORY_ROAD_BOULDER_1B
-	iffalse .UseStoneTable2
+	; checkevent EVENT_VICTORY_ROAD_BOULDER_1B
+	; iffalse .UseStoneTable2
 	usestonetable .StoneTable1
 	endcallback
 
@@ -43,9 +43,11 @@ VictoryRoad2F_MapScripts:
 
 .StoneTable1:
 	stonetable 0, VICTORYROAD2F_KANTO_BOULDER1, .Boulder1
+	stonetable 0, VICTORYROAD2F_KANTO_BOULDER3, .Boulder2
 	db -1 ; end
 
 .StoneTable2:
+	stonetable 0, VICTORYROAD2F_KANTO_BOULDER1, .Boulder1
 	stonetable 0, VICTORYROAD2F_KANTO_BOULDER3, .Boulder2
 	db -1 ; end
 
@@ -110,8 +112,7 @@ TrainerJugglerNelson:
 	done
 
 .BeatenText:
-	text "You"
-	line "got me!"
+	text "You got me!"
 	done
 
 .AfterText:
@@ -135,8 +136,7 @@ TrainerTamerVincent:
 	done
 
 .BeatenText:
-	text "I got"
-	line "whipped!"
+	text "I got whipped!"
 	done
 
 .AfterText:
@@ -163,8 +163,7 @@ TrainerPokemaniacDawson:
 	done
 
 .BeatenText:
-	text "No!"
-	line "Unbelievable!"
+	text "No! Unbelievable!"
 	done
 
 .AfterText:
@@ -190,8 +189,7 @@ TrainerJugglerGregory:
 	done
 
 .BeatenText:
-	text "Well"
-	line "done!"
+	text "Well done!"
 	done
 
 .AfterText:

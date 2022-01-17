@@ -30,8 +30,8 @@ TrainerGamblerHugo:
 	done
 
 .BeatenText:
-	text "Atcha!"
-	line "Didn't go my way!"
+	text "Atcha! Didn't go"
+	line "my way!"
 	done
 
 .AfterText:
@@ -56,8 +56,7 @@ TrainerGamblerJasper:
 	done
 
 .BeatenText:
-	text "I had"
-	line "a chance!"
+	text "I had a chance!"
 	done
 
 .AfterText:
@@ -82,8 +81,8 @@ TrainerYoungsterEddie:
 	done
 
 .BeatenText:
-	text "Huh?"
-	line "That's not right!"
+	text "Huh? That's not"
+	line "right!"
 	done
 
 .AfterText:
@@ -108,8 +107,7 @@ TrainerEngineerBraxton:
 	done
 
 .BeatenText:
-	text "That"
-	line "was electric!"
+	text "That was electric!"
 	done
 
 .AfterText:
@@ -134,8 +132,8 @@ TrainerYoungsterDillon:
 	done
 
 .BeatenText:
-	text "My"
-	line "#MON couldn't!"
+	text "My #MON"
+	line "couldn't!"
 	done
 
 .AfterText:
@@ -159,8 +157,7 @@ TrainerGamblerDirk:
 	done
 
 .BeatenText:
-	text "My"
-	line "first loss!"
+	text "My first loss!"
 	done
 
 .AfterText:
@@ -184,8 +181,8 @@ TrainerGamblerDarian:
 	done
 
 .BeatenText:
-	text "I saw"
-	line "this coming..."
+	text "I saw this"
+	line "coming..."
 	done
 
 .AfterText:
@@ -209,9 +206,9 @@ TrainerYoungsterYasu:
 	done
 
 .BeatenText:
-	text "Darn!"
-	line "I need to make my"
-	cont "#MON stronger!"
+	text "Darn! I need to"
+	line "make my #MON"
+	cont "stronger!"
 	done
 
 .AfterText:
@@ -240,8 +237,8 @@ TrainerEngineerBernie:
 	done
 
 .BeatenText:
-	text "Whoa!"
-	line "You spark plug!"
+	text "Whoa! You spark"
+	line "plug!"
 	done
 
 .AfterText:
@@ -265,8 +262,8 @@ TrainerYoungsterDave:
 	done
 
 .BeatenText:
-	text "Too"
-	line "much, too young!"
+	text "Too much, too"
+	line "young!"
 	done
 
 .AfterText:

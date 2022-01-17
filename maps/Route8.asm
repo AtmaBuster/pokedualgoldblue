@@ -31,8 +31,7 @@ TrainerSuperNerdAidan:
 	done
 
 .BeatenText:
-	text "Ow!"
-	line "Meltdown!"
+	text "Ow! Meltdown!"
 	done
 
 .AfterText:
@@ -56,8 +55,8 @@ TrainerGamblerStan:
 	done
 
 .BeatenText:
-	text "Drat!"
-	line "Came up short!"
+	text "Drat! Came up"
+	line "short!"
 	done
 
 .AfterText:
@@ -81,8 +80,7 @@ TrainerSuperNerdGlenn:
 	done
 
 .BeatenText:
-	text "It's"
-	line "not logical!"
+	text "It's not logical!"
 	done
 
 .AfterText:
@@ -133,8 +131,8 @@ TrainerSuperNerdLeslie:
 	done
 
 .BeatenText:
-	text "I'll"
-	line "stay with school."
+	text "I'll stay with"
+	line "school."
 	done
 
 .AfterText:
@@ -185,8 +183,7 @@ TrainerLassMegan:
 	done
 
 .BeatenText:
-	text "Look what"
-	line "you did!"
+	text "Look what you did!"
 	done
 
 .AfterText:
@@ -212,8 +209,8 @@ TrainerGamblerRich:
 	done
 
 .BeatenText:
-	text "Missed"
-	line "the big score!"
+	text "Missed the big"
+	line "score!"
 	done
 
 .AfterText:

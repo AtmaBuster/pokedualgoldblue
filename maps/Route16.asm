@@ -94,8 +94,8 @@ TrainerBikerLao:
 	done
 
 .BeatenText:
-	text "Don't you"
-	line "dare laugh!"
+	text "Don't you dare"
+	line "laugh!"
 	done
 
 .AfterText:
@@ -120,8 +120,7 @@ TrainerCueBallKoji:
 	done
 
 .BeatenText:
-	text "Knock"
-	line "out!"
+	text "Knock out!"
 	done
 
 .AfterText:
@@ -145,8 +144,7 @@ TrainerCueBallLuke:
 	done
 
 .BeatenText:
-	text "You"
-	line "little rat!"
+	text "You little rat!"
 	done
 
 .AfterText:
@@ -196,8 +194,7 @@ TrainerCueBallCamron:
 	done
 
 .BeatenText:
-	text "Bad,"
-	line "bad, bad!"
+	text "Bad, bad, bad!"
 	done
 
 .AfterText:
@@ -221,8 +218,7 @@ TrainerBikerRuben:
 	done
 
 .BeatenText:
-	text "Don't make"
-	line "me mad!"
+	text "Don't make me mad!"
 	done
 
 .AfterText:

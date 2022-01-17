@@ -35,8 +35,7 @@ TrainerGentlemanThomas:
 	done
 
 .BeatenText:
-	text "My, my"
-	line "friends..."
+	text "My, my friends..."
 	done
 
 .AfterText:
@@ -60,8 +59,8 @@ TrainerGentlemanArthur:
 	done
 
 .BeatenText:
-	text "Humph!"
-	line "You rude child!"
+	text "Humph! You rude"
+	line "child!"
 	done
 
 .AfterText:
@@ -85,8 +84,7 @@ TrainerYoungsterTyler:
 	done
 
 .BeatenText:
-	text "Wow! "
-	line "You're great!"
+	text "Wow! You're great!"
 	done
 
 .AfterText:
@@ -114,9 +112,9 @@ TrainerLassAnn:
 	done
 
 .BeatenText:
-	text "Oh no!"
-	line "I went around the"
-	cont "world for these!"
+	text "Oh no! I went"
+	line "around the world"
+	cont "for these!"
 	done
 
 .AfterText:

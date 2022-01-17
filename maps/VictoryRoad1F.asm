@@ -55,8 +55,7 @@ TrainerCooltrainerFNaomi:
 	done
 
 .BeatenText:
-	text "I"
-	line "lost out!"
+	text "I lost out!"
 	done
 
 .AfterText:
@@ -81,8 +80,7 @@ TrainerCooltrainerMHank:
 	done
 
 .BeatenText:
-	text "I"
-	line "had a chance..."
+	text "I had a chance..."
 	done
 
 .AfterText:

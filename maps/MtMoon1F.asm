@@ -35,8 +35,8 @@ TrainerHikerMarcos:
 	done
 
 .BeatenText:
-	text "Wow!"
-	line "Shocked again!"
+	text "Wow! Shocked"
+	line "again!"
 	done
 
 .AfterText:
@@ -61,8 +61,7 @@ TrainerYoungsterJosh:
 	done
 
 .BeatenText:
-	text "Losing"
-	line "stinks!"
+	text "Losing stinks!"
 	done
 
 .AfterText:
@@ -88,8 +87,7 @@ TrainerLassMiriam:
 	done
 
 .BeatenText:
-	text "Oh!"
-	line "I lost it!"
+	text "Oh! I lost it!"
 	done
 
 .AfterText:
@@ -113,8 +111,8 @@ TrainerSuperNerdJovan:
 	done
 
 .BeatenText:
-	text "My"
-	line "#MON won't do!"
+	text "My #MON won't"
+	line "do!"
 	done
 
 .AfterText:
@@ -165,8 +163,7 @@ TrainerBugCatcherKent:
 	done
 
 .BeatenText:
-	text "You"
-	line "got me!"
+	text "You got me!"
 	done
 
 .AfterText:
@@ -192,8 +189,7 @@ TrainerBugCatcherRobby:
 	done
 
 .BeatenText:
-	text "I"
-	line "lost."
+	text "I lost."
 	done
 
 .AfterText:

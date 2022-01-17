@@ -87,8 +87,8 @@ TrainerBurglarArnie:
 	done
 
 .BeatenText:
-	text "Oh no!"
-	line "My bag of loot!"
+	text "Oh no! My bag of"
+	line "loot!"
 	done
 
 .AfterText:

@@ -73,8 +73,8 @@ ENDC
 	done
 
 .WinText:
-	text "I took"
-	line "you for granted."
+	text "I took you for"
+	line "granted."
 
 	para "As proof of your"
 	line "victory, here's"

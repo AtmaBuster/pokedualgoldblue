@@ -94,8 +94,9 @@ ENDC
 
 .WinText:
 	text "Ha!"
-	line "That was a truly"
-	cont "intense fight!"
+	
+	para "That was a truly"
+	line "intense fight!"
 	cont "You have won!"
 	cont "As proof, here is"
 	cont "the EARTHBADGE!"
@@ -244,8 +245,7 @@ TrainerCooltrainerMYuji:
 	done
 
 .BeatenText:
-	text "I"
-	line "ran out of gas!"
+	text "I ran out of gas!"
 	done
 
 .AfterText:
@@ -296,8 +296,8 @@ TrainerTamerJason:
 	done
 
 .BeatenText:
-	text "You are in"
-	line "perfect harmony!"
+	text "You are in perfect"
+	line "harmony!"
 	done
 
 .AfterText:
@@ -348,8 +348,7 @@ TrainerCooltrainerMWren:
 	done
 
 .BeatenText:
-	text "I"
-	line "lost my grip!"
+	text "I lost my grip!"
 	done
 
 .AfterText:
@@ -401,8 +400,7 @@ TrainerTamerCole:
 	done
 
 .BeatenText:
-	text "Yowch!"
-	line "Whiplash!"
+	text "Yowch! Whiplash!"
 	done
 
 .AfterText:
@@ -428,8 +426,7 @@ TrainerCooltrainerMSaul:
 	done
 
 .BeatenText:
-	text "I"
-	line "was beaten?"
+	text "I was beaten?"
 	done
 
 .AfterText:
@@ -459,6 +456,6 @@ ViridianGym_MapEvents:
 	object_event 13,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerMWren, -1
 	object_event 10,  1, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBlackbeltTakashi, -1
 	object_event  2, 16, SPRITE_KANTO_ROCKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerTamerCole, -1
-	object_event  6,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 4, TrainerCooltrainerMSaul, -1
+	object_event  6,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerCooltrainerMSaul, -1
 	object_event 16, 15, SPRITE_KANTO_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ViridianGym_GymGuyScript, -1
 	object_event 16,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ViridianGym_ReviveScript, EVENT_VIRIDIAN_GYM_REVIVE

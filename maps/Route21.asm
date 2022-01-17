@@ -55,8 +55,7 @@ TrainerFisherWade:
 	done
 
 .BeatenText:
-	text "Darn"
-	line "MAGIKARP!"
+	text "Darn MAGIKARP!"
 	done
 
 .AfterText:
@@ -104,8 +103,7 @@ TrainerCueBallIan:
 	done
 
 .BeatenText:
-	text "Cheap"
-	line "shot!"
+	text "Cheap shot!"
 	done
 
 .AfterText:
@@ -130,8 +128,7 @@ TrainerSwimmerJack:
 	done
 
 .BeatenText:
-	text "Diver!!"
-	line "Down!!"
+	text "Diver!! Down!!"
 	done
 
 .AfterText:
@@ -155,8 +152,8 @@ TrainerSwimmerJerome:
 	done
 
 .BeatenText:
-	text "Pant..."
-	line "pant...pant..."
+	text "Pant...pant..."
+	line "pant..."
 	done
 
 .AfterText:
@@ -182,8 +179,7 @@ TrainerSwimmerRoland:
 	done
 
 .BeatenText:
-	text "Yow!"
-	line "I lost!"
+	text "Yow! I lost!"
 	done
 
 .AfterText:
@@ -207,8 +203,8 @@ TrainerFisherClaude:
 	done
 
 .BeatenText:
-	text "Sorry!"
-	line "I didn't mean it!"
+	text "Sorry! I didn't"
+	line "mean it!"
 	done
 
 .AfterText:
@@ -233,8 +229,8 @@ TrainerFisherNolan:
 	done
 
 .BeatenText:
-	text "That"
-	line "burned some time."
+	text "That burned some"
+	line "time."
 	done
 
 .AfterText:
@@ -250,12 +246,12 @@ Route21_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  4, 24, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, TrainerFisherRonald, -1
-	object_event  6, 25, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, TrainerFisherWade, -1
-	object_event 10, 31, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, TrainerSwimmerSpencer, -1
-	object_event 12, 30, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, TrainerCueBallIan, -1
-	object_event 16, 63, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, TrainerSwimmerJack, -1
-	object_event  5, 71, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, TrainerSwimmerJerome, -1
-	object_event 15, 71, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, TrainerSwimmerRoland, -1
-	object_event 14, 56, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, TrainerFisherClaude, -1
-	object_event 17, 57, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, TrainerFisherNolan, -1
+	object_event  4, 24, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerFisherRonald, -1
+	object_event  6, 25, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerFisherWade, -1
+	object_event 10, 31, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerSwimmerSpencer, -1
+	object_event 12, 30, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerCueBallIan, -1
+	object_event 16, 63, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerSwimmerJack, -1
+	object_event  5, 71, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerSwimmerJerome, -1
+	object_event 15, 71, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerSwimmerRoland, -1
+	object_event 14, 56, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerFisherClaude, -1
+	object_event 17, 57, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerFisherNolan, -1

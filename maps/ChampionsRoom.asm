@@ -123,8 +123,7 @@ ChampionsRoom_MapScripts:
 	done
 
 .WinText:
-	text "NO!"
-	line "That can't be!"
+	text "NO! That can't be!"
 	cont "You beat my best!"
 
 	para "After all that"
@@ -137,8 +136,8 @@ ChampionsRoom_MapScripts:
 	done
 
 .LossText:
-	text "Hahaha!"
-	line "I won, I won!"
+	text "Hahaha! I won,"
+	line "I won!"
 
 	para "I'm too good for"
 	line "you, <PLAYER>!"

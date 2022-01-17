@@ -82,9 +82,9 @@ AgathasRoom_AgathaScript:
 	done
 
 .WinText:
-	text "Oh ho!"
-	line "You're something"
-	cont "special, child!"
+	text "Oh ho! You're"
+	line "something special,"
+	cont "child!"
 	done
 
 .AfterText:

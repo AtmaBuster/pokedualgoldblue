@@ -36,8 +36,7 @@ TrainerRocketGrunt8:
 	done
 
 .BeatenText:
-	text "Oww!"
-	line "Beaten!"
+	text "Oww! Beaten!"
 	done
 
 .AfterText:
@@ -85,8 +84,7 @@ TrainerRocketGrunt10:
 	done
 
 .BeatenText:
-	text "I"
-	line "can't do it!"
+	text "I can't do it!"
 	done
 
 .AfterText:
@@ -111,8 +109,7 @@ TrainerRocketGrunt11:
 	done
 
 .BeatenText:
-	text "This"
-	line "won't do!"
+	text "This won't do!"
 	done
 
 .AfterText:

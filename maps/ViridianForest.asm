@@ -30,9 +30,8 @@ TrainerBugCatcherRick1Script:
 	done
 
 .BeatenText:
-	text "No!"
-	line "CATERPIE can't"
-	cont "cut it!"
+	text "No! CATERPIE can't"
+	line "cut it!"
 	done
 
 .AfterText:
@@ -57,9 +56,8 @@ TrainerBugCatcherDougScript:
 	done
 
 .BeatenText:
-	text "Huh?"
-	line "I ran out of"
-	cont "#MON!"
+	text "Huh? I ran out of"
+	line "#MON!"
 	done
 
 .AfterText:
@@ -84,9 +82,8 @@ TrainerBugCatcherSammyScript:
 	done
 
 .BeatenText:
-	text "I"
-	line "give! You're good"
-	cont "at this!"
+	text "I give! You're good"
+	line "at this!"
 	done
 
 .AfterText:

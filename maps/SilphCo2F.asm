@@ -81,9 +81,8 @@ TrainerScientistConnor:
 	done
 
 .BeatenText:
-	text "How"
-	line "did you know I"
-	cont "was a ROCKET?"
+	text "How did you know"
+	line "I was a ROCKET?"
 	done
 
 .AfterText:
@@ -108,8 +107,7 @@ TrainerScientistLiam:
 	done
 
 .BeatenText:
-	text "You're"
-	line "good."
+	text "You're good."
 	done
 
 .AfterText:

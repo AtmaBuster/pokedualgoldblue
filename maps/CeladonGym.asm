@@ -90,8 +90,8 @@ ENDC
 	done
 
 .WinText:
-	text "Oh!"
-	line "I concede defeat."
+	text "Oh! I concede"
+	line "defeat."
 
 	para "You are remarkably"
 	line "strong."
@@ -158,8 +158,7 @@ TrainerLassKay:
 	done
 
 .BeatenText:
-	text "You're"
-	line "too rough!"
+	text "You're too rough!"
 	done
 
 .AfterText:
@@ -184,8 +183,7 @@ TrainerBeautyBridget:
 	done
 
 .BeatenText:
-	text "My"
-	line "makeup!"
+	text "My makeup!"
 	done
 
 .AfterText:
@@ -214,8 +212,7 @@ TrainerJrTrainerFTanya:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "in shock!"
+	text "I'm in shock!"
 	done
 
 .AfterText:
@@ -273,8 +270,7 @@ TrainerLassLisa:
 	done
 
 .BeatenText:
-	text "Oh!"
-	line "You!"
+	text "Oh! You!"
 	done
 
 .AfterText:
@@ -301,8 +297,7 @@ TrainerBeautyLori:
 	done
 
 .BeatenText:
-	text "Oh!"
-	line "Splendid!"
+	text "Oh! Splendid!"
 	done
 
 .AfterText:
@@ -332,8 +327,7 @@ TrainerCooltrainerFMary:
 	done
 
 .BeatenText:
-	text "Oh!"
-	line "Beaten!"
+	text "Oh! Beaten!"
 	done
 
 .AfterText:

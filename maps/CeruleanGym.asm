@@ -72,8 +72,8 @@ ENDC
 	done
 
 .WinText:
-	text "Wow!"
-	line "You're too much!"
+	text "Wow! You're too"
+	line "much!"
 
 	para "All right!"
 
@@ -133,8 +133,8 @@ TrainerJrTrainerFDiana:
 	done
 
 .BeatenText:
-	text "You"
-	line "overwhelmed me!"
+	text "You overwhelmed"
+	line "me!"
 	done
 
 .AfterText:
@@ -162,8 +162,7 @@ TrainerSwimmerLuis:
 	done
 
 .BeatenText:
-	text "That"
-	line "can't be!"
+	text "That can't be!"
 	done
 
 .AfterText:

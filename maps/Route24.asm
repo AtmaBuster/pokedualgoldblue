@@ -85,8 +85,8 @@ Route24_RocketScript:
 	done
 
 .WinText:
-	text "Arrgh!"
-	line "You are good!"
+	text "Arrgh! You are"
+	line "good!"
 	done
 
 .AfterText:
@@ -112,8 +112,7 @@ TrainerJrTrainerMShane:
 	done
 
 .BeatenText:
-	text "I"
-	line "thought not!"
+	text "I thought not!"
 	done
 
 .AfterText:
@@ -138,8 +137,7 @@ TrainerJrTrainerMEthan:
 	done
 
 .BeatenText:
-	text "Whoa!"
-	line "Too much!"
+	text "Whoa! Too much!"
 	done
 
 .AfterText:
@@ -163,8 +161,7 @@ TrainerLassAli:
 	done
 
 .BeatenText:
-	text "I lost"
-	line "too!"
+	text "I lost too!"
 	done
 
 .AfterText:
@@ -188,8 +185,7 @@ TrainerYoungsterTimmy:
 	done
 
 .BeatenText:
-	text "Ow!"
-	line "Stomped flat!"
+	text "Ow! Stomped flat!"
 	done
 
 .AfterText:
@@ -213,8 +209,7 @@ TrainerLassReli:
 	done
 
 .BeatenText:
-	text "How could I"
-	line "lose?"
+	text "How could I lose?"
 	done
 
 .AfterText:
@@ -243,8 +238,7 @@ TrainerBugCatcherCale:
 	done
 
 .BeatenText:
-	text "Whoo!"
-	line "Good stuff!"
+	text "Whoo! Good stuff!"
 	done
 
 .AfterText:

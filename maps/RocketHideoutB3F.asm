@@ -26,8 +26,7 @@ TrainerRocketGrunt14:
 	done
 
 .BeatenText:
-	text "Oof!"
-	line "Taken down!"
+	text "Oof! Taken down!"
 	done
 
 .AfterText:
@@ -54,8 +53,7 @@ TrainerRocketGrunt15:
 	done
 
 .BeatenText:
-	text "What?"
-	line "I lost? No!"
+	text "What? I lost? No!"
 	done
 
 .AfterText:

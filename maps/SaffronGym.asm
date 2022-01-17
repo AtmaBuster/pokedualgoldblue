@@ -82,9 +82,8 @@ ENDC
 	done
 
 .WinText:
-	text "I'm"
-	line "shocked!"
-	cont "But, a loss is a"
+	text "I'm shocked!"
+	line "But, a loss is a"
 	cont "loss."
 
 	para "I admit I didn't"
@@ -191,8 +190,7 @@ TrainerChannelerAmanda:
 	done
 
 .BeatenText:
-	text "Not"
-	line "good enough!"
+	text "Not good enough!"
 	done
 
 .AfterText:
@@ -222,8 +220,8 @@ TrainerPsychicJohan:
 	done
 
 .BeatenText:
-	text "I never"
-	line "foresaw this!"
+	text "I never foresaw"
+	line "this!"
 	done
 
 .AfterText:
@@ -252,8 +250,7 @@ TrainerChannelerStacy:
 	done
 
 .BeatenText:
-	text "I knew"
-	line "it!"
+	text "I knew it!"
 	done
 
 .AfterText:
@@ -279,8 +276,8 @@ TrainerPsychicTyron:
 	done
 
 .BeatenText:
-	text "I don't"
-	line "believe this!"
+	text "I don't believe"
+	line "this!"
 	done
 
 .AfterText:
@@ -306,8 +303,7 @@ TrainerChannelerTasha:
 	done
 
 .BeatenText:
-	text "I lost"
-	line "after all!"
+	text "I lost after all!"
 	done
 
 .AfterText:
@@ -336,8 +332,8 @@ TrainerPsychicCameron:
 	done
 
 .BeatenText:
-	text "I lost"
-	line "my concentration!"
+	text "I lost my"
+	line "concentration!"
 	done
 
 .AfterText:

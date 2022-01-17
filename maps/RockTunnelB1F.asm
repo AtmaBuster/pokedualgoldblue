@@ -29,12 +29,12 @@ TrainerJrTrainerFSofia:
 	done
 
 .BeatenText:
-	text "Ohhh!"
-	line "I did my best!"
+	text "Ohhh! I did my"
+	line "best!"
 	done
 
 .AfterText:
-	text "I want to go "
+	text "I want to go"
 	line "home!"
 	done
 
@@ -54,8 +54,7 @@ TrainerHikerDudley:
 	done
 
 .BeatenText:
-	text "Oops!"
-	line "Out-muscled!"
+	text "Oops! Out-muscled!"
 	done
 
 .AfterText:
@@ -81,8 +80,8 @@ TrainerPokemaniacCooper:
 	done
 
 .BeatenText:
-	text "Shoot!"
-	line "I'm so jealous!"
+	text "Shoot! I'm so"
+	line "jealous!"
 	done
 
 .AfterText:
@@ -107,8 +106,7 @@ TrainerPokemaniacSteve:
 	done
 
 .BeatenText:
-	text "Well,"
-	line "that's that."
+	text "Well, that's that."
 	done
 
 .AfterText:
@@ -134,9 +132,8 @@ TrainerHikerAllen:
 	done
 
 .BeatenText:
-	text "I give!"
-	line "You're a better"
-	cont "technician!"
+	text "I give! You're a"
+	line "better technician!"
 	done
 
 .AfterText:
@@ -162,8 +159,7 @@ TrainerJrTrainerFMartha:
 	done
 
 .BeatenText:
-	text "Oh!"
-	line "I lost!"
+	text "Oh! I lost!"
 	done
 
 .AfterText:
@@ -188,8 +184,7 @@ TrainerHikerEric:
 	done
 
 .BeatenText:
-	text "Fired"
-	line "away!"
+	text "Fired away!"
 	done
 
 .AfterText:
@@ -214,8 +209,8 @@ TrainerPokemaniacWinston:
 	done
 
 .BeatenText:
-	text "Whew!"
-	line "I'm exhausted!"
+	text "Whew! I'm "
+	line "exhausted!"
 	done
 
 .AfterText:

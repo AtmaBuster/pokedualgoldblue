@@ -99,8 +99,8 @@ TrainerFisherKyle:
 	done
 
 .BeatenText:
-	text "Tch!"
-	line "Just a small fry!"
+	text "Tch! Just a small"
+	line "fry!"
 	done
 
 .AfterText:
@@ -125,8 +125,7 @@ TrainerFisherMartin:
 	done
 
 .BeatenText:
-	text "That"
-	line "one got away!"
+	text "That one got away!"
 	done
 
 .AfterText:
@@ -202,8 +201,7 @@ TrainerFisherStephen:
 	done
 
 .BeatenText:
-	text "Too"
-	line "much!"
+	text "Too much!"
 	done
 
 .AfterText:
@@ -228,8 +226,7 @@ TrainerFisherBarney:
 	done
 
 .BeatenText:
-	text "It's"
-	line "not easy..."
+	text "It's not easy..."
 	done
 
 .AfterText:
@@ -255,8 +252,7 @@ TrainerFisherAndrew:
 	done
 
 .BeatenText:
-	text "Lost"
-	line "it!"
+	text "Lost it!"
 	done
 
 .AfterText:

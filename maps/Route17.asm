@@ -31,8 +31,7 @@ TrainerCueBallRaul:
 	done
 
 .BeatenText:
-	text "Burned"
-	line "out!"
+	text "Burned out!"
 	done
 
 .AfterText:
@@ -82,8 +81,7 @@ TrainerBikerVirgil:
 	done
 
 .BeatenText:
-	text "Crash and"
-	line "burn!"
+	text "Crash and burn!"
 	done
 
 .AfterText:
@@ -131,8 +129,7 @@ TrainerBikerNikolas:
 	done
 
 .BeatenText:
-	text "Grounded"
-	line "out!"
+	text "Grounded out!"
 	done
 
 .AfterText:
@@ -157,8 +154,7 @@ TrainerCueBallZeke:
 	done
 
 .BeatenText:
-	text "Why,"
-	line "you!"
+	text "Why, you!"
 	done
 
 .AfterText:
@@ -183,8 +179,8 @@ TrainerCueBallJamal:
 	done
 
 .BeatenText:
-	text "Whew!"
-	line "Good workout!"
+	text "Whew! Good"
+	line "workout!"
 	done
 
 .AfterText:
@@ -255,8 +251,7 @@ TrainerBikerWilliam:
 	done
 
 .BeatenText:
-	text "Are you"
-	line "satisfied?"
+	text "Are you satisfied?"
 	done
 
 .AfterText:

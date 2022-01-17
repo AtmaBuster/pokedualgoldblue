@@ -64,8 +64,7 @@ TrainerRocketGrunt24:
 	done
 
 .BeatenText:
-	text "I give"
-	line "up!"
+	text "I give up!"
 	done
 
 .AfterText:
@@ -91,8 +90,7 @@ TrainerScientistJose:
 	done
 
 .BeatenText:
-	text "You"
-	line "really got me!"
+	text "You really got me!"
 	done
 	
 .AfterText:

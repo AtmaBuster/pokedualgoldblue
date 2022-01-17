@@ -39,8 +39,7 @@ TrainerRocketGrunt38:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "stunned!"
+	text "I'm stunned!"
 	done
 
 .AfterText:
@@ -65,8 +64,7 @@ TrainerScientistTravis:
 	done
 
 .BeatenText:
-	text "No"
-	line "continues left!"
+	text "No continues left!"
 	done
 
 .AfterText:

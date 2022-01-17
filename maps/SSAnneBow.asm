@@ -28,8 +28,7 @@ TrainerSailorEdmond:
 	done
 
 .BeatenText:
-	text "You're"
-	line "impressive!"
+	text "You're impressive!"
 	done
 
 .AfterText:
@@ -54,8 +53,8 @@ TrainerSailorTrevor:
 	done
 
 .BeatenText:
-	text "I was"
-	line "just careless!"
+	text "I was just"
+	line "careless!"
 	done
 
 .AfterText:

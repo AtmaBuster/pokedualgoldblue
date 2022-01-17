@@ -36,8 +36,7 @@ TrainerRocketGrunt34:
 	done
 
 .BeatenText:
-	text "Not"
-	line "enough grit!"
+	text "Not enough grit!"
 	done
 
 .AfterText:
@@ -62,8 +61,7 @@ TrainerScientistParker:
 	done
 
 .BeatenText:
-	text "Huh?"
-	line "I lost?"
+	text "Huh? I lost?"
 	done
 
 .AfterText:
@@ -88,8 +86,7 @@ TrainerRocketGrunt35:
 	done
 
 .BeatenText:
-	text "Whoo!"
-	line "Oh brothers!"
+	text "Whoo! Oh brothers!"
 	done
 
 .AfterText:

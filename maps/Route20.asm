@@ -131,8 +131,7 @@ TrainerJrTrainerFIrene:
 	done
 
 .BeatenText:
-	text "No"
-	line "mercy at all!"
+	text "No mercy at all!"
 	done
 
 .AfterText:
@@ -182,8 +181,7 @@ TrainerSwimmerDarrin:
 	done
 
 .BeatenText:
-	text "Ouch!"
-	line "Torpedoed!"
+	text "Ouch! Torpedoed!"
 	done
 
 .AfterText:
@@ -207,8 +205,7 @@ TrainerBirdKeeperRoger:
 	done
 
 .BeatenText:
-	text "Oh"
-	line "no!"
+	text "Oh no!"
 	done
 
 .AfterText:
@@ -232,8 +229,8 @@ TrainerBeautyNora:
 	done
 
 .BeatenText:
-	text "Don't"
-	line "touch my pearls!"
+	text "Don't touch my"
+	line "pearls!"
 	done
 
 .AfterText:
@@ -258,8 +255,8 @@ TrainerJrTrainerFMissy:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "so disappointed!"
+	text "I'm so"
+	line "disappointed!"
 	done
 
 .AfterText:

@@ -83,8 +83,7 @@ TrainerScientistEd:
 	done
 
 .BeatenText:
-	text "You"
-	line "hammered me!"
+	text "You hammered me!"
 	done
 
 .AfterText:
@@ -110,8 +109,8 @@ TrainerRocketGrunt37:
 	done
 
 .BeatenText:
-	text "Warg!"
-	line "Brothers, I lost!"
+	text "Warg! Brothers,"
+	line "I lost!"
 	done
 
 .AfterText:

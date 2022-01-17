@@ -81,8 +81,7 @@ LoreleisRoom_LoreleiScript:
 	done
 
 .WinText:
-	text "How"
-	line "dare you!"
+	text "How dare you!"
 	done
 
 .AfterText:

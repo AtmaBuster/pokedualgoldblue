@@ -50,8 +50,7 @@ TrainerBirdKeeperBoris:
 	done
 
 .BeatenText:
-	text "I"
-	line "had to bug you!"
+	text "I had to bug you!"
 	done
 
 .AfterText:

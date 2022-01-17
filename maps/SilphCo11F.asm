@@ -42,8 +42,7 @@ TrainerRocketGrunt39:
 	done
 
 .BeatenText:
-	text "Don't..."
-	line "Please!"
+	text "Don't...Please!"
 	done
 
 .AfterText:
@@ -68,8 +67,7 @@ TrainerRocketGrunt40:
 	done
 
 .BeatenText:
-	text "Gaah!"
-	line "Demolished!"
+	text "Gaah! Demolished!"
 	done
 
 .AfterText:
@@ -124,8 +122,8 @@ SilphCo11F_GiovanniScript:
 	done
 
 .WinText:
-	text "Arrgh!!"
-	line "I lost again!?"
+	text "Arrgh!! I lost"
+	line "again!?"
 	done
 
 .AfterText:

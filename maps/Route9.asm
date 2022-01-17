@@ -32,8 +32,7 @@ TrainerJrTrainerFAlicia:
 	done
 
 .BeatenText:
-	text "You"
-	line "deceived me!"
+	text "You deceived me!"
 	done
 
 .AfterText:
@@ -59,8 +58,7 @@ TrainerJrTrainerMChris:
 	done
 
 .BeatenText:
-	text "Out"
-	line "like a light!"
+	text "Out like a light!"
 	done
 
 .AfterText:
@@ -84,8 +82,7 @@ TrainerJrTrainerMDrew:
 	done
 
 .BeatenText:
-	text "Can't"
-	line "measure up!"
+	text "Can't measure up!"
 	done
 
 .AfterText:
@@ -109,8 +106,8 @@ TrainerJrTrainerFCaity:
 	done
 
 .BeatenText:
-	text "No!"
-	line "You're too much!"
+	text "No! You're too"
+	line "much!"
 	done
 
 .AfterText:
@@ -136,8 +133,8 @@ TrainerHikerJeremy:
 	done
 
 .BeatenText:
-	text "Keep it"
-	line "coming, eh!"
+	text "Keep it coming,"
+	line "eh!"
 
 	para "Oh wait. I'm out"
 	line "of #MON!"
@@ -166,8 +163,7 @@ TrainerHikerSidney:
 	done
 
 .BeatenText:
-	text "What's"
-	line "that?"
+	text "What's that?"
 	done
 
 .AfterText:
@@ -221,8 +217,8 @@ TrainerHikerAlan:
 	done
 
 .BeatenText:
-	text "Hahahaha!"
-	line "You beat me fair!"
+	text "Hahahaha! You beat"
+	line "me fair!"
 	done
 
 .AfterText:
@@ -247,8 +243,7 @@ TrainerBugCatcherSid:
 	done
 
 .BeatenText:
-	text "My"
-	line "bugs..."
+	text "My bugs..."
 	done
 
 .AfterText:

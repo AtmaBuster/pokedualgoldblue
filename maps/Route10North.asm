@@ -25,8 +25,8 @@ TrainerPokemaniacMark:
 	done
 
 .BeatenText:
-	text "Humph."
-	line "I'm not angry!"
+	text "Humph. I'm not"
+	line "angry!"
 	done
 
 .AfterText:
@@ -52,8 +52,8 @@ TrainerJrTrainerFHeidi:
 	done
 
 .BeatenText:
-	text "Ohh!"
-	line "Blew it again!"
+	text "Ohh! Blew it"
+	line "again!"
 	done
 
 .AfterText:

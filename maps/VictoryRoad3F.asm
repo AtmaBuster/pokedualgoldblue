@@ -52,7 +52,7 @@ VictoryRoad3F_MapScripts:
 	end
 
 .Boulder2:
-	setevent EVENT_VICTORY_ROAD_2F_STONE_ON_BUTTON1
+	setevent EVENT_VICTORY_ROAD_3F_STONE_ON_BUTTON
 	refreshscreen $85
 	changeblock 6, 10, $1d
 	reloadmappart
@@ -76,8 +76,8 @@ TrainerCooltrainerMBen:
 	done
 
 .BeatenText:
-	text "The"
-	line "rumors were true!"
+	text "The rumors were"
+	line "true!"
 	done
 
 .AfterText:
@@ -101,8 +101,7 @@ TrainerCooltrainerFTina:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "furious!"
+	text "I'm furious!"
 	done
 
 .AfterText:
@@ -126,8 +125,7 @@ TrainerCooltrainerMColby:
 	done
 
 .BeatenText:
-	text "I"
-	line "don't believe it!"
+	text "I don't believe it!"
 	done
 
 .AfterText:
@@ -154,8 +152,7 @@ TrainerCooltrainerFAlexa:
 	done
 
 .BeatenText:
-	text "Oh!"
-	line "So strong!"
+	text "Oh! So strong!"
 	done
 
 .AfterText:

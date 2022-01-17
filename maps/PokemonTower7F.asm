@@ -137,8 +137,7 @@ TrainerGrunt20:
 	done
 
 .BeatenText:
-	text "Please!"
-	line "No more!"
+	text "Please! No more!"
 	done
 
 .AfterText:
@@ -187,8 +186,8 @@ TrainerGrunt21:
 	done
 
 .BeatenText:
-	text "Don't"
-	line "fight us ROCKETs!"
+	text "Don't fight us"
+	line "ROCKETs!"
 	done
 
 .AfterText:

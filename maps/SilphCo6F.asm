@@ -42,8 +42,7 @@ TrainerRocketGrunt29:
 	done
 
 .BeatenText:
-	text "Flame"
-	line "out!"
+	text "Flame out!"
 	done
 
 .AfterText:
@@ -97,8 +96,7 @@ TrainerRocketGrunt30:
 	done
 
 .BeatenText:
-	text "You"
-	line "traitor!"
+	text "You traitor!"
 	done
 
 .AfterText:

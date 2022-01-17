@@ -27,8 +27,7 @@ TrainerRocketGrunt13:
 	done
 
 .BeatenText:
-	text "I"
-	line "surrender!"
+	text "I surrender!"
 	done
 
 .AfterText:

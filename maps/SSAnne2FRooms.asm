@@ -35,8 +35,8 @@ TrainerGentlemanBrooks:
 	done
 
 .BeatenText:
-	text "Good"
-	line "fight! Ah, I feel"
+	text "Good fight!"
+	line "Ah, I feel"
 	cont "young again!"
 	done
 
@@ -61,8 +61,7 @@ TrainerFisherDale:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "all out!"
+	text "I'm all out!"
 	done
 
 .AfterText:
@@ -90,8 +89,7 @@ TrainerGentlemanLamar:
 	done
 
 .BeatenText:
-	text "I must"
-	line "salute you!"
+	text "I must salute you!"
 	done
 
 .AfterText:
@@ -115,8 +113,7 @@ TrainerLassDawn:
 	done
 
 .BeatenText:
-	text "Take"
-	line "it easy!"
+	text "Take it easy!"
 	done
 
 .AfterText:

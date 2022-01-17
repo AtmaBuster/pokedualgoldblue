@@ -154,9 +154,9 @@ SilphCo7F_RivalScript:
 	done
 
 .WinText:
-	text "Oh ho!"
-	line "So, you are ready"
-	cont "for BOSS ROCKET!"
+	text "Oh ho! So, you are"
+	line "ready for BOSS"
+	cont "ROCKET!"
 	done
 
 .LossText:
@@ -216,8 +216,7 @@ TrainerRocketGrunt31:
 	done
 
 .BeatenText:
-	text "Lights"
-	line "out!"
+	text "Lights out!"
 	done
 
 .AfterText:
@@ -244,8 +243,7 @@ TrainerScientistJoshua:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "done!"
+	text "I'm done!"
 	done
 
 .AfterText:
@@ -270,8 +268,8 @@ TrainerRocketGrunt32:
 	done
 
 .BeatenText:
-	text "Aack!"
-	line "Brothers, I lost!"
+	text "Aack! Brothers,"
+	line "I lost!"
 	done
 
 .AfterText:
@@ -296,8 +294,7 @@ TrainerRocketGrunt33:
 	done
 
 .BeatenText:
-	text "Fine!"
-	line "I lost!"
+	text "Fine! I lost!"
 	done
 
 .AfterText:

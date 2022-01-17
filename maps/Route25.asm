@@ -49,8 +49,7 @@ TrainerYoungsterCalvin:
 	done
 
 .BeatenText:
-	text "You're"
-	line "decent."
+	text "You're decent."
 	done
 
 .AfterText:
@@ -78,8 +77,7 @@ TrainerYoungsterDan:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "not mad!"
+	text "I'm not mad!"
 	done
 
 .AfterText:
@@ -105,8 +103,7 @@ TrainerJrTrainerMFlint:
 	done
 
 .BeatenText:
-	text "Aww,"
-	line "darn..."
+	text "Aww, darn..."
 	done
 
 .AfterText:
@@ -130,8 +127,8 @@ TrainerLassKelsey:
 	done
 
 .BeatenText:
-	text "I was in"
-	line "bad condition!"
+	text "I was in bad"
+	line "condition!"
 	done
 
 .AfterText:
@@ -155,8 +152,8 @@ TrainerYoungsterChad:
 	done
 
 .BeatenText:
-	text "I knew"
-	line "I'd lose too!"
+	text "I knew I'd lose"
+	line "too!"
 	done
 
 .AfterText:
@@ -183,8 +180,8 @@ TrainerLassHaley:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "not so jealous!"
+	text "I'm not so"
+	line "jealous!"
 	done
 
 .AfterText:
@@ -210,8 +207,7 @@ TrainerHikerFranklin:
 	done
 
 .BeatenText:
-	text "You"
-	line "worked hard!"
+	text "You worked hard!"
 	done
 
 .AfterText:
@@ -237,8 +233,7 @@ TrainerHikerNob:
 	done
 
 .BeatenText:
-	text "You"
-	line "got me."
+	text "You got me."
 	done
 
 .AfterText:
@@ -264,8 +259,7 @@ TrainerHikerWayne:
 	done
 
 .BeatenText:
-	text "You're"
-	line "something."
+	text "You're something."
 	done
 
 .AfterText:

@@ -32,8 +32,7 @@ TrainerGrunt1:
 	done
 
 .BeatenText:
-	text "Urgh!"
-	line "Now I'm mad!"
+	text "Urgh! Now I'm mad!"
 	done
 
 .AfterText:
@@ -59,8 +58,7 @@ TrainerGrunt2:
 	done
 
 .BeatenText:
-	text "I blew"
-	line "it!"
+	text "I blew it!"
 	done
 
 .AfterText:
@@ -86,8 +84,7 @@ TrainerGrunt3:
 	done
 
 .BeatenText:
-	text "So, you"
-	line "are good."
+	text "So, you are good."
 	done
 
 .AfterText:
@@ -113,8 +110,7 @@ TrainerGrunt4:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "steamed!"
+	text "I'm steamed!"
 	done
 
 .AfterText:
@@ -150,8 +146,7 @@ TrainerSuperNerdMiguel:
 	done
 
 .BeatenText:
-	text "OK!"
-	line "I'll share!"
+	text "OK! I'll share!"
 	done
 
 .EachTakeOneText:

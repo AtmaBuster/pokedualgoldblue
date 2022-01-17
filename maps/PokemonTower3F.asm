@@ -25,8 +25,7 @@ TrainerChannelerHope:
 	done
 
 .BeatenText:
-	text "Hwa!"
-	line "I'm saved!"
+	text "Hwa! I'm saved!"
 	done
 
 .AfterText:
@@ -51,8 +50,8 @@ TrainerChannelerCarly:
 	done
 
 .BeatenText:
-	text "Hmm?"
-	line "What am I doing?"
+	text "Hmm? What am I"
+	line "doing?"
 	done
 
 .AfterText:
@@ -76,8 +75,8 @@ TrainerChannelerPatricia:
 	done
 
 .BeatenText:
-	text "Whew!"
-	line "The spirit left!"
+	text "Whew! The spirit"
+	line "left!"
 	done
 
 .AfterText:

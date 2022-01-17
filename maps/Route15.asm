@@ -33,8 +33,7 @@ TrainerJrTrainerFKindra:
 	done
 
 .BeatenText:
-	text "Not"
-	line "good enough!"
+	text "Not good enough!"
 	done
 
 .AfterText:
@@ -64,8 +63,7 @@ TrainerJrTrainerFBecky:
 	done
 
 .BeatenText:
-	text "No,"
-	line "wrong!"
+	text "No, wrong!"
 	done
 
 .AfterText:
@@ -91,8 +89,7 @@ TrainerBirdKeeperChip:
 	done
 
 .BeatenText:
-	text "Ow!"
-	line "That's tragic!"
+	text "Ow! That's tragic!"
 	done
 
 .AfterText:
@@ -117,8 +114,8 @@ TrainerBirdKeeperEdwin:
 	done
 
 .BeatenText:
-	text "Just"
-	line "as I thought!"
+	text "Just as I"
+	line "thought!"
 	done
 
 .AfterText:
@@ -144,8 +141,8 @@ TrainerBeautyGrace:
 	done
 
 .BeatenText:
-	text "You looked"
-	line "so cute too!"
+	text "You looked so"
+	line "cute too!"
 	done
 
 .AfterText:
@@ -170,8 +167,8 @@ TrainerBeautyOlivia:
 	done
 
 .BeatenText:
-	text "I didn't"
-	line "ask for this!"
+	text "I didn't ask for"
+	line "this!"
 	done
 
 .AfterText:
@@ -196,8 +193,7 @@ TrainerBikerErnest:
 	done
 
 .BeatenText:
-	text "Why"
-	line "not?"
+	text "Why not?"
 	done
 
 .AfterText:
@@ -224,8 +220,7 @@ TrainerBikerAlex:
 	done
 
 .BeatenText:
-	text "That"
-	line "can't be true!"
+	text "That can't be true!"
 	done
 
 .AfterText:
@@ -249,8 +244,7 @@ TrainerJrTrainerFCelia:
 	done
 
 .BeatenText:
-	text "I"
-	line "said trade!"
+	text "I said trade!"
 	done
 
 .AfterText:
@@ -274,8 +268,8 @@ TrainerJrTrainerFYasmin:
 	done
 
 .BeatenText:
-	text "I was"
-	line "too impatient!"
+	text "I was too"
+	line "impatient!"
 	done
 
 .AfterText:

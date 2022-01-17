@@ -28,8 +28,7 @@ TrainerJrTrainerMRicky:
 	done
 
 .BeatenText:
-	text "I"
-	line "just can't win!"
+	text "I just can't win!"
 	done
 
 .AfterText:
@@ -54,8 +53,8 @@ TrainerJrTrainerFNancy:
 	done
 
 .BeatenText:
-	text "Ugh!"
-	line "I hate losing!"
+	text "Ugh! I hate"
+	line "losing!"
 	done
 
 .AfterText:
@@ -79,8 +78,7 @@ TrainerBugCatcherKeigo:
 	done
 
 .BeatenText:
-	text "No!"
-	line "You're kidding!"
+	text "No! You're kidding!"
 	done
 
 .AfterText:
@@ -105,8 +103,7 @@ TrainerJrTrainerMJeff:
 	done
 
 .BeatenText:
-	text "I"
-	line "didn't start it!"
+	text "I didn't start it!"
 	done
 
 .AfterText:
@@ -131,8 +128,7 @@ TrainerJrTrainerFIsabel:
 	done
 
 .BeatenText:
-	text "Just"
-	line "didn't work!"
+	text "Just didn't work!"
 	done
 
 .AfterText:
@@ -158,8 +154,7 @@ TrainerBugCatcherElijah:
 	done
 
 .BeatenText:
-	text "You"
-	line "are too good!"
+	text "You are too good!"
 	done
 
 .AfterText:

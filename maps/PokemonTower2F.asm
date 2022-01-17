@@ -112,8 +112,7 @@ PokemonTower2F_RivalScript:
 	done
 
 .WinText:
-	text "What?"
-	line "You stinker!"
+	text "What? You stinker!"
 
 	para "I took it easy on"
 	line "you too!"

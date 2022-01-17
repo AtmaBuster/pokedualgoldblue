@@ -63,8 +63,8 @@ FightingDojo_KiyoScript:
 	done
 
 .WinText:
-	text "Hwa!"
-	line "Arrgh! Beaten!"
+	text "Hwa! Arrgh!"
+	line "Beaten!"
 	done
 
 .After1Text:
@@ -187,8 +187,7 @@ TrainerBlackbeltMike:
 	done
 
 .BeatenText:
-	text "I give"
-	line "up!"
+	text "I give up!"
 	done
 
 .AfterText:
@@ -215,8 +214,7 @@ TrainerBlackbeltHideki:
 	done
 
 .BeatenText:
-	text "Judge!"
-	line "1 point!"
+	text "Judge! 1 point!"
 	done
 
 .AfterText:
@@ -243,8 +241,8 @@ TrainerBlackbeltAaron:
 	done
 
 .BeatenText:
-	text "Yow!"
-	line "Stubbed fingers!"
+	text "Yow! Stubbed"
+	line "fingers!"
 	done
 
 .AfterText:
@@ -272,8 +270,7 @@ TrainerBlackbeltHitoshi:
 	done
 
 .BeatenText:
-	text "Oof!"
-	line "I give up!"
+	text "Oof! I give up!"
 	done
 
 .AfterText:

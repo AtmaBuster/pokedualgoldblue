@@ -86,8 +86,7 @@ TrainerScientistBeau:
 	done
 
 .BeatenText:
-	text "Dang!"
-	line "Blast it!"
+	text "Dang! Blast it!"
 	done
 
 .AfterText:
@@ -114,8 +113,7 @@ TrainerJugglerDalton:
 	done
 
 .BeatenText:
-	text "Oh"
-	line "goodness!"
+	text "Oh goodness!"
 	done
 
 .AfterText:
@@ -140,8 +138,7 @@ TrainerRocketGrunt28:
 	done
 
 .BeatenText:
-	text "Cough..."
-	line "Cough..."
+	text "Cough...Cough..."
 	done
 
 .AfterText:

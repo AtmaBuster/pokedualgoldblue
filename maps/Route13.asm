@@ -31,8 +31,8 @@ TrainerBirdKeeperBret:
 	done
 
 .BeatenText:
-	text "My"
-	line "bird combo lost?"
+	text "My bird combo"
+	line "lost?"
 	done
 
 .AfterText:
@@ -57,8 +57,7 @@ TrainerJrTrainerFSusie:
 	done
 
 .BeatenText:
-	text "Ohh!"
-	line "I lost!"
+	text "Ohh! I lost!"
 	done
 
 .AfterText:
@@ -83,8 +82,7 @@ TrainerJrTrainerFGinger:
 	done
 
 .BeatenText:
-	text "Not"
-	line "enough!"
+	text "Not enough!"
 	done
 
 .AfterText:
@@ -110,8 +108,8 @@ TrainerJrTrainerFGwen:
 	done
 
 .BeatenText:
-	text "Wow!"
-	line "You totally won!"
+	text "Wow! You totally"
+	line "won!"
 	done
 
 .AfterText:
@@ -136,8 +134,7 @@ TrainerJrTrainerFAlma:
 	done
 
 .BeatenText:
-	text "Just"
-	line "messed up!"
+	text "Just messed up!"
 	done
 
 .AfterText:
@@ -162,8 +159,7 @@ TrainerBirdKeeperPerry:
 	done
 
 .BeatenText:
-	text "The"
-	line "wind turned!"
+	text "The wind turned!"
 	done
 
 .AfterText:
@@ -187,8 +183,8 @@ TrainerBeautyLola:
 	done
 
 .BeatenText:
-	text "Oh!"
-	line "You little brute!"
+	text "Oh! You little"
+	line "brute!"
 	done
 
 .AfterText:
@@ -213,8 +209,7 @@ TrainerBeautySheila:
 	done
 
 .BeatenText:
-	text "It's over"
-	line "already?"
+	text "It's over already?"
 	done
 
 .AfterText:
@@ -240,8 +235,8 @@ TrainerBikerJared:
 	done
 
 .BeatenText:
-	text "Dang!"
-	line "Stripped gears!"
+	text "Dang! Stripped"
+	line "gears!"
 	done
 
 .AfterText:
@@ -264,8 +259,7 @@ TrainerBirdKeeperRobert:
 	done
 
 .BeatenText:
-	text "Out"
-	line "of power!"
+	text "Out of power!"
 	done
 
 .AfterText:

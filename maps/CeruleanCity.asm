@@ -125,15 +125,14 @@ CeruleanCity_RivalScript:
 	done
 
 .WinText:
-	text "Hey!"
-	line "Take it easy!"
-	cont "You won already!"
+	text "Hey! Take it easy!"
+	line "You won already!"
 	done
 
 .LossText:
-	text "Heh!"
-	line "You're no match"
-	cont "for my genius!"
+	text "Heh! You're no"
+	line "match for my"
+	cont "genius!"
 	done
 
 .AfterText:
@@ -208,9 +207,8 @@ CeruleanCity_RocketScript:
 	done
 
 .WinText:
-	text "Stop!"
-	line "I give up! I'll"
-	cont "leave quietly!"
+	text "Stop! I give up!"
+	line "I'll leave quietly!"
 	done
 
 .AfterText:

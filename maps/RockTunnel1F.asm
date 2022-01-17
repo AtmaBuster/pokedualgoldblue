@@ -28,8 +28,7 @@ TrainerHikerLenny:
 	done
 
 .BeatenText:
-	text "Doh!"
-	line "You win!"
+	text "Doh! You win!"
 	done
 
 .AfterText:
@@ -54,9 +53,9 @@ TrainerHikerOliver:
 	done
 
 .BeatenText:
-	text "Ease up!"
-	line "What am I doing?"
-	cont "Which way is out?"
+	text "Ease up! What am"
+	line "I doing? Which"
+	cont "way is out?"
 	done
 
 .AfterText:
@@ -107,8 +106,7 @@ TrainerPokemaniacAshton:
 	done
 
 .BeatenText:
-	text "Game"
-	line "over!"
+	text "Game over!"
 	done
 
 .AfterText:
@@ -133,8 +131,7 @@ TrainerJrTrainerFLeah:
 	done
 
 .BeatenText:
-	text "It"
-	line "was too dark!"
+	text "It was too dark!"
 	done
 
 .AfterText:
@@ -158,8 +155,8 @@ TrainerJrTrainerFDana:
 	done
 
 .BeatenText:
-	text "I'm"
-	line "out of #MON!"
+	text "I'm out of"
+	line "#MON!"
 	done
 
 .AfterText:
@@ -183,8 +180,7 @@ TrainerJrTrainerFAriana:
 	done
 
 .BeatenText:
-	text "You"
-	line "play hard!"
+	text "You play hard!"
 	done
 
 .AfterText:

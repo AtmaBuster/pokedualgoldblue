@@ -27,8 +27,8 @@ TrainerChannelerPaula:
 	done
 
 .BeatenText:
-	text "Where"
-	line "is the GHOST?"
+	text "Where is the"
+	line "GHOST?"
 	done
 
 .AfterText:
@@ -77,8 +77,7 @@ TrainerChannelerJody:
 	done
 
 .BeatenText:
-	text "Huh?"
-	line "Who? What?"
+	text "Huh? Who? What?"
 	done
 
 .AfterText:

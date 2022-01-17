@@ -121,8 +121,7 @@ TrainerScientistIvan:
 	done
 
 .BeatenText:
-	text "What"
-	line "was that for?"
+	text "What was that for?"
 	done
 
 .AfterText:

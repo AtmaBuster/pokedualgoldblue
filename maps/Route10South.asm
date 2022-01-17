@@ -52,8 +52,7 @@ TrainerPokemaniacHerman:
 	done
 
 .BeatenText:
-	text "Oh no!"
-	line "My #MON!"
+	text "Oh no! My #MON!"
 	done
 
 .AfterText:
@@ -77,8 +76,8 @@ TrainerHikerTrent:
 	done
 
 .BeatenText:
-	text "That"
-	line "cleared my head!"
+	text "That cleared my"
+	line "head!"
 	done
 
 .AfterText:
@@ -103,8 +102,7 @@ TrainerJrTrainerFCarol:
 	done
 	
 .BeatenText:
-	text "I'm"
-	line "not up to it!"
+	text "I'm not up to it!"
 	done
 
 .AfterText:

@@ -107,8 +107,7 @@ ENDC
 	done
 
 .WinText:
-	text "I have"
-	line "burnt out!"
+	text "I have burnt out!"
 
 	para "You have earned"
 	line "the VOLCANOBADGE!"
@@ -238,8 +237,8 @@ TrainerSuperNerdErik:
 	done
 
 .BeatenText:
-	text "Yow!"
-	line "Hot, hot, hot!"
+	text "Yow! Hot, hot,"
+	line "hot!"
 	done
 
 .AfterText:
@@ -286,8 +285,7 @@ TrainerBurglarQuinn:
 	done
 
 .BeatenText:
-	text "I"
-	line "surrender!"
+	text "I surrender!"
 	done
 
 .AfterText:
@@ -331,8 +329,7 @@ TrainerSuperNerdAvery:
 	done
 
 .BeatenText:
-	text "Waah!"
-	line "My studies!"
+	text "Waah! My studies!"
 	done
 
 .AfterText:
@@ -375,8 +372,7 @@ TrainerBurglarRamon:
 	done
 
 .BeatenText:
-	text "Too hot"
-	line "to handle!"
+	text "Too hot to handle!"
 	done
 
 .AfterText:
@@ -468,8 +464,7 @@ TrainerBurglarDusty:
 	done
 
 .BeatenText:
-	text "Yowza!"
-	line "Too hot!"
+	text "Yowza! Too hot!"
 	done
 
 .AfterText:
@@ -512,8 +507,7 @@ TrainerSuperNerdZac:
 	done
 
 .BeatenText:
-	text "Oh!"
-	line "Snuffed out!"
+	text "Oh! Snuffed out!"
 	done
 
 .AfterText:

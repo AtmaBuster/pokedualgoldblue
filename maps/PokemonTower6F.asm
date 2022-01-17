@@ -100,8 +100,8 @@ TrainerChannelerJenny:
 	done
 
 .BeatenText:
-	text "Some-"
-	line "thing fell out!"
+	text "Something fell"
+	line "out!"
 	done
 
 .AfterText:

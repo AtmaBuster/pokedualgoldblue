@@ -50,8 +50,8 @@ TrainerBugCatcherRick2:
 	done
 
 .BeatenText:
-	text "You"
-	line "beat me again!"
+	text "You beat me"
+	line "again!"
 	done
 
 .AfterText:
@@ -78,8 +78,7 @@ TrainerYoungsterJimmy:
 	done
 
 .BeatenText:
-	text "I don't"
-	line "believe it!"
+	text "I don't believe it!"
 	done
 
 .AfterText:
@@ -105,8 +104,7 @@ TrainerLassJanice:
 	done
 
 .BeatenText:
-	text "You're"
-	line "mean!"
+	text "You're mean!"
 	done
 
 .AfterText:
@@ -131,8 +129,8 @@ TrainerBugCatcherGreg:
 	done
 
 .BeatenText:
-	text "If I"
-	line "had new #MON I"
+	text "If I had new"
+	line "#MON I"
 	cont "would've won!"
 	done
 
@@ -185,8 +183,7 @@ TrainerYoungsterWarren:
 	done
 
 .BeatenText:
-	text "Lost!"
-	line "Lost! Lost!"
+	text "Lost! Lost! Lost!"
 	done
 
 .AfterText:
@@ -211,8 +208,7 @@ TrainerBugCatcherJames:
 	done
 
 .BeatenText:
-	text "Done"
-	line "like dinner!"
+	text "Done like dinner!"
 	done
 
 .AfterText:

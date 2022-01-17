@@ -107,8 +107,8 @@ TrainerScientistRodney:
 	done
 
 .BeatenText:
-	text "Darn!"
-	line "You weak #MON!"
+	text "Darn! You weak"
+	line "#MON!"
 	done
 
 .AfterText:
@@ -133,8 +133,7 @@ TrainerRocketGrunt26:
 	done
 
 .BeatenText:
-	text "Who"
-	line "are you?"
+	text "Who are you?"
 	done
 
 .AfterText:

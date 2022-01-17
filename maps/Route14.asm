@@ -32,8 +32,7 @@ TrainerBirdKeeperCarter:
 	done
 
 .BeatenText:
-	text "Not"
-	line "good enough!"
+	text "Not good enough!"
 	done
 
 .AfterText:
@@ -60,8 +59,7 @@ TrainerBirdKeeperMitch:
 	done
 
 .BeatenText:
-	text "Not"
-	line "ready yet!"
+	text "Not ready yet!"
 	done
 
 .AfterText:
@@ -87,8 +85,7 @@ TrainerBirdKeeperBeck:
 	done
 
 .BeatenText:
-	text "Aww,"
-	line "bummer!"
+	text "Aww, bummer!"
 	done
 
 .AfterText:
@@ -115,8 +112,8 @@ TrainerBirdKeeperMarlon:
 	done
 
 .BeatenText:
-	text "Shot"
-	line "down in flames!"
+	text "Shot down in"
+	line "flames!"
 	done
 
 .AfterText:
@@ -141,8 +138,7 @@ TrainerBirdKeeperDonald:
 	done
 
 .BeatenText:
-	text "Why?"
-	line "Why'd I lose?"
+	text "Why? Why'd I lose?"
 	done
 
 .AfterText:
@@ -167,8 +163,7 @@ TrainerBirdKeeperBenny:
 	done
 
 .BeatenText:
-	text "I"
-	line "knew it!"
+	text "I knew it!"
 	done
 
 .AfterText:
@@ -194,8 +189,8 @@ TrainerBikerLukas:
 	done
 
 .BeatenText:
-	text "Arrg!"
-	line "Lost! Get lost!"
+	text "Arrg! Lost! Get"
+	line "lost!"
 	done
 
 .AfterText:
@@ -219,8 +214,7 @@ TrainerBikerIsaac:
 	done
 
 .BeatenText:
-	text "What?"
-	line "You!?"
+	text "What? You!?"
 	done
 
 .AfterText:
@@ -273,8 +267,7 @@ TrainerBikerMalik:
 	done
 
 .BeatenText:
-	text "Blown"
-	line "away!"
+	text "Blown away!"
 	done
 
 .AfterText:

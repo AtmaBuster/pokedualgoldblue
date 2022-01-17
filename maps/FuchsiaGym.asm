@@ -80,9 +80,8 @@ ENDC
 	done
 
 .WinText:
-	text "Humph!"
-	line "You have proven"
-	cont "your worth!"
+	text "Humph! You have"
+	line "proven your worth!"
 
 	para "Here! Take the"
 	line "SOULBADGE!"
@@ -250,8 +249,7 @@ TrainerJugglerKirk:
 	done
 
 .BeatenText:
-	text "I'm done"
-	line "for!"
+	text "I'm done for!"
 	done
 
 .AfterText:
@@ -278,8 +276,7 @@ TrainerJugglerNate:
 	done
 
 .BeatenText:
-	text "You"
-	line "had me fooled!"
+	text "You had me fooled!"
 	done
 
 .AfterText:
@@ -308,8 +305,7 @@ TrainerTamerPhil:
 	done
 
 .BeatenText:
-	text "Whoa!"
-	line "He's got it!"
+	text "Whoa! He's got it!"
 	done
 
 .AfterText:
@@ -370,8 +366,7 @@ TrainerJugglerShawn:
 	done
 
 .BeatenText:
-	text "Dropped"
-	line "my balls!"
+	text "Dropped my balls!"
 	done
 
 .AfterText:

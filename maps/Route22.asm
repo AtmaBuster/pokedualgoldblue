@@ -126,9 +126,8 @@ Route22_Rival1Script:
 	done
 
 .WinText:
-	text "Awww!"
-	line "You just lucked"
-	cont "out!"
+	text "Awww! You just"
+	line "lucked out!"
 	done
 
 .LossText:

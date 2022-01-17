@@ -54,8 +54,8 @@ RocketHideoutB4F_GiovanniScript:
 	done
 
 .WinText:
-	text "WHAT!"
-	line "This cannot be!"
+	text "WHAT! This cannot"
+	line "be!"
 	done
 
 .AfterText:
@@ -93,8 +93,7 @@ TrainerRocketGrunt16:
 	done
 
 .BeatenText:
-	text "Burned"
-	line "again!"
+	text "Burned again!"
 	done
 
 .AfterText:

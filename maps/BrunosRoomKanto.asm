@@ -80,8 +80,8 @@ BrunosRoomKanto_BrunoScript:
 	done
 
 .WinText:
-	text "Why?"
-	line "How could I lose?"
+	text "Why? How could I"
+	line "lose?"
 	done
 
 .AfterText:

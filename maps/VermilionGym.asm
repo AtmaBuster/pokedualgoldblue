@@ -156,8 +156,8 @@ TrainerGentlemanTucker:
 	done
 
 .BeatenText:
-	text "Stop!"
-	line "You're very good!"
+	text "Stop! You're very"
+	line "good!"
 	done
 
 .AfterText:
@@ -212,8 +212,7 @@ TrainerSailorDwayne:
 	done
 
 .BeatenText:
-	text "Wow!"
-	line "Surprised me!"
+	text "Wow! Surprised me!"
 	done
 
 .AfterText:

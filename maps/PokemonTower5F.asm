@@ -77,8 +77,7 @@ TrainerChannelerRuth:
 	done
 
 .BeatenText:
-	text "What"
-	line "a nightmare!"
+	text "What a nightmare!"
 	done
 
 .AfterText:

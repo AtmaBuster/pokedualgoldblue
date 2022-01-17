@@ -33,8 +33,8 @@ TrainerSailorLeonard:
 	done
 
 .BeatenText:
-	text "Right!"
-	line "Good fight, mate!"
+	text "Right! Good fight,"
+	line "mate!"
 	done
 
 .AfterText:
@@ -58,8 +58,8 @@ TrainerSailorDuncan:
 	done
 
 .BeatenText:
-	text "Your"
-	line "spirit sank me!"
+	text "Your spirit sank"
+	line "me!"
 	done
 
 .AfterText:
@@ -84,8 +84,8 @@ TrainerSailorHueyGen1:
 	done
 
 .BeatenText:
-	text "OK, "
-	line "you're not bad."
+	text "OK, you're not"
+	line "bad."
 	done
 
 .AfterText:
@@ -110,8 +110,7 @@ TrainerSailorDylan:
 	text_end
 
 .BeatenText:
-	text "Argh!"
-	line "Lost it!"
+	text "Argh! Lost it!"
 	done
 
 .AfterText:
@@ -137,8 +136,8 @@ TrainerSailorPhillip:
 	done
 
 .BeatenText:
-	text "Argh!"
-	line "Beaten by a kid!"
+	text "Argh! Beaten by"
+	line "a kid!"
 	done
 
 .AfterText:
@@ -166,9 +165,8 @@ TrainerFisherElliot:
 	done
 
 .BeatenText:
-	text "Darn!"
-	line "I let that one"
-	cont "get away!"
+	text "Darn! I let that"
+	line "one get away!"
 	done
 
 .AfterText:
