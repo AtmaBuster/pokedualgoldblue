@@ -68,51 +68,7 @@ TrainerClassDVs:
 	dn  9, 13, 13, 13 ; BLUE
 	dn  9,  8,  8,  8 ; OFFICER
 	dn  7, 14, 10,  8 ; GRUNTF
-
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
-	dn  9,  8,  8,  8 ; YOUNGSTER
+rept LANCE_GEN1 - YOUNGSTER_GEN1 + 1
+	dn  9,  8,  8,  8 ; all Gen 1 trainers share DVs
+endr
 	assert_table_length NUM_TRAINER_CLASSES

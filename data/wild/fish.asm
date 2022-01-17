@@ -22,17 +22,17 @@ FishGroups:
 	fishgroup 50 percent + 1, .Qwilfish_Old,         .Qwilfish_Good,         .Qwilfish_Super
 	fishgroup 50 percent + 1, .Remoraid_Old,         .Remoraid_Good,         .Remoraid_Super
 	fishgroup 50 percent + 1, .Qwilfish_NoSwarm_Old, .Qwilfish_NoSwarm_Good, .Qwilfish_NoSwarm_Super
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_Default
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_1
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_2
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_3
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_4
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_5
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_6
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_7
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_8
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_9
-	fishgroup 50 percent + 1, .Kanto_Old, .Kanto_Good, .Kanto_Super_10
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_Default
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_1
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_2
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_3
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_4
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_5
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_6
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_7
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_8
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_9
+	fishgroup 50 percent + 1, .Kanto_Old,            .Kanto_Good,            .Kanto_Super_10
 	assert_table_length NUM_FISHGROUPS
 
 .Shore_Old:

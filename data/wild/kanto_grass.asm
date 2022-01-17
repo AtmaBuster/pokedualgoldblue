@@ -9,10 +9,10 @@ KantoGrassWildMons:
 	db 46, MAGNETON
 	db 49, DODRIO
 	db 49, VENOMOTH
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 52, ARBOK
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 52, SANDSLASH
 ENDC
 	db 49, KADABRA
@@ -43,10 +43,10 @@ ENDC
 	db 64, CHANSEY
 	db 64, PARASECT
 	db 64, RAICHU
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 57, ARBOK
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 57, SANDSLASH
 ENDC
 	db 65, DITTO
@@ -112,7 +112,7 @@ ENDC
 
 	def_kanto_wildmons POKEMON_MANSION_1F
 	db 10 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 32, KOFFING
 	db 30, KOFFING
 	db 34, PONYTA
@@ -124,7 +124,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 37, WEEZING
 	db 39, MUK
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 32, GRIMER
 	db 30, GRIMER
 	db 34, PONYTA
@@ -140,7 +140,7 @@ ENDC
 
 	def_kanto_wildmons POKEMON_MANSION_2F
 	db 10 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 32, GROWLITHE
 	db 34, KOFFING
 	db 34, KOFFING
@@ -152,7 +152,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 39, WEEZING
 	db 37, MUK
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 32, VULPIX
 	db 34, GRIMER
 	db 34, GRIMER
@@ -168,7 +168,7 @@ ENDC
 
 	def_kanto_wildmons POKEMON_MANSION_3F
 	db 10 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 31, KOFFING
 	db 33, GROWLITHE
 	db 35, KOFFING
@@ -180,7 +180,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 36, PONYTA
 	db 42, MUK
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 31, GRIMER
 	db 33, VULPIX
 	db 35, GRIMER
@@ -196,7 +196,7 @@ ENDC
 
 	def_kanto_wildmons POKEMON_MANSION_B1F
 	db 10 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 33, KOFFING
 	db 31, KOFFING
 	db 35, GROWLITHE
@@ -208,7 +208,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 42, WEEZING
 	db 42, MUK
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 33, GRIMER
 	db 31, GRIMER
 	db 35, VULPIX
@@ -302,11 +302,11 @@ ENDC
 	db 23, VOLTORB
 	db 32, MAGNETON
 	db 35, MAGNETON
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 33, ELECTABUZZ
 	db 36, ELECTABUZZ
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 33, RAICHU
 	db 36, RAICHU
 ENDC
@@ -361,14 +361,14 @@ ENDC
 	db  4, PIDGEY
 	db  4, RATTATA
 	db  5, PIDGEY
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db  3, WEEDLE
 	db  2, RATTATA
 	db  5, RATTATA
 	db  4, WEEDLE
 	db  5, WEEDLE
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db  3, CATERPIE
 	db  2, RATTATA
 	db  5, RATTATA
@@ -396,7 +396,7 @@ ENDC
 	db 10, RATTATA
 	db 10, SPEAROW
 	db  8, RATTATA
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db  6, EKANS
 	db  8, SPEAROW
 	db 10, EKANS
@@ -405,7 +405,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db  8, EKANS
 	db 12, EKANS
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db  6, SANDSHREW
 	db  8, SPEAROW
 	db 10, SANDSHREW
@@ -418,7 +418,7 @@ ENDC
 
 	def_kanto_wildmons ROUTE_5
 	db 15 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 13, ODDISH
 	db 13, PIDGEY
 	db 15, PIDGEY
@@ -430,7 +430,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 14, MANKEY
 	db 16, MANKEY
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 13, BELLSPROUT
 	db 13, PIDGEY
 	db 15, PIDGEY
@@ -446,7 +446,7 @@ ENDC
 
 	def_kanto_wildmons ROUTE_6
 	db 15 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 13, ODDISH
 	db 13, PIDGEY
 	db 15, PIDGEY
@@ -458,7 +458,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 14, MANKEY
 	db 16, MANKEY
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 13, BELLSPROUT
 	db 13, PIDGEY
 	db 15, PIDGEY
@@ -475,7 +475,7 @@ ENDC
 	def_kanto_wildmons ROUTE_7
 	db 15 ; encounter rate
 	db 19, PIDGEY
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 19, ODDISH
 	db 17, MANKEY
 	db 22, ODDISH
@@ -486,7 +486,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 19, MANKEY
 	db 20, MANKEY
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 19, BELLSPROUT
 	db 17, MEOWTH
 	db 22, BELLSPROUT
@@ -502,7 +502,7 @@ ENDC
 	def_kanto_wildmons ROUTE_8
 	db 15 ; encounter rate
 	db 18, PIDGEY
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 18, MANKEY
 	db 17, EKANS
 	db 16, GROWLITHE
@@ -513,7 +513,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 15, GROWLITHE
 	db 18, GROWLITHE
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 18, MEOWTH
 	db 17, SANDSHREW
 	db 16, VULPIX
@@ -531,7 +531,7 @@ ENDC
 	db 16, RATTATA
 	db 16, SPEAROW
 	db 14, RATTATA
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 11, EKANS
 	db 13, SPEAROW
 	db 15, EKANS
@@ -540,7 +540,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 13, EKANS
 	db 17, EKANS
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 11, SANDSHREW
 	db 13, SPEAROW
 	db 15, SANDSHREW
@@ -556,7 +556,7 @@ ENDC
 	db 16, VOLTORB
 	db 16, SPEAROW
 	db 14, VOLTORB
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 11, EKANS
 	db 13, SPEAROW
 	db 15, EKANS
@@ -565,7 +565,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 13, EKANS
 	db 17, EKANS
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 11, SANDSHREW
 	db 13, SPEAROW
 	db 15, SANDSHREW
@@ -581,7 +581,7 @@ ENDC
 	db 16, VOLTORB
 	db 16, SPEAROW
 	db 14, VOLTORB
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 11, EKANS
 	db 13, SPEAROW
 	db 15, EKANS
@@ -590,7 +590,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 13, EKANS
 	db 17, EKANS
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 11, SANDSHREW
 	db 13, SPEAROW
 	db 15, SANDSHREW
@@ -603,7 +603,7 @@ ENDC
 
 	def_kanto_wildmons ROUTE_11
 	db 15 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 14, EKANS
 	db 15, SPEAROW
 	db 12, EKANS
@@ -612,7 +612,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 13, DROWZEE
 	db 15, EKANS
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 14, SANDSHREW
 	db 15, SPEAROW
 	db 12, SANDSHREW
@@ -628,7 +628,7 @@ ENDC
 
 	def_kanto_wildmons ROUTE_12
 	db 15 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 24, ODDISH
 	db 25, PIDGEY
 	db 23, PIDGEY
@@ -640,7 +640,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 28, GLOOM
 	db 30, GLOOM
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 24, BELLSPROUT
 	db 25, PIDGEY
 	db 23, PIDGEY
@@ -656,7 +656,7 @@ ENDC
 
 	def_kanto_wildmons ROUTE_13
 	db 20 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 24, ODDISH
 	db 25, PIDGEY
 	db 27, PIDGEY
@@ -668,7 +668,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 28, GLOOM
 	db 30, GLOOM
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 24, BELLSPROUT
 	db 25, PIDGEY
 	db 27, PIDGEY
@@ -684,7 +684,7 @@ ENDC
 
 	def_kanto_wildmons ROUTE_14
 	db 15 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 24, ODDISH
 	db 26, PIDGEY
 	db 23, DITTO
@@ -694,7 +694,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 26, ODDISH
 	db 30, GLOOM
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 24, BELLSPROUT
 	db 26, PIDGEY
 	db 23, DITTO
@@ -710,7 +710,7 @@ ENDC
 
 	def_kanto_wildmons ROUTE_15
 	db 15 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 24, ODDISH
 	db 26, DITTO
 	db 23, PIDGEY
@@ -720,7 +720,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 26, ODDISH
 	db 30, GLOOM
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 24, BELLSPROUT
 	db 26, DITTO
 	db 23, PIDGEY
@@ -793,7 +793,7 @@ ENDC
 	def_kanto_wildmons ROUTE_22
 	db 25 ; encounter rate
 	db  3, RATTATA
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db  3, NIDORAN_M
 	db  4, RATTATA
 	db  4, NIDORAN_M
@@ -804,7 +804,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db  3, NIDORAN_F
 	db  4, NIDORAN_F
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db  3, NIDORAN_F
 	db  4, RATTATA
 	db  4, NIDORAN_F
@@ -819,10 +819,10 @@ ENDC
 
 	def_kanto_wildmons ROUTE_23
 	db 10 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 26, EKANS
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 26, SANDSHREW
 ENDC
 	db 33, DITTO
@@ -830,10 +830,10 @@ ENDC
 	db 38, FEAROW
 	db 38, DITTO
 	db 38, FEAROW
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 41, ARBOK
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 41, SANDSLASH
 ENDC
 	db 43, DITTO
@@ -843,7 +843,7 @@ ENDC
 
 	def_kanto_wildmons ROUTE_24
 	db 25 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db  7, WEEDLE
 	db  8, KAKUNA
 	db 12, PIDGEY
@@ -852,7 +852,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 10, ABRA
 	db 14, ODDISH
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db  7, CATERPIE
 	db  8, METAPOD
 	db 12, PIDGEY
@@ -868,7 +868,7 @@ ENDC
 
 	def_kanto_wildmons ROUTE_25
 	db 15 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db  8, WEEDLE
 	db  9, KAKUNA
 	db 13, PIDGEY
@@ -880,7 +880,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db  7, METAPOD
 	db  8, CATERPIE
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db  8, CATERPIE
 	db  9, METAPOD
 	db 13, PIDGEY
@@ -896,7 +896,7 @@ ENDC
 
 	def_kanto_wildmons SAFARI_ZONE_CENTER
 	db 30 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 22, NIDORAN_M
 	db 25, RHYHORN
 	db 22, VENONAT
@@ -907,7 +907,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 30, PARASECT
 	db 23, SCYTHER
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 22, NIDORAN_F
 	db 25, RHYHORN
 	db 22, VENONAT
@@ -923,7 +923,7 @@ ENDC
 
 	def_kanto_wildmons SAFARI_ZONE_EAST
 	db 30 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 24, NIDORAN_M
 	db 26, DODUO
 	db 22, PARAS
@@ -935,7 +935,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 25, KANGASKHAN
 	db 28, SCYTHER
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 24, NIDORAN_F
 	db 26, DODUO
 	db 22, PARAS
@@ -951,7 +951,7 @@ ENDC
 
 	def_kanto_wildmons SAFARI_ZONE_NORTH
 	db 30 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 22, NIDORAN_M
 	db 26, RHYHORN
 	db 23, PARAS
@@ -960,7 +960,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 27, EXEGGCUTE
 	db 30, NIDORINA
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 22, NIDORAN_F
 	db 26, RHYHORN
 	db 23, PARAS
@@ -976,7 +976,7 @@ ENDC
 
 	def_kanto_wildmons SAFARI_ZONE_WEST
 	db 30 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 25, NIDORAN_M
 	db 26, DODUO
 	db 23, VENONAT
@@ -985,7 +985,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 26, EXEGGCUTE
 	db 25, NIDORAN_F
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 25, NIDORAN_F
 	db 26, DODUO
 	db 23, VENONAT
@@ -1002,7 +1002,7 @@ ENDC
 	def_kanto_wildmons SEAFOAM_ISLANDS_1F
 	db 15 ; encounter rate
 	db 30, SEEL
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 30, SLOWPOKE
 	db 30, SHELLDER
 	db 30, HORSEA
@@ -1013,7 +1013,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 28, SHELLDER
 	db 38, GOLDUCK
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 30, PSYDUCK
 	db 30, STARYU
 	db 30, KRABBY
@@ -1028,7 +1028,7 @@ ENDC
 
 	def_kanto_wildmons SEAFOAM_ISLANDS_B1F
 	db 10 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 30, STARYU
 	db 30, HORSEA
 	db 32, SHELLDER
@@ -1040,7 +1040,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 38, DEWGONG
 	db 37, SEADRA
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 30, SHELLDER
 	db 30, KRABBY
 	db 32, STARYU
@@ -1057,7 +1057,7 @@ ENDC
 	def_kanto_wildmons SEAFOAM_ISLANDS_B2F
 	db 10 ; encounter rate
 	db 30, SEEL
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 30, SLOWPOKE
 	db 32, SEEL
 	db 32, SLOWPOKE
@@ -1068,7 +1068,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 30, GOLBAT
 	db 37, SLOWBRO
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 30, PSYDUCK
 	db 32, SEEL
 	db 32, PSYDUCK
@@ -1083,7 +1083,7 @@ ENDC
 
 	def_kanto_wildmons SEAFOAM_ISLANDS_B3F
 	db 10 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 31, SLOWPOKE
 	db 31, SEEL
 	db 33, SLOWPOKE
@@ -1094,7 +1094,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 29, SHELLDER
 	db 39, SEADRA
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 31, PSYDUCK
 	db 31, SEEL
 	db 33, PSYDUCK
@@ -1110,7 +1110,7 @@ ENDC
 
 	def_kanto_wildmons SEAFOAM_ISLANDS_B4F
 	db 10 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db 31, HORSEA
 	db 31, SHELLDER
 	db 33, HORSEA
@@ -1121,7 +1121,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db 29, SEEL
 	db 39, SLOWBRO
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db 31, KRABBY
 	db 31, STARYU
 	db 33, KRABBY
@@ -1179,7 +1179,7 @@ ENDC
 
 	def_kanto_wildmons VIRIDIAN_FOREST
 	db 8 ; encounter rate
-IF DEF(_RED) || DEF(_GOLD)
+IF DEF(_GOLD)
 	db  4, WEEDLE
 	db  5, KAKUNA
 	db  3, WEEDLE
@@ -1189,7 +1189,7 @@ IF DEF(_RED) || DEF(_GOLD)
 	db  4, METAPOD
 	db  3, CATERPIE
 ENDC
-IF DEF(_BLUE) || DEF(_SILVER)
+IF DEF(_BLUE)
 	db  4, CATERPIE
 	db  5, METAPOD
 	db  3, CATERPIE

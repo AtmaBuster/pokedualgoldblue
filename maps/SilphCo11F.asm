@@ -85,7 +85,7 @@ SilphCo11F_GiovanniScript:
 	faceobject SILPHCO11F_GIOVANNI, PLAYER
 	faceobject PLAYER, SILPHCO11F_GIOVANNI
 	winlosstext .WinText, 0
-	loadtrainer BOSSGIOVANNI_GEN1, GIOVANNI2_GEN1
+	loadtrainer BOSS_GIOVANNI_GEN1, GIOVANNI2_GEN1
 	startbattle
 	reloadmapafterbattle
 	opentext

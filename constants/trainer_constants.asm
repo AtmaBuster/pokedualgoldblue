@@ -968,11 +968,11 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const BRAYDON_GEN1
 	const IVAN_GEN1
 
-	trainerclass BOSSGIOVANNI_GEN1  ; 5d
+	trainerclass BOSS_GIOVANNI_GEN1 ; 5d
 	const GIOVANNI1_GEN1
 	const GIOVANNI2_GEN1
 
-	trainerclass LEADERGIOVANNI_GEN1; 5e
+	trainerclass LEADER_GIOVANNI_GEN1 ; 5e
 	const GIOVANNI3_GEN1
 
 	trainerclass ROCKET_GEN1        ; 5f

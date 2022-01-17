@@ -32,7 +32,7 @@ RocketHideoutB4F_GiovanniScript:
 	waitbutton
 	closetext
 	winlosstext .WinText, 0
-	loadtrainer BOSSGIOVANNI_GEN1, GIOVANNI1_GEN1
+	loadtrainer BOSS_GIOVANNI_GEN1, GIOVANNI1_GEN1
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_GIOVANNI1_GEN1
