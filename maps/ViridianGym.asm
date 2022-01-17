@@ -25,7 +25,7 @@ ViridianGym_GiovanniScript:
 	waitbutton
 	closetext
 	winlosstext .WinText, 0
-	loadtrainer GIOVANNI_GEN1, GIOVANNI3_GEN1
+	loadtrainer LEADERGIOVANNI_GEN1, GIOVANNI3_GEN1
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_GIOVANNI3_GEN1

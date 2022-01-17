@@ -320,7 +320,8 @@ TrainerPicPointers::
 	ELIF DEF(_GOLD)
 		dba ScientistPic
 	ENDC
-	dba GiovanniGen1Pic
+	dba GiovanniGen1Pic ; BOSS
+	dba GiovanniGen1Pic ; LEADER
 	IF DEF(_BLUE)
 		dba RocketGen1Pic
 	ELIF DEF(_GOLD)

@@ -4900,7 +4900,7 @@ ScientistGen1_Group:
 	db 34, ELECTRODE
 	db -1 ; end
 
-GiovanniGen1_Group:
+BossGiovanniGen1_Group:
 	; GIOVANNI (1)
 	db "GIOVANNI@", TRAINERTYPE_NORMAL
 	db 25, ONIX
@@ -4916,6 +4916,7 @@ GiovanniGen1_Group:
 	db 41, NIDOQUEEN
 	db -1 ; end
 
+LeaderGiovanniGen1_Group:
 	; GIOVANNI (3)
 	db "GIOVANNI@", TRAINERTYPE_MOVES
 	db 45, RHYHORN, STOMP, TAIL_WHIP, FURY_ATTACK, HORN_DRILL

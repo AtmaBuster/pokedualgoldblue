@@ -114,4 +114,5 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; YOUNGSTER
 	dn  9,  8,  8,  8 ; YOUNGSTER
 	dn  9,  8,  8,  8 ; YOUNGSTER
+	dn  9,  8,  8,  8 ; YOUNGSTER
 	assert_table_length NUM_TRAINER_CLASSES

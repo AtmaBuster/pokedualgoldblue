@@ -968,12 +968,14 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const BRAYDON_GEN1
 	const IVAN_GEN1
 
-	trainerclass GIOVANNI_GEN1      ; 5d
+	trainerclass BOSSGIOVANNI_GEN1  ; 5d
 	const GIOVANNI1_GEN1
 	const GIOVANNI2_GEN1
+
+	trainerclass LEADERGIOVANNI_GEN1; 5e
 	const GIOVANNI3_GEN1
 
-	trainerclass ROCKET_GEN1        ; 5e
+	trainerclass ROCKET_GEN1        ; 5f
 	const GRUNT1_GEN1
 	const GRUNT2_GEN1
 	const GRUNT3_GEN1
@@ -1015,7 +1017,7 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const GRUNT39_GEN1
 	const GRUNT40_GEN1
 
-	trainerclass COOLTRAINER_M_GEN1 ; 5f
+	trainerclass COOLTRAINER_M_GEN1 ; 60
 	const SAUL_GEN1
 	const BEN_GEN1
 	const COLBY_GEN1
@@ -1023,44 +1025,44 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const YUJI_GEN1
 	const WREN_GEN1
 
-	trainerclass COOLTRAINER_F_GEN1 ; 60
+	trainerclass COOLTRAINER_F_GEN1 ; 61
 	const MARY_GEN1
 	const TINA_GEN1
 	const ALEXA_GEN1
 	const NAOMI_GEN1
 
-	trainerclass BRUNO_GEN1         ; 61
+	trainerclass BRUNO_GEN1         ; 62
 	const BRUNO1_GEN1
 
-	trainerclass BROCK_GEN1         ; 62
+	trainerclass BROCK_GEN1         ; 63
 	const BROCK1_GEN1
 
-	trainerclass MISTY_GEN1         ; 63
+	trainerclass MISTY_GEN1         ; 64
 	const MISTY1_GEN1
 
-	trainerclass LT_SURGE_GEN1      ; 64
+	trainerclass LT_SURGE_GEN1      ; 65
 	const LT_SURGE1_GEN1
 
-	trainerclass ERIKA_GEN1         ; 65
+	trainerclass ERIKA_GEN1         ; 66
 	const ERIKA1_GEN1
 
-	trainerclass KOGA_GEN1          ; 66
+	trainerclass KOGA_GEN1          ; 67
 	const KOGA1_GEN1
 
-	trainerclass BLAINE_GEN1        ; 67
+	trainerclass BLAINE_GEN1        ; 68
 	const BLAINE1_GEN1
 
-	trainerclass SABRINA_GEN1       ; 68
+	trainerclass SABRINA_GEN1       ; 69
 	const SABRINA1_GEN1
 
-	trainerclass GENTLEMAN_GEN1     ; 69
+	trainerclass GENTLEMAN_GEN1     ; 6a
 	const THOMAS_GEN1
 	const ARTHUR_GEN1
 	const BROOKS_GEN1
 	const TUCKER2_GEN1
 	const LAMAR_GEN1
 
-	trainerclass RIVAL2_GEN1        ; 6a
+	trainerclass RIVAL2_GEN1        ; 6b
 	const RIVAL2_1_SQUIRTLE_GEN1
 	const RIVAL2_1_BULBASAUR_GEN1
 	const RIVAL2_1_CHARMANDER_GEN1
@@ -1074,15 +1076,15 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const RIVAL2_4_BULBASAUR_GEN1
 	const RIVAL2_4_CHARMANDER_GEN1
 
-	trainerclass RIVAL3_GEN1        ; 6b
+	trainerclass RIVAL3_GEN1        ; 6c
 	const RIVAL3_1_SQUIRTLE_GEN1
 	const RIVAL3_1_BULBASAUR_GEN1
 	const RIVAL3_1_CHARMANDER_GEN1
 
-	trainerclass LORELEI_GEN1       ; 6c
+	trainerclass LORELEI_GEN1       ; 6d
 	const LORELEI1_GEN1
 
-	trainerclass CHANNELER_GEN1     ; 6d
+	trainerclass CHANNELER_GEN1     ; 6e
 	const HOPE_GEN1
 	const CARLY_GEN1
 	const PATRICIA_GEN1
@@ -1100,10 +1102,10 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const STACY_GEN1
 	const TASHA_GEN1
 
-	trainerclass AGATHA_GEN1        ; 6e
+	trainerclass AGATHA_GEN1        ; 6f
 	const AGATHA1_GEN1
 
-	trainerclass LANCE_GEN1         ; 6f
+	trainerclass LANCE_GEN1         ; 70
 	const LANCE1_GEN1
 
 NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

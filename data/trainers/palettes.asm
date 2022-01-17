@@ -102,6 +102,7 @@ INCBIN "gfx/trainers/gen1/rival1.gbcpal", middle_colors
 INCBIN "gfx/trainers/gen1/profoak.gbcpal", middle_colors
 INCBIN "gfx/trainers/gen1/scientist.gbcpal", middle_colors
 INCBIN "gfx/trainers/gen1/giovanni.gbcpal", middle_colors
+INCBIN "gfx/trainers/gen1/giovanni.gbcpal", middle_colors
 INCBIN "gfx/trainers/gen1/rocket.gbcpal", middle_colors
 INCBIN "gfx/trainers/gen1/cooltrainerm.gbcpal", middle_colors
 INCBIN "gfx/trainers/gen1/cooltrainerf.gbcpal", middle_colors

@@ -97,7 +97,8 @@ TrainerGroups:
 	dba Green1Gen1_Group
 	dba ProfOakGen1_Group
 	dba ScientistGen1_Group
-	dba GiovanniGen1_Group
+	dba BossGiovanniGen1_Group
+	dba LeaderGiovanniGen1_Group
 	dba RocketGen1_Group
 	dba CooltrainerMGen1_Group
 	dba CooltrainerFGen1_Group

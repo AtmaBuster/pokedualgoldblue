@@ -97,7 +97,8 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER
 	db MUSIC_HIKER_ENCOUNTER
 	db MUSIC_HIKER_ENCOUNTER ; scientist
-	db MUSIC_HIKER_ENCOUNTER
+	db MUSIC_HIKER_ENCOUNTER ; boss giovanni
+	db MUSIC_HIKER_ENCOUNTER ; leader giovanni
 	db MUSIC_HIKER_ENCOUNTER
 	db MUSIC_HIKER_ENCOUNTER
 	db MUSIC_HIKER_ENCOUNTER ; cooltrainer_f
@@ -118,7 +119,3 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER ; lance
 
 	assert_table_length NUM_TRAINER_CLASSES + 1
-	db MUSIC_HIKER_ENCOUNTER       ; unused
-	db MUSIC_HIKER_ENCOUNTER       ; unused
-	db MUSIC_HIKER_ENCOUNTER       ; unused
-	db MUSIC_HIKER_ENCOUNTER       ; unused
