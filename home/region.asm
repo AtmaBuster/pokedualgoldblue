@@ -1,6 +1,8 @@
 IsInJohto::
-; Return 0 if the player is in Johto, and 1 in Kanto.
+; In Johto: z and c are set, a = 0
+; In Kanto: z and c are clear, a = 1
 
+	push bc
 	ld a, [wMapGroup]
 	ld b, a
 	ld a, [wMapNumber]
@@ -24,9 +26,13 @@ IsInJohto::
 	jr nc, .Kanto
 
 .Johto:
+	pop bc
 	xor a ; JOHTO_REGION
+	scf
 	ret
 
 .Kanto:
+	pop bc
 	ld a, KANTO_REGION
+	and a
 	ret
