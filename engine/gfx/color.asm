@@ -974,7 +974,11 @@ INCLUDE "gfx/sgb/pal_packets.asm"
 INCLUDE "data/sgb_ctrl_packets.asm"
 
 PredefPals:
+IF DEF(_GOLD)
 INCLUDE "gfx/sgb/predef.pal"
+ELIF DEF(_BLUE)
+INCLUDE "gfx/sgb/predef-gen1.pal"
+ENDC
 
 SGBBorderMapAndPalettes:
 ; interleaved tile ids and palette ids, without the center 20x18 screen area

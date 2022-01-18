@@ -845,7 +845,7 @@ _CGB_MysteryGift:
 	ret
 
 .MysteryGiftPalette:
-	RGB 31, 31, 31
-	RGB 09, 31, 31
+	RGB 31, 29, 31
+	RGB 09, 29, 31
 	RGB 10, 12, 31
 	RGB 00, 03, 19
