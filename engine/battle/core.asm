@@ -6127,6 +6127,9 @@ LoadEnemyMon:
 
 .TreeMon:
 ; If we're headbutting trees, some monsters enter battle asleep
+	call IsInJohto
+	jr nz, .not_sleeping ; Kanto mon are never asleep
+
 	ld a, [wTempEnemyMonSpecies]
 
 ; Hoothoot/Noctowl are asleep if MORN/DAY
