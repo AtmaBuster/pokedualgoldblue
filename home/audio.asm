@@ -337,6 +337,10 @@ PlayMapMusicBike::
 	xor a
 	ld [wDontPlayMapMusicOnReload], a
 	ld de, MUSIC_BICYCLE
+	call IsInJohto
+	jr z, .check_bike
+	ld de, MUSIC_RBY_BIKE_RIDING
+.check_bike
 	ld a, [wPlayerState]
 	cp PLAYER_BIKE
 	jr z, .play
@@ -406,7 +410,10 @@ SpecialMapMusic::
 
 .surf
 	ld de, MUSIC_SURF
+	call IsInJohto
 	scf
+	ret z
+	ld de, MUSIC_RBY_SURFING
 	ret
 
 .contest

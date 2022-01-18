@@ -1632,6 +1632,10 @@ BikeFunction:
 	call DelayFrame
 	call MaxVolume
 	ld de, MUSIC_BICYCLE
+	call IsInJohto
+	jr z, .play
+	ld de, MUSIC_RBY_BIKE_RIDING
+.play
 	ld a, e
 	ld [wMapMusic], a
 	call PlayMusic

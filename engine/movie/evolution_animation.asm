@@ -57,6 +57,10 @@ EvolutionAnimation:
 	call PlayMonCry
 
 	ld de, MUSIC_EVOLUTION
+	call IsInJohto
+	jr z, .music
+	ld de, MUSIC_RBY_SAFARI_ZONE
+.music
 	call PlayMusic
 
 	ld c, 80

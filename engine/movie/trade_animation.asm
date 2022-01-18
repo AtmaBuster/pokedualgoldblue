@@ -129,6 +129,10 @@ RunTradeAnimScript:
 	set NO_TEXT_SCROLL, [hl]
 	call .TradeAnimLayout
 	ld de, MUSIC_EVOLUTION
+	call IsInJohto
+	jr z, .music
+	ld de, MUSIC_RBY_SAFARI_ZONE
+.music
 	call PlayMusic2
 .anim_loop
 	call DoTradeAnimation
