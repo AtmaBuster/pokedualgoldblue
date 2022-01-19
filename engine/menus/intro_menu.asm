@@ -11,6 +11,11 @@ NewGame:
 
 	ld a, MAPSETUP_WARP
 	ldh [hMapEntryMethod], a
+
+IF DEF(_BLUE)
+	ld a, DEXMODE_OLD
+	ld [wLastDexMode], a
+ENDC
 	jp FinishContinueFunction
 
 IF DEF(_DEBUG)

@@ -515,7 +515,17 @@ Pokedex_InitOptionScreen:
 	call Pokedex_InitArrowCursor
 	; point cursor to the current dex mode (modes == menu item indexes)
 	ld a, [wCurDexMode]
+IF DEF(_GOLD)
 	ld [wDexArrowCursorPosIndex], a
+ELIF DEF(_BLUE)
+	ld hl, wDexArrowCursorPosIndex
+	ld [hl], a
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_HALL_OF_FAME_F, a
+	jr nz, .has_hof
+	dec [hl]
+.has_hof
+ENDC
 	call Pokedex_DisplayModeDescription
 	call WaitBGMap
 	ld a, SCGB_POKEDEX_SEARCH_OPTION
@@ -524,6 +534,12 @@ Pokedex_InitOptionScreen:
 	ret
 
 Pokedex_UpdateOptionScreen:
+IF DEF(_BLUE)
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_HALL_OF_FAME_F, a
+	ld de, .NoJohtoArrowCursorData
+	jr z, .okay2
+ENDC
 	ld a, [wUnlockedUnownMode]
 	and a
 	jr nz, .okay
@@ -544,8 +560,15 @@ Pokedex_UpdateOptionScreen:
 	ret
 
 .do_menu_action
-	ld a, [wDexArrowCursorPosIndex]
 	ld hl, .MenuActionJumptable
+IF DEF(_BLUE)
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_HALL_OF_FAME_F, a
+	jr nz, .has_hof
+	ld hl, .MenuActionJumptable_Pre_HOF
+.has_hof
+ENDC
+	ld a, [wDexArrowCursorPosIndex]
 	call Pokedex_LoadPointer
 	jp hl
 
@@ -554,6 +577,13 @@ Pokedex_UpdateOptionScreen:
 	ld a, DEXSTATE_MAIN_SCR
 	ld [wJumptableIndex], a
 	ret
+
+IF DEF(_BLUE)
+.NoJohtoArrowCursorData:
+	db D_UP | D_DOWN, 2
+	dwcoord 2,  4 ; OLD
+	dwcoord 2,  6 ; ABC
+ENDC
 
 .NoUnownModeArrowCursorData:
 	db D_UP | D_DOWN, 3
@@ -573,6 +603,13 @@ Pokedex_UpdateOptionScreen:
 	dw .MenuAction_OldMode
 	dw .MenuAction_ABCMode
 	dw .MenuAction_UnownMode
+
+IF DEF(_BLUE)
+.MenuActionJumptable_Pre_HOF:
+	dw .MenuAction_OldMode
+	dw .MenuAction_ABCMode
+	dw .MenuAction_UnownMode
+ENDC
 
 .MenuAction_NewMode:
 	ld b, DEXMODE_NEW
@@ -1188,6 +1225,12 @@ Pokedex_DrawOptionScreenBG:
 	ld de, .Title
 	call Pokedex_PlaceString
 	hlcoord 3, 4
+IF DEF(_BLUE)
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_HALL_OF_FAME_F, a
+	ld de, .Modes_Pre_HOF
+	jp z, PlaceString
+ENDC
 	ld de, .Modes
 	call PlaceString
 	ld a, [wUnlockedUnownMode]
@@ -1202,10 +1245,22 @@ Pokedex_DrawOptionScreenBG:
 	db $3b, " OPTION ", $3c, -1
 
 .Modes:
+IF DEF(_GOLD)
 	db   "NEW #DEX MODE"
 	next "OLD #DEX MODE"
 	next "A to Z MODE"
 	db   "@"
+ELIF DEF(_BLUE)
+	db   "JOHTO #DEX"
+	next "NAT'L #DEX"
+	next "A to Z"
+	db   "@"
+
+.Modes_Pre_HOF
+	db   "#DEX ORDER"
+	next "A to Z ORDER"
+	db   "@"
+ENDC
 
 .UnownMode:
 	db "UNOWN MODE@"
@@ -1713,8 +1768,15 @@ Pokedex_DisplayModeDescription:
 	hlcoord 0, 12
 	lb bc, 4, 18
 	call Pokedex_PlaceBorder
-	ld a, [wDexArrowCursorPosIndex]
 	ld hl, .Modes
+IF DEF(_BLUE)
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_HALL_OF_FAME_F, a
+	jr nz, .has_hof
+	ld hl, .Modes_Pre_HOF
+.has_hof
+ENDC
+	ld a, [wDexArrowCursorPosIndex]
 	call Pokedex_LoadPointer
 	ld e, l
 	ld d, h
@@ -1729,6 +1791,13 @@ Pokedex_DisplayModeDescription:
 	dw .OldMode
 	dw .ABCMode
 	dw .UnownMode
+
+IF DEF(_BLUE)
+.Modes_Pre_HOF
+	dw .OldMode
+	dw .ABCMode
+	dw .UnownMode
+ENDC
 
 .NewMode:
 	db   "<PK><MN> are listed by"
