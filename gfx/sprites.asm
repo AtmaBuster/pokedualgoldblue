@@ -1,8 +1,14 @@
 INCLUDE "constants.asm"
 
 floating_section
+IF DEF(_GOLD)
+PlayerSpriteGFX::
+ENDC
 ChrisSpriteGFX::               INCBIN "gfx/sprites/chris.2bpp"
 floating_section
+IF DEF(_GOLD)
+PlayerBikeSpriteGFX::
+ENDC
 ChrisBikeSpriteGFX::           INCBIN "gfx/sprites/chris_bike.2bpp"
 floating_section
 GameboyKidSpriteGFX::          INCBIN "gfx/sprites/gameboy_kid.2bpp"
@@ -11,6 +17,9 @@ SilverSpriteGFX::              INCBIN "gfx/sprites/silver.2bpp"
 floating_section
 OakSpriteGFX::                 INCBIN "gfx/sprites/oak.2bpp"
 floating_section
+IF DEF(_BLUE)
+PlayerSpriteGFX::
+ENDC
 RedSpriteGFX::                 INCBIN "gfx/sprites/red.2bpp"
 floating_section
 BlueSpriteGFX::                INCBIN "gfx/sprites/blue.2bpp"
@@ -277,6 +286,9 @@ OldAmberSpriteGFX::            INCBIN "gfx/sprites/old_amber.2bpp"
 floating_section
 GamblerAsleepSpriteGFX::       INCBIN "gfx/sprites/gambler_asleep.2bpp"
 floating_section
+IF DEF(_BLUE)
+PlayerBikeSpriteGFX::
+ENDC
 RedBikeSpriteGFX::             INCBIN "gfx/sprites/red_bike.2bpp"
 floating_section
 CouchManSpriteGFX::            INCBIN "gfx/sprites/couch_man.2bpp"

@@ -18,7 +18,7 @@ LoadSGBLayoutCGB:
 	ld l, a
 	ld h, 0
 	add hl, hl
-	ld de, .dw
+	ld de, SCGBLayoutJumptable
 	add hl, de
 	ld a, [hli]
 	ld h, [hl]
@@ -30,7 +30,8 @@ LoadSGBLayoutCGB:
 .ReturnFromJumpTable:
 	ret
 
-.dw
+SCGBLayoutJumptable:
+	table_width 2, SCGBLayoutJumptable
 	dw _CGB_BattleGrayscale
 	dw _CGB_BattleColors
 	dw _CGB_PokegearPals
@@ -64,6 +65,8 @@ LoadSGBLayoutCGB:
 	dw _CGB1e
 	dw _CGB_Pokedex_5x5
 	dw _CGB_TrainerCard
+	dw _CGB_TownMapPals
+	assert_table_length NUM_SCGB_LAYOUTS
 
 _CGB_BattleGrayscale:
 	ld hl, PalPacket_BattleGrayscale + 1
@@ -144,6 +147,20 @@ _CGB_FinishBattleScreenLayout:
 
 _CGB_PokegearPals:
 	ld a, PREDEFPAL_POKEGEAR
+	call GetPredefPal
+	ld de, wBGPals1
+	push hl
+	call LoadHLPaletteIntoDE
+	pop hl
+	ld de, wOBPals1
+	call _CGB_MapPals.LoadHLOBPaletteIntoDE
+	call ApplyPals
+	ld a, $1
+	ldh [hCGBPalUpdate], a
+	ret
+
+_CGB_TownMapPals:
+	ld a, PREDEFPAL_TOWN_MAP
 	call GetPredefPal
 	ld de, wBGPals1
 	push hl

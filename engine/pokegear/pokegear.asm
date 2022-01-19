@@ -132,15 +132,15 @@ Pokegear_LoadGFX:
 	call GetWorldMapLocation
 	cp LANDMARK_FAST_SHIP
 	jr z, .ssaqua
-	ld hl, ChrisSpriteGFX
+	ld hl, PlayerSpriteGFX
 	ld de, vTiles0 tile $10
 	ld bc, 4 tiles
-	ld a, BANK(ChrisSpriteGFX)
+	ld a, BANK(PlayerSpriteGFX)
 	call FarCopyBytes
-	ld hl, ChrisSpriteGFX + 12 tiles
+	ld hl, PlayerSpriteGFX + 12 tiles
 	ld de, vTiles0 tile $14
 	ld bc, 4 tiles
-	ld a, BANK(ChrisSpriteGFX)
+	ld a, BANK(PlayerSpriteGFX)
 	call FarCopyBytes
 	ret
 
@@ -1746,7 +1746,7 @@ _TownMap:
 	ld [wTownMapCursorObjectPointer], a
 	ld a, b
 	ld [wTownMapCursorObjectPointer + 1], a
-	ld b, SCGB_POKEGEAR_PALS
+	ld b, SCGB_TOWN_MAP
 	call GetSGBLayout
 	call SetPalettes
 	ldh a, [hCGB]
@@ -1992,7 +1992,7 @@ _FlyMap:
 	call Request1bpp
 	call FlyMap
 	call Pokegear_DummyFunction
-	ld b, SCGB_POKEGEAR_PALS
+	ld b, SCGB_TOWN_MAP
 	call GetSGBLayout
 	call SetPalettes
 .loop
@@ -2320,12 +2320,16 @@ Pokedex_GetArea:
 	call TownMapPals
 	hlbgcoord 0, 0
 	call TownMapBGUpdate
-	ld b, SCGB_POKEGEAR_PALS
+	ld b, SCGB_TOWN_MAP
 	call GetSGBLayout
 	call SetPalettes
 	xor a
 	ldh [hBGMapMode], a
+IF DEF(_GOLD)
 	xor a ; JOHTO_REGION
+ELIF DEF(_BLUE)
+	ld a, KANTO_REGION
+ENDC
 	call .GetAndPlaceNest
 .loop
 	call JoyTextDelay
@@ -2364,6 +2368,11 @@ Pokedex_GetArea:
 	ret
 
 .left
+IF DEF(_BLUE)
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_HALL_OF_FAME_F, a
+	ret z
+ENDC
 	ldh a, [hWY]
 	cp SCREEN_HEIGHT_PX
 	ret z
@@ -2375,9 +2384,11 @@ Pokedex_GetArea:
 	ret
 
 .right
+IF DEF(_GOLD)
 	ld a, [wStatusFlags]
 	bit STATUSFLAGS_HALL_OF_FAME_F, a
 	ret z
+ENDC
 	ldh a, [hWY]
 	and a
 	ret z
@@ -2547,8 +2558,8 @@ Pokedex_GetArea:
 	ld a, [wTownMapPlayerIconLandmark]
 	cp LANDMARK_FAST_SHIP
 	jr z, .FastShip
-	ld de, ChrisSpriteGFX
-	ld b, BANK(ChrisSpriteGFX)
+	ld de, PlayerSpriteGFX
+	ld b, BANK(PlayerSpriteGFX)
 	ret
 
 .FastShip:
@@ -2602,6 +2613,7 @@ FillTownMap:
 	jr .loop
 
 TownMapPals:
+IF DEF(_GOLD)
 ; Assign palettes based on tile ids
 	hlcoord 0, 0
 	decoord 0, 0, wAttrmap
@@ -2653,7 +2665,15 @@ TownMapPals:
 	ret
 
 .PalMap:
-INCLUDE "gfx/pokegear/town_map_palette_map.asm"
+	INCLUDE "gfx/pokegear/town_map_palette_map.asm"
+
+ELIF DEF(_BLUE)
+	; Set the whole screen to use Pal 0
+	hlcoord 0, 0, wAttrmap
+	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
+	xor a
+	jp ByteFill
+ENDC
 
 TownMapMon:
 ; Draw the FlyMon icon at town map location
@@ -2684,16 +2704,16 @@ TownMapMon:
 TownMapPlayerIcon:
 ; Draw the player icon at town map location in a
 	push af
-	ld de, ChrisSpriteGFX
+	ld de, PlayerSpriteGFX
 ; Standing icon
 	ld hl, vTiles0 tile $10
-	lb bc, BANK(ChrisSpriteGFX), 4
+	lb bc, BANK(PlayerSpriteGFX), 4
 	call Request2bpp
 ; Walking icon
-	ld de, ChrisSpriteGFX + 12 tiles
+	ld de, PlayerSpriteGFX + 12 tiles
 	ld hl, vTiles0 tile $14
-	lb bc, BANK(ChrisSpriteGFX), 4
-	ld a, BANK(ChrisSpriteGFX) ; does nothing
+	lb bc, BANK(PlayerSpriteGFX), 4
+	ld a, BANK(PlayerSpriteGFX) ; does nothing
 	call Request2bpp
 ; Animation/palette
 	depixel 0, 0

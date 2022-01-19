@@ -940,8 +940,8 @@ ShrinkFrame:
 
 Intro_PlaceChrisSprite:
 IF DEF(_GOLD)
-	ld de, ChrisSpriteGFX
-	lb bc, BANK(ChrisSpriteGFX), 12
+	ld de, PlayerSpriteGFX
+	lb bc, BANK(PlayerSpriteGFX), 12
 ELIF DEF(_BLUE)
 	ld de, RedSpriteGFX
 	lb bc, BANK(RedSpriteGFX), 12

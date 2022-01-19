@@ -55,6 +55,9 @@ PalPacket_BattleGrayscale:
 PalPacket_Pokegear:
 	sgb_pal_set POKEGEAR, ROUTES, ROUTES, ROUTES
 
+PalPacket_TownMap:
+	sgb_pal_set TOWN_MAP, ROUTES, ROUTES, ROUTES
+
 PalPacket_SlotMachine:
 	sgb_pal_set SLOT_MACHINE_0, SLOT_MACHINE_1, SLOT_MACHINE_2, SLOT_MACHINE_3
 

@@ -120,8 +120,8 @@ NamingScreen:
 
 .Player:
 IF DEF(_GOLD)
-	ld de, ChrisSpriteGFX
-	ld b, BANK(ChrisSpriteGFX)
+	ld de, PlayerSpriteGFX
+	ld b, BANK(PlayerSpriteGFX)
 ELIF DEF(_BLUE)
 	ld de, RedSpriteGFX
 	ld b, BANK(RedSpriteGFX)

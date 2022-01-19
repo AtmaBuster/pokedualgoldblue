@@ -31,7 +31,11 @@ ExpBarGFX:
 INCBIN "gfx/battle/expbar.2bpp"
 
 TownMapGFX:
+IF DEF(_GOLD)
 INCBIN "gfx/pokegear/town_map.2bpp.lz"
+ELIF DEF(_BLUE)
+INCBIN "gfx/pokegear/town_map_gen1.2bpp.lz"
+ENDC
 
 UnusedWeekdayKanjiGFX: ; unreferenced
 INCBIN "gfx/font/unused_weekday_kanji.2bpp"

@@ -56,6 +56,7 @@ SGBLayoutJumptable:
 	dw .SGB_Unused1E
 	dw .SGB_Pokedex_5x5
 	dw .SGB_TrainerCard
+	dw .SGB_TownMapPals
 	assert_table_length NUM_SCGB_LAYOUTS
 
 .SGB_BattleGrayscale:
@@ -157,6 +158,11 @@ SGBLayoutJumptable:
 
 .SGB_PokegearPals:
 	ld hl, PalPacket_Pokegear
+	ld de, BlkPacket_AllPal0
+	ret
+
+.SGB_TownMapPals:
+	ld hl, PalPacket_TownMap
 	ld de, BlkPacket_AllPal0
 	ret
 
