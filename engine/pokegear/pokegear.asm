@@ -719,8 +719,13 @@ TownMap_GetKantoLandmarkLimits:
 	ret
 
 .not_hof
+IF DEF(_GOLD)
 	ld d, LANDMARK_ROUTE_28
-	ld e, LANDMARK_VICTORY_ROAD
+	ld e, LANDMARK_ROUTE_23
+ELIF DEF(_BLUE)
+	ld d, LANDMARK_INDIGO_PLATEAU
+	ld e, LANDMARK_PALLET_TOWN
+ENDC
 	ret
 
 PokegearRadio_Init:
@@ -1850,6 +1855,8 @@ _TownMap:
 	ld e, KANTO_REGION
 .okay_tilemap
 	farcall PokegearMap
+IF DEF(_GOLD)
+	; Draw top border tiles
 	ld a, $07
 	ld bc, 6
 	hlcoord 1, 0
@@ -1868,6 +1875,7 @@ _TownMap:
 	call ByteFill
 	hlcoord 19, 2
 	ld [hl], $17
+ENDC
 	ld a, [wTownMapCursorLandmark]
 	call PokegearMap_UpdateLandmarkName
 	farcall TownMapPals
@@ -2327,10 +2335,10 @@ Pokedex_GetArea:
 	ldh [hBGMapMode], a
 IF DEF(_GOLD)
 	xor a ; JOHTO_REGION
-ELIF DEF(_BLUE)
-	ld a, KANTO_REGION
-ENDC
 	call .GetAndPlaceNest
+ELIF DEF(_BLUE)
+	call .right ; Start in Kanto
+ENDC
 .loop
 	call JoyTextDelay
 	ld hl, hJoyPressed
@@ -2422,6 +2430,8 @@ ENDC
 	ld bc, SCREEN_WIDTH
 	ld a, " "
 	call ByteFill
+IF DEF(_GOLD)
+	; Draw top border
 	hlcoord 0, 1
 	ld a, $06
 	ld [hli], a
@@ -2429,6 +2439,7 @@ ENDC
 	ld a, $07
 	call ByteFill
 	ld [hl], $17
+ENDC
 	call GetPokemonName
 	hlcoord 2, 0
 	call PlaceString
@@ -2452,6 +2463,14 @@ ENDC
 	and a
 	jr z, .done_nest
 	push de
+IF DEF(_BLUE)
+	ld b, a
+	call TownMap_GetKantoLandmarkLimits
+	ld a, b
+	cp e
+	jr c, .next_nest
+	jr z, .next_nest
+ENDC
 	ld e, a
 	push hl
 	farcall GetLandmarkCoords
@@ -2467,7 +2486,7 @@ ENDC
 	ld [hli], a ; tile id
 	xor a
 	ld [hli], a ; attributes
-	; next
+.next_nest
 	pop de
 	inc de
 	jr .nestloop
@@ -2600,6 +2619,12 @@ FillJohtoMap:
 	jr FillTownMap
 
 FillKantoMap:
+IF DEF(_BLUE)
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_HALL_OF_FAME_F, a
+	ld de, KantoMapGen1
+	jr z, FillTownMap
+ENDC
 	ld de, KantoMap
 FillTownMap:
 	hlcoord 0, 0
@@ -2743,10 +2768,20 @@ LoadTownMapGFX:
 	ret
 
 JohtoMap:
+IF DEF(_GOLD)
 INCBIN "gfx/pokegear/johto.bin"
+ELIF DEF(_BLUE)
+INCBIN "gfx/pokegear/johto_borderless.bin"
+ENDC
 
 KantoMap:
+IF DEF(_GOLD)
 INCBIN "gfx/pokegear/kanto.bin"
+ELIF DEF(_BLUE)
+INCBIN "gfx/pokegear/kanto_borderless.bin"
+KantoMapGen1:
+INCBIN "gfx/pokegear/kanto_gen1.bin"
+ENDC
 
 PokedexNestIconGFX:
 INCBIN "gfx/pokegear/dexmap_nest_icon.2bpp"

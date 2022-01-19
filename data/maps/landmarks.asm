@@ -81,10 +81,8 @@ Landmarks:
 	landmark 132,  56, Route10Name
 	landmark 132,  60, PowerPlantName
 	landmark 132,  68, LavenderTownName
-	landmark 140,  68, LavRadioTowerName
 	landmark 140,  68, PokemonTowerName
 	landmark  76,  68, CeladonCityName
-	landmark  76,  68, RocketHQName
 	landmark 100,  68, SaffronCityName
 	landmark 100,  68, SilphCoName
 	landmark 116,  84, Route11Name
@@ -104,8 +102,8 @@ Landmarks:
 	landmark  52, 128, PokemonMansionName
 	landmark  52, 120, Route21Name
 	landmark  36,  68, Route22Name
-	landmark  28,  52, VictoryRoadName
-	landmark  28,  44, Route23Name
+	landmark  28,  52, Route23Name
+	landmark  28,  44, VictoryRoadName
 	landmark  28,  36, IndigoPlateauName
 	landmark  28,  92, Route26Name
 	landmark  20, 100, Route27Name
@@ -139,7 +137,6 @@ WhirlIslandsName:    db "WHIRL¯ISLANDS@"
 MtMortarName:        db "MT.MORTAR@"
 DragonsDenName:      db "DRAGON'S¯DEN@"
 IcePathName:         db "ICE PATH@"
-NotApplicableName:   db "N/A@" ; unreferenced ; "オバケやしき" ("HAUNTED HOUSE") in Japanese
 PalletTownName:      db "PALLET TOWN@"
 ViridianCityName:    db "VIRIDIAN¯CITY@"
 PewterCityName:      db "PEWTER CITY@"
@@ -150,11 +147,14 @@ CeladonCityName:     db "CELADON¯CITY@"
 SaffronCityName:     db "SAFFRON¯CITY@"
 FuchsiaCityName:     db "FUCHSIA¯CITY@"
 CinnabarIslandName:  db "CINNABAR¯ISLAND@"
+IF DEF(_GOLD)
 IndigoPlateauName:   db "#MON¯LEAGUE@"
+ELIF DEF(_BLUE)
+IndigoPlateauName:   db "INDIGO¯PLATEAU@"
+ENDC
 VictoryRoadName:     db "VICTORY¯ROAD@"
 MtMoonName:          db "MT.MOON@"
 RockTunnelName:      db "ROCK TUNNEL@"
-LavRadioTowerName:   db "LAV¯RADIO TOWER@"
 SilphCoName:         db "SILPH CO.@"
 SafariZoneName:      db "SAFARI ZONE@"
 SeafoamIslandsName:  db "SEAFOAM¯ISLANDS@"
@@ -217,5 +217,4 @@ UndergroundName:     db "UNDERGROUND¯PATH@"
 SeaCottageName:      db "SEA¯COTTAGE@"
 SSAnneName:          db "S.S.ANNE@"
 PokemonTowerName:    db "#MON¯TOWER@"
-RocketHQName:        db "ROCKET HQ@"
 SpecialMapName:      db "SPECIAL@"
