@@ -6650,10 +6650,12 @@ BadgeStatBoosts:
 ; Every other badge boosts a stat, starting from the first.
 ; GlacierBadge also boosts Special Defense, although the relevant code is buggy (see below).
 
-; 	ZephyrBadge:  Attack
-; 	PlainBadge:   Speed
-; 	MineralBadge: Defense
-; 	GlacierBadge: Special Attack and Special Defense
+; 	ZephyrBadge, BoulderBadge:  Attack
+; 	PlainBadge, ThunderBadge:   Speed
+; 	MineralBadge, SoulBadge:    Defense
+; 	GlacierBadge, VolcanoBadge: Special Attack and Special Defense
+
+; Thankfully the boost badges line up in both Kanto and Johto, so the logic is the same for both games
 
 ; The boosted stats are in order, except PlainBadge and MineralBadge's boosts are swapped.
 
@@ -6661,7 +6663,11 @@ BadgeStatBoosts:
 	and a
 	ret nz
 
+IF DEF(_GOLD)
 	ld a, [wJohtoBadges]
+ELIF DEF(_BLUE)
+	ld a, [wKantoBadges]
+ENDC
 
 ; Swap badges 3 (PlainBadge) and 5 (MineralBadge).
 	ld d, a

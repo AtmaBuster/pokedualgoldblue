@@ -61,6 +61,49 @@ CheckBadge:
 	text_far _BadgeRequiredText
 	text_end
 
+CheckRegionBadgeReq:
+; Sets carry flag if current location requires Kanto badges
+	push bc
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	pop bc
+
+	cp LANDMARK_SPECIAL
+	jr z, .Home
+
+	cp LANDMARK_ROUTE_23
+	jr nc, .Home
+
+	cp KANTO_LANDMARK
+	jr nc, .Kanto
+
+IF DEF(_GOLD)
+.Home
+ENDC
+.Johto
+	and a ; clear carry flag
+	ret
+
+IF DEF(_BLUE)
+.Home
+ENDC
+.Kanto
+	scf
+	ret
+
+need_badge: MACRO
+	;\1: Kanto Badge
+	;\2: Johto Badge
+	ld de, ENGINE_\1
+	call CheckRegionBadgeReq
+	jr c, .kanto
+	ld de, ENGINE_\2
+.kanto
+ENDM
+
 CheckPartyMove:
 ; Check if a monster in your party has move d.
 
@@ -130,15 +173,15 @@ CutFunction:
 	dw .FailCut
 
 .CheckAble:
-	ld de, ENGINE_HIVEBADGE
+	need_badge CASCADEBADGE, HIVEBADGE
 	call CheckBadge
-	jr c, .nohivebadge
+	jr c, .nocutbadge
 	call CheckMapForSomethingToCut
 	jr c, .nothingtocut
 	ld a, $1
 	ret
 
-.nohivebadge
+.nocutbadge
 	ld a, $80
 	ret
 
@@ -276,9 +319,9 @@ FlashFunction:
 
 .CheckUseFlash:
 ; Flash
-	ld de, ENGINE_ZEPHYRBADGE
-	farcall CheckBadge
-	jr c, .nozephyrbadge
+	need_badge BOULDERBADGE, ZEPHYRBADGE
+	call CheckBadge
+	jr c, .noflashbadge
 	ld a, [wTimeOfDayPalset]
 	cp DARKNESS_PALSET
 	jr nz, .notadarkcave
@@ -291,7 +334,7 @@ FlashFunction:
 	ld a, $80
 	ret
 
-.nozephyrbadge
+.noflashbadge
 	ld a, $80
 	ret
 
@@ -337,9 +380,16 @@ SurfFunction:
 	dw .AlreadySurfing
 
 .TrySurf:
-	ld de, ENGINE_FOGBADGE
+	need_badge SOULBADGE, FOGBADGE
+IF DEF(_BLUE)
+	; Allow Blue to surf back to Kanto from New Bark Town
+	cp LANDMARK_NEW_BARK_TOWN
+	jr nz, .checkbadge
+	ld de, ENGINE_SOULBADGE
+.checkbadge
+ENDC
 	call CheckBadge
-	jr c, .nofogbadge
+	jr c, .nosurfbadge
 	ld hl, wBikeFlags
 	bit BIKEFLAGS_ALWAYS_ON_BIKE_F, [hl]
 	jr nz, .cannotsurf
@@ -356,7 +406,7 @@ SurfFunction:
 	jr c, .cannotsurf
 	ld a, $1
 	ret
-.nofogbadge
+.nosurfbadge
 	ld a, $80
 	ret
 .alreadyfail
@@ -484,7 +534,14 @@ TrySurfOW::
 	call CheckDirection
 	jr c, .quit
 
-	ld de, ENGINE_FOGBADGE
+	need_badge SOULBADGE, FOGBADGE
+IF DEF(_BLUE)
+	; Help Blue surf back to Kanto from New Bark Town
+	cp LANDMARK_NEW_BARK_TOWN
+	jr nz, .checkbadge
+	ld de, ENGINE_SOULBADGE
+.checkbadge
+ENDC
 	call CheckEngineFlag
 	jr c, .quit
 
@@ -540,9 +597,9 @@ FlyFunction:
 
 .TryFly:
 ; Fly
-	ld de, ENGINE_STORMBADGE
+	need_badge THUNDERBADGE, STORMBADGE
 	call CheckBadge
-	jr c, .nostormbadge
+	jr c, .noflybadge
 	call GetMapEnvironment
 	call CheckOutdoorMap
 	jr z, .outdoors
@@ -565,7 +622,7 @@ FlyFunction:
 	ld a, $1
 	ret
 
-.nostormbadge
+.noflybadge
 	ld a, $82
 	ret
 
@@ -615,8 +672,8 @@ WaterfallFunction:
 
 .TryWaterfall:
 ; Waterfall
-	ld de, ENGINE_RISINGBADGE
-	farcall CheckBadge
+	need_badge EARTHBADGE, RISINGBADGE
+	call CheckBadge
 	ld a, $80
 	ret c
 	call CheckMapCanWaterfall
@@ -684,7 +741,7 @@ TryWaterfallOW::
 	ld d, WATERFALL
 	call CheckPartyMove
 	jr c, .failed
-	ld de, ENGINE_RISINGBADGE
+	need_badge EARTHBADGE, RISINGBADGE
 	call CheckEngineFlag
 	jr c, .failed
 	call CheckMapCanWaterfall
@@ -941,7 +998,7 @@ StrengthFunction:
 
 .TryStrength:
 ; Strength
-	ld de, ENGINE_PLAINBADGE
+	need_badge RAINBOWBADGE, PLAINBADGE
 	call CheckBadge
 	jr c, .Failed
 	jr .UseStrength
@@ -1038,7 +1095,7 @@ TryStrengthOW:
 	call CheckPartyMove
 	jr c, .nope
 
-	ld de, ENGINE_PLAINBADGE
+	need_badge RAINBOWBADGE, PLAINBADGE
 	call CheckEngineFlag
 	jr c, .nope
 
@@ -1077,9 +1134,9 @@ WhirlpoolFunction:
 	dw .FailWhirlpool
 
 .TryWhirlpool:
-	ld de, ENGINE_GLACIERBADGE
+	need_badge VOLCANOBADGE, GLACIERBADGE
 	call CheckBadge
-	jr c, .noglacierbadge
+	jr c, .nowhirlpoolbadge
 	call TryWhirlpoolMenu
 	jr c, .failed
 	ld a, $1
@@ -1089,7 +1146,7 @@ WhirlpoolFunction:
 	ld a, $2
 	ret
 
-.noglacierbadge
+.nowhirlpoolbadge
 	ld a, $80
 	ret
 
@@ -1171,7 +1228,7 @@ TryWhirlpoolOW::
 	ld d, WHIRLPOOL
 	call CheckPartyMove
 	jr c, .failed
-	ld de, ENGINE_GLACIERBADGE
+	need_badge VOLCANOBADGE, GLACIERBADGE
 	call CheckEngineFlag
 	jr c, .failed
 	call TryWhirlpoolMenu
@@ -1754,7 +1811,7 @@ TryCutOW::
 	call CheckPartyMove
 	jr c, .cant_cut
 
-	ld de, ENGINE_HIVEBADGE
+	need_badge CASCADEBADGE, HIVEBADGE
 	call CheckEngineFlag
 	jr c, .cant_cut
 
