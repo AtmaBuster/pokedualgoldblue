@@ -25,7 +25,7 @@ VictoryRoadGateBadgeCheckScript:
 	writetext VictoryRoadGateNotEnoughBadgesText
 	waitbutton
 	closetext
-	applymovement PLAYER, VictoryRoadGateStepDownMovement
+	applymovement PLAYER, VictoryRoadGateStepBackMovement
 	end
 
 .AllEightBadges:
@@ -41,8 +41,12 @@ VictoryRoadGateLeftBlackBeltScript:
 VictoryRoadGateRightBlackBeltScript:
 	jumptextfaceplayer VictoryRoadGateRightBlackBeltText
 
-VictoryRoadGateStepDownMovement:
+VictoryRoadGateStepBackMovement:
+IF DEF(_GOLD)
 	step DOWN
+ELIF DEF(_BLUE)
+	step UP
+ENDC
 	step_end
 
 VictoryRoadGateOfficerText:
@@ -54,7 +58,11 @@ VictoryRoadGateOfficerText:
 VictoryRoadGateNotEnoughBadgesText:
 	text "You don't have all"
 	line "the GYM BADGES of"
+IF DEF(_GOLD)
 	cont "JOHTO."
+ELIF DEF(_BLUE)
+	cont "KANTO."
+ENDC
 
 	para "I'm sorry, but I"
 	line "can't let you go"
@@ -63,7 +71,11 @@ VictoryRoadGateNotEnoughBadgesText:
 
 VictoryRoadGateEightBadgesText:
 	text "Oh! The eight"
+IF DEF(_GOLD)
 	line "BADGES of JOHTO!"
+ELIF DEF(_BLUE)
+	line "BADGES of KANTO!"
+ENDC
 
 	para "Please, go right"
 	line "ahead, sir!"
@@ -91,8 +103,8 @@ VictoryRoadGateRightBlackBeltText:
 
 VictoryRoadGate_MapEvents:
 	def_warp_events
-	warp_event 17,  7, ROUTE_22, 1
-	warp_event 18,  7, ROUTE_22, 1
+	warp_event 17,  7, ROUTE_22_GATE, 5
+	warp_event 18,  7, ROUTE_22_GATE, 6
 	warp_event  9, 17, ROUTE_26, 1
 	warp_event 10, 17, ROUTE_26, 1
 	warp_event  9,  0, VICTORY_ROAD, 1
@@ -108,4 +120,6 @@ VictoryRoadGate_MapEvents:
 	def_object_events
 	object_event  8, 11, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateOfficerScript, -1
 	object_event  7,  5, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateLeftBlackBeltScript, EVENT_OPENED_MT_SILVER
-	object_event 12,  5, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateRightBlackBeltScript, EVENT_FOUGHT_SNORLAX
+IF DEF(_GOLD)
+	object_event 19,  5, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateRightBlackBeltScript, EVENT_FOUGHT_SNORLAX
+ENDC

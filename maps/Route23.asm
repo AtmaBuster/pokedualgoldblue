@@ -9,6 +9,7 @@
 
 Route23_MapScripts:
 	def_scene_scripts
+IF DEF(_BLUE)
 	scene_script DummyScript ; SCENE_ROUTE_23_CASCADEBADGE
 	scene_script DummyScript ; SCENE_ROUTE_23_THUNDERBADGE
 	scene_script DummyScript ; SCENE_ROUTE_23_RAINBOWBADGE
@@ -17,6 +18,7 @@ Route23_MapScripts:
 	scene_script DummyScript ; SCENE_ROUTE_23_VOLCANOBADGE
 	scene_script DummyScript ; SCENE_ROUTE_23_EARTHBADGE
 	scene_script DummyScript ; SCENE_ROUTE_23_FINISHED
+ENDC
 
 	def_callbacks
 
@@ -36,6 +38,7 @@ Route23_VictoryRoadSignScript:
 	line "- #MON LEAGUE"
 	done
 
+IF DEF(_BLUE)
 Route23_Guard1Script:
 	checkflag ENGINE_CASCADEBADGE
 	iftrue .Continue
@@ -209,6 +212,8 @@ Route23_GetBadgeName_asm:
 	db "VOLCANOBADGE@"
 	db "EARTHBADGE@"
 
+ENDC
+
 Route23_MapEvents:
 	def_warp_events
 	warp_event  7, 139, ROUTE_22_GATE, 3
@@ -217,6 +222,7 @@ Route23_MapEvents:
 	warp_event 14, 31, VICTORY_ROAD_2F, 2
 
 	def_coord_events
+IF DEF(_BLUE)
 	coord_event  0,  35, SCENE_ROUTE_23_EARTHBADGE, Route23_Guard7Script
 	coord_event  1,  35, SCENE_ROUTE_23_EARTHBADGE, Route23_Guard7Script
 	coord_event  2,  35, SCENE_ROUTE_23_EARTHBADGE, Route23_Guard7Script
@@ -254,6 +260,7 @@ Route23_MapEvents:
 	coord_event  6, 136, SCENE_ROUTE_23_CASCADEBADGE, Route23_Guard1Script
 	coord_event  7, 136, SCENE_ROUTE_23_CASCADEBADGE, Route23_Guard1Script
 	coord_event  9, 136, SCENE_ROUTE_23_CASCADEBADGE, Route23_Guard1Script
+ENDC
 
 	def_bg_events
 	bg_event  3, 33, BGEVENT_READ, Route23_VictoryRoadSignScript
@@ -262,6 +269,7 @@ Route23_MapEvents:
 	bg_event  8, 90, BGEVENT_ITEM, Route23_HiddenMaxEther
 
 	def_object_events
+IF DEF(_BLUE)
 	object_event  4, 35, SPRITE_GUARD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route23_Guard7Script, -1
 	object_event 10, 56, SPRITE_GUARD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route23_Guard6Script, -1
 	object_event  8, 85, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route23_Guard5Script, -1
@@ -269,3 +277,4 @@ Route23_MapEvents:
 	object_event 12, 105, SPRITE_GUARD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route23_Guard3Script, -1
 	object_event  8, 119, SPRITE_GUARD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route23_Guard2Script, -1
 	object_event  8, 136, SPRITE_GUARD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route23_Guard1Script, -1
+ENDC
