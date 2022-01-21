@@ -234,6 +234,10 @@ GhostBattleTurn:
 	call BattleMenu
 	ret c
 
+	ld a, [wForcedSwitch] ; poke doll
+	and a
+	ret nz
+
 	ld a, [wBattleEnded]
 	and a
 	ret nz
@@ -1915,25 +1919,6 @@ GetMaxHP:
 	ld a, [hl]
 	ld [wHPBuffer1], a
 	ld c, a
-	ret
-
-GetHalfHP: ; unreferenced
-	ld hl, wBattleMonHP
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .ok
-	ld hl, wEnemyMonHP
-.ok
-	ld a, [hli]
-	ld b, a
-	ld a, [hli]
-	ld c, a
-	srl b
-	rr c
-	ld a, [hli]
-	ld [wHPBuffer1 + 1], a
-	ld a, [hl]
-	ld [wHPBuffer1], a
 	ret
 
 CheckUserHasEnoughHP:
@@ -8930,9 +8915,10 @@ BattleStartMessage:
 	call StdBattleTextbox
 	ld a, BATTLETYPE_GHOST_MAROWAK
 	ld [wBattleType], a
+; play animation
+	call DropEnemySub
 ; reset name
 	ld hl, wStringBuffer1
-	ld a, [wBattleType]
 	ld de, wEnemyMonNickname
 	ld bc, MON_NAME_LENGTH
 	call CopyBytes
