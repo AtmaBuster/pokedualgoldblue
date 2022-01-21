@@ -18,7 +18,7 @@ PokemonTower6F_MarowakScript:
 	waitbutton
 	closetext
 	loadwildmon MAROWAK, 30
-;	loadvar VAR_BATTLETYPE, BATTLETYPE_FEMALEONLY
+	loadvar VAR_BATTLETYPE, BATTLETYPE_GHOST
 	startbattle
 	ifequal DRAW, .RanAway
 	reloadmapafterbattle

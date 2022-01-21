@@ -1199,6 +1199,13 @@ RandomEncounter::
 	ld a, [wStatusFlags2]
 	bit STATUSFLAGS2_IN_SAFARI_GAME_F, a
 	jr nz, .ok_safari
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	cp LANDMARK_POKEMON_TOWER
+	jr z, .ok_ghost
 	ld a, BANK(WildBattleScript)
 	ld hl, WildBattleScript
 	jr .done
@@ -1206,6 +1213,11 @@ RandomEncounter::
 .ok_safari
 	ld a, BANK(SafariGameBattleScript)
 	ld hl, SafariGameBattleScript
+	jr .done
+
+.ok_ghost
+	ld a, BANK(GhostBattleScript)
+	ld hl, GhostBattleScript
 	jr .done
 
 .ok_bug_contest
@@ -1218,7 +1230,7 @@ RandomEncounter::
 	scf
 	ret
 
-WildBattleScript:
+WildBattleScript::
 	randomwildmon
 	startbattle
 	reloadmapafterbattle

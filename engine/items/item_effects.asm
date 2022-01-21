@@ -214,6 +214,12 @@ PokeBallEffect:
 	dec a
 	jp nz, UseBallInTrainerBattle
 
+	ld a, [wBattleType]
+	cp BATTLETYPE_GHOST
+	jp z, UseBallInGhostBattle
+	cp BATTLETYPE_GHOST_MAROWAK
+	jp z, UseBallInGhostBattle
+
 	ld a, [wPartyCount]
 	cp PARTY_LENGTH
 	jr nz, .room_in_party
@@ -1058,7 +1064,7 @@ LevelBallMultiplier:
 
 ; BallDodgedText and BallMissedText were used in Gen 1.
 
-BallDodgedText: ; unreferenced
+BallDodgedText:
 	text_far _BallDodgedText
 	text_end
 
@@ -2608,6 +2614,22 @@ UseBallInTrainerBattle:
 	ld hl, BallBlockedText
 	call PrintText
 	ld hl, BallDontBeAThiefText
+	call PrintText
+	jr UseDisposableItem
+
+UseBallInGhostBattle:
+	call ReturnToBattle_UseBall
+	ld de, ANIM_THROW_POKE_BALL
+	ld a, e
+	ld [wFXAnimID], a
+	ld a, d
+	ld [wFXAnimID + 1], a
+	xor a
+	ld [wBattleAnimParam], a
+	ldh [hBattleTurn], a
+	ld [wNumHits], a
+	predef PlayBattleAnim
+	ld hl, BallDodgedText
 	call PrintText
 	jr UseDisposableItem
 
