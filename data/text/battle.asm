@@ -28,6 +28,14 @@ PokemonFellFromTreeText:
 	line "out of the tree!"
 	prompt
 
+GhostCantBeIDdText:
+	text "GHOST"
+	line "appeared!"
+
+	para "Darn! The GHOST"
+	line "can't be ID'd!"
+	prompt
+
 WantsToBattleText::
 	text "<ENEMY>"
 	line "wants to battle!"
@@ -364,6 +372,26 @@ BattleText_ThrewRock:
 BattleText_ThrewBait:
 	text "<PLAYER> threw"
 	line "some bait."
+	prompt
+
+BattleText_GhostGetOut:
+	text "GHOST: Get out..."
+	line "Get out..."
+	prompt
+
+BattleText_TooScared:
+	text_ram wBattleMonNickname
+	text " is too"
+	line "scared to move!"
+	prompt
+
+UnveiledGhostText:
+	text "GHOST"
+	line "appeared!"
+
+	para "SILPH SCOPE"
+	line "unveiled the"
+	cont "GHOST's identity!"
 	prompt
 
 FastAsleepText:

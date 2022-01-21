@@ -76,6 +76,10 @@ MAX_STAT_VALUE EQU 999
 ATKDEFDV_SHINY EQU $EA
 SPDSPCDV_SHINY EQU $AA
 
+; female dvs
+ATKDEFDV_FEMALE EQU $08
+SPDSPCDV_FEMALE EQU $88
+
 ; battle classes (wBattleMode values)
 	const_def 1
 	const WILD_BATTLE
@@ -95,6 +99,8 @@ SPDSPCDV_SHINY EQU $AA
 	const BATTLETYPE_TRAP
 	const BATTLETYPE_FORCEITEM
 	const BATTLETYPE_SAFARI
+	const BATTLETYPE_GHOST
+	const BATTLETYPE_GHOST_MAROWAK
 
 ; BattleVarPairs indexes (see home/battle_vars.asm)
 	const_def

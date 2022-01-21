@@ -112,6 +112,9 @@ DoBattle:
 	call SpikesDamage
 
 .not_linked_2
+	ld a, [wBattleType]
+	cp BATTLETYPE_GHOST
+	jp z, GhostBattleTurn
 	jp BattleTurn
 
 WildFled_EnemyFled_LinkBattleCanceled:
@@ -222,6 +225,41 @@ SafariBattleTurn:
 	ret nz
 
 	jr .loop
+
+GhostBattleTurn:
+.loop
+	xor a
+	ld [wBattlePlayerAction], a
+
+	call BattleMenu
+	ret c
+
+	ld a, [wForcedSwitch] ; poke doll
+	and a
+	ret nz
+
+	ld a, [wBattleEnded]
+	and a
+	ret nz
+
+	call ParsePlayerAction
+	jr nz, .loop
+
+	call HandleGhostBehaviour
+
+	jr .loop
+
+HandleGhostBehaviour:
+	ld a, [wBattlePlayerAction]
+	and a
+	jr nz, .no_attack
+
+	ld hl, BattleText_TooScared
+	call StdBattleTextbox
+
+.no_attack
+	ld hl, BattleText_GhostGetOut
+	jp StdBattleTextbox
 
 HandleBetweenTurnEffects:
 	ldh a, [hSerialConnectionStatus]
@@ -1883,25 +1921,6 @@ GetMaxHP:
 	ld c, a
 	ret
 
-GetHalfHP: ; unreferenced
-	ld hl, wBattleMonHP
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .ok
-	ld hl, wEnemyMonHP
-.ok
-	ld a, [hli]
-	ld b, a
-	ld a, [hli]
-	ld c, a
-	srl b
-	rr c
-	ld a, [hli]
-	ld [wHPBuffer1 + 1], a
-	ld a, [hl]
-	ld [wHPBuffer1], a
-	ret
-
 CheckUserHasEnoughHP:
 	ld hl, wBattleMonHP + 1
 	ldh a, [hBattleTurn]
@@ -3505,6 +3524,8 @@ TryToRunAwayFromBattle:
 	cp BATTLETYPE_CONTEST
 	jp z, .can_escape
 	cp BATTLETYPE_SAFARI
+	jp z, .can_escape
+	cp BATTLETYPE_GHOST
 	jp z, .can_escape
 	cp BATTLETYPE_TRAP
 	jp z, .cant_escape
@@ -5986,8 +6007,18 @@ LoadEnemyMon:
 ; Forced shiny battle type
 ; Used by Red Gyarados at Lake of Rage
 	cp BATTLETYPE_SHINY
+	jr z, .ShinyDVs
+	cp BATTLETYPE_GHOST
 	jr nz, .GenerateDVs
+	ld a, [wTempWildMonSpecies]
+	cp MAROWAK
+	jr nz, .GenerateDVs
+; Ghost MAROWAK is always female (mother)
+	ld b, ATKDEFDV_FEMALE ; $08
+	ld c, SPDSPCDV_FEMALE ; $88
+	jr .UpdateDVs
 
+.ShinyDVs
 	ld b, ATKDEFDV_SHINY ; $ea
 	ld c, SPDSPCDV_SHINY ; $aa
 	jr .UpdateDVs
@@ -6310,6 +6341,11 @@ LoadEnemyMon:
 
 ; Update enemy nickname
 	ld hl, wStringBuffer1
+	ld a, [wBattleType]
+	cp BATTLETYPE_GHOST
+	jr nz, .not_ghost
+	ld hl, GhostName
+.not_ghost
 	ld de, wEnemyMonNickname
 	ld bc, MON_NAME_LENGTH
 	call CopyBytes
@@ -6328,6 +6364,9 @@ LoadEnemyMon:
 	call CopyBytes
 
 	ret
+
+GhostName:
+	db "GHOST@@@@@"
 
 CheckUnownLetter:
 ; Return carry if the Unown letter hasn't been unlocked yet
@@ -7855,7 +7894,7 @@ DropEnemySub:
 	ld hl, wEnemyMonDVs
 	predef GetUnownLetter
 	ld de, vTiles2
-	predef GetMonFrontpic
+	predef GetMonFrontpic2
 	pop af
 	ld [wCurPartySpecies], a
 	ret
@@ -8020,7 +8059,7 @@ InitEnemyWildmon:
 	ld [wFirstUnownSeen], a
 .skip_unown
 	ld de, vTiles2
-	predef GetMonFrontpic
+	predef GetMonFrontpic2
 	xor a
 	ld [wTrainerClass], a
 	ldh [hGraphicStartTile], a
@@ -8842,7 +8881,12 @@ BattleStartMessage:
 .not_shiny
 	ld a, $f
 	ld [wCryTracks], a
+	ld a, [wBattleType]
+	cp BATTLETYPE_GHOST
 	ld a, [wTempEnemyMonSpecies]
+	jr nz, .do_cry
+	xor a
+.do_cry
 	call PlayStereoCry
 	ld hl, HookedPokemonAttackedText
 	ld a, [wBattleType]
@@ -8851,6 +8895,9 @@ BattleStartMessage:
 	ld hl, PokemonFellFromTreeText
 	cp BATTLETYPE_TREE
 	jr z, .PlaceBattleStartText
+	ld hl, GhostCantBeIDdText
+	cp BATTLETYPE_GHOST
+	jr z, .GhostStart
 	ld hl, WildPokemonAppearedText
 
 .PlaceBattleStartText:
@@ -8859,6 +8906,33 @@ BattleStartMessage:
 	pop hl
 	call StdBattleTextbox
 	ret
+
+.GhostStart:
+	ld c, 4
+	call DelayFrames
+	ld a, [wEnemyMonSpecies]
+	cp MAROWAK
+	jr nz, .PlaceBattleStartText
+	ld a, SILPH_SCOPE
+	ld [wCurItem], a
+	push hl
+	ld hl, wNumItems
+	call CheckItem
+	pop hl
+	jr nc, .PlaceBattleStartText
+	ld hl, UnveiledGhostText
+	call StdBattleTextbox
+	ld a, BATTLETYPE_GHOST_MAROWAK
+	ld [wBattleType], a
+; play animation
+	call DropEnemySub
+; reset name
+	ld hl, wStringBuffer1
+	ld de, wEnemyMonNickname
+	ld bc, MON_NAME_LENGTH
+	call CopyBytes
+	ld hl, WildPokemonAppearedText
+	jr .PlaceBattleStartText
 
 ShowLinkBattleParticipants:
 	call IsLinkBattle
