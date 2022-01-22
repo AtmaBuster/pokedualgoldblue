@@ -274,6 +274,8 @@ BattleAnimations::
 	dw BattleAnim_InSandstorm
 	dw BattleAnim_InNightmare
 	dw BattleAnim_InWhirlpool
+	dw BattleAnim_ThrowRock
+	dw BattleAnim_ThrowBait
 	dw BattleAnim_Miss
 	dw BattleAnim_EnemyDamage
 	dw BattleAnim_EnemyStatDown
@@ -4823,4 +4825,21 @@ BattleAnim_ShowMon_1:
 	anim_wait 4
 	anim_incobj 1
 	anim_wait 1
+	anim_ret
+
+BattleAnim_ThrowRock:
+	anim_2gfx ANIM_GFX_ROCKS, ANIM_GFX_HIT
+	anim_sound 6, 2, SFX_BONE_CLUB
+	anim_obj ANIM_OBJ_ROCK, 68, 92, $40
+	anim_wait 36
+	anim_obj ANIM_OBJ_ROCK, 136, 65, $0
+	anim_obj ANIM_OBJ_HIT_YFIX, 136, 64, $10
+	anim_wait 16
+	anim_ret
+
+BattleAnim_ThrowBait:
+	anim_2gfx ANIM_GFX_SAFARI, ANIM_GFX_HIT
+	anim_sound 6, 2, SFX_BONE_CLUB
+	anim_obj ANIM_OBJ_BAIT, 68, 92, $40
+	anim_wait 36
 	anim_ret

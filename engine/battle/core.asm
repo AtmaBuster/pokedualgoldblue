@@ -4769,7 +4769,16 @@ BattleMenu_Rock:
 	ld a, $ff
 .no_carry
 	ld [hl], a
-	; TODO: Play the rock animation
+	ld de, ANIM_THROW_ROCK
+	ld a, e
+	ld [wFXAnimID], a
+	ld a, d
+	ld [wFXAnimID + 1], a
+	xor a
+	ld [wBattleAnimParam], a
+	ldh [hBattleTurn], a
+	ld [wNumHits], a
+	predef PlayBattleAnim
 	ld hl, wSafariMonAngerCount
 	ld de, wSafariMonEating
 
@@ -4982,7 +4991,16 @@ BattleMenu_Bait:
 	call StdBattleTextbox
 	ld hl, wEnemyMonCatchRate
 	srl [hl] ; halve
-	; TODO: Play the bait animation
+	ld de, ANIM_THROW_BAIT
+	ld a, e
+	ld [wFXAnimID], a
+	ld a, d
+	ld [wFXAnimID + 1], a
+	xor a
+	ld [wBattleAnimParam], a
+	ldh [hBattleTurn], a
+	ld [wNumHits], a
+	predef PlayBattleAnim
 	ld hl, wSafariMonEating
 	ld de, wSafariMonAngerCount
 	jp BaitRockCommon
@@ -6421,16 +6439,16 @@ CheckUnownLetter:
 
 INCLUDE "data/wild/unlocked_unowns.asm"
 
-SwapBattlerLevels: ; unreferenced
-	push bc
-	ld a, [wBattleMonLevel]
-	ld b, a
-	ld a, [wEnemyMonLevel]
-	ld [wBattleMonLevel], a
-	ld a, b
-	ld [wEnemyMonLevel], a
-	pop bc
-	ret
+;SwapBattlerLevels: ; unreferenced
+;	push bc
+;	ld a, [wBattleMonLevel]
+;	ld b, a
+;	ld a, [wEnemyMonLevel]
+;	ld [wBattleMonLevel], a
+;	ld a, b
+;	ld [wEnemyMonLevel], a
+;	pop bc
+;	ret
 
 BattleWinSlideInEnemyTrainerFrontpic:
 	xor a
@@ -6787,19 +6805,19 @@ _LoadHPBar:
 	callfar LoadHPBar
 	ret
 
-LoadHPExpBarGFX: ; unreferenced
-	ld de, EnemyHPBarBorderGFX
-	ld hl, vTiles2 tile $6c
-	lb bc, BANK(EnemyHPBarBorderGFX), 4
-	call Get1bpp
-	ld de, HPExpBarBorderGFX
-	ld hl, vTiles2 tile $73
-	lb bc, BANK(HPExpBarBorderGFX), 6
-	call Get1bpp
-	ld de, ExpBarGFX
-	ld hl, vTiles2 tile $55
-	lb bc, BANK(ExpBarGFX), 8
-	jp Get2bpp
+;LoadHPExpBarGFX: ; unreferenced
+;	ld de, EnemyHPBarBorderGFX
+;	ld hl, vTiles2 tile $6c
+;	lb bc, BANK(EnemyHPBarBorderGFX), 4
+;	call Get1bpp
+;	ld de, HPExpBarBorderGFX
+;	ld hl, vTiles2 tile $73
+;	lb bc, BANK(HPExpBarBorderGFX), 6
+;	call Get1bpp
+;	ld de, ExpBarGFX
+;	ld hl, vTiles2 tile $55
+;	lb bc, BANK(ExpBarGFX), 8
+;	jp Get2bpp
 
 EmptyBattleTextbox:
 	ld hl, .empty

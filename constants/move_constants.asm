@@ -276,6 +276,8 @@ NUM_ATTACKS EQU const_value - 1
 	const ANIM_IN_SANDSTORM      ; 10b
 	const ANIM_IN_NIGHTMARE      ; 10c
 	const ANIM_IN_WHIRLPOOL      ; 10d
+	const ANIM_THROW_ROCK        ; ---
+	const ANIM_THROW_BAIT        ; ---
 ; battle anims
 	const ANIM_MISS              ; 10e
 	const ANIM_ENEMY_DAMAGE      ; 10f
