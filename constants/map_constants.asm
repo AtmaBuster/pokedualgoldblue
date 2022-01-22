@@ -137,7 +137,6 @@ ENDM
 	map_const DRAGONS_DEN_B1F,                             20, 18
 	map_const TOHJO_FALLS,                                 15,  9
 	map_const VICTORY_ROAD,                                10, 36
-	map_const VIRIDIAN_FOREST,                             17, 24
 	map_const DIGLETTS_CAVE,                               20, 18
 	map_const DIGLETTS_CAVE_ROUTE_2,                        4,  4
 	map_const DIGLETTS_CAVE_ROUTE_11,                       4,  4
@@ -171,16 +170,6 @@ ENDM
 	map_const ROCKET_HIDEOUT_B3F,                          15, 14
 	map_const ROCKET_HIDEOUT_B4F,                          15, 12
 	map_const ROCKET_HIDEOUT_ELEVATOR,                      3,  4
-	map_const SAFARI_ZONE_GATE,                             4,  3
-	map_const SAFARI_ZONE_CENTER,                          15, 13
-	map_const SAFARI_ZONE_EAST,                            15, 13
-	map_const SAFARI_ZONE_NORTH,                           20, 18
-	map_const SAFARI_ZONE_WEST,                            15, 13
-	map_const SAFARI_ZONE_CENTER_REST_HOUSE,                4,  4
-	map_const SAFARI_ZONE_EAST_REST_HOUSE,                  4,  4
-	map_const SAFARI_ZONE_NORTH_REST_HOUSE,                 4,  4
-	map_const SAFARI_ZONE_WEST_REST_HOUSE,                  4,  4
-	map_const SAFARI_ZONE_SECRET_HOUSE,                     4,  4
 	map_const SILPH_CO_1F,                                 15,  9
 	map_const SILPH_CO_2F,                                 15,  9
 	map_const SILPH_CO_3F,                                 15,  9
@@ -416,6 +405,16 @@ ENDM
 	map_const WARDENS_HOUSE,                                5,  4
 	map_const ROUTE_15_GATE_1F,                             4,  5
 	map_const ROUTE_15_GATE_2F,                             4,  4
+	map_const SAFARI_ZONE_GATE,                             4,  3
+	map_const SAFARI_ZONE_CENTER,                          15, 13
+	map_const SAFARI_ZONE_EAST,                            15, 13
+	map_const SAFARI_ZONE_NORTH,                           20, 18
+	map_const SAFARI_ZONE_WEST,                            15, 13
+	map_const SAFARI_ZONE_CENTER_REST_HOUSE,                4,  4
+	map_const SAFARI_ZONE_EAST_REST_HOUSE,                  4,  4
+	map_const SAFARI_ZONE_NORTH_REST_HOUSE,                 4,  4
+	map_const SAFARI_ZONE_WEST_REST_HOUSE,                  4,  4
+	map_const SAFARI_ZONE_SECRET_HOUSE,                     4,  4
 	endgroup
 
 	newgroup SILENCE_BRIDGE
@@ -515,6 +514,7 @@ ENDM
 	map_const VIRIDIAN_POKECENTER,                          7,  4
 	map_const VIRIDIAN_FOREST_NORTH_GATE,                   5,  4
 	map_const VIRIDIAN_FOREST_SOUTH_GATE,                   5,  4
+	map_const VIRIDIAN_FOREST,                             17, 24
 	map_const ROUTE_2_TRADE_HOUSE,                          4,  4
 	map_const ROUTE_2_GATE,                                 5,  4
 	map_const VICTORY_ROAD_GATE,                           10,  9
