@@ -497,22 +497,59 @@ IF DEF(_GOLD)
 	dec hl
 	call .LoadHLColorIntoDE
 	call .LoadHLColorIntoDE
+ELIF DEF(_BLUE)
+; darkness: shades 0, 1, 2, 3 -> 2, 3, 3, 3
+	ld a, [wTimeOfDayPalset]
+	cp DARKNESS_PALSET
+	jr c, .bg_morn_day
+	inc hl
+	inc hl
+	inc hl
+	inc hl
+	call .LoadHLColorIntoDE
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+ENDC
 .bg_done
 	pop hl
 	ret
-ENDC
+
 .bg_morn_day
 	call LoadHLPaletteIntoDE
-IF DEF(_GOLD)
 	jr .bg_done
-ELIF DEF(_BLUE)
-	pop hl
-	ret
-ENDC
 
 .LoadHLOBPaletteIntoDE:
 ; shades 0, 1, 2, 3 -> 0, 0, 1, 3
 	push hl
+IF DEF(_BLUE)
+; darkness: shades 0, 1, 2, 3 -> 3, 3, 3, 3
+	ld a, [wTimeOfDayPalset]
+	cp DARKNESS_PALSET
+	jr c, .ob_normal
+	inc hl
+	inc hl
+	inc hl
+	inc hl
+	inc hl
+	inc hl
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+	jr .ob_done
+ENDC
+.ob_normal
 	call .LoadHLColorIntoDE
 	dec hl
 	dec hl
@@ -521,6 +558,7 @@ ENDC
 	inc hl
 	inc hl
 	call .LoadHLColorIntoDE
+.ob_done
 	pop hl
 	ret
 
