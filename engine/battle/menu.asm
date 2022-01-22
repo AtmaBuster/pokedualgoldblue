@@ -38,7 +38,11 @@ BattleMenuHeader:
 .Text:
 	db "FIGHT@"
 	db "<PK><MN>@"
+IF DEF(_GOLD)
 	db "PACK@"
+ELIF DEF(_BLUE)
+	db "ITEM@"
+ENDC
 	db "RUN@"
 
 SafariBattleMenuHeader:
@@ -50,18 +54,18 @@ SafariBattleMenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR | STATICMENU_DISABLE_B ; flags
 	dn 2, 2 ; rows, columns
-	db 11 ; spacing
+	db 12 ; spacing
 	dba .Text
 	dba .PrintSafariBallsRemaining
 
 .Text:
-	db "ROCK@"
-	db "BAIT@"
 	db "BALL×  @"
+	db "BAIT@"
+	db "THROW ROCK@"
 	db "RUN@"
 
 .PrintSafariBallsRemaining:
-	hlcoord 8, 16
+	hlcoord 7, 14
 	ld de, wSafariBallsRemaining
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	call PrintNum

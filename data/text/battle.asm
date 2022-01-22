@@ -366,12 +366,12 @@ BattleText_WildMonIsAngry:
 
 BattleText_ThrewRock:
 	text "<PLAYER> threw a"
-	line "rock."
+	line "ROCK."
 	prompt
 
 BattleText_ThrewBait:
 	text "<PLAYER> threw"
-	line "some bait."
+	line "some BAIT."
 	prompt
 
 BattleText_GhostGetOut:

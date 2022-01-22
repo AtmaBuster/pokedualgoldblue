@@ -4744,11 +4744,19 @@ BattleMenu:
 BattleMenu_Fight:
 	ld a, [wBattleType]
 	cp BATTLETYPE_SAFARI
-	jr z, BattleMenu_Rock
+	jr z, BattleMenu_SafariBall
 	xor a
 	ld [wNumFleeAttempts], a
 	call SafeLoadTempTilemapToTilemap
 	and a
+	ret
+
+BattleMenu_SafariBall:
+	call LoadStandardMenuHeader
+	ld a, SAFARI_BALL
+	ld [wCurItem], a
+	call DoItemEffect
+	call BattleMenu_Pack.UseItem
 	ret
 
 BattleMenu_Rock:
@@ -4813,6 +4821,10 @@ CheckSafariMonRan:
 	jp WildFled_EnemyFled_LinkBattleCanceled
 
 BattleMenu_Pack:
+	ld a, [wBattleType]
+	cp BATTLETYPE_SAFARI
+	jr z, BattleMenu_Rock
+
 	ld a, [wLinkMode]
 	and a
 	jp nz, .ItemsCantBeUsed
@@ -4824,8 +4836,6 @@ BattleMenu_Pack:
 	jr z, .tutorial
 	cp BATTLETYPE_CONTEST
 	jr z, .contest
-	cp BATTLETYPE_SAFARI
-	jr z, .safari
 
 	farcall BattlePack
 	ld a, [wBattlePlayerAction]
@@ -4836,12 +4846,6 @@ BattleMenu_Pack:
 .tutorial
 	farcall TutorialPack
 	ld a, POKE_BALL
-	ld [wCurItem], a
-	call DoItemEffect
-	jr .got_item
-
-.safari
-	ld a, SAFARI_BALL
 	ld [wCurItem], a
 	call DoItemEffect
 	jr .got_item
