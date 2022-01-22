@@ -130,6 +130,9 @@ InitialEvents:
 InitialEngineFlags:
 	dw ENGINE_ROCKET_SIGNAL_ON_CH20
 	dw ENGINE_ROCKETS_IN_MAHOGANY
+IF DEF(_GOLD)
+	dw ENGINE_MET_BILL
+ENDC
 	dw -1 ; end
 
 InitialVariableSprites:

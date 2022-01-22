@@ -773,6 +773,14 @@ _PokecenterBillsPCText::
 	line "System opened."
 	prompt
 
+_PokecenterSomeonesPCText::
+	text "Someone's PC"
+	line "accessed."
+
+	para "#MON Storage"
+	line "System opened."
+	prompt
+
 _PokecenterPlayersPCText::
 	text "Accessed own PC."
 

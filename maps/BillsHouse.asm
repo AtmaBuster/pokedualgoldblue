@@ -45,6 +45,7 @@ BillsHouse_PCScript:
 	applymovement BILLSHOUSE_KANTO_SUPER_NERD1, .ExitTeleporterMovement
 	setevent EVENT_HELPED_BILL
 	clearevent EVENT_BILL_ENTERED_TELEPORTER
+	setflag ENGINE_MET_BILL
 	end
 
 .ShowMonList:

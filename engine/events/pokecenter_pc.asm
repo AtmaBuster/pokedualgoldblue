@@ -1,8 +1,11 @@
 	; PokemonCenterPC.WhichPC indexes
 	const_def
-	const PCPC_BEFORE_POKEDEX ; 0
-	const PCPC_BEFORE_HOF     ; 1
-	const PCPC_POSTGAME       ; 2
+	const PCPC_BEFORE_POKEDEX      ; 0
+	const PCPC_BEFORE_HOF          ; 1
+	const PCPC_POSTGAME            ; 2
+	const PCPC_BEFORE_POKEDEX_BILL ; 3
+	const PCPC_BEFORE_HOF_BILL     ; 4
+	const PCPC_POSTGAME_BILL       ; 5
 
 	; PokemonCenterPC.Jumptable indexes
 	const_def
@@ -11,6 +14,7 @@
 	const PCPCITEM_OAKS_PC      ; 2
 	const PCPCITEM_HALL_OF_FAME ; 3
 	const PCPCITEM_TURN_OFF     ; 4
+	const PCPCITEM_SOMEONES_PC  ; 5
 
 PokemonCenterPC:
 	call PC_CheckPartyForPokemon
@@ -60,24 +64,50 @@ PokemonCenterPC:
 	dw OaksPC,       .String_OaksPC
 	dw HallOfFamePC, .String_HallOfFame
 	dw TurnOffPC,    .String_TurnOff
+	dw SomeonesPC,   .String_SomeonesPC
 
 .String_PlayersPC:  db "<PLAYER>'s PC@"
 .String_BillsPC:    db "BILL's PC@"
 .String_OaksPC:     db "PROF.OAK's PC@"
 .String_HallOfFame: db "HALL OF FAME@"
 .String_TurnOff:    db "TURN OFF@"
+.String_SomeonesPC: db "SOMEONE's PC@"
 
 .WhichPC:
 ; entries correspond to PCPC_* constants
 
 	; PCPC_BEFORE_POKEDEX
 	db 3
-	db PCPCITEM_BILLS_PC
+	db PCPCITEM_SOMEONES_PC
 	db PCPCITEM_PLAYERS_PC
 	db PCPCITEM_TURN_OFF
 	db -1 ; end
 
 	; PCPC_BEFORE_HOF
+	db 4
+	db PCPCITEM_SOMEONES_PC
+	db PCPCITEM_PLAYERS_PC
+	db PCPCITEM_OAKS_PC
+	db PCPCITEM_TURN_OFF
+	db -1 ; end
+
+	; PCPC_POSTGAME
+	db 5
+	db PCPCITEM_SOMEONES_PC
+	db PCPCITEM_PLAYERS_PC
+	db PCPCITEM_OAKS_PC
+	db PCPCITEM_HALL_OF_FAME
+	db PCPCITEM_TURN_OFF
+	db -1 ; end
+
+	; PCPC_BEFORE_POKEDEX_BILL
+	db 3
+	db PCPCITEM_BILLS_PC
+	db PCPCITEM_PLAYERS_PC
+	db PCPCITEM_TURN_OFF
+	db -1 ; end
+
+	; PCPC_BEFORE_HOF_BILL
 	db 4
 	db PCPCITEM_BILLS_PC
 	db PCPCITEM_PLAYERS_PC
@@ -85,7 +115,7 @@ PokemonCenterPC:
 	db PCPCITEM_TURN_OFF
 	db -1 ; end
 
-	; PCPC_POSTGAME
+	; PCPC_POSTGAME_BILL
 	db 5
 	db PCPCITEM_BILLS_PC
 	db PCPCITEM_PLAYERS_PC
@@ -95,6 +125,16 @@ PokemonCenterPC:
 	db -1 ; end
 
 .ChooseWhichPCListToUse:
+	call .ChooseWhichPCListToUse_Main
+	ld b, a
+	ld a, [wStatusFlags2]
+	bit STATUSFLAGS2_MET_BILL_F, a
+	ld a, b
+	ret z
+	add 3
+	ret
+
+.ChooseWhichPCListToUse_Main:
 	call CheckReceivedDex
 	jr nz, .got_dex
 	ld a, PCPC_BEFORE_POKEDEX
@@ -142,6 +182,14 @@ PC_CheckPartyForPokemon:
 BillsPC:
 	call PC_PlayChoosePCSound
 	ld hl, PokecenterBillsPCText
+	call PC_DisplayText
+	farcall _BillsPC
+	and a
+	ret
+
+SomeonesPC:
+	call PC_PlayChoosePCSound
+	ld hl, PokecenterSomeonesPCText
 	call PC_DisplayText
 	farcall _BillsPC
 	and a
@@ -664,6 +712,10 @@ PokecenterPCWhoseText:
 
 PokecenterBillsPCText:
 	text_far _PokecenterBillsPCText
+	text_end
+
+PokecenterSomeonesPCText:
+	text_far _PokecenterSomeonesPCText
 	text_end
 
 PokecenterPlayersPCText:

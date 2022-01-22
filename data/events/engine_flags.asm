@@ -32,7 +32,7 @@ EngineFlags:
 	engine_flag wStatusFlags, STATUSFLAGS_HALL_OF_FAME_F
 
 	engine_flag wStatusFlags2, STATUSFLAGS2_BUG_CONTEST_TIMER_F
-	engine_flag wStatusFlags2, STATUSFLAGS2_SAFARI_GAME_F
+	engine_flag wStatusFlags2, STATUSFLAGS2_MET_BILL_F
 	engine_flag wStatusFlags2, STATUSFLAGS2_ROCKETS_IN_RADIO_TOWER_F
 	engine_flag wStatusFlags2, STATUSFLAGS2_BIKE_SHOP_CALL_F
 	engine_flag wStatusFlags2, STATUSFLAGS2_IN_SAFARI_GAME_F
