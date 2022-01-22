@@ -527,7 +527,7 @@ ENDC
 ; shades 0, 1, 2, 3 -> 0, 0, 1, 3
 	push hl
 IF DEF(_BLUE)
-; darkness: shades 0, 1, 2, 3 -> 3, 3, 3, 3
+; darkness: shades 0, 1, 2, 3 -> 2, 3, 3, 3
 	ld a, [wTimeOfDayPalset]
 	cp DARKNESS_PALSET
 	jr c, .ob_normal
@@ -535,11 +535,7 @@ IF DEF(_BLUE)
 	inc hl
 	inc hl
 	inc hl
-	inc hl
-	inc hl
 	call .LoadHLColorIntoDE
-	dec hl
-	dec hl
 	call .LoadHLColorIntoDE
 	dec hl
 	dec hl
