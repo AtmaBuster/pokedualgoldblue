@@ -5182,3 +5182,71 @@ Sfx_StopSlot_Ch5:
 	square_note 1, 15, 8, 1888
 	square_note 4, 8, 2, 1888
 	sound_ret
+
+Sfx_BlueIntroLunge:
+	channel_count 1
+	channel 8, Sfx_BlueIntroLunge_Ch8
+
+Sfx_BlueIntroLunge_Ch8:
+	noise_note 6, 2, 0, 16
+	noise_note 6, 2, -7, 64
+	noise_note 6, 4, -7, 65
+	noise_note 6, 8, -7, 65
+	noise_note 6, 12, -7, 66
+	noise_note 8, 13, 7, 66
+	noise_note 15, 14, 7, 67
+	noise_note 15, 15, 2, 67
+	sound_ret
+
+Sfx_BlueIntroHip:
+	channel_count 1
+	channel 5, Sfx_BlueIntroHip_Ch5
+
+Sfx_BlueIntroHip_Ch5:
+	duty_cycle 2
+	pitch_sweep 2, 6
+	square_note 12, 12, 2, 1856
+	pitch_sweep 0, 8
+	sound_ret
+
+Sfx_BlueIntroHop:
+	channel_count 1
+	channel 5, Sfx_BlueIntroHop_Ch5
+
+Sfx_BlueIntroHop_Ch5:
+	duty_cycle 2
+	pitch_sweep 2, 6
+	square_note 12, 12, 2, 1664
+	pitch_sweep 0, 8
+	sound_ret
+
+Sfx_BlueIntroRaise:
+	channel_count 1
+	channel 8, Sfx_BlueIntroRaise_Ch8
+
+Sfx_BlueIntroRaise_Ch8:
+	noise_note 2, 6, -7, 33
+	noise_note 2, 10, -7, 49
+	noise_note 15, 15, 2, 65
+	sound_ret
+
+Sfx_BlueIntroCrash:
+	channel_count 1
+	channel 8, Sfx_BlueIntroCrash_Ch8
+
+Sfx_BlueIntroCrash_Ch8:
+	noise_note 2, 13, 2, 50
+	noise_note 15, 15, 2, 67
+	sound_ret
+
+Sfx_BlueIntroWhoosh:
+	channel_count 1
+	channel 8, Sfx_BlueIntroWhoosh_Ch8
+
+Sfx_BlueIntroWhoosh_Ch8:
+	noise_note 4, 2, -4, 32
+	noise_note 3, 10, 0, 32
+	noise_note 3, 11, 0, 33
+	noise_note 3, 12, 0, 34
+	noise_note 15, 13, 2, 36
+	sound_ret

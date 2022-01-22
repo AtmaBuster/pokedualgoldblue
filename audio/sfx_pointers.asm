@@ -189,4 +189,10 @@ SFX:
 	dba Sfx_TrainArrived
 	dba Sfx_StopSlot
 	dba Sfx_2Boops
+	dba Sfx_BlueIntroLunge
+	dba Sfx_BlueIntroHip
+	dba Sfx_BlueIntroHop
+	dba Sfx_BlueIntroRaise
+	dba Sfx_BlueIntroCrash
+	dba Sfx_BlueIntroWhoosh
 	assert_table_length NUM_SFX

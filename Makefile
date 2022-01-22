@@ -132,6 +132,12 @@ gfx/intro/fire1.2bpp: gfx/intro/charizard1.2bpp gfx/intro/charizard2_top.2bpp gf
 gfx/intro/fire2.2bpp: gfx/intro/charizard2_bottom.2bpp gfx/intro/charizard3.2bpp ; cat $^ > $@
 gfx/intro/fire3.2bpp: gfx/intro/fire.2bpp gfx/intro/unused_blastoise_venusaur.2bpp ; cat $^ > $@
 
+gfx/intro/blue/gengar.2bpp: rgbgfx += -h
+gfx/intro/blue/gengar.2bpp: tools/gfx += --remove-duplicates --preserve=0x19,0x76
+gfx/intro/blue/jigglypuff_1.2bpp: rgbgfx += -h
+gfx/intro/blue/jigglypuff_2.2bpp: rgbgfx += -h
+gfx/intro/blue/jigglypuff_3.2bpp: rgbgfx += -h
+
 gfx/new_game/shrink1.2bpp: rgbgfx += -h
 gfx/new_game/shrink2.2bpp: rgbgfx += -h
 

@@ -188,4 +188,10 @@
 	const SFX_TRAIN_ARRIVED               ; b9
 	const SFX_STOP_SLOT                   ; ba
 	const SFX_2_BOOPS                     ; bb
+	const SFX_BLUE_INTRO_LUNGE
+	const SFX_BLUE_INTRO_HIP
+	const SFX_BLUE_INTRO_HOP
+	const SFX_BLUE_INTRO_RAISE
+	const SFX_BLUE_INTRO_CRASH
+	const SFX_BLUE_INTRO_WHOOSH
 NUM_SFX EQU const_value

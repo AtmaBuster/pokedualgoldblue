@@ -765,6 +765,13 @@ wIntroTilesPointer:: dw
 wIntroFrameCounter1:: db
 wIntroFrameCounter2:: db
 wIntroSpriteStateFlag:: db
+
+NEXTU
+; blue intro cutscene data
+wBaseCoordX:: db
+wBaseCoordY:: db
+wIntroJigglypuffBaseTile:: db
+wBlueIntroFrameCounter:: db
 ENDU
 
 	ds 2
