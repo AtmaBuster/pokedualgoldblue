@@ -3,6 +3,7 @@
 	const HEALMACHINESTATE_LOADGFX
 	const HEALMACHINESTATE_PCLOADBALLS
 	const HEALMACHINESTATE_HOFLOADBALLS
+	const HEALMACHINESTATE_KANTOLOADBALLS
 	const HEALMACHINESTATE_PLAYMUSIC
 	const HEALMACHINESTATE_HOFPLAYSFX
 	const HEALMACHINESTATE_FINISH
@@ -74,13 +75,14 @@ ENDM
 .HallOfFame:
 	healmachineanimseq LOADGFX, HOFLOADBALLS, HOFPLAYSFX, FINISH
 .KantoPokecenter:
-	healmachineanimseq LOADGFX, PCLOADBALLS, PLAYMUSIC, FINISH
+	healmachineanimseq LOADGFX, KANTOLOADBALLS, PLAYMUSIC, FINISH
 
 .Jumptable:
 ; entries correspond to HEALMACHINESTATE_* constants
 	dw .LoadGFX
 	dw .PC_LoadBallsOntoMachine
 	dw .HOF_LoadBallsOntoMachine
+	dw .Kanto_LoadBallsOntoMachine
 	dw .PlayHealMusic
 	dw .HOF_PlaySFX
 	dw .dummy_5 ; never encountered
@@ -96,6 +98,13 @@ ENDM
 .PC_LoadBallsOntoMachine:
 	ld hl, wVirtualOAMSprite32
 	ld de, .PC_ElmsLab_OAM
+	call .PlaceHealingMachineTile
+	call .PlaceHealingMachineTile
+	jr .LoadBallsOntoMachine
+
+.Kanto_LoadBallsOntoMachine:
+	ld hl, wVirtualOAMSprite32
+	ld de, .PC_Kanto_OAM
 	call .PlaceHealingMachineTile
 	call .PlaceHealingMachineTile
 	jr .LoadBallsOntoMachine
@@ -156,6 +165,16 @@ INCBIN "gfx/overworld/heal_machine.2bpp"
 	dbsprite  11,   7, 2, 3, $7d, PAL_OW_TREE | OBP_NUM
 	dbsprite   9,   7, 1, 1, $7d, PAL_OW_TREE | OBP_NUM
 	dbsprite  11,   7, 5, 1, $7d, PAL_OW_TREE | OBP_NUM
+
+.PC_Kanto_OAM:
+	dbsprite   4,   3, 4, 3, $7c, PAL_OW_TREE | OBP_NUM
+	dbsprite   4,   3, 4, 4, $7c, PAL_OW_TREE | OBP_NUM
+	dbsprite   4,   4, 0, 3, $7d, PAL_OW_TREE | OBP_NUM
+	dbsprite   5,   4, 0, 3, $7d, PAL_OW_TREE | OBP_NUM | X_FLIP
+	dbsprite   4,   5, 0, 0, $7d, PAL_OW_TREE | OBP_NUM
+	dbsprite   5,   5, 0, 0, $7d, PAL_OW_TREE | OBP_NUM | X_FLIP
+	dbsprite   4,   5, 0, 5, $7d, PAL_OW_TREE | OBP_NUM
+	dbsprite   5,   5, 0, 5, $7d, PAL_OW_TREE | OBP_NUM | X_FLIP
 
 .LoadPalettes:
 IF DEF(_GOLD)
