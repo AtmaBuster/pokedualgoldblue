@@ -128,7 +128,16 @@ PokemonCenterPC:
 	call .ChooseWhichPCListToUse_Main
 	ld b, a
 	ld a, [wStatusFlags2]
+IF DEF(_GOLD)
 	bit STATUSFLAGS2_MET_BILL_F, a
+ELIF DEF(_BLUE)
+	push bc
+	ld de, EVENT_HELPED_BILL
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	and a
+	pop bc
+ENDC
 	ld a, b
 	ret z
 	add 3

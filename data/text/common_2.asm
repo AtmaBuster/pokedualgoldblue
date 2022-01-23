@@ -774,7 +774,7 @@ _PokecenterBillsPCText::
 	prompt
 
 _PokecenterSomeonesPCText::
-	text "Someone's PC"
+	text "SOMEONE's PC"
 	line "accessed."
 
 	para "#MON Storage"
