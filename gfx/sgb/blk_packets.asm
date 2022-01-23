@@ -82,7 +82,7 @@ BlkPacket_PartyMenu:
 
 BlkPacket_GSTitleScreen:
 	attr_blk 2
-	attr_blk_data %111, 0,0,3, 00,00, 19,06
+	attr_blk_data %111, 0,0,3, 00,00, 31,06
 	attr_blk_data %010, 0,1,0, 05,06, 14,06
 	ds 2, 0
 
@@ -93,6 +93,6 @@ BlkPacket_BetaTitleScreen:
 
 BlkPacket_MagnetTrain:
 	attr_blk 2
-	attr_blk_data %111, 2,2,0, 00,04, 19,13 ; fence
-	attr_blk_data %011, 1,1,0, 00,06, 19,11 ; train
+	attr_blk_data %111, 2,2,0, 00,04, 31,13 ; fence
+	attr_blk_data %011, 1,1,0, 00,06, 31,11 ; train
 	ds 2, 0
