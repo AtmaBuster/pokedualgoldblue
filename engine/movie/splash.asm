@@ -28,6 +28,7 @@ SplashScreen:
 	call DelayFrames
 	call ClearTilemap
 
+if DEF(_GOLD)
 ; Play GameFreak logo animation
 	call GameFreakPresentsInit
 .loop
@@ -47,6 +48,10 @@ SplashScreen:
 .canceled
 	scf
 	ret
+ELIF DEF(_BLUE)
+	callfar PlayShootingStar
+	ret
+ENDC
 
 GameFreakPresentsInit:
 	ld de, GameFreakLogoGFX

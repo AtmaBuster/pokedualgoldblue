@@ -303,7 +303,6 @@ SECTION "bank39", ROMX
 INCLUDE "engine/menus/options_menu.asm"
 INCLUDE "engine/movie/splash.asm"
 INCLUDE "engine/movie/intro.asm"
-INCLUDE "engine/movie/blue_intro.asm"
 
 
 SECTION "bank3E", ROMX
@@ -395,3 +394,9 @@ INCLUDE "engine/pokegear/townmap_convertlinebreakcharacters.asm"
 SECTION "Credits Strings", ROMX
 
 INCLUDE "data/credits_strings.asm"
+
+
+SECTION "RB Movies", ROMX
+
+INCLUDE "engine/movie/blue_intro.asm"
+INCLUDE "engine/movie/blue_splash.asm"

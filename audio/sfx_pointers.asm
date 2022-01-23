@@ -195,4 +195,5 @@ SFX:
 	dba Sfx_BlueIntroRaise
 	dba Sfx_BlueIntroCrash
 	dba Sfx_BlueIntroWhoosh
+	dba Sfx_Shooting_Star
 	assert_table_length NUM_SFX

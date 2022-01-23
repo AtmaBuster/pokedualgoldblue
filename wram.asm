@@ -2573,6 +2573,7 @@ wVermilionGymPuzzleCans:: dw
 
 wEventFlags:: flag_array NUM_EVENTS
 
+wMoveDownSmallStarsOAMCount::
 wUnusedLinkCommunicationByte:: db
 
 wGameTimerPaused::
