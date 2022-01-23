@@ -328,6 +328,7 @@ InitPokegearTilemap:
 	ld e, 1
 .ok
 	farcall PokegearMap
+IF DEF(_GOLD)
 	ld a, $07
 	ld bc, SCREEN_WIDTH - 2
 	hlcoord 1, 2
@@ -336,6 +337,7 @@ InitPokegearTilemap:
 	ld [hl], $06
 	hlcoord 19, 2
 	ld [hl], $17
+ENDC
 	ld a, [wPokegearMapCursorLandmark]
 	call PokegearMap_UpdateLandmarkName
 	ret
