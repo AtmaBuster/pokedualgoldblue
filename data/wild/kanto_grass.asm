@@ -1203,4 +1203,46 @@ ENDC
 	db  5, PIKACHU
 	end_kanto_wildmons
 
+	def_kanto_wildmons ROUTE_26
+	db 10 percent ; encounter rate
+	db 28, DODUO
+	db 28, SANDSLASH
+	db 32, NOCTOWL
+	db 32, PONYTA
+	db 30, RATICATE
+	db 30, DODUO
+	db 30, ARBOK
+	db 30, ARBOK
+	db 30, QUAGSIRE
+	db 30, QUAGSIRE
+	end_kanto_wildmons
+
+	def_kanto_wildmons ROUTE_27
+	db 10 percent ; encounter rate
+	db 28, DODUO
+	db 28, QUAGSIRE
+	db 28, ARBOK
+	db 30, RATICATE
+	db 30, QUAGSIRE
+	db 32, NOCTOWL
+	db 30, DODUO
+	db 32, PONYTA
+	db 30, DODRIO
+	db 30, DODRIO
+	end_kanto_wildmons
+
+	def_kanto_wildmons ROUTE_28
+	db 10 percent ; encounter rate
+	db 39, TANGELA
+	db 40, PONYTA
+	db 40, RAPIDASH
+	db 40, POLIWHIRL
+	db 40, GOLBAT
+	db 42, ARBOK
+	db 41, DODUO
+	db 43, DODRIO
+	db 42, GOLBAT
+	db 43, DODRIO
+	end_kanto_wildmons
+
 	db -1 ; end
