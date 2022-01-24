@@ -344,12 +344,13 @@ BlueIntro_LoadGraphics:
 	ld bc, BlueIntro_JigglypuffTiles.End - BlueIntro_JigglypuffTiles
 	call CopyBytes
 
+	call LoadShootingStarGraphics
+
 	ld hl, GameFreakIntro
 	ld de, vTiles1
 	ld bc, GameFreakIntro.End - GameFreakIntro
 	ld a, BANK(GameFreakIntro)
 	jp CopyBytes
-	ret
 
 BlueIntro_InitJigglypuffOAM:
 	ld hl, wVirtualOAM

@@ -1,12 +1,12 @@
 BlueIntro_CopyVideoData::
-    ld a, [hBGMapMode]
-    push af
-    push bc
-    ld a, 1
+	ld a, [hBGMapMode]
+	push af
+	push bc
+	ld a, 1
 	ldh [hBGMapMode], a
-    ld c, 3
+	ld c, 3
 	call DelayFrames
-    pop bc
+	pop bc
 	pop af
 	ldh [hBGMapMode], a
 	ret
@@ -18,7 +18,6 @@ PlayShootingStar:
 	call EnableLCD
 	ld hl, rLCDC
 	res 5, [hl]
-	set 3, [hl]
 	ld c, 64
 	call DelayFrames
 	call AnimateShootingStar
@@ -35,18 +34,18 @@ LoadShootingStarGraphics:
 	ldh [rOBP0], a
 	ld a, $a4
 	ldh [rOBP1], a
-	ld de, AnimationTileset2 tile 3 ; star tile (top left quadrant)
-	ld hl, vTiles1 tile $20
-	lb bc, BANK(AnimationTileset2), 1
-	call BlueIntro_CopyVideoData
-	ld de, AnimationTileset2 tile 19 ; star tile (bottom left quadrant)
-	ld hl, vTiles1 tile $21
-	lb bc, BANK(AnimationTileset2), 1
-	call BlueIntro_CopyVideoData
-	ld de, FallingStar
-	ld hl, vTiles1 tile $22
-	lb bc, BANK(FallingStar), (FallingStar.End - FallingStar) / $10
-	call BlueIntro_CopyVideoData
+	ld hl, AnimationTileset2 tile 3 ; star tile (top left quadrant)
+	ld bc, 1 tiles
+	ld de, vTiles1 tile $20
+	call CopyBytes
+	ld hl, AnimationTileset2 tile 19 ; star tile (bottom left quadrant)
+	ld bc, 1 tiles
+	ld de, vTiles1 tile $21
+	call CopyBytes
+	ld hl, FallingStar
+	ld bc, 1 tiles
+	ld de, vTiles1 tile $22
+	call CopyBytes
 	ld hl, GameFreakLogoOAMData
 	ld de, wVirtualOAM + $60
 	ld bc, GameFreakLogoOAMData.End - GameFreakLogoOAMData
@@ -57,8 +56,7 @@ LoadShootingStarGraphics:
 	jp CopyBytes
 
 AnimateShootingStar:
-	call LoadShootingStarGraphics
-	ld a, SFX_SHOOTING_STAR
+	ld de, SFX_SHOOTING_STAR
 	call PlaySFX
 
 ; Move the big star down and left across the screen.
@@ -260,10 +258,10 @@ GameFreakLogoOAMData:
 .End:
 
 GameFreakShootingStarOAMData:
-	dbsprite 20,  0,  0,  0, $a0, OBP_NUM
-	dbsprite 21,  0,  0,  0, $a0, OBP_NUM | OAM_X_FLIP
-	dbsprite 20,  1,  0,  0, $a1, OBP_NUM
-	dbsprite 21,  1,  0,  0, $a1, OBP_NUM | OAM_X_FLIP
+	dbsprite 20,  0,  0,  0, $a0, $0
+	dbsprite 21,  0,  0,  0, $a0, X_FLIP
+	dbsprite 20,  1,  0,  0, $a1, $0
+	dbsprite 21,  1,  0,  0, $a1, X_FLIP
 .End:
 
 FallingStar:
