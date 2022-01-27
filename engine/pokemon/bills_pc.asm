@@ -1052,6 +1052,7 @@ PCMonInfo:
 	predef GetMonFrontpic
 	xor a
 	ld [wBillsPC_MonHasMail], a
+	ld [wBillsPC_MonHasKeyItem], a
 	ld a, [wCurPartySpecies]
 	ld [wTempSpecies], a
 	cp EGG
@@ -1084,9 +1085,13 @@ PCMonInfo:
 	callfar ItemIsMail
 	jr c, .mail
 	ld a, $5d ; item icon
+	callfar ItemIsKeyItem
+	jr nc, .printitem
+	ld a, 1
+	ld [wBillsPC_MonHasKeyItem], a
 	jr .printitem
 .mail
-	ld a, $1
+	ld a, 1
 	ld [wBillsPC_MonHasMail], a
 	ld a, $5c ; mail icon
 .printitem
@@ -1588,12 +1593,19 @@ BillsPC_CheckMail_PreventBlackout:
 	ld a, [wBillsPC_MonHasMail]
 	and a
 	jr nz, .HasMail
+	ld a, [wBillsPC_MonHasKeyItem]
+	and a
+	jr nz, .HasKeyItem
 .Okay:
 	and a
 	ret
 
 .HasMail:
 	ld de, PCString_RemoveMail
+	jr .NotOkay
+
+.HasKeyItem:
+	ld de, PCString_RemoveKeyItem
 	jr .NotOkay
 
 .AllOthersFainted:
@@ -2197,6 +2209,7 @@ PCString_ItsYourLastPKMN: db "It's your last <PK><MN>!@"
 PCString_TheresNoRoom: db "There's no room!@"
 PCString_NoMoreUsablePKMN: db "No more usable <PK><MN>!@"
 PCString_RemoveMail: db "Remove MAIL.@"
+PCString_RemoveKeyItem: db "Remove KEY ITEM.@"
 PCString_ReleasedPKMN: db "Released <PK><MN>.@"
 PCString_Bye: db "Bye,@"
 PCString_Stored: db "Stored @"

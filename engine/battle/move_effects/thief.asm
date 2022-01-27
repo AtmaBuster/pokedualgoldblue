@@ -19,11 +19,13 @@ BattleCommand_Thief:
 	and a
 	ret z
 
-; Can't steal mail.
+; Can't steal mail or key items.
 
 	ld [wNamedObjectIndex], a
 	ld d, a
 	farcall ItemIsMail
+	ret c
+	farcall ItemIsKeyItem
 	ret c
 
 	ld a, [wEffectFailed]
@@ -66,11 +68,13 @@ BattleCommand_Thief:
 	and a
 	ret z
 
-; Can't steal mail!
+; Can't steal mail or key items!
 
 	ld [wNamedObjectIndex], a
 	ld d, a
 	farcall ItemIsMail
+	ret c
+	farcall ItemIsKeyItem
 	ret c
 
 	ld a, [wEffectFailed]

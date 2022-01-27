@@ -547,6 +547,15 @@ _PCMonHoldingMailText::
 	line "MAIL."
 	prompt
 
+_PCMonHoldingKeyItemText::
+	text "There is a #MON"
+	line "holding an"
+	cont "important ITEM."
+
+	para "Please remove the"
+	line "KEY ITEM."
+	prompt
+
 _PCNoSingleMonText::
 	text "You don't have a"
 	line "single #MON!"
@@ -1039,6 +1048,11 @@ _PokemonHoldItemText::
 _PokemonRemoveMailText::
 	text "Please remove the"
 	line "MAIL first."
+	prompt
+
+_PokemonRemoveKeyItemText::
+	text "Please remove the"
+	line "KEY ITEM first."
 	prompt
 
 _PokemonNotHoldingText::

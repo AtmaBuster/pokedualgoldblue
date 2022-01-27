@@ -917,3 +917,12 @@ ItemIsMail:
 	jp IsInArray
 
 INCLUDE "data/items/mail_items.asm"
+
+
+ItemIsKeyItem:
+	ld a, d
+	ld hl, KeyItems
+	ld de, 1
+	jp IsInArray
+
+INCLUDE "data/items/key_items.asm"

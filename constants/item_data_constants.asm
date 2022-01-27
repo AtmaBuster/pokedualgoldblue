@@ -32,10 +32,12 @@ NUM_ITEM_TYPES EQU const_value - 1
 ; item actions
 CANT_SELECT_F EQU 6
 CANT_TOSS_F   EQU 7
+CANT_GIVE_F   EQU 5
 
 NO_LIMITS   EQU 0
 CANT_SELECT EQU 1 << CANT_SELECT_F
 CANT_TOSS   EQU 1 << CANT_TOSS_F
+CANT_GIVE   EQU 1 << CANT_GIVE_F
 
 ; pack pockets
 	const_def

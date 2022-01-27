@@ -1963,7 +1963,13 @@ CheckTimeCapsuleCompatibility:
 	farcall ItemIsMail
 	pop bc
 	pop hl
-	jr c, .mon_has_mail
+	jr c, .mon_has_invalid_item
+	push hl
+	push bc
+	farcall ItemIsKeyItem
+	pop bc
+	pop hl
+	jr c, .mon_has_invalid_item
 	ld de, PARTYMON_STRUCT_LENGTH
 	add hl, de
 	dec b
@@ -2004,7 +2010,7 @@ CheckTimeCapsuleCompatibility:
 	ld a, $2
 	jr .done
 
-.mon_has_mail
+.mon_has_invalid_item
 	call GetIncompatibleMonName
 	ld a, $3
 

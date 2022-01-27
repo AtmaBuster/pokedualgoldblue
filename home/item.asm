@@ -12,6 +12,26 @@ CheckTossableItem::
 	pop hl
 	ret
 
+CheckSelectableItem::
+	push hl
+	push de
+	push bc
+	farcall _CheckSelectableItem
+	pop bc
+	pop de
+	pop hl
+	ret
+
+CheckHoldableItem::
+	push hl
+	push de
+	push bc
+	farcall _CheckHoldableItem
+	pop bc
+	pop de
+	pop hl
+	ret
+
 TossItem::
 	push hl
 	push de
