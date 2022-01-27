@@ -1085,20 +1085,24 @@ PCMonInfo:
 	callfar ItemIsMail
 	jr c, .mail
 	callfar ItemIsKeyItem
+	jr c, .key_item
 	ld a, $5d ; item icon
-	jr nc, .printitem
-	ld a, 1
-	ld [wBillsPC_MonHasKeyItem], a
-	ld a, $5d ; item icon
-	jr .printitem
-.mail
-	ld a, 1
-	ld [wBillsPC_MonHasMail], a
-	ld a, $5c ; mail icon
 .printitem
 	hlcoord 7, 12
 	ld [hl], a
 	ret
+
+.mail
+	ld a, 1
+	ld [wBillsPC_MonHasMail], a
+	ld a, $5c ; mail icon
+	jr .printitem
+
+.key_item
+	ld a, 1
+	ld [wBillsPC_MonHasKeyItem], a
+	ld a, $5d ; item icon
+	jr .printitem
 
 BillsPC_LoadMonStats:
 	ld a, [wBillsPC_CursorPosition]
