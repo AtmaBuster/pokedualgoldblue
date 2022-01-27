@@ -1084,11 +1084,12 @@ PCMonInfo:
 	ld d, a
 	callfar ItemIsMail
 	jr c, .mail
-	ld a, $5d ; item icon
 	callfar ItemIsKeyItem
+	ld a, $5d ; item icon
 	jr nc, .printitem
 	ld a, 1
 	ld [wBillsPC_MonHasKeyItem], a
+	ld a, $5d ; item icon
 	jr .printitem
 .mail
 	ld a, 1
