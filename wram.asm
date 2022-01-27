@@ -770,8 +770,10 @@ NEXTU
 ; blue intro cutscene data
 wBaseCoordX:: db
 wBaseCoordY:: db
+wPlayerCharacterOAMTile::
 wIntroJigglypuffBaseTile:: db
 wBlueIntroFrameCounter:: db
+wTitleMonSpecies:: db
 ENDU
 
 	ds 2
