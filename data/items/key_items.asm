@@ -28,5 +28,11 @@ KeyItems:
 	db BIKE_VOUCHER
 	db SQUIRTBOTTLE
 	db RAINBOW_WING
+    db HM_CUT
+    db HM_FLY
+    db HM_SURF
+    db HM_STRENGTH
+    db HM_FLASH
+    db HM_WHIRLPOOL
+    db HM_WATERFALL
 	db -1
-    
