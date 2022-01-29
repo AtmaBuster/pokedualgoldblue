@@ -269,6 +269,7 @@ IlexForestCharcoalMasterScript:
 	end
 
 IlexForestHeadbuttGuyScript:
+IF DEF(_GOLD)
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_TM02_HEADBUTT
@@ -285,6 +286,48 @@ IlexForestHeadbuttGuyScript:
 	closetext
 	end
 
+ELIF DEF(_BLUE)
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_TM02_HEADBUTT
+	iftrue .AlreadyHeardIntro
+	writetext Text_HeadbuttIntro
+	setevent EVENT_GOT_TM02_HEADBUTT
+	waitbutton
+.AlreadyHeardIntro
+	writetext Text_HeadbuttQuestion
+	yesorno
+	iffalse .TutorRefused
+	writebyte HEADBUTT
+	writetext Text_HeadbuttClear
+	special MoveTutor
+	if_equal 0, .TeachMove
+.TutorRefused
+	writetext Text_HeadbuttRefused
+	waitbutton
+	closetext
+	end
+.TeachMove
+	writetext Text_HeadbuttOutro
+	waitbutton
+	closetext
+	end
+
+Text_HeadbuttQuestion:
+	text "Do you want me to"
+	line "teach your #MON"
+	cont "to use HEADBUTT?"
+	done
+
+Text_HeadbuttClear:
+	text ""
+	done
+
+Text_HeadbuttRefused:
+	text "Alright then."
+	done
+ENDC
+
 IlexForestRevive:
 	itemball REVIVE
 
@@ -296,9 +339,6 @@ IlexForestHiddenSuperPotion:
 
 IlexForestHiddenFullHeal:
 	hiddenitem FULL_HEAL, EVENT_ILEX_FOREST_HIDDEN_FULL_HEAL
-
-IlexForestBoulder: ; unreferenced
-	jumpstd StrengthBoulderScript
 
 IlexForestSignpost:
 	jumptext IlexForestSignpostText

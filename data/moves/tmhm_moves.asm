@@ -15,11 +15,11 @@ endr
 for n, 1, NUM_HMS + 1
 	db HM{02d:n}_MOVE
 endr
+
+; Tutors
+for n, 1, NUM_TUTORS + 1
+	db MT{02d:n}_MOVE
+endr
 	assert_table_length NUM_TM_HM
 
 	db 0 ; end
-
-; unused
-	db 0
-	db 0
-	db 0

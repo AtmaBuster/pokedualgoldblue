@@ -347,7 +347,23 @@ HM01 EQU const_value
 	add_hm WATERFALL    ; f9
 NUM_HMS EQU __tmhm_value__ - NUM_TMS - 1
 
-NUM_TM_HM EQU NUM_TMS + NUM_HMS
+add_mt: MACRO
+; Defines two constants:
+; - \1_TMNUM: the learnable TM/HM flag, starting at 58
+; - MT##_MOVE: alias for the move id, equal to the value of \1
+MT_VALUE = __tmhm_value__ - NUM_TMS - NUM_HMS
+MT{02d:MT_VALUE}_MOVE = \1
+	add_tmnum \1
+ENDM
+
+MT01 EQU const_value
+IF DEF(_BLUE)
+	add_mt HEADBUTT
+	add_mt ROCK_SMASH
+ENDC
+NUM_TUTORS = __tmhm_value__ - NUM_TMS - NUM_HMS - 1
+
+NUM_TM_HM EQU NUM_TMS + NUM_HMS + NUM_TUTORS
 
 	const ITEM_FA       ; fa
 
