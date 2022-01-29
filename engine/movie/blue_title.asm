@@ -116,6 +116,8 @@ BlueTitleScreen:
 	call PlayCry
 	call WaitSFX
 .skip_cry
+	ld a, HIGH(vBGMap0)
+	ldh [hBGMapAddress + 1], a
 	ld hl, rLCDC
 	res rLCDC_WINDOW_ENABLE, [hl]
 	ret
