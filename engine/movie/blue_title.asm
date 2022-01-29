@@ -19,6 +19,11 @@ BlueTitleScreen:
 	ld a, $90
 	ldh [hWY], a
 
+	ld hl, vBGMap0
+	ld bc, BG_MAP_WIDTH * BG_MAP_HEIGHT
+	ld a, " "
+	call ByteFill
+
 	ld hl, NintendoCopyrightLogoGraphics
 	ld de, vTiles2 tile $41
 	ld bc, 5 tiles
@@ -48,12 +53,8 @@ BlueTitleScreen:
 	call BlueTitle_DrawPlayer
 	call BlueTitle_PlaceCopyright
 
-	call EnableLCD
-	ld b, SCGB_BETA_TITLE_SCREEN
-	call GetSGBLayout
-
-	call BlueTitle_WaitBGMap_0
-	call BlueTitle_WaitBGMap_1
+	call BlueTitle_CopyBGMap0
+	call BlueTitle_CopyBGMap1
 
 	ld a, SQUIRTLE
 	ld [wTitleMonSpecies], a
@@ -62,12 +63,20 @@ BlueTitleScreen:
 	ld a, $40
 	ldh [hWY], a
 
+	call EnableLCD
+
 	call BlueTitle_WaitBGMap_2
+
+	ld b, SCGB_BETA_TITLE_SCREEN
+	call GetSGBLayout
 
 	ld hl, rLCDC
 	set rLCDC_WINDOW_ENABLE, [hl]
 
 	call BlueTitle_DropLogo
+
+	ld a, HIGH(vBGMap0)
+	ldh [hBGMapAddress + 1], a
 
 	ld c, 36
 	call DelayFrames
@@ -75,11 +84,17 @@ BlueTitleScreen:
 	call PlaySFX
 
 	call BlueIntro_PutVersion
-	call BlueIntro_ScrollVersion ; TODO
+	call BlueIntro_ScrollVersion
 
 	call WaitSFX
 	ld de, MUSIC_RBY_TITLE_SCREEN
 	call PlayMusic
+
+	hlcoord 0, 10
+	ld bc, SCREEN_WIDTH * 7
+	ld a, " "
+	call ByteFill
+	call BlueTitle_WaitBGMap_1
 
 .loop
 	ld c, 200
@@ -103,8 +118,6 @@ BlueTitleScreen:
 .skip_cry
 	ld hl, rLCDC
 	res rLCDC_WINDOW_ENABLE, [hl]
-	ld a, HIGH(vBGMap0)
-	ldh [hBGMapAddress + 1], a
 	ret
 
 BlueTitle_PlacePokemonLogo:
@@ -240,8 +253,8 @@ BlueIntro_PutVersion:
 	db $61,$62,$63,$64,$65,$66,$67,$68,"@" ; "Blue Version"
 
 BlueIntro_ScrollVersion:
-;	ld a, SCREEN_HEIGHT_PX
-;	ldh [hWY], a
+	ld a, SCREEN_HEIGHT_PX
+	ldh [hWY], a
 	ld d, 144
 .loop
 	ld h, d
@@ -265,12 +278,11 @@ BlueIntro_ScrollVersion:
 
 	ld a, h
 	ldh [rSCX], a
-	ret
 
 .wait2
 	ldh a, [rLY]
 	cp h
-	jr nz, .wait2
+	jr z, .wait2
 	ret
 
 BlueTitle_ScrollMonIn:
@@ -308,7 +320,7 @@ BlueTitle_PickNewMon:
 	jr z, .loop
 
 	ld [hl], a
-	call BlueTitle_LoadMonSprite
+	call BlueTitle_ReloadMonSprite
 
 	ld a, $90
 	ldh [hWY], a
@@ -367,8 +379,14 @@ _TitleScroll:
 	ldh a, [rLY]
 	cp l
 	jr nz, .wait
+
 	ld a, h
 	ldh [rSCX], a
+
+.wait2
+	ldh a, [rLY]
+	cp h
+	jr z, .wait2
 	ret
 
 BlueTitle_GetBallY:
@@ -397,6 +415,12 @@ BlueTitle_ScrollOut:
 BlueTitle_BallYTable:
 	db 0, $71, $6f, $6e, $6d, $6c, $6d, $6e, $71, $74, 0
 
+BlueTitle_ReloadMonSprite:
+	ld [wCurPartySpecies], a
+	ld de, vTiles2
+	predef GetMonFrontpic
+	ret
+
 BlueTitle_LoadMonSprite:
 	ld [wCurPartySpecies], a
 	xor a
@@ -404,12 +428,35 @@ BlueTitle_LoadMonSprite:
 	hlcoord 5, 10
 	jp _PrepMonFrontpic
 
-BlueTitle_WaitBGMap_0:
-	ld a, HIGH(vBGMap0)
+BlueTitle_CopyBGMap0:
+	ld hl, vBGMap0
+	jr BlueTitle_CopyBGMap
+
+BlueTitle_CopyBGMap1:
+	ld hl, vBGMap1
+BlueTitle_CopyBGMap:
+	ld a, h
 	ldh [hBGMapAddress + 1], a
-	xor a
+	ld a, l
 	ldh [hBGMapAddress], a
-	jp WaitBGMap
+	ld de, wTilemap
+	lb bc, SCREEN_WIDTH, SCREEN_HEIGHT
+.loop_y
+	push bc
+	push hl
+.loop_x
+	ld a, [de]
+	inc de
+	ld [hli], a
+	dec b
+	jr nz, .loop_x
+	pop hl
+	ld bc, BG_MAP_WIDTH
+	add hl, bc
+	pop bc
+	dec c
+	jr nz, .loop_y
+	ret
 
 BlueTitle_WaitBGMap_1:
 	ld a, HIGH(vBGMap1)
