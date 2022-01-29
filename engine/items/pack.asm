@@ -134,18 +134,8 @@ Pack:
 	ld c, PACKSTATE_INITITEMSPOCKET ; right
 	call Pack_InterpretJoypad
 	ret c
-	farcall _CheckTossableItem
-	ld a, [wItemAttributeValue]
-	and a
-	jr nz, .use_quit
-	ld hl, MenuHeader_UseGiveQuit
-	ld de, .Jumptable2
-	jr .load_jump
-
-.use_quit
 	ld hl, MenuHeader_UseQuit
-	ld de, .Jumptable1
-.load_jump
+	ld de, .TMHM_Jumptable
 	push de
 	call LoadMenuHeader
 	call VerticalMenu
@@ -157,13 +147,8 @@ Pack:
 	call Pack_GetJumptablePointer
 	jp hl
 
-.Jumptable1:
+.TMHM_Jumptable:
 	dw .UseItem
-	dw QuitItemSubmenu
-
-.Jumptable2:
-	dw .UseItem
-	dw GiveItem
 	dw QuitItemSubmenu
 
 .UseItem:
