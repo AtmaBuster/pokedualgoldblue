@@ -115,6 +115,13 @@ BillsPC_MovePKMNMenu:
 	jr .quit
 
 .no_mail
+	farcall IsAnyMonHoldingKeyItem
+	jr nc, .no_key_items
+	ld hl, .PCMonHoldingKeyItemText
+	call PrintText
+	jr .quit
+
+.no_key_items
 	farcall StartMoveMonWOMail_SaveGame
 	jr c, .quit
 	farcall _MovePKMNWithoutMail
@@ -128,6 +135,10 @@ BillsPC_MovePKMNMenu:
 
 .PCMonHoldingMailText:
 	text_far _PCMonHoldingMailText
+	text_end
+
+.PCMonHoldingKeyItemText:
+	text_far _PCMonHoldingKeyItemText
 	text_end
 
 BillsPC_DepositMenu:

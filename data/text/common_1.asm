@@ -1279,6 +1279,12 @@ _RemoveMailText::
 	line "you come see me."
 	prompt
 
+_RemoveKeyItemText::
+	text "Remove that KEY"
+	line "ITEM before you"
+	cont "come see me."
+	prompt
+
 _LastHealthyMonText::
 	text "If you give me"
 	line "that, what will"

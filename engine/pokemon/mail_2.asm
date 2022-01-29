@@ -911,9 +911,19 @@ LoadMailGFX_Color3:
 INCLUDE "gfx/mail.asm"
 
 ItemIsMail:
-	ld a, d
 	ld hl, MailItems
+	jr _ItemIsInList
+
+ItemIsKeyItem:
+	ld hl, KeyItems
+_ItemIsInList:
+	ld a, d
+	push de
 	ld de, 1
-	jp IsInArray
+	call IsInArray
+	pop de
+	ret
 
 INCLUDE "data/items/mail_items.asm"
+
+INCLUDE "data/items/key_items.asm"
