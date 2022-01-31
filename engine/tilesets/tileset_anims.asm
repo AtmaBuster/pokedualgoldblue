@@ -39,7 +39,6 @@ _AnimateTileset::
 
 Tileset0Anim::
 TilesetJohtoModernAnim::
-TilesetKantoAnim::
 TilesetParkAnim::
 TilesetForestAnim::
 	dw vTiles2 tile $14, AnimateWaterTile
@@ -52,6 +51,18 @@ TilesetForestAnim::
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
+	dw NULL,  DoneTileAnimation
+
+TilesetKantoAnim::
+	dw vTiles2 tile $14, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, AnimateKantoWater
+	dw vTiles2 tile $14, WriteTileFromAnimBuffer
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  AnimateKantoFlowerTile
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
 	dw NULL,  DoneTileAnimation
 
 TilesetJohtoAnim:
@@ -210,6 +221,20 @@ StandingTileFrame8:
 	ld [wTileAnimationTimer], a
 	ret
 
+AnimateKantoWater:
+; Scroll right for 4 ticks, then left for 4 ticks, every other tick.
+	ld a, [wTileAnimationTimer]
+	inc a
+	and %1111
+	ld [wTileAnimationTimer], a
+	ld b, a
+	and 1
+	ret z
+	ld a, b
+	and %1000
+	jr nz, ScrollTileLeft
+	jr ScrollTileRight
+
 ScrollTileRightLeft:
 ; Scroll right for 4 ticks, then left for 4 ticks.
 	ld a, [wTileAnimationTimer]
@@ -341,6 +366,35 @@ AnimateWaterTile:
 
 .WaterTileFrames:
 	INCBIN "gfx/tilesets/water/water.2bpp"
+
+AnimateKantoFlowerTile:
+; Save the stack pointer in bc for WriteTile to restore
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+; A cycle of 4 frames, updating every other tick
+	ld a, [wTileAnimationTimer]
+	and %110
+	srl a
+
+; hl = .FlowerTileFrames + a * 16
+	swap a
+	ld e, a
+	ld d, 0
+	ld hl, .FlowerTileFrames
+	add hl, de
+
+; Write the tile graphic from hl (now sp) to tile $03 (now hl)
+	ld sp, hl
+	ld hl, vTiles2 tile $03
+	jp WriteTile
+
+.FlowerTileFrames:
+	INCBIN "gfx/tilesets/flower/blueflower1.2bpp"
+	INCBIN "gfx/tilesets/flower/blueflower1.2bpp"
+	INCBIN "gfx/tilesets/flower/blueflower2.2bpp"
+	INCBIN "gfx/tilesets/flower/blueflower3.2bpp"
 
 AnimateFlowerTile:
 ; Save the stack pointer in bc for WriteTile to restore
