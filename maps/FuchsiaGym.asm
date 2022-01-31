@@ -387,8 +387,8 @@ FuchsiaGym_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  3, 15, BGEVENT_READ, FuchsiaGym_StatueScript
-	bg_event  6, 15, BGEVENT_READ, FuchsiaGym_StatueScript
+	bg_event  3, 15, BGEVENT_UP, FuchsiaGym_StatueScript
+	bg_event  6, 15, BGEVENT_UP, FuchsiaGym_StatueScript
 
 	def_object_events
 	object_event  4, 10, SPRITE_KANTO_KOGA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FuchsiaGym_KogaScript, -1
