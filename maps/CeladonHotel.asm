@@ -43,6 +43,9 @@ CeladonHotel_BenchGuyScript:
 	line "on this vacation!"
 	done
 
+CeladonHotel_PCScript:
+	jumpstd PCScript
+
 CeladonHotel_MapEvents:
 	def_warp_events
 	warp_event  3,  7, CELADON_CITY, 13
@@ -52,6 +55,7 @@ CeladonHotel_MapEvents:
 
 	def_bg_events
 	bg_event  0,  4, BGEVENT_LEFT, CeladonHotel_BenchGuyScript
+	bg_event 13,  3, BGEVENT_READ, CeladonHotel_PCScript
 
 	def_object_events
 	object_event  3,  1, SPRITE_KANTO_GRANNY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonHotel_ReceptionistScript, -1
