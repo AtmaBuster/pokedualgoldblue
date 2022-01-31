@@ -124,7 +124,7 @@ ChampionsRoom_MapScripts:
 
 .WinText:
 	text "NO! That can't be!"
-	cont "You beat my best!"
+	line "You beat my best!"
 
 	para "After all that"
 	line "work to become"
