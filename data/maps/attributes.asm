@@ -597,9 +597,9 @@ ENDM
 	map_attributes CeladonMartRoof, CELADON_MART_ROOF, $42, 0
 	map_attributes CeladonPokecenter, CELADON_POKECENTER, $00, 0
 	map_attributes CeruleanBadgeHouse, CERULEAN_BADGE_HOUSE, $00, 0
-	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $00, 0
-	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $00, 0
-	map_attributes CeruleanCaveB1F, CERULEAN_CAVE_B1F, $00, 0
+	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $7d, 0
+	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $7d, 0
+	map_attributes CeruleanCaveB1F, CERULEAN_CAVE_B1F, $7d, 0
 	map_attributes CeruleanGym, CERULEAN_GYM, $00, 0
 	map_attributes CeruleanMart, CERULEAN_MART, $00, 0
 	map_attributes CeruleanPokecenter, CERULEAN_POKECENTER, $00, 0
@@ -617,7 +617,7 @@ ENDM
 	map_attributes CopycatsHouse1F, COPYCATS_HOUSE_1F, $00, 0
 	map_attributes CopycatsHouse2F, COPYCATS_HOUSE_2F, $00, 0
 	map_attributes DayCareKanto, DAY_CARE_KANTO, $00, 0
-	map_attributes DiglettsCave, DIGLETTS_CAVE, $19, 0
+	map_attributes DiglettsCave, DIGLETTS_CAVE, $03, 0
 	map_attributes DiglettsCaveRoute2, DIGLETTS_CAVE_ROUTE_2, $7d, 0
 	map_attributes DiglettsCaveRoute11, DIGLETTS_CAVE_ROUTE_11, $7d, 0
 	map_attributes FightingDojo, FIGHTING_DOJO, $00, 0
@@ -638,9 +638,9 @@ ENDM
 	map_attributes LoreleisRoom, LORELEIS_ROOM, $00, 0
 	map_attributes MrFujisHouse, MR_FUJIS_HOUSE, $00, 0
 	map_attributes MrPsychicsHouse, MR_PSYCHICS_HOUSE, $00, 0
-	map_attributes MtMoon1F, MT_MOON_1F, $00, 0
-	map_attributes MtMoonB1F, MT_MOON_B1F, $00, 0
-	map_attributes MtMoonB2F, MT_MOON_B2F, $00, 0
+	map_attributes MtMoon1F, MT_MOON_1F, $03, 0
+	map_attributes MtMoonB1F, MT_MOON_B1F, $03, 0
+	map_attributes MtMoonB2F, MT_MOON_B2F, $03, 0
 	map_attributes MtMoonPokecenter, MT_MOON_POKECENTER, $00, 0
 	map_attributes Museum1F, MUSEUM_1F, $00, 0
 	map_attributes Museum2F, MUSEUM_2F, $00, 0
@@ -671,8 +671,8 @@ ENDM
 	map_attributes RocketHideoutB3F, ROCKET_HIDEOUT_B3F, $00, 0
 	map_attributes RocketHideoutB4F, ROCKET_HIDEOUT_B4F, $00, 0
 	map_attributes RocketHideoutElevator, ROCKET_HIDEOUT_ELEVATOR, $00, 0
-	map_attributes RockTunnel1F, ROCK_TUNNEL_1F, $00, 0
-	map_attributes RockTunnelB1F, ROCK_TUNNEL_B1F, $00, 0
+	map_attributes RockTunnel1F, ROCK_TUNNEL_1F, $03, 0
+	map_attributes RockTunnelB1F, ROCK_TUNNEL_B1F, $03, 0
 	map_attributes RockTunnelPokecenter, ROCK_TUNNEL_POKECENTER, $00, 0
 	map_attributes Route2Gate, ROUTE_2_GATE, $00, 0
 	map_attributes Route2TradeHouse, ROUTE_2_TRADE_HOUSE, $00, 0
@@ -707,11 +707,11 @@ ENDM
 	map_attributes SaffronMart, SAFFRON_MART, $00, 0
 	map_attributes SaffronPidgeyHouse, SAFFRON_PIDGEY_HOUSE, $00, 0
 	map_attributes SaffronPokecenter, SAFFRON_POKECENTER, $00, 0
-	map_attributes SeafoamIslands1F, SEAFOAM_ISLANDS_1F, $00, 0
-	map_attributes SeafoamIslandsB1F, SEAFOAM_ISLANDS_B1F, $00, 0
-	map_attributes SeafoamIslandsB2F, SEAFOAM_ISLANDS_B2F, $00, 0
-	map_attributes SeafoamIslandsB3F, SEAFOAM_ISLANDS_B3F, $00, 0
-	map_attributes SeafoamIslandsB4F, SEAFOAM_ISLANDS_B4F, $00, 0
+	map_attributes SeafoamIslands1F, SEAFOAM_ISLANDS_1F, $7d, 0
+	map_attributes SeafoamIslandsB1F, SEAFOAM_ISLANDS_B1F, $7d, 0
+	map_attributes SeafoamIslandsB2F, SEAFOAM_ISLANDS_B2F, $7d, 0
+	map_attributes SeafoamIslandsB3F, SEAFOAM_ISLANDS_B3F, $7d, 0
+	map_attributes SeafoamIslandsB4F, SEAFOAM_ISLANDS_B4F, $7d, 0
 	map_attributes SilphCo1F, SILPH_CO_1F, $00, 0
 	map_attributes SilphCo2F, SILPH_CO_2F, $00, 0
 	map_attributes SilphCo3F, SILPH_CO_3F, $00, 0
@@ -748,10 +748,10 @@ ENDM
 	map_attributes VermilionPidgeyHouse, VERMILION_PIDGEY_HOUSE, $00, 0
 	map_attributes VermilionPokecenter, VERMILION_POKECENTER, $00, 0
 	map_attributes VermilionTradeHouse, VERMILION_TRADE_HOUSE, $00, 0
-	map_attributes VictoryRoad1F, VICTORY_ROAD_1F, $00, 0
-	map_attributes VictoryRoad2F, VICTORY_ROAD_2F, $00, 0
-	map_attributes VictoryRoad3F, VICTORY_ROAD_3F, $00, 0
-	map_attributes ViridianForest, VIRIDIAN_FOREST, $00, 0
+	map_attributes VictoryRoad1F, VICTORY_ROAD_1F, $7d, 0
+	map_attributes VictoryRoad2F, VICTORY_ROAD_2F, $7d, 0
+	map_attributes VictoryRoad3F, VICTORY_ROAD_3F, $7d, 0
+	map_attributes ViridianForest, VIRIDIAN_FOREST, $03, 0
 	map_attributes ViridianForestNorthGate, VIRIDIAN_FOREST_NORTH_GATE, $00, 0
 	map_attributes ViridianForestSouthGate, VIRIDIAN_FOREST_SOUTH_GATE, $00, 0
 	map_attributes ViridianGym, VIRIDIAN_GYM, $00, 0
