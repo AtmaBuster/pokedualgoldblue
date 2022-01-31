@@ -223,7 +223,11 @@ _AlreadySetUpText::
 	prompt
 
 _LookTownMapText::
+IF DEF(_GOLD)
 	text "It's the TOWN MAP."
+ELIF DEF(_BLUE)
+	text "A TOWN MAP."
+ENDC
 	done
 
 _LookPikachuPosterText::
