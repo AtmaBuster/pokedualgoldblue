@@ -20,6 +20,7 @@ Route25_MapScripts:
 	checkevent EVENT_HELPED_BILL
 	iftrue .TicketCheck
 	clearevent EVENT_BILLS_HOUSE_MONSTER
+	clearevent EVENT_BILL_ENTERED_TELEPORTER
 	endcallback
 
 .TicketCheck:
