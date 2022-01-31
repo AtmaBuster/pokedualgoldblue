@@ -617,9 +617,9 @@ ENDM
 	map_attributes CopycatsHouse1F, COPYCATS_HOUSE_1F, $00, 0
 	map_attributes CopycatsHouse2F, COPYCATS_HOUSE_2F, $00, 0
 	map_attributes DayCareKanto, DAY_CARE_KANTO, $00, 0
-	map_attributes DiglettsCave, DIGLETTS_CAVE, $00, 0
-	map_attributes DiglettsCaveRoute2, DIGLETTS_CAVE_ROUTE_2, $00, 0
-	map_attributes DiglettsCaveRoute11, DIGLETTS_CAVE_ROUTE_11, $00, 0
+	map_attributes DiglettsCave, DIGLETTS_CAVE, $19, 0
+	map_attributes DiglettsCaveRoute2, DIGLETTS_CAVE_ROUTE_2, $7d, 0
+	map_attributes DiglettsCaveRoute11, DIGLETTS_CAVE_ROUTE_11, $7d, 0
 	map_attributes FightingDojo, FIGHTING_DOJO, $00, 0
 	map_attributes FuchsiaBillsGrandpasHouse, FUCHSIA_BILLS_GRANDPAS_HOUSE, $00, 0
 	map_attributes FuchsiaGoodRodHouse, FUCHSIA_GOOD_ROD_HOUSE, $00, 0
