@@ -162,6 +162,7 @@ TrainerCard_Page2_LoadGFX:
 	ld hl, vTiles0 tile $00
 	lb bc, BANK(BadgeGFXJohto), 44
 	call Request2bpp
+	ld hl, TrainerCard_JohtoBadgesOAM
 	call TrainerCard_Page2_3_InitObjectsAndStrings
 	call TrainerCard_IncrementJumptable
 	ret
@@ -234,10 +235,19 @@ TrainerCard_Page3_LoadGFX:
 	ld hl, vTiles2 tile $29
 	lb bc, BANK(LeaderGFXKanto), 86
 	call Request2bpp
+	ld a, [wKantoBadges]
+	bit EARTHBADGE, a
+	jr z, .hiddenGiovanni
+	ld de, RevealedGiovanni
+	ld hl, vTiles2 tile $6f
+	lb bc, BANK(RevealedGiovanni), 10
+	call Request2bpp
+.hiddenGiovanni
 	ld de, BadgeGFXKanto
 	ld hl, vTiles0 tile $00
 	lb bc, BANK(BadgeGFXKanto), 44
 	call Request2bpp
+	ld hl, TrainerCard_KantoBadgesOAM
 	call TrainerCard_Page2_3_InitObjectsAndStrings
 	call TrainerCard_IncrementJumptable
 	ret
@@ -371,6 +381,7 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 	db $29, $2a, $2b, $2c, $2d, -1
 
 TrainerCard_Page2_3_InitObjectsAndStrings:
+	push hl
 	hlcoord 2, 8
 	ld de, .BadgesTilemap
 	call TrainerCardSetup_PlaceTilemapString
@@ -396,7 +407,7 @@ endr
 	jr nz, .loop2
 	xor a
 	ld [wTrainerCardBadgeFrameCounter], a
-	ld hl, TrainerCard_JohtoBadgesOAM
+	pop hl
 	call TrainerCard_Page2_3_OAMUpdate
 	ret
 
@@ -532,7 +543,7 @@ TrainerCard_Page2_3_AnimateBadges:
 	inc a
 	and %111
 	ld [wTrainerCardBadgeFrameCounter], a
-	jr TrainerCard_Page2_3_OAMUpdate
+	;jr TrainerCard_Page2_3_OAMUpdate
 
 TrainerCard_Page2_3_OAMUpdate:
 ; copy flag array pointer
@@ -738,3 +749,5 @@ LeaderGFXJohto:  INCBIN "gfx/trainer_card/johto_leaders.2bpp"
 LeaderGFXKanto: INCBIN "gfx/trainer_card/kanto_leaders.2bpp"
 BadgeGFXJohto:   INCBIN "gfx/trainer_card/johto_badges.2bpp"
 BadgeGFXKanto:  INCBIN "gfx/trainer_card/kanto_badges.2bpp"
+
+RevealedGiovanni: INCBIN "gfx/trainer_card/revealed_giovanni.2bpp"
