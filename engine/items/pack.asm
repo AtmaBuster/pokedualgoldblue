@@ -134,18 +134,8 @@ Pack:
 	ld c, PACKSTATE_INITITEMSPOCKET ; right
 	call Pack_InterpretJoypad
 	ret c
-	farcall _CheckTossableItem
-	ld a, [wItemAttributeValue]
-	and a
-	jr nz, .use_quit
-	ld hl, .MenuHeader2
-	ld de, .Jumptable2
-	jr .load_jump
-
-.use_quit
-	ld hl, .MenuHeader1
-	ld de, .Jumptable1
-.load_jump
+	ld hl, MenuHeader_UseQuit
+	ld de, .TMHM_Jumptable
 	push de
 	call LoadMenuHeader
 	call VerticalMenu
@@ -157,38 +147,8 @@ Pack:
 	call Pack_GetJumptablePointer
 	jp hl
 
-.MenuHeader1:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 7, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
-	dw .MenuData_1
-	db 1 ; default option
-
-.MenuData_1:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
-	db 2 ; items
-	db "USE@"
-	db "QUIT@"
-
-.Jumptable1:
+.TMHM_Jumptable:
 	dw .UseItem
-	dw QuitItemSubmenu
-
-.MenuHeader2:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 5, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
-	dw .MenuData_2
-	db 1 ; default option
-
-.MenuData_2:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
-	db 3 ; items
-	db "USE@"
-	db "GIVE@"
-	db "QUIT@"
-
-.Jumptable2:
-	dw .UseItem
-	dw GiveItem
 	dw QuitItemSubmenu
 
 .UseItem:
@@ -240,63 +200,38 @@ Pack:
 	ret
 
 .ItemBallsKey_LoadSubmenu:
+	ld c, 0
+.check_use
+	farcall CheckItemMenu
+	ld a, [wItemAttributeValue]
+	and a
+	jr z, .check_give
+	set 2, c
+.check_give
+	farcall _CheckHoldableItem
+	jr c, .check_toss
+	set 3, c
+.check_toss
 	farcall _CheckTossableItem
-	ld a, [wItemAttributeValue]
-	and a
-	jr nz, .tossable
-	farcall CheckSelectableItem
-	ld a, [wItemAttributeValue]
-	and a
-	jr nz, .selectable
-	farcall CheckItemMenu
-	ld a, [wItemAttributeValue]
-	and a
-	jr nz, .usable
-	jr .unusable
-
-.selectable
-	farcall CheckItemMenu
-	ld a, [wItemAttributeValue]
-	and a
-	jr nz, .selectable_usable
-	jr .selectable_unusable
-
-.tossable
-	farcall CheckSelectableItem
-	ld a, [wItemAttributeValue]
-	and a
-	jr nz, .tossable_selectable
-	jr .tossable_unselectable
-
-.usable
-	ld hl, MenuHeader_UsableKeyItem
-	ld de, Jumptable_UseGiveTossRegisterQuit
-	jr .build_menu
-
-.selectable_usable
-	ld hl, MenuHeader_UsableItem
-	ld de, Jumptable_UseGiveTossQuit
-	jr .build_menu
-
-.tossable_selectable
-	ld hl, MenuHeader_UnusableItem
-	ld de, Jumptable_UseQuit
-	jr .build_menu
-
-.tossable_unselectable
-	ld hl, MenuHeader_UnusableKeyItem
-	ld de, Jumptable_UseRegisterQuit
-	jr .build_menu
-
-.unusable
-	ld hl, MenuHeader_HoldableKeyItem
-	ld de, Jumptable_GiveTossRegisterQuit
-	jr .build_menu
-
-.selectable_unusable
-	ld hl, MenuHeader_HoldableItem
-	ld de, Jumptable_GiveTossQuit
+	jr c, .check_register
+	set 4, c
+.check_register
+	farcall _CheckSelectableItem
+	jr c, .build_menu
+	set 5, c
 .build_menu
+	ld b, 0
+	ld hl, ItemMenuList
+	add hl, bc
+	ld a, [hli]
+	ld c, a
+	ld a, [hli]
+	ld b, a
+	ld a, [hli]
+	ld e, a
+	ld d, [hl]
+	ld h, b
+	ld l, c
 	push de
 	call LoadMenuHeader
 	call VerticalMenu
@@ -308,119 +243,314 @@ Pack:
 	call Pack_GetJumptablePointer
 	jp hl
 
-MenuHeader_UsableKeyItem:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 2, SCREEN_WIDTH - 14, TEXTBOX_Y
-	dw .MenuData
-	db 1 ; default option
+itemmenuentry: MACRO
+	dw \1, \1.JumpTable
+ENDM
+
+ItemMenuList:
+	itemmenuentry MenuHeader_Quit
+	itemmenuentry MenuHeader_UseQuit
+	itemmenuentry MenuHeader_GiveQuit
+	itemmenuentry MenuHeader_UseGiveQuit
+	itemmenuentry MenuHeader_TossQuit
+	itemmenuentry MenuHeader_UseTossQuit
+	itemmenuentry MenuHeader_GiveTossQuit
+	itemmenuentry MenuHeader_UseGiveTossQuit
+	itemmenuentry MenuHeader_RegisterQuit
+	itemmenuentry MenuHeader_UseRegisterQuit
+	itemmenuentry MenuHeader_GiveRegisterQuit
+	itemmenuentry MenuHeader_UseGiveRegisterQuit
+	itemmenuentry MenuHeader_TossRegisterQuit
+	itemmenuentry MenuHeader_UseTossRegisterQuit
+	itemmenuentry MenuHeader_UseGiveTossRegisterQuit
+
+MenuHeader_Quit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 3, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
-	db 5 ; items
-	db "USE@"
-	db "GIVE@"
-	db "TOSS@"
-	db "SEL@"
-	db "QUIT@"
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 1 ; items
+    db "QUIT@"
 
-Jumptable_UseGiveTossRegisterQuit:
-	dw UseItem
-	dw GiveItem
-	dw TossMenu
-	dw RegisterItem
-	dw QuitItemSubmenu
+.JumpTable:
+    dw QuitItemSubmenu
 
-MenuHeader_UsableItem:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 3, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
-	dw .MenuData
-	db 1 ; default option
+MenuHeader_UseQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 5, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
-	db 4 ; items
-	db "USE@"
-	db "GIVE@"
-	db "TOSS@"
-	db "QUIT@"
-
-Jumptable_UseGiveTossQuit:
-	dw UseItem
-	dw GiveItem
-	dw TossMenu
-	dw QuitItemSubmenu
-
-MenuHeader_UnusableItem:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 7, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
-	dw .MenuData
-	db 1 ; default option
-
-.MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 2 ; items
-	db "USE@"
-	db "QUIT@"
+    db "USE@"
+    db "QUIT@"
 
-Jumptable_UseQuit:
-	dw UseItem
-	dw QuitItemSubmenu
+.JumpTable:
+    dw UseItem
+    dw QuitItemSubmenu
 
-MenuHeader_UnusableKeyItem:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 5, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
-	dw .MenuData
-	db 1 ; default option
+MenuHeader_GiveQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 5, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 2 ; items
+    db "GIVE@"
+    db "QUIT@"
+
+.JumpTable:
+    dw GiveItem
+    dw QuitItemSubmenu
+
+MenuHeader_TossQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 5, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 2 ; items
+    db "TOSS@"
+    db "QUIT@"
+
+.JumpTable:
+    dw TossMenu
+    dw QuitItemSubmenu
+
+MenuHeader_RegisterQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 7, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 2 ; items
+    db "SEL@"
+    db "QUIT@"
+
+.JumpTable:
+    dw RegisterItem
+    dw QuitItemSubmenu
+
+MenuHeader_UseGiveQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 7, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 3 ; items
-	db "USE@"
-	db "SEL@"
-	db "QUIT@"
+    db "USE@"
+    db "GIVE@"
+    db "QUIT@"
 
-Jumptable_UseRegisterQuit:
-	dw UseItem
-	dw RegisterItem
-	dw QuitItemSubmenu
+.JumpTable:
+    dw UseItem
+    dw GiveItem
+    dw QuitItemSubmenu
 
-MenuHeader_HoldableKeyItem:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 3, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
-	dw .MenuData
-	db 1 ; default option
+MenuHeader_UseTossQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 7, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 3 ; items
+    db "USE@"
+    db "TOSS@"
+    db "QUIT@"
+
+.JumpTable:
+    dw UseItem
+    dw TossMenu
+    dw QuitItemSubmenu
+
+MenuHeader_UseRegisterQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 7, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 3 ; items
+    db "USE@"
+    db "SEL@"
+    db "QUIT@"
+
+.JumpTable:
+    dw UseItem
+    dw RegisterItem
+    dw QuitItemSubmenu
+
+MenuHeader_GiveTossQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 7, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 3 ; items
+    db "GIVE@"
+    db "TOSS@"
+    db "QUIT@"
+
+.JumpTable:
+    dw GiveItem
+    dw TossMenu
+    dw QuitItemSubmenu
+
+MenuHeader_GiveRegisterQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 7, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 3 ; items
+    db "GIVE@"
+    db "SEL@"
+    db "QUIT@"
+
+.JumpTable:
+    dw GiveItem
+    dw RegisterItem
+    dw QuitItemSubmenu
+
+MenuHeader_TossRegisterQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 7, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 3 ; items
+    db "TOSS@"
+    db "SEL@"
+    db "QUIT@"
+
+.JumpTable:
+    dw TossMenu
+    dw RegisterItem
+    dw QuitItemSubmenu
+
+MenuHeader_UseGiveTossQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 9, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 4 ; items
-	db "GIVE@"
-	db "TOSS@"
-	db "SEL@"
-	db "QUIT@"
+    db "USE@"
+    db "GIVE@"
+    db "TOSS@"
+    db "QUIT@"
 
-Jumptable_GiveTossRegisterQuit:
-	dw GiveItem
-	dw TossMenu
-	dw RegisterItem
-	dw QuitItemSubmenu
+.JumpTable:
+    dw UseItem
+    dw GiveItem
+    dw TossMenu
+    dw QuitItemSubmenu
 
-MenuHeader_HoldableItem:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 5, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
-	dw .MenuData
-	db 1 ; default option
+MenuHeader_UseGiveRegisterQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 9, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
-	db 3 ; items
-	db "GIVE@"
-	db "TOSS@"
-	db "QUIT@"
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 4 ; items
+    db "USE@"
+    db "GIVE@"
+    db "SEL@"
+    db "QUIT@"
 
-Jumptable_GiveTossQuit:
-	dw GiveItem
-	dw TossMenu
-	dw QuitItemSubmenu
+.JumpTable:
+    dw UseItem
+    dw GiveItem
+    dw RegisterItem
+    dw QuitItemSubmenu
+
+MenuHeader_UseTossRegisterQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 9, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 4 ; items
+    db "USE@"
+    db "TOSS@"
+    db "SEL@"
+    db "QUIT@"
+
+.JumpTable:
+    dw UseItem
+    dw TossMenu
+    dw RegisterItem
+    dw QuitItemSubmenu
+
+MenuHeader_GiveTossRegisterQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 9, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 4 ; items
+    db "GIVE@"
+    db "TOSS@"
+    db "SEL@"
+    db "QUIT@"
+
+.JumpTable:
+    dw GiveItem
+    dw TossMenu
+    dw RegisterItem
+    dw QuitItemSubmenu
+
+MenuHeader_UseGiveTossRegisterQuit:
+    db MENU_BACKUP_TILES ; flags
+    menu_coords 0, TEXTBOX_Y - 11, SCREEN_WIDTH - 14, TEXTBOX_Y - 1
+    dw .MenuData
+    db 1; default option
+
+.MenuData:
+    db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db 5 ; items
+    db "USE@"
+    db "GIVE@"
+    db "TOSS@"
+    db "SEL@"
+    db "QUIT@"
+
+.JumpTable:
+    dw UseItem
+    dw GiveItem
+    dw TossMenu
+    dw RegisterItem
+    dw QuitItemSubmenu
 
 UseItem:
 	farcall CheckItemMenu
@@ -528,7 +658,7 @@ ResetPocketCursorPositions: ; unreferenced
 	ret
 
 RegisterItem:
-	farcall CheckSelectableItem
+	farcall _CheckSelectableItem
 	ld a, [wItemAttributeValue]
 	and a
 	jr nz, .cant_register

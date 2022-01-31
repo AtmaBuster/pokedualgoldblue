@@ -23,13 +23,47 @@ CeladonMansion1F_MeowthScript:
 	done
 
 CeladonMansion1F_WomanScript:
-	jumptextfaceplayer .Text
-.Text:
+	checkevent EVENT_GOT_TEA
+	iftrue .GotTea
+	faceplayer
+	opentext
+	writetext .TryThisDrinkInstead
+	waitbutton
+	verbosegiveitem TEA
+	iffalse .BagFull
+	setevent EVENT_GOT_TEA
+	writetext .NothingBeatsThirstLikeTea
+	waitbutton
+.BagFull:
+	closetext
+	end
+
+.GotTea
+	jumptextfaceplayer .MyDearMonsKeepMeCompany
+
+.MyDearMonsKeepMeCompany:
 	text "My dear #MON"
 	line "keep me company."
 
 	para "MEOWTH even brings"
 	line "money home!"
+	done
+
+.TryThisDrinkInstead:
+	text "You shouldn't"
+	line "spend all your"
+	cont "money on drinks."
+
+	para "Try this instead."
+	done
+
+.NothingBeatsThirstLikeTea:
+	text "Nothing beats"
+	line "thirst like some"
+	cont "hot TEA."
+
+	para "It really is the"
+	line "best."
 	done
 
 CeladonMansion1F_ClefairyScript:

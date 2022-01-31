@@ -500,11 +500,20 @@ _CheckTossableItem::
 	and a
 	ret
 
-CheckSelectableItem:
+_CheckSelectableItem::
 ; Return 1 in wItemAttributeValue and carry if wCurItem can't be selected.
 	ld a, ITEMATTR_PERMISSIONS
 	call GetItemAttr
 	bit CANT_SELECT_F, a
+	jr nz, ItemAttr_ReturnCarry
+	and a
+	ret
+
+_CheckHoldableItem::
+; Return 1 in wItemAttributeValue and carry if wCurItem can't be held.
+	ld a, ITEMATTR_PERMISSIONS
+	call GetItemAttr
+	bit CANT_GIVE_F, a
 	jr nz, ItemAttr_ReturnCarry
 	and a
 	ret

@@ -14,29 +14,16 @@ Route7Gate_GuardScript:
 	opentext
 	checkevent EVENT_GAVE_DRINK_TO_SAFFRON_GUARD
 	iftrue .GaveDrink
-	checkitem FRESH_WATER
-	iftrue .HaveDrink1
-	checkitem SODA_POP
-	iftrue .HaveDrink2
-	checkitem LEMONADE
-	iftrue .HaveDrink3
+	checkitem TEA
+	iftrue .HaveDrink
 	writetext .ImThirstyText
 	waitbutton
 	closetext
 	applymovement PLAYER, .ForceOutMovement
 	end
 
-.HaveDrink1:
-	takeitem FRESH_WATER
-	sjump .Join
-
-.HaveDrink2:
-	takeitem SODA_POP
-	sjump .Join
-
-.HaveDrink3:
-	takeitem LEMONADE
-.Join:
+.HaveDrink:
+	takeitem TEA
 	writetext .GiveDrinkText
 	promptbutton
 	playsound SFX_KEY_ITEM
@@ -68,7 +55,7 @@ Route7Gate_GuardScript:
 	line "I'm parched!"
 	cont "..."
 	cont "Huh? I can have"
-	cont "this drink?"
+	cont "this TEA?"
 	cont "Gee, thanks!"
 	done
 
@@ -87,9 +74,9 @@ Route7Gate_GuardScript:
 	done
 
 .ThanksText:
-	text "Hi, thanks for"
-	line "the cool drinks!"
+	text "Hi, how's it going?"
 	done
+
 
 .ForceOutMovement:
 	step LEFT

@@ -34,6 +34,7 @@
 	const DAYCARETEXT_KANTO_GOT_BACK
 	const DAYCARETEXT_KANTO_PARTY_FULL
 	const DAYCARETEXT_KANTO_NOT_ENOUGH_MONEY
+	const DAYCARETEXT_REMOVE_KEY_ITEM
 
 DayCareMan:
 	ld hl, wDayCareMan
@@ -165,6 +166,8 @@ DayCareAskDepositPokemon:
 	ld d, [hl]
 	farcall ItemIsMail
 	jr c, .HoldingMail
+	farcall ItemIsKeyItem
+	jr c, .HoldingKeyItem
 	ld hl, wPartyMonNicknames
 	ld a, [wCurPartyMon]
 	call GetNickname
@@ -193,6 +196,11 @@ DayCareAskDepositPokemon:
 
 .HoldingMail:
 	ld a, DAYCARETEXT_REMOVE_MAIL
+	scf
+	ret
+
+.HoldingKeyItem:
+	ld a, DAYCARETEXT_REMOVE_KEY_ITEM
 	scf
 	ret
 
@@ -408,6 +416,7 @@ PrintDayCareText:
 	dw .DayCareKantoGotBackMonText ; 1f
 	dw .DayCareKantoPartyFullText ; 20
 	dw .DayCareKantoNotEnoughtMoneyText ; 21
+	dw .RemoveKeyItemText ; 22
 
 .DayCareManIntroText:
 	text_far _DayCareManIntroText
@@ -439,6 +448,10 @@ PrintDayCareText:
 
 .RemoveMailText:
 	text_far _RemoveMailText
+	text_end
+
+.RemoveKeyItemText:
+	text_far _RemoveKeyItemText
 	text_end
 
 .LastHealthyMonText:

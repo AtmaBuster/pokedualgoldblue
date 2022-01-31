@@ -223,7 +223,11 @@ _AlreadySetUpText::
 	prompt
 
 _LookTownMapText::
+IF DEF(_GOLD)
 	text "It's the TOWN MAP."
+ELIF DEF(_BLUE)
+	text "A TOWN MAP."
+ENDC
 	done
 
 _LookPikachuPosterText::
@@ -1277,6 +1281,12 @@ _CantAcceptEggText::
 _RemoveMailText::
 	text "Remove MAIL before"
 	line "you come see me."
+	prompt
+
+_RemoveKeyItemText::
+	text "Remove that KEY"
+	line "ITEM before you"
+	cont "come see me."
 	prompt
 
 _LastHealthyMonText::

@@ -45,7 +45,7 @@ ItemDescriptions:
 	dw SuperRepelDesc
 	dw MaxRepelDesc
 	dw DireHitDesc
-	dw TeruSamaDesc
+	dw TeaDesc
 	dw FreshWaterDesc
 	dw SodaPopDesc
 	dw LemonadeDesc
@@ -435,6 +435,10 @@ MaxRepelDesc:
 DireHitDesc:
 	db   "Ups critical hit"
 	next "ratio. (1 BTL)@"
+
+TeaDesc:
+	db   "Nothing beats"
+	next "thirst like TEA.@"
 
 FreshWaterDesc:
 	db   "Restores #MON"

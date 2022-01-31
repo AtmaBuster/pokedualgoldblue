@@ -6,7 +6,7 @@ CutTreeBlockPointers:
 	dbw TILESET_KANTO,          .kanto
 	dbw TILESET_PARK,           .park
 	dbw TILESET_FOREST,         .forest
-	dbw TILESET_FACILITY_KANTO, .facility_kanto
+	dbw TILESET_GYM,            .gym
 	db -1 ; end
 
 .johto:
@@ -44,7 +44,7 @@ CutTreeBlockPointers:
 	db $0f, $17, 0 ; tree
 	db -1 ; end
 
-.facility_kanto:
+.gym:
 ; facing block, replacement block, animation
 	db $3c, $35, 0 ; tree
 	db $3d, $36, 0 ; tree

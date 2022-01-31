@@ -472,7 +472,8 @@ wBillsPC_BackupScrollPosition:: db
 wBillsPC_BackupCursorPosition:: db
 wBillsPC_BackupLoadedBox:: db
 wBillsPC_MonHasMail:: db
-	ds 5
+wBillsPC_MonHasKeyItem:: db
+	ds 4
 wBillsPCDataEnd::
 
 

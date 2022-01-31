@@ -158,6 +158,8 @@ TrainerRocketGrunt18:
 	done
 
 RocketHideoutB4F_TryOpenDoor:
+	checkjustbattled
+	iffalse DummyScript
 	checkevent EVENT_BEAT_ROCKET_GRUNT16_GEN1
 	iffalse DummyScript
 	checkevent EVENT_BEAT_ROCKET_GRUNT17_GEN1

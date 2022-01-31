@@ -298,6 +298,29 @@ IsAnyMonHoldingMail:
 	and a
 	ret
 
+IsAnyMonHoldingKeyItem:
+	ld a, [wPartyCount]
+	and a
+	jr z, .no_mons
+	ld e, a
+	ld hl, wPartyMon1Item
+.loop
+	ld d, [hl]
+	push hl
+	push de
+	farcall ItemIsKeyItem
+	pop de
+	pop hl
+	ret c
+	ld bc, PARTYMON_STRUCT_LENGTH
+	add hl, bc
+	dec e
+	jr nz, .loop
+
+.no_mons
+	and a
+	ret
+
 _PlayerMailBoxMenu:
 	call InitMail
 	jr z, .nomail

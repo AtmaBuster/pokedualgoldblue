@@ -2205,10 +2205,18 @@ SlotsTilemap:
 INCBIN "gfx/slots/slots.tilemap"
 
 Slots1LZ:
+IF DEF(_GOLD)
 INCBIN "gfx/slots/slots_1.2bpp.lz"
+ELIF DEF(_BLUE)
+INCBIN "gfx/slots/blue_slots_1.2bpp.lz"
+ENDC
 
 Slots2LZ:
+IF DEF(_GOLD)
 INCBIN "gfx/slots/slots_2.2bpp.lz"
+ELIF DEF(_BLUE)
+INCBIN "gfx/slots/blue_slots_2.2bpp.lz"
+ENDC
 
 Slots3LZ:
 INCBIN "gfx/slots/slots_3.2bpp.lz"

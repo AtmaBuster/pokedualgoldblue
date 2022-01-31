@@ -260,6 +260,8 @@ ELIF DEF(_BLUE)
 ENDC
 
 Route9_SignScript:
+	jumptext .Text
+.Text:
 	text "ROUTE 9"
 	line "CERULEAN CITY-"
 	cont "ROCK TUNNEL"

@@ -72,6 +72,7 @@ DidntCatchSudowoodo:
 	end
 
 Route36RockSmashGuyScript:
+IF DEF(_GOLD)
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_TM08_ROCK_SMASH
@@ -95,6 +96,56 @@ Route36RockSmashGuyScript:
 .NoRoomForTM:
 	closetext
 	end
+
+ELIF DEF(_BLUE)
+	faceplayer
+	opentext
+	checkevent EVENT_FOUGHT_SUDOWOODO
+	iftrue .ClearedSudowoodo
+	writetext RockSmashGuyText1
+	waitbutton
+	closetext
+	end
+
+.ClearedSudowoodo:
+	checkevent EVENT_GOT_TM08_ROCK_SMASH
+	iftrue .AlreadyHeardIntro
+	writetext RockSmashGuyText2
+	setevent EVENT_GOT_TM08_ROCK_SMASH
+	waitbutton
+.AlreadyHeardIntro
+	writetext Text_RockSmashQuestion
+	yesorno
+	iffalse .TutorRefused
+	writebyte ROCK_SMASH
+	writetext Text_RockSmashClear
+	special MoveTutor
+	if_equal 0, .TeachMove
+.TutorRefused
+	writetext Text_RockSmashRefused
+	waitbutton
+	closetext
+	end
+.TeachMove
+	writetext RockSmashGuyText3
+	waitbutton
+	closetext
+	end
+
+Text_RockSmashQuestion:
+	text "Want me to teach"
+	line "your #MON to"
+	cont "use ROCK SMASH?"
+	done
+
+Text_RockSmashClear:
+	text ""
+	done
+
+Text_RockSmashRefused:
+	text "Aww…"
+	done
+ENDC
 
 Route36LassScript:
 	faceplayer
@@ -303,16 +354,23 @@ RockSmashGuyText2:
 	line "wretched tree?"
 
 	para "I'm impressed!"
+IF DEF(_GOLD)
 	line "I want you to"
 	cont "have this."
-	done
+ELIF DEF(_BLUE)
+	line "I want to show"
+	cont "you my thanks."
 
-Text_ReceivedTM08: ; unreferenced
-	text "<PLAYER> received"
-	line "TM08."
+	para "I can shatter"
+	line "rocks with just a"
+
+	para "single well-aimed"
+	line "smack."
+ENDC
 	done
 
 RockSmashGuyText3:
+IF DEF(_GOLD)
 	text "That happens to be"
 	line "ROCK SMASH."
 
@@ -325,6 +383,11 @@ RockSmashGuyText3:
 	para "If any rocks are"
 	line "in your way, just"
 	cont "smash 'em up!"
+ELIF DEF(_BLUE)
+	text "If any rocks are"
+	line "in your way, just"
+	cont "smash 'em up!"
+ENDC
 	done
 
 Route36LassText:
