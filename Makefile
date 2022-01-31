@@ -207,6 +207,9 @@ gfx/battle/dude.2bpp: rgbgfx += -h
 gfx/battle/old_man.2bpp: rgbgfx += -h
 gfx/battle/ghost.2bpp: rgbgfx += -h
 
+gfx/pokemon/fossils/fossilaerodactyl.2bpp: rgbgfx += -h
+gfx/pokemon/fossils/fossilkabutops.2bpp: rgbgfx += -h
+
 gfx/font/unused_bold_font.1bpp: tools/gfx += --trim-whitespace
 
 gfx/sgb/gold_border.2bpp: tools/gfx += --trim-whitespace

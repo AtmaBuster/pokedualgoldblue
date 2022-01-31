@@ -185,15 +185,16 @@ INCLUDE "data/battle/effect_command_pointers.asm"
 
 SECTION "bank10", ROMX
 
-GhostPic:
-INCBIN "gfx/battle/ghost.2bpp.lz"
-
 INCLUDE "engine/pokedex/pokedex.asm"
 INCLUDE "data/moves/moves.asm"
 INCLUDE "engine/pokemon/evolve.asm"
 
 
 SECTION "bank11", ROMX
+
+GhostPic:            INCBIN "gfx/battle/ghost.2bpp.lz"
+AerodactylFossilGFX: INCBIN "gfx/pokemon/fossils/fossilaerodactyl.2bpp.lz"
+KabutopsFossilGFX:   INCBIN "gfx/pokemon/fossils/fossilkabutops.2bpp.lz"
 
 INCLUDE "engine/events/fruit_trees.asm"
 INCLUDE "engine/battle/ai/move.asm"

@@ -46,3 +46,35 @@ PokepicMenuHeader:
 	menu_coords 6, 4, 14, 13
 	dw NULL
 	db 1 ; default option
+
+FossilPokepic::
+	ld hl, PokepicMenuHeader
+	call CopyMenuHeader
+	call MenuBox
+	call UpdateSprites
+	call ApplyTilemap
+	ld b, SCGB_POKEPIC
+	call GetSGBLayout
+	xor a
+	ldh [hBGMapMode], a
+
+	ld de, vTiles1
+	farcall GetFossilPic
+;	ld [wCurSpecies], a
+;	call GetBaseData
+;	ld de, vTiles1
+;	predef GetMonFrontpic
+
+	ld a, [wMenuBorderTopCoord]
+	inc a
+	ld b, a
+	ld a, [wMenuBorderLeftCoord]
+	inc a
+	ld c, a
+	call Coord2Tile
+	ld a, $80
+	ldh [hGraphicStartTile], a
+	lb bc, 7, 7
+	predef PlaceGraphic
+	call WaitBGMap
+	ret

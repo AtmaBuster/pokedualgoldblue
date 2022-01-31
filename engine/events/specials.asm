@@ -580,3 +580,16 @@ BadgeMenuHeader:
 	db "MARSHBADGE@"
 	db "VOLCANOBADGE@"
 	db "EARTHBADGE@"
+
+FossilPic:
+; refreshscreen
+	call RefreshScreen
+; pokepic
+	ld a, [wScriptVar]
+	ld [wCurPartySpecies], a
+	farcall FossilPokepic
+; waitbutton
+	call WaitButton
+; closepokepic
+	farcall ClosePokepic
+	ret

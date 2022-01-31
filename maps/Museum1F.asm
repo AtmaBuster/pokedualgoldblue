@@ -203,15 +203,9 @@ Museum1F_OldAmberScript:
 	done
 
 Museum1F_AerodactylFossilScript:
-	refreshscreen
-	pokepic AERODACTYL
-	waitbutton
-	closepokepic
-	opentext
-	writetext .Text
-	waitbutton
-	closetext
-	end
+	setval FOSSIL_AERODACTYL
+	special FossilPic
+	jumptext .Text
 .Text:
 	text "AERODACTYL Fossil"
 	line "A primitive and"
@@ -219,15 +213,9 @@ Museum1F_AerodactylFossilScript:
 	done
 
 Museum1F_KabutopsFossilScript:
-	refreshscreen
-	pokepic KABUTOPS
-	waitbutton
-	closepokepic
-	opentext
-	writetext .Text
-	waitbutton
-	closetext
-	end
+	setval FOSSIL_KABUTOPS
+	special FossilPic
+	jumptext .Text
 .Text:
 	text "KABUTOPS Fossil"
 	line "A primitive and"

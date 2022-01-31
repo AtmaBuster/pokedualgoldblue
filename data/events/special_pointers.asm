@@ -135,4 +135,5 @@ SpecialsPointers::
 	add_special FossilMenu
 	add_special BadgeMenu
 	add_special DayCareKanto
+	add_special FossilPic
 	add_special UnusedDummySpecial ; unused

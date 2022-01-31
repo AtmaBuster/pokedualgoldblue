@@ -48,6 +48,30 @@ GetUnownLetter:
 	ld [wUnownLetter], a
 	ret
 
+GetFossilPic:
+	call _GetFossilPic
+	jp Load2bppToSRAM
+
+_GetFossilPic:
+	push de
+	ld a, [wCurPartySpecies]
+	and a ; cp FOSSIL_AERODACTYL
+	ld b, $7
+	jr z, .got_size
+	dec b
+.got_size
+	push bc
+	ld a, BANK(sDecompressBuffer)
+	call OpenSRAM
+	ld a, [wCurPartySpecies]
+	and a ; cp FOSSIL_AERODACTYL
+	ld hl, AerodactylFossilGFX
+	ld a, BANK(AerodactylFossilGFX)
+	jr z, GetFrontpic.ok
+	ld hl, KabutopsFossilGFX
+	ld a, BANK(KabutopsFossilGFX)
+	jr GetFrontpic.ok
+
 GetMonFrontpic:
 	call GetFrontpic
 	jp Load2bppToSRAM
