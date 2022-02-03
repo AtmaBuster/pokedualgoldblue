@@ -143,49 +143,11 @@ ENDM
 	map_const MT_MOON_1F,                                  20, 18
 	map_const MT_MOON_B1F,                                 14, 14
 	map_const MT_MOON_B2F,                                 20, 18
-	map_const SS_ANNE_1F,                                  20,  9
-	map_const SS_ANNE_2F,                                  20,  9
-	map_const SS_ANNE_3F,                                  10,  3
-	map_const SS_ANNE_B1F,                                 15,  4
-	map_const SS_ANNE_BOW,                                 10,  7
-	map_const SS_ANNE_1F_ROOMS,                            12,  8
-	map_const SS_ANNE_2F_ROOMS,                            12,  8
-	map_const SS_ANNE_B1F_ROOMS,                           12,  8
-	map_const SS_ANNE_KITCHEN,                              7,  8
-	map_const SS_ANNE_CAPTAINS_ROOM,                        3,  4
 	map_const UNDERGROUND_PATH_NORTH_SOUTH,                 4, 21
 	map_const UNDERGROUND_PATH_WEST_EAST,                  25,  4
 	map_const ROCK_TUNNEL_1F,                              20, 18
 	map_const ROCK_TUNNEL_B1F,                             20, 18
 	map_const POWER_PLANT,                                 20, 18
-	map_const POKEMON_TOWER_1F,                            10,  9
-	map_const POKEMON_TOWER_2F,                            10,  9
-	map_const POKEMON_TOWER_3F,                            10,  9
-	map_const POKEMON_TOWER_4F,                            10,  9
-	map_const POKEMON_TOWER_5F,                            10,  9
-	map_const POKEMON_TOWER_6F,                            10,  9
-	map_const POKEMON_TOWER_7F,                            10,  9
-	map_const ROCKET_HIDEOUT_B1F,                          15, 14
-	map_const ROCKET_HIDEOUT_B2F,                          15, 14
-	map_const ROCKET_HIDEOUT_B3F,                          15, 14
-	map_const ROCKET_HIDEOUT_B4F,                          15, 12
-	map_const ROCKET_HIDEOUT_ELEVATOR,                      3,  4
-	map_const SILPH_CO_1F,                                 15,  9
-	map_const SILPH_CO_2F,                                 15,  9
-	map_const SILPH_CO_3F,                                 15,  9
-	map_const SILPH_CO_4F,                                 15,  9
-	map_const SILPH_CO_5F,                                 15,  9
-	map_const SILPH_CO_6F,                                 13,  9
-	map_const SILPH_CO_7F,                                 13,  9
-	map_const SILPH_CO_8F,                                 13,  9
-	map_const SILPH_CO_9F,                                 13,  9
-	map_const SILPH_CO_10F,                                 8,  9
-	map_const SILPH_CO_11F,                                 9,  9
-	map_const SILPH_CO_ELEVATOR,                            2,  2
-	map_const POKEMON_MANSION_1F,                          15, 14
-	map_const POKEMON_MANSION_2F,                          15, 14
-	map_const POKEMON_MANSION_3F,                          15,  9
-	map_const POKEMON_MANSION_B1F,                         15, 14
 	map_const SEAFOAM_ISLANDS_1F,                          15,  9
 	map_const SEAFOAM_ISLANDS_B1F,                         15,  9
 	map_const SEAFOAM_ISLANDS_B2F,                         15,  9
@@ -236,6 +198,10 @@ ENDM
 	map_const ROUTE_20,                                    50,  9
 	map_const ROUTE_21,                                    10, 45
 	map_const CINNABAR_ISLAND,                             10,  9
+	map_const POKEMON_MANSION_1F,                          15, 14
+	map_const POKEMON_MANSION_2F,                          15, 14
+	map_const POKEMON_MANSION_3F,                          15,  9
+	map_const POKEMON_MANSION_B1F,                         15, 14
 	endgroup
 
 	newgroup CERULEAN
@@ -336,6 +302,16 @@ ENDM
 	map_const UNDERGROUND_PATH_ROUTE_6,                     4,  4
 	map_const ROUTE_11_GATE_1F,                             4,  5
 	map_const ROUTE_11_GATE_2F,                             4,  4
+	map_const SS_ANNE_1F,                                  20,  9
+	map_const SS_ANNE_2F,                                  20,  9
+	map_const SS_ANNE_3F,                                  10,  3
+	map_const SS_ANNE_B1F,                                 15,  4
+	map_const SS_ANNE_BOW,                                 10,  7
+	map_const SS_ANNE_1F_ROOMS,                            12,  8
+	map_const SS_ANNE_2F_ROOMS,                            12,  8
+	map_const SS_ANNE_B1F_ROOMS,                           12,  8
+	map_const SS_ANNE_KITCHEN,                              7,  8
+	map_const SS_ANNE_CAPTAINS_ROOM,                        3,  4
 	endgroup
 
 	newgroup PALLET
@@ -386,7 +362,6 @@ ENDM
 	map_const INDIGO_PLATEAU_LOBBY,                         8,  6
 	map_const LORELEIS_ROOM,                                5,  6
 	map_const BRUNOS_ROOM_KANTO,                            5,  6
-	map_const AGATHAS_ROOM,                                 5,  6
 	map_const LANCES_ROOM_KANTO,                           13, 13
 	map_const CHAMPIONS_ROOM,                               4,  4
 	map_const HALL_OF_FAME_KANTO,                           5,  4
@@ -485,6 +460,11 @@ ENDM
 	map_const UNDERGROUND_PATH_ROUTE_7,                     4,  4
 	map_const ROUTE_18_GATE_1F,                             4,  5
 	map_const ROUTE_18_GATE_2F,                             4,  4
+	map_const ROCKET_HIDEOUT_B1F,                          15, 14
+	map_const ROCKET_HIDEOUT_B2F,                          15, 14
+	map_const ROCKET_HIDEOUT_B3F,                          15, 14
+	map_const ROCKET_HIDEOUT_B4F,                          15, 12
+	map_const ROCKET_HIDEOUT_ELEVATOR,                      3,  4
 	endgroup
 
 	newgroup CYCLING_ROAD
@@ -551,6 +531,18 @@ ENDM
 	map_const UNDERGROUND_PATH_ROUTE_5,                     4,  4
 	map_const ROUTE_5_GATE,                                 4,  3
 	map_const DAY_CARE_KANTO,                               4,  4
+	map_const SILPH_CO_1F,                                 15,  9
+	map_const SILPH_CO_2F,                                 15,  9
+	map_const SILPH_CO_3F,                                 15,  9
+	map_const SILPH_CO_4F,                                 15,  9
+	map_const SILPH_CO_5F,                                 15,  9
+	map_const SILPH_CO_6F,                                 13,  9
+	map_const SILPH_CO_7F,                                 13,  9
+	map_const SILPH_CO_8F,                                 13,  9
+	map_const SILPH_CO_9F,                                 13,  9
+	map_const SILPH_CO_10F,                                 8,  9
+	map_const SILPH_CO_11F,                                 9,  9
+	map_const SILPH_CO_ELEVATOR,                            2,  2
 	endgroup
 
 	newgroup CHERRYGROVE
@@ -567,4 +559,15 @@ ENDM
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4
 	endgroup
 
+	newgroup POKEMON_TOWER
+	map_const POKEMON_TOWER_1F,                            10,  9
+	map_const POKEMON_TOWER_2F,                            10,  9
+	map_const POKEMON_TOWER_3F,                            10,  9
+	map_const POKEMON_TOWER_4F,                            10,  9
+	map_const POKEMON_TOWER_5F,                            10,  9
+	map_const POKEMON_TOWER_6F,                            10,  9
+	map_const POKEMON_TOWER_7F,                            10,  9
+	map_const AGATHAS_ROOM,                                 5,  6
+	endgroup
+	
 NUM_MAP_GROUPS EQU const_value

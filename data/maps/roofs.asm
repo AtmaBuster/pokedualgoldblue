@@ -40,6 +40,7 @@ MapGroupRoofs:
 	db ROOF_NEW_BARK  ; (New Bark)
 	db -1             ;
 	db ROOF_NEW_BARK  ; (Cherrygrove)
+	db -1             ;
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

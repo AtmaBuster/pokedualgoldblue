@@ -32,6 +32,7 @@ OutdoorSprites:
 	dw NewBarkGroupSprites
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
+	dw PokemonTowerGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
 PalletGroupSprites:
@@ -380,6 +381,7 @@ DungeonsGroupSprites:
 	db SPRITE_SCIENTIST
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER
+	assert_table_length MAX_OUTDOOR_SPRITES
 
 FastShipGroupSprites:
 	table_width 1
@@ -409,4 +411,19 @@ CableClubGroupSprites:
 	db SPRITE_FISHING_GURU
 	db SPRITE_POKE_BALL
 	db SPRITE_POKEDEX
+	assert_table_length MAX_OUTDOOR_SPRITES
+
+PokemonTowerGroupSprites:
+	table_width 1
+	db SPRITE_CHANNELER
+	db SPRITE_OLD_LINK_RECEPTIONIST
+	db SPRITE_POKEFAN_F
+	db SPRITE_BALDING_GUY
+	db SPRITE_GIRL
+	db SPRITE_KANTO_ROCKET
+	db SPRITE_ELDER
+	db SPRITE_AGATHA
+	db SPRITE_POKE_BALL
+	db SPRITE_POKE_BALL
+	db SPRITE_POKE_BALL
 	assert_table_length MAX_OUTDOOR_SPRITES
