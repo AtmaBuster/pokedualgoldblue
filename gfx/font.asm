@@ -8,7 +8,11 @@ FontBattleExtra:
 INCBIN "gfx/font/font_battle_extra.2bpp"
 
 Frames:
+IF DEF(_GOLD)
 INCBIN "gfx/frames/1.1bpp"
+ELIF DEF(_BLUE)
+INCBIN "gfx/frames/gen1.1bpp"
+ENDC
 INCBIN "gfx/frames/2.1bpp"
 INCBIN "gfx/frames/3.1bpp"
 INCBIN "gfx/frames/4.1bpp"
