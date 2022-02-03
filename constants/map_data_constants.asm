@@ -139,7 +139,6 @@ KANTO_FLYPOINT EQU const_value
 	const FLY_PALLET
 	const FLY_VIRIDIAN
 	const FLY_PEWTER
-	const FLY_MT_MOON
 	const FLY_CERULEAN
 	const FLY_VERMILION
 	const FLY_ROCK_TUNNEL
