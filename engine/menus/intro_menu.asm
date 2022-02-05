@@ -1005,11 +1005,15 @@ ENDC
 	; fallthrough
 
 StartTitleScreen:
+IF DEF(_GOLD)
 	call TitleScreen
 	call DelayFrame
 .loop
 	call RunTitleScreen
 	jr nc, .loop
+ELIF DEF(_BLUE)
+	farcall BlueTitleScreen
+ENDC
 
 	call ClearSprites
 	call ClearBGPalettes
@@ -1045,6 +1049,7 @@ StartTitleScreen:
 	dw ResetClock
 
 INCLUDE "engine/movie/title.asm"
+INCLUDE "engine/movie/blue_title.asm"
 
 RunTitleScreen:
 	call ScrollTitleScreenClouds

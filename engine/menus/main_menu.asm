@@ -15,6 +15,7 @@ IF DEF(_DEBUG)
 ENDC
 
 MainMenu:
+IF DEF(_GOLD)
 	ld de, MUSIC_NONE
 	call PlayMusic
 	call DelayFrame
@@ -22,6 +23,7 @@ MainMenu:
 	ld a, e
 	ld [wMapMusic], a
 	call PlayMusic
+ENDC
 .loop
 	xor a
 	ld [wDisableTextAcceleration], a

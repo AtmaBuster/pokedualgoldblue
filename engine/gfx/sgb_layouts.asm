@@ -57,6 +57,7 @@ SGBLayoutJumptable:
 	dw .SGB_Pokedex_5x5
 	dw .SGB_TrainerCard
 	dw .SGB_TownMapPals
+	dw .SGB_BlueTitleScreen
 	assert_table_length NUM_SCGB_LAYOUTS
 
 .SGB_BattleGrayscale:
@@ -164,6 +165,11 @@ SGBLayoutJumptable:
 .SGB_TownMapPals:
 	ld hl, PalPacket_TownMap
 	ld de, BlkPacket_AllPal0
+	ret
+
+.SGB_BlueTitleScreen:
+	ld hl, PalPacket_Diploma
+	ld de, BlkPacket_BlueTitle
 	ret
 
 .SGB_StatsScreenHPPals:

@@ -1,5 +1,3 @@
-SECTION "Blue Intro", ROMX
-
 	const_def -1
 	const MOVE_JIGGLYPUFF_RIGHT
 	const MOVE_GENGAR_RIGHT
@@ -66,7 +64,7 @@ BlueIntroSceneJumper:
 BlueIntroScene1:
 	call DisableLCD
 	call BlueIntro_BlackBars
-	call BlueIntro_LoadMonGraphics
+	call BlueIntro_LoadGraphics
 	call EnableLCD
 
 	ld hl, wIntroJumptableIndex
@@ -329,17 +327,30 @@ BlueIntro_CopyTiles:
 	jr nz, .loop_y
 	ret
 
-BlueIntro_LoadMonGraphics:
+BlueIntro_LoadGraphics:
 	ld hl, BlueIntro_GengarTiles
 	ld de, vTiles2
 	ld bc, BlueIntro_GengarTiles.End - BlueIntro_GengarTiles
+	call CopyBytes
+
+	ld hl, GameFreakIntro
+	ld de, vTiles2 + (BlueIntro_GengarTiles.End - BlueIntro_GengarTiles)
+	ld bc, GameFreakIntro.End - GameFreakIntro
+	ld a, BANK(GameFreakIntro)
 	call CopyBytes
 
 	ld hl, BlueIntro_JigglypuffTiles
 	ld de, vTiles0
 	ld bc, BlueIntro_JigglypuffTiles.End - BlueIntro_JigglypuffTiles
 	call CopyBytes
-	ret
+
+	call LoadShootingStarGraphics
+
+	ld hl, GameFreakIntro
+	ld de, vTiles1
+	ld bc, GameFreakIntro.End - GameFreakIntro
+	ld a, BANK(GameFreakIntro)
+	jp CopyBytes
 
 BlueIntro_InitJigglypuffOAM:
 	ld hl, wVirtualOAM

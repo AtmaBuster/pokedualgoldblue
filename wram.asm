@@ -771,8 +771,10 @@ NEXTU
 ; blue intro cutscene data
 wBaseCoordX:: db
 wBaseCoordY:: db
+wPlayerCharacterOAMTile::
 wIntroJigglypuffBaseTile:: db
 wBlueIntroFrameCounter:: db
+wTitleMonSpecies:: db
 ENDU
 
 	ds 2
@@ -2574,6 +2576,7 @@ wVermilionGymPuzzleCans:: dw
 
 wEventFlags:: flag_array NUM_EVENTS
 
+wMoveDownSmallStarsOAMCount::
 wUnusedLinkCommunicationByte:: db
 
 wGameTimerPaused::
