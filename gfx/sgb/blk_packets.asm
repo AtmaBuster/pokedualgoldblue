@@ -96,3 +96,10 @@ BlkPacket_MagnetTrain:
 	attr_blk_data %111, 2,2,0, 00,04, 19,13 ; fence
 	attr_blk_data %011, 1,1,0, 00,06, 19,11 ; train
 	ds 2, 0
+
+BlkPacket_BlueTitle:
+	attr_blk 3
+	attr_blk_data %011, 0,0,0, 00,00, 19,07 ; pokemon logo: pal 0
+	attr_blk_data %010, 1,1,0, 00,08, 19,09 ; version text: pal 1
+	attr_blk_data %011, 2,2,0, 00,10, 19,17 ; player, mon, copyright text: pal 2
+	ds 12, 0

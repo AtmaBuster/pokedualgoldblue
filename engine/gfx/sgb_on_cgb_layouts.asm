@@ -66,6 +66,7 @@ SCGBLayoutJumptable:
 	dw _CGB_Pokedex_5x5
 	dw _CGB_TrainerCard
 	dw _CGB_TownMapPals
+	dw _CGB_BlueTitleScreen
 	assert_table_length NUM_SCGB_LAYOUTS
 
 _CGB_BattleGrayscale:
@@ -900,3 +901,93 @@ _CGB_MysteryGift:
 	RGB 09, 29, 31
 	RGB 10, 12, 31
 	RGB 00, 03, 19
+
+_CGB_BlueTitleScreen:
+	ld a, c
+	and a
+	jr z, .BeforeLogoDrop
+
+	call .SetUpMainAttrmap
+	call .ApplyAttrmap_1
+	call .ApplyAttrmap_2
+
+	ret
+
+.BeforeLogoDrop:
+	call .SetUpMainAttrmap
+	call .ApplyAttrmap_1
+	call .SetUpSubAttrmap
+	call .ApplyAttrmap_2
+
+	ld hl, .BlueTitlePalettes
+	ld de, wBGPals1
+	ld bc, 3 palettes
+	call CopyBytes
+	ld hl, .BlueTitlePalettes palette 2
+	ld de, wOBPals1
+	ld bc, 1 palettes
+	call CopyBytes
+	call ApplyPals
+
+	ld a, $1
+	ldh [hCGBPalUpdate], a
+	ret
+
+.SetUpMainAttrmap:
+	ld hl, wAttrmap
+	xor a
+	ld bc, SCREEN_WIDTH * 8
+	call ByteFill
+	inc a
+	ld bc, SCREEN_WIDTH * 2
+	call ByteFill
+	inc a
+	ld bc, SCREEN_WIDTH * 8
+	call ByteFill
+	ret
+
+.SetUpSubAttrmap:
+	ld hl, wAttrmap
+	ld a, 1
+	ld bc, SCREEN_WIDTH * 2
+	call ByteFill
+	inc a
+	ld bc, SCREEN_WIDTH * 8
+	call ByteFill
+	ret
+
+.ApplyAttrmap_1:
+	ldh a, [hBGMapAddress + 1]
+	push af
+	ld a, HIGH(vBGMap2)
+	ldh [hBGMapAddress + 1], a
+	call ApplyAttrmap
+	pop af
+	ldh [hBGMapAddress + 1], a
+	ret
+
+.ApplyAttrmap_2:
+	ldh a, [hBGMapAddress + 1]
+	push af
+	ld a, HIGH(vBGMap3)
+	ldh [hBGMapAddress + 1], a
+	call ApplyAttrmap
+	pop af
+	ldh [hBGMapAddress + 1], a
+	ret
+
+.BlueTitlePalettes:
+	RGB 31, 29, 31
+	RGB 30, 30, 17
+	RGB 18, 18, 24
+	RGB 07, 07, 16
+
+	RGB 31, 29, 31
+	RGB 30, 30, 17
+	RGB 21, 00, 04
+	RGB 14, 19, 29
+
+	RGB 31, 29, 31
+	RGB 30, 22, 17
+	RGB 16, 14, 19
+	RGB 03, 02, 02

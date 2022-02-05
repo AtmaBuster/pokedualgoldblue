@@ -67,7 +67,7 @@ BlueTitleScreen:
 
 	call BlueTitle_WaitBGMap_2
 
-	ld b, SCGB_BETA_TITLE_SCREEN
+	lb bc, SCGB_BLUE_TITLE, 0
 	call GetSGBLayout
 
 	ld hl, rLCDC
@@ -85,6 +85,9 @@ BlueTitleScreen:
 
 	call BlueIntro_PutVersion
 	call BlueIntro_ScrollVersion
+
+	lb bc, SCGB_BLUE_TITLE, 1
+	call GetSGBLayout
 
 	call WaitSFX
 	ld de, MUSIC_RBY_TITLE_SCREEN
