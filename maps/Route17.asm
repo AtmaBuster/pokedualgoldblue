@@ -14,6 +14,12 @@ Route17_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .AlwaysOnBike
+
+.AlwaysOnBike:
+	setflag ENGINE_ALWAYS_ON_BIKE
+	setflag ENGINE_DOWNHILL
+	endcallback
 
 TrainerCueBallRaul:
 	trainer CUE_BALL_GEN1, RAUL_GEN1, EVENT_BEAT_CUE_BALL_RAUL_GEN1, .SeenText, .BeatenText, 0, .Script

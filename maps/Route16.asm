@@ -11,6 +11,19 @@ Route16_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .AlwaysOnBike
+
+.AlwaysOnBike:
+	readvar VAR_YCOORD
+	ifless 10, .CanWalk
+	readvar VAR_XCOORD
+	ifgreater 23, .CanWalk
+	setflag ENGINE_ALWAYS_ON_BIKE
+	endcallback
+
+.CanWalk:
+	clearflag ENGINE_ALWAYS_ON_BIKE
+	endcallback
 
 Route16_SnorlaxEvent:
 	opentext
