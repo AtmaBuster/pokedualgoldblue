@@ -40,7 +40,7 @@ ViridianGym_GiovanniScript:
 	setevent EVENT_BEAT_COOLTRAINER_M_YUJI_GEN1
 	setevent EVENT_BEAT_BLACKBELT_ATSUSHI_GEN1
 	setevent EVENT_BEAT_TAMER_JASON_GEN1
-	setevent EVENT_BEAT_BLACKBELT_KIYO_GEN1
+	setevent EVENT_BEAT_BLACKBELT_KOICHI_GEN1
 	setevent EVENT_BEAT_COOLTRAINER_M_WREN_GEN1
 	setevent EVENT_BEAT_BLACKBELT_TAKASHI_GEN1
 	setevent EVENT_BEAT_TAMER_COLE_GEN1
@@ -306,8 +306,8 @@ TrainerTamerJason:
 	cont "GYM LEADER?"
 	done
 
-TrainerBlackbeltKiyo:
-	trainer BLACKBELT_GEN1, KIYO_GEN1, EVENT_BEAT_BLACKBELT_KIYO_GEN1, .SeenText, .BeatenText, 0, .Script
+TrainerBlackbeltKoichi:
+	trainer BLACKBELT_GEN1, KOICHI_GEN1, EVENT_BEAT_BLACKBELT_KOICHI_GEN1, .SeenText, .BeatenText, 0, .Script
 .Script:
 	endifjustbattled
 	opentext
@@ -452,7 +452,7 @@ ViridianGym_MapEvents:
 	object_event 12,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerCooltrainerMYuji, -1
 	object_event 11, 11, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBlackbeltAtsushi, -1
 	object_event 10,  7, SPRITE_KANTO_ROCKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerTamerJason, -1
-	object_event  3,  7, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltKiyo, -1
+	object_event  3,  7, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltKoichi, -1
 	object_event 13,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerMWren, -1
 	object_event 10,  1, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBlackbeltTakashi, -1
 	object_event  2, 16, SPRITE_KANTO_ROCKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerTamerCole, -1
