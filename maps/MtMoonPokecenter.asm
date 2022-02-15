@@ -128,6 +128,8 @@ MtMoonPokecenter_MapEvents:
 	def_warp_events
 	warp_event  3,  7, ROUTE_4, 1
 	warp_event  4,  7, ROUTE_4, 1
+	warp_event 10,  0, TRADE_CENTER, 1
+	warp_event 12,  0, COLOSSEUM, 1
 
 	def_coord_events
 

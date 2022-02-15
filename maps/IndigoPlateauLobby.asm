@@ -77,6 +77,8 @@ IndigoPlateauLobby_MapEvents:
 	warp_event  7, 11, INDIGO_PLATEAU, 1
 	warp_event  8, 11, INDIGO_PLATEAU, 2
 	warp_event  8,  0, LORELEIS_ROOM, 1
+	warp_event 12,  4, TRADE_CENTER, 1
+	warp_event 14,  4, COLOSSEUM, 1
 
 	def_coord_events
 

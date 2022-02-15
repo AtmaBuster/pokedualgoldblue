@@ -743,6 +743,8 @@ KantoPokecenterLinkReceptionist:
 	writetext .Text_PleaseComeIn
 	waitbutton
 	closetext
+	applymovementlasttalked .Script_ReceptionistWalksUpAndRight_LookLeft
+	applymovement PLAYER, .Script_PlayerTakesTwoStepsUpLeftUp
 	warpcheck
 	end
 
@@ -784,6 +786,19 @@ KantoPokecenterLinkReceptionist:
 	closetext
 	end
 
+.Script_ReceptionistWalksUpAndRight_LookLeft
+	slow_step UP
+	slow_step RIGHT
+	turn_head LEFT
+	step_end
+
+.Script_PlayerTakesTwoStepsUpLeftUp
+	step UP
+	step UP
+	step LEFT
+	step UP
+	step_end
+
 .ReceptionistBattleScript:
 	checkevent EVENT_GOT_POKEDEX
 	iffalse .Script_BattleRoomClosed
@@ -810,6 +825,8 @@ KantoPokecenterLinkReceptionist:
 	writetext .Text_PleaseComeIn
 	waitbutton
 	closetext
+	applymovementlasttalked .Script_ReceptionistWalksUpAndLeft_LookRight
+	applymovement PLAYER, .Script_PlayerTakesTwoStepsUpRightUp
 	warpcheck
 	end
 
@@ -820,6 +837,19 @@ KantoPokecenterLinkReceptionist:
 	waitbutton
 	closetext
 	end
+
+.Script_ReceptionistWalksUpAndLeft_LookRight
+	slow_step UP
+	slow_step LEFT
+	turn_head RIGHT
+	step_end
+
+.Script_PlayerTakesTwoStepsUpRightUp
+	step UP
+	step UP
+	step RIGHT
+	step UP
+	step_end
 
 .Text_TradeReceptionistIntro:
 	text "Welcome to CABLE"
