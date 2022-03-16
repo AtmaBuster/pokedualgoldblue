@@ -24,7 +24,7 @@ SilphCo9F_MapScripts:
 	changeblock 18, 10, $54
 .SkipDoor3:
 	checkevent EVENT_SILPH_CO_9F_DOOR_4
-	iftrue .SkipDoor3
+	iftrue .SkipDoor4
 	changeblock 10, 12, $5f
 .SkipDoor4:
 	endcallback
