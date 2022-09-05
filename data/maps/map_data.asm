@@ -8,7 +8,10 @@ INCLUDE "data/maps/maps.asm"
 INCLUDE "data/maps/attributes.asm"
 
 
-INCLUDE "data/maps/blocks.asm"
-
-
-INCLUDE "data/maps/scripts.asm"
+IF DEF(_GOLD)
+INCLUDE "data/maps/blocks_gold.asm"
+INCLUDE "data/maps/scripts_gold.asm"
+ELIF DEF(_BLUE)
+INCLUDE "data/maps/blocks_blue.asm"
+INCLUDE "data/maps/scripts_blue.asm"
+ENDC
